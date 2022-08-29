@@ -5,7 +5,14 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'red-carleton' : '#e91c24',
+        'gray-carleton': '#222222'
+      }
+    },
   },
-  plugins: [],
+  plugins: [
+    '@tailwindcss/forms'
+  ],
 }
