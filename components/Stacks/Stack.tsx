@@ -2,32 +2,32 @@ import { EllipsisVerticalIcon } from "@heroicons/react/24/solid";
 
 const projects = [
   {
-    name: "Graph API",
+    name: "Undergraduate Admissions",
+    initials: "UG",
+    href: "#",
+    members: 1600,
+    bgColor: "bg-pink-400",
+  },
+  {
+    name: "Graduate Admissions",
     initials: "GA",
     href: "#",
-    members: 16,
-    bgColor: "bg-pink-600",
+    members: 1200,
+    bgColor: "bg-purple-400",
   },
   {
-    name: "Component Design",
+    name: "Canada Day",
     initials: "CD",
     href: "#",
-    members: 12,
-    bgColor: "bg-purple-600",
+    members: 1600,
+    bgColor: "bg-yellow-400",
   },
   {
-    name: "Templates",
-    initials: "T",
+    name: "Fall Orientation",
+    initials: "FO",
     href: "#",
-    members: 16,
-    bgColor: "bg-yellow-500",
-  },
-  {
-    name: "React Components",
-    initials: "RC",
-    href: "#",
-    members: 8,
-    bgColor: "bg-green-500",
+    members: 8000,
+    bgColor: "bg-green-400",
   },
 ];
 
@@ -39,7 +39,7 @@ const Stacks = () => {
   return (
     <div>
       <h2 className="text-xs font-medium uppercase tracking-wide text-gray-500">
-        Pinned Projects
+        Pinned Points
       </h2>
       <ul className="mt-3 grid grid-cols-1 gap-5 ">
         {projects.map((project) => (

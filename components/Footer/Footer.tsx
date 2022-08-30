@@ -1,29 +1,28 @@
 import { ChevronDownIcon } from "@heroicons/react/24/solid";
 
 const navigation = {
-  solutions: [
-    { name: "Marketing", href: "#" },
-    { name: "Analytics", href: "#" },
-    { name: "Commerce", href: "#" },
-    { name: "Insights", href: "#" },
+  ADMISSIONS: [
+    { name: "PROGRAMS", href: "#" },
+    { name: "UNDERGRADUATE", href: "#" },
+    { name: "GRADUATE", href: "#" },
+    { name: "INTERNATIONAL", href: "#" },
   ],
-  support: [
-    { name: "Pricing", href: "#" },
-    { name: "Documentation", href: "#" },
-    { name: "Guides", href: "#" },
-    { name: "API Status", href: "#" },
+  ACADEMICS: [
+    { name: "HOUSING", href: "#" },
+    { name: "CALENDARS", href: "#" },
+    { name: "BRIGHTSPACE", href: "#" },
+    { name: "LIBRARY", href: "#" },
   ],
-  company: [
-    { name: "About", href: "#" },
-    { name: "Blog", href: "#" },
-    { name: "Jobs", href: "#" },
-    { name: "Press", href: "#" },
-    { name: "Partners", href: "#" },
+  CAMPUS: [
+    { name: "CAMPUS MAP", href: "#" },
+    { name: "DIRECTIONS", href: "#" },
+    { name: "EVENTS", href: "#" },
+    { name: "PARKING", href: "#" },
   ],
-  legal: [
-    { name: "Claim", href: "#" },
-    { name: "Privacy", href: "#" },
-    { name: "Terms", href: "#" },
+  RAVENS: [
+    { name: "GIVING TO CARLETON", href: "#" },
+    { name: "ATHLETICS & RECREATION", href: "#" },
+    { name: "GO RAVENS - VARSITY", href: "#" },
   ],
   social: [
     {
@@ -92,7 +91,10 @@ const navigation = {
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-carleton bg-[url('https://carleton.ca/assets/waves.svg')] bg-no-repeat bg-cover bg-center" aria-labelledby="footer-heading">
+    <footer
+      className="bg-gray-carleton bg-[url('https://carleton.ca/assets/waves.svg')] bg-cover bg-center bg-no-repeat"
+      aria-labelledby="footer-heading"
+    >
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>
@@ -102,10 +104,10 @@ const Footer = () => {
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
                 <h3 className="text-sm font-semibold uppercase tracking-wider text-gray-400">
-                  Solutions
+                  Admissions
                 </h3>
                 <ul className="mt-4 space-y-4">
-                  {navigation.solutions.map((item) => (
+                  {navigation.ADMISSIONS.map((item) => (
                     <li key={item.name}>
                       <a
                         href={item.href}
@@ -119,10 +121,10 @@ const Footer = () => {
               </div>
               <div className="mt-12 md:mt-0">
                 <h3 className="text-sm font-semibold uppercase tracking-wider text-gray-400">
-                  Support
+                  Academics
                 </h3>
                 <ul className="mt-4 space-y-4">
-                  {navigation.support.map((item) => (
+                  {navigation.ACADEMICS.map((item) => (
                     <li key={item.name}>
                       <a
                         href={item.href}
@@ -138,10 +140,10 @@ const Footer = () => {
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
                 <h3 className="text-sm font-semibold uppercase tracking-wider text-gray-400">
-                  Company
+                  CAMPUS
                 </h3>
                 <ul className="mt-4 space-y-4">
-                  {navigation.company.map((item) => (
+                  {navigation.CAMPUS.map((item) => (
                     <li key={item.name}>
                       <a
                         href={item.href}
@@ -155,10 +157,10 @@ const Footer = () => {
               </div>
               <div className="mt-12 md:mt-0">
                 <h3 className="text-sm font-semibold uppercase tracking-wider text-gray-400">
-                  Legal
+                  RAVENS
                 </h3>
                 <ul className="mt-4 space-y-4">
-                  {navigation.legal.map((item) => (
+                  {navigation.RAVENS.map((item) => (
                     <li key={item.name}>
                       <a
                         href={item.href}
@@ -174,7 +176,7 @@ const Footer = () => {
           </div>
           <div className="mt-12 xl:mt-0">
             <h3 className="text-sm font-semibold uppercase tracking-wider text-gray-400">
-              Language &amp; Currency
+              Language
             </h3>
             <form className="mt-4 sm:max-w-xs">
               <fieldset className="w-full">
@@ -185,7 +187,7 @@ const Footer = () => {
                   <select
                     id="language"
                     name="language"
-                    className="block w-full appearance-none rounded-md border border-transparent bg-gray-700 bg-none py-2 pl-3 pr-10 text-base text-white focus:border-white focus:outline-none focus:ring-white sm:text-sm"
+                    className="block w-full appearance-none rounded-md border border-transparent bg-gray-500 bg-none py-2 pl-3 pr-10 text-base text-white focus:border-white focus:outline-none focus:ring-white sm:text-sm"
                     defaultValue="English"
                   >
                     <option>English</option>
@@ -193,34 +195,6 @@ const Footer = () => {
                     <option>German</option>
                     <option>Japanese</option>
                     <option>Spanish</option>
-                  </select>
-                  <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2">
-                    <ChevronDownIcon
-                      className="h-4 w-4 text-white"
-                      aria-hidden="true"
-                    />
-                  </div>
-                </div>
-              </fieldset>
-              <fieldset className="mt-4 w-full">
-                <label htmlFor="currency" className="sr-only">
-                  Currency
-                </label>
-                <div className="relative mt-1.5">
-                  <select
-                    id="currency"
-                    name="currency"
-                    className="block w-full appearance-none rounded-md border border-transparent bg-gray-700 bg-none py-2 pl-3 pr-10 text-base text-white focus:border-white focus:outline-none focus:ring-white sm:text-sm"
-                    defaultValue="AUD"
-                  >
-                    <option>ARS</option>
-                    <option>AUD</option>
-                    <option>CAD</option>
-                    <option>CHF</option>
-                    <option>EUR</option>
-                    <option>GBP</option>
-                    <option>JPY</option>
-                    <option>USD</option>
                   </select>
                   <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2">
                     <ChevronDownIcon
@@ -259,14 +233,14 @@ const Footer = () => {
             <div className="mt-3 rounded-md sm:mt-0 sm:ml-3 sm:flex-shrink-0">
               <button
                 type="submit"
-                className="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-500 py-2 px-4 text-base font-medium text-white hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-800"
+                className="flex w-full items-center justify-center rounded-md border border-transparent bg-red-carleton py-2 px-4 text-base font-medium text-white hover:bg-gray-carleton focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
               >
                 Subscribe
               </button>
             </div>
           </form>
         </div>
-        <div className="mt-8 border-t border-gray-700 pt-8 md:flex md:items-center md:justify-between">
+        <div className="mt-8 border-t border-gray-700 pt-8 md:flex md:items-center md:justify-between my-[300px]">
           <div className="flex space-x-6 md:order-2">
             {navigation.social.map((item) => (
               <a
@@ -280,7 +254,7 @@ const Footer = () => {
             ))}
           </div>
           <p className="mt-8 text-base text-gray-400 md:order-1 md:mt-0">
-            &copy; 2020 Workflow, Inc. All rights reserved.
+            &copy; 2022 Carleton University. All rights reserved.
           </p>
         </div>
       </div>

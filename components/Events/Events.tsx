@@ -1,43 +1,45 @@
+import { CalendarIcon } from "@heroicons/react/24/outline";
+
 const people = [
   {
-    name: "Leonard Krasner",
-    handle: "leonardkrasner",
+    name: "Lived Experience Luncheon Series with Dr. Alex Auerbach",
+    handle: "10-05-2022",
     imageUrl:
       "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
   },
   {
-    name: "Floyd Miles",
-    handle: "floydmiles",
+    name: "Science Student Alumni Mixer 2022",
+    handle: "10-05-2022",
     imageUrl:
       "https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
   },
   {
-    name: "Emily Selman",
-    handle: "emilyselman",
+    name: "Milestone Anniversary Celebration 2022",
+    handle: "10-05-2022",
     imageUrl:
       "https://images.unsplash.com/photo-1502685104226-ee32379fefbe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
   },
   {
-    name: "Kristin Watson",
-    handle: "kristinwatson",
+    name: "Virtual Career Fairs",
+    handle: "10-05-2022",
+    imageUrl:
+      "https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+  },
+  {
+    name: "80 Years of Carleton University",
+    handle: "10-05-2022",
+    imageUrl:
+      "https://images.unsplash.com/photo-1502685104226-ee32379fefbe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+  },
+  {
+    name: "Web 3.0: Distributed Solutions",
+    handle: "10-05-2022",
     imageUrl:
       "https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
   },
   {
-    name: "Floyd Miles",
-    handle: "floydmiles",
-    imageUrl:
-      "https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-  },
-  {
-    name: "Emily Selman",
-    handle: "emilyselman",
-    imageUrl:
-      "https://images.unsplash.com/photo-1502685104226-ee32379fefbe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-  },
-  {
-    name: "Kristin Watson",
-    handle: "kristinwatson",
+    name: "NextJS and TailwindCSS",
+    handle: "10-05-2022",
     imageUrl:
       "https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
   },
@@ -62,8 +64,12 @@ const Events = () => {
                   <p className="truncate text-sm font-medium text-gray-900">
                     {person.name}
                   </p>
-                  <p className="truncate text-sm text-gray-500">
-                    {"@" + person.handle}
+                  <p className="inline-flex truncate text-sm text-gray-500">
+                    <CalendarIcon
+                      className="h-5 w-5 mr-2 text-gray-400 "
+                      aria-hidden="true"
+                    />
+                    {person.handle}
                   </p>
                 </div>
                 <div>
