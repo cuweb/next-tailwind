@@ -1,4 +1,6 @@
 import { InboxIcon, SparklesIcon } from "@heroicons/react/24/outline";
+import Events from "../Events/Events";
+import Stacks from "../Stacks/Stack";
 
 const Featured = () => {
   return (
@@ -11,32 +13,11 @@ const Featured = () => {
         <div className="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2 lg:gap-24 lg:px-8">
           <div className="mx-auto max-w-xl px-4 sm:px-6 lg:mx-0 lg:max-w-none lg:py-16 lg:px-0">
             <div>
-              <div>
-                <span className="flex h-12 w-12 items-center justify-center rounded-md bg-gradient-to-r from-purple-600 to-indigo-600">
-                  <InboxIcon
-                    className="h-6 w-6 text-white"
-                    aria-hidden="true"
-                  />
-                </span>
-              </div>
               <div className="mt-6">
                 <h2 className="text-3xl font-extrabold tracking-tight text-gray-900">
-                  Stay on top of customer support
+                  Events
                 </h2>
-                <p className="mt-4 text-lg text-gray-500">
-                  Semper curabitur ullamcorper posuere nunc sed. Ornare iaculis
-                  bibendum malesuada faucibus lacinia porttitor. Pulvinar
-                  laoreet sagittis viverra duis. In venenatis sem arcu pretium
-                  pharetra at. Lectus viverra dui tellus ornare pharetra.
-                </p>
-                <div className="mt-6">
-                  <a
-                    href="#"
-                    className="inline-flex rounded-md border border-transparent bg-gradient-to-r from-purple-600 to-indigo-600 bg-origin-border px-4 py-2 text-base font-medium text-white shadow-sm hover:from-purple-700 hover:to-indigo-700"
-                  >
-                    Get started
-                  </a>
-                </div>
+                <Events />
               </div>
             </div>
             <div className="mt-8 border-t border-gray-200 pt-6">
@@ -80,32 +61,11 @@ const Featured = () => {
         <div className="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2 lg:gap-24 lg:px-8">
           <div className="mx-auto max-w-xl px-4 sm:px-6 lg:col-start-2 lg:mx-0 lg:max-w-none lg:py-32 lg:px-0">
             <div>
-              <div>
-                <span className="flex h-12 w-12 items-center justify-center rounded-md bg-gradient-to-r from-purple-600 to-indigo-600">
-                  <SparklesIcon
-                    className="h-6 w-6 text-white"
-                    aria-hidden="true"
-                  />
-                </span>
-              </div>
               <div className="mt-6">
                 <h2 className="text-3xl font-extrabold tracking-tight text-gray-900">
-                  Better understand your customers
+                  Attend Carleton University
                 </h2>
-                <p className="mt-4 text-lg text-gray-500">
-                  Semper curabitur ullamcorper posuere nunc sed. Ornare iaculis
-                  bibendum malesuada faucibus lacinia porttitor. Pulvinar
-                  laoreet sagittis viverra duis. In venenatis sem arcu pretium
-                  pharetra at. Lectus viverra dui tellus ornare pharetra.
-                </p>
-                <div className="mt-6">
-                  <a
-                    href="#"
-                    className="inline-flex rounded-md border border-transparent bg-gradient-to-r from-purple-600 to-indigo-600 bg-origin-border px-4 py-2 text-base font-medium text-white shadow-sm hover:from-purple-700 hover:to-indigo-700"
-                  >
-                    Get started
-                  </a>
-                </div>
+                <Stacks />
               </div>
             </div>
           </div>
