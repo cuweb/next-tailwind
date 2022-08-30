@@ -92,7 +92,7 @@ const navigation = {
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-carleton" aria-labelledby="footer-heading">
+    <footer className="bg-gray-carleton bg-[url('https://carleton.ca/assets/waves.svg')] bg-no-repeat bg-cover bg-center" aria-labelledby="footer-heading">
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>
