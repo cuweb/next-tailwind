@@ -1,6 +1,6 @@
-import { InboxIcon, SparklesIcon } from "@heroicons/react/24/outline";
-import Events from "../Events/Events";
-import Stacks from "../Stacks/Stack";
+import { InboxIcon, SparklesIcon } from '@heroicons/react/24/outline';
+import Events from '../Events/Events';
+import Stacks from '../Stacks/Stack';
 
 const Featured = () => {
   return (
@@ -14,7 +14,7 @@ const Featured = () => {
           <div className="mx-auto max-w-xl px-4 sm:px-6 lg:mx-0 lg:max-w-none lg:py-16 lg:px-0">
             <div>
               <div className="mt-6">
-                <h2 className="text-3xl font-extrabold tracking-tight text-gray-900">
+                <h2 className="mb-10 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
                   Events
                 </h2>
                 <Events />
@@ -37,9 +37,13 @@ const Featured = () => {
           <div className="mx-auto max-w-xl px-4 sm:px-6 lg:col-start-2 lg:mx-0 lg:max-w-none lg:py-32 lg:px-0">
             <div>
               <div className="mt-6">
-                <h2 className="text-3xl font-extrabold tracking-tight text-gray-900">
+                <h2 className="mb-5 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
                   Attend Carleton University
                 </h2>
+                <p className="mx-auto mb-10 max-w-2xl text-xl text-gray-500 sm:mt-4">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa
+                  libero labore natus atque, ducimus sed.
+                </p>
                 <Stacks />
               </div>
             </div>
