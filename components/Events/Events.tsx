@@ -52,7 +52,7 @@ const Events = () => {
         <ul className="-my-5 divide-y divide-gray-200">
           {people.map((person) => (
             <li key={person.handle} className="py-4">
-              <div className="flex items-start space-x-6">
+              <div className="flex items-center space-x-6">
                 <div className="flex-shrink-0">
                   <img
                     className="mt-1 h-20 w-20 rounded"
@@ -84,10 +84,6 @@ const Events = () => {
                       aria-hidden="true"
                     />
                     {person.time}
-                  </p>
-                  <p className="mt-3 text-base text-gray-500">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Velit facilis asperiores porro quaerat doloribus.
                   </p>
                 </div>
               </div>

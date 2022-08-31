@@ -69,7 +69,7 @@ const Navbar = () => {
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-4 lg:px-8">
-            <div className="flex h-16 justify-between">
+            <div className="flex h-20 justify-between">
               <div className="flex px-2 lg:px-0">
                 <div className="flex flex-shrink-0 items-center">
                   <svg
@@ -111,6 +111,7 @@ const Navbar = () => {
                       fill="#0A0B09"
                     ></path>
                   </svg>
+
                   <svg
                     className="hidden h-8 w-auto lg:block"
                     viewBox="0 0 336 91"
@@ -168,8 +169,8 @@ const Navbar = () => {
                           className={classNames(
                             open
                               ? 'border-red-carleton text-gray-900'
-                              : 'text-gray-500 hover:border-gray-300 hover:text-gray-900',
-                            'inline-flex items-center border-b-2 px-1 pt-1 text-sm font-medium '
+                              : 'text-gray-500 hover:border-b-2 hover:text-gray-900',
+                            'inline-flex h-20 items-center border-b-2 border-transparent text-sm font-medium focus:outline-0 '
                           )}
                         >
                           <span className="py-5">Admissions</span>{' '}
@@ -244,31 +245,31 @@ const Navbar = () => {
 
                   <a
                     href="#"
-                    className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
+                    className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-red-carleton hover:text-gray-700"
                   >
                     Academics
                   </a>
                   <a
                     href="#"
-                    className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
+                    className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-red-carleton hover:text-gray-700"
                   >
                     Research
                   </a>
                   <a
                     href="#"
-                    className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
+                    className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-red-carleton hover:text-gray-700"
                   >
                     Alumni
                   </a>
                   <a
                     href="#"
-                    className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
+                    className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-red-carleton hover:text-gray-700"
                   >
                     Future Students
                   </a>
                   <a
                     href="#"
-                    className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
+                    className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-red-carleton hover:text-gray-700"
                   >
                     About
                   </a>
