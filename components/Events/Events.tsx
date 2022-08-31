@@ -85,7 +85,7 @@ const Events = () => {
                     />
                     {person.time}
                   </p>
-                  <p class="mt-3 text-base text-gray-500">
+                  <p className="mt-3 text-base text-gray-500">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Velit facilis asperiores porro quaerat doloribus.
                   </p>
