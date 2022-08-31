@@ -15,7 +15,7 @@ const Header = () => {
           <div className="relative px-4 sm:px-8 lg:relative lg:w-1/2 xl:pr-16">
             <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
               <span className="block text-red-carleton xl:inline">
-                Game On:
+                Game On:&nbsp;
               </span>
               <span className="block text-black text-white xl:inline">
                 Teaching Tweens Digital Literacy
