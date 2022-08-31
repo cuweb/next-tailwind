@@ -1,9 +1,9 @@
-import { Fragment } from "react";
-import { Popover, Transition, Disclosure, Menu } from "@headlessui/react";
+import { Fragment } from 'react';
+import { Popover, Transition, Disclosure, Menu } from '@headlessui/react';
 import {
   MagnifyingGlassCircleIcon,
   ChevronDownIcon,
-} from "@heroicons/react/24/solid";
+} from '@heroicons/react/24/solid';
 
 import {
   BookmarkIcon,
@@ -19,49 +19,49 @@ import {
   Square2StackIcon,
   XCircleIcon,
   BellIcon,
-} from "@heroicons/react/24/outline";
+} from '@heroicons/react/24/outline';
 
 const features = [
   {
-    name: "Analytics",
-    href: "#",
+    name: 'Analytics',
+    href: '#',
     description:
-      "Get a better understanding of where your traffic is coming from.",
+      'Get a better understanding of where your traffic is coming from.',
     icon: ChartBarIcon,
   },
   {
-    name: "Engagement",
-    href: "#",
-    description: "Speak directly to your customers in a more meaningful way.",
+    name: 'Engagement',
+    href: '#',
+    description: 'Speak directly to your customers in a more meaningful way.',
     icon: CursorArrowRaysIcon,
   },
   {
-    name: "Security",
-    href: "#",
+    name: 'Security',
+    href: '#',
     description: "Your customers' data will be safe and secure.",
     icon: ShieldCheckIcon,
   },
   {
-    name: "Integrations",
-    href: "#",
+    name: 'Integrations',
+    href: '#',
     description: "Connect with third-party tools that you're already using.",
     icon: Square2StackIcon,
   },
   {
-    name: "Automations",
-    href: "#",
+    name: 'Automations',
+    href: '#',
     description:
-      "Build strategic funnels that will drive your customers to convert",
+      'Build strategic funnels that will drive your customers to convert',
     icon: ArrowPathIcon,
   },
 ];
 const callsToAction = [
-  { name: "Campus Life", href: "#", icon: PlayIcon },
-  { name: "Contact Admissions", href: "#", icon: PhoneIcon },
+  { name: 'Campus Life', href: '#', icon: PlayIcon },
+  { name: 'Contact Admissions', href: '#', icon: PhoneIcon },
 ];
 
 function classNames(...classes: any[]) {
-  return classes.filter(Boolean).join(" ");
+  return classes.filter(Boolean).join(' ');
 }
 const Navbar = () => {
   return (
@@ -167,16 +167,16 @@ const Navbar = () => {
                         <Popover.Button
                           className={classNames(
                             open
-                              ? "border-red-carleton text-gray-900"
-                              : "text-gray-500 hover:border-gray-300 hover:text-gray-900",
-                            "inline-flex items-center border-b-2 px-1 pt-1 text-sm font-medium "
+                              ? 'border-red-carleton text-gray-900'
+                              : 'text-gray-500 hover:border-gray-300 hover:text-gray-900',
+                            'inline-flex items-center border-b-2 px-1 pt-1 text-sm font-medium '
                           )}
                         >
-                          <span className="py-5">Admissions</span>{" "}
+                          <span className="py-5">Admissions</span>{' '}
                           <ChevronDownIcon
                             className={classNames(
-                              open ? "text-gray-600" : "text-gray-400",
-                              "ml-1 h-3 w-3 group-hover:text-gray-500"
+                              open ? 'text-gray-600' : 'text-gray-400',
+                              'ml-1 h-3 w-3 group-hover:text-gray-500'
                             )}
                             aria-hidden="true"
                           />
@@ -194,7 +194,7 @@ const Navbar = () => {
                         >
                           <Popover.Panel
                             static
-                            className="absolute z-10 -ml-4 mt-3 w-screen max-w-md transform px-2 sm:px-0 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2"
+                            className="absolute z-10 -ml-4 w-screen max-w-md transform px-2 sm:px-0 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2"
                           >
                             <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
                               <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
@@ -346,8 +346,8 @@ const Navbar = () => {
                               <a
                                 href="#"
                                 className={classNames(
-                                  active ? "bg-gray-100" : "",
-                                  "block px-4 py-2 text-sm text-gray-700"
+                                  active ? 'bg-gray-100' : '',
+                                  'block px-4 py-2 text-sm text-gray-700'
                                 )}
                               >
                                 Your Profile
@@ -359,8 +359,8 @@ const Navbar = () => {
                               <a
                                 href="#"
                                 className={classNames(
-                                  active ? "bg-gray-100" : "",
-                                  "block px-4 py-2 text-sm text-gray-700"
+                                  active ? 'bg-gray-100' : '',
+                                  'block px-4 py-2 text-sm text-gray-700'
                                 )}
                               >
                                 Settings
@@ -372,8 +372,8 @@ const Navbar = () => {
                               <a
                                 href="#"
                                 className={classNames(
-                                  active ? "bg-gray-100" : "",
-                                  "block px-4 py-2 text-sm text-gray-700"
+                                  active ? 'bg-gray-100' : '',
+                                  'block px-4 py-2 text-sm text-gray-700'
                                 )}
                               >
                                 Sign out

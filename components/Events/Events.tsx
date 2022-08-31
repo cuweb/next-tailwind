@@ -1,47 +1,47 @@
-import { CalendarIcon } from "@heroicons/react/24/outline";
+import { CalendarIcon } from '@heroicons/react/24/outline';
+import { MapPinIcon } from '@heroicons/react/24/outline';
+import { ClockIcon } from '@heroicons/react/24/outline';
 
 const people = [
   {
-    name: "Lived Experience Luncheon Series with Dr. Alex Auerbach",
-    handle: "10-05-2022",
+    name: 'Lived Experience Luncheon Series with Dr. Alex Auerbach',
+    handle: '10-05-2022',
+    location: '405 Robertson Hall',
+    time: '2:00 PM',
     imageUrl:
-      "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+      'https://images.unsplash.com/photo-1507878866276-a947ef722fee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2342&q=80',
   },
   {
-    name: "Science Student Alumni Mixer 2022",
-    handle: "10-05-2022",
+    name: 'Science Student Alumni Mixer 2022',
+    handle: '10-05-2022',
+    location: '405 Robertson Hall',
+    time: '2:00 PM',
     imageUrl:
-      "https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+      'https://images.unsplash.com/photo-1591115765373-5207764f72e7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80',
   },
   {
-    name: "Milestone Anniversary Celebration 2022",
-    handle: "10-05-2022",
+    name: 'Milestone Anniversary Celebration 2022',
+    handle: '10-05-2022',
+    location: '405 Robertson Hall',
+    time: '2:00 PM',
     imageUrl:
-      "https://images.unsplash.com/photo-1502685104226-ee32379fefbe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+      'https://images.unsplash.com/photo-1550305080-4e029753abcf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2342&q=80',
   },
   {
-    name: "Virtual Career Fairs",
-    handle: "10-05-2022",
+    name: 'Virtual Career Fairs',
+    handle: '10-05-2022',
+    location: '405 Robertson Hall',
+    time: '2:00 PM',
     imageUrl:
-      "https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+      'https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80',
   },
   {
-    name: "80 Years of Carleton University",
-    handle: "10-05-2022",
+    name: '80 Years of Carleton University',
+    handle: '10-05-2022',
+    location: '405 Robertson Hall',
+    time: '2:00 PM',
     imageUrl:
-      "https://images.unsplash.com/photo-1502685104226-ee32379fefbe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-  },
-  {
-    name: "Web 3.0: Distributed Solutions",
-    handle: "10-05-2022",
-    imageUrl:
-      "https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-  },
-  {
-    name: "NextJS and TailwindCSS",
-    handle: "10-05-2022",
-    imageUrl:
-      "https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+      'https://images.unsplash.com/photo-1502685104226-ee32379fefbe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
 ];
 
@@ -52,43 +52,53 @@ const Events = () => {
         <ul className="-my-5 divide-y divide-gray-200">
           {people.map((person) => (
             <li key={person.handle} className="py-4">
-              <div className="flex items-center space-x-4">
+              <div className="flex items-start space-x-6">
                 <div className="flex-shrink-0">
                   <img
-                    className="h-8 w-8 rounded-full"
+                    className="mt-1 h-20 w-20 rounded"
                     src={person.imageUrl}
                     alt=""
                   />
                 </div>
                 <div className="min-w-0 flex-1">
-                  <p className="truncate text-sm font-medium text-gray-900">
+                  <p className="mb-1 truncate text-lg font-medium text-gray-900">
                     {person.name}
                   </p>
-                  <p className="inline-flex truncate text-sm text-gray-500">
+                  <p className="inline-flex truncate pr-5 text-sm text-gray-500">
                     <CalendarIcon
-                      className="h-5 w-5 mr-2 text-gray-400 "
+                      className="mr-1 h-5 w-5 text-red-carleton "
                       aria-hidden="true"
                     />
                     {person.handle}
                   </p>
-                </div>
-                <div>
-                  <a
-                    href="#"
-                    className="inline-flex items-center rounded-full border border-gray-300 bg-white px-2.5 py-0.5 text-sm font-medium leading-5 text-gray-700 shadow-sm hover:bg-gray-50"
-                  >
-                    View
-                  </a>
+                  <p className="inline-flex truncate pr-5 text-sm text-gray-500">
+                    <MapPinIcon
+                      className="mr-1 h-5 w-5 text-red-carleton"
+                      aria-hidden="true"
+                    />
+                    {person.location}
+                  </p>
+                  <p className="inline-flex truncate text-sm text-gray-500">
+                    <ClockIcon
+                      className="mr-1 h-5 w-5 text-red-carleton"
+                      aria-hidden="true"
+                    />
+                    {person.time}
+                  </p>
+                  <p class="mt-3 text-base text-gray-500">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Velit facilis asperiores porro quaerat doloribus.
+                  </p>
                 </div>
               </div>
             </li>
           ))}
         </ul>
       </div>
-      <div className="mt-6">
+      <div className="mt-10">
         <a
           href="#"
-          className="flex w-full items-center justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50"
+          className="hover:bg-red-carleton-700 flex w-full items-center justify-center rounded-md border border-transparent bg-red-carleton px-8 py-3 text-base font-medium text-white md:py-4 md:px-10 md:text-lg"
         >
           View all
         </a>
