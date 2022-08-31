@@ -7,7 +7,13 @@ const GradientDiv = () => {
     gradient.initGradient('#gradient-canvas');
   }, []);
 
-  return <canvas id="gradient-canvas" data-transition-in></canvas>;
+  return (
+    <canvas
+      className="sm:relative"
+      id="gradient-canvas"
+      data-transition-in
+    ></canvas>
+  );
 };
 
 export default GradientDiv;

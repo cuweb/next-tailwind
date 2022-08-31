@@ -10,10 +10,10 @@ const Header = () => {
     <div className="relative bg-gray-50">
       <Navbar />
       <main className="lg:relative">
-        <div className="mx-auto w-full max-w-7xl pt-16 pb-20 text-center sm:relative lg:static lg:py-48 lg:text-left">
+        <div className="relative mx-auto w-full max-w-7xl pt-16 pb-20 text-center lg:static lg:py-48 lg:text-left">
           <GradientDiv />
-          <div className="px-4 sm:relative sm:px-8 lg:w-1/2 xl:pr-16">
-            <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 sm:relative sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
+          <div className="relative px-4 sm:px-8 lg:relative lg:w-1/2 xl:pr-16">
+            <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
               <span className="block xl:inline">Game On: Teaching Tweens </span>
               <span className="block text-white xl:inline">
                 Digital Literacy
