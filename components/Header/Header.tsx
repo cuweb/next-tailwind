@@ -28,14 +28,6 @@ const Header = () => {
               <div className="rounded-md shadow-lg">
                 <a
                   href="#"
-                  className="hover:bg-red-carleton-700 flex w-full items-center justify-center rounded-md border border-transparent bg-red-carleton px-8 py-3 text-base font-medium text-white md:py-4 md:px-10 md:text-lg"
-                >
-                  Register
-                </a>
-              </div>
-              <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
-                <a
-                  href="#"
                   className="flex w-full items-center justify-center rounded-md border border-transparent bg-white px-8 py-3 text-base font-medium text-red-carleton hover:bg-gray-50 md:py-4 md:px-10 md:text-lg"
                 >
                   View Story
