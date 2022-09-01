@@ -1,29 +1,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-#gradient-canvas {
-  /* RED */
-  --gradient-color-1: #b6252e;
-  --gradient-color-2: #cf112d;
-  --gradient-color-3: #cf112d;
-  --gradient-color-4: #e91c24;
-
-  --gradient-color-1: #ffffff;
-  --gradient-color-2: #e6e6e6;
-  --gradient-color-3: #cccccc;
-  --gradient-color-4: #c3c3c3;
-
-  --gradient-color-1: #c3e4ff;
-  --gradient-color-2: #6ec3f4;
-  --gradient-color-3: #eae2ff;
-  --gradient-color-4: #b9beff;
-
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: auto;
-  left: 0;
-  bottom: 0;
-  overflow: hidden;
-}

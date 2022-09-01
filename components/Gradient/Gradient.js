@@ -597,7 +597,7 @@ export class Gradient {
         requestAnimationFrame(this.animate), (this.conf.playing = true);
       }),
       e(this, 'initGradient', (selector) => {
-        this.el = document.querySelector(selector);
+        this.el = selector;
         this.connect();
         return this;
       });
