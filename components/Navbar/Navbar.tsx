@@ -9,7 +9,7 @@ import {
 
 import { LifebuoyIcon } from '@heroicons/react/24/outline';
 
-function classNames(...classes) {
+function classNames(...classes: any) {
   return classes.filter(Boolean).join(' ');
 }
 
