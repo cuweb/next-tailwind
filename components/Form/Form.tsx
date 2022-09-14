@@ -93,7 +93,11 @@ export default function Form() {
                     <div className="flex text-sm text-gray-600">
                       <label
                         htmlFor="file-upload"
+<<<<<<< HEAD
                         className="text-cu-red relative cursor-pointer rounded-md bg-white font-medium focus-within:outline-none focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 hover:text-indigo-500"
+=======
+                        className="relative cursor-pointer rounded-md bg-white font-medium text-cu-red focus-within:outline-none focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 hover:text-indigo-500"
+>>>>>>> e5a55946f5ea7e72c05181c1ab39a05472c81fd5
                       >
                         <span>Upload a file</span>
                         <input
@@ -272,7 +276,11 @@ export default function Form() {
           <div className="bg-gray-50 px-4 py-3 text-right sm:px-6">
             <button
               type="submit"
+<<<<<<< HEAD
               className="bg-cu-red inline-flex justify-center rounded-md border border-transparent py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+=======
+              className="inline-flex justify-center rounded-md border border-transparent bg-cu-red py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+>>>>>>> e5a55946f5ea7e72c05181c1ab39a05472c81fd5
             >
               Save
             </button>
