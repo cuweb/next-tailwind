@@ -1,4 +1,5 @@
-/* This example requires Tailwind CSS v2.0+ */
+import { ChevronDownIcon } from "@heroicons/react/24/solid";
+
 const navigation = {
 	Admissions: [
 		{ name: "Programs", href: "#" },
@@ -9,7 +10,7 @@ const navigation = {
 		{ name: "Virtual Tours", href: "#" },
 		{ name: "Initiatives", href: "#" },
 	],
-	Students: [
+	Academics: [
 		{ name: "Support Services", href: "#" },
 		{ name: "Schedules & Dates", href: "#" },
 		{ name: "Bightspace", href: "#" },
@@ -27,7 +28,7 @@ const navigation = {
 		{ name: "Directions", href: "#" },
 		{ name: "Events", href: "#" },
 	],
-	Raven: [
+	Advancement: [
 		{ name: "Giving to Carleton", href: "#" },
 		{ name: "Athletics & Recreation", href: "#" },
 		{ name: "Go Ravens", href: "#" },
@@ -35,6 +36,11 @@ const navigation = {
 		{ name: "Giving to Carleton", href: "#" },
 		{ name: "Athletics & Recreation", href: "#" },
 		{ name: "Go Ravens", href: "#" },
+	],
+	Ravens: [
+		{ name: "Ahtletics & Recreation", href: "#" },
+		{ name: "GoRavens Varsity", href: "#" },
+		{ name: "Ahtletics & Recreation", href: "#" },
 	],
 	social: [
 		{
@@ -110,55 +116,29 @@ const navigation = {
 	],
 };
 
-export default function Footer() {
+const FooterCurrent = () => {
 	return (
-		<footer className="bg-cu-black-900" aria-labelledby="footer-heading">
+		<footer
+			className="bg-cu-black-900 bg-[url('https://carleton.ca/assets/waves.svg')] bg-[length:100%] bg-bottom bg-no-repeat pb-20"
+			aria-labelledby="footer-heading"
+		>
 			<h2 id="footer-heading" className="sr-only">
 				Footer
 			</h2>
 			<div className="px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:py-16 lg:px-8">
-				<div className="xl:grid xl:grid-cols-3 xl:gap-8">
-					<div className="space-y-8 xl:col-span-1">
-						<img
-							className="h-20"
-							src="/cu-logo-left-white-outline.svg"
-							alt="Carleton University"
-						/>
-						<p className="pl-[5.25rem] text-base text-gray-300">
-							1125 Colonel By Drive
-							<br />
-							Ottawa, ON, K1S 5B6, Canada
-							<br />
-							Phone: 1-613-520-2600
-						</p>
-						<div className="flex space-x-6 pl-[5.25rem]">
-							{navigation.social.map((item) => (
-								<a
-									key={item.name}
-									href={item.href}
-									className="text-gray-200 hover:text-cu-red"
-								>
-									<span className="sr-only">{item.name}</span>
-									<item.icon
-										className="w-6 h-6"
-										aria-hidden="true"
-									/>
-								</a>
-							))}
-						</div>
-					</div>
-					<div className="grid grid-cols-2 gap-8 mt-12 xl:col-span-2 xl:mt-0">
+				<div className="pb-8 xl:grid xl:grid-cols-5 xl:gap-8">
+					<div className="grid grid-cols-2 gap-8 xl:col-span-4">
 						<div className="md:grid md:grid-cols-2 md:gap-8">
 							<div>
-								<h3 className="text-base font-medium text-white">
+								<h3 className="text-base font-semibold tracking-wider text-white uppercase">
 									Admissions
 								</h3>
-								<ul role="list" className="mt-2 space-y-2">
+								<ul className="mt-3 space-y-3">
 									{navigation.Admissions.map((item) => (
 										<li key={item.name}>
 											<a
 												href={item.href}
-												className="text-base text-gray-400 hover:text-white"
+												className="text-sm text-gray-400 uppercase hover:text-white"
 											>
 												{item.name}
 											</a>
@@ -167,15 +147,15 @@ export default function Footer() {
 								</ul>
 							</div>
 							<div className="mt-12 md:mt-0">
-								<h3 className="text-base font-medium text-white">
-									Students
+								<h3 className="text-base font-semibold tracking-wider text-white uppercase">
+									Academics
 								</h3>
-								<ul role="list" className="mt-2 space-y-2">
-									{navigation.Students.map((item) => (
+								<ul className="mt-3 space-y-3">
+									{navigation.Academics.map((item) => (
 										<li key={item.name}>
 											<a
 												href={item.href}
-												className="text-base text-gray-400 hover:text-white"
+												className="text-sm text-gray-400 uppercase hover:text-white"
 											>
 												{item.name}
 											</a>
@@ -186,15 +166,15 @@ export default function Footer() {
 						</div>
 						<div className="md:grid md:grid-cols-2 md:gap-8">
 							<div>
-								<h3 className="text-base font-medium text-white">
+								<h3 className="text-base font-semibold tracking-wider text-white uppercase">
 									Campus
 								</h3>
-								<ul role="list" className="mt-2 space-y-2">
+								<ul className="mt-3 space-y-3">
 									{navigation.Campus.map((item) => (
 										<li key={item.name}>
 											<a
 												href={item.href}
-												className="text-base text-gray-400 hover:text-white"
+												className="text-sm text-gray-400 uppercase hover:text-white"
 											>
 												{item.name}
 											</a>
@@ -203,15 +183,15 @@ export default function Footer() {
 								</ul>
 							</div>
 							<div className="mt-12 md:mt-0">
-								<h3 className="text-base font-medium text-white">
-									Raven 4 Life
+								<h3 className="text-base font-semibold tracking-wider text-white uppercase">
+									Advancement
 								</h3>
-								<ul role="list" className="mt-2 space-y-2">
-									{navigation.Raven.map((item) => (
+								<ul className="mt-3 space-y-3">
+									{navigation.Advancement.map((item) => (
 										<li key={item.name}>
 											<a
 												href={item.href}
-												className="text-base text-gray-400 hover:text-white"
+												className="text-sm text-gray-400 uppercase hover:text-white"
 											>
 												{item.name}
 											</a>
@@ -221,20 +201,74 @@ export default function Footer() {
 							</div>
 						</div>
 					</div>
+					<div className="mt-12 xl:mt-0">
+						<h3 className="text-base font-semibold tracking-wider text-white uppercase">
+							Ravens
+						</h3>
+						<ul className="mt-3 space-y-3">
+							{navigation.Ravens.map((item) => (
+								<li key={item.name}>
+									<a
+										href={item.href}
+										className="text-sm text-gray-400 uppercase hover:text-white"
+									>
+										{item.name}
+									</a>
+								</li>
+							))}
+						</ul>
+						<div className="flex mt-10">
+							<div>
+								<img
+									className="w-auto h-20"
+									src="/ravens-footer.svg"
+									alt="Carleton"
+								/>
+							</div>
+						</div>
+					</div>
 				</div>
-				<div className="pt-8 mt-12 border-t border-gray-700">
-					<ul className="flex justify-end text-base text-center text-gray-400 ">
-						<li className="pl-4 text-sm">
+				<div className="pt-8 mt-8 border-t border-gray-700 md:flex md:items-center md:justify-between">
+					<div className="flex space-x-6 md:order-2">
+						{navigation.social.map((item) => (
+							<a
+								key={item.name}
+								href={item.href}
+								className="text-gray-400 hover:text-gray-300"
+							>
+								<span className="sr-only">{item.name}</span>
+								<item.icon
+									className="w-6 h-6"
+									aria-hidden="true"
+								/>
+							</a>
+						))}
+					</div>
+					<p className="mt-8 text-base text-gray-400 md:order-1 md:mt-0">
+						1125 Colonel By Drive, Ottawa, ON, K1S 5B6, Canada
+					</p>
+				</div>
+
+				<div className="my-12">
+					<div className="flex justify-center">
+						<img
+							className="w-auto h-44"
+							src="/cu-logo-stacked-white-outline.svg"
+							alt="Carleton"
+						/>
+					</div>
+					<ul className="flex justify-center mt-8 text-base text-center text-gray-400 ">
+						<li className="px-4">
 							<a href="#" className="hover:text-white">
 								Privacy Policy
 							</a>
 						</li>
-						<li className="pl-4 text-sm">
+						<li className="px-4">
 							<a href="#" className="hover:text-white">
 								Accessibility
 							</a>
 						</li>
-						<li className="pl-4 text-sm">
+						<li className="px-4">
 							<a href="#" className="hover:text-white">
 								&copy; Copyright 2022
 							</a>
@@ -244,4 +278,6 @@ export default function Footer() {
 			</div>
 		</footer>
 	);
-}
+};
+
+export default FooterCurrent;
