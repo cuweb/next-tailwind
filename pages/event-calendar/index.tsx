@@ -7,20 +7,23 @@ import Header from "../../components/Header/Header";
 import Navbar from "../../components/Navbar/Navbar";
 import Spotlight from "../../components/Spotlight/Spotlight";
 
-const IntranetHR: NextPage = () => {
+const EventCalendar: NextPage = () => {
   return (
     <>
       <Head>
-        <title>HR - Intranet | Carleton University </title>
+        <title>Event Calendar | Carleton University</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
       <Header />
       <Spotlight />
       <Featured />
+      <Footer />
+      <br />
+      <br />
       <FooterCurrent />
     </>
   );
 };
 
-export default IntranetHR;
+export default EventCalendar;

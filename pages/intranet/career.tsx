@@ -1,18 +1,26 @@
 import type { NextPage } from "next";
-import Navbar from "../../components/Intranet/Navbar";
+import Head from "next/head";
+import Featured from "../../components/Featured/Featured";
+import Footer from "../../components/Footer/Footer";
+import FooterCurrent from "../../components/Footer/FooterCurrent";
+import Header from "../../components/Header/Header";
+import Navbar from "../../components/Navbar/Navbar";
+import Spotlight from "../../components/Spotlight/Spotlight";
 
-const career: NextPage = () => {
+const IntranetCareer: NextPage = () => {
   return (
     <>
+      <Head>
+        <title>Career - Intranet | Carleton University </title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <Navbar />
-
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:py-10 lg:px-8">
-        <h1 className="text-cu-black:900 text-3xl font-medium tracking-tight">
-          Career
-        </h1>
-      </div>
+      <Header />
+      <Spotlight />
+      <Featured />
+      <FooterCurrent />
     </>
   );
 };
 
-export default career;
+export default IntranetCareer;
