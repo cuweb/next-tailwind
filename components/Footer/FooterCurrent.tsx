@@ -253,7 +253,7 @@ const FooterCurrent = () => {
 					<div className="flex justify-center">
 						<img
 							className="w-auto h-20"
-							src="/cu-logo-left-white-outline.svg"
+							src="/cu-logo-stacked-white-outline.svg"
 							alt="Carleton"
 						/>
 					</div>
