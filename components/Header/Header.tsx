@@ -13,10 +13,10 @@ const Header = () => {
           <GradientDiv />
           <div className="relative px-4 sm:px-8 lg:relative lg:w-1/2 xl:pr-16">
             <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
-              <span className="text-red-carleton block xl:inline">
+              <span className="block text-cu-red xl:inline">
                 Game On:&nbsp;
               </span>
-              <span className="block text-black text-white xl:inline">
+              <span className="bloc text-cu-black-900 xl:inline">
                 Teaching Tweens Digital Literacy
               </span>
             </h1>
@@ -29,7 +29,7 @@ const Header = () => {
               <div className="rounded-md shadow">
                 <a
                   href="#"
-                  className="hover:bg-red-carleton-700 bg-red-carleton flex w-full items-center justify-center rounded-md border border-transparent px-8 py-3 text-base font-medium text-white md:py-4 md:px-10 md:text-lg"
+                  className="hover:bg-cu-red-700 flex w-full items-center justify-center rounded-md border border-transparent bg-cu-red px-8 py-3 text-base font-medium text-white md:py-4 md:px-10 md:text-lg"
                 >
                   Register
                 </a>
@@ -37,7 +37,7 @@ const Header = () => {
               <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
                 <a
                   href="#"
-                  className="text-red-carleton flex w-full items-center justify-center rounded-md border border-transparent bg-white px-8 py-3 text-base font-medium hover:bg-gray-50 md:py-4 md:px-10 md:text-lg"
+                  className="flex w-full items-center justify-center rounded-md border border-transparent bg-white px-8 py-3 text-base font-medium text-cu-red hover:bg-gray-50 md:py-4 md:px-10 md:text-lg"
                 >
                   View Story
                 </a>
