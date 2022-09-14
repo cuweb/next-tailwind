@@ -1,9 +1,8 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 
-import Footer from '../components/Footer/Footer';
+import FooterCurrent from '../components/Footer/FooterCurrent';
 import Settings from '../components/Settings/Settings';
-import Form from '../components/Settings/Form';
 import Navbar from '../components/Navbar/Navbar';
 
 const Demo: NextPage = () => {
@@ -15,7 +14,7 @@ const Demo: NextPage = () => {
       </Head>
       <Navbar />
       <Settings />
-      <Footer />
+      <FooterCurrent />
     </>
   );
 };
