@@ -61,6 +61,12 @@ export default function NavBar() {
 									>
 										Calendar
 									</a>
+									<a
+										href="#"
+										className="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-500 border-b-2 border-transparent hover:text-cu-red"
+									>
+										News
+									</a>
 								</div>
 							</div>
 
