@@ -40,7 +40,7 @@ const navigation = {
 		{
 			name: "Facebook",
 			href: "#",
-			icon: (props) => (
+			icon: (props: any) => (
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					viewBox="0 0 512 512"
@@ -54,7 +54,7 @@ const navigation = {
 		{
 			name: "Instagram",
 			href: "#",
-			icon: (props) => (
+			icon: (props: any) => (
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					viewBox="0 0 448 512"
@@ -68,7 +68,7 @@ const navigation = {
 		{
 			name: "Twitter",
 			href: "#",
-			icon: (props) => (
+			icon: (props: any) => (
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					viewBox="0 0 512 512"
@@ -82,7 +82,7 @@ const navigation = {
 		{
 			name: "YouTube",
 			href: "#",
-			icon: (props) => (
+			icon: (props: any) => (
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					viewBox="0 0 576 512"
@@ -96,7 +96,7 @@ const navigation = {
 		{
 			name: "LinkedIn",
 			href: "#",
-			icon: (props) => (
+			icon: (props: any) => (
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					viewBox="0 0 448 512"
