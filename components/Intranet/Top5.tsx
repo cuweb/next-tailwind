@@ -71,9 +71,9 @@ function classNames(...classes: any) {
 export default function Top5() {
   return (
     <>
-      <section className="space-y-6 rounded-lg shadow lg:col-span-2 lg:col-start-1">
-        <div className="overflow-hidden bg-white">
-          <div className="border-b bg-gray-50 px-4 py-6">
+      <section className="space-y-6 rounded-lg bg-white shadow lg:col-span-2 lg:col-start-1">
+        <div className="overflow-hidden ">
+          <div className="rounded-t-lg border-b bg-gray-50 px-4 py-6">
             <h2
               id="applicant-information-title"
               className="text-medium font-bold leading-6 text-gray-900"

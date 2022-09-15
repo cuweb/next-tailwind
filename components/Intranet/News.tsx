@@ -26,9 +26,9 @@ function classNames(...classes: any) {
 
 export default function News() {
   return (
-    <section className="space-y-6 rounded-lg shadow lg:col-span-1 lg:col-start-3">
-      <div className="overflow-hidden bg-white">
-        <div className="border-b bg-gray-50 px-4 py-6">
+    <section className="bg-whiteshadow space-y-6 rounded-lg bg-white lg:col-span-1 lg:col-start-3">
+      <div className="overflow-hidden ">
+        <div className="rounded-t-lg border-b bg-gray-50 px-4 py-6">
           <h2
             id="applicant-information-title"
             className="text-medium font-bold leading-6 text-gray-900"

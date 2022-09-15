@@ -15,21 +15,22 @@ const Intranet: NextPage = () => {
         <title>Dashboard - Intranet | Carleton University </title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <div className="relative bg-gray-300">
+        <Navbar />
+        <Profile />
 
-      <Navbar />
-      <Profile />
+        <div className="mx-auto mt-8 grid max-w-3xl grid-cols-1 gap-6 sm:px-6 lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-3">
+          <Top5 />
+          <News />
+        </div>
 
-      <div className="mx-auto mt-8 grid max-w-3xl grid-cols-1 gap-6 sm:px-6 lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-3">
-        <Top5 />
-        <News />
+        <div className="mx-auto mt-8 grid max-w-3xl grid-cols-1 gap-6 sm:px-6 lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-3">
+          <Events />
+          <News />
+        </div>
+
+        <FooterCurrent />
       </div>
-
-      <div className="mx-auto mt-8 grid max-w-3xl grid-cols-1 gap-6 sm:px-6 lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-3">
-        <Events />
-        <News />
-      </div>
-
-      <FooterCurrent />
     </>
   );
 };

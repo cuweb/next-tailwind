@@ -12,13 +12,15 @@ const IntranetCareer: NextPage = () => {
         <title>Career - Intranet | Carleton University </title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navbar />
-      <Profile />
-      <div className="mx-auto mt-8 grid max-w-3xl grid-cols-1 gap-6 sm:px-6 lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-4">
-        <Jobs />
-        <Jobs />
+      <div className="relative bg-gray-300">
+        <Navbar />
+        <Profile />
+        <div className="mx-auto mt-8 grid max-w-3xl grid-cols-1 gap-6 sm:px-6 lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-4">
+          <Jobs />
+          <Jobs />
+        </div>
+        <FooterCurrent />
       </div>
-      <FooterCurrent />
     </>
   );
 };
