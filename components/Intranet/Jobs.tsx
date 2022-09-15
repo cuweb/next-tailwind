@@ -10,7 +10,7 @@ const positions = [
   {
     id: 1,
     title: 'Back End Developer',
-    type: 'Full-time',
+    type: 'Student Services',
     location: 'Remote',
     department: 'Engineering',
     closeDate: '2020-01-07',
@@ -19,7 +19,7 @@ const positions = [
   {
     id: 2,
     title: 'Front End Developer',
-    type: 'Full-time',
+    type: 'Student Services',
     location: 'Remote',
     department: 'Engineering',
     closeDate: '2020-01-07',
@@ -28,7 +28,7 @@ const positions = [
   {
     id: 3,
     title: 'User Interface Designer',
-    type: 'Full-time',
+    type: 'Student Services',
     location: 'Remote',
     department: 'Design',
     closeDate: '2020-01-14',
@@ -37,7 +37,7 @@ const positions = [
   {
     id: 4,
     title: 'Back End Developer',
-    type: 'Full-time',
+    type: 'Student Services',
     location: 'Remote',
     department: 'Engineering',
     closeDate: '2020-01-07',
@@ -46,7 +46,7 @@ const positions = [
   {
     id: 5,
     title: 'Front End Developer',
-    type: 'Full-time',
+    type: 'Student Services',
     location: 'Remote',
     department: 'Engineering',
     closeDate: '2020-01-07',
@@ -55,7 +55,7 @@ const positions = [
   {
     id: 6,
     title: 'User Interface Designer',
-    type: 'Full-time',
+    type: 'Student Services',
     location: 'Remote',
     department: 'Design',
     closeDate: '2020-01-14',
@@ -85,7 +85,7 @@ export default function Jobs() {
               <a href="#" className="block hover:bg-gray-50">
                 <div className="px-6 py-6">
                   <div className="flex items-center justify-between">
-                    <p className="text-medium truncate font-medium text-cu-black-900">
+                    <p className="text-small truncate text-cu-black-900">
                       {position.title}
                     </p>
                     <div className="ml-2 flex flex-shrink-0">
@@ -96,31 +96,17 @@ export default function Jobs() {
                   </div>
                   <div className="mt-2 sm:flex sm:justify-between">
                     <div className="sm:flex">
-                      <p className="flex items-center text-sm text-gray-500">
-                        <UsersIcon
+                      <p className="flex items-center text-xs text-gray-500">
+                        <CalendarIcon
                           className="mr-1.5 h-5 w-5 flex-shrink-0 text-cu-red"
                           aria-hidden="true"
                         />
-                        {position.department}
-                      </p>
-                      <p className="mt-2 flex items-center text-sm text-gray-500 sm:mt-0 sm:ml-6">
-                        <MapPinIcon
-                          className="mr-1.5 h-5 w-5 flex-shrink-0 text-cu-red"
-                          aria-hidden="true"
-                        />
-                        {position.location}
-                      </p>
-                    </div>
-                    <div className="mt-2 flex items-center text-sm text-gray-500 sm:mt-0">
-                      <CalendarIcon
-                        className="mr-1.5 h-5 w-5 flex-shrink-0 text-cu-red"
-                        aria-hidden="true"
-                      />
-                      <p>
-                        Closing on{' '}
-                        <time dateTime={position.closeDate}>
-                          {position.closeDateFull}
-                        </time>
+                        <p>
+                          Closes{' '}
+                          <time dateTime={position.closeDate}>
+                            {position.closeDateFull}
+                          </time>
+                        </p>
                       </p>
                     </div>
                   </div>
