@@ -85,7 +85,7 @@ export default function Jobs() {
               <a href="#" className="block hover:bg-gray-50">
                 <div className="px-6 py-6">
                   <div className="flex items-center justify-between">
-                    <p className="text-small truncate text-cu-black-900">
+                    <p className="truncate text-sm text-cu-black-900">
                       {position.title}
                     </p>
                     <div className="ml-2 flex flex-shrink-0">
@@ -101,12 +101,10 @@ export default function Jobs() {
                           className="mr-1.5 h-5 w-5 flex-shrink-0 text-cu-red"
                           aria-hidden="true"
                         />
-                        <p>
-                          Closes{' '}
-                          <time dateTime={position.closeDate}>
-                            {position.closeDateFull}
-                          </time>
-                        </p>
+                        Closes&nbsp;{''}
+                        <time dateTime={position.closeDate}>
+                          {position.closeDateFull}
+                        </time>
                       </p>
                     </div>
                   </div>
