@@ -119,7 +119,7 @@ const navigation = {
 const FooterCurrent = () => {
   return (
     <footer
-      className="bg-cu-black-900 bg-[url('https://carleton.ca/assets/waves.svg')] bg-[length:100%] bg-bottom bg-no-repeat pb-20"
+      className="mt-20 bg-cu-black-900 bg-[url('https://carleton.ca/assets/waves.svg')] bg-[length:100%] bg-bottom bg-no-repeat pb-20"
       aria-labelledby="footer-heading"
     >
       <h2 id="footer-heading" className="sr-only">
