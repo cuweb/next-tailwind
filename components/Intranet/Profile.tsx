@@ -91,7 +91,7 @@ export default function Example() {
   const [selected, setSelected] = useState(publishingOptions[0]);
 
   return (
-    <div className="min-h-full">
+    <>
       {/* Page heading */}
       <header className="bg-gray-50 py-8">
       <div className="mx-auto max-w-3xl px-4 sm:px-6 md:flex md:items-center md:justify-between md:space-x-5 lg:max-w-7xl lg:px-8">
@@ -139,6 +139,6 @@ export default function Example() {
       </div>
       </header>
       {/* Page header */}
-    </div>
+    </>
   );
 }

@@ -1,11 +1,11 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 
-const Error500: NextPage = () => {
+const Error404: NextPage = () => {
   return (
     <>
       <Head>
-        <title>500 - Server Error | Carleton University </title>
+        <title>404 - Page Not Found | Carleton University </title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="flex min-h-full flex-col bg-white pt-16 pb-12">
@@ -15,16 +15,16 @@ const Error500: NextPage = () => {
               <span className="sr-only">Carleton University</span>
               <img
                 className="h-12 w-auto"
-                src="/cu-shield.svg"
+                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
                 alt=""
               />
             </a>
           </div>
           <div className="py-16">
             <div className="text-center">
-              <p className="text-base font-semibold text-cu-red">500</p>
+              <p className="text-base font-semibold text-cu-red">404</p>
               <h1 className="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
-                Server Error.
+                Page not found.
               </h1>
               <p className="mt-2 text-base text-gray-500">
                 Sorry, we couldn’t find the page you’re looking for.
@@ -70,4 +70,4 @@ const Error500: NextPage = () => {
   );
 };
 
-export default Error500;
+export default Error404;
