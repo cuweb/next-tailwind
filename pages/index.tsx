@@ -18,6 +18,20 @@ const Home: NextPage = () => {
 
         <div className="mt-6 flex max-w-4xl flex-wrap items-center justify-around sm:w-full">
           <a
+            href="/intranet"
+            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-cu-red  "
+          >
+            <h3 className="text-2xl font-bold">Intranet &rarr;</h3>
+            <p className="mt-4 text-xl">Intranet wireframe</p>
+          </a>
+          <a
+            href="/event-calendar"
+            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-cu-red  "
+          >
+            <h3 className="text-2xl font-bold">Events Calendar &rarr;</h3>
+            <p className="mt-4 text-xl">Events calendar Wireframe</p>
+          </a>
+          <a
             href="/demo"
             className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-cu-red "
           >
@@ -33,13 +47,6 @@ const Home: NextPage = () => {
             <p className="mt-4 text-xl">
               setting panel for all the projects demo
             </p>
-          </a>
-          <a
-            href="/intranet"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-cu-red  "
-          >
-            <h3 className="text-2xl font-bold">Intranet &rarr;</h3>
-            <p className="mt-4 text-xl">Intranet wireframe</p>
           </a>
         </div>
       </main>

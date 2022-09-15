@@ -1,11 +1,11 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 
-import Navbar from "../../components/Navbar/Navbar";
 import Profile from "../../components/Intranet/Profile";
 import Events from "../../components/Intranet/Events";
 import News from "../../components/Intranet/News";
 import FooterCurrent from "../../components/Footer/FooterCurrent";
+import Navbar from "../../components/Intranet/Navbar";
 
 const Intranet: NextPage = () => {
   return (
