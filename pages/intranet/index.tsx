@@ -9,6 +9,7 @@ import Files from '../../components/Intranet/Files';
 import Top5 from '../../components/Intranet/Top5';
 import Bookmarks from '../../components/Intranet/Bookmarks';
 import FooterIntranet from '../../components/Footer/FooterIntranet';
+import Marketplace from '../../components/Intranet/Marketplace';
 
 const Intranet: NextPage = () => {
   return (
@@ -32,9 +33,9 @@ const Intranet: NextPage = () => {
           <News />
         </div>
 
-        <div className="mx-auto mt-8 grid max-w-3xl grid-cols-1 gap-6 sm:px-6 lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-3">
+        <div className="mx-auto mt-8 grid max-w-3xl grid-cols-1 gap-6 sm:px-6 lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-4">
           <Events />
-          <News />
+          <Marketplace />
         </div>
 
         <FooterIntranet />
