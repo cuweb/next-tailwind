@@ -9,7 +9,7 @@ const navigation = {
 		{ name: "Virtual Tours", href: "#" },
 		{ name: "Initiatives", href: "#" },
 	],
-	Students: [
+	Academics: [
 		{ name: "Support Services", href: "#" },
 		{ name: "Schedules & Dates", href: "#" },
 		{ name: "Bightspace", href: "#" },
@@ -27,7 +27,7 @@ const navigation = {
 		{ name: "Directions", href: "#" },
 		{ name: "Events", href: "#" },
 	],
-	Raven: [
+	Advancement: [
 		{ name: "Giving to Carleton", href: "#" },
 		{ name: "Athletics & Recreation", href: "#" },
 		{ name: "Go Ravens", href: "#" },
@@ -35,6 +35,11 @@ const navigation = {
 		{ name: "Giving to Carleton", href: "#" },
 		{ name: "Athletics & Recreation", href: "#" },
 		{ name: "Go Ravens", href: "#" },
+	],
+	Ravens: [
+		{ name: "Athletics & Recreation", href: "#" },
+		{ name: "GoRavens Varsity", href: "#" },
+		{ name: "Athletics & Recreation", href: "#" },
 	],
 	social: [
 		{
@@ -110,137 +115,158 @@ const navigation = {
 	],
 };
 
-export default function Footer() {
+export default function FooterStandard() {
 	return (
-		<footer className="bg-cu-black-900" aria-labelledby="footer-heading">
+		<footer
+			className="bg-cu-black-900 bg-[url('https://carleton.ca/assets/waves.svg')] bg-[length:100%] bg-bottom bg-no-repeat"
+			aria-labelledby="footer-heading"
+		>
 			<h2 id="footer-heading" className="sr-only">
 				Footer
 			</h2>
-			<div className="px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:py-16 lg:px-8">
-				<div className="xl:grid xl:grid-cols-3 xl:gap-8">
-					<div className="space-y-8 xl:col-span-1">
-						<img
-							className="h-20"
-							src="/cu-logo-left-white-outline.svg"
-							alt="Carleton University"
-						/>
-						<p className="pl-[5.25rem] text-base text-gray-300">
-							1125 Colonel By Drive
-							<br />
-							Ottawa, ON, K1S 5B6, Canada
-							<br />
-							Phone: 1-613-520-2600
-						</p>
-						<div className="flex space-x-6 pl-[5.25rem]">
-							{navigation.social.map((item) => (
+
+			<div className="hidden gap-4 px-4 py-12 mx-auto text-white border-b max-w-7xl border-cu-black-700 sm:px-6 lg:grid lg:grid-cols-5 lg:px-8">
+				<div className="uppercase">
+					<h3 className="mb-3 text-base font-bold">Admissions</h3>
+					<ul>
+						{navigation.Admissions.map((item) => (
+							<li key={item.name} className="mt-3 text-sm">
 								<a
-									key={item.name}
 									href={item.href}
-									className="text-gray-200 hover:text-cu-red"
+									className="text-cu-black-300 hover:text-white"
 								>
-									<span className="sr-only">{item.name}</span>
-									<item.icon
-										className="w-6 h-6"
-										aria-hidden="true"
-									/>
+									{item.name}
 								</a>
-							))}
-						</div>
-					</div>
-					<div className="grid grid-cols-2 gap-8 mt-12 xl:col-span-2 xl:mt-0">
-						<div className="md:grid md:grid-cols-2 md:gap-8">
-							<div>
-								<h3 className="text-base font-medium text-white">
-									Admissions
-								</h3>
-								<ul role="list" className="mt-2 space-y-2">
-									{navigation.Admissions.map((item) => (
-										<li key={item.name}>
-											<a
-												href={item.href}
-												className="text-base text-gray-400 hover:text-white"
-											>
-												{item.name}
-											</a>
-										</li>
-									))}
-								</ul>
-							</div>
-							<div className="mt-12 md:mt-0">
-								<h3 className="text-base font-medium text-white">
-									Students
-								</h3>
-								<ul role="list" className="mt-2 space-y-2">
-									{navigation.Students.map((item) => (
-										<li key={item.name}>
-											<a
-												href={item.href}
-												className="text-base text-gray-400 hover:text-white"
-											>
-												{item.name}
-											</a>
-										</li>
-									))}
-								</ul>
-							</div>
-						</div>
-						<div className="md:grid md:grid-cols-2 md:gap-8">
-							<div>
-								<h3 className="text-base font-medium text-white">
-									Campus
-								</h3>
-								<ul role="list" className="mt-2 space-y-2">
-									{navigation.Campus.map((item) => (
-										<li key={item.name}>
-											<a
-												href={item.href}
-												className="text-base text-gray-400 hover:text-white"
-											>
-												{item.name}
-											</a>
-										</li>
-									))}
-								</ul>
-							</div>
-							<div className="mt-12 md:mt-0">
-								<h3 className="text-base font-medium text-white">
-									Raven 4 Life
-								</h3>
-								<ul role="list" className="mt-2 space-y-2">
-									{navigation.Raven.map((item) => (
-										<li key={item.name}>
-											<a
-												href={item.href}
-												className="text-base text-gray-400 hover:text-white"
-											>
-												{item.name}
-											</a>
-										</li>
-									))}
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div className="pt-8 mt-12 border-t border-gray-700">
-					<ul className="flex justify-end text-base text-center text-gray-400 ">
-						<li className="pl-4 text-sm">
-							<a href="#" className="hover:text-white">
-								Privacy Policy
-							</a>
-						</li>
-						<li className="pl-4 text-sm">
-							<a href="#" className="hover:text-white">
-								Accessibility
-							</a>
-						</li>
-						<li className="pl-4 text-sm">
-							<a href="#" className="hover:text-white">
-								&copy; Copyright 2022
-							</a>
-						</li>
+							</li>
+						))}
 					</ul>
 				</div>
+				<div className="uppercase">
+					<h3 className="mb-3 text-base font-bold">Academics</h3>
+					<ul>
+						{navigation.Academics.map((item) => (
+							<li key={item.name} className="mt-3 text-sm">
+								<a
+									href={item.href}
+									className="text-gray-400 hover:text-white"
+								>
+									{item.name}
+								</a>
+							</li>
+						))}
+					</ul>
+				</div>
+				<div className="uppercase">
+					<h3 className="mb-3 text-base font-bold">Campus</h3>
+					<ul>
+						{navigation.Campus.map((item) => (
+							<li key={item.name} className="mt-3 text-sm">
+								<a
+									href={item.href}
+									className="text-gray-400 hover:text-white"
+								>
+									{item.name}
+								</a>
+							</li>
+						))}
+					</ul>
+				</div>
+				<div className="uppercase">
+					<h3 className="mb-3 text-base font-bold">Advancement</h3>
+					<ul>
+						{navigation.Advancement.map((item) => (
+							<li key={item.name} className="mt-3 text-sm">
+								<a
+									href={item.href}
+									className="text-gray-400 hover:text-white"
+								>
+									{item.name}
+								</a>
+							</li>
+						))}
+					</ul>
+				</div>
+				<div className="uppercase">
+					<h3 className="mb-3 text-base font-bold">Ravens</h3>
+					<ul>
+						{navigation.Ravens.map((item) => (
+							<li key={item.name} className="mt-3 text-sm">
+								<a
+									href={item.href}
+									className="text-gray-400 hover:text-white"
+								>
+									{item.name}
+								</a>
+							</li>
+						))}
+					</ul>
+					<a href="#" className="w-12 h-auto">
+						<img
+							className="w-12 h-auto mt-8"
+							src="/ravens-footer.svg"
+							alt="Carleton"
+						/>
+					</a>
+				</div>
+			</div>
+
+			<div className="flex flex-col gap-4 px-8 pt-8 pb-12 mx-auto max-w-7xl text-cu-black-300 lg:grid-cols-3 lg:flex-row lg:justify-between lg:pb-8">
+				<p className="text-lg text-center">
+					Call{" "}
+					<a href="#" className="text-white hover:text-cu-red">
+						1-613-520-2600
+					</a>{" "}
+					or{" "}
+					<a href="#" className="text-white hover:text-cu-red">
+						contact us
+					</a>{" "}
+					today!
+				</p>
+				<ul className="flex justify-center space-x-6 lg:justify-end">
+					{navigation.social.map((item) => (
+						<li>
+							<a
+								key={item.name}
+								href={item.href}
+								className="text-gray-200 hover:text-cu-red"
+							>
+								<span className="sr-only">{item.name}</span>
+								<item.icon
+									className="w-8 h-8"
+									aria-hidden="true"
+								/>
+							</a>
+						</li>
+					))}
+				</ul>
+			</div>
+
+			<div className="grid justify-center px-8 mx-auto text-base text-center max-w-7xl pb-36 lg:pb-44">
+				<img
+					className="w-auto mx-auto mb-6 h-44"
+					src="/cu-logo-stacked-white-outline.svg"
+					alt="Carleton"
+				/>
+				<p className="mb-3 text-center text-white">
+					1125 Colonel By Drive, Ottawa, ON, K1S 5B6, Canada
+				</p>
+				<ul className="flex justify-center text-gray-400">
+					<li className="px-4">
+						<a href="#" className="hover:text-white">
+							Privacy Policy
+						</a>
+					</li>
+					<li className="px-4">
+						<a href="#" className="hover:text-white">
+							Accessibility
+						</a>
+					</li>
+					<li className="px-4">
+						<a href="#" className="hover:text-white">
+							&copy; Copyright 2022
+						</a>
+					</li>
+				</ul>
 			</div>
 		</footer>
 	);
