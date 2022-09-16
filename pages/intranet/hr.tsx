@@ -1,12 +1,10 @@
-import type { NextPage } from 'next';
-import Head from 'next/head';
-import FooterIntranet from '../../components/Footer/FooterIntranet';
-import Navbar from '../../components/Intranet/Navbar';
-import Panel from '../../components/Intranet/Panel';
-import Profile from '../../components/Intranet/Profile';
-import Stats from '../../components/Intranet/Stats';
-
-import Table from '../../components/Intranet/Table';
+import type { NextPage } from "next";
+import Head from "next/head";
+import FooterIntranet from "../../components/Footer/FooterIntranet";
+import Files from "../../components/Intranet/Files";
+import Navbar from "../../components/Intranet/Navbar";
+import Profile from "../../components/Intranet/Profile";
+import Table from "../../components/Intranet/Table";
 
 const IntranetHR: NextPage = () => {
   return (
@@ -24,15 +22,15 @@ const IntranetHR: NextPage = () => {
           </h1>
         </div>
 
-        <div className="mx-auto grid max-w-3xl grid-cols-1 gap-6 sm:px-6 lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2">
-          <Panel title="Pay Forms" />
-          <Panel title="Benefits" />
+        <div className="mx-auto mt-6 grid max-w-3xl grid-cols-1 gap-6 sm:px-6 lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2">
+          <Files title="Pay Forms" />
+          <Files title="Benefits" />
         </div>
 
-        <div className="mx-auto mt-1 grid max-w-3xl grid-cols-1 gap-6 sm:px-6 lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-3">
-          <Panel title="HR Link" />
-          <Panel title="Pension Statement" />
-          <Panel title="Quebec Tax form" />
+        <div className="mx-auto mt-1 grid max-w-3xl grid-cols-1 gap-6 pt-6 sm:px-6 lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-3">
+          <Files title="HR Link" />
+          <Files title="Pension Statement" />
+          <Files title="Quebec Tax form" />
         </div>
         <div className="mx-auto mt-6 grid max-w-3xl grid-cols-1 gap-6 sm:px-6 lg:max-w-7xl ">
           <Table />

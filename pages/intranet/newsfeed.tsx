@@ -1,14 +1,11 @@
-import type { NextPage } from 'next';
-import Head from 'next/head';
-
-import Profile from '../../components/Intranet/Profile';
-import FooterIntranet from '../../components/Footer/FooterIntranet';
-import Navbar from '../../components/Intranet/Navbar';
-import Events from '../../components/Intranet/Events';
-import News from '../../components/Intranet/News';
-import Bookmarks from '../../components/Intranet/Bookmarks';
-import Top5 from '../../components/Intranet/Top5';
-import NewsFullwidth from '../../components/Intranet/NewsFullwidth';
+import type { NextPage } from "next";
+import Head from "next/head";
+import Profile from "../../components/Intranet/Profile";
+import FooterIntranet from "../../components/Footer/FooterIntranet";
+import Navbar from "../../components/Intranet/Navbar";
+import Events from "../../components/Intranet/Events";
+import News from "../../components/Intranet/News";
+import Bookmarks from "../../components/Intranet/Bookmarks";
 
 const IntranetNewsFeed: NextPage = () => {
   return (
@@ -29,7 +26,7 @@ const IntranetNewsFeed: NextPage = () => {
           <Events />
         </div>
         <div className="mx-auto mt-8 grid max-w-3xl grid-cols-1 gap-6 sm:px-6 lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2">
-          <NewsFullwidth />
+          <News />
           <Bookmarks />
         </div>
         <FooterIntranet />

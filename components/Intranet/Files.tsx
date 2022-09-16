@@ -1,67 +1,76 @@
 /* This example requires Tailwind CSS v2.0+ */
-import { ClockIcon, ChevronRightIcon } from '@heroicons/react/20/solid';
+import { ClockIcon, ChevronRightIcon } from "@heroicons/react/20/solid";
 
-import { DocumentChartBarIcon } from '@heroicons/react/24/outline';
+import { DocumentChartBarIcon } from "@heroicons/react/24/outline";
 
 const stuff = [
   {
-    name: 'Monthly Leave Report',
-    href: '#',
-    preview: '175KB  ',
-    handle: '10-05-2022',
-    location: '405 Robertson Hall',
-    dateFull: 'January 7, 2020',
-    time: '2:00 PM',
+    name: "Monthly Leave Report",
+    href: "#",
+    preview: "175KB  ",
+    handle: "10-05-2022",
+    location: "405 Robertson Hall",
+    dateFull: "January 7, 2020",
+    time: "2:00 PM",
     imageUrl:
-      'https://images.unsplash.com/photo-1507878866276-a947ef722fee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2342&q=80',
+      "https://images.unsplash.com/photo-1507878866276-a947ef722fee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2342&q=80",
   },
   {
-    name: 'Dental Claim Form',
-    preview: '175KB  ',
-    handle: '10-05-2022',
-    href: '#',
-    location: '405 Robertson Hall',
-    time: '2:00 PM',
-    dateFull: 'January 7, 2020',
+    name: "Dental Claim Form",
+    preview: "175KB  ",
+    handle: "10-05-2022",
+    href: "#",
+    location: "405 Robertson Hall",
+    time: "2:00 PM",
+    dateFull: "January 7, 2020",
     imageUrl:
-      'https://images.unsplash.com/photo-1591115765373-5207764f72e7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80',
+      "https://images.unsplash.com/photo-1591115765373-5207764f72e7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80",
   },
   {
-    name: 'Healthcare Expenses Statement',
-    preview: '175KB  ',
-    handle: '10-05-2022',
-    dateFull: 'January 7, 2020',
-    href: '#',
-    location: '405 Robertson Hall',
-    time: '2:00 PM',
+    name: "Healthcare Expenses Statement",
+    preview: "175KB  ",
+    handle: "10-05-2022",
+    dateFull: "January 7, 2020",
+    href: "#",
+    location: "405 Robertson Hall",
+    time: "2:00 PM",
     imageUrl:
-      'https://images.unsplash.com/photo-1550305080-4e029753abcf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2342&q=80',
+      "https://images.unsplash.com/photo-1550305080-4e029753abcf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2342&q=80",
   },
   {
-    name: 'CUPE 3778 Collective Agreement',
-    preview: '175KB  ',
-    handle: '10-05-2022',
-    dateFull: 'January 7, 2020',
-    href: '#',
-    location: '405 Robertson Hall',
-    time: '2:00 PM',
+    name: "CUPE 3778 Collective Agreement",
+    preview: "175KB  ",
+    handle: "10-05-2022",
+    dateFull: "January 7, 2020",
+    href: "#",
+    location: "405 Robertson Hall",
+    time: "2:00 PM",
     imageUrl:
-      'https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80',
+      "https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80",
   },
   {
-    name: 'Accident Report',
-    preview: '175KB  ',
-    handle: '10-05-2022',
-    href: '#',
-    location: '405 Robertson Hall',
-    time: '2:00 PM',
-    dateFull: 'January 7, 2020',
+    name: "Accident Report",
+    preview: "175KB  ",
+    handle: "10-05-2022",
+    href: "#",
+    location: "405 Robertson Hall",
+    time: "2:00 PM",
+    dateFull: "January 7, 2020",
     imageUrl:
-      'https://images.unsplash.com/photo-1507878866276-a947ef722fee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2342&q=80',
+      "https://images.unsplash.com/photo-1507878866276-a947ef722fee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2342&q=80",
   },
 ];
 
-export default function Files() {
+export interface FilesProps {
+  className?: string;
+  title?: string;
+}
+
+const Files: React.FC<FilesProps> = (props): JSX.Element => {
+  const { title, className } = props;
+
+  const panelTitle = title ? title : " Panel Title";
+
   return (
     <>
       <section className="space-y-6 bg-white shadow sm:rounded-lg lg:col-span-1">
@@ -71,7 +80,7 @@ export default function Files() {
               id="applicant-information-title"
               className="text-medium font-bold leading-6 text-gray-900"
             >
-              Your Files
+              {panelTitle}
             </h2>
           </div>
           <div>
@@ -140,4 +149,6 @@ export default function Files() {
       </section>
     </>
   );
-}
+};
+
+export default Files;
