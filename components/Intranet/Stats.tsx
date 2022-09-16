@@ -1,24 +1,25 @@
 /* This example requires Tailwind CSS v2.0+ */
 const stats = [
-  { name: "Total Subscribers", stat: "71,897" },
-  { name: "Avg. Open Rate", stat: "58.16%" },
-  { name: "Avg. Click Rate", stat: "24.57%" },
+  { name: 'Beginning Balance', stat: '23.96' },
+  { name: 'Earned', stat: '1.83' },
+  { name: 'Taken', stat: '0' },
+  { name: 'Balance', stat: '25.79' },
 ];
 
 export default function Stats() {
   return (
-    <div className="py-6">
-      <dl className="mt-5 grid grid-cols-1 gap-8 sm:grid-cols-3">
+    <div className="py-4">
+      <dl className="mt-5 grid grid-cols-2 gap-8 lg:grid-cols-4">
         {stats.map((item) => (
           <div
             key={item.name}
-            className="overflow-hidden rounded-lg bg-white px-4 py-5 shadow sm:p-6 "
+            className="overflow-hidden rounded-lg bg-white px-4 py-5 text-center shadow sm:p-6 "
           >
-            <dt className="truncate text-sm font-medium text-gray-500">
-              {item.name}
-            </dt>
-            <dd className="mt-1 text-3xl font-semibold tracking-tight text-gray-900">
+            <dt className="truncate text-4xl font-bold tracking-tight text-cu-black-900">
               {item.stat}
+            </dt>
+            <dd className="text-small mt-1 text-xs text-gray-500">
+              {item.name}
             </dd>
           </div>
         ))}

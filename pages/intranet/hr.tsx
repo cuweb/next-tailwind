@@ -1,12 +1,12 @@
-import type { NextPage } from "next";
-import Head from "next/head";
-import FooterIntranet from "../../components/Footer/FooterIntranet";
-import Navbar from "../../components/Intranet/Navbar";
-import Panel from "../../components/Intranet/Panel";
-import Profile from "../../components/Intranet/Profile";
-import Stats from "../../components/Intranet/Stats";
+import type { NextPage } from 'next';
+import Head from 'next/head';
+import FooterIntranet from '../../components/Footer/FooterIntranet';
+import Navbar from '../../components/Intranet/Navbar';
+import Panel from '../../components/Intranet/Panel';
+import Profile from '../../components/Intranet/Profile';
+import Stats from '../../components/Intranet/Stats';
 
-import Table from "../../components/Intranet/Table";
+import Table from '../../components/Intranet/Table';
 
 const IntranetHR: NextPage = () => {
   return (
@@ -31,7 +31,6 @@ const IntranetHR: NextPage = () => {
         </div>
         <div className="mx-auto mt-8 grid max-w-3xl grid-cols-1 gap-6 sm:px-6 lg:max-w-7xl ">
           <Table />
-          <Stats />
         </div>
         <FooterIntranet />
       </div>
