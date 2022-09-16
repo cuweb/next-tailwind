@@ -5,8 +5,8 @@ import Navbar from '../../components/Navbar/Navbar';
 import Profile from '../../components/Intranet/Profile';
 import News from '../../components/Intranet/News';
 import Top5 from '../../components/Intranet/Top5';
-import FooterCurrent from '../../components/Footer/FooterCurrent';
 import Toast from '../../components/Intranet/Toast';
+import FooterIntranet from '../../components/Footer/FooterIntranet';
 
 const Intranet: NextPage = () => {
   return (
@@ -24,7 +24,7 @@ const Intranet: NextPage = () => {
           <News />
         </div>
 
-        <FooterCurrent />
+        <FooterIntranet />
         <Toast />
       </div>
     </>

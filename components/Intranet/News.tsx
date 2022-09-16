@@ -42,7 +42,7 @@ export default function News() {
               {announcements.map((announcement) => (
                 <li key={announcement.id} className="px-6 py-6">
                   <div className="relative focus-within:ring-2 focus-within:ring-indigo-500">
-                    <h3 className="text-medium font-semibold text-gray-800">
+                    <h3 className="text-medium font-semibold text-cu-black-900">
                       <a
                         href="#"
                         className="hover:underline focus:outline-none"
@@ -52,7 +52,7 @@ export default function News() {
                         {announcement.title}
                       </a>
                     </h3>
-                    <p className="line-clamp-2 mt-2 text-sm text-gray-600">
+                    <p className="line-clamp-2 mt-2 text-sm text-gray-500">
                       {announcement.preview}
                     </p>
                   </div>

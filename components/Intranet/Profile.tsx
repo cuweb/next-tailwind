@@ -113,7 +113,12 @@ export default function Example() {
               </div>
             </div>
             <div>
-              <h1 className="text-2xl font-bold text-gray-900">Human Person</h1>
+              <h1 className="text-2xl font-bold text-gray-900">
+                Human Person{' '}
+                <span className="text-lg font-light text-gray-500">
+                  (She/Her)
+                </span>
+              </h1>
               <div className="mt-1 flex flex-col sm:mt-0 sm:flex-row sm:flex-wrap sm:space-x-6">
                 <div className="mt-2 flex items-center text-sm text-gray-500">
                   <BriefcaseIcon

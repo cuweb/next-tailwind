@@ -1,8 +1,8 @@
-import type { NextPage } from "next";
-import Head from "next/head";
-import FooterCurrent from "../../components/Footer/FooterCurrent";
-import Navbar from "../../components/Navbar/Navbar";
-import Profile from "../../components/Intranet/Profile";
+import type { NextPage } from 'next';
+import Head from 'next/head';
+import FooterIntranet from '../../components/Footer/FooterIntranet';
+import Navbar from '../../components/Navbar/Navbar';
+import Profile from '../../components/Intranet/Profile';
 
 const IntranetHR: NextPage = () => {
   return (
@@ -13,7 +13,7 @@ const IntranetHR: NextPage = () => {
       </Head>
       <Navbar />
       <Profile />
-      <FooterCurrent />
+      <FooterIntranet />
     </>
   );
 };
