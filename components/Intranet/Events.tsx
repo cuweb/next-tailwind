@@ -80,7 +80,7 @@ export default function Events() {
             {people.map((people) => (
               <li key={people.name}>
                 <a href={people.href} className="block hover:bg-gray-50">
-                  <div className="flex items-center px-4 py-4 sm:px-6">
+                  <div className="flex items-center px-4 py-6">
                     <div className="flex min-w-0 flex-1 sm:items-center">
                       <div className="flex h-20 w-20 flex-col justify-center rounded-2xl bg-gray-50 text-center shadow">
                         <p className="text-xs font-bold uppercase text-cu-red">
@@ -96,7 +96,7 @@ export default function Events() {
                           alt=""
                         /> */}
 
-                      <div className="min-w-0 flex-1 px-4 md:grid md:gap-4">
+                      <div className="min-w-0 flex-1 px-6 md:grid md:gap-4">
                         <div>
                           <p className="text-medium mb-2 font-semibold text-gray-800">
                             {people.name}
