@@ -2,34 +2,34 @@
 const announcements = [
   {
     id: 1,
-    title: 'Office closed on July 2nd',
-    category: 'Human Resources',
+    title: "Office closed on July 2nd",
+    category: "Human Resources",
     preview:
-      'Tenetur libero voluptatem rerum occaecati qui est molestiae exercitationem. Voluptate quisquam iure assumenda consequatur ex et recusandae.',
+      "Tenetur libero voluptatem rerum occaecati qui est molestiae exercitationem. Voluptate quisquam iure assumenda consequatur ex et recusandae.",
   },
   {
     id: 2,
-    title: 'New password policy',
-    category: 'Healthy Workplace',
+    title: "New password policy",
+    category: "Healthy Workplace",
     preview:
-      'Tenetur libero voluptatem rerum occaecati qui est molestiae exercitationem. Voluptate quisquam iure assumenda consequatur ex et recusandae.',
+      "Tenetur libero voluptatem rerum occaecati qui est molestiae exercitationem. Voluptate quisquam iure assumenda consequatur ex et recusandae.",
   },
   {
     id: 3,
-    title: 'Office closed on July 2nd',
-    category: 'Potato',
+    title: "Office closed on July 2nd",
+    category: "Potato",
     preview:
-      'Tenetur libero voluptatem rerum occaecati qui est molestiae exercitationem. Voluptate quisquam iure assumenda consequatur ex et recusandae.',
+      "Tenetur libero voluptatem rerum occaecati qui est molestiae exercitationem. Voluptate quisquam iure assumenda consequatur ex et recusandae.",
   },
 ];
 
 function classNames(...classes: any) {
-  return classes.filter(Boolean).join(' ');
+  return classes.filter(Boolean).join(" ");
 }
 
 export default function News() {
   return (
-    <section className="bg-whiteshadow space-y-6 bg-white shadow sm:rounded-lg lg:col-span-1 lg:col-start-3">
+    <section className="bg-whiteshadow space-y-6 bg-white shadow sm:rounded-lg ">
       <div className="overflow-hidden ">
         <div className="rounded-t-lg border-b bg-gray-50 px-4 py-6">
           <h2
