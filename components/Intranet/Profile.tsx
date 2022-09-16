@@ -98,7 +98,7 @@ export default function Example() {
       <header className="relative bg-gray-50 py-12 shadow">
         <GradientDiv />
         <div className="relative mx-auto max-w-3xl px-4 sm:px-6 md:flex md:items-center md:justify-between md:space-x-5 lg:max-w-7xl lg:px-8">
-          <div className="flex items-center space-x-5">
+          <div className="flex space-x-5 md:items-center">
             <div className="flex-shrink-0">
               <div className="relative">
                 <img
@@ -119,7 +119,7 @@ export default function Example() {
                   (She/Her)
                 </span>
               </h1>
-              <div className="mt-1 flex flex-col sm:mt-0 sm:flex-row sm:flex-wrap sm:space-x-6">
+              <div className="mt-1 flex flex-col sm:mt-0 sm:flex-wrap md:flex-row md:space-x-6">
                 <div className="mt-2 flex items-center text-sm text-gray-500">
                   <BriefcaseIcon
                     className="text- mr-1.5 h-5 w-5 flex-shrink-0 text-cu-red"
