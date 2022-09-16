@@ -99,7 +99,7 @@ export default function Events() {
                           <div className="sm:flex">
                             <p className="flex items-center text-sm text-gray-500">
                               <ClockIcon
-                                className="mr-1.5 h-5 w-5 flex-shrink-0 text-cu-red"
+                                className="mr-1.5 h-5 w-5 flex-shrink-0 text-cu-red-light"
                                 aria-hidden="true"
                               />
 
@@ -109,7 +109,7 @@ export default function Events() {
                             </p>
                             <p className="mt-2 flex items-center text-sm text-gray-500 sm:mt-0 sm:ml-4">
                               <MapPinIcon
-                                className="mr-1.5 h-5 w-5 flex-shrink-0 text-cu-red"
+                                className="mr-1.5 h-5 w-5 flex-shrink-0 text-cu-red-light"
                                 aria-hidden="true"
                               />
                               {people.location}

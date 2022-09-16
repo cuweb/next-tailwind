@@ -6,7 +6,7 @@ import Events from "../../components/Intranet/Events";
 import News from "../../components/Intranet/News";
 import Files from "../../components/Intranet/Files";
 import Top5 from "../../components/Intranet/Top5";
-import Bookmarks from "../../components/Intranet/Bookmarks";
+import {Bookmarks, BookmarksEmpty} from "../../components/Intranet/Bookmarks";
 import FooterIntranet from "../../components/Footer/FooterIntranet";
 import Marketplace from "../../components/Intranet/Marketplace";
 import Navbar from "../../components/Intranet/Navbar";
@@ -35,7 +35,7 @@ const Intranet: NextPage = () => {
         <div className="mx-auto mt-8 grid max-w-3xl grid-cols-1 gap-6 sm:px-6 lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-3">
           <Files />
           <Bookmarks />
-          <Files />
+          <BookmarksEmpty />
         </div>
 
         <FooterIntranet />
