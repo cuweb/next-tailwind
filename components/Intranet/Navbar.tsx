@@ -8,6 +8,7 @@ import {
 } from "@heroicons/react/24/outline";
 
 import { LifebuoyIcon } from "@heroicons/react/24/outline";
+import Link from "next/link";
 
 function classNames(...classes: any) {
   return classes.filter(Boolean).join(" ");
@@ -37,24 +38,21 @@ export default function NavBar() {
                 </a>
                 <div className="hidden sm:ml-6 sm:flex sm:space-x-4">
                   {/* Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" */}
-                  <a
-                    href="/intranet/hr"
-                    className="inline-flex items-center border-b-2  px-1 pt-1 text-sm font-medium text-gray-900 hover:text-cu-red"
-                  >
-                    HR
-                  </a>
-                  <a
-                    href="/intranet/career"
-                    className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:text-cu-red"
-                  >
-                    Career
-                  </a>
-                  <a
-                    href="/intranet/newsfeed"
-                    className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:text-cu-red"
-                  >
-                    Community & News
-                  </a>
+                  <Link href="/intranet/hr">
+                    <a className="inline-flex items-center border-b-2  px-1 pt-1 text-sm font-medium text-gray-900 hover:text-cu-red">
+                      HR
+                    </a>
+                  </Link>
+                  <Link href="/intranet/career">
+                    <a className="inline-flex items-center border-b-2  px-1 pt-1 text-sm font-medium text-gray-900 hover:text-cu-red">
+                      Career
+                    </a>
+                  </Link>
+                  <Link href="/intranet/newsfeed">
+                    <a className="inline-flex items-center border-b-2  px-1 pt-1 text-sm font-medium text-gray-900 hover:text-cu-red">
+                      Community & News
+                    </a>
+                  </Link>
                 </div>
               </div>
 
