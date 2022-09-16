@@ -1,4 +1,5 @@
-/* This example requires Tailwind CSS v2.0+ */
+import FooterSwoosh from "./FooterSwoosh";
+
 const navigation = {
 	Admissions: [
 		{ name: "Programs", href: "#" },
@@ -118,7 +119,7 @@ const navigation = {
 export default function FooterStandard() {
 	return (
 		<footer
-			className="bg-cu-black-900 bg-[url('https://carleton.ca/assets/waves.svg')] bg-[length:100%] bg-bottom bg-no-repeat"
+			className="pt-8 bg-cu-black-900"
 			aria-labelledby="footer-heading"
 		>
 			<h2 id="footer-heading" className="sr-only">
@@ -210,29 +211,31 @@ export default function FooterStandard() {
 				</div>
 			</div>
 
-			<div className="flex flex-col gap-4 px-8 pt-8 pb-12 mx-auto max-w-7xl text-cu-black-300 lg:grid-cols-3 lg:flex-row lg:justify-between lg:pb-8">
-				<p className="text-lg text-center">
-					Call{" "}
+			<div className="flex flex-col-reverse gap-4 px-8 pt-8 pb-12 mx-auto text-lg max-w-7xl text-cu-black-300 lg:grid-cols-3 lg:flex-row lg:justify-between lg:pb-8 lg:text-left lg:text-base">
+				<p className="text-center">
+					Contact us by{" "}
 					<a href="#" className="text-white hover:text-cu-red">
-						1-613-520-2600
+						phone
 					</a>{" "}
 					or{" "}
 					<a href="#" className="text-white hover:text-cu-red">
-						contact us
+						email
 					</a>{" "}
-					today!
+					now!
 				</p>
-				<ul className="flex justify-center space-x-6 lg:justify-end">
+				<p className="text-center">
+					1125 Colonel By Drive, Ottawa, ON, K1S 5B6, Canada
+				</p>
+				<ul className="flex justify-center mb-4 space-x-8 lg:mb-0 lg:justify-end">
 					{navigation.social.map((item) => (
-						<li>
+						<li key={item.name}>
 							<a
-								key={item.name}
 								href={item.href}
 								className="text-gray-200 hover:text-cu-red"
 							>
 								<span className="sr-only">{item.name}</span>
 								<item.icon
-									className="w-8 h-8"
+									className="w-10 h-10 lg:h-8 lg:w-8"
 									aria-hidden="true"
 								/>
 							</a>
@@ -241,33 +244,7 @@ export default function FooterStandard() {
 				</ul>
 			</div>
 
-			<div className="grid justify-center px-8 mx-auto text-base text-center max-w-7xl pb-36 lg:pb-44">
-				<img
-					className="w-auto mx-auto mb-6 h-44"
-					src="/cu-logo-stacked-white-outline.svg"
-					alt="Carleton"
-				/>
-				<p className="mb-3 text-center text-white">
-					1125 Colonel By Drive, Ottawa, ON, K1S 5B6, Canada
-				</p>
-				<ul className="flex justify-center text-gray-400">
-					<li className="px-4">
-						<a href="#" className="hover:text-white">
-							Privacy Policy
-						</a>
-					</li>
-					<li className="px-4">
-						<a href="#" className="hover:text-white">
-							Accessibility
-						</a>
-					</li>
-					<li className="px-4">
-						<a href="#" className="hover:text-white">
-							&copy; Copyright 2022
-						</a>
-					</li>
-				</ul>
-			</div>
+			<FooterSwoosh />
 		</footer>
 	);
 }

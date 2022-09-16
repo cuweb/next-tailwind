@@ -18,9 +18,6 @@ const EventCalendar: NextPage = () => {
 			<Spotlight />
 			<Featured />
 			<Footer />
-			<br />
-			<br />
-			<Footer />
 		</>
 	);
 };
