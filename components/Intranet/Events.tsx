@@ -48,11 +48,11 @@ const people = [
       'https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80',
   },
   {
-    name: '80 Years of Carleton University',
+    name: 'Kegger',
     handle: '10-05-2022',
     href: '#',
-    location: '405 Robertson Hall',
-    time: '2:00 PM - 10:00 PM',
+    location: 'Off Campus',
+    time: '9:00 PM - 5:00 AM',
     dateFull: 'January 7, 2020',
     imageUrl:
       'https://images.unsplash.com/photo-1502685104226-ee32379fefbe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
