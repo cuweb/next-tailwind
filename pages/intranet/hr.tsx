@@ -18,8 +18,13 @@ const IntranetHR: NextPage = () => {
       <div className="relative bg-[#f3f3f3]">
         <Navbar />
         <Profile />
+        <div className="mx-auto mt-3 max-w-7xl px-6 py-6">
+          <h1 className="text-cu-black:900 text-2xl font-semibold tracking-tight">
+            Human Resources
+          </h1>
+        </div>
 
-        <div className="mx-auto mt-6 grid max-w-3xl grid-cols-1 gap-6 sm:px-6 lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2">
+        <div className="mx-auto grid max-w-3xl grid-cols-1 gap-6 sm:px-6 lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2">
           <Panel title="Pay Forms" />
           <Panel title="Benefits" />
         </div>
