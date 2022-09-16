@@ -1,7 +1,10 @@
 /* This example requires Tailwind CSS v2.0+ */
 import { ClockIcon, ChevronRightIcon } from "@heroicons/react/20/solid";
 
-import { DocumentChartBarIcon, PlusIcon } from "@heroicons/react/24/outline";
+import {
+  ArrowTopRightOnSquareIcon,
+  PlusIcon,
+} from "@heroicons/react/24/outline";
 
 const stuff = [
   {
@@ -95,13 +98,14 @@ export function Bookmarks() {
                 <li key={people.name}>
                   <a
                     href={people.href}
-                    className="block text-blue-500 hover:bg-gray-50"
+                    className="block text-cu-black-700 hover:bg-gray-50 hover:text-cu-red"
                   >
                     <div className="flex items-center py-6 sm:px-4">
                       <div className="items flex min-w-0 flex-1 lg:items-center">
                         <div className="min-w-0 px-4">
-                          <span className="mb-1 text-sm font-semibold ">
-                            {people.name}
+
+                          <span className="mb-1 text-sm font-semibold inline-flex">
+                          <ArrowTopRightOnSquareIcon className="h-4 w-4 mr-2"/> {people.name}
                           </span>
                         </div>
                       </div>
@@ -136,7 +140,7 @@ export function BookmarksEmpty() {
               Empty Bookmarks
             </h2>
           </div>
-          <div className="text-center my-10">
+          <div className="my-10 text-center">
             <svg
               className="mx-auto h-12 w-12 text-gray-400"
               fill="none"
