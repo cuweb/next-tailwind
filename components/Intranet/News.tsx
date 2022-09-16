@@ -26,7 +26,7 @@ function classNames(...classes: any) {
 
 export default function News() {
   return (
-    <section className="bg-whiteshadow space-y-6 rounded-lg bg-white lg:col-span-1 lg:col-start-3">
+    <section className="bg-whiteshadow space-y-6 bg-white shadow sm:rounded-lg lg:col-span-1 lg:col-start-3">
       <div className="overflow-hidden ">
         <div className="rounded-t-lg border-b bg-gray-50 px-4 py-6">
           <h2

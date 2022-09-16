@@ -69,7 +69,7 @@ function classNames(...classes: any) {
 
 export default function Jobs() {
   return (
-    <section className="space-y-6 rounded-lg bg-white shadow lg:col-span-2">
+    <section className="space-y-6 bg-white shadow sm:rounded-lg lg:col-span-2">
       <div className="overflow-hidden">
         <div className="rounded-t-lg border-b bg-gray-50 px-4 py-6">
           <h2

@@ -15,7 +15,7 @@ const Intranet: NextPage = () => {
         <title>Dashboard - Intranet | Carleton University </title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="relative bg-gray-300">
+      <div className="relative bg-[#f3f3f3]">
         <Navbar />
         <Profile />
 
