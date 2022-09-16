@@ -8,6 +8,7 @@ module.exports = {
     extend: {
       colors: {
         'cu-red': '#E91C24',
+        'cu-red-light': "#f48b8f",
         'cu-black': {
           100: '#e6e6e6',
           200: '#cccccc',

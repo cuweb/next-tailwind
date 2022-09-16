@@ -116,7 +116,7 @@ const navigation = {
   ],
 };
 
-const FooterCurrent = () => {
+const FooterIntranet = () => {
   return (
     <footer
       className="mt-10 bg-cu-black-900 bg-[url('https://carleton.ca/assets/waves.svg')] bg-[length:100%] bg-bottom bg-no-repeat pb-20"
@@ -125,127 +125,7 @@ const FooterCurrent = () => {
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>
-      <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:py-16 lg:px-8">
-        <div className="pb-8 xl:grid xl:grid-cols-5 xl:gap-8">
-          <div className="grid grid-cols-2 gap-8 xl:col-span-4">
-            <div className="md:grid md:grid-cols-2 md:gap-8">
-              <div>
-                <h3 className="text-base font-semibold uppercase tracking-wider text-white">
-                  Admissions
-                </h3>
-                <ul className="mt-3 space-y-3">
-                  {navigation.Admissions.map((item) => (
-                    <li key={item.name}>
-                      <a
-                        href={item.href}
-                        className="text-sm uppercase text-gray-400 hover:text-white"
-                      >
-                        {item.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className="mt-12 md:mt-0">
-                <h3 className="text-base font-semibold uppercase tracking-wider text-white">
-                  Academics
-                </h3>
-                <ul className="mt-3 space-y-3">
-                  {navigation.Academics.map((item) => (
-                    <li key={item.name}>
-                      <a
-                        href={item.href}
-                        className="text-sm uppercase text-gray-400 hover:text-white"
-                      >
-                        {item.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-            <div className="md:grid md:grid-cols-2 md:gap-8">
-              <div>
-                <h3 className="text-base font-semibold uppercase tracking-wider text-white">
-                  Campus
-                </h3>
-                <ul className="mt-3 space-y-3">
-                  {navigation.Campus.map((item) => (
-                    <li key={item.name}>
-                      <a
-                        href={item.href}
-                        className="text-sm uppercase text-gray-400 hover:text-white"
-                      >
-                        {item.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className="mt-12 md:mt-0">
-                <h3 className="text-base font-semibold uppercase tracking-wider text-white">
-                  Advancement
-                </h3>
-                <ul className="mt-3 space-y-3">
-                  {navigation.Advancement.map((item) => (
-                    <li key={item.name}>
-                      <a
-                        href={item.href}
-                        className="text-sm uppercase text-gray-400 hover:text-white"
-                      >
-                        {item.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div className="mt-12 xl:mt-0">
-            <h3 className="text-base font-semibold uppercase tracking-wider text-white">
-              Ravens
-            </h3>
-            <ul className="mt-3 space-y-3">
-              {navigation.Ravens.map((item) => (
-                <li key={item.name}>
-                  <a
-                    href={item.href}
-                    className="text-sm uppercase text-gray-400 hover:text-white"
-                  >
-                    {item.name}
-                  </a>
-                </li>
-              ))}
-            </ul>
-            <div className="mt-10 flex">
-              <div>
-                <img
-                  className="h-20 w-auto"
-                  src="/ravens-footer.svg"
-                  alt="Carleton"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="mt-8 border-t border-gray-700 pt-8 md:flex md:items-center md:justify-between">
-          <div className="flex space-x-6 md:order-2">
-            {navigation.social.map((item) => (
-              <a
-                key={item.name}
-                href={item.href}
-                className="text-gray-400 hover:text-gray-300"
-              >
-                <span className="sr-only">{item.name}</span>
-                <item.icon className="h-6 w-6" aria-hidden="true" />
-              </a>
-            ))}
-          </div>
-          <p className="mt-8 text-base text-gray-400 md:order-1 md:mt-0">
-            1125 Colonel By Drive, Ottawa, ON, K1S 5B6, Canada
-          </p>
-        </div>
-
+      <div className="mx-auto max-w-7xl px-4 py-4">
         <div className="my-12">
           <div className="flex justify-center">
             <img
@@ -277,4 +157,4 @@ const FooterCurrent = () => {
   );
 };
 
-export default FooterCurrent;
+export default FooterIntranet;
