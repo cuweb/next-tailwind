@@ -19,17 +19,17 @@ const IntranetHR: NextPage = () => {
         <Navbar />
         <Profile />
 
-        <div className="mx-auto mt-8 grid max-w-3xl grid-cols-1 gap-6 sm:px-6 lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2">
+        <div className="mx-auto mt-6 grid max-w-3xl grid-cols-1 gap-6 sm:px-6 lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2">
           <Panel title="Pay Forms" />
           <Panel title="Benefits" />
         </div>
 
-        <div className="mx-auto mt-8 grid max-w-3xl grid-cols-1 gap-6 sm:px-6 lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-3">
+        <div className="mx-auto mt-1 grid max-w-3xl grid-cols-1 gap-6 sm:px-6 lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-3">
           <Panel title="HR Link" />
           <Panel title="Pension Statement" />
           <Panel title="Quebec Tax form" />
         </div>
-        <div className="mx-auto mt-8 grid max-w-3xl grid-cols-1 gap-6 sm:px-6 lg:max-w-7xl ">
+        <div className="mx-auto mt-6 grid max-w-3xl grid-cols-1 gap-6 sm:px-6 lg:max-w-7xl ">
           <Table />
         </div>
         <FooterIntranet />

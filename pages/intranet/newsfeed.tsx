@@ -1,14 +1,14 @@
-import type { NextPage } from "next";
-import Head from "next/head";
+import type { NextPage } from 'next';
+import Head from 'next/head';
 
-import Profile from "../../components/Intranet/Profile";
-import FooterIntranet from "../../components/Footer/FooterIntranet";
-import Navbar from "../../components/Intranet/Navbar";
-import Events from "../../components/Intranet/Events";
-import News from "../../components/Intranet/News";
-import Bookmarks from "../../components/Intranet/Bookmarks";
-import Top5 from "../../components/Intranet/Top5";
-import NewsFullwidth from "../../components/Intranet/NewsFullwidth";
+import Profile from '../../components/Intranet/Profile';
+import FooterIntranet from '../../components/Footer/FooterIntranet';
+import Navbar from '../../components/Intranet/Navbar';
+import Events from '../../components/Intranet/Events';
+import News from '../../components/Intranet/News';
+import Bookmarks from '../../components/Intranet/Bookmarks';
+import Top5 from '../../components/Intranet/Top5';
+import NewsFullwidth from '../../components/Intranet/NewsFullwidth';
 
 const IntranetNewsFeed: NextPage = () => {
   return (
@@ -21,11 +21,11 @@ const IntranetNewsFeed: NextPage = () => {
         <Navbar />
         <Profile />
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:py-10 lg:px-8">
-          <h1 className="text-cu-black:900 text-3xl font-medium tracking-tight">
+          <h1 className="text-cu-black:900 text-3xl font-semibold tracking-tight">
             Community & News
           </h1>
         </div>
-        <div className="mx-auto mt-8 grid max-w-3xl grid-cols-1 gap-6 sm:px-6 lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-1">
+        <div className="mx-auto mt-1 grid max-w-3xl grid-cols-1 gap-6 sm:px-6 lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-1">
           <Events />
         </div>
         <div className="mx-auto mt-8 grid max-w-3xl grid-cols-1 gap-6 sm:px-6 lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2">
