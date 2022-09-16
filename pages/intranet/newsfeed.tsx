@@ -22,7 +22,7 @@ const IntranetNewsFeed: NextPage = () => {
         <Profile />
         <div className="mx-auto mt-3 max-w-7xl px-6 py-6">
           <h1 className="text-cu-black:900 text-2xl font-semibold tracking-tight">
-            Career
+            Community News
           </h1>
         </div>
         <div className="mx-auto mt-3 grid max-w-3xl grid-cols-1 gap-6 sm:px-6 lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-1">
