@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import FooterCurrent from "../../components/Footer/FooterCurrent";
-import Navbar from "../../components/Navbar/Navbar";
+import Navbar from "../../components/Intranet/Navbar";
 import Profile from "../../components/Intranet/Profile";
 import Jobs from "../../components/Intranet/Jobs";
 

@@ -1,4 +1,5 @@
 import React, { ReactNode } from "react";
+import FileListing from "./FileListing";
 
 export interface PanelProps {
   className?: string;
@@ -24,11 +25,7 @@ const Panel: React.FC<PanelProps> = (props): JSX.Element => {
               {panelTitle}
             </h2>
           </div>
-          <div className="px-4 py-5 sm:px-6">
-            <div className="px-4 sm:px-6 lg:px-8">
-              <div className="flex flex-col">Panel Content</div>
-            </div>
-          </div>
+          <FileListing />
         </div>
       </div>
     </>
