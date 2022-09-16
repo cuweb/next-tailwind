@@ -1,9 +1,9 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import FooterCurrent from '../../components/Footer/FooterCurrent';
 import Navbar from '../../components/Navbar/Navbar';
 import Profile from '../../components/Intranet/Profile';
 import Jobs from '../../components/Intranet/Jobs';
+import FooterIntranet from '../../components/Footer/FooterIntranet';
 
 const IntranetCareer: NextPage = () => {
   return (
@@ -19,7 +19,7 @@ const IntranetCareer: NextPage = () => {
           <Jobs />
           <Jobs />
         </div>
-        <FooterCurrent />
+        <FooterIntranet />
       </div>
     </>
   );

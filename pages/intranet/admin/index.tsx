@@ -1,6 +1,6 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import FooterCurrent from '../../../components/Footer/FooterCurrent';
+import FooterIntranet from '../../../components/Footer/FooterIntranet';
 import Navbar from '../../../components/Navbar/Navbar';
 import Settings from '../../../components/Settings/Settings';
 
@@ -14,7 +14,7 @@ const Intranet: NextPage = () => {
       <div className="relative bg-[#f3f3f3]">
         <Navbar />
         <Settings />
-        <FooterCurrent />
+        <FooterIntranet />
       </div>
     </>
   );

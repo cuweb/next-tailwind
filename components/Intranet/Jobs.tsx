@@ -85,7 +85,7 @@ export default function Jobs() {
               <a href="#" className="block hover:bg-gray-50">
                 <div className="px-6 py-6">
                   <div className="flex items-center justify-between">
-                    <p className="truncate text-sm text-cu-black-900">
+                    <p className="truncate text-sm font-semibold text-cu-black-900">
                       {position.title}
                     </p>
                     <div className="ml-2 flex flex-shrink-0">
