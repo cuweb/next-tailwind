@@ -118,10 +118,7 @@ const navigation = {
 
 export default function FooterStandard() {
 	return (
-		<footer
-			className="pt-8 bg-cu-black-900"
-			aria-labelledby="footer-heading"
-		>
+		<footer className="bg-cu-black-900" aria-labelledby="footer-heading">
 			<h2 id="footer-heading" className="sr-only">
 				Footer
 			</h2>
@@ -211,7 +208,7 @@ export default function FooterStandard() {
 				</div>
 			</div>
 
-			<div className="flex flex-col-reverse gap-4 px-8 pt-8 pb-12 mx-auto text-lg max-w-7xl text-cu-black-300 lg:grid-cols-3 lg:flex-row lg:justify-between lg:pb-8 lg:text-left lg:text-base">
+			<div className="flex flex-col-reverse gap-4 px-8 pt-8 mx-auto text-lg max-w-7xl text-cu-black-300 lg:grid-cols-3 lg:flex-row lg:justify-between lg:pb-8 lg:text-left lg:text-base">
 				<p className="text-center">
 					Contact us by{" "}
 					<a href="#" className="text-white hover:text-cu-red">
