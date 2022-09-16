@@ -1,12 +1,9 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import Featured from "../../components/Featured/Featured";
-import Footer from "../../components/Footer/Footer";
 import FooterCurrent from "../../components/Footer/FooterCurrent";
-import Header from "../../components/Header/Header";
-import Navbar from "../../components/Intranet/Navbar";
-
-import Spotlight from "../../components/Spotlight/Spotlight";
+import Navbar from "../../components/Navbar/Navbar";
+import Profile from "../../components/Intranet/Profile";
+import Jobs from "../../components/Intranet/Jobs";
 
 const IntranetCareer: NextPage = () => {
   return (
@@ -16,9 +13,11 @@ const IntranetCareer: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
-      <Header />
-      <Spotlight />
-      <Featured />
+      <Profile />
+      <div className="mx-auto mt-8 grid max-w-3xl grid-cols-1 gap-6 sm:px-6 lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-4">
+        <Jobs />
+        <Jobs />
+      </div>
       <FooterCurrent />
     </>
   );
