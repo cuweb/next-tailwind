@@ -1,24 +1,15 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 
-<<<<<<< HEAD
+import Navbar from "../../components/Navbar/Navbar";
 import Profile from "../../components/Intranet/Profile";
 import Events from "../../components/Intranet/Events";
 import News from "../../components/Intranet/News";
+import Files from "../../components/Intranet/Files";
 import Top5 from "../../components/Intranet/Top5";
-import FooterCurrent from "../../components/Footer/FooterCurrent";
-import Navbar from "../../components/Intranet/Navbar";
-=======
-import Navbar from '../../components/Navbar/Navbar';
-import Profile from '../../components/Intranet/Profile';
-import Events from '../../components/Intranet/Events';
-import News from '../../components/Intranet/News';
-import Files from '../../components/Intranet/Files';
-import Top5 from '../../components/Intranet/Top5';
-import Bookmarks from '../../components/Intranet/Bookmarks';
-import FooterIntranet from '../../components/Footer/FooterIntranet';
-import Marketplace from '../../components/Intranet/Marketplace';
->>>>>>> main
+import Bookmarks from "../../components/Intranet/Bookmarks";
+import FooterIntranet from "../../components/Footer/FooterIntranet";
+import Marketplace from "../../components/Intranet/Marketplace";
 
 const Intranet: NextPage = () => {
   return (
