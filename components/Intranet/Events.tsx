@@ -13,7 +13,7 @@ const people = [
     handle: '10-05-2022',
     location: '405 Robertson Hall',
     dateFull: 'January 7, 2020',
-    time: '2:00 PM',
+    time: '2:00 PM - 10:00 PM',
     imageUrl:
       'https://images.unsplash.com/photo-1507878866276-a947ef722fee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2342&q=80',
   },
@@ -22,7 +22,7 @@ const people = [
     handle: '10-05-2022',
     href: '#',
     location: '405 Robertson Hall',
-    time: '2:00 PM',
+    time: '2:00 PM - 10:00 PM',
     dateFull: 'January 7, 2020',
     imageUrl:
       'https://images.unsplash.com/photo-1591115765373-5207764f72e7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80',
@@ -33,7 +33,7 @@ const people = [
     dateFull: 'January 7, 2020',
     href: '#',
     location: '405 Robertson Hall',
-    time: '2:00 PM',
+    time: '2:00 PM - 10:00 PM',
     imageUrl:
       'https://images.unsplash.com/photo-1550305080-4e029753abcf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2342&q=80',
   },
@@ -43,7 +43,7 @@ const people = [
     dateFull: 'January 7, 2020',
     href: '#',
     location: '405 Robertson Hall',
-    time: '2:00 PM',
+    time: '2:00 PM - 10:00 PM',
     imageUrl:
       'https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80',
   },
@@ -52,7 +52,7 @@ const people = [
     handle: '10-05-2022',
     href: '#',
     location: '405 Robertson Hall',
-    time: '2:00 PM',
+    time: '2:00 PM - 10:00 PM',
     dateFull: 'January 7, 2020',
     imageUrl:
       'https://images.unsplash.com/photo-1502685104226-ee32379fefbe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
@@ -90,11 +90,6 @@ export default function Events() {
                           31
                         </p>
                       </div>
-                      {/* <img
-                          className="mt-1 h-20 w-20 rounded"
-                          src={people.imageUrl}
-                          alt=""
-                        /> */}
 
                       <div className="min-w-0 flex-1 px-6 md:grid md:gap-4">
                         <div>
@@ -111,10 +106,6 @@ export default function Events() {
                               <time dateTime={people.dateFull}>
                                 {people.time}
                               </time>
-
-                              <span className="ml-4 inline-flex rounded-full bg-green-100 px-2 text-xs font-semibold leading-5 text-green-800">
-                                Multi-Day
-                              </span>
                             </p>
                             <p className="mt-2 flex items-center text-sm text-gray-500 sm:mt-0 sm:ml-4">
                               <MapPinIcon
@@ -123,6 +114,11 @@ export default function Events() {
                               />
                               {people.location}
                             </p>
+                          </div>
+                          <div className="mt-2">
+                            <span className="rounded-full bg-green-100 px-2 text-xs font-semibold leading-5 text-green-800">
+                              Multi-Day
+                            </span>
                           </div>
                         </div>
                       </div>
