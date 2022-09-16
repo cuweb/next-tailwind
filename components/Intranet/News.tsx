@@ -3,20 +3,23 @@ const announcements = [
   {
     id: 1,
     title: 'Office closed on July 2nd',
+    category: 'Human Resources',
     preview:
-      'Cum qui rem deleniti. Suscipit in dolor veritatis sequi aut. Vero ut earum quis deleniti. Ut a sunt eum cum ut repudiandae possimus. Nihil ex tempora neque cum consectetur dolores.',
+      'Tenetur libero voluptatem rerum occaecati qui est molestiae exercitationem. Voluptate quisquam iure assumenda consequatur ex et recusandae.',
   },
   {
     id: 2,
     title: 'New password policy',
+    category: 'Healthy Workplace',
     preview:
-      'Alias inventore ut autem optio voluptas et repellendus. Facere totam quaerat quam quo laudantium cumque eaque excepturi vel. Accusamus maxime ipsam reprehenderit rerum id repellendus rerum. Culpa cum vel natus. Est sit autem mollitia.',
+      'Tenetur libero voluptatem rerum occaecati qui est molestiae exercitationem. Voluptate quisquam iure assumenda consequatur ex et recusandae.',
   },
   {
     id: 3,
     title: 'Office closed on July 2nd',
+    category: 'Potato',
     preview:
-      'Tenetur libero voluptatem rerum occaecati qui est molestiae exercitationem. Voluptate quisquam iure assumenda consequatur ex et recusandae. Alias consectetur voluptatibus. Accusamus a ab dicta et. Consequatur quis dignissimos voluptatem nisi.',
+      'Tenetur libero voluptatem rerum occaecati qui est molestiae exercitationem. Voluptate quisquam iure assumenda consequatur ex et recusandae.',
   },
 ];
 
@@ -26,9 +29,9 @@ function classNames(...classes: any) {
 
 export default function News() {
   return (
-    <section className="space-y-6 rounded-lg shadow lg:col-span-1 lg:col-start-3">
-      <div className="overflow-hidden bg-white">
-        <div className="border-b bg-gray-50 px-4 py-6">
+    <section className="bg-whiteshadow space-y-6 bg-white shadow sm:rounded-lg lg:col-span-1 lg:col-start-3">
+      <div className="overflow-hidden ">
+        <div className="rounded-t-lg border-b bg-gray-50 px-4 py-6">
           <h2
             id="applicant-information-title"
             className="text-medium font-bold leading-6 text-gray-900"
@@ -42,7 +45,7 @@ export default function News() {
               {announcements.map((announcement) => (
                 <li key={announcement.id} className="px-6 py-6">
                   <div className="relative focus-within:ring-2 focus-within:ring-indigo-500">
-                    <h3 className="text-medium font-semibold text-gray-800">
+                    <h3 className="text-medium font-semibold text-cu-black-900">
                       <a
                         href="#"
                         className="hover:underline focus:outline-none"
@@ -52,15 +55,18 @@ export default function News() {
                         {announcement.title}
                       </a>
                     </h3>
-                    <p className="line-clamp-2 mt-2 text-sm text-gray-600">
+                    <p className="line-clamp-2 mt-2 text-sm text-gray-500">
                       {announcement.preview}
+                    </p>
+                    <p className="mt-4 mr-1.5 inline-flex rounded-full bg-green-100 px-2 text-xs font-semibold leading-5 text-green-800">
+                      {announcement.category}
                     </p>
                   </div>
                 </li>
               ))}
             </ul>
           </div>
-          <div className="my-6 px-6">
+          <div className="my-4 px-6">
             <a
               href="#"
               className="flex w-full items-center justify-center rounded-md bg-cu-red px-4 py-4 text-sm font-medium text-white hover:bg-cu-black-900"

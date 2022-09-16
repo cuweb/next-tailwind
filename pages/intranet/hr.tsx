@@ -16,6 +16,7 @@ const IntranetHR: NextPage = () => {
       </Head>
       <Navbar />
       <Profile />
+<<<<<<< HEAD
       <div className="mx-auto max-w-7xl p-4">
         <div className="grid grid-cols-1 gap-8 py-4 sm:grid-cols-2">
           <Panel title="Pay Forms" />
@@ -32,6 +33,9 @@ const IntranetHR: NextPage = () => {
       </div>
 
       <FooterCurrent />
+=======
+      <FooterIntranet />
+>>>>>>> main
     </>
   );
 };
