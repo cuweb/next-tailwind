@@ -87,7 +87,7 @@ export default function Top5() {
                 <li key={people.name}>
                   <a href={people.href} className="block hover:bg-gray-50">
                     <div className="flex items-center px-4 py-6 sm:px-6">
-                      <div className="items flex min-w-0 flex-1 lg:items-center">
+                      <div className="items flex min-w-0 flex-1">
                         <div className="flex-shrink-0">
                           <img
                             className="w-30 mt-1 h-20 rounded"
