@@ -98,7 +98,7 @@ export default function Jobs() {
                     <div className="sm:flex">
                       <p className="flex items-center text-xs text-gray-500">
                         <CalendarIcon
-                          className="mr-1.5 h-5 w-5 flex-shrink-0 text-cu-red"
+                          className="mr-1.5 h-4 w-4 flex-shrink-0 text-cu-red"
                           aria-hidden="true"
                         />
                         Closes&nbsp;{''}
