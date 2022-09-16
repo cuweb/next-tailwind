@@ -12,7 +12,7 @@ const IntranetCareer: NextPage = () => {
         <title>Career - Intranet | Carleton University </title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="relative bg-gray-300">
+      <div className="relative bg-[#f3f3f3]">
         <Navbar />
         <Profile />
         <div className="mx-auto mt-8 grid max-w-3xl grid-cols-1 gap-6 sm:px-6 lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-4">

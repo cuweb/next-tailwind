@@ -60,7 +60,7 @@ const stuff = [
     time: '2:00 PM',
     dateFull: 'January 7, 2020',
     imageUrl:
-      'https://images.unsplash.com/photo-1502685104226-ee32379fefbe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+      'https://images.unsplash.com/photo-1507878866276-a947ef722fee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2342&q=80',
   },
 ];
 
@@ -71,7 +71,7 @@ function classNames(...classes: any) {
 export default function Top5() {
   return (
     <>
-      <section className="space-y-6 rounded-lg bg-white shadow lg:col-span-2 lg:col-start-1">
+      <section className="space-y-6 bg-white shadow sm:rounded-lg lg:col-span-2 lg:col-start-1">
         <div className="overflow-hidden ">
           <div className="rounded-t-lg border-b bg-gray-50 px-4 py-6">
             <h2
@@ -87,10 +87,10 @@ export default function Top5() {
                 <li key={people.name}>
                   <a href={people.href} className="block hover:bg-gray-50">
                     <div className="flex items-center px-4 py-4 sm:px-6">
-                      <div className="flex min-w-0 flex-1 items-center">
+                      <div className="items flex min-w-0 flex-1 lg:items-center">
                         <div className="flex-shrink-0">
                           <img
-                            className="mt-1 h-20 w-20 rounded"
+                            className="w-30 mt-1 h-20 rounded"
                             src={people.imageUrl}
                             alt=""
                           />
@@ -99,7 +99,7 @@ export default function Top5() {
                           <h3 className="text-medium mb-1 font-semibold text-gray-800">
                             {people.name}
                           </h3>
-                          <p className="line-clamp-2 text-sm text-gray-600">
+                          <p className="text-small text-gray-600">
                             {people.preview}
                           </p>
                         </div>

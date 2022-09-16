@@ -69,7 +69,7 @@ function classNames(...classes: any) {
 
 export default function Jobs() {
   return (
-    <section className="space-y-6 rounded-lg bg-white shadow lg:col-span-2">
+    <section className="space-y-6 bg-white shadow sm:rounded-lg lg:col-span-2">
       <div className="overflow-hidden">
         <div className="rounded-t-lg border-b bg-gray-50 px-4 py-6">
           <h2
@@ -98,7 +98,7 @@ export default function Jobs() {
                     <div className="sm:flex">
                       <p className="flex items-center text-xs text-gray-500">
                         <CalendarIcon
-                          className="mr-1.5 h-5 w-5 flex-shrink-0 text-cu-red"
+                          className="mr-1.5 h-4 w-4 flex-shrink-0 text-cu-red"
                           aria-hidden="true"
                         />
                         Closes&nbsp;{''}

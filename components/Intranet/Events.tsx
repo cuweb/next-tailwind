@@ -65,7 +65,7 @@ function classNames(...classes: any) {
 
 export default function Events() {
   return (
-    <section className="space-y-6 rounded-lg bg-white shadow  lg:col-span-2 lg:col-start-1">
+    <section className="space-y-6 bg-white shadow sm:rounded-lg  lg:col-span-2 lg:col-start-1">
       <div className="overflow-hidden ">
         <div className="rounded-t-lg border-b bg-gray-50 px-4 py-6">
           <h2
@@ -81,40 +81,47 @@ export default function Events() {
               <li key={people.name}>
                 <a href={people.href} className="block hover:bg-gray-50">
                   <div className="flex items-center px-4 py-4 sm:px-6">
-                    <div className="flex min-w-0 flex-1 items-center">
-                      <div className="flex-shrink-0">
-                        <img
+                    <div className="flex min-w-0 flex-1 sm:items-center">
+                      <div className="flex h-20 w-20 flex-col justify-center rounded-2xl bg-gray-50 text-center shadow">
+                        <p className="text-xs font-bold uppercase text-cu-red">
+                          May
+                        </p>
+                        <p className="text-2xl font-bold uppercase text-cu-black-900">
+                          31
+                        </p>
+                      </div>
+                      {/* <img
                           className="mt-1 h-20 w-20 rounded"
                           src={people.imageUrl}
                           alt=""
-                        />
-                      </div>
+                        /> */}
+
                       <div className="min-w-0 flex-1 px-4 md:grid md:gap-4">
                         <div>
-                          <div className="min-w-0 flex-1">
-                            <p className="text-medium mb-2 truncate pr-2 font-medium text-cu-black-900">
-                              {people.name}
-                            </p>
-                            <p className="inline-flex truncate pr-5 text-sm  text-cu-black-700">
-                              <CalendarIcon
-                                className="text-red-carleton mr-1 h-5 w-5 text-cu-red"
+                          <p className="text-medium mb-2 font-semibold text-gray-800">
+                            {people.name}
+                          </p>
+                          <div className="sm:flex">
+                            <p className="flex items-center text-sm text-gray-500">
+                              <ClockIcon
+                                className="mr-1.5 h-5 w-5 flex-shrink-0 text-gray-400"
                                 aria-hidden="true"
                               />
-                              {people.dateFull}
+
+                              <time dateTime={people.dateFull}>
+                                {people.time}
+                              </time>
+
+                              <span className="ml-4 inline-flex rounded-full bg-green-100 px-2 text-xs font-semibold leading-5 text-green-800">
+                                Multi-Day
+                              </span>
                             </p>
-                            <p className="inline-flex truncate pr-5 text-sm text-cu-black-700">
+                            <p className="mt-2 flex items-center text-sm text-gray-500 sm:mt-0 sm:ml-6">
                               <MapPinIcon
-                                className="text-red-carleton mr-1 h-5 w-5 text-cu-red"
+                                className="mr-1.5 h-5 w-5 flex-shrink-0 text-gray-400"
                                 aria-hidden="true"
                               />
                               {people.location}
-                            </p>
-                            <p className="inline-flex truncate text-sm text-cu-black-700">
-                              <ClockIcon
-                                className="text-red-carleton mr-1 h-5 w-5 text-cu-red"
-                                aria-hidden="true"
-                              />
-                              {people.time}
                             </p>
                           </div>
                         </div>
