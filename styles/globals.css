@@ -23,6 +23,10 @@
 		@apply max-w-5xl cu-container-spacing;
 	}
 
+	.cu-container-896 {
+		@apply max-w-4xl cu-container-spacing;
+	}
+
 	.cu-container-768 {
 		@apply max-w-3xl cu-container-spacing;
 	}

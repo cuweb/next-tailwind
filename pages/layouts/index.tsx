@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Navbar from "../../components/Navbar/Navbar";
-import Footer from "../../components/Footer/FooterStandard";
+import Footer from "../../components/Footer/FooterNew";
 import Profile from "../../components/Header/Profile";
 import PageContent from "./_content";
 import PagePanel from "./_panel";
@@ -18,15 +18,15 @@ const PageLayout: NextPage = () => {
 			</Head>
 			<Navbar />
 
+			<Profile />
+
 			{/* <header className="my-8 cu-container-1280 md:my-12">
 				<h1 className="text-3xl font-medium tracking-tight text-cu-black-800 md:text-4xl">
 					Page Template
 				</h1>
 			</header> */}
 
-			<Profile />
-
-			<main className="py-8 bg-cu-black-50">
+			<main className="py-12 bg-cu-black-50">
 				<div className="cu-container-1280 cu-columns-65">
 					<div>
 						<PagePanel />
@@ -64,17 +64,26 @@ const PageLayout: NextPage = () => {
 					</div>
 				</div>
 
-				<div className="cu-container-1280 cu-columns-2">
-					<div>
-						<PageContent />
-					</div>
-					<div>
-						<PageContent />
-					</div>
-				</div>
-
-				<div className="cu-container-1280">
+				<div className="cu-container-1024">
 					<PageContent />
+				</div>
+
+				<div className="cu-container-1024 cu-columns-2">
+					<div>
+						<PageContent />
+					</div>
+					<div>
+						<PageContent />
+					</div>
+				</div>
+
+				<div className="cu-container-896 cu-columns-2">
+					<div>
+						<PageContent />
+					</div>
+					<div>
+						<PageContent />
+					</div>
 				</div>
 			</main>
 
