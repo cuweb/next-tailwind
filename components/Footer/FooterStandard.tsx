@@ -125,10 +125,10 @@ export default function FooterStandard() {
 
 			<div className="hidden gap-4 px-4 py-12 mx-auto text-white border-b max-w-7xl border-cu-black-700 sm:px-6 lg:grid lg:grid-cols-5 lg:px-8">
 				<div className="uppercase">
-					<h3 className="mb-3 text-base font-bold">Admissions</h3>
+					<h3 className="text-sm font-bold">Admissions</h3>
 					<ul>
 						{navigation.Admissions.map((item) => (
-							<li key={item.name} className="mt-3 text-sm">
+							<li key={item.name} className="mt-3 text-xs">
 								<a
 									href={item.href}
 									className="text-cu-black-300 hover:text-white"
@@ -140,10 +140,10 @@ export default function FooterStandard() {
 					</ul>
 				</div>
 				<div className="uppercase">
-					<h3 className="mb-3 text-base font-bold">Academics</h3>
+					<h3 className="text-sm font-bold">Academics</h3>
 					<ul>
 						{navigation.Academics.map((item) => (
-							<li key={item.name} className="mt-3 text-sm">
+							<li key={item.name} className="mt-3 text-xs">
 								<a
 									href={item.href}
 									className="text-gray-400 hover:text-white"
@@ -155,10 +155,10 @@ export default function FooterStandard() {
 					</ul>
 				</div>
 				<div className="uppercase">
-					<h3 className="mb-3 text-base font-bold">Campus</h3>
+					<h3 className="text-sm font-bold">Campus</h3>
 					<ul>
 						{navigation.Campus.map((item) => (
-							<li key={item.name} className="mt-3 text-sm">
+							<li key={item.name} className="mt-3 text-xs">
 								<a
 									href={item.href}
 									className="text-gray-400 hover:text-white"
@@ -170,10 +170,10 @@ export default function FooterStandard() {
 					</ul>
 				</div>
 				<div className="uppercase">
-					<h3 className="mb-3 text-base font-bold">Advancement</h3>
+					<h3 className="text-sm font-bold">Advancement</h3>
 					<ul>
 						{navigation.Advancement.map((item) => (
-							<li key={item.name} className="mt-3 text-sm">
+							<li key={item.name} className="mt-3 text-xs">
 								<a
 									href={item.href}
 									className="text-gray-400 hover:text-white"
@@ -185,10 +185,10 @@ export default function FooterStandard() {
 					</ul>
 				</div>
 				<div className="uppercase">
-					<h3 className="mb-3 text-base font-bold">Ravens</h3>
+					<h3 className="text-sm font-bold">Ravens</h3>
 					<ul>
 						{navigation.Ravens.map((item) => (
-							<li key={item.name} className="mt-3 text-sm">
+							<li key={item.name} className="mt-3 text-xs">
 								<a
 									href={item.href}
 									className="text-gray-400 hover:text-white"
@@ -208,7 +208,7 @@ export default function FooterStandard() {
 				</div>
 			</div>
 
-			<div className="flex flex-col-reverse gap-4 px-8 pt-8 mx-auto text-lg max-w-7xl text-cu-black-300 lg:grid-cols-3 lg:flex-row lg:justify-between lg:pb-8 lg:text-left lg:text-base">
+			<div className="flex flex-col-reverse gap-4 px-8 pt-8 mx-auto text-lg max-w-7xl text-cu-black-300 lg:grid-cols-3 lg:flex-row lg:justify-between lg:pb-8 lg:text-left lg:text-sm">
 				<p className="text-center">
 					Contact us by{" "}
 					<a href="#" className="text-white hover:text-cu-red">
@@ -223,7 +223,7 @@ export default function FooterStandard() {
 				<p className="text-center">
 					1125 Colonel By Drive, Ottawa, ON, K1S 5B6, Canada
 				</p>
-				<ul className="flex justify-center mb-4 space-x-8 lg:mb-0 lg:justify-end">
+				<ul className="flex justify-center mb-4 space-x-6 lg:mb-0 lg:justify-end">
 					{navigation.social.map((item) => (
 						<li key={item.name}>
 							<a
@@ -232,7 +232,7 @@ export default function FooterStandard() {
 							>
 								<span className="sr-only">{item.name}</span>
 								<item.icon
-									className="w-10 h-10 lg:h-8 lg:w-8"
+									className="w-10 h-10 lg:h-7 lg:w-7"
 									aria-hidden="true"
 								/>
 							</a>

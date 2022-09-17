@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Navbar from "../../components/Navbar/Navbar";
-import Footer from "../../components/Footer/FooterNew";
+import Footer from "../../components/Footer/FooterStandard";
 import Profile from "../../components/Header/Profile";
 import PageContent from "./_content";
 import PagePanel from "./_panel";
