@@ -27,6 +27,57 @@ const PageLayout: NextPage = () => {
 			</header> */}
 
 			<main className="py-12 bg-cu-black-50">
+				<div className="cu-container-1280 cu-columns-35">
+					<div>
+						<PagePanel />
+						<PagePanel />
+					</div>
+					<div>
+						<div className="cu-column">
+							<PagePanel />
+						</div>
+						<div className="cu-columns-2">
+							<div>
+								<PagePanel />
+							</div>
+							<div>
+								<PagePanel />
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div className="cu-container-1280 cu-columns-35">
+					<div>
+						<PagePanel />
+						<PagePanel />
+					</div>
+					<div>
+						<div className="cu-column">
+							<PagePanel />
+						</div>
+						<div className="cu-columns-2">
+							<div>
+								<PagePanel />
+								<PagePanel />
+							</div>
+							<div>
+								<PagePanel />
+								<PagePanel />
+							</div>
+						</div>
+						<div className="cu-column">
+							<PagePanel />
+						</div>
+					</div>
+				</div>
+
+				<div className="cu-container-1280 cu-column">
+					<div>
+						<PagePanel />
+					</div>
+				</div>
+
 				<div className="cu-container-1280 cu-columns-65">
 					<div>
 						<PagePanel />
@@ -46,13 +97,21 @@ const PageLayout: NextPage = () => {
 				</div>
 
 				<div className="cu-container-1280 cu-columns-65">
-					<PagePanel />
-					<PagePanel />
+					<div>
+						<PagePanel />
+					</div>
+					<div>
+						<PagePanel />
+					</div>
 				</div>
 
 				<div className="cu-container-1280 cu-columns-35">
-					<PagePanel />
-					<PagePanel />
+					<div>
+						<PagePanel />
+					</div>
+					<div>
+						<PagePanel />
+					</div>
 				</div>
 
 				<div className="cu-container-1280 cu-columns-2">
@@ -64,7 +123,7 @@ const PageLayout: NextPage = () => {
 					</div>
 				</div>
 
-				<div className="cu-container-1024">
+				{/* <div className="cu-container-1024">
 					<PageContent />
 				</div>
 
@@ -84,7 +143,7 @@ const PageLayout: NextPage = () => {
 					<div>
 						<PageContent />
 					</div>
-				</div>
+				</div> */}
 			</main>
 
 			<Footer />

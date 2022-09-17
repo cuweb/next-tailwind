@@ -31,23 +31,27 @@
 		@apply max-w-3xl cu-container-spacing;
 	}
 
-	.cu-columns {
-		@apply grid gap-8 mb-8 md:mb-6 md:gap-6;
+	.cu-column {
+		@apply mb-8 grid gap-8 md:mb-6 md:gap-6 [&:last-child]:mb-0;
 	}
 
 	.cu-columns-2 {
-		@apply cu-columns md:grid-cols-2;
+		@apply cu-column md:grid-cols-2;
 	}
 
 	.cu-columns-3 {
-		@apply cu-columns md:grid-cols-3;
+		@apply cu-column md:grid-cols-3;
 	}
 
 	.cu-columns-35 {
-		@apply cu-columns md:grid-cols-35-split;
+		@apply cu-column md:grid-cols-35-split;
 	}
 
 	.cu-columns-65 {
-		@apply cu-columns md:grid-cols-65-split;
+		@apply cu-column md:grid-cols-65-split;
+	}
+
+	.cu-panel {
+		@apply [&:not(:last-child)]:mb-6;
 	}
 }
