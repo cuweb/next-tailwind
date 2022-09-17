@@ -15,7 +15,7 @@ export default function Profile() {
 							<h1 className="mt-2.5 text-2xl font-bold md:mt-0">
 								Carlton Banks
 								<span className="ml-2 text-base font-light text-cu-black-600">
-									(She/Her)
+									(He/Him)
 								</span>
 							</h1>
 							<ul className="flex flex-col gap-2 mt-2 text-sm text-cu-black-600 md:flex-row md:gap-6">
