@@ -24,6 +24,12 @@ const projects = [
 		href: "/cutheme",
 		bgColor: "bg-cyan-600",
 	},
+	{
+		name: "Layout & Spacing",
+		initials: "LS",
+		href: "/layouts",
+		bgColor: "bg-green-700",
+	},
 ];
 
 const Home: NextPage = () => {
@@ -80,11 +86,7 @@ const Home: NextPage = () => {
 								className="flex col-span-1 rounded-md shadow-sm"
 							>
 								<div
-									className="flex items-center justify-center flex-shrink-0 w-16 text-sm font-medium text-white rounded-l-md bg-cu-red"
-									// className={classNames(
-									// 	project.bgColor,
-									// 	"flex w-16 flex-shrink-0 items-center justify-center rounded-l-md text-sm font-medium text-white"
-									// )}
+									className={`${project.bgColor} flex w-16 flex-shrink-0 items-center justify-center rounded-l-md text-sm font-medium text-white`}
 								>
 									{project.initials}
 								</div>
