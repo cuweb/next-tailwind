@@ -1,24 +1,13 @@
-import { EllipsisVerticalIcon } from "@heroicons/react/20/solid";
-import { ChevronRightIcon } from "@heroicons/react/24/outline";
 import type { NextPage } from "next";
 import Head from "next/head";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/FooterStandard";
+import Profile from "../../components/Header/Profile";
 import PageContent from "./_content";
-import Files from "../../components/Intranet/Files";
-
-// Container styles
-const containerMax = "px-6 mx-auto max-w-5xl md:px-8";
-const container2col = "md:mb-5 md:grid md:grid-cols-2 md:gap-12";
+import PagePanel from "./_panel";
 
 // Spacing styles
 // const containerSpacing
-
-// Font styles
-const header1 = "";
-const header2 = "";
-const header3 = "";
-const paragraph = "mb-5";
 
 const PageLayout: NextPage = () => {
 	return (
@@ -29,24 +18,62 @@ const PageLayout: NextPage = () => {
 			</Head>
 			<Navbar />
 
-			<header className={`${containerMax} my-8 md:my-12`}>
+			{/* <header className="my-8 cu-container-1280 md:my-12">
 				<h1 className="text-3xl font-medium tracking-tight text-cu-black-800 md:text-4xl">
 					Page Template
 				</h1>
-				{/* <h1 className={headerOne}>Page Template</h1> */}
-			</header>
+			</header> */}
 
-			<main className="mb-12">
-				<div className={`${containerMax} ${container2col}`}>
-					<div className="bg-cu-black-0">
+			<Profile />
+
+			<main className="py-8 bg-cu-black-50">
+				<div className="cu-container-1280 cu-columns-65">
+					<div>
+						<PagePanel />
+					</div>
+					<div>
+						<PagePanel />
+					</div>
+				</div>
+
+				<div className="cu-container-1280 cu-columns-35">
+					<div>
+						<PagePanel />
+					</div>
+					<div>
+						<PagePanel />
+					</div>
+				</div>
+
+				<div className="cu-container-1280 cu-columns-65">
+					<PagePanel />
+					<PagePanel />
+				</div>
+
+				<div className="cu-container-1280 cu-columns-35">
+					<PagePanel />
+					<PagePanel />
+				</div>
+
+				<div className="cu-container-1280 cu-columns-2">
+					<div>
+						<PagePanel />
+					</div>
+					<div>
+						<PagePanel />
+					</div>
+				</div>
+
+				<div className="cu-container-1280 cu-columns-2">
+					<div>
 						<PageContent />
 					</div>
-					<div className="bg-cu-black-0">
+					<div>
 						<PageContent />
 					</div>
 				</div>
 
-				<div className={containerMax}>
+				<div className="cu-container-1280">
 					<PageContent />
 				</div>
 			</main>

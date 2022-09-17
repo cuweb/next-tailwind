@@ -26,6 +26,10 @@ module.exports = {
                     900: '#191919',
                 },
             },
+            gridTemplateColumns: {
+                '65': '65% auto',
+                '35': '35% auto',
+              }
         },
     },
     plugins: ['@tailwindcss/forms'],
