@@ -32,7 +32,7 @@
 	}
 
 	.cu-column {
-		@apply mb-8 grid gap-8 md:mb-6 md:gap-6 [&:last-child]:mb-0;
+		@apply mb-6 grid gap-6 [&:last-child]:mb-0;
 	}
 
 	.cu-columns-2 {
