@@ -10,9 +10,14 @@ const PageContent: NextPage = () => {
 	return (
 		<>
 			<p className={paragraph}>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
-				mollis leo a turpis fringilla ultrices. Pellentesque consectetur
-				lectus ac tincidunt dictum.
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+				risus orci, dignissim ut dui nec, aliquet vehicula elit. Morbi
+				ut felis eleifend, ultricies lacus id, dignissim turpis.
+				Maecenas placerat sem sit amet quam semper, eu convallis eros
+				hendrerit. Nunc in nisl mi. Morbi lobortis consectetur quam,
+				vitae placerat urna molestie quis. Nam nec vehicula erat, at
+				commodo neque. Morbi fringilla nisi vitae ligula aliquet, eu
+				iaculis nibh iaculis.
 			</p>
 			<h2 className="text-2xl font-semibold tracking-tight text-cu-black-800 lg:text-3xl">
 				Header Two

@@ -8,7 +8,8 @@ import PageContent from "./_content";
 import Files from "../../components/Intranet/Files";
 
 // Container styles
-const containerMax = "px-4 mx-auto max-w-7xl sm:px-6 lg:px-8";
+const containerMax = "px-6 mx-auto max-w-5xl md:px-8";
+const container2col = "md:mb-5 md:grid md:grid-cols-2 md:gap-12";
 
 // Spacing styles
 // const containerSpacing
@@ -28,16 +29,26 @@ const PageLayout: NextPage = () => {
 			</Head>
 			<Navbar />
 
-			<header className={`${containerMax} my-12`}>
-				<h1 className="text-3xl font-medium tracking-tight text-cu-black-800 lg:text-5xl">
+			<header className={`${containerMax} my-8 md:my-12`}>
+				<h1 className="text-3xl font-medium tracking-tight text-cu-black-800 md:text-4xl">
 					Page Template
 				</h1>
 				{/* <h1 className={headerOne}>Page Template</h1> */}
 			</header>
 
-			<main className={containerMax}>
-				<Files />
-				<PageContent />
+			<main className="mb-12">
+				<div className={`${containerMax} ${container2col}`}>
+					<div className="bg-cu-black-0">
+						<PageContent />
+					</div>
+					<div className="bg-cu-black-0">
+						<PageContent />
+					</div>
+				</div>
+
+				<div className={containerMax}>
+					<PageContent />
+				</div>
 			</main>
 
 			<Footer />
