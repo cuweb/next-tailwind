@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 
-import Profile from "../../components/Intranet/Profile";
+import Profile from "../../components/Header/Profile";
 import Events from "../../components/Intranet/Events";
 import News from "../../components/Intranet/News";
 import Files from "../../components/Intranet/Files";
