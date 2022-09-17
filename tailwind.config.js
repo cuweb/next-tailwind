@@ -8,7 +8,7 @@ module.exports = {
         extend: {
             backgroundImage: {
                 'cu-waves-red': "url('/cu-waves-red.svg')",
-                'cu-waves-white': "url('/cu-waves-white.svg')",
+                'cu-waves-white-20': "url('/cu-waves-white-20.svg')",
             },
             colors: {
                 'cu-red': '#E91C24',
