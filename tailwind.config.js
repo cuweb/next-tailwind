@@ -27,8 +27,8 @@ module.exports = {
                 },
             },
             gridTemplateColumns: {
-                '65': '65% auto',
-                '35': '35% auto',
+                '65-split': '65% auto',
+                '35-split': '35% auto',
               }
         },
     },

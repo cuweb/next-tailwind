@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @layer base {
 	html,
 	body,
@@ -39,10 +40,10 @@
 	}
 
 	.cu-columns-35 {
-		@apply cu-columns md:grid-cols-35;
+		@apply cu-columns md:grid-cols-35-split;
 	}
 
 	.cu-columns-65 {
-		@apply cu-columns md:grid-cols-65;
+		@apply cu-columns md:grid-cols-65-split;
 	}
 }
