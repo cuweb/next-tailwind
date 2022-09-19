@@ -11,8 +11,16 @@
 }
 
 @layer components {
+	.cu-block-white {
+		@apply py-8 bg-white;
+	}
+
+	.cu-block-gray {
+		@apply py-8 bg-cu-black-50;
+	}
+
 	.cu-container-spacing {
-		@apply px-6 mx-auto md:px-8;
+		@apply px-6 mx-auto bg-cu-black-200 md:px-8;
 	}
 
 	.cu-container-1280 {

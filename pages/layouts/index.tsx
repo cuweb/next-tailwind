@@ -6,9 +6,6 @@ import Profile from "../../components/Header/Profile";
 import PageContent from "./_content";
 import PagePanel from "./_panel";
 
-// Spacing styles
-// const containerSpacing
-
 const PageLayout: NextPage = () => {
 	return (
 		<>
@@ -26,7 +23,7 @@ const PageLayout: NextPage = () => {
 				</h1>
 			</header> */}
 
-			<main className="py-12 bg-cu-black-50">
+			<main className="py-12">
 				<div className="cu-container-1280 cu-columns-35">
 					<div>
 						<PagePanel />
@@ -123,7 +120,7 @@ const PageLayout: NextPage = () => {
 					</div>
 				</div>
 
-				{/* <div className="cu-container-1024">
+				<div className="cu-container-1024">
 					<PageContent />
 				</div>
 
@@ -143,7 +140,7 @@ const PageLayout: NextPage = () => {
 					<div>
 						<PageContent />
 					</div>
-				</div> */}
+				</div>
 			</main>
 
 			<Footer />
