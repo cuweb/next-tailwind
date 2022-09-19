@@ -26,8 +26,8 @@ module.exports = {
                 },
             },
             gridTemplateColumns: {
-                '65-split': '66.666666666% auto',
-                '35-split': '33.333333333% auto',
+                '66': '66.666666666% auto',
+                '33': '33.333333333% auto',
               }
         },
     },

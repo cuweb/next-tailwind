@@ -15,130 +15,79 @@ const PageLayout: NextPage = () => {
 			</Head>
 			<Navbar />
 
-			<Profile />
-
-			{/* <header className="my-8 cu-container-896 md:my-12">
+			<header className="py-12 cu-block-896">
 				<h1 className="text-3xl font-medium tracking-tight text-cu-black-800 md:text-4xl">
-					Page Template
+					Grids &amp; Layouts
 				</h1>
-			</header> */}
+			</header>
 
-			<main className="py-12">
-				<div className="cu-container-896 cu-columns-35">
-					<div>
-						<PagePanel />
+			<main>
+				<div className="cu-block-gray cu-block-896 [&+.cu-block-gray]:pt-0">
+					<div className="cu-column">
 						<PagePanel />
 					</div>
-					<div>
-						<div className="cu-column">
-							<PagePanel />
-						</div>
-						<div className="cu-columns-2">
-							<div>
-								<PagePanel />
-							</div>
-							<div>
-								<PagePanel />
-							</div>
-						</div>
+				</div>
+				<div className="cu-block-gray cu-block-896 [&+.cu-block-gray]:pt-0">
+					<div className="cu-column">
+						<PagePanel />
 					</div>
 				</div>
 
-				<div className="cu-container-896 cu-columns-35">
-					<div>
-						<PagePanel />
+				<div className="cu-block-white cu-block-896 [&+.cu-block-white]:pt-0">
+					<div className="cu-column">
 						<PagePanel />
 					</div>
-					<div>
-						<div className="cu-column">
+				</div>
+				<div className="cu-block-white cu-block-896 [&+.cu-block-white]:pt-0">
+					<div className="cu-column">
+						<PagePanel />
+					</div>
+				</div>
+
+				<div className="cu-block-gray cu-block-896 [&+.cu-block-gray]:pt-0">
+					<div className="cu-column-2">
+						<div>
 							<PagePanel />
 						</div>
-						<div className="cu-columns-2">
-							<div>
-								<PagePanel />
-								<PagePanel />
-							</div>
-							<div>
-								<PagePanel />
-								<PagePanel />
-							</div>
-						</div>
-						<div className="cu-column">
+						<div>
 							<PagePanel />
 						</div>
 					</div>
 				</div>
 
-				<div className="cu-container-896 cu-column">
-					<div>
-						<PagePanel />
+				<div className="cu-block-white cu-block-896 [&+.cu-block-white]:pt-0">
+					<div className="cu-column-3">
+						<div>
+							<PagePanel />
+						</div>
+						<div>
+							<PagePanel />
+						</div>
+						<div>
+							<PagePanel />
+						</div>
 					</div>
 				</div>
 
-				<div className="cu-container-896 cu-columns-65">
-					<div>
-						<PagePanel />
-					</div>
-					<div>
-						<PagePanel />
-					</div>
-				</div>
-
-				<div className="cu-container-896 cu-columns-35">
-					<div>
-						<PagePanel />
-					</div>
-					<div>
-						<PagePanel />
+				<div className="cu-block-gray cu-block-896 [&+.cu-block-gray]:pt-0">
+					<div className="cu-column-33">
+						<div>
+							<PagePanel />
+						</div>
+						<div>
+							<PagePanel />
+						</div>
 					</div>
 				</div>
 
-				<div className="cu-container-896 cu-columns-65">
-					<div>
-						<PagePanel />
-					</div>
-					<div>
-						<PagePanel />
-					</div>
-				</div>
-
-				<div className="cu-container-896 cu-columns-35">
-					<div>
-						<PagePanel />
-					</div>
-					<div>
-						<PagePanel />
-					</div>
-				</div>
-
-				<div className="cu-container-896 cu-columns-2">
-					<div>
-						<PagePanel />
-					</div>
-					<div>
-						<PagePanel />
-					</div>
-				</div>
-
-				<div className="cu-container-896">
-					<PageContent />
-				</div>
-
-				<div className="cu-container-896 cu-columns-2">
-					<div>
-						<PageContent />
-					</div>
-					<div>
-						<PageContent />
-					</div>
-				</div>
-
-				<div className="cu-container-896 cu-columns-2">
-					<div>
-						<PageContent />
-					</div>
-					<div>
-						<PageContent />
+				<div className="cu-block-white cu-block-896 [&+.cu-block-white]:pt-0">
+					<div className="cu-column-66">
+						<div>
+							<PagePanel />
+						</div>
+						<div>
+							<PagePanel />
+						</div>
 					</div>
 				</div>
 			</main>
