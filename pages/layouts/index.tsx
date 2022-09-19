@@ -17,14 +17,14 @@ const PageLayout: NextPage = () => {
 
 			<Profile />
 
-			{/* <header className="my-8 cu-container-1280 md:my-12">
+			{/* <header className="my-8 cu-container-896 md:my-12">
 				<h1 className="text-3xl font-medium tracking-tight text-cu-black-800 md:text-4xl">
 					Page Template
 				</h1>
 			</header> */}
 
 			<main className="py-12">
-				<div className="cu-container-1280 cu-columns-35">
+				<div className="cu-container-896 cu-columns-35">
 					<div>
 						<PagePanel />
 						<PagePanel />
@@ -44,7 +44,7 @@ const PageLayout: NextPage = () => {
 					</div>
 				</div>
 
-				<div className="cu-container-1280 cu-columns-35">
+				<div className="cu-container-896 cu-columns-35">
 					<div>
 						<PagePanel />
 						<PagePanel />
@@ -69,22 +69,13 @@ const PageLayout: NextPage = () => {
 					</div>
 				</div>
 
-				<div className="cu-container-1280 cu-column">
+				<div className="cu-container-896 cu-column">
 					<div>
 						<PagePanel />
 					</div>
 				</div>
 
-				<div className="cu-container-1280 cu-columns-65">
-					<div>
-						<PagePanel />
-					</div>
-					<div>
-						<PagePanel />
-					</div>
-				</div>
-
-				<div className="cu-container-1280 cu-columns-35">
+				<div className="cu-container-896 cu-columns-65">
 					<div>
 						<PagePanel />
 					</div>
@@ -93,7 +84,7 @@ const PageLayout: NextPage = () => {
 					</div>
 				</div>
 
-				<div className="cu-container-1280 cu-columns-65">
+				<div className="cu-container-896 cu-columns-35">
 					<div>
 						<PagePanel />
 					</div>
@@ -102,7 +93,7 @@ const PageLayout: NextPage = () => {
 					</div>
 				</div>
 
-				<div className="cu-container-1280 cu-columns-35">
+				<div className="cu-container-896 cu-columns-65">
 					<div>
 						<PagePanel />
 					</div>
@@ -111,7 +102,7 @@ const PageLayout: NextPage = () => {
 					</div>
 				</div>
 
-				<div className="cu-container-1280 cu-columns-2">
+				<div className="cu-container-896 cu-columns-35">
 					<div>
 						<PagePanel />
 					</div>
@@ -120,11 +111,20 @@ const PageLayout: NextPage = () => {
 					</div>
 				</div>
 
-				<div className="cu-container-1024">
+				<div className="cu-container-896 cu-columns-2">
+					<div>
+						<PagePanel />
+					</div>
+					<div>
+						<PagePanel />
+					</div>
+				</div>
+
+				<div className="cu-container-896">
 					<PageContent />
 				</div>
 
-				<div className="cu-container-1024 cu-columns-2">
+				<div className="cu-container-896 cu-columns-2">
 					<div>
 						<PageContent />
 					</div>

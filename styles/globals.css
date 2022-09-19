@@ -19,10 +19,10 @@
 		@apply py-8 bg-cu-black-50;
 	}
 
-	.cu-block-gray + .cu-block-gray,
+	/* .cu-block-gray + .cu-block-gray,
 	.cu-block-white + .cu-block-white {
 		@apply pt-0;
-	}
+	} */
 
 	.cu-container-spacing {
 		@apply px-6 mx-auto md:px-8;
