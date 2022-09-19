@@ -1,10 +1,65 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @layer base {
-  html,
-  body,
-  #__next {
-    @apply h-screen flex-col;
-  }
+	html,
+	body,
+	#__next {
+		@apply flex-col h-screen;
+	}
+}
+
+@layer components {
+	.cu-block-white {
+		@apply py-8 bg-white;
+	}
+
+	.cu-block-gray {
+		@apply py-8 bg-cu-black-50;
+	}
+
+	.cu-container-spacing {
+		@apply px-6 mx-auto bg-cu-black-200 md:px-8;
+	}
+
+	.cu-container-1280 {
+		@apply cu-container-spacing max-w-7xl;
+	}
+
+	.cu-container-1024 {
+		@apply max-w-5xl cu-container-spacing;
+	}
+
+	.cu-container-896 {
+		@apply max-w-4xl cu-container-spacing;
+	}
+
+	.cu-container-768 {
+		@apply max-w-3xl cu-container-spacing;
+	}
+
+	.cu-column {
+		@apply mb-6 grid gap-6 [&:last-child]:mb-0;
+	}
+
+	.cu-columns-2 {
+		@apply cu-column md:grid-cols-2;
+	}
+
+	.cu-columns-3 {
+		@apply cu-column md:grid-cols-3;
+	}
+
+	.cu-columns-35 {
+		@apply cu-column md:grid-cols-35-split;
+	}
+
+	.cu-columns-65 {
+		@apply cu-column md:grid-cols-65-split;
+	}
+
+	.cu-panel {
+		@apply [&:not(:last-child)]:mb-6;
+	}
 }
