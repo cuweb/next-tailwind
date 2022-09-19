@@ -21,7 +21,7 @@ const PageLayout: NextPage = () => {
 			{/* <Profile /> */}
 
 			<header className="py-8 bg-cu-black-400 md:py-12">
-				<div className="cu-container-1280">
+				<div className="cu-container-896">
 					<h1 className="text-3xl font-medium tracking-tight text-cu-black-800 md:text-4xl">
 						Page Template
 					</h1>
@@ -30,7 +30,7 @@ const PageLayout: NextPage = () => {
 
 			<main>
 				<div className="cu-block-white">
-					<div className="cu-container-1280 cu-column">
+					<div className="cu-container-896 cu-column">
 						<div>
 							<PagePanel />
 						</div>
@@ -38,7 +38,18 @@ const PageLayout: NextPage = () => {
 				</div>
 
 				<div className="cu-block-white">
-					<div className="cu-container-1280 cu-columns-2">
+					<div className="cu-container-896 cu-columns-2">
+						<div>
+							<PagePanel />
+						</div>
+						<div>
+							<PagePanel />
+						</div>
+					</div>
+				</div>
+
+				<div className="cu-block-white">
+					<div className="cu-container-896 cu-columns-2">
 						<div>
 							<PagePanel />
 						</div>
@@ -49,7 +60,7 @@ const PageLayout: NextPage = () => {
 				</div>
 
 				<div className="cu-block-gray">
-					<div className="cu-container-1280 cu-column">
+					<div className="cu-container-896 cu-column">
 						<div>
 							<PagePanel />
 						</div>
@@ -57,7 +68,15 @@ const PageLayout: NextPage = () => {
 				</div>
 
 				<div className="cu-block-gray">
-					<div className="cu-container-1280 cu-columns-2">
+					<div className="cu-container-896 cu-column">
+						<div>
+							<PagePanel />
+						</div>
+					</div>
+				</div>
+
+				<div className="cu-block-gray">
+					<div className="cu-container-896 cu-columns-2">
 						<div>
 							<PagePanel />
 						</div>

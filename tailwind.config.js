@@ -1,4 +1,5 @@
-/** @type {import('tailwindcss').Config} */
+const plugin = require('tailwindcss/plugin')
+
 module.exports = {
     content: [
         './pages/**/*.{js,ts,jsx,tsx}',
@@ -32,5 +33,10 @@ module.exports = {
               }
         },
     },
-    plugins: ['@tailwindcss/forms'],
+    plugins: [
+        plugin(function({ addVariant }) {
+            addVariant('third', '&:nth-child(3)')
+        }),
+        '@tailwindcss/forms',
+    ],
 };
