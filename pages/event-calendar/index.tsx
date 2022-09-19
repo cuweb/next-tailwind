@@ -2,9 +2,8 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Featured from "../../components/Featured/Featured";
 import Footer from "../../components/Footer/FooterStandard";
-import Header from "../../components/Header/Header";
-import Navbar from "../../components/Navbar/Navbar";
-import Spotlight from "../../components/Spotlight/Spotlight";
+import Navbar from "../../components/EventCalendar/Navbar";
+import FeaturedEvents from "../../components/EventCalendar/FeaturedEvents";
 
 const EventCalendar: NextPage = () => {
 	return (
@@ -14,8 +13,7 @@ const EventCalendar: NextPage = () => {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<Navbar />
-			<Header />
-			<Spotlight />
+			<FeaturedEvents />
 			<Featured />
 			<Footer />
 		</>
