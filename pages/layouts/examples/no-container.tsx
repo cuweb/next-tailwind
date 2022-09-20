@@ -2,7 +2,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Navbar from "../../../components/Navbar/Navbar";
 import Footer from "../../../components/Footer/FooterStandard";
-import Columns from "../components/_columns";
+import Columns from "../../../layout/Columns/Columns";
 import PagePanel from "../components/_panel";
 
 const PageLayout: NextPage = () => {
@@ -21,7 +21,7 @@ const PageLayout: NextPage = () => {
 			</header>
 
 			<main>
-				<Columns columns="2" maxWidth="4xl">
+				<Columns columns="grid-cols-2" maxWidth="4xl">
 					<div>
 						<PagePanel />
 					</div>
@@ -30,7 +30,7 @@ const PageLayout: NextPage = () => {
 					</div>
 				</Columns>
 
-				<Columns columns="2" maxWidth="full">
+				<Columns columns="grid-cols-2" maxWidth="full">
 					<div>
 						<PagePanel />
 					</div>
@@ -38,7 +38,7 @@ const PageLayout: NextPage = () => {
 						<PagePanel />
 					</div>
 				</Columns>
-				<Columns columns="2" maxWidth="7xl">
+				<Columns columns="grid-cols-2" maxWidth="7xl">
 					<div>
 						<PagePanel />
 					</div>
@@ -46,7 +46,7 @@ const PageLayout: NextPage = () => {
 						<PagePanel />
 					</div>
 				</Columns>
-				<Columns columns="2" maxWidth="3xl">
+				<Columns columns="grid-cols-2" maxWidth="3xl">
 					<div>
 						<PagePanel />
 					</div>
@@ -55,7 +55,7 @@ const PageLayout: NextPage = () => {
 					</div>
 				</Columns>
 
-				<Columns columns="2" maxWidth="3xl">
+				<Columns columns="grid-cols-2" maxWidth="3xl">
 					<div>
 						<PagePanel />
 					</div>
@@ -63,7 +63,7 @@ const PageLayout: NextPage = () => {
 						<PagePanel />
 					</div>
 				</Columns>
-				<Columns columns="2" maxWidth="7xl">
+				<Columns columns="grid-cols-2" maxWidth="7xl">
 					<div>
 						<PagePanel />
 					</div>
@@ -71,7 +71,7 @@ const PageLayout: NextPage = () => {
 						<PagePanel />
 					</div>
 				</Columns>
-				<Columns columns="2" maxWidth="4xl">
+				<Columns columns="grid-cols-2" maxWidth="4xl">
 					<div>
 						<PagePanel />
 					</div>
@@ -79,7 +79,7 @@ const PageLayout: NextPage = () => {
 						<PagePanel />
 					</div>
 				</Columns>
-				<Columns columns="2" maxWidth="3xl">
+				<Columns columns="grid-cols-2" maxWidth="3xl">
 					<div>
 						<PagePanel />
 					</div>
