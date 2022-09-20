@@ -2,9 +2,9 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/FooterStandard";
-import Profile from "../../components/Header/Profile";
-import PageContent from "./_content";
-import PagePanel from "./_panel";
+import Container from "./components/_container";
+import Columns from "./components/_columns";
+import PagePanel from "./components/_panel";
 
 const PageLayout: NextPage = () => {
 	return (
@@ -15,132 +15,151 @@ const PageLayout: NextPage = () => {
 			</Head>
 			<Navbar />
 
-			<Profile />
-
-			{/* <header className="my-8 cu-container-1280 md:my-12">
+			<header className="max-w-4xl px-8 py-12 mx-auto">
 				<h1 className="text-3xl font-medium tracking-tight text-cu-black-800 md:text-4xl">
-					Page Template
+					Grids &amp; Layouts
 				</h1>
-			</header> */}
+			</header>
 
-			<main className="py-12">
-				<div className="cu-container-1280 cu-columns-35">
-					<div>
+			<main>
+				<Container bgColor="gray">
+					<Columns columns="1" maxWidth="4xl">
+						<PagePanel>
+							<ul>
+								<li>
+									<a
+										className="text-cu-red hover:text-cyan-700"
+										href="layouts/examples/columns1"
+									>
+										Columns 1
+									</a>
+								</li>
+								<li>
+									<a
+										className="text-cu-red hover:text-cyan-700"
+										href="layouts/examples/columns2"
+									>
+										Columns 2
+									</a>
+								</li>
+								<li>
+									<a
+										className="text-cu-red hover:text-cyan-700"
+										href="layouts/examples/columns3"
+									>
+										Columns 3
+									</a>
+								</li>
+								<li>
+									<a
+										className="text-cu-red hover:text-cyan-700"
+										href="layouts/examples/columns33"
+									>
+										Columns One Third
+									</a>
+								</li>
+								<li>
+									<a
+										className="text-cu-red hover:text-cyan-700"
+										href="layouts/examples/columns66"
+									>
+										Columns Two Third
+									</a>
+								</li>
+								<li>
+									<a
+										className="text-cu-red hover:text-cyan-700"
+										href="layouts/examples/no-container"
+									>
+										No Container Wrapper
+									</a>
+								</li>
+							</ul>
+						</PagePanel>
+					</Columns>
+				</Container>
+				<Container bgColor="gray">
+					<Columns columns="1" maxWidth="4xl">
 						<PagePanel />
-						<PagePanel />
-					</div>
-					<div>
-						<div className="cu-column">
+					</Columns>
+				</Container>
+
+				<Container bgColor="white">
+					<Columns columns="2" maxWidth="4xl">
+						<div>
 							<PagePanel />
 						</div>
-						<div className="cu-columns-2">
-							<div>
-								<PagePanel />
-							</div>
-							<div>
-								<PagePanel />
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div className="cu-container-1280 cu-columns-35">
-					<div>
-						<PagePanel />
-						<PagePanel />
-					</div>
-					<div>
-						<div className="cu-column">
+						<div>
 							<PagePanel />
 						</div>
-						<div className="cu-columns-2">
-							<div>
-								<PagePanel />
-								<PagePanel />
-							</div>
-							<div>
-								<PagePanel />
-								<PagePanel />
-							</div>
-						</div>
-						<div className="cu-column">
+					</Columns>
+				</Container>
+				<Container bgColor="white">
+					<Columns columns="2" maxWidth="7xl">
+						<div>
 							<PagePanel />
 						</div>
-					</div>
-				</div>
+						<div>
+							<PagePanel />
+						</div>
+					</Columns>
+				</Container>
 
-				<div className="cu-container-1280 cu-column">
-					<div>
-						<PagePanel />
-					</div>
-				</div>
+				<Container bgColor="gray">
+					<Columns columns="3" maxWidth="4xl">
+						<div>
+							<PagePanel />
+						</div>
+						<div>
+							<PagePanel />
+						</div>
+						<div>
+							<PagePanel />
+						</div>
+					</Columns>
+				</Container>
 
-				<div className="cu-container-1280 cu-columns-65">
-					<div>
-						<PagePanel />
-					</div>
-					<div>
-						<PagePanel />
-					</div>
-				</div>
+				<Container bgColor="white">
+					<Columns columns="33" maxWidth="7xl">
+						<div>
+							<PagePanel />
+						</div>
+						<div>
+							<PagePanel />
+						</div>
+					</Columns>
+				</Container>
+				<Container bgColor="white">
+					<Columns columns="33" maxWidth="7xl">
+						<div>
+							<PagePanel />
+						</div>
+						<div>
+							<PagePanel />
+						</div>
+					</Columns>
+				</Container>
 
-				<div className="cu-container-1280 cu-columns-35">
-					<div>
-						<PagePanel />
-					</div>
-					<div>
-						<PagePanel />
-					</div>
-				</div>
-
-				<div className="cu-container-1280 cu-columns-65">
-					<div>
-						<PagePanel />
-					</div>
-					<div>
-						<PagePanel />
-					</div>
-				</div>
-
-				<div className="cu-container-1280 cu-columns-35">
-					<div>
-						<PagePanel />
-					</div>
-					<div>
-						<PagePanel />
-					</div>
-				</div>
-
-				<div className="cu-container-1280 cu-columns-2">
-					<div>
-						<PagePanel />
-					</div>
-					<div>
-						<PagePanel />
-					</div>
-				</div>
-
-				<div className="cu-container-1024">
-					<PageContent />
-				</div>
-
-				<div className="cu-container-1024 cu-columns-2">
-					<div>
-						<PageContent />
-					</div>
-					<div>
-						<PageContent />
-					</div>
-				</div>
-
-				<div className="cu-container-896 cu-columns-2">
-					<div>
-						<PageContent />
-					</div>
-					<div>
-						<PageContent />
-					</div>
-				</div>
+				<Container bgColor="gray">
+					<Columns columns="66" maxWidth="7xl">
+						<div>
+							<PagePanel />
+						</div>
+						<div>
+							<PagePanel />
+						</div>
+					</Columns>
+				</Container>
+				<Container bgColor="gray">
+					<Columns columns="66" maxWidth="7xl">
+						<div>
+							<PagePanel />
+						</div>
+						<div>
+							<PagePanel />
+						</div>
+					</Columns>
+				</Container>
 			</main>
 
 			<Footer />
