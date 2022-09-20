@@ -99,8 +99,8 @@ const Files: React.FC<FilesProps> = (props): JSX.Element => {
                           >
                             <g>
                               <g>
-                                <g fill="none" fill-rule="evenodd">
-                                  <g fill-rule="nonzero">
+                                <g fill="none" fillRule="evenodd">
+                                  <g fillRule="nonzero">
                                     <path
                                       d="M4 23V1h10.84L20 6.473V23z"
                                       fill="#fff"
@@ -109,7 +109,7 @@ const Files: React.FC<FilesProps> = (props): JSX.Element => {
                                       <path d="M14.62 1.611l4.809 5.142v15.636H4.57V1.61zM14.858 1H4v22h16V6.5z"></path>
                                       <path
                                         d="M14 7V1h.195L20 6.805V7z"
-                                        fill-opacity=".215"
+                                        fillOpacity=".215"
                                       ></path>
                                       <path d="M14.6 1.848L19.152 6.4H14.6zm0-.848H14v6h6v-.6z"></path>
                                     </g>
@@ -117,7 +117,7 @@ const Files: React.FC<FilesProps> = (props): JSX.Element => {
                                   <path
                                     d="M16 15.34c0-1.98-8-.117-8 2.263 0 .192.135.397.353.397 1.675 0 4.779-11 3.26-11s.859 9.023 3.66 9.023c.408 0 .727-.167.727-.683z"
                                     stroke="#bf112b"
-                                    stroke-width=".5"
+                                    strokeWidth=".5"
                                   ></path>
                                 </g>
                               </g>
