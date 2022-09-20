@@ -22,6 +22,18 @@ const PageLayout: NextPage = () => {
 			</header>
 
 			<main>
+				<Container bgColor="gray">
+					<Columns
+						columns="sm:grid-cols-2 lg:grid-cols-4"
+						maxWidth="5xl"
+					>
+						<div className="bg-white">Test</div>
+						<div className="bg-white">Test</div>
+						<div className="bg-white">Test</div>
+						<div className="bg-white">Test</div>
+					</Columns>
+				</Container>
+
 				{/* <Container bgColor="gray">
 					<Columns maxWidth="4xl">
 						<PagePanel>
