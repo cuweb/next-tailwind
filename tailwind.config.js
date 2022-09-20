@@ -26,9 +26,9 @@ module.exports = {
                 },
             },
             gridTemplateColumns: {
-                '66': '66.666666666% auto',
-                '33': '33.333333333% auto',
-              }
+                'one3rd': '33.33333% auto',
+                'two3rd': '66.66666% auto',
+            }
         },
     },
     plugins: [
