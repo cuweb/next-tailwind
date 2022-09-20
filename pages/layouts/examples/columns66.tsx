@@ -23,7 +23,7 @@ const PageLayout: NextPage = () => {
 
 			<main>
 				<Container bgColor="white">
-					<Columns columns="66" maxWidth="4xl">
+					<Columns columns="two3rd" maxWidth="4xl">
 						<div>
 							<PagePanel />
 						</div>
@@ -33,7 +33,7 @@ const PageLayout: NextPage = () => {
 					</Columns>
 				</Container>
 				<Container bgColor="white">
-					<Columns columns="66" maxWidth="full">
+					<Columns columns="two3rd" maxWidth="full">
 						<div>
 							<PagePanel />
 						</div>
@@ -43,7 +43,7 @@ const PageLayout: NextPage = () => {
 					</Columns>
 				</Container>
 				<Container bgColor="gray">
-					<Columns columns="66" maxWidth="7xl">
+					<Columns columns="two3rd" maxWidth="7xl">
 						<div>
 							<PagePanel />
 						</div>
@@ -53,7 +53,7 @@ const PageLayout: NextPage = () => {
 					</Columns>
 				</Container>
 				<Container bgColor="gray">
-					<Columns columns="66" maxWidth="3xl">
+					<Columns columns="two3rd" maxWidth="3xl">
 						<div>
 							<PagePanel />
 						</div>
@@ -64,7 +64,7 @@ const PageLayout: NextPage = () => {
 				</Container>
 
 				<Container bgColor="white">
-					<Columns columns="66" maxWidth="3xl">
+					<Columns columns="two3rd" maxWidth="3xl">
 						<div>
 							<PagePanel />
 						</div>
@@ -74,7 +74,7 @@ const PageLayout: NextPage = () => {
 					</Columns>
 				</Container>
 				<Container bgColor="white">
-					<Columns columns="66" maxWidth="7xl">
+					<Columns columns="two3rd" maxWidth="7xl">
 						<div>
 							<PagePanel />
 						</div>
@@ -84,7 +84,7 @@ const PageLayout: NextPage = () => {
 					</Columns>
 				</Container>
 				<Container bgColor="gray">
-					<Columns columns="66" maxWidth="4xl">
+					<Columns columns="two3rd" maxWidth="4xl">
 						<div>
 							<PagePanel />
 						</div>
@@ -94,7 +94,7 @@ const PageLayout: NextPage = () => {
 					</Columns>
 				</Container>
 				<Container bgColor="gray">
-					<Columns columns="66" maxWidth="3xl">
+					<Columns columns="two3rd" maxWidth="3xl">
 						<div>
 							<PagePanel />
 						</div>
