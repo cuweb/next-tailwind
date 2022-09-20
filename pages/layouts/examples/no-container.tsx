@@ -1,10 +1,9 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import Navbar from "../../components/Navbar/Navbar";
-import Footer from "../../components/Footer/FooterStandard";
-import Container from "./_container";
-import Columns from "./_columns";
-import PagePanel from "./_panel";
+import Navbar from "../../../components/Navbar/Navbar";
+import Footer from "../../../components/Footer/FooterStandard";
+import Columns from "../components/_columns";
+import PagePanel from "../components/_panel";
 
 const PageLayout: NextPage = () => {
 	return (

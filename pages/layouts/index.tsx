@@ -2,9 +2,9 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/FooterStandard";
-import Container from "./_container";
-import Columns from "./_columns";
-import PagePanel from "./_panel";
+import Container from "./components/_container";
+import Columns from "./components/_columns";
+import PagePanel from "./components/_panel";
 
 const PageLayout: NextPage = () => {
 	return (
@@ -24,7 +24,58 @@ const PageLayout: NextPage = () => {
 			<main>
 				<Container bgColor="gray">
 					<Columns columns="1" maxWidth="4xl">
-						<PagePanel />
+						<PagePanel>
+							<ul>
+								<li>
+									<a
+										className="text-cu-red hover:text-cyan-700"
+										href="layouts/examples/columns1"
+									>
+										Columns 1
+									</a>
+								</li>
+								<li>
+									<a
+										className="text-cu-red hover:text-cyan-700"
+										href="layouts/examples/columns2"
+									>
+										Columns 2
+									</a>
+								</li>
+								<li>
+									<a
+										className="text-cu-red hover:text-cyan-700"
+										href="layouts/examples/columns3"
+									>
+										Columns 3
+									</a>
+								</li>
+								<li>
+									<a
+										className="text-cu-red hover:text-cyan-700"
+										href="layouts/examples/columns33"
+									>
+										Columns One Third
+									</a>
+								</li>
+								<li>
+									<a
+										className="text-cu-red hover:text-cyan-700"
+										href="layouts/examples/columns66"
+									>
+										Columns Two Third
+									</a>
+								</li>
+								<li>
+									<a
+										className="text-cu-red hover:text-cyan-700"
+										href="layouts/examples/no-container"
+									>
+										No Container Wrapper
+									</a>
+								</li>
+							</ul>
+						</PagePanel>
 					</Columns>
 				</Container>
 				<Container bgColor="gray">
