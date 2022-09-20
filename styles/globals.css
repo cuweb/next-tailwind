@@ -11,51 +11,16 @@
 }
 
 @layer components {
-	.cu-block-white {
-		@apply py-8 bg-white;
+	.cu-container.bg-white + .cu-container.bg-white,
+	.cu-container.bg-cu-black-50 + .cu-container.bg-cu-black-50 {
+		@apply pt-0;
 	}
 
-	.cu-block-gray {
-		@apply py-8 bg-cu-black-50;
-	}
-
-	.cu-block-spacing {
-		@apply px-8 mx-auto;
-	}
-
-	.cu-block-1280 > * {
-		@apply cu-block-spacing max-w-7xl;
-	}
-
-	.cu-block-1024 > * {
-		@apply max-w-5xl cu-block-spacing;
-	}
-
-	.cu-block-896 > * {
-		@apply max-w-4xl cu-block-spacing;
-	}
-
-	.cu-block-768 > * {
-		@apply max-w-3xl cu-block-spacing;
-	}
-
-	.cu-column {
-		@apply mb-8 grid gap-8 [&:last-child]:mb-0;
-	}
-
-	.cu-column-2 {
-		@apply cu-column md:grid-cols-2;
-	}
-
-	.cu-column-3 {
-		@apply cu-column md:grid-cols-3;
-	}
-
-	.cu-column-33 {
+	/* .cu-column-33 {
 		@apply cu-column md:grid-cols-33;
 	}
 
 	.cu-column-66 {
 		@apply cu-column md:grid-cols-66;
-	}
+	} */
 }
