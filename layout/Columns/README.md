@@ -25,14 +25,15 @@ If you do not specify any of the options below the defaults are set as per the f
 The available props can be added like the following example:
 
 ```jsx
-<Columns columns="grid-cols-2" maxWidth="7xl" breakPoint="sm">
+<Columns columns="md:grid-cols-2 lg:grid-cols-4" maxWidth="7xl">
     {add content}
 </Columns>
 ```
 
 -   `columns` prop accepts any of the [Tailwind Grid Column Template](https://tailwindcss.com/docs/grid-template-columns) options available, as well as the custom options noted below
 -   `maxWidth` - prop accepts any of the [Tailwind Max Width](https://tailwindcss.com/docs/max-width) options available
--   `breakPoint` - prop accepts any of the [Tailwind Breakpoints](https://tailwindcss.com/docs/responsive-design) options available
+
+**Note:** when passing classes into the column attribute it is recommended to set your media queries here. This provides ultimate flexibility to how you want the grid to break for any screen size.
 
 ### Custom Columns
 
