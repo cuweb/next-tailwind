@@ -1,4 +1,3 @@
-/** @type {import('tailwindcss').Config} */
 module.exports = {
     content: [
         './pages/**/*.{js,ts,jsx,tsx}',
@@ -27,10 +26,12 @@ module.exports = {
                 },
             },
             gridTemplateColumns: {
-                '65-split': '66.666666666% auto',
-                '35-split': '33.333333333% auto',
-              }
+                'one3rd': '33.33333% auto',
+                'two3rd': '66.66666% auto',
+            }
         },
     },
-    plugins: ['@tailwindcss/forms'],
+    plugins: [
+        '@tailwindcss/forms',
+    ],
 };
