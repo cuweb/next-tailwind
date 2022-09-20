@@ -15,26 +15,15 @@ const PageLayout: NextPage = () => {
 			</Head>
 			<Navbar />
 
-			<header className="max-w-4xl px-8 py-12 mx-auto">
-				<h1 className="text-3xl font-medium tracking-tight text-cu-black-800 md:text-4xl">
-					Grids &amp; Layouts
+			<header className="bg-cu-black-50">
+				<h1 className="max-w-4xl px-8 py-12 mx-auto text-3xl font-medium tracking-tight text-center text-cu-black-800 md:text-4xl">
+					Grids &amp; Layouts: Two Third Columns
 				</h1>
 			</header>
 
 			<main>
-				<Container bgColor="gray">
-					<Columns columns="1" maxWidth="4xl">
-						<PagePanel />
-					</Columns>
-				</Container>
-				<Container bgColor="gray">
-					<Columns columns="1" maxWidth="4xl">
-						<PagePanel />
-					</Columns>
-				</Container>
-
 				<Container bgColor="white">
-					<Columns columns="2" maxWidth="4xl">
+					<Columns columns="66" maxWidth="4xl">
 						<div>
 							<PagePanel />
 						</div>
@@ -44,7 +33,7 @@ const PageLayout: NextPage = () => {
 					</Columns>
 				</Container>
 				<Container bgColor="white">
-					<Columns columns="2" maxWidth="7xl">
+					<Columns columns="66" maxWidth="full">
 						<div>
 							<PagePanel />
 						</div>
@@ -53,42 +42,6 @@ const PageLayout: NextPage = () => {
 						</div>
 					</Columns>
 				</Container>
-
-				<Container bgColor="gray">
-					<Columns columns="3" maxWidth="4xl">
-						<div>
-							<PagePanel />
-						</div>
-						<div>
-							<PagePanel />
-						</div>
-						<div>
-							<PagePanel />
-						</div>
-					</Columns>
-				</Container>
-
-				<Container bgColor="white">
-					<Columns columns="33" maxWidth="7xl">
-						<div>
-							<PagePanel />
-						</div>
-						<div>
-							<PagePanel />
-						</div>
-					</Columns>
-				</Container>
-				<Container bgColor="white">
-					<Columns columns="33" maxWidth="7xl">
-						<div>
-							<PagePanel />
-						</div>
-						<div>
-							<PagePanel />
-						</div>
-					</Columns>
-				</Container>
-
 				<Container bgColor="gray">
 					<Columns columns="66" maxWidth="7xl">
 						<div>
@@ -100,7 +53,48 @@ const PageLayout: NextPage = () => {
 					</Columns>
 				</Container>
 				<Container bgColor="gray">
+					<Columns columns="66" maxWidth="3xl">
+						<div>
+							<PagePanel />
+						</div>
+						<div>
+							<PagePanel />
+						</div>
+					</Columns>
+				</Container>
+
+				<Container bgColor="white">
+					<Columns columns="66" maxWidth="3xl">
+						<div>
+							<PagePanel />
+						</div>
+						<div>
+							<PagePanel />
+						</div>
+					</Columns>
+				</Container>
+				<Container bgColor="white">
 					<Columns columns="66" maxWidth="7xl">
+						<div>
+							<PagePanel />
+						</div>
+						<div>
+							<PagePanel />
+						</div>
+					</Columns>
+				</Container>
+				<Container bgColor="gray">
+					<Columns columns="66" maxWidth="4xl">
+						<div>
+							<PagePanel />
+						</div>
+						<div>
+							<PagePanel />
+						</div>
+					</Columns>
+				</Container>
+				<Container bgColor="gray">
+					<Columns columns="66" maxWidth="3xl">
 						<div>
 							<PagePanel />
 						</div>

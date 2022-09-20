@@ -16,11 +16,11 @@
 		@apply pt-0;
 	}
 
-	/* .cu-column-33 {
-		@apply cu-column md:grid-cols-33;
+	main > .cu-column:first-child {
+		@apply pt-8;
 	}
 
-	.cu-column-66 {
-		@apply cu-column md:grid-cols-66;
-	} */
+	main > .cu-column:last-child {
+		@apply pb-8;
+	}
 }
