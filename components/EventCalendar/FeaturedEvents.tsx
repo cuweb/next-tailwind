@@ -1,4 +1,7 @@
 import { EllipsisHorizontalIcon } from "@heroicons/react/24/outline";
+import Columns from "../../pages/layouts/components/_columns";
+import Container from "../../pages/layouts/components/_container";
+import EventCard from "../Cards/EventCard";
 const posts = [
   {
     title: "Boost your conversion rate",
@@ -90,47 +93,11 @@ const FeatureEvents = () => {
         </h2>
         <div className="mx-auto mt-12 grid max-w-lg gap-5 lg:max-w-none lg:grid-cols-4">
           {posts.map((post) => (
-            <div
-              key={post.title}
-              className="flex flex-col overflow-hidden rounded-lg shadow-lg"
-            >
-              <div className="flex-shrink-0">
-                <img
-                  className="h-48 w-full object-cover"
-                  src={post.imageUrl}
-                  alt=""
-                />
-              </div>
-              <div className="flex flex-1 flex-col justify-between bg-white p-6">
-                <div className="flex-1">
-                  <p className="text-red-carleton text-sm font-medium">
-                    <a href={post.category.href} className="hover:underline">
-                      {post.category.name}
-                    </a>
-                  </p>
-                  <a href={post.href} className="mt-2 block">
-                    <p className="text-xl font-semibold text-gray-900">
-                      {post.title}
-                    </p>
-                    <p className="mt-3 text-base text-gray-500">
-                      {post.description}
-                    </p>
-                  </a>
-                  <div className="grid grid-cols-3 gap-4">
-                    <button
-                      className={`col-span-2 rounded bg-cu-red py-2 px-4 font-bold text-white`}
-                    >
-                      {post.buttonTitle}
-                    </button>
-                    <button
-                      className={`inline-flex items-center rounded bg-cu-black-500 font-bold text-white`}
-                    >
-                      <EllipsisHorizontalIcon className="h-4 w-4" />
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <Container bgColor="gray">
+              <Columns columns="4" maxWidth="7xl">
+                <EventCard title={post.title} content={post.description} />
+              </Columns>
+            </Container>
           ))}
         </div>
       </div>
