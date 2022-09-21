@@ -6,9 +6,6 @@ import Profile from "../../components/Header/Profile";
 import NavBar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/FooterStandard";
 import DashboardPanel from "../../build-files/layouts/DashboardPanel/DashboardPanel";
-import StackedList from "../../build-files/components/StackedLists/StackedList";
-import NewsItem from "../../build-files/components/ListingItems/NewsItem/NewsItem";
-
 import Top5 from "../../components/Intranet/Top5";
 import News from "../../components/Intranet/News";
 import Events from "../../components/Intranet/Events";
@@ -23,6 +20,7 @@ const Intranet: NextPage = () => {
 				<title>Dashboard - Intranet | Carleton University </title>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
+
 			<NavBar />
 			<Profile />
 
