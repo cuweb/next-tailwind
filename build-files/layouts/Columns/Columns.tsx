@@ -8,7 +8,6 @@ export default function Columns(props: any) {
 
 	return (
 		<article
-			// className={`cu-column mx-auto mb-8 grid max-w-${rdsMaxWidth} grid-cols-1 ${rdsColumns} gap-8 px-8 [&:last-child]:mb-0`}
 			className={`cu-column mx-auto mb-8 grid max-w-${rdsMaxWidth} grid-cols-1 ${rdsColumns} gap-8 px-8 [&:last-child]:mb-0`}
 		>
 			{children || "Empty Panel"}
