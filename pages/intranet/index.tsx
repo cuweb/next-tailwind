@@ -32,6 +32,13 @@ const Intranet: NextPage = () => {
 						<News />
 					</Column.TwoThird>
 				</Container.Gray>
+
+				<Container.Gray>
+					<Column.Two>
+						<News />
+						<News />
+					</Column.Two>
+				</Container.Gray>
 			</main>
 
 			{/* <Footer /> */}

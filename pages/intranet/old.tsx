@@ -25,30 +25,30 @@ const Intranet: NextPage = () => {
 			<Profile />
 
 			<main>
-				<Container bgColor="gray">
-					<Columns columns="md:grid-cols-two3rd" maxWidth="7xl">
+				<Container.Gray>
+					<Columns.TwoThird>
 						<Top5 />
 						<News />
-					</Columns>
-				</Container>
+					</Columns.TwoThird>
+				</Container.Gray>
 
-				<Container bgColor="gray">
-					<Columns columns="md:grid-cols-2" maxWidth="7xl">
+				<Container.Gray>
+					<Columns.Two>
 						<Events />
 						<Marketplace />
-					</Columns>
-				</Container>
+					</Columns.Two>
+				</Container.Gray>
 
-				<Container bgColor="gray">
-					<Columns columns="md:grid-cols-3" maxWidth="7xl">
+				<Container.Gray>
+					<Columns.Two>
 						<Files />
 						<Bookmarks />
 						<DashboardPanel
 							title="Random Panel"
 							innerPadding="p-6"
 						/>
-					</Columns>
-				</Container>
+					</Columns.Two>
+				</Container.Gray>
 			</main>
 
 			{/* <Footer /> */}
