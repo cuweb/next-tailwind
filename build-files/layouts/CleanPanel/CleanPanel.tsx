@@ -2,5 +2,6 @@ import React from "react";
 
 export default function CleanPanel(props: any) {
 	const { className } = props;
-	return <section className={className}>{props.children}</section>;
+	const addClasses = className ? className : "";
+	return <section className={`${addClasses}`}>{props.children}</section>;
 }

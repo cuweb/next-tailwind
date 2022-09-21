@@ -4,7 +4,6 @@ export default function Columns(props: any) {
 	const { children, maxWidth, columns, breakPoint } = props;
 	const rdsMaxWidth = maxWidth ? maxWidth : "5xl"; // odd thing here
 	const rdsColumns = columns ? columns : "grid-cols-1";
-	const rdsColBreak = breakPoint ? breakPoint : "md";
 
 	return (
 		<div

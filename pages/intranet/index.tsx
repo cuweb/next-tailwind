@@ -50,7 +50,7 @@ const Intranet: NextPage = () => {
 				</Container>
 			</main>
 
-			<Footer />
+			{/* <Footer /> */}
 		</>
 	);
 };

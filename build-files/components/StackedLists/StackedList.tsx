@@ -1,6 +1,12 @@
 import React from "react";
 
 export default function StackedList(props: any) {
-	const { children } = props;
-	return <ul role="list">{children || "There are no items available"}</ul>;
+	const { children, className } = props;
+	const addClasses = className ? className : "";
+
+	return (
+		<ul role="list" className={`${addClasses}`}>
+			{children || "There are no items available"}
+		</ul>
+	);
 }

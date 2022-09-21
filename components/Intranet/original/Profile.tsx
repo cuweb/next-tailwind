@@ -16,7 +16,7 @@
 */
 import { Fragment, useState } from "react";
 import { Disclosure, Listbox, Menu, Transition } from "@headlessui/react";
-import GradientDiv from "../Gradient/GradientDiv";
+import GradientDiv from "../../Gradient/GradientDiv";
 import {
 	ArrowLongLeftIcon,
 	ArrowLongRightIcon,

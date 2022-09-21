@@ -8,9 +8,18 @@ export default function News() {
 		<DashboardPanel title="News Feed">
 			<StackedList>
 				{/* Add map for new listing using NewsItem */}
-				<NewsItem />
-				<NewsItem />
-				<NewsItem />
+				<NewsItem
+					borderColor="border-cu-black-100"
+					padding="px-6 py-4"
+				/>
+				<NewsItem
+					borderColor="border-cu-black-100"
+					padding="px-6 py-4"
+				/>
+				<NewsItem
+					borderColor="border-cu-black-100"
+					padding="px-6 py-4"
+				/>
 			</StackedList>
 		</DashboardPanel>
 	);
