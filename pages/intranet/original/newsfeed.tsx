@@ -2,10 +2,10 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Profile from "../../../components/Header/Profile";
 import FooterIntranet from "../../../components/Footer/FooterIntranet";
-import Navbar from "../../../components/Intranet/Navbar";
-import Events from "../../../components/Intranet/Events";
-import News from "../../../components/Intranet/News";
-import { Bookmarks } from "../../../components/Intranet/Bookmarks";
+import Navbar from "../../../components/Intranet/original/Navbar";
+import Events from "../../../components/Intranet/original/Events";
+import News from "../../../components/Intranet/original/News";
+import { Bookmarks } from "../../../components/Intranet/original/Bookmarks";
 
 const IntranetNewsFeed: NextPage = () => {
 	return (
@@ -17,15 +17,15 @@ const IntranetNewsFeed: NextPage = () => {
 			<div className="relative bg-[#f3f3f3]">
 				<Navbar />
 				<Profile />
-				<div className="px-6 py-6 mx-auto mt-3 max-w-7xl">
-					<h1 className="text-2xl font-semibold tracking-tight text-cu-black:900">
+				<div className="mx-auto mt-3 max-w-7xl px-6 py-6">
+					<h1 className="text-cu-black:900 text-2xl font-semibold tracking-tight">
 						Community News
 					</h1>
 				</div>
-				<div className="grid max-w-3xl grid-cols-1 gap-6 mx-auto mt-3 sm:px-6 lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-1">
+				<div className="mx-auto mt-3 grid max-w-3xl grid-cols-1 gap-6 sm:px-6 lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-1">
 					<Events />
 				</div>
-				<div className="grid max-w-3xl grid-cols-1 gap-6 mx-auto mt-8 sm:px-6 lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2">
+				<div className="mx-auto mt-8 grid max-w-3xl grid-cols-1 gap-6 sm:px-6 lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2">
 					<News />
 					<Bookmarks />
 				</div>

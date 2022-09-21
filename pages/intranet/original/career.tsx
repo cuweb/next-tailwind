@@ -2,9 +2,9 @@ import type { NextPage } from "next";
 import Head from "next/head";
 
 import Profile from "../../../components/Header/Profile";
-import Jobs from "../../../components/Intranet/Jobs";
+import Jobs from "../../../components/Intranet/original/Jobs";
 import FooterIntranet from "../../../components/Footer/FooterIntranet";
-import Navbar from "../../../components/Intranet/Navbar";
+import Navbar from "../../../components/Intranet/original/Navbar";
 
 const IntranetCareer: NextPage = () => {
 	return (
