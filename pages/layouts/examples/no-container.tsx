@@ -2,7 +2,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Navbar from "../../../components/Navbar/Navbar";
 import Footer from "../../../components/Footer/FooterStandard";
-import Columns from "../../../layout/Columns/Columns";
+import Columns from "../../../build/layouts/Columns/Columns";
 import PagePanel from "../components/_panel";
 
 const PageLayout: NextPage = () => {
