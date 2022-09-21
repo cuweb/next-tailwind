@@ -12,14 +12,6 @@ import { Columns } from '{path}/layout/Columns/Columns';
 </Columns>
 ```
 
-## Default
-
-If you do not specify any of the options below the defaults are set as per the following:
-
--   `columns` - Applies the `grid-cols-1` class from Tailwind
--   `maxWidth` - Applies the `5xl` size from the max-width class in Tailwind
--   `breakPoint` - Applies the `md` breakpoint from Tailwind
-
 ## Options
 
 The available props can be added like the following example:
@@ -40,7 +32,15 @@ The available props can be added like the following example:
 -   `grid-cols-one3rd` - creates a one third column grid where the layout has a `33%` wide left column and an auto sized right column
 -   `grid-cols-two3rd` - creates a two third column grid where the layout has a `66%` wide left column and an auto sized right column
 
-## Default Styles Applied
+## Fallbacks
+
+If you do not specify any of the options below the defaults are set as per the following:
+
+-   `columns` - Applies the `grid-cols-1` class from Tailwind
+-   `maxWidth` - Applies the `5xl` size from the max-width class in Tailwind
+-   `breakPoint` - Applies the `md` breakpoint from Tailwind
+
+## Other Styles
 
 In addition to options that are passed the following Tailwind classes are set on the component by default:
 

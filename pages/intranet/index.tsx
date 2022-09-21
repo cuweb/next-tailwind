@@ -6,7 +6,6 @@ import DashboardPanel from "../../build-files/layouts/DashboardPanel/DashboardPa
 import Profile from "../../components/Header/Profile";
 import NavBar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/FooterStandard";
-
 import Top5 from "../../components/Intranet/Top5";
 import News from "../../components/Intranet/News";
 import Events from "../../components/Intranet/Events";
