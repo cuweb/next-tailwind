@@ -1,8 +1,8 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Container from "../../build-files/layouts/Container/Container";
-// import Columns from "../../build-files/layouts/Columns/Columns";
 import Column from "../../build-files/layouts/Columns/Columns";
+import Panel from "../../build-files/layouts/Panel/Panel";
 import Profile from "../../components/Header/Profile";
 import NavBar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/FooterStandard";
@@ -13,6 +13,7 @@ import Events from "../../components/Intranet/Events";
 import Marketplace from "../../components/Intranet/Marketplace";
 import Files from "../../components/Intranet/Files";
 import Bookmarks from "../../components/Intranet/Bookmarks";
+// import Panel from "../../components/Notation/Panel";
 
 const Intranet: NextPage = () => {
 	return (
@@ -26,6 +27,12 @@ const Intranet: NextPage = () => {
 			<Profile />
 
 			<main>
+				<Container.Gray>
+					<Column.TwoThird>
+						<Panel.Empty>Test</Panel.Empty>
+					</Column.TwoThird>
+				</Container.Gray>
+
 				<Container.Gray>
 					<Column.TwoThird>
 						<News />
