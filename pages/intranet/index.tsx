@@ -2,18 +2,16 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Container from "../../build-files/layouts/Container/Container";
 import Column from "../../build-files/layouts/Columns/Columns";
-import Panel from "../../build-files/layouts/Panel/Panel";
 import Profile from "../../components/Header/Profile";
 import NavBar from "../../components/Navbar/Navbar";
-import Footer from "../../components/Footer/FooterStandard";
 import Dashboard from "../../build-files/layouts/DashboardPanel/DashboardPanel";
+import Footer from "../../components/Footer/FooterStandard";
 import Top5 from "../../components/Intranet/Top5";
 import News from "../../components/Intranet/News";
 import Events from "../../components/Intranet/Events";
 import Marketplace from "../../components/Intranet/Marketplace";
 import Files from "../../components/Intranet/Files";
 import Bookmarks from "../../components/Intranet/Bookmarks";
-// import Panel from "../../components/Notation/Panel";
 
 const Intranet: NextPage = () => {
 	return (
@@ -31,7 +29,7 @@ const Intranet: NextPage = () => {
 					<Column.TwoThird>
 						<Dashboard>
 							<Dashboard.Title>Top 5</Dashboard.Title>
-							<News />
+							<Top5 />
 						</Dashboard>
 
 						<Dashboard>

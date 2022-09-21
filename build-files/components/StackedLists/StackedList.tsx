@@ -1,12 +1,7 @@
-import React from "react";
+const StackedListRoot = ({ children }: any) => {
+	return <ul role="list">{children}</ul>;
+};
 
-export default function StackedList(props: any) {
-	const { children, className } = props;
-	const addClasses = className ? className : "";
+const StackedList = Object.assign(StackedListRoot);
 
-	return (
-		<ul role="list" className={`${addClasses}`}>
-			{children || "There are no items available"}
-		</ul>
-	);
-}
+export default StackedList;
