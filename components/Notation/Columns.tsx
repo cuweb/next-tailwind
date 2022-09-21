@@ -1,3 +1,5 @@
+import Newsfeed from "./Newsfeed";
+
 const classNameRoot =
   "cu-column mx-auto mb-8 grid max-w-7xl gap-8 px-8 [&:last-child]:mb-0";
 
@@ -20,6 +22,7 @@ const Four = ({ unstyled, className,  children }: any) => {
 const Column = Object.assign(ColumnRoot, {
   Four,
   Two,
+  Newsfeed,
 });
 
 export default Column;
