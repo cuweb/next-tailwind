@@ -1,18 +1,14 @@
 const classNameRoot = "cu-container py-8";
 
-const White = ({ unstyled, className, children }: any) => {
+const White = ({ children }: any) => {
 	return (
-		<section className={`${unstyled ? className : classNameRoot} bg-white`}>
-			{children}
-		</section>
+		<section className={`${classNameRoot} bg-white`}>{children}</section>
 	);
 };
 
-const Gray = ({ unstyled, className, children }: any) => {
+const Gray = ({ children }: any) => {
 	return (
-		<section
-			className={`${unstyled ? className : classNameRoot} bg-cu-black-50`}
-		>
+		<section className={`${classNameRoot} bg-cu-black-50`}>
 			{children}
 		</section>
 	);

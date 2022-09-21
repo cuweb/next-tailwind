@@ -1,17 +1,19 @@
-import React from "react";
-
-export default function DashboardPanel(props: any) {
-	const { title, innerPadding } = props;
-	const contentPadding = innerPadding ? innerPadding : "p-0";
-
+const DashboardRoot = ({ children }: any) => {
 	return (
-		<section className="bg-white shadow sm:rounded-lg">
-			<h2 className="px-6 py-4 text-base font-bold border-b rounded-t-lg bg-gray-50 text-cu-black-900">
-				{title}
-			</h2>
-			<div className={contentPadding}>
-				{props.children || "Dashboard Panel is Empty"}
-			</div>
-		</section>
+		<section className="bg-white shadow sm:rounded-lg">{children}</section>
 	);
-}
+};
+
+const Title = ({ children }: any) => {
+	return (
+		<h2 className="px-6 py-4 text-base font-bold border-b rounded-t-lg bg-gray-50 text-cu-black-900">
+			{children}
+		</h2>
+	);
+};
+
+const Dashboard = Object.assign(DashboardRoot, {
+	Title,
+});
+
+export default Dashboard;

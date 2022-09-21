@@ -6,7 +6,7 @@ import Panel from "../../build-files/layouts/Panel/Panel";
 import Profile from "../../components/Header/Profile";
 import NavBar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/FooterStandard";
-import DashboardPanel from "../../build-files/layouts/DashboardPanel/DashboardPanel";
+import Dashboard from "../../build-files/layouts/DashboardPanel/DashboardPanel";
 import Top5 from "../../components/Intranet/Top5";
 import News from "../../components/Intranet/News";
 import Events from "../../components/Intranet/Events";
@@ -29,26 +29,51 @@ const Intranet: NextPage = () => {
 			<main>
 				<Container.Gray>
 					<Column.TwoThird>
-						<Panel.Empty>Test</Panel.Empty>
-					</Column.TwoThird>
-				</Container.Gray>
+						<Dashboard>
+							<Dashboard.Title>Top 5</Dashboard.Title>
+							<News />
+						</Dashboard>
 
-				<Container.Gray>
-					<Column.TwoThird>
-						<News />
-						<News />
+						<Dashboard>
+							<Dashboard.Title>News Feed</Dashboard.Title>
+							<News />
+						</Dashboard>
 					</Column.TwoThird>
 				</Container.Gray>
 
 				<Container.Gray>
 					<Column.Two>
-						<News />
-						<News />
+						<Dashboard>
+							<Dashboard.Title>Upcoming Events</Dashboard.Title>
+							<Events />
+						</Dashboard>
+
+						<Dashboard>
+							<Dashboard.Title>Marketplace</Dashboard.Title>
+							<Marketplace />
+						</Dashboard>
 					</Column.Two>
 				</Container.Gray>
-			</main>
 
-			{/* <Footer /> */}
+				<Container.Gray>
+					<Column.Three>
+						<Dashboard>
+							<Dashboard.Title>Files</Dashboard.Title>
+							<Files />
+						</Dashboard>
+
+						<Dashboard>
+							<Dashboard.Title>Bookmarks</Dashboard.Title>
+							<Bookmarks />
+						</Dashboard>
+
+						<Dashboard>
+							<Dashboard.Title>Another Panel</Dashboard.Title>
+							<News />
+						</Dashboard>
+					</Column.Three>
+				</Container.Gray>
+			</main>
 		</>
 	);
 };
