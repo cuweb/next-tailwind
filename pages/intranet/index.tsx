@@ -4,7 +4,7 @@ import Container from "../../build-files/layouts/Container/Container";
 import Column from "../../build-files/layouts/Columns/Columns";
 import Profile from "../../components/Header/Profile";
 import NavBar from "../../components/Navbar/Navbar";
-import Dashboard from "../../build-files/layouts/DashboardPanel/DashboardPanel";
+import DashboardPanel from "../../build-files/layouts/DashboardPanel/DashboardPanel";
 import Footer from "../../components/Footer/FooterStandard";
 import Top5 from "../../components/Intranet/Top5";
 import News from "../../components/Intranet/News";
@@ -27,48 +27,58 @@ const Intranet: NextPage = () => {
 			<main>
 				<Container.Gray>
 					<Column.TwoThird>
-						<Dashboard>
-							<Dashboard.Title>Top 5</Dashboard.Title>
+						<DashboardPanel>
+							<DashboardPanel.Title>Top 5</DashboardPanel.Title>
 							<Top5 />
-						</Dashboard>
+						</DashboardPanel>
 
-						<Dashboard>
-							<Dashboard.Title>News Feed</Dashboard.Title>
+						<DashboardPanel>
+							<DashboardPanel.Title>
+								News Feed
+							</DashboardPanel.Title>
 							<News />
-						</Dashboard>
+						</DashboardPanel>
 					</Column.TwoThird>
 				</Container.Gray>
 
 				<Container.Gray>
 					<Column.Two>
-						<Dashboard>
-							<Dashboard.Title>Upcoming Events</Dashboard.Title>
+						<DashboardPanel>
+							<DashboardPanel.Title>
+								Upcoming Events
+							</DashboardPanel.Title>
 							<Events />
-						</Dashboard>
+						</DashboardPanel>
 
-						<Dashboard>
-							<Dashboard.Title>Marketplace</Dashboard.Title>
+						<DashboardPanel>
+							<DashboardPanel.Title>
+								Marketplace
+							</DashboardPanel.Title>
 							<Marketplace />
-						</Dashboard>
+						</DashboardPanel>
 					</Column.Two>
 				</Container.Gray>
 
 				<Container.Gray>
 					<Column.Three>
-						<Dashboard>
-							<Dashboard.Title>Files</Dashboard.Title>
+						<DashboardPanel>
+							<DashboardPanel.Title>Files</DashboardPanel.Title>
 							<Files />
-						</Dashboard>
+						</DashboardPanel>
 
-						<Dashboard>
-							<Dashboard.Title>Bookmarks</Dashboard.Title>
+						<DashboardPanel>
+							<DashboardPanel.Title>
+								Bookmarks
+							</DashboardPanel.Title>
 							<Bookmarks />
-						</Dashboard>
+						</DashboardPanel>
 
-						<Dashboard>
-							<Dashboard.Title>Another Panel</Dashboard.Title>
+						<DashboardPanel>
+							<DashboardPanel.Title>
+								Another Panel
+							</DashboardPanel.Title>
 							<News />
-						</Dashboard>
+						</DashboardPanel>
 					</Column.Three>
 				</Container.Gray>
 			</main>

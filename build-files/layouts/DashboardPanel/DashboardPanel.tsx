@@ -12,8 +12,8 @@ const Title = ({ children }: any) => {
 	);
 };
 
-const Dashboard = Object.assign(DashboardRoot, {
+const DashboardPanel = Object.assign(DashboardRoot, {
 	Title,
 });
 
-export default Dashboard;
+export default DashboardPanel;

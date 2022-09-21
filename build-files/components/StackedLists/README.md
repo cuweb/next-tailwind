@@ -5,7 +5,7 @@ This component is used to create a container to display a list of items.
 ## Usage
 
 ```jsx
-import { DashboardPanel } from '{path}/layout/CleanPanel/CleanPanel';
+import DashboardPanel from '{path}/component/StackedList/StackedList';
 
 <StackedLists>
     {add content}
@@ -14,12 +14,4 @@ import { DashboardPanel } from '{path}/layout/CleanPanel/CleanPanel';
 
 ## Options
 
-The available props can be added like the following example:
-
-```jsx
-<StackedLists className="px-6 py-4">
-    {add content}
-</StackedLists>
-```
-
--   `className` - apply any class from Tailwind to build a custom panel
+AddInfo
