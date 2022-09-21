@@ -22,13 +22,13 @@ The available props can be added like the following example:
 </DashboardPanel>
 ```
 
--   `innerPadding` - Applies any padding class from Tailwind
+-   `innerPadding` - use any padding class from Tailwind
 
 ## Fallbacks
 
 If you do not specify any of the options below the defaults are set as per the following:
 
--   `innerPadding` - Adds the `p-0` class from Tailwind
+-   `innerPadding` - adds the `p-0` class from Tailwind
 
 ## Other Styles
 

@@ -1,13 +1,14 @@
 import React from "react";
 
 export default function Columns(props: any) {
-	const { children, maxWidth, columns, breakPoint } = props;
-	const rdsMaxWidth = maxWidth ? maxWidth : "5xl"; // odd thing here
-	const rdsColumns = columns ? columns : "grid-cols-1";
+	const { children, maxWidth, columns, gridGap } = props;
+	const setMaxWidth = maxWidth ? maxWidth : "5xl"; // odd thing here
+	const setColumns = columns ? columns : "grid-cols-1";
+	const setGridGap = gridGap ? gridGap : "gap-8";
 
 	return (
 		<div
-			className={`cu-column mx-auto mb-8 grid max-w-${rdsMaxWidth} grid-cols-1 ${rdsColumns} gap-8 px-8 [&:last-child]:mb-0`}
+			className={`cu-column mx-auto mb-8 grid max-w-${setMaxWidth} grid-cols-1 ${setColumns} ${setGridGap} px-8 [&:last-child]:mb-0`}
 		>
 			{children || "Empty Panel"}
 		</div>

@@ -22,4 +22,4 @@ The available props can be added like the following example:
 </CleanPanel>
 ```
 
--   `className` - Apply any class from Tailwind to build a custom panel
+-   `className` - apply any class from Tailwind to build a custom panel
