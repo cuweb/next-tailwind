@@ -1,15 +1,15 @@
 # Component Reference
 
-This component can be used to create a custom layout panel.
+This component is used to create a container to display a list of items.
 
 ## Usage
 
 ```jsx
 import { DashboardPanel } from '{path}/layout/CleanPanel/CleanPanel';
 
-<CleanPanel>
+<StackedLists>
     {add content}
-</CleanPanel>
+</StackedLists>
 ```
 
 ## Options
@@ -17,9 +17,9 @@ import { DashboardPanel } from '{path}/layout/CleanPanel/CleanPanel';
 The available props can be added like the following example:
 
 ```jsx
-<CleanPanel className="px-6 py-4">
+<StackedLists className="px-6 py-4">
     {add content}
-</CleanPanel>
+</StackedLists>
 ```
 
 -   `className` - apply any class from Tailwind to build a custom panel

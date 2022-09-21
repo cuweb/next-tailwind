@@ -1,6 +1,6 @@
 # Component Reference
 
-This component is used to create a full width container with a background color.
+This component is used to create a specifically designed dashboard panel.
 
 ## Usage
 
