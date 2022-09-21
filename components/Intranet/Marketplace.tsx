@@ -1,7 +1,7 @@
 /* This example requires Tailwind CSS v2.0+ */
 import DashboardPanel from "../../build-files/layouts/DashboardPanel/DashboardPanel";
 import StackedList from "../../build-files/components/StackedLists/StackedList";
-import MarketplaceItem from "../../build-files/components/ListingItems/MarketplaceItem";
+import MarketplaceItem from "../../build-files/components/ListingItems/MarketplaceItem/MarketplaceItem";
 
 export default function Marketplace() {
 	return (

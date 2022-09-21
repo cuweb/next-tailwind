@@ -1,12 +1,26 @@
-import React from "react";
+const classNameRoot = "cu-container py-8";
 
-export default function Container(props: any) {
-	const { children, bgColor } = props;
-	const rdsBackground = bgColor === "gray" ? "bg-cu-black-50" : "bg-white";
-
+const White = ({ unstyled, className, children }: any) => {
 	return (
-		<section className={`cu-container ${rdsBackground} py-8`}>
-			{children || "Empty Panel"}
+		<section className={`${unstyled ? className : classNameRoot} bg-white`}>
+			{children}
 		</section>
 	);
-}
+};
+
+const Gray = ({ unstyled, className, children }: any) => {
+	return (
+		<section
+			className={`${unstyled ? className : classNameRoot} bg-cu-black-50`}
+		>
+			{children}
+		</section>
+	);
+};
+
+const Container = {
+	White,
+	Gray,
+};
+
+export default Container;

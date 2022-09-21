@@ -1,8 +1,9 @@
-import React from "react";
+const Empty = ({ className, children }: any) => {
+	return <div className={`${className}`}>{children}</div>;
+};
 
-export default function CleanPanel(props: any) {
-	const { className } = props;
-	const addClasses = className ? className : "";
+const Panel = {
+	Empty,
+};
 
-	return <section className={`${addClasses}`}>{props.children}</section>;
-}
+export default Panel;

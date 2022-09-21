@@ -1,8 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Container from "../../build-files/layouts/Container/Container";
-// import Columns from "../../build-files/layouts/Columns/Columns";
-import Column from "../../build-files/layouts/Columns/Columns";
+import Columns from "../../build-files/layouts/Columns/Columns";
 import Profile from "../../components/Header/Profile";
 import NavBar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/FooterStandard";
@@ -27,17 +26,28 @@ const Intranet: NextPage = () => {
 
 			<main>
 				<Container.Gray>
-					<Column.TwoThird>
+					<Columns.TwoThird>
+						<Top5 />
 						<News />
-						<News />
-					</Column.TwoThird>
+					</Columns.TwoThird>
 				</Container.Gray>
 
 				<Container.Gray>
-					<Column.Two>
-						<News />
-						<News />
-					</Column.Two>
+					<Columns.Two>
+						<Events />
+						<Marketplace />
+					</Columns.Two>
+				</Container.Gray>
+
+				<Container.Gray>
+					<Columns.Two>
+						<Files />
+						<Bookmarks />
+						<DashboardPanel
+							title="Random Panel"
+							innerPadding="p-6"
+						/>
+					</Columns.Two>
 				</Container.Gray>
 			</main>
 

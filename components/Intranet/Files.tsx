@@ -1,7 +1,7 @@
 /* This example requires Tailwind CSS v2.0+ */
 import DashboardPanel from "../../build-files/layouts/DashboardPanel/DashboardPanel";
 import StackedList from "../../build-files/components/StackedLists/StackedList";
-import FileItem from "../../build-files/components/ListingItems/FileItem";
+import FileItem from "../../build-files/components/ListingItems/FileItem/FileItem";
 
 export default function Files() {
 	return (
