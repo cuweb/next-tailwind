@@ -1,12 +1,12 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 
-import Navbar from "../../components/Navbar/Navbar";
-import Profile from "../../components/Header/Profile";
-import News from "../../components/Intranet/News";
-import Top5 from "../../components/Intranet/Top5";
-import Toast from "../../components/Intranet/Toast";
-import FooterIntranet from "../../components/Footer/FooterIntranet";
+import Navbar from "../../../components/Navbar/Navbar";
+import Profile from "../../../components/Header/Profile";
+import News from "../../../components/Intranet/News";
+import Top5 from "../../../components/Intranet/Top5";
+import Toast from "../../../components/Intranet/Toast";
+import FooterIntranet from "../../../components/Footer/FooterIntranet";
 
 const Intranet: NextPage = () => {
 	return (

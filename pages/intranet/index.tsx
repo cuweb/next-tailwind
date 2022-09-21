@@ -1,15 +1,18 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-
+import Container from "../../layout/Container/Container";
+import Columns from "../../layout/Columns/Columns";
+import PagePanel from "../layouts/components/_panel";
 import Profile from "../../components/Header/Profile";
-import Events from "../../components/Intranet/Events";
-import News from "../../components/Intranet/News";
-import Files from "../../components/Intranet/Files";
-import Top5 from "../../components/Intranet/Top5";
-import { Bookmarks, BookmarksEmpty } from "../../components/Intranet/Bookmarks";
-import FooterIntranet from "../../components/Footer/FooterIntranet";
-import Marketplace from "../../components/Intranet/Marketplace";
 import Navbar from "../../components/Intranet/Navbar";
+import Footer from "../../components/Footer/FooterStandard";
+
+import Top5 from "../../components/Intranet/Top5";
+import News from "../../components/Intranet/News";
+import Events from "../../components/Intranet/Events";
+import Marketplace from "../../components/Intranet/Marketplace";
+import Files from "../../components/Intranet/Files";
+import { Bookmarks, BookmarksEmpty } from "../../components/Intranet/Bookmarks";
 
 const Intranet: NextPage = () => {
 	return (
@@ -18,28 +21,34 @@ const Intranet: NextPage = () => {
 				<title>Dashboard - Intranet | Carleton University </title>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-			<div className="relative bg-cu-black-50">
-				<Navbar />
-				<Profile />
+			<Navbar />
+			<Profile />
 
-				<div className="grid max-w-3xl grid-cols-1 gap-6 mx-auto mt-8 sm:px-6 lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-3">
-					<Top5 />
-					<News />
-				</div>
+			<main>
+				<Container bgColor="gray">
+					<Columns columns="md:grid-cols-two3rd" maxWidth="7xl">
+						<Top5 />
+						{/* <News /> */}
+					</Columns>
+				</Container>
 
-				<div className="grid max-w-3xl grid-cols-1 gap-6 mx-auto mt-8 sm:px-6 lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-4">
-					<Events />
-					<Marketplace />
-				</div>
+				{/* <Container bgColor="gray">
+					<Columns columns="md:grid-cols-2" maxWidth="7xl">
+						<Events />
+						<Marketplace />
+					</Columns>
+				</Container> */}
 
-				<div className="grid max-w-3xl grid-cols-1 gap-6 mx-auto mt-8 sm:px-6 lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-3">
-					<Files />
-					<Bookmarks />
-					<BookmarksEmpty />
-				</div>
+				{/* <Container bgColor="gray">
+					<Columns columns="md:grid-cols-3" maxWidth="7xl">
+						<Files />
+						<Bookmarks />
+						<BookmarksEmpty />
+					</Columns>
+				</Container> */}
+			</main>
 
-				<FooterIntranet />
-			</div>
+			<Footer />
 		</>
 	);
 };

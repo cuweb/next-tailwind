@@ -1,10 +1,10 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import FooterIntranet from "../../components/Footer/FooterIntranet";
-import Files from "../../components/Intranet/Files";
-import Navbar from "../../components/Intranet/Navbar";
-import Profile from "../../components/Header/Profile";
-import Table from "../../components/Intranet/Table";
+import FooterIntranet from "../../../components/Footer/FooterIntranet";
+import Files from "../../../components/Intranet/Files";
+import Navbar from "../../../components/Intranet/Navbar";
+import Profile from "../../../components/Header/Profile";
+import Table from "../../../components/Intranet/Table";
 
 const IntranetHR: NextPage = () => {
 	return (

@@ -7,10 +7,10 @@ export default function Columns(props: any) {
 	const rdsColBreak = breakPoint ? breakPoint : "md";
 
 	return (
-		<article
+		<div
 			className={`cu-column mx-auto mb-8 grid max-w-${rdsMaxWidth} grid-cols-1 ${rdsColumns} gap-8 px-8 [&:last-child]:mb-0`}
 		>
 			{children || "Empty Panel"}
-		</article>
+		</div>
 	);
 }
