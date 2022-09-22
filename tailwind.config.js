@@ -14,6 +14,7 @@ module.exports = {
             colors: {
                 'cu-red': '#E91C24',
                 'cu-red-light': "#f48b8f",
+                'cu-blue': "#126B93",
                 'cu-black': {
                     50: '#F2F2F2',
                     100: '#e6e6e6',
