@@ -3,7 +3,7 @@ const classNameRoot = "px-6 py-6";
 const List = ({ children }: any) => {
 	return (
 		<li
-			className={`${classNameRoot} border-b border-cu-black-100 last:border-b-0`}
+			className={`relative ${classNameRoot} border-b border-cu-black-100 last:border-b-0`}
 		>
 			{children}
 		</li>
@@ -11,7 +11,7 @@ const List = ({ children }: any) => {
 };
 
 const Single = ({ children }: any) => {
-	return <div className={`${classNameRoot}`}>{children}</div>;
+	return <div className={`relative ${classNameRoot}`}>{children}</div>;
 };
 
 const Title = (props: any) => {
