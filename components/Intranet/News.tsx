@@ -1,9 +1,9 @@
 import StackedList from "../../build-files/components/StackedLists/StackedList";
-import NewsItem from "../../build-files/components/ListingItems/NewsItem/NewsItem";
+import FeedItem from "../../build-files/components/ListingItems/FeedItem/FeedItem";
 import Button from "../../build-files/components/Button/Button";
 import Container from "../../build-files/layouts/Container/Container";
 
-const announcements = [
+const posts = [
 	{
 		id: 1,
 		title: "Office closed on July 2nd",
@@ -37,16 +37,14 @@ export default function News() {
 	return (
 		<>
 			<StackedList>
-				{announcements.map(
-					({ id, title, link, date, excerpt, category }) => (
-						<NewsItem.List key={id}>
-							<NewsItem.Title title={title} link={link} />
-							<NewsItem.Date date={date} />
-							<NewsItem.Excerpt excerpt={excerpt} />
-							<NewsItem.Category category={category} />
-						</NewsItem.List>
-					)
-				)}
+				{posts.map(({ id, title, link, date, excerpt, category }) => (
+					<FeedItem.List key={id}>
+						<FeedItem.Title title={title} link={link} />
+						<FeedItem.Date date={date} />
+						<FeedItem.Excerpt excerpt={excerpt} />
+						<FeedItem.Category category={category} />
+					</FeedItem.List>
+				))}
 			</StackedList>
 
 			<Container.Empty className="p-4">

@@ -1,58 +1,34 @@
-const classNameRoot = "px-6 py-6";
+import { ChevronRightIcon } from "@heroicons/react/24/outline";
 
-const List = ({ children }: any) => {
+export default function NewsItem(props: any) {
+	const { name, date, excerpt, href, image } = props;
 	return (
-		<li
-			className={`relative ${classNameRoot} border-b border-cu-black-100 last:border-b-0`}
-		>
-			{children}
+		<li key={name}>
+			<a href={href} className="block hover:bg-gray-50">
+				<div className="flex items-center px-4 py-6 sm:px-6">
+					<div className="flex flex-1 min-w-0 items">
+						<img
+							className="h-20 mt-1 rounded w-30"
+							src={image}
+							alt=""
+						/>
+						<div className="min-w-0 px-4">
+							<h3 className="mb-1 font-semibold text-gray-800 text-medium">
+								{name}
+							</h3>
+							<p className="text-gray-500 text-small">
+								{excerpt}
+							</p>
+						</div>
+					</div>
+					<div>
+						<ChevronRightIcon
+							className="w-5 h-5 text-cu-black-300"
+							aria-hidden="true"
+						/>
+					</div>
+				</div>
+			</a>
 		</li>
 	);
-};
-
-const Single = ({ children }: any) => {
-	return <div className={`relative ${classNameRoot}`}>{children}</div>;
-};
-
-const Title = (props: any) => {
-	const { title, link } = props;
-	return (
-		<h3 className="font-semibold text-medium text-cu-blue">
-			<a href={link} className="hover:text-cu-red focus:outline-none">
-				{/* Extend touch target to entire panel */}
-				<span className="absolute inset-0" aria-hidden="true" />
-				{title}
-			</a>
-		</h3>
-	);
-};
-
-const Date = (props: any) => {
-	const { date } = props;
-	return <p className="mt-1 mb-2 text-sm italic text-cu-black-400">{date}</p>;
-};
-
-const Excerpt = (props: any) => {
-	const { excerpt } = props;
-	return <p className="mt-2 text-sm text-cu-black-800">{excerpt}</p>;
-};
-
-const Category = (props: any) => {
-	const { category } = props;
-	return (
-		<p className="inline-flex px-3 py-1 mt-4 mr-2 text-xs font-semibold rounded-md bg-cu-black-50 text-cu-black-800">
-			{category}
-		</p>
-	);
-};
-
-const NewsItem = {
-	List,
-	Single,
-	Title,
-	Date,
-	Excerpt,
-	Category,
-};
-
-export default NewsItem;
+}
