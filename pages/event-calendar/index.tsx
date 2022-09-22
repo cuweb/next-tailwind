@@ -8,7 +8,9 @@ import Columns from "../../build-files/layouts/Columns/Columns";
 import FeaturedEvents from "../../components/EventCalendar/FeaturedEvents";
 import EventCard from "../../components/Cards/EventCard";
 import EventFilter from "../../components/EventCalendar/EventFilter";
-import EventWithDatePicker from "../../components/EventCalendar/EventWithDatePicker";
+import EventWithDatePicker from "../../components/EventCalendar/EventDatePicker";
+import Marketplace from "../../components/Intranet/Marketplace";
+import Events from "../../components/Intranet/Events";
 const EventCalendar: NextPage = () => {
   return (
     <>
@@ -39,8 +41,17 @@ const EventCalendar: NextPage = () => {
             <EventCard title="" content="" />
           </Columns>
         </Container>
+
         <EventFilter />
+
         <EventWithDatePicker />
+
+        <div className="mx-auto mt-8 grid max-w-3xl grid-cols-1 gap-6 sm:px-6 lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-4">
+          <Events />
+
+          <Marketplace />
+        </div>
+
         {/* <FeaturedEvents /> */}
         {/* <Featured /> */}
       </main>
