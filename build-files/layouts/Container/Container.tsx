@@ -1,5 +1,9 @@
 const classNameRoot = "cu-container py-8";
 
+const Empty = ({ className, children }: any) => {
+	return <section className={`${className}`}>{children}</section>;
+};
+
 const White = ({ children }: any) => {
 	return (
 		<section className={`${classNameRoot} bg-white`}>{children}</section>
@@ -15,6 +19,7 @@ const Gray = ({ children }: any) => {
 };
 
 const Container = {
+	Empty,
 	White,
 	Gray,
 };

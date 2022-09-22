@@ -1,7 +1,7 @@
 import StackedList from "../../build-files/components/StackedLists/StackedList";
 import NewsItem from "../../build-files/components/ListingItems/NewsItem/NewsItem";
 import Button from "../../build-files/components/Button/Button";
-import Panel from "../../build-files/layouts/Panel/Panel";
+import Container from "../../build-files/layouts/Container/Container";
 
 const announcements = [
 	{
@@ -49,9 +49,9 @@ export default function News() {
 				)}
 			</StackedList>
 
-			<Panel className="p-4">
+			<Container.Empty className="p-4">
 				<Button.Red text="More News" link="#" />
-			</Panel>
+			</Container.Empty>
 		</>
 	);
 }
