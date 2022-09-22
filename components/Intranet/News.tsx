@@ -5,6 +5,7 @@ const announcements = [
 	{
 		id: 1,
 		title: "Office closed on July 2nd",
+		link: "#",
 		date: "September 3rd, 2023",
 		category: "Human Resources",
 		excerpt:
@@ -13,6 +14,7 @@ const announcements = [
 	{
 		id: 2,
 		title: "New password policy",
+		link: "#",
 		date: "September 9th, 2023",
 		category: "Healthy Workplace",
 		excerpt:
@@ -21,6 +23,7 @@ const announcements = [
 	{
 		id: 3,
 		title: "Office closed on July 2nd",
+		link: "#",
 		date: "September 15th, 2023",
 		category: "Potato",
 		excerpt:
@@ -31,14 +34,16 @@ const announcements = [
 export default function News() {
 	return (
 		<StackedList>
-			{announcements.map(({ id, title, date, excerpt, category }) => (
-				<NewsItem.List key={id}>
-					<NewsItem.Title title={title} />
-					<NewsItem.Date date={date} />
-					<NewsItem.Excerpt excerpt={excerpt} />
-					<NewsItem.Category category={category} />
-				</NewsItem.List>
-			))}
+			{announcements.map(
+				({ id, title, link, date, excerpt, category }) => (
+					<NewsItem.List key={id}>
+						<NewsItem.Title title={title} link={link} />
+						<NewsItem.Date date={date} />
+						<NewsItem.Excerpt excerpt={excerpt} />
+						<NewsItem.Category category={category} />
+					</NewsItem.List>
+				)
+			)}
 		</StackedList>
 	);
 }

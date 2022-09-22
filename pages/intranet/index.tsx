@@ -25,7 +25,7 @@ const Intranet: NextPage = () => {
 			<Profile />
 
 			<main>
-				<Container.Gray>
+				<Container.White>
 					<Column.TwoThird>
 						<DashboardPanel>
 							<DashboardPanel.Title>Top 5</DashboardPanel.Title>
@@ -39,7 +39,7 @@ const Intranet: NextPage = () => {
 							<News />
 						</DashboardPanel>
 					</Column.TwoThird>
-				</Container.Gray>
+				</Container.White>
 
 				<Container.Gray>
 					<Column.Two>

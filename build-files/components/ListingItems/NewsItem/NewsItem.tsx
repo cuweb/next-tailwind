@@ -15,10 +15,10 @@ const Single = ({ children }: any) => {
 };
 
 const Title = (props: any) => {
-	const { title } = props;
+	const { title, link } = props;
 	return (
 		<h3 className="font-semibold text-medium text-cu-blue">
-			<a href="#" className="hover:text-cu-red focus:outline-none">
+			<a href={link} className="hover:text-cu-red focus:outline-none">
 				{/* Extend touch target to entire panel */}
 				<span className="absolute inset-0" aria-hidden="true" />
 				{title}

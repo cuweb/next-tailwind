@@ -1,6 +1,8 @@
 const DashboardRoot = ({ children }: any) => {
 	return (
-		<section className="bg-white shadow sm:rounded-lg">{children}</section>
+		<section className="bg-white border border-gray-200 sm:rounded-lg">
+			{children}
+		</section>
 	);
 };
 

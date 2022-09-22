@@ -1,5 +1,5 @@
 const classNameRoot =
-	"cu-column mx-auto mb-8 grid max-w-7xl gap-8 px-8 [&:last-child]:mb-0 grid-cols-1";
+	"cu-column mx-auto mb-8 grid max-w-3xl md:max-w-7xl gap-8 px-8 [&:last-child]:mb-0 grid-cols-1";
 
 const One = ({ children }: any) => {
 	return <div className={classNameRoot}>{children}</div>;
@@ -23,13 +23,21 @@ const Four = ({ children }: any) => {
 
 const OneThird = ({ children }: any) => {
 	return (
-		<div className={`${classNameRoot} lg:grid-cols-one3rd`}>{children}</div>
+		<div
+			className={`${classNameRoot} md:grid-cols-3 md:[&>*:last-child]:col-span-2`}
+		>
+			{children}
+		</div>
 	);
 };
 
 const TwoThird = ({ children }: any) => {
 	return (
-		<div className={`${classNameRoot} lg:grid-cols-two3rd`}>{children}</div>
+		<div
+			className={`${classNameRoot} md:grid-cols-3 md:[&>*:first-child]:col-span-2`}
+		>
+			{children}
+		</div>
 	);
 };
 
