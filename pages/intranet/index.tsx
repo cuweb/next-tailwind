@@ -6,8 +6,10 @@ import Profile from "../../components/Header/Profile";
 import NavBar from "../../components/Navbar/Navbar";
 import DashboardPanel from "../../build-files/layouts/DashboardPanel/DashboardPanel";
 import Footer from "../../components/Footer/FooterStandard";
-import Top5 from "../../components/Intranet/Top5";
+import Button from "../../build-files/components/Button/Button";
 import News from "../../components/Intranet/News";
+
+import Top5 from "../../components/Intranet/Top5";
 import Events from "../../components/Intranet/Events";
 import Marketplace from "../../components/Intranet/Marketplace";
 import Files from "../../components/Intranet/Files";

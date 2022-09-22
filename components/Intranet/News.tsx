@@ -1,5 +1,7 @@
 import StackedList from "../../build-files/components/StackedLists/StackedList";
 import NewsItem from "../../build-files/components/ListingItems/NewsItem/NewsItem";
+import Button from "../../build-files/components/Button/Button";
+import Panel from "../../build-files/layouts/Panel/Panel";
 
 const announcements = [
 	{
@@ -33,17 +35,23 @@ const announcements = [
 
 export default function News() {
 	return (
-		<StackedList>
-			{announcements.map(
-				({ id, title, link, date, excerpt, category }) => (
-					<NewsItem.List key={id}>
-						<NewsItem.Title title={title} link={link} />
-						<NewsItem.Date date={date} />
-						<NewsItem.Excerpt excerpt={excerpt} />
-						<NewsItem.Category category={category} />
-					</NewsItem.List>
-				)
-			)}
-		</StackedList>
+		<>
+			<StackedList>
+				{announcements.map(
+					({ id, title, link, date, excerpt, category }) => (
+						<NewsItem.List key={id}>
+							<NewsItem.Title title={title} link={link} />
+							<NewsItem.Date date={date} />
+							<NewsItem.Excerpt excerpt={excerpt} />
+							<NewsItem.Category category={category} />
+						</NewsItem.List>
+					)
+				)}
+			</StackedList>
+
+			<Panel className="p-4">
+				<Button.Red text="More News" link="#" />
+			</Panel>
+		</>
 	);
 }
