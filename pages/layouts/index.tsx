@@ -175,7 +175,7 @@ const PageLayout: NextPage = () => {
 				</Container>
 
 				<Container bgColor="white">
-					<Columns columns="grid-cols-2" maxWidth="4xl">
+					<Columns columns="grid-cols-grid-cols-2" maxWidth="4xl">
 						<div>
 							<PagePanel />
 						</div>
@@ -185,7 +185,7 @@ const PageLayout: NextPage = () => {
 					</Columns>
 				</Container>
 				<Container bgColor="white">
-					<Columns columns="grid-cols-2" maxWidth="7xl">
+					<Columns columns="grid-cols-grid-cols-2" maxWidth="7xl">
 						<div>
 							<PagePanel />
 						</div>
@@ -196,7 +196,7 @@ const PageLayout: NextPage = () => {
 				</Container>
 
 				<Container bgColor="gray">
-					<Columns columns="grid-cols-3" maxWidth="4xl">
+					<Columns columns="grid-cols-grid-cols-3" maxWidth="4xl">
 						<div>
 							<PagePanel />
 						</div>
@@ -210,7 +210,7 @@ const PageLayout: NextPage = () => {
 				</Container>
 
 				<Container bgColor="white">
-					<Columns columns="grid-cols-one3rd" maxWidth="7xl">
+					<Columns columns="grid-cols-grid-cols-one3rd" maxWidth="7xl">
 						<div>
 							<PagePanel />
 						</div>
@@ -220,7 +220,7 @@ const PageLayout: NextPage = () => {
 					</Columns>
 				</Container>
 				<Container bgColor="white">
-					<Columns columns="grid-cols-one3rd" maxWidth="7xl">
+					<Columns columns="grid-cols-grid-cols-one3rd" maxWidth="7xl">
 						<div>
 							<PagePanel />
 						</div>
@@ -231,7 +231,7 @@ const PageLayout: NextPage = () => {
 				</Container>
 
 				<Container bgColor="gray">
-					<Columns columns="grid-cols-two3rd" maxWidth="7xl">
+					<Columns columns="grid-cols-grid-cols-two3rd" maxWidth="7xl">
 						<div>
 							<PagePanel />
 						</div>
@@ -241,7 +241,7 @@ const PageLayout: NextPage = () => {
 					</Columns>
 				</Container>
 				<Container bgColor="gray">
-					<Columns columns="grid-cols-two3rd" maxWidth="7xl">
+					<Columns columns="grid-cols-grid-cols-two3rd" maxWidth="7xl">
 						<div>
 							<PagePanel />
 						</div>
