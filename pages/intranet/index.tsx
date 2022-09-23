@@ -1,15 +1,20 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-
+import Container from "../../build-files/layouts/Container/Container";
+import Column from "../../build-files/layouts/Columns/Columns";
 import Profile from "../../components/Header/Profile";
-import Events from "../../components/Intranet/Events";
+import NavBar from "../../components/Navbar/Navbar";
+import DashboardPanel from "../../build-files/layouts/DashboardPanel/DashboardPanel";
+import Panel from "../../build-files/layouts/Panel/Panel";
+import Footer from "../../components/Footer/FooterStandard";
+import Button from "../../build-files/components/Button/Button";
 import News from "../../components/Intranet/News";
-import Files from "../../components/Intranet/Files";
+
 import Top5 from "../../components/Intranet/Top5";
-import { Bookmarks, BookmarksEmpty } from "../../components/Intranet/Bookmarks";
-import FooterIntranet from "../../components/Footer/FooterIntranet";
+import Events from "../../components/Intranet/Events";
 import Marketplace from "../../components/Intranet/Marketplace";
-import Navbar from "../../components/Intranet/Navbar";
+import Files from "../../components/Intranet/Files";
+import Bookmarks from "../../components/Intranet/Bookmarks";
 
 const Intranet: NextPage = () => {
 	return (
@@ -18,28 +23,75 @@ const Intranet: NextPage = () => {
 				<title>Dashboard - Intranet | Carleton University </title>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-			<div className="relative bg-cu-black-50">
-				<Navbar />
-				<Profile />
 
-				<div className="grid max-w-3xl grid-cols-1 gap-6 mx-auto mt-8 sm:px-6 lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-3">
-					<Top5 />
-					<News />
-				</div>
+			<NavBar />
+			<Profile />
 
-				<div className="grid max-w-3xl grid-cols-1 gap-6 mx-auto mt-8 sm:px-6 lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-4">
-					<Events />
-					<Marketplace />
-				</div>
+			<main>
+				<Container.White>
+					<Column.TwoThird>
+						<DashboardPanel>
+							<DashboardPanel.Title>Top 5</DashboardPanel.Title>
+							<Top5 />
+						</DashboardPanel>
+						<DashboardPanel>
+							<DashboardPanel.Title>
+								News Feed
+							</DashboardPanel.Title>
+							<News />
+						</DashboardPanel>
+					</Column.TwoThird>
+				</Container.White>
 
-				<div className="grid max-w-3xl grid-cols-1 gap-6 mx-auto mt-8 sm:px-6 lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-3">
-					<Files />
-					<Bookmarks />
-					<BookmarksEmpty />
-				</div>
+				<Container.Gray>
+					<Column.TwoThird>
+						<Panel className="bg-white rounded-lg">
+							<Top5 />
+						</Panel>
+						<Panel className="bg-white rounded-lg">
+							<News />
+						</Panel>
+					</Column.TwoThird>
+				</Container.Gray>
 
-				<FooterIntranet />
-			</div>
+				<Container.Gray>
+					<Column.Two>
+						<DashboardPanel>
+							<DashboardPanel.Title>
+								Upcoming Events
+							</DashboardPanel.Title>
+							<Events />
+						</DashboardPanel>
+						<DashboardPanel>
+							<DashboardPanel.Title>
+								Marketplace
+							</DashboardPanel.Title>
+							<Marketplace />
+						</DashboardPanel>
+					</Column.Two>
+				</Container.Gray>
+
+				<Container.Gray>
+					<Column.Three>
+						<DashboardPanel>
+							<DashboardPanel.Title>Files</DashboardPanel.Title>
+							<Files />
+						</DashboardPanel>
+						<DashboardPanel>
+							<DashboardPanel.Title>
+								Bookmarks
+							</DashboardPanel.Title>
+							<Bookmarks />
+						</DashboardPanel>
+						<DashboardPanel>
+							<DashboardPanel.Title>
+								Another Panel
+							</DashboardPanel.Title>
+							<News />
+						</DashboardPanel>
+					</Column.Three>
+				</Container.Gray>
+			</main>
 		</>
 	);
 };

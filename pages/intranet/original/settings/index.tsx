@@ -1,8 +1,8 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import FooterIntranet from "../../../components/Footer/FooterIntranet";
-import Navbar from "../../../components/Navbar/Navbar";
-import Settings from "../../../components/Intranet/Settings";
+import FooterIntranet from "../../../../components/Footer/FooterIntranet";
+import Navbar from "../../../../components/Navbar/Navbar";
+import Settings from "../../../../components/Intranet/original/Settings";
 
 const Intranet: NextPage = () => {
 	return (
