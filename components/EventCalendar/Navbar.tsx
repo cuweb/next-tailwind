@@ -8,6 +8,7 @@ import {
 } from "@heroicons/react/24/outline";
 
 import { LifebuoyIcon } from "@heroicons/react/24/outline";
+import Link from "next/link";
 
 function classNames(...classes: any) {
   return classes.filter(Boolean).join(" ");
@@ -25,48 +26,50 @@ export default function NavBar() {
           <div className="mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex h-20 justify-between">
               <div className="flex">
-                <div className="flex flex-shrink-0 items-center">
-                  <img
-                    className="h-10 w-auto"
-                    src="/cu-shield.svg"
-                    alt="Carleton"
-                  />
-                  <h1 className="items-center pl-2 pr-2 text-2xl font-semibold tracking-tight">
-                    Event Calendar
-                  </h1>
-                </div>
+                <Link href="/event-calendar">
+                  <a className="flex flex-shrink-0 items-center">
+                    <img
+                      className="h-10 w-auto"
+                      src="/cu-shield.svg"
+                      alt="Carleton"
+                    />
+                    <h1 className="items-center pl-2 pr-2 text-2xl font-semibold tracking-tight">
+                      Event Calendar
+                    </h1>
+                  </a>
+                </Link>
                 <div className="hidden sm:ml-6 sm:flex sm:space-x-4">
                   {/* Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" */}
-                  <a
-                    href="#"
-                    className="inline-flex items-center border-b-2 border-cu-red px-1 pt-1 text-sm font-medium text-gray-900"
-                  >
-                    Today
-                  </a>
-                  <a
-                    href="#"
-                    className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:text-cu-red"
-                  >
-                    Weekly
-                  </a>
-                  <a
-                    href="#"
-                    className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:text-cu-red"
-                  >
-                    Monthly
-                  </a>
-                  <a
-                    href="#"
-                    className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:text-cu-red"
-                  >
-                    Featured
-                  </a>
-                  <a
-                    href="#"
-                    className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:text-cu-red"
-                  >
-                    My Events
-                  </a>
+                  <Link href="/event-calendar">
+                    <a className="inline-flex items-center border-b-2 border-cu-red px-1 pt-1 text-sm font-medium text-gray-900">
+                      Today
+                    </a>
+                  </Link>
+                  <Link href="/event-calendar">
+                    <a className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:text-cu-red">
+                      Weekly
+                    </a>
+                  </Link>
+                  <Link href="/event-calendar">
+                    <a className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:text-cu-red">
+                      Monthly
+                    </a>
+                  </Link>
+                  <Link href="/event-calendar">
+                    <a className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:text-cu-red">
+                      Featured
+                    </a>
+                  </Link>
+                  <Link href="/event-calendar">
+                    <a className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:text-cu-red">
+                      My Events
+                    </a>
+                  </Link>
+                  <Link href="/event-calendar/singleEventDetails">
+                    <a className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:text-cu-red">
+                      Event Single Page
+                    </a>
+                  </Link>
                 </div>
               </div>
 
