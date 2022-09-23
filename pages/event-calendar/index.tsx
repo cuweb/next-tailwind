@@ -1,16 +1,17 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import Featured from "../../components/Featured/Featured";
 import Footer from "../../components/Footer/FooterStandard";
 import Navbar from "../../components/EventCalendar/Navbar";
 import Container from "../../build-files/layouts/Container/Container";
-import Columns from "../../build-files/layouts/Columns/Columns";
-import FeaturedEvents from "../../components/EventCalendar/FeaturedEvents";
-import EventCard from "../../components/Cards/EventCard";
-import EventFilter from "../../components/EventCalendar/EventFilter";
+import Column from "../../build-files/layouts/Columns/Columns";
+import Panel from "../../build-files/layouts/Panel/Panel";
+import PageBanner from "../../build-files/components/Banners/Page";
+
+import EventCard from "../../build-files/components/Cards/EventCard";
+import EventFilter from "../../build-files/components/Filter/Filter";
+import EventList from "../../components/Intranet/Events";
+
 import EventDatePicker from "../../components/EventCalendar/EventDatePicker";
-import Marketplace from "../../components/Intranet/Marketplace";
-import EventList from "../../components/EventCalendar/EventList";
 
 const EventCalendar: NextPage = () => {
 	return (
@@ -21,35 +22,32 @@ const EventCalendar: NextPage = () => {
 			</Head>
 			<Navbar />
 
-			<header className="max-w-4xl px-8 py-12 mx-auto">
-				<h1 className="text-3xl font-medium tracking-tight text-cu-black-800 md:text-4xl">
-					Grids &amp; Layouts
-				</h1>
-			</header>
+			<PageBanner>Events Calendar</PageBanner>
 
 			<main>
 				<Container.Gray>
-					<Columns.Four>
-						<EventCard title="" content="" />
-						<EventCard
-							title="Sed sollicitudin orci nisi, non tempus risus posuere vel"
-							content=""
-						/>
-						<EventCard
-							title=""
-							content="Suspendisse sed nibh non lorem ultrices auctor. Phasellus eget leo enim. Donec sit amet venenatis mi. Sed interdum nibh quis quam hendrerit tincidunt. Donec quis consectetur augue. Maecenas non felis malesuada, aliquet risus eget, consectetur leo. Sed fringilla at nisl nec rutrum."
-						/>
-						<EventCard title="" content="" />
-					</Columns.Four>
+					<Column.Three>
+						<EventCard />
+						<EventCard />
+						<EventCard />
+					</Column.Three>
 				</Container.Gray>
 
-				<EventFilter />
-
 				<Container.White>
-					<Columns.TwoThird>
-						<EventList />
+					<Column.One>
+						<div className="">
+							<h2 className="text-4xl font-semibold tracking-tight text-cu-black-800">
+								Upcoming Events
+							</h2>
+						</div>
+						<EventFilter />
+					</Column.One>
+					<Column.TwoThird>
+						<Panel className="bg-white border rounded-lg shadow border-cu-black-50">
+							<EventList />
+						</Panel>
 						<EventDatePicker />
-					</Columns.TwoThird>
+					</Column.TwoThird>
 				</Container.White>
 			</main>
 
