@@ -16,6 +16,10 @@
 		@apply pt-0;
 	}
 
+	.cu-column + .cu-column {
+		@apply mt-8;
+	}
+
 	main > .cu-column:first-child {
 		@apply pt-8;
 	}
