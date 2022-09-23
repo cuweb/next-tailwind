@@ -252,7 +252,7 @@ const PageLayout: NextPage = () => {
 							<PagePanel />
 						</div>
 					</Columns>
-				</Container> */} */}
+				</Container> */}
 			</main>
 
 			<Footer />

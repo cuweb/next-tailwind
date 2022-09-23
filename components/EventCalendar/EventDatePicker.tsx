@@ -8,13 +8,14 @@ import {
   MapPinIcon,
 } from "@heroicons/react/20/solid";
 import { Menu, Transition } from "@headlessui/react";
-interface Idate {
+
+type dateType = {
   date: string;
   isCurrentMonth?: boolean;
   isToday?: boolean;
   isSelected?: boolean;
 }
-const days: Idate[] = [
+const days: dateType[] = [
   { date: "2021-12-27" },
   { date: "2021-12-28" },
   { date: "2021-12-29" },
@@ -127,7 +128,7 @@ export default function EventDatePicker() {
                     day.isSelected && !day.isToday && "bg-gray-900"
                   )}
                 >
-                  {day.date.split("-").pop().replace(/^0/, "")}
+                  {day.date.split("-").pop()?.replace(/^0/, "")}
                 </time>
               </button>
             ))}
