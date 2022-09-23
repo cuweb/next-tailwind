@@ -8,7 +8,7 @@ export default function EventItem(props: any) {
 	const { name, location, dateFull, time } = props;
 
 	return (
-		<li key={name}>
+		<li key={name} className="border-b border-cu-black-100 last:border-b-0">
 			<a href={location} className="block hover:bg-gray-50">
 				<div className="flex items-center px-4 py-6">
 					<div className="flex flex-1 min-w-0 sm:items-center">
