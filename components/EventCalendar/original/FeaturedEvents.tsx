@@ -1,7 +1,7 @@
 // import { EllipsisHorizontalIcon } from "@heroicons/react/24/outline";
-import Container from "../../build-files/layouts/Container/Container";
-import Columns from "../../build-files/layouts/Columns/Columns";
-import EventCard from "../Cards/EventCard";
+import Container from "../../../build-files/layouts/Container/Container";
+import Column from "../../../build-files/layouts/Columns/Columns";
+import EventCard from "../../../build-files/components/Cards/EventCard";
 
 const posts = [
 	{
@@ -95,12 +95,12 @@ const FeatureEvents = () => {
 				<div className="grid max-w-lg gap-5 mx-auto mt-12 lg:max-w-none lg:grid-cols-4">
 					{posts.map((post) => (
 						<Container.Gray>
-							<Columns.Four>
+							<Column.Four>
 								<EventCard
 									title={post.title}
 									content={post.description}
 								/>
-							</Columns.Four>
+							</Column.Four>
 						</Container.Gray>
 					))}
 				</div>

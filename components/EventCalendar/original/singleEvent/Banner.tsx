@@ -1,4 +1,4 @@
-import Container from "../../../build-files/layouts/Container/Container";
+import Container from "../../../../build-files/layouts/Container/Container";
 
 const Banner = () => {
 	return (
