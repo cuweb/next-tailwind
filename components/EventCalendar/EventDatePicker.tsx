@@ -8,7 +8,13 @@ import {
   MapPinIcon,
 } from "@heroicons/react/20/solid";
 import { Menu, Transition } from "@headlessui/react";
-const days = [
+interface Idate {
+  date: string;
+  isCurrentMonth?: boolean;
+  isToday?: boolean;
+  isSelected?: boolean;
+}
+const days: Idate[] = [
   { date: "2021-12-27" },
   { date: "2021-12-28" },
   { date: "2021-12-29" },
