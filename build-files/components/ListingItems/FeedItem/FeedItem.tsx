@@ -1,9 +1,9 @@
-const classNameRoot = "px-6 py-6";
+const classNameRoot = "";
 
 const List = ({ children }: any) => {
 	return (
 		<li
-			className={`relative ${classNameRoot} border-b border-cu-black-100 last:border-b-0`}
+			className={`relative ${classNameRoot} border-b border-cu-black-100 px-6 py-6 last:border-b-0`}
 		>
 			{children}
 		</li>

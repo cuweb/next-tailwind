@@ -5,6 +5,7 @@ import Column from "../../build-files/layouts/Columns/Columns";
 import Profile from "../../components/Header/Profile";
 import NavBar from "../../components/Navbar/Navbar";
 import DashboardPanel from "../../build-files/layouts/DashboardPanel/DashboardPanel";
+import Panel from "../../build-files/layouts/Panel/Panel";
 import Footer from "../../components/Footer/FooterStandard";
 import Button from "../../build-files/components/Button/Button";
 import News from "../../components/Intranet/News";
@@ -33,7 +34,6 @@ const Intranet: NextPage = () => {
 							<DashboardPanel.Title>Top 5</DashboardPanel.Title>
 							<Top5 />
 						</DashboardPanel>
-
 						<DashboardPanel>
 							<DashboardPanel.Title>
 								News Feed
@@ -44,6 +44,17 @@ const Intranet: NextPage = () => {
 				</Container.White>
 
 				<Container.Gray>
+					<Column.TwoThird>
+						<Panel className="bg-white rounded-lg">
+							<Top5 />
+						</Panel>
+						<Panel className="bg-white rounded-lg">
+							<News />
+						</Panel>
+					</Column.TwoThird>
+				</Container.Gray>
+
+				<Container.Gray>
 					<Column.Two>
 						<DashboardPanel>
 							<DashboardPanel.Title>
@@ -51,7 +62,6 @@ const Intranet: NextPage = () => {
 							</DashboardPanel.Title>
 							<Events />
 						</DashboardPanel>
-
 						<DashboardPanel>
 							<DashboardPanel.Title>
 								Marketplace
@@ -67,14 +77,12 @@ const Intranet: NextPage = () => {
 							<DashboardPanel.Title>Files</DashboardPanel.Title>
 							<Files />
 						</DashboardPanel>
-
 						<DashboardPanel>
 							<DashboardPanel.Title>
 								Bookmarks
 							</DashboardPanel.Title>
 							<Bookmarks />
 						</DashboardPanel>
-
 						<DashboardPanel>
 							<DashboardPanel.Title>
 								Another Panel

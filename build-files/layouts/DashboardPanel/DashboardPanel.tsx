@@ -8,7 +8,7 @@ const DashboardRoot = ({ children }: any) => {
 
 const Title = ({ children }: any) => {
 	return (
-		<h2 className="px-6 py-4 text-base font-bold border-b rounded-t-lg bg-gray-50 text-cu-black-900">
+		<h2 className="px-6 py-4 text-base font-bold border-b rounded-t-lg bg-gradient-to-r from-gray-50 to-white text-cu-black-900">
 			{children}
 		</h2>
 	);
