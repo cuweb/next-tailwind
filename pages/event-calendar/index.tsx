@@ -11,53 +11,51 @@ import EventFilter from "../../components/EventCalendar/EventFilter";
 import EventDatePicker from "../../components/EventCalendar/EventDatePicker";
 import Marketplace from "../../components/Intranet/Marketplace";
 import EventList from "../../components/EventCalendar/EventList";
+
 const EventCalendar: NextPage = () => {
-  return (
-    <>
-      <Head>
-        <title>Event Calendar | Carleton University</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <Navbar />
+	return (
+		<>
+			<Head>
+				<title>Event Calendar | Carleton University</title>
+				<link rel="icon" href="/favicon.ico" />
+			</Head>
+			<Navbar />
 
-      <header className="mx-auto max-w-4xl px-8 py-12">
-        <h1 className="text-3xl font-medium tracking-tight text-cu-black-800 md:text-4xl">
-          Grids &amp; Layouts
-        </h1>
-      </header>
+			<header className="max-w-4xl px-8 py-12 mx-auto">
+				<h1 className="text-3xl font-medium tracking-tight text-cu-black-800 md:text-4xl">
+					Grids &amp; Layouts
+				</h1>
+			</header>
 
-      <main>
-        <Container bgColor="gray">
-          <Columns columns="sm:grid-cols-2 lg:grid-cols-4" maxWidth="7xl">
-            <EventCard title="" content="" />
-            <EventCard
-              title="Sed sollicitudin orci nisi, non tempus risus posuere vel"
-              content=""
-            />
-            <EventCard
-              title=""
-              content="Suspendisse sed nibh non lorem ultrices auctor. Phasellus eget leo enim. Donec sit amet venenatis mi. Sed interdum nibh quis quam hendrerit tincidunt. Donec quis consectetur augue. Maecenas non felis malesuada, aliquet risus eget, consectetur leo. Sed fringilla at nisl nec rutrum."
-            />
-            <EventCard title="" content="" />
-          </Columns>
-        </Container>
+			<main>
+				<Container.Gray>
+					<Columns.Four>
+						<EventCard title="" content="" />
+						<EventCard
+							title="Sed sollicitudin orci nisi, non tempus risus posuere vel"
+							content=""
+						/>
+						<EventCard
+							title=""
+							content="Suspendisse sed nibh non lorem ultrices auctor. Phasellus eget leo enim. Donec sit amet venenatis mi. Sed interdum nibh quis quam hendrerit tincidunt. Donec quis consectetur augue. Maecenas non felis malesuada, aliquet risus eget, consectetur leo. Sed fringilla at nisl nec rutrum."
+						/>
+						<EventCard title="" content="" />
+					</Columns.Four>
+				</Container.Gray>
 
-        <EventFilter />
+				<EventFilter />
 
-        <div className="mx-auto ml-10 mt-8 grid max-w-3xl grid-cols-1 gap-6  lg:max-w-7xl  lg:grid-cols-3">
-          <EventList />
-          <EventDatePicker />
+				<Container.White>
+					<Columns.TwoThird>
+						<EventList />
+						<EventDatePicker />
+					</Columns.TwoThird>
+				</Container.White>
+			</main>
 
-          {/* <Marketplace /> */}
-        </div>
-
-        {/* <FeaturedEvents /> */}
-        {/* <Featured /> */}
-      </main>
-
-      <Footer />
-    </>
-  );
+			<Footer />
+		</>
+	);
 };
 
 export default EventCalendar;
