@@ -1,4 +1,4 @@
-import Newsfeed from "./Newsfeed";
+import Newsfeed from "./NewsFeed";
 
 const classNameRoot =
 	"cu-column mx-auto mb-8 grid max-w-7xl gap-8 px-8 [&:last-child]:mb-0";

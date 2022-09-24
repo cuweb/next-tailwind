@@ -1,14 +1,14 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 
-import NavBar from "../../../build-files/components/Navbar/IntranetNavbar";
-import Profile from "../../../components/Header/Profile";
-import News from "../../../components/Intranet/News";
-import Top5 from "../../../components/Intranet/Top5";
-import Toast from "../../../components/Intranet/Toast";
-import FooterIntranet from "../../../build-files/components/Footer/FooterIntranet/FooterIntranet";
+import NavBar from "../../build-files/components/Navbar/IntranetNavbar";
+import Profile from "../../components/Header/Profile";
+import News from "../../components/Intranet/News";
+import Top5 from "../../components/Intranet/Top5";
+import Toast from "../../components/Intranet/Toast";
+import FooterIntranet from "../../build-files/components/Footer/FooterIntranet/FooterIntranet";
 
-const Intranet: NextPage = () => {
+const Examples: NextPage = () => {
 	return (
 		<>
 			<Head>
@@ -31,4 +31,4 @@ const Intranet: NextPage = () => {
 	);
 };
 
-export default Intranet;
+export default Examples;
