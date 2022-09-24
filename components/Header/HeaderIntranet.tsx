@@ -1,4 +1,3 @@
-import Navbar from "../Navbar/Navbar";
 // import GradientDiv from '../Gradient/GradientDiv';
 
 function classNames(...classes: any[]) {

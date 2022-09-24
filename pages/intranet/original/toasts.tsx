@@ -1,11 +1,11 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 
-import Navbar from "../../../components/Navbar/Navbar";
+import NavBar from "../../../build-files/components/Navbar/IntranetNavbar";
 import Profile from "../../../components/Header/Profile";
-import News from "../../../components/Intranet-Old/News";
-import Top5 from "../../../components/Intranet-Old/Top5";
-import Toast from "../../../components/Intranet-Old/Toast";
+import News from "../../../components/Intranet/News";
+import Top5 from "../../../components/Intranet/Top5";
+import Toast from "../../../components/Intranet/Toast";
 import FooterIntranet from "../../../build-files/components/Footer/FooterIntranet/FooterIntranet";
 
 const Intranet: NextPage = () => {
@@ -17,7 +17,7 @@ const Intranet: NextPage = () => {
 			</Head>
 
 			<div className="relative bg-[#f3f3f3]">
-				<Navbar />
+				<NavBar />
 				<Profile />
 				<div className="grid max-w-3xl grid-cols-1 gap-6 mx-auto mt-8 sm:px-6 lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-3">
 					<Top5 />

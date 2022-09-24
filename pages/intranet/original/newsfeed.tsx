@@ -2,9 +2,9 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Profile from "../../../components/Header/Profile";
 import FooterIntranet from "../../../build-files/components/Footer/FooterIntranet/FooterIntranet";
-import Navbar from "../../../components/Intranet-Old/Navbar";
-import Events from "../../../components/Intranet-Old/Events";
-import News from "../../../components/Intranet-Old/News";
+import NavBar from "../../../build-files/components/Navbar/IntranetNavbar";
+import Events from "../../../components/Intranet/Events";
+import News from "../../../components/Intranet/News";
 import LinksListing from "../../../template-parts/listings/LinksListing";
 
 const IntranetNewsFeed: NextPage = () => {
@@ -15,7 +15,7 @@ const IntranetNewsFeed: NextPage = () => {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<div className="relative bg-[#f3f3f3]">
-				<Navbar />
+				<NavBar />
 				<Profile />
 				<div className="px-6 py-6 mx-auto mt-3 max-w-7xl">
 					<h1 className="text-2xl font-semibold tracking-tight text-cu-black:900">

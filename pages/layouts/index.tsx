@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import Navbar from "../../components/Navbar/Navbar";
+import NavBar from "../../build-files/components/Navbar/IntranetNavbar";
 import Footer from "../../build-files/components/Footer/FooterStandard/FooterStandard";
 import Container from "../../build-files/layouts/Container/Container";
 import Columns from "../../build-files/layouts/Columns/Columns";
@@ -14,7 +14,7 @@ const PageLayout: NextPage = () => {
 				<title>Carleton University | Home</title>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-			<Navbar />
+			<NavBar />
 
 			<BaseBanner>Layouts, Grids &amp; Spacing</BaseBanner>
 

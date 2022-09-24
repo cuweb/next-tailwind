@@ -3,7 +3,7 @@ import Head from "next/head";
 
 import FooterStandard from "../../build-files/components/Footer/FooterStandard/FooterStandard";
 import Settings from "../../components/Settings/Settings";
-import Navbar from "../../components/Navbar/Navbar";
+import NavBar from "../../components/Intranet/Navbar";
 
 const Demo: NextPage = () => {
 	return (
@@ -12,7 +12,7 @@ const Demo: NextPage = () => {
 				<title>Carleton University | Home </title>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-			<Navbar />
+			<NavBar />
 			<Settings />
 			<FooterStandard />
 		</>

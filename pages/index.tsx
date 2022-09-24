@@ -1,7 +1,7 @@
 import { ChevronRightIcon } from "@heroicons/react/24/outline";
 import type { NextPage } from "next";
 import Head from "next/head";
-import Navbar from "../components/Navbar/Navbar";
+import NavBar from "../build-files/components/Navbar/CuTheme";
 import Footer from "../build-files/components/Footer/FooterStandard/FooterStandard";
 import Container from "../build-files/layouts/Container/Container";
 import Column from "../build-files/layouts/Columns/Columns";
@@ -40,7 +40,7 @@ const Home: NextPage = () => {
 				<title>Carleton University | Home</title>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-			<Navbar />
+			<NavBar />
 
 			<header className="pb-8 bg-cu-black-50">
 				<div>

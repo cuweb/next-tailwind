@@ -1,8 +1,8 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import NavBar from "../../../../build-files/components/Navbar/IntranetNavbar";
 import FooterIntranet from "../../../../build-files/components/Footer/FooterIntranet/FooterIntranet";
-import Navbar from "../../../../components/Navbar/Navbar";
-import Settings from "../../../../components/Intranet-Old/Settings";
+import Settings from "../../../../components/Intranet/Settings";
 
 const Intranet: NextPage = () => {
 	return (
@@ -12,7 +12,7 @@ const Intranet: NextPage = () => {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<div className="relative bg-[#f3f3f3]">
-				<Navbar />
+				<NavBar />
 				<Settings />
 				<FooterIntranet />
 			</div>

@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import Navbar from "../../components/Navbar/Navbar";
+import NavBar from "../../build-files/components/Navbar/CuTheme";
 import Footer from "../../build-files/components/Footer/FooterStandard/FooterStandard";
 import Container from "../../build-files/layouts/Container/Container";
 import Columns from "../../build-files/layouts/Columns/Columns";
@@ -16,7 +16,7 @@ const CuTheme: NextPage = () => {
 				<title>Carleton University | Home</title>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-			<Navbar />
+			<NavBar />
 
 			<BaseBanner>cuTheme</BaseBanner>
 
