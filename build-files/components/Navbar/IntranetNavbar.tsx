@@ -33,8 +33,10 @@ export default function NavBar() {
 											src="/cu-shield.svg"
 											alt="Carleton"
 										/>
-										<h1 className="items-center pl-2 pr-2 text-2xl font-semibold tracking-tight">
-											Event Calendar
+										<h1 className="items-center pl-3 pr-2 text-2xl font-semibold tracking-tight">
+											<a className="/intranet">
+												Intranet
+											</a>
 										</h1>
 									</a>
 								</Link>
