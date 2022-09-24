@@ -1,10 +1,10 @@
 export default function BannerWithButtons({ children }: any) {
 	return (
 		<header className="shadow bg-cu-black-50">
-			<div className="flex items-start px-6 pt-8 mx-auto max-w-7xl md:items-center md:pt-12 lg:px-8">
+			<div className="flex items-start px-6 py-6 mx-auto max-w-7xl md:items-center md:py-12 lg:px-8">
 				<div className="flex-1 min-w-0">
 					<h1 className="text-3xl font-medium text-cu-black-800 sm:truncate md:text-4xl">
-						Single Event Title
+						{children}
 					</h1>
 				</div>
 				<div className="flex mt-4 md:mt-0 md:ml-4">

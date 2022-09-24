@@ -10,7 +10,10 @@ function classNames(...classes: any) {
 
 export default function Example() {
 	return (
-		<Disclosure as="nav" className="bg-white shadow">
+		<Disclosure
+			as="nav"
+			className="sticky top-0 z-50 bg-white border-t-2 shadow border-cu-red"
+		>
 			{({ open }) => (
 				<>
 					<div className="px-2 mx-auto max-w-7xl sm:px-4 lg:px-8">
