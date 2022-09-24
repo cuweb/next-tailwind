@@ -3,7 +3,7 @@ import Head from "next/head";
 
 import Profile from "../../../components/Header/Profile";
 import Jobs from "../../../components/Intranet/original/Jobs";
-import FooterIntranet from "../../../components/Footer/FooterIntranet";
+import FooterIntranet from "../../../build-files/components/Footer/FooterIntranet/FooterIntranet";
 import Navbar from "../../../components/Intranet/original/Navbar";
 
 const IntranetCareer: NextPage = () => {

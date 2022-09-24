@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Navbar from "../../components/Navbar/Navbar";
-import Footer from "../../components/Footer/FooterStandard";
+import Footer from "../../build-files/components/Footer/FooterStandard/FooterStandard";
 import Container from "../../build-files/layouts/Container/Container";
 import Columns from "../../build-files/layouts/Columns/Columns";
 import BaseBanner from "../../build-files/components/Banner/BaseBanner/BaseBanner";

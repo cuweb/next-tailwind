@@ -4,7 +4,7 @@ import Container from "../../build-files/layouts/Container/Container";
 import Columns from "../../build-files/layouts/Columns/Columns";
 import Profile from "../../components/Header/Profile";
 import NavBar from "../../components/Navbar/Navbar";
-import Footer from "../../components/Footer/FooterStandard";
+import Footer from "../../build-files/components/Footer/FooterStandard/FooterStandard";
 import DashboardPanel from "../../build-files/layouts/DashboardPanel/DashboardPanel";
 import Top5 from "../../components/Intranet/Top5";
 import News from "../../components/Intranet/News";

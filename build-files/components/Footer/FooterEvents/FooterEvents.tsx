@@ -110,7 +110,7 @@ const navigation = {
 	],
 };
 
-export default function Footer() {
+export default function FooterEvents() {
 	return (
 		<footer
 			className="bg-cu-black-900 bg-[url('https://carleton.ca/assets/waves.svg')] bg-[length:100%] bg-bottom bg-no-repeat pb-44"
