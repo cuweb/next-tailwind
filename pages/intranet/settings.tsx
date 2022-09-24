@@ -1,22 +1,25 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import NavBar from "../../build-files/components/Navbar/IntranetNavbar";
+import FooterIntranet from "../../build-files/components/Footer/FooterIntranet/FooterIntranet";
 
-import FooterStandard from "../../build-files/components/Footer/FooterStandard/FooterStandard";
-import Settings from "../../components/Settings/Settings";
-import NavBar from "../../components/Intranet/Navbar";
+import Settings from "../../template-parts/admin-screens/Settings";
 
-const Demo: NextPage = () => {
+const Intranet: NextPage = () => {
 	return (
 		<>
 			<Head>
-				<title>Carleton University | Home </title>
+				<title>Settings - Intranet | Carleton University </title>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-			<NavBar />
-			<Settings />
-			<FooterStandard />
+
+			<div className="relative bg-cu-black-50">
+				<NavBar />
+				<Settings />
+				<FooterIntranet />
+			</div>
 		</>
 	);
 };
 
-export default Demo;
+export default Intranet;
