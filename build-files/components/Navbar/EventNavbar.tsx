@@ -28,7 +28,7 @@ export default function Example() {
 										</h1>
 									</a>
 								</Link>
-								<div className="hidden lg:ml-6 lg:flex lg:space-x-8">
+								<div className="hidden lg:ml-6 lg:flex lg:space-x-6">
 									{/* Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" */}
 									<a
 										href="#"
@@ -43,10 +43,16 @@ export default function Example() {
 										Weekly
 									</a>
 									<a
-										href="#"
+										href="/events/single-one"
 										className="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-500 border-b-2 border-transparent hover:border-cu-black-100 hover:text-cu-red"
 									>
-										Monthly
+										Single 1
+									</a>
+									<a
+										href="/events/single-two"
+										className="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-500 border-b-2 border-transparent hover:border-cu-black-100 hover:text-cu-red"
+									>
+										Single 2
 									</a>
 								</div>
 							</div>

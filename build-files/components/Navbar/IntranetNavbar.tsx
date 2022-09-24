@@ -31,7 +31,7 @@ export default function Example() {
 										</h1>
 									</a>
 								</Link>
-								<div className="hidden lg:ml-6 lg:flex lg:space-x-8">
+								<div className="hidden lg:ml-6 lg:flex lg:space-x-6">
 									{/* Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" */}
 									<a
 										href="#"
