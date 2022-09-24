@@ -23,7 +23,7 @@ export default function NavBar() {
 			{({ open }) => (
 				<>
 					{/* max-w-7xl */}
-					<div className="px-4 mx-auto sm:px-6 lg:px-8">
+					<div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
 						<div className="flex justify-between h-20">
 							<div className="flex">
 								<Link href="/events">
@@ -35,13 +35,12 @@ export default function NavBar() {
 										/>
 										<h1 className="items-center pl-3 pr-2 text-2xl font-semibold tracking-tight">
 											<a className="/intranet">
-												Intranet
+												Carleton
 											</a>
 										</h1>
 									</a>
 								</Link>
-								<div className="hidden sm:ml-6 sm:flex sm:space-x-4">
-									{/* Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" */}
+								{/* <div className="hidden sm:ml-6 sm:flex sm:space-x-4">
 									<Link href="/events">
 										<a className="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-900 border-b-2 border-cu-red">
 											Today
@@ -72,7 +71,7 @@ export default function NavBar() {
 											Event Details
 										</a>
 									</Link>
-								</div>
+								</div> */}
 							</div>
 
 							<div className="hidden sm:ml-6 sm:flex sm:items-center">
