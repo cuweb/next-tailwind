@@ -5,7 +5,7 @@ import Navbar from "../../components/EventCalendar/Navbar";
 import Container from "../../build-files/layouts/Container/Container";
 import Column from "../../build-files/layouts/Columns/Columns";
 import Panel from "../../build-files/layouts/Panel/Panel";
-import PageBanner from "../../build-files/components/Banners/Page";
+import PageBanner from "../../build-files/components/Banners/PageBanner/Page";
 
 import EventCard from "../../build-files/components/Cards/EventCard";
 import EventFilter from "../../build-files/components/Filter/Filter";

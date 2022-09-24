@@ -4,7 +4,10 @@ import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/FooterStandard";
 import Container from "../../build-files/layouts/Container/Container";
 import Columns from "../../build-files/layouts/Columns/Columns";
-import PagePanel from "./components/_panel";
+import DashboardPanel from "../../build-files/layouts/DashboardPanel/DashboardPanel";
+import BannerWithButtons from "../../build-files/components/Banners/PageButtons";
+import PageBanner from "../../build-files/components/Banners/PageBanner/Page";
+import Panel from "../../build-files/layouts/Panel/Panel";
 
 const PageLayout: NextPage = () => {
 	return (
@@ -15,241 +18,236 @@ const PageLayout: NextPage = () => {
 			</Head>
 			<Navbar />
 
-			<header className="max-w-4xl px-8 py-12 mx-auto">
-				<h1 className="text-3xl font-medium tracking-tight text-cu-black-800 md:text-4xl">
-					Grids &amp; Layouts
-				</h1>
-			</header>
+			<PageBanner>Layouts, Grids &amp; Spacing</PageBanner>
 
 			<main>
 				<Container.White>
+					<Columns.Two>
+						<Panel className="p-6 rounded-md bg-cu-black-50">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur
+								adipiscing elit. Cras vel urna in mauris lacinia
+								convallis. Curabitur a nibh quis leo laoreet
+								porttitor.
+							</p>
+						</Panel>
+						<Panel className="p-6 rounded-md bg-cu-black-50">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur
+								adipiscing elit. Cras vel urna in mauris lacinia
+								convallis. Curabitur a nibh quis leo laoreet
+								porttitor.
+							</p>
+						</Panel>
+					</Columns.Two>
+
+					<Columns.Three>
+						<Panel className="p-6 rounded-md bg-cu-black-50">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur
+								adipiscing elit. Cras vel urna in mauris lacinia
+								convallis.
+							</p>
+						</Panel>
+						<Panel className="p-6 rounded-md bg-cu-black-50">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur
+								adipiscing elit. Cras vel urna in mauris lacinia
+								convallis.
+							</p>
+						</Panel>
+						<Panel className="p-6 rounded-md bg-cu-black-50">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur
+								adipiscing elit. Cras vel urna in mauris lacinia
+								convallis.
+							</p>
+						</Panel>
+					</Columns.Three>
+
 					<Columns.Four>
-						<div className="bg-white">Test</div>
-						<div className="bg-white">Test</div>
-						<div className="bg-white">Test</div>
-						<div className="bg-white">Test</div>
+						<Panel className="p-6 rounded-md bg-cu-black-50">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur
+								adipiscing elit. Cras vel urna in mauris lacinia
+								convallis.
+							</p>
+						</Panel>
+						<Panel className="p-6 rounded-md bg-cu-black-50">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur
+								adipiscing elit. Cras vel urna in mauris lacinia
+								convallis.
+							</p>
+						</Panel>
+						<Panel className="p-6 rounded-md bg-cu-black-50">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur
+								adipiscing elit. Cras vel urna in mauris lacinia
+								convallis.
+							</p>
+						</Panel>
+						<Panel className="p-6 rounded-md bg-cu-black-50">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur
+								adipiscing elit. Cras vel urna in mauris lacinia
+								convallis.
+							</p>
+						</Panel>
 					</Columns.Four>
+
+					<Columns.OneThird>
+						<Panel className="p-6 rounded-md bg-cu-black-50">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur
+								adipiscing elit. Cras vel urna in mauris lacinia
+								convallis. Curabitur a nibh quis leo laoreet
+								porttitor.
+							</p>
+						</Panel>
+						<Panel className="p-6 rounded-md bg-cu-black-50">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur
+								adipiscing elit. Cras vel urna in mauris lacinia
+								convallis. Curabitur a nibh quis leo laoreet
+								porttitor.
+							</p>
+						</Panel>
+					</Columns.OneThird>
+
+					<Columns.TwoThird>
+						<Panel className="p-6 rounded-md bg-cu-black-50">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur
+								adipiscing elit. Cras vel urna in mauris lacinia
+								convallis. Curabitur a nibh quis leo laoreet
+								porttitor.
+							</p>
+						</Panel>
+						<Panel className="p-6 rounded-md bg-cu-black-50">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur
+								adipiscing elit. Cras vel urna in mauris lacinia
+								convallis. Curabitur a nibh quis leo laoreet
+								porttitor.
+							</p>
+						</Panel>
+					</Columns.TwoThird>
 				</Container.White>
 
-				{/* <Container bgColor="gray">
-					<Columns maxWidth="4xl">
-						<PagePanel>
-							<ul>
-								<li>
-									<a
-										className="text-cu-red hover:text-cyan-700"
-										href="layouts/examples/columns1"
-									>
-										Columns 1
-									</a>
-								</li>
-								<li>
-									<a
-										className="text-cu-red hover:text-cyan-700"
-										href="layouts/examples/columns2"
-									>
-										Columns 2
-									</a>
-								</li>
-								<li>
-									<a
-										className="text-cu-red hover:text-cyan-700"
-										href="layouts/examples/columns3"
-									>
-										Columns 3
-									</a>
-								</li>
-								<li>
-									<a
-										className="text-cu-red hover:text-cyan-700"
-										href="layouts/examples/columns33"
-									>
-										Columns One Third
-									</a>
-								</li>
-								<li>
-									<a
-										className="text-cu-red hover:text-cyan-700"
-										href="layouts/examples/columns66"
-									>
-										Columns Two Third
-									</a>
-								</li>
-								<li>
-									<a
-										className="text-cu-red hover:text-cyan-700"
-										href="layouts/examples/no-container"
-									>
-										No Container Wrapper
-									</a>
-								</li>
-							</ul>
-						</PagePanel>
-					</Columns>
-				</Container> */}
+				<Container.Gray>
+					<Columns.Two>
+						<Panel className="p-6 bg-white rounded-md">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur
+								adipiscing elit. Cras vel urna in mauris lacinia
+								convallis. Curabitur a nibh quis leo laoreet
+								porttitor.
+							</p>
+						</Panel>
+						<Panel className="p-6 bg-white rounded-md">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur
+								adipiscing elit. Cras vel urna in mauris lacinia
+								convallis. Curabitur a nibh quis leo laoreet
+								porttitor.
+							</p>
+						</Panel>
+					</Columns.Two>
 
-				{/* <Container>
-					<div className="grid max-w-5xl grid-cols-1 gap-8 mx-auto sm:grid-cols-3">
-						<PagePanel />
-						<PagePanel />
-						<PagePanel />
-					</div>
-				</Container>
+					<Columns.Three>
+						<Panel className="p-6 bg-white rounded-md">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur
+								adipiscing elit. Cras vel urna in mauris lacinia
+								convallis.
+							</p>
+						</Panel>
+						<Panel className="p-6 bg-white rounded-md">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur
+								adipiscing elit. Cras vel urna in mauris lacinia
+								convallis.
+							</p>
+						</Panel>
+						<Panel className="p-6 bg-white rounded-md">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur
+								adipiscing elit. Cras vel urna in mauris lacinia
+								convallis.
+							</p>
+						</Panel>
+					</Columns.Three>
 
-				<Container bgColor="gray">
-					<Columns
-						columns="grid-cols-2"
-						breakPoint="md"
-						maxWidth="4xl"
-					>
-						<div>
-							<PagePanel />
-						</div>
-						<div>
-							<PagePanel />
-						</div>
-					</Columns>
-				</Container>
+					<Columns.Four>
+						<Panel className="p-6 bg-white rounded-md">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur
+								adipiscing elit. Cras vel urna in mauris lacinia
+								convallis.
+							</p>
+						</Panel>
+						<Panel className="p-6 bg-white rounded-md">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur
+								adipiscing elit. Cras vel urna in mauris lacinia
+								convallis.
+							</p>
+						</Panel>
+						<Panel className="p-6 bg-white rounded-md">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur
+								adipiscing elit. Cras vel urna in mauris lacinia
+								convallis.
+							</p>
+						</Panel>
+						<Panel className="p-6 bg-white rounded-md">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur
+								adipiscing elit. Cras vel urna in mauris lacinia
+								convallis.
+							</p>
+						</Panel>
+					</Columns.Four>
 
-				<Container bgColor="gray">
-					<Columns
-						columns="grid-cols-2"
-						breakPoint="sm"
-						maxWidth="7xl"
-					>
-						<div>
-							<PagePanel />
-						</div>
-						<div>
-							<PagePanel />
-						</div>
-					</Columns>
-				</Container>
+					<Columns.OneThird>
+						<Panel className="p-6 bg-white rounded-md">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur
+								adipiscing elit. Cras vel urna in mauris lacinia
+								convallis. Curabitur a nibh quis leo laoreet
+								porttitor.
+							</p>
+						</Panel>
+						<Panel className="p-6 bg-white rounded-md">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur
+								adipiscing elit. Cras vel urna in mauris lacinia
+								convallis. Curabitur a nibh quis leo laoreet
+								porttitor.
+							</p>
+						</Panel>
+					</Columns.OneThird>
 
-				<Container bgColor="gray">
-					<Columns
-						columns="grid-cols-3"
-						breakPoint="md"
-						maxWidth="4xl"
-					>
-						<div>
-							<PagePanel />
-						</div>
-						<div>
-							<PagePanel />
-						</div>
-						<div>
-							<PagePanel />
-						</div>
-					</Columns>
-				</Container>
-
-				<Container bgColor="gray">
-					<Columns
-						columns="grid-cols-3"
-						breakPoint="sm"
-						maxWidth="7xl"
-					>
-						<div>
-							<PagePanel />
-						</div>
-						<div>
-							<PagePanel />
-						</div>
-						<div>
-							<PagePanel />
-						</div>
-					</Columns>
-				</Container> */}
-
-				{/* <Container>
-					<Columns>
-						<PagePanel />
-					</Columns>
-				</Container>
-
-				<Container bgColor="gray">
-					<Columns columns="grid-cols-1" maxWidth="4xl">
-						<PagePanel />
-					</Columns>
-				</Container>
-
-				<Container bgColor="white">
-					<Columns columns="grid-cols-grid-cols-2" maxWidth="4xl">
-						<div>
-							<PagePanel />
-						</div>
-						<div>
-							<PagePanel />
-						</div>
-					</Columns>
-				</Container>
-				<Container bgColor="white">
-					<Columns columns="grid-cols-grid-cols-2" maxWidth="7xl">
-						<div>
-							<PagePanel />
-						</div>
-						<div>
-							<PagePanel />
-						</div>
-					</Columns>
-				</Container>
-
-				<Container bgColor="gray">
-					<Columns columns="grid-cols-grid-cols-3" maxWidth="4xl">
-						<div>
-							<PagePanel />
-						</div>
-						<div>
-							<PagePanel />
-						</div>
-						<div>
-							<PagePanel />
-						</div>
-					</Columns>
-				</Container>
-
-				<Container bgColor="white">
-					<Columns columns="grid-cols-grid-cols-one3rd" maxWidth="7xl">
-						<div>
-							<PagePanel />
-						</div>
-						<div>
-							<PagePanel />
-						</div>
-					</Columns>
-				</Container>
-				<Container bgColor="white">
-					<Columns columns="grid-cols-grid-cols-one3rd" maxWidth="7xl">
-						<div>
-							<PagePanel />
-						</div>
-						<div>
-							<PagePanel />
-						</div>
-					</Columns>
-				</Container>
-
-				<Container bgColor="gray">
-					<Columns columns="grid-cols-grid-cols-two3rd" maxWidth="7xl">
-						<div>
-							<PagePanel />
-						</div>
-						<div>
-							<PagePanel />
-						</div>
-					</Columns>
-				</Container>
-				<Container bgColor="gray">
-					<Columns columns="grid-cols-grid-cols-two3rd" maxWidth="7xl">
-						<div>
-							<PagePanel />
-						</div>
-						<div>
-							<PagePanel />
-						</div>
-					</Columns>
-				</Container> */}
+					<Columns.TwoThird>
+						<Panel className="p-6 bg-white rounded-md">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur
+								adipiscing elit. Cras vel urna in mauris lacinia
+								convallis. Curabitur a nibh quis leo laoreet
+								porttitor.
+							</p>
+						</Panel>
+						<Panel className="p-6 bg-white rounded-md">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur
+								adipiscing elit. Cras vel urna in mauris lacinia
+								convallis. Curabitur a nibh quis leo laoreet
+								porttitor.
+							</p>
+						</Panel>
+					</Columns.TwoThird>
+				</Container.Gray>
 			</main>
 
 			<Footer />
