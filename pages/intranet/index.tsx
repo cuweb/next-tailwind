@@ -11,7 +11,7 @@ import NewsFeed from "../../template-parts/listings/NewsFeed";
 import EventListing from "../../template-parts/listings/EventListing";
 import Marketplace from "../../template-parts/listings/Marketplace";
 import Files from "../../template-parts/listings/FileListing";
-import Bookmarks from "../../template-parts/listings/Bookmarks";
+import LinksListing from "../../template-parts/listings/LinksListing";
 import JobListing from "../../template-parts/listings/JobListing";
 
 const Intranet: NextPage = () => {
@@ -81,9 +81,9 @@ const Intranet: NextPage = () => {
 						<div>
 							<DashboardPanel>
 								<DashboardPanel.Title>
-									Bookmarks
+									My Links
 								</DashboardPanel.Title>
-								<Bookmarks />
+								<LinksListing />
 							</DashboardPanel>
 						</div>
 						<div>

@@ -47,15 +47,6 @@ const positions = [
 		closeDate: "2020-01-07",
 		closeDateFull: "January 7, 2020",
 	},
-	{
-		id: 6,
-		title: "User Interface Designer",
-		type: "Student Services",
-		location: "Remote",
-		department: "Design",
-		closeDate: "2020-01-14",
-		closeDateFull: "January 14, 2020",
-	},
 ];
 
 export default function JobListing() {

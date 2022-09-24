@@ -5,7 +5,7 @@ import FooterIntranet from "../../../build-files/components/Footer/FooterIntrane
 import Navbar from "../../../components/Intranet-Old/Navbar";
 import Events from "../../../components/Intranet-Old/Events";
 import News from "../../../components/Intranet-Old/News";
-import { Bookmarks } from "../../../components/Intranet-Old/Bookmarks";
+import LinksListing from "../../../template-parts/listings/LinksListing";
 
 const IntranetNewsFeed: NextPage = () => {
 	return (
@@ -27,7 +27,7 @@ const IntranetNewsFeed: NextPage = () => {
 				</div>
 				<div className="grid max-w-3xl grid-cols-1 gap-6 mx-auto mt-8 sm:px-6 lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2">
 					<News />
-					<Bookmarks />
+					<LinksListing />
 				</div>
 				<FooterIntranet />
 			</div>

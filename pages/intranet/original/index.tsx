@@ -5,10 +5,7 @@ import Events from "../../../components/Intranet-Old/Events";
 import News from "../../../components/Intranet-Old/News";
 import FileListing from "../../../template-parts/listings/FileListing";
 import Top5 from "../../../components/Intranet-Old/Top5";
-import {
-	Bookmarks,
-	BookmarksEmpty,
-} from "../../../components/Intranet-Old/Bookmarks";
+import LinksListing from "../../../template-parts/listings/LinksListing";
 import FooterIntranet from "../../../build-files/components/Footer/FooterIntranet/FooterIntranet";
 import Marketplace from "../../../components/Intranet-Old/Marketplace";
 import Navbar from "../../../components/Intranet-Old/Navbar";
@@ -36,8 +33,8 @@ const Intranet: NextPage = () => {
 
 				<div className="grid max-w-3xl grid-cols-1 gap-6 mx-auto mt-8 sm:px-6 lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-3">
 					<FileListing />
-					<Bookmarks />
-					<BookmarksEmpty />
+					<LinksListing />
+					<LinksListing />
 				</div>
 
 				<FooterIntranet />
