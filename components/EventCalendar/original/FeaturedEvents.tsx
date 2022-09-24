@@ -1,7 +1,7 @@
 // import { EllipsisHorizontalIcon } from "@heroicons/react/24/outline";
 import Container from "../../../build-files/layouts/Container/Container";
 import Column from "../../../build-files/layouts/Columns/Columns";
-import EventCard from "../../../build-files/components/Cards/EventCard";
+import EventCard from "../../../build-files/components/Card/EventCard/EventCard";
 
 const posts = [
 	{

@@ -77,7 +77,7 @@ const Home: NextPage = () => {
 
 			<main>
 				<Container.White>
-					<Column.Four>
+					<Column.Three>
 						{projects.map(({ name, initials, link, bgColor }) => (
 							<div key={name}>
 								<a
@@ -106,7 +106,7 @@ const Home: NextPage = () => {
 								</a>
 							</div>
 						))}
-					</Column.Four>
+					</Column.Three>
 				</Container.White>
 			</main>
 

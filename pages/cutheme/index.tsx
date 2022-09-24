@@ -4,9 +4,7 @@ import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/FooterStandard";
 import Container from "../../build-files/layouts/Container/Container";
 import Columns from "../../build-files/layouts/Columns/Columns";
-import DashboardPanel from "../../build-files/layouts/DashboardPanel/DashboardPanel";
-import BannerWithButtons from "../../build-files/components/Banners/PageButtons";
-import PageBanner from "../../build-files/components/Banners/PageBanner/Page";
+import BaseBanner from "../../build-files/components/Banner/BaseBanner/BaseBanner";
 import Panel from "../../build-files/layouts/Panel/Panel";
 
 const paragraph = "mb-5";
@@ -20,7 +18,7 @@ const CuTheme: NextPage = () => {
 			</Head>
 			<Navbar />
 
-			<PageBanner>cuTheme</PageBanner>
+			<BaseBanner>cuTheme</BaseBanner>
 
 			<main>
 				<Container.White>

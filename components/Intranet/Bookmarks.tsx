@@ -1,5 +1,5 @@
-import StackedList from "../../build-files/components/StackedLists/StackedList";
-import BookmarkItem from "../../build-files/components/ListingItems/BookmarkItem/BookmarkItem";
+import StackedList from "../../build-files/components/StackedList/StackedList";
+import BookmarkItem from "../../build-files/components/ListingItem/BookmarkItem/BookmarkItem";
 
 export default function Bookmarks() {
 	return (

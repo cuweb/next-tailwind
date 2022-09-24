@@ -1,5 +1,5 @@
-import StackedList from "../../build-files/components/StackedLists/StackedList";
-import MarketplaceItem from "../../build-files/components/ListingItems/MarketplaceItem/MarketplaceItem";
+import StackedList from "../../build-files/components/StackedList/StackedList";
+import MarketplaceItem from "../../build-files/components/ListingItem/MarketplaceItem/MarketplaceItem";
 
 export default function Marketplace() {
 	return (

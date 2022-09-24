@@ -5,9 +5,9 @@ import Navbar from "../../components/EventCalendar/Navbar";
 import Container from "../../build-files/layouts/Container/Container";
 import Column from "../../build-files/layouts/Columns/Columns";
 import Panel from "../../build-files/layouts/Panel/Panel";
-import PageBanner from "../../build-files/components/Banners/PageBanner/Page";
+import BaseBanner from "../../build-files/components/Banner/BaseBanner/BaseBanner";
 
-import EventCard from "../../build-files/components/Cards/EventCard";
+import EventCard from "../../build-files/components/Card/EventCard/EventCard";
 import EventFilter from "../../build-files/components/Filter/Filter";
 import EventList from "../../components/Intranet/Events";
 
@@ -22,7 +22,7 @@ const EventCalendar: NextPage = () => {
 			</Head>
 			<Navbar />
 
-			<PageBanner>Featured Events</PageBanner>
+			<BaseBanner>Featured Events</BaseBanner>
 
 			<main>
 				<Container.Gray>

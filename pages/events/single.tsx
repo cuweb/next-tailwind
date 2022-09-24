@@ -11,7 +11,7 @@ import {
 
 import Container from "../../build-files/layouts/Container/Container";
 import NavBar from "../../components/EventCalendar/Navbar";
-import BannerWithButtons from "../../build-files/components/Banners/PageButtons";
+import BannerButtons from "../../build-files/components/Banner/BannerButtons/BannerButtons";
 
 const attachments = [
 	{ name: "resume_front_end_developer.pdf", href: "#" },
@@ -22,7 +22,7 @@ export default function Sample() {
 	return (
 		<>
 			<NavBar />
-			<BannerWithButtons />
+			<BannerButtons />
 			<Container.Gray>
 				<main className="">
 					<div className="grid max-w-3xl grid-cols-1 gap-6 mx-auto mt-8 sm:px-6 lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-3">

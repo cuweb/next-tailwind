@@ -1,5 +1,5 @@
-import StackedList from "../../build-files/components/StackedLists/StackedList";
-import FeedItem from "../../build-files/components/ListingItems/FeedItem/FeedItem";
+import StackedList from "../../build-files/components/StackedList/StackedList";
+import FeedItem from "../../build-files/components/ListingItem/FeedItem/FeedItem";
 import Button from "../../build-files/components/Button/Button";
 import Container from "../../build-files/layouts/Container/Container";
 

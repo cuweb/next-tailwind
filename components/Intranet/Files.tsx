@@ -1,5 +1,5 @@
-import StackedList from "../../build-files/components/StackedLists/StackedList";
-import FileItem from "../../build-files/components/ListingItems/FileItem/FileItem";
+import StackedList from "../../build-files/components/StackedList/StackedList";
+import FileItem from "../../build-files/components/ListingItem/FileItem/FileItem";
 
 export default function Files() {
 	return (
