@@ -31,6 +31,12 @@ const projects = [
 		link: "/layouts",
 		bgColor: "bg-green-700",
 	},
+	{
+		name: "Examples",
+		initials: "EX",
+		link: "/examples",
+		bgColor: "bg-orange-600",
+	},
 ];
 
 const Home: NextPage = () => {
