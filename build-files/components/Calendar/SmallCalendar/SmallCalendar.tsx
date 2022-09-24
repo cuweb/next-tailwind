@@ -15,6 +15,7 @@ type dateType = {
 	isToday?: boolean;
 	isSelected?: boolean;
 };
+
 const days: dateType[] = [
 	{ date: "2021-12-27" },
 	{ date: "2021-12-28" },
@@ -64,7 +65,7 @@ function classNames(...classes: (string | boolean | undefined)[]) {
 	return classes.filter(Boolean).join(" ");
 }
 
-export default function EventDatePicker() {
+export default function SmallCalendar() {
 	return (
 		<div>
 			<div className="ml-16">

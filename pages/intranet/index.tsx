@@ -8,7 +8,7 @@ import DashboardPanel from "../../build-files/layouts/DashboardPanel/DashboardPa
 import News from "../../components/Intranet/News";
 
 import Top5 from "../../components/Intranet/Top5";
-import Events from "../../components/Intranet/Events";
+import EventListing from "../../template-parts/listings/EventListing";
 import Marketplace from "../../components/Intranet/Marketplace";
 import Files from "../../components/Intranet/Files";
 import Bookmarks from "../../components/Intranet/Bookmarks";
@@ -57,7 +57,7 @@ const Intranet: NextPage = () => {
 							<DashboardPanel.Title>
 								Upcoming Events
 							</DashboardPanel.Title>
-							<Events />
+							<EventListing />
 						</DashboardPanel>
 						<DashboardPanel>
 							<DashboardPanel.Title>

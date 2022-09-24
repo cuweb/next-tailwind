@@ -1,18 +1,17 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import Footer from "../../build-files/components/Footer/FooterStandard/FooterStandard";
-import Navbar from "../../components/EventCalendar/Navbar";
 
+import Footer from "../../build-files/components/Footer/FooterStandard/FooterStandard";
+import Navbar from "../../build-files/components/Navbar/EventNavbar";
 import Container from "../../build-files/layouts/Container/Container";
 import Column from "../../build-files/layouts/Columns/Columns";
 import Panel from "../../build-files/layouts/Panel/Panel";
 import BaseBanner from "../../build-files/components/Banner/BaseBanner/BaseBanner";
 import EventCard from "../../build-files/components/Card/EventCard/EventCard";
 import EventFilter from "../../build-files/components/Filter/Filter";
+import SmallCalendar from "../../build-files/components/Calendar/SmallCalendar/SmallCalendar";
 
-import EventList from "../../components/Intranet/Events";
-
-import EventDatePicker from "../../components/EventCalendar/EventDatePicker";
+import EventListing from "../../template-parts/listings/EventListing";
 
 const EventCalendar: NextPage = () => {
 	return (
@@ -45,9 +44,9 @@ const EventCalendar: NextPage = () => {
 					</Column.One>
 					<Column.TwoThird>
 						<Panel className="bg-white">
-							<EventList />
+							<EventListing />
 						</Panel>
-						<EventDatePicker />
+						<SmallCalendar />
 					</Column.TwoThird>
 				</Container.White>
 			</main>

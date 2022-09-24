@@ -8,7 +8,7 @@ import Footer from "../../build-files/components/Footer/FooterStandard/FooterSta
 import DashboardPanel from "../../build-files/layouts/DashboardPanel/DashboardPanel";
 import Top5 from "../../components/Intranet/Top5";
 import News from "../../components/Intranet/News";
-import Events from "../../components/Intranet/Events";
+import EventListing from "../../template-parts/listings/EventListing";
 import Marketplace from "../../components/Intranet/Marketplace";
 import Files from "../../components/Intranet/Files";
 import Bookmarks from "../../components/Intranet/Bookmarks";
@@ -34,7 +34,7 @@ const Intranet: NextPage = () => {
 
 				<Container.Gray>
 					<Columns.Two>
-						<Events />
+						<EventListing />
 						<Marketplace />
 					</Columns.Two>
 				</Container.Gray>

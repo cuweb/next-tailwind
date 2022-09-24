@@ -1,16 +1,13 @@
 import {
-	CheckIcon,
-	HandThumbUpIcon,
 	MapPinIcon,
 	PaperClipIcon,
-	UserIcon,
 	CalendarIcon,
 	HeartIcon,
 	ShareIcon,
 } from "@heroicons/react/20/solid";
 
 import Container from "../../build-files/layouts/Container/Container";
-import NavBar from "../../components/EventCalendar/Navbar";
+import NavBar from "../../build-files/components/Navbar/EventNavbar";
 import BannerButtons from "../../build-files/components/Banner/BannerButtons/BannerButtons";
 
 const attachments = [

@@ -54,7 +54,7 @@ const events = [
 	},
 ];
 
-export default function EventList() {
+export default function EventListing() {
 	return (
 		<>
 			<StackedList>
