@@ -34,9 +34,7 @@ export default function NavBar() {
 											alt="Carleton"
 										/>
 										<h1 className="items-center pl-3 pr-2 text-2xl font-semibold tracking-tight">
-											<a className="/intranet">
-												Carleton
-											</a>
+											Carleton
 										</h1>
 									</a>
 								</Link>

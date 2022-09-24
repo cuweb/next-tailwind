@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+
 import NavBar from "../build-files/components/Navbar/CuTheme";
 import Footer from "../build-files/components/Footer/FooterStandard/FooterStandard";
 import Container from "../build-files/layouts/Container/Container";
@@ -41,7 +42,7 @@ const projects = [
 	},
 	{
 		id: 4,
-		uni: "Carleton",
+		uni: "RDS",
 		name: "Layouts & Spacing",
 		link: "/layouts",
 		color: "bg-green-700",
