@@ -6,6 +6,7 @@ import Container from "../../build-files/layouts/Container/Container";
 import Columns from "../../build-files/layouts/Columns/Columns";
 import BaseBanner from "../../build-files/components/Banner/BaseBanner/BaseBanner";
 import Panel from "../../build-files/layouts/Panel/Panel";
+import Toast from "../../build-files/components/Toasts/Toasts";
 
 const PageLayout: NextPage = () => {
 	return (
@@ -249,6 +250,7 @@ const PageLayout: NextPage = () => {
 			</main>
 
 			<Footer />
+			<Toast />
 		</>
 	);
 };

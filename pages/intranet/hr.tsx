@@ -1,18 +1,13 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+
 import Container from "../../build-files/layouts/Container/Container";
 import Column from "../../build-files/layouts/Columns/Columns";
 import DashboardPanel from "../../build-files/layouts/DashboardPanel/DashboardPanel";
 import NavBar from "../../build-files/components/Navbar/IntranetNavbar";
 import Profile from "../../build-files/components/Banner/Profile/Profile";
 
-import Top5 from "../../template-parts/listings/Top5";
-import NewsFeed from "../../template-parts/listings/NewsFeed";
-import EventListing from "../../template-parts/listings/EventListing";
-import Marketplace from "../../template-parts/listings/Marketplace";
 import Files from "../../template-parts/listings/FileListing";
-import LinksListing from "../../template-parts/listings/LinksListing";
-import JobListing from "../../template-parts/listings/JobListing";
 
 const Intranet: NextPage = () => {
 	return (
@@ -30,12 +25,12 @@ const Intranet: NextPage = () => {
 					<Column.TwoThird>
 						<DashboardPanel>
 							<DashboardPanel.Title>Top 5</DashboardPanel.Title>
-							<Top5 />
+							<Files />
 						</DashboardPanel>
 
 						<DashboardPanel>
 							<DashboardPanel.Title>News</DashboardPanel.Title>
-							<NewsFeed />
+							<Files />
 						</DashboardPanel>
 					</Column.TwoThird>
 				</Container.White>
@@ -50,8 +45,7 @@ const Intranet: NextPage = () => {
 						</Panel>
 					</Column.TwoThird>
 				</Container.Gray> */}
-
-				<Container.Gray>
+				{/* <Container.Gray>
 					<Column.Two>
 						<DashboardPanel>
 							<DashboardPanel.Title>
@@ -67,35 +61,26 @@ const Intranet: NextPage = () => {
 						</DashboardPanel>
 					</Column.Two>
 				</Container.Gray>
-
 				<Container.Gray>
 					<Column.Three>
-						<div>
-							<DashboardPanel>
-								<DashboardPanel.Title>
-									Files
-								</DashboardPanel.Title>
-								<Files />
-							</DashboardPanel>
-						</div>
-						<div>
-							<DashboardPanel>
-								<DashboardPanel.Title>
-									My Links
-								</DashboardPanel.Title>
-								<LinksListing />
-							</DashboardPanel>
-						</div>
-						<div>
-							<DashboardPanel>
-								<DashboardPanel.Title>
-									Job Postings
-								</DashboardPanel.Title>
-								<JobListing />
-							</DashboardPanel>
-						</div>
+						<DashboardPanel>
+							<DashboardPanel.Title>Files</DashboardPanel.Title>
+							<Files />
+						</DashboardPanel>
+						<DashboardPanel>
+							<DashboardPanel.Title>
+								Bookmarks
+							</DashboardPanel.Title>
+							<Bookmarks />
+						</DashboardPanel>
+						<DashboardPanel>
+							<DashboardPanel.Title>
+								Job Postings
+							</DashboardPanel.Title>
+							<JobListing />
+						</DashboardPanel>
 					</Column.Three>
-				</Container.Gray>
+				</Container.Gray> */}
 			</main>
 		</>
 	);
