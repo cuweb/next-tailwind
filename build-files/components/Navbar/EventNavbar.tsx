@@ -10,11 +10,14 @@ function classNames(...classes: any) {
 
 export default function Example() {
 	return (
-		<Disclosure as="nav" className="bg-white shadow">
+		<Disclosure
+			as="nav"
+			className="sticky top-0 z-50 bg-white border-t-2 shadow border-cu-red"
+		>
 			{({ open }) => (
 				<>
 					<div className="px-2 mx-auto max-w-7xl sm:px-4 lg:px-8">
-						<div className="flex justify-between h-16">
+						<div className="flex justify-between h-20">
 							<div className="flex px-2 lg:px-0">
 								<Link href="/events">
 									<a className="flex items-center flex-shrink-0 hover:text-cu-red">
@@ -28,7 +31,7 @@ export default function Example() {
 										</h1>
 									</a>
 								</Link>
-								<div className="hidden lg:ml-6 lg:flex lg:space-x-8">
+								<div className="hidden lg:ml-6 lg:flex lg:space-x-6">
 									{/* Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" */}
 									<a
 										href="#"
@@ -43,10 +46,16 @@ export default function Example() {
 										Weekly
 									</a>
 									<a
-										href="#"
+										href="/events/single-one"
 										className="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-500 border-b-2 border-transparent hover:border-cu-black-100 hover:text-cu-red"
 									>
-										Monthly
+										Single 1
+									</a>
+									<a
+										href="/events/single-two"
+										className="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-500 border-b-2 border-transparent hover:border-cu-black-100 hover:text-cu-red"
+									>
+										Single 2
 									</a>
 								</div>
 							</div>

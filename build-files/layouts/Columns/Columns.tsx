@@ -1,21 +1,41 @@
 const classNameRoot =
-	"cu-column mx-auto mb-8 grid max-w-3xl md:max-w-7xl gap-8 px-8 [&:last-child]:mb-0 grid-cols-1";
+	"cu-column mx-auto mb-8 grid gap-8 px-8 [&:last-child]:mb-0 grid-cols-1";
 
-const One = ({ children }: any) => {
-	return <div className={classNameRoot}>{children}</div>;
+const defaultMaxWidth = "max-w-3xl md:max-w-7xl";
+
+const One = ({ maxWidth, children }: any) => {
+	return (
+		<div
+			className={`${
+				maxWidth ? maxWidth : defaultMaxWidth
+			} ${classNameRoot}`}
+		>
+			{children}
+		</div>
+	);
 };
 
 const Two = ({ children }: any) => {
-	return <div className={`${classNameRoot} md:grid-cols-2`}>{children}</div>;
+	return (
+		<div className={`${classNameRoot} ${defaultMaxWidth} md:grid-cols-2`}>
+			{children}
+		</div>
+	);
 };
 
 const Three = ({ children }: any) => {
-	return <div className={`${classNameRoot} md:grid-cols-3`}>{children}</div>;
+	return (
+		<div className={`${classNameRoot} ${defaultMaxWidth} md:grid-cols-3`}>
+			{children}
+		</div>
+	);
 };
 
 const Four = ({ children }: any) => {
 	return (
-		<div className={`${classNameRoot} md:grid-cols-2 lg:grid-cols-4`}>
+		<div
+			className={`${classNameRoot} ${defaultMaxWidth} md:grid-cols-2 lg:grid-cols-4`}
+		>
 			{children}
 		</div>
 	);
@@ -24,7 +44,7 @@ const Four = ({ children }: any) => {
 const OneThird = ({ children }: any) => {
 	return (
 		<div
-			className={`${classNameRoot} md:grid-cols-3 md:[&>*:last-child]:col-span-2`}
+			className={`${classNameRoot} ${defaultMaxWidth} md:grid-cols-3 md:[&>*:last-child]:col-span-2`}
 		>
 			{children}
 		</div>
@@ -34,7 +54,7 @@ const OneThird = ({ children }: any) => {
 const TwoThird = ({ children }: any) => {
 	return (
 		<div
-			className={`${classNameRoot} md:grid-cols-3 md:[&>*:first-child]:col-span-2`}
+			className={`${classNameRoot} ${defaultMaxWidth} md:grid-cols-3 md:[&>*:first-child]:col-span-2`}
 		>
 			{children}
 		</div>

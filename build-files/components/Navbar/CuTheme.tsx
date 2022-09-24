@@ -23,7 +23,7 @@ export default function NavBar() {
 			{({ open }) => (
 				<>
 					{/* max-w-7xl */}
-					<div className="px-4 mx-auto sm:px-6 lg:px-8">
+					<div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
 						<div className="flex justify-between h-20">
 							<div className="flex">
 								<Link href="/events">
@@ -35,44 +35,37 @@ export default function NavBar() {
 										/>
 										<h1 className="items-center pl-3 pr-2 text-2xl font-semibold tracking-tight">
 											<a className="/intranet">
-												Intranet
+												Carleton
 											</a>
 										</h1>
 									</a>
 								</Link>
-								<div className="hidden sm:ml-6 sm:flex sm:space-x-4">
-									{/* Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" */}
-									<Link href="/events">
-										<a className="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-900 border-b-2 border-cu-red">
-											Today
-										</a>
-									</Link>
-									<Link href="/events">
-										<a className="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-500 border-b-2 border-transparent hover:text-cu-red">
-											Weekly
-										</a>
-									</Link>
-									<Link href="/events">
-										<a className="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-500 border-b-2 border-transparent hover:text-cu-red">
-											Monthly
-										</a>
-									</Link>
-									<Link href="/events">
-										<a className="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-500 border-b-2 border-transparent hover:text-cu-red">
-											Featured
-										</a>
-									</Link>
-									<Link href="/events">
-										<a className="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-500 border-b-2 border-transparent hover:text-cu-red">
-											My Events
-										</a>
-									</Link>
-									<Link href="/events/single">
-										<a className="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-500 border-b-2 border-transparent hover:text-cu-red">
-											Event Details
-										</a>
-									</Link>
-								</div>
+								{/* <div className="hidden lg:ml-6 lg:flex lg:space-x-6">
+									<a
+										href="#"
+										className="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-900 border-b-2 border-cu-red"
+									>
+										Featured
+									</a>
+									<a
+										href="#"
+										className="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-500 border-b-2 border-transparent hover:border-cu-black-100 hover:text-cu-red"
+									>
+										Weekly
+									</a>
+									<a
+										href="/events/single-one"
+										className="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-500 border-b-2 border-transparent hover:border-cu-black-100 hover:text-cu-red"
+									>
+										Single 1
+									</a>
+									<a
+										href="/events/single-two"
+										className="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-500 border-b-2 border-transparent hover:border-cu-black-100 hover:text-cu-red"
+									>
+										Single 2
+									</a>
+								</div> */}
 							</div>
 
 							<div className="hidden sm:ml-6 sm:flex sm:items-center">
