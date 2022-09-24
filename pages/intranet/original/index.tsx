@@ -3,7 +3,7 @@ import Head from "next/head";
 import Profile from "../../../components/Header/Profile";
 import Events from "../../../components/Intranet-Old/Events";
 import News from "../../../components/Intranet-Old/News";
-import Files from "../../../components/Intranet-Old/Files";
+import FileListing from "../../../template-parts/listings/FileListing";
 import Top5 from "../../../components/Intranet-Old/Top5";
 import {
 	Bookmarks,
@@ -35,7 +35,7 @@ const Intranet: NextPage = () => {
 				</div>
 
 				<div className="grid max-w-3xl grid-cols-1 gap-6 mx-auto mt-8 sm:px-6 lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-3">
-					<Files />
+					<FileListing />
 					<Bookmarks />
 					<BookmarksEmpty />
 				</div>
