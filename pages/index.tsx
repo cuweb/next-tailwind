@@ -1,33 +1,34 @@
-import { EllipsisVerticalIcon } from "@heroicons/react/20/solid";
 import { ChevronRightIcon } from "@heroicons/react/24/outline";
 import type { NextPage } from "next";
 import Head from "next/head";
 import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/FooterStandard";
+import Container from "../build-files/layouts/Container/Container";
+import Column from "../build-files/layouts/Columns/Columns";
 
 const projects = [
 	{
 		name: "Events Calendar",
 		initials: "EC",
-		href: "/event-calendar",
+		link: "/events",
 		bgColor: "bg-cu-red",
 	},
 	{
 		name: "Carleton Intranet",
 		initials: "CI",
-		href: "/intranet",
+		link: "/intranet",
 		bgColor: "bg-cu-black-700",
 	},
 	{
 		name: "cuTheme",
 		initials: "WP",
-		href: "/cutheme",
+		link: "/cutheme",
 		bgColor: "bg-cyan-600",
 	},
 	{
 		name: "Layout & Spacing",
 		initials: "LS",
-		href: "/layouts",
+		link: "/layouts",
 		bgColor: "bg-green-700",
 	},
 ];
@@ -41,7 +42,7 @@ const Home: NextPage = () => {
 			</Head>
 			<Navbar />
 
-			<div>
+			<header className="pb-8 bg-cu-black-50">
 				<div>
 					<img
 						className="object-cover w-full h-32 lg:h-72"
@@ -72,43 +73,42 @@ const Home: NextPage = () => {
 						</h1>
 					</div>
 				</div>
-			</div>
+			</header>
 
-			<div className="px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:px-8">
-				<ul
-					role="list"
-					className="grid grid-cols-1 gap-5 mt-3 sm:gap-6 md:grid-cols-2 lg:grid-cols-3"
-				>
-					{projects.map((project) => (
-						<li key={project.name}>
-							<a
-								href={project.href}
-								className="flex col-span-1 rounded-md shadow-sm"
-							>
-								<div
-									className={`${project.bgColor} flex w-16 flex-shrink-0 items-center justify-center rounded-l-md text-sm font-medium text-white`}
+			<main>
+				<Container.White>
+					<Column.Four>
+						{projects.map(({ name, initials, link, bgColor }) => (
+							<div key={name}>
+								<a
+									href={link}
+									className="flex col-span-1 rounded-md shadow-sm"
 								>
-									{project.initials}
-								</div>
+									<div
+										className={`${bgColor} flex w-16 flex-shrink-0 items-center justify-center rounded-l-md text-sm font-medium text-white`}
+									>
+										{initials}
+									</div>
 
-								<div className="flex items-center justify-between flex-1 truncate bg-white border-t border-b border-r border-gray-200 rounded-r-md hover:bg-gray-50">
-									<div className="flex-1 px-4 py-2 text-sm truncate">
-										<p className="py-4 font-medium text-gray-900">
-											{project.name}
-										</p>
+									<div className="flex items-center justify-between flex-1 truncate bg-white border-t border-b border-r border-gray-200 rounded-r-md hover:bg-gray-50">
+										<div className="flex-1 px-4 py-2 text-sm truncate">
+											<p className="py-4 font-medium text-gray-900">
+												{name}
+											</p>
+										</div>
+										<div className="flex-shrink-0 pr-2">
+											<ChevronRightIcon
+												className="w-5 h-5 text-cu-black-500"
+												aria-hidden="true"
+											/>
+										</div>
 									</div>
-									<div className="flex-shrink-0 pr-2">
-										<ChevronRightIcon
-											className="w-5 h-5 text-cu-black-500"
-											aria-hidden="true"
-										/>
-									</div>
-								</div>
-							</a>
-						</li>
-					))}
-				</ul>
-			</div>
+								</a>
+							</div>
+						))}
+					</Column.Four>
+				</Container.White>
+			</main>
 
 			<Footer />
 		</>

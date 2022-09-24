@@ -5,9 +5,6 @@ import Column from "../../build-files/layouts/Columns/Columns";
 import Profile from "../../components/Header/Profile";
 import NavBar from "../../components/Navbar/Navbar";
 import DashboardPanel from "../../build-files/layouts/DashboardPanel/DashboardPanel";
-import Panel from "../../build-files/layouts/Panel/Panel";
-import Footer from "../../components/Footer/FooterStandard";
-import Button from "../../build-files/components/Button/Button";
 import News from "../../components/Intranet/News";
 
 import Top5 from "../../components/Intranet/Top5";
@@ -43,7 +40,7 @@ const Intranet: NextPage = () => {
 					</Column.TwoThird>
 				</Container.White>
 
-				<Container.Gray>
+				{/* <Container.Gray>
 					<Column.TwoThird>
 						<Panel className="bg-white rounded-lg">
 							<Top5 />
@@ -52,7 +49,7 @@ const Intranet: NextPage = () => {
 							<News />
 						</Panel>
 					</Column.TwoThird>
-				</Container.Gray>
+				</Container.Gray> */}
 
 				<Container.Gray>
 					<Column.Two>
