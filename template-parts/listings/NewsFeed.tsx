@@ -33,7 +33,7 @@ const posts = [
 	},
 ];
 
-export default function News() {
+export default function NewsFeed() {
 	return (
 		<>
 			<StackedList>

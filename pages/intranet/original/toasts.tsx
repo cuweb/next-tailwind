@@ -3,9 +3,9 @@ import Head from "next/head";
 
 import Navbar from "../../../components/Navbar/Navbar";
 import Profile from "../../../components/Header/Profile";
-import News from "../../../components/Intranet/original/News";
-import Top5 from "../../../components/Intranet/original/Top5";
-import Toast from "../../../components/Intranet/original/Toast";
+import News from "../../../components/Intranet-Old/News";
+import Top5 from "../../../components/Intranet-Old/Top5";
+import Toast from "../../../components/Intranet-Old/Toast";
 import FooterIntranet from "../../../build-files/components/Footer/FooterIntranet/FooterIntranet";
 
 const Intranet: NextPage = () => {

@@ -12,6 +12,7 @@ import EventListing from "../../template-parts/listings/EventListing";
 import Marketplace from "../../template-parts/listings/Marketplace";
 import Files from "../../template-parts/listings/Files";
 import Bookmarks from "../../template-parts/listings/Bookmarks";
+import JobListing from "../../template-parts/listings/JobListing";
 
 const Intranet: NextPage = () => {
 	return (
@@ -25,7 +26,7 @@ const Intranet: NextPage = () => {
 			<Profile />
 
 			<main>
-				<Container.White>
+				<Container.Gray>
 					<Column.TwoThird>
 						<DashboardPanel>
 							<DashboardPanel.Title>Top 5</DashboardPanel.Title>
@@ -37,18 +38,7 @@ const Intranet: NextPage = () => {
 							<NewsFeed />
 						</DashboardPanel>
 					</Column.TwoThird>
-				</Container.White>
-
-				{/* <Container.Gray>
-					<Column.TwoThird>
-						<Panel className="bg-white rounded-lg">
-                        <Top5 />
-                        <NewsFeed />
-						</Panel>
-						<Panel className="bg-white rounded-lg">
-						</Panel>
-					</Column.TwoThird>
-				</Container.Gray> */}
+				</Container.Gray>
 
 				<Container.Gray>
 					<Column.Two>
@@ -81,9 +71,9 @@ const Intranet: NextPage = () => {
 						</DashboardPanel>
 						<DashboardPanel>
 							<DashboardPanel.Title>
-								<NewsFeed />
 								Another Panel
 							</DashboardPanel.Title>
+							<JobListing />
 						</DashboardPanel>
 					</Column.Three>
 				</Container.Gray>

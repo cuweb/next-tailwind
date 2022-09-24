@@ -1,8 +1,8 @@
 import { Fragment, useState } from "react";
-import GradientDiv from "../../Gradient/GradientDiv";
+// import GradientDiv from "../Gradient/GradientDiv";
 import { Disclosure, Menu, Switch, Transition } from "@headlessui/react";
 import { MagnifyingGlassIcon } from "@heroicons/react/20/solid";
-import Form from "../../Form/Form";
+import Form from "../../examples/Form/Form";
 import {
 	Bars3Icon,
 	BellIcon,

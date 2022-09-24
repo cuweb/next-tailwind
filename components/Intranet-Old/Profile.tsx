@@ -16,7 +16,7 @@
 */
 import { Fragment, useState } from "react";
 import { Disclosure, Listbox, Menu, Transition } from "@headlessui/react";
-import GradientDiv from "../../Gradient/GradientDiv";
+// import GradientDiv from "../Gradient/GradientDiv";
 import {
 	ArrowLongLeftIcon,
 	ArrowLongRightIcon,
@@ -97,7 +97,7 @@ export default function Example() {
 		<>
 			{/* Page heading */}
 			<header className="relative py-12 shadow bg-gray-50">
-				<GradientDiv />
+				{/* <GradientDiv /> */}
 				<div className="relative max-w-3xl px-4 mx-auto sm:px-6 md:flex md:items-center md:justify-between md:space-x-5 lg:max-w-7xl lg:px-8">
 					<div className="flex space-x-5 md:items-center">
 						<div className="flex-shrink-0">

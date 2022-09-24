@@ -1,17 +1,17 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Profile from "../../../components/Header/Profile";
-import Events from "../../../components/Intranet/original/Events";
-import News from "../../../components/Intranet/original/News";
-import Files from "../../../components/Intranet/original/Files";
-import Top5 from "../../../components/Intranet/original/Top5";
+import Events from "../../../components/Intranet-Old/Events";
+import News from "../../../components/Intranet-Old/News";
+import Files from "../../../components/Intranet-Old/Files";
+import Top5 from "../../../components/Intranet-Old/Top5";
 import {
 	Bookmarks,
 	BookmarksEmpty,
-} from "../../../components/Intranet/original/Bookmarks";
+} from "../../../components/Intranet-Old/Bookmarks";
 import FooterIntranet from "../../../build-files/components/Footer/FooterIntranet/FooterIntranet";
-import Marketplace from "../../../components/Intranet/original/Marketplace";
-import Navbar from "../../../components/Intranet/original/Navbar";
+import Marketplace from "../../../components/Intranet-Old/Marketplace";
+import Navbar from "../../../components/Intranet-Old/Navbar";
 
 const Intranet: NextPage = () => {
 	return (
