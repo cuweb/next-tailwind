@@ -29,7 +29,7 @@ export default function EventItem(props: any) {
 								<div className="sm:flex">
 									<p className="flex items-center text-sm text-gray-500">
 										<ClockIcon
-											className="mr-1.5 h-5 w-5 flex-shrink-0 text-cu-red-light"
+											className="mr-1.5 h-5 w-5 flex-shrink-0 text-cu-red-tint-5"
 											aria-hidden="true"
 										/>
 
@@ -37,7 +37,7 @@ export default function EventItem(props: any) {
 									</p>
 									<p className="flex items-center mt-2 text-sm text-gray-500 sm:mt-0 sm:ml-4">
 										<MapPinIcon
-											className="mr-1.5 h-5 w-5 flex-shrink-0 text-cu-red-light"
+											className="mr-1.5 h-5 w-5 flex-shrink-0 text-cu-red-tint-5"
 											aria-hidden="true"
 										/>
 										{location}

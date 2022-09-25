@@ -25,7 +25,7 @@ const Two = ({ children }: any) => {
 
 const Three = ({ children }: any) => {
 	return (
-		<div className={`${classNameRoot} ${defaultMaxWidth} md:grid-cols-3`}>
+		<div className={`${classNameRoot} ${defaultMaxWidth} lg:grid-cols-3`}>
 			{children}
 		</div>
 	);
