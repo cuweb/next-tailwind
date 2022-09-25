@@ -1,6 +1,6 @@
 export default function AltFeaturedHeader({ children }: any) {
 	return (
-		<div className="relative pb-32 bg-gray-800">
+		<header className="relative pb-32 bg-gray-800">
 			<div className="absolute inset-0">
 				<img
 					className="object-cover w-full h-full"
@@ -12,7 +12,7 @@ export default function AltFeaturedHeader({ children }: any) {
 					aria-hidden="true"
 				/>
 			</div>
-			<div className="relative px-4 py-24 mx-auto max-w-7xl sm:py-32 sm:px-6 lg:px-8">
+			<div className="relative px-8 pt-12 pb-20 mx-auto max-w-7xl md:py-24">
 				<h1 className="text-4xl font-semibold text-white md:text-5xl">
 					Featured Events
 				</h1>
@@ -22,6 +22,6 @@ export default function AltFeaturedHeader({ children }: any) {
 					diam sed lacus, fames. Dui, amet, nec sit pulvinar.
 				</p>
 			</div>
-		</div>
+		</header>
 	);
 }
