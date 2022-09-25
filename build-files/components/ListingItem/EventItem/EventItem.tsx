@@ -44,7 +44,7 @@ export default function EventItem(props: any) {
 									</p>
 								</div>
 								<div className="mt-2">
-									<span className="px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 rounded-full">
+									<span className="px-2 text-xs font-semibold leading-5 rounded-xl bg-cu-blue-tint-8 text-cu-black-800">
 										Multi-Day
 									</span>
 								</div>
