@@ -14,10 +14,30 @@ module.exports = {
                 'cu-waves-red': "url('/cu-waves-red.svg')",
                 'cu-waves-white-20': "url('/cu-waves-white-20.svg')",
             },
+            // https://htmlcolorcodes.com/color-picker/
             colors: {
                 'cu-red': '#E91C24',
-                'cu-red-light': "#f48b8f",
-                'cu-blue': "#126B93",
+                'cu-blue': "#126b93",
+                'cu-blue-tint' : {
+                    1: '#126b93',
+                    2: '#307ea1',
+                    3: '#4d90ae',
+                    4: '#6ba3bc',
+                    5: '#89b5c9',
+                    6: '#a6c7d7',
+                    7: '#c4dae4',
+                    8: '#e1ecf2',
+                },
+                'cu-red-tint' : {
+                    1: '#e91c24',
+                    2: '#ec383f',
+                    3: '#ee555b',
+                    4: '#f17176',
+                    5: '#f48e92',
+                    6: '#f7aaad',
+                    7: '#f9c6c8',
+                    8: '#fce3e4',
+                },
                 'cu-black': {
                     50: '#F2F2F2',
                     100: '#e6e6e6',

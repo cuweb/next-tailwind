@@ -1,17 +1,15 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 
-// import Footer from "../../build-files/components/Footer/FooterIntranet/FooterIntranet";
 import Footer from "../../build-files/components/Footer/FooterStandard/FooterStandard";
 import Navbar from "../../build-files/components/Navbar/EventNavbar";
 import Container from "../../build-files/layouts/Container/Container";
 import Column from "../../build-files/layouts/Columns/Columns";
 import Panel from "../../build-files/layouts/Panel/Panel";
+import BaseBanner from "../../build-files/components/Banner/BaseBanner/BaseBanner";
+import EventCard from "../../build-files/components/Card/EventCard/EventCard";
 import EventFilter from "../../build-files/components/Filter/Filter";
 import SmallCalendar from "../../build-files/components/Calendar/SmallCalendar/SmallCalendar";
-
-import AlternateFeaturedHeader from "./components/Alt_FeaturedBanner";
-import AltFeaturedListing from "./components/Alt_FeaturedListing";
 
 import EventListing from "../../template-parts/listings/EventListing";
 
@@ -24,21 +22,28 @@ const EventCalendar: NextPage = () => {
 			</Head>
 			<Navbar />
 
+			<BaseBanner>Featured Events</BaseBanner>
+
 			<main>
-				<Container.Empty>
-					<AlternateFeaturedHeader />
-					<AltFeaturedListing />
-				</Container.Empty>
+				<Container.Gray>
+					<Column.Three>
+						<EventCard />
+						<EventCard />
+						<EventCard />
+					</Column.Three>
+				</Container.Gray>
 
 				<Container.White>
 					<Column.One>
-						<h2 className="text-2xl font-semibold text-cu-black-800 md:text-4xl">
-							Upcoming Events
-						</h2>
+						<div className="flex items-start pt-2 max-w-7xl md:pt-4">
+							<h1 className="text-3xl font-medium text-cu-black-800 md:text-4xl">
+								Upcoming Events
+							</h1>
+						</div>
 						<EventFilter />
 					</Column.One>
 					<Column.TwoThird>
-						<Panel>
+						<Panel className="bg-white">
 							<EventListing />
 						</Panel>
 						<SmallCalendar />

@@ -37,6 +37,7 @@ const filters = {
 		{ value: "pants-and-shorts", label: "Pants & Shorts", checked: false },
 	],
 };
+
 const sortOptions = [
 	{ name: "Most Popular", href: "#", current: true },
 	{ name: "Best Rating", href: "#", current: false },

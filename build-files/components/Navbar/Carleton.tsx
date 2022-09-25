@@ -1,14 +1,20 @@
+/* This example requires Tailwind CSS v2.0+ */
 import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
-import { MagnifyingGlassIcon } from "@heroicons/react/20/solid";
-import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
+import {
+	Bars3Icon,
+	XMarkIcon,
+	DevicePhoneMobileIcon,
+} from "@heroicons/react/24/outline";
+
+import { LifebuoyIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 
 function classNames(...classes: any) {
 	return classes.filter(Boolean).join(" ");
 }
 
-export default function Example() {
+export default function NavBar() {
 	return (
 		<Disclosure
 			as="nav"
@@ -16,124 +22,102 @@ export default function Example() {
 		>
 			{({ open }) => (
 				<>
-					<div className="px-2 mx-auto max-w-7xl sm:px-4 lg:px-8">
+					{/* max-w-7xl */}
+					<div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
 						<div className="flex justify-between h-20">
-							<div className="flex px-2 lg:px-0">
+							<div className="flex">
 								<Link href="/events">
-									<a className="flex items-center flex-shrink-0 hover:text-cu-red">
+									<a className="flex items-center flex-shrink-0">
 										<img
 											className="w-auto h-10"
 											src="/cu-shield.svg"
 											alt="Carleton"
 										/>
-										<h1 className="items-center pl-3 pr-2 text-2xl font-semibold">
-											Events
+										<h1 className="items-center pl-3 pr-2 text-2xl font-semibold tracking-tight">
+											Carleton
 										</h1>
 									</a>
 								</Link>
-								<div className="hidden lg:ml-6 lg:flex lg:space-x-6">
-									{/* Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" */}
+								{/* <div className="hidden lg:ml-6 lg:flex lg:space-x-6">
 									<a
-										href="/events"
+										href="#"
 										className="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-900 border-b-2 border-cu-red"
 									>
 										Featured
 									</a>
 									<a
-										href="/events/previous"
+										href="#"
 										className="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-500 border-b-2 border-transparent hover:border-cu-black-100 hover:text-cu-red"
 									>
-										Previous
+										Weekly
 									</a>
 									<a
-										href="/events/single-panels"
+										href="/events/single-one"
 										className="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-500 border-b-2 border-transparent hover:border-cu-black-100 hover:text-cu-red"
 									>
-										s/Panels
+										Single 1
 									</a>
 									<a
-										href="/events/single-throwback"
+										href="/events/single-two"
 										className="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-500 border-b-2 border-transparent hover:border-cu-black-100 hover:text-cu-red"
 									>
-										s/Throwback
+										Single 2
 									</a>
-								</div>
+								</div> */}
 							</div>
-							<div className="flex items-center justify-center flex-1 px-2 lg:ml-6 lg:justify-end">
-								<div className="w-full max-w-lg lg:max-w-xs">
-									<label htmlFor="search" className="sr-only">
-										Search
-									</label>
-									<div className="relative">
-										<div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-											<MagnifyingGlassIcon
-												className="w-5 h-5 text-gray-400"
-												aria-hidden="true"
-											/>
-										</div>
-										<input
-											id="search"
-											name="search"
-											className="block w-full py-2 pl-10 pr-3 leading-5 placeholder-gray-500 bg-white border border-gray-300 rounded-md focus:border-indigo-500 focus:placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-indigo-500 sm:text-sm"
-											placeholder="Search"
-											type="search"
-										/>
-									</div>
-								</div>
-							</div>
-							<div className="flex items-center lg:hidden">
-								{/* Mobile menu button */}
-								<Disclosure.Button className="inline-flex items-center justify-center p-2 text-gray-400 rounded-md hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
-									<span className="sr-only">
-										Open main menu
-									</span>
-									{open ? (
-										<XMarkIcon
-											className="block w-6 h-6"
+
+							<div className="hidden sm:ml-6 sm:flex sm:items-center">
+								<div className="hidden h-20 px-2 md:flex">
+									<button
+										type="button"
+										className="text-gray-400 bg-white rounded-full hover:text-gray-500 focus:outline-none focus:ring-1 focus:ring-indigo-500"
+										// className="text-gray-400 bg-white rounded-full hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+									>
+										<span className="sr-only">
+											View notifications
+										</span>
+										<DevicePhoneMobileIcon
+											className="w-6 h-6"
 											aria-hidden="true"
 										/>
-									) : (
-										<Bars3Icon
-											className="block w-6 h-6"
+									</button>
+								</div>
+								<div className="hidden h-20 px-2 md:flex">
+									<button
+										type="button"
+										className="text-gray-400 bg-white rounded-full hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+									>
+										<span className="sr-only">
+											View notifications
+										</span>
+										<LifebuoyIcon
+											className="w-6 h-6"
 											aria-hidden="true"
 										/>
-									)}
-								</Disclosure.Button>
-							</div>
-							<div className="hidden lg:ml-4 lg:flex lg:items-center">
-								<button
-									type="button"
-									className="flex-shrink-0 p-1 text-gray-400 bg-white rounded-full hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
-								>
-									<span className="sr-only">
-										View notifications
-									</span>
-									<BellIcon
-										className="w-6 h-6"
-										aria-hidden="true"
-									/>
-								</button>
+									</button>
+								</div>
 
 								{/* Profile dropdown */}
-								<Menu
-									as="div"
-									className="relative flex-shrink-0 ml-4"
-								>
+								<Menu as="div" className="relative ml-4">
 									<div>
 										<Menu.Button className="flex text-sm bg-white rounded-full focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
 											<span className="sr-only">
 												Open user menu
 											</span>
-											<img
-												className="w-8 h-8 rounded-full"
-												src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-												alt=""
-											/>
+											<div className="flex items-center">
+												<div className="flex-shrink-0">
+													<img
+														className="w-10 h-10 border-4 rounded-full border-cu-black-200"
+														src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+														alt=""
+													/>
+												</div>
+											</div>
 										</Menu.Button>
 									</div>
 									<Transition
 										as={Fragment}
-										enter="transition ease-out duration-100"
+										enter="transition ease-out duration-200"
 										enterFrom="transform opacity-0 scale-95"
 										enterTo="transform opacity-100 scale-100"
 										leave="transition ease-in duration-75"
@@ -190,39 +174,65 @@ export default function Example() {
 									</Transition>
 								</Menu>
 							</div>
+							<div className="flex items-center -mr-2 sm:hidden">
+								{/* Mobile menu button */}
+								<Disclosure.Button className="inline-flex items-center justify-center p-2 text-gray-400 rounded-md hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+									<span className="sr-only">
+										Open main menu
+									</span>
+									{open ? (
+										<XMarkIcon
+											className="block w-6 h-6"
+											aria-hidden="true"
+										/>
+									) : (
+										<Bars3Icon
+											className="block w-6 h-6"
+											aria-hidden="true"
+										/>
+									)}
+								</Disclosure.Button>
+							</div>
 						</div>
 					</div>
 
-					<Disclosure.Panel className="lg:hidden">
+					<Disclosure.Panel className="sm:hidden">
 						<div className="pt-2 pb-3 space-y-1">
-							{/* Current: "bg-indigo-50 border-indigo-500 text-indigo-700", Default: "border-transparent text-gray-600 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800" */}
+							{/* Current: "bg-indigo-50 border-indigo-500 text-indigo-700", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" */}
 							<Disclosure.Button
 								as="a"
 								href="#"
-								className="block py-2 pl-3 pr-4 text-base font-medium text-indigo-700 border-l-4 border-indigo-500 bg-indigo-50"
+								className="block py-2 pl-3 pr-4 text-base font-medium text-black border-l-4 border-cu-red bg-gray-50"
 							>
-								Dashboard
+								Today
 							</Disclosure.Button>
 							<Disclosure.Button
 								as="a"
 								href="#"
-								className="block py-2 pl-3 pr-4 text-base font-medium text-gray-600 border-l-4 border-transparent hover:border-gray-300 hover:bg-gray-50 hover:text-gray-800"
+								className="block py-2 pl-3 pr-4 text-base font-medium text-gray-500 border-l-4 border-transparent hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700"
 							>
-								Team
+								Weekly
 							</Disclosure.Button>
 							<Disclosure.Button
 								as="a"
 								href="#"
-								className="block py-2 pl-3 pr-4 text-base font-medium text-gray-600 border-l-4 border-transparent hover:border-gray-300 hover:bg-gray-50 hover:text-gray-800"
+								className="block py-2 pl-3 pr-4 text-base font-medium text-gray-500 border-l-4 border-transparent hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700"
 							>
-								Projects
+								Monthly
 							</Disclosure.Button>
 							<Disclosure.Button
 								as="a"
 								href="#"
-								className="block py-2 pl-3 pr-4 text-base font-medium text-gray-600 border-l-4 border-transparent hover:border-gray-300 hover:bg-gray-50 hover:text-gray-800"
+								className="block py-2 pl-3 pr-4 text-base font-medium text-gray-500 border-l-4 border-transparent hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700"
 							>
-								Calendar
+								Featured
+							</Disclosure.Button>
+							<Disclosure.Button
+								as="a"
+								href="#"
+								className="block py-2 pl-3 pr-4 text-base font-medium text-gray-500 border-l-4 border-transparent hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700"
+							>
+								My Events
 							</Disclosure.Button>
 						</div>
 						<div className="pt-4 pb-3 border-t border-gray-200">
@@ -242,18 +252,6 @@ export default function Example() {
 										tom@example.com
 									</div>
 								</div>
-								<button
-									type="button"
-									className="flex-shrink-0 p-1 ml-auto text-gray-400 bg-white rounded-full hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
-								>
-									<span className="sr-only">
-										View notifications
-									</span>
-									<BellIcon
-										className="w-6 h-6"
-										aria-hidden="true"
-									/>
-								</button>
 							</div>
 							<div className="mt-3 space-y-1">
 								<Disclosure.Button
