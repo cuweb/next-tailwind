@@ -16,8 +16,8 @@ export default function FeaturedEventBanner({ children }: any) {
           aria-hidden="true"
         />
       </div> */}
-      <div className="relative mx-auto max-w-7xl px-8 py-16">
-        <h1 className="text-2xl font-semibold text-cu-black-800 md:text-5xl">
+      <div className="relative mx-auto max-w-7xl px-8 py-12">
+        <h1 className="text-2xl font-semibold text-cu-black-800 md:text-4xl">
           Featured Events
         </h1>
         {/* <p className="max-w-3xl mt-6 text-xl text-gray-300">
