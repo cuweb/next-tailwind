@@ -1,6 +1,10 @@
+import GradientDiv from '../../_rds-final/_misc/Gradient/GradientDiv';
+
 export default function FeaturedEventBanner({ children }: any) {
   return (
-    <header className="bg-gray-800 pb-32">
+    <header className="relative pb-32">
+      {/* <header className="relative bg-gray-800 pb-32"> */}
+      <GradientDiv />
       {/* <div className="absolute inset-0">
         <img
           className="h-full w-full object-cover"
@@ -13,7 +17,7 @@ export default function FeaturedEventBanner({ children }: any) {
         />
       </div> */}
       <div className="relative mx-auto max-w-7xl px-8 py-16">
-        <h1 className="text-4xl font-semibold text-white md:text-5xl">
+        <h1 className="text-2xl font-semibold text-cu-black-800 md:text-5xl">
           Featured Events
         </h1>
         {/* <p className="max-w-3xl mt-6 text-xl text-gray-300">
