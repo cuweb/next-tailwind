@@ -24,12 +24,12 @@ const EventCalendar: NextPage = () => {
 			</Head>
 			<Navbar />
 
-			<main>
-				<Container.Empty>
-					<AlternateFeaturedHeader />
-					<AltFeaturedListing />
-				</Container.Empty>
+			<Container.Empty>
+				<AlternateFeaturedHeader />
+				<AltFeaturedListing />
+			</Container.Empty>
 
+			<main className="pb-4">
 				<Container.White>
 					<Column.One>
 						<h2 className="text-2xl font-semibold text-cu-black-800 md:text-4xl">

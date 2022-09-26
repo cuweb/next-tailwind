@@ -21,10 +21,10 @@
 	}
 
 	main > .cu-column:first-child {
-		@apply pt-8;
+		@apply pt-6 md:pt-12;
 	}
 
 	main > .cu-column:last-child {
-		@apply pb-8;
+		@apply pt-6 md:pb-12;
 	}
 }
