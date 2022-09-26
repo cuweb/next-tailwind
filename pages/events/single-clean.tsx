@@ -1,10 +1,10 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 
-import Footer from "../../build-files/components/Footer/FooterStandard/FooterStandard";
-import Navbar from "../../build-files/components/Navbar/EventNavbar";
-import Column from "../../build-files/layouts/Columns/Columns";
-import Button from "../../build-files/components/Button/Button";
+import Footer from "../../_rds-final/components/Footer/FooterStandard/FooterStandard";
+import Navbar from "../../_rds-final/components/Navbar/EventNavbar";
+import Column from "../../_rds-final/layouts/Columns/Columns";
+import Button from "../../_rds-final/components/Button/Button";
 
 import {
 	CalendarDaysIcon,

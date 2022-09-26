@@ -1,5 +1,5 @@
-import Column from "../../../build-files/layouts/Columns/Columns";
-import AltFeaturedEventItem from "./Alt_FeaturedEventItem";
+import Column from "../../_rds-final/layouts/Columns/Columns";
+import AltFeaturedEventItem from "../Card/Alt_FeaturedEventItem";
 
 const featured = [
 	{

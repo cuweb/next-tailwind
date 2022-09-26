@@ -1,5 +1,5 @@
-import StackedList from "../../build-files/components/StackedList/StackedList";
-import NewsItem from "../../build-files/components/ListingItem/NewsItem/NewsItem";
+import StackedList from "../../_rds-final/components/StackedList/StackedList";
+import NewsItem from "../../_rds-final/components/ListingItem/NewsItem/NewsItem";
 
 const posts = [
 	{

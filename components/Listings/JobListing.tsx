@@ -1,5 +1,5 @@
-import StackedList from "../../build-files/components/StackedList/StackedList";
-import JobItem from "../../build-files/components/ListingItem/JobItem/JobItem";
+import StackedList from "../../_rds-final/components/StackedList/StackedList";
+import JobItem from "../../_rds-final/components/ListingItem/JobItem/JobItem";
 
 const positions = [
 	{

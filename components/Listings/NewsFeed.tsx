@@ -1,7 +1,7 @@
-import StackedList from "../../build-files/components/StackedList/StackedList";
-import FeedItem from "../../build-files/components/ListingItem/FeedItem/FeedItem";
-import Button from "../../build-files/components/Button/Button";
-import Container from "../../build-files/layouts/Container/Container";
+import StackedList from "../../_rds-final/components/StackedList/StackedList";
+import FeedItem from "../../_rds-final/components/ListingItem/FeedItem/FeedItem";
+import Button from "../../_rds-final/components/Button/Button";
+import Container from "../../_rds-final/layouts/Container/Container";
 
 const posts = [
 	{
