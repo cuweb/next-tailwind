@@ -29,7 +29,7 @@ const EventCalendar: NextPage = () => {
 				<AltFeaturedListing />
 			</Container.Empty>
 
-			<main>
+			<main className="pb-4">
 				<Container.White>
 					<Column.One>
 						<h2 className="text-2xl font-semibold text-cu-black-800 md:text-4xl">

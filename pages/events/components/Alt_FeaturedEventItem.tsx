@@ -4,10 +4,10 @@ export default function AltFeaturedEventItem(props: any) {
 	return (
 		<div
 			key={name}
-			className="flex flex-col mb-8 bg-white shadow-xl rounded-xl last:mb-0 lg:mb-0"
+			className="flex flex-col mb-8 bg-white rounded-lg shadow-xl last:mb-0 lg:mb-0"
 		>
 			<div className="relative flex-1 px-6 pt-16 pb-8 md:px-8">
-				<div className="absolute top-0 flex flex-col items-center justify-center w-20 h-20 transform -translate-y-1/2 shadow rounded-2xl bg-cu-red">
+				<div className="absolute top-0 flex flex-col items-center justify-center w-20 h-20 transform -translate-y-1/2 rounded-lg shadow bg-cu-red">
 					<p className="text-xs font-bold text-white uppercase">
 						{month}
 					</p>
@@ -22,13 +22,13 @@ export default function AltFeaturedEventItem(props: any) {
 			<div className="flex">
 				<a
 					href={register}
-					className="flex-1 p-6 font-semibold rounded-bl-xl bg-cu-black-50 text-cu-blue hover:bg-cu-red hover:text-white md:px-8"
+					className="flex-1 p-6 font-semibold rounded-bl-lg bg-cu-blue-tint-8 text-cu-blue hover:bg-cu-blue-tint-3 hover:text-white md:px-8"
 				>
 					Register Now <span aria-hidden="true"> &rarr;</span>
 				</a>
 				<a
 					href={link}
-					className="flex items-center px-6 ml-auto text-white rounded-br-xl bg-cu-blue-tint-3 hover:bg-cu-red"
+					className="flex items-center px-6 ml-auto text-white rounded-br-lg bg-cu-blue-tint-5 hover:bg-cu-red"
 				>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"

@@ -5,19 +5,19 @@ import {
 } from "@heroicons/react/24/outline";
 
 export default function EventItem(props: any) {
-	const { name, location, dateFull, time } = props;
+	const { name, link, location, time, month, day, dateFull } = props;
 
 	return (
 		<li key={name} className="border-b border-cu-black-100 last:border-b-0">
-			<a href={location} className="block hover:bg-gray-50">
+			<a href={link} className="block hover:bg-gray-50">
 				<div className="flex items-center px-4 py-6">
 					<div className="flex flex-1 min-w-0 sm:items-center">
 						<div className="flex flex-col justify-center w-20 h-20 text-center shadow rounded-2xl bg-gray-50">
 							<p className="text-xs font-bold uppercase text-cu-red">
-								May
+								{month}
 							</p>
 							<p className="text-2xl font-bold uppercase text-cu-black-900">
-								31
+								{day}
 							</p>
 						</div>
 

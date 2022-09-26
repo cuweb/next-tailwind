@@ -3,7 +3,7 @@ import Head from "next/head";
 import NavBar from "../../build-files/components/Navbar/IntranetNavbar";
 import FooterIntranet from "../../build-files/components/Footer/FooterIntranet/FooterIntranet";
 
-import Settings from "../../template-parts/admin-screens/Settings";
+import Settings from "../../template-parts/admin/Settings";
 
 const Intranet: NextPage = () => {
 	return (
