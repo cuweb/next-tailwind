@@ -1,5 +1,5 @@
-import StackedList from "../../build-files/components/StackedList/StackedList";
-import EventItem from "../../build-files/components/ListingItem/EventItem/EventItem";
+import StackedList from "../../_rds-final/components/StackedList/StackedList";
+import EventItem from "../../_rds-final/components/ListingItem/EventItem/EventItem";
 
 const events = [
 	{

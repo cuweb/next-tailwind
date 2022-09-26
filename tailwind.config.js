@@ -1,12 +1,12 @@
 module.exports = {
     content: [
-        './build-files/components/**/*.{js,ts,jsx,tsx}',
-        './build-files/components/**/**/*.{js,ts,jsx,tsx}',
-        './build-files/layouts/**/*.{js,ts,jsx,tsx}',
+        './_rds-final/components/**/*.{js,ts,jsx,tsx}',
+        './_rds-final/components/**/**/*.{js,ts,jsx,tsx}',
+        './_rds-final/layouts/**/*.{js,ts,jsx,tsx}',
         './pages/**/*.{js,ts,jsx,tsx}',
-        './template-parts/**/*.{js,ts,jsx,tsx}',
+        './pages/**/**/*.{js,ts,jsx,tsx}',
         './components/**/*.{js,ts,jsx,tsx}',
-        './examples/**/*.{js,ts,jsx,tsx}',
+        './components/**/**/*.{js,ts,jsx,tsx}',
     ],
     theme: {
         extend: {
@@ -15,28 +15,33 @@ module.exports = {
                 'cu-waves-white-20': "url('/cu-waves-white-20.svg')",
             },
             // https://htmlcolorcodes.com/color-picker/
+            // https://www.tailwindshades.com/
             colors: {
-                'cu-red': '#E91C24',
-                'cu-blue': "#126b93",
-                'cu-blue-tint' : {
-                    1: '#126b93',
-                    2: '#307ea1',
-                    3: '#4d90ae',
-                    4: '#6ba3bc',
-                    5: '#89b5c9',
-                    6: '#a6c7d7',
-                    7: '#c4dae4',
-                    8: '#e1ecf2',
+                'cu-red': {
+                    DEFAULT: '#E91C24',
+                    '50': '#FDE9E9',
+                    '100': '#FBD6D7',
+                    '200': '#F7B1B4',
+                    '300': '#F48C90',
+                    '400': '#F0666C',
+                    '500': '#ED4148',
+                    '600': '#E91C24',
+                    '700': '#BB1219',
+                    '800': '#880D12',
+                    '900': '#55080B'
                 },
-                'cu-red-tint' : {
-                    1: '#e91c24',
-                    2: '#ec383f',
-                    3: '#ee555b',
-                    4: '#f17176',
-                    5: '#f48e92',
-                    6: '#f7aaad',
-                    7: '#f9c6c8',
-                    8: '#fce3e4',
+                'cu-blue': {
+                    DEFAULT: '#126B93',
+                    '50': '#DCF1FB',
+                    '100': '#CAEAF9',
+                    '200': '#A6DCF4',
+                    '300': '#81CDF0',
+                    '400': '#5DBFEB',
+                    '500': '#39B1E7',
+                    '600': '#1BA0DC',
+                    '700': '#1685B7',
+                    '800': '#126B93',
+                    '900': '#0C4761'
                 },
                 'cu-black': {
                     50: '#F2F2F2',

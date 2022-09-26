@@ -1,19 +1,18 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 
-// import Footer from "../../build-files/components/Footer/FooterIntranet/FooterIntranet";
-import Footer from "../../build-files/components/Footer/FooterStandard/FooterStandard";
-import Navbar from "../../build-files/components/Navbar/EventNavbar";
-import Container from "../../build-files/layouts/Container/Container";
-import Column from "../../build-files/layouts/Columns/Columns";
-import Panel from "../../build-files/layouts/Panel/Panel";
-import EventFilter from "../../build-files/components/Filter/Filter";
-import SmallCalendar from "../../build-files/components/Calendar/SmallCalendar/SmallCalendar";
+import Footer from "../../_rds-final/components/Footer/FooterIntranet/FooterIntranet";
+import Navbar from "../../_rds-final/components/Navbar/EventNavbar";
+import Container from "../../_rds-final/layouts/Container/Container";
+import Column from "../../_rds-final/layouts/Columns/Columns";
+import Panel from "../../_rds-final/layouts/Panel/Panel";
+import EventFilter from "../../_rds-final/components/Filter/Filter";
+import SmallCalendar from "../../_rds-final/components/Calendar/SmallCalendar/SmallCalendar";
 
-import AlternateFeaturedHeader from "./components/Alt_FeaturedBanner";
-import AltFeaturedListing from "./components/Alt_FeaturedListing";
+import FeaturedEventBanner from "../../components/Banner/FeaturedEventBanner";
+import FeaturedEventListing from "../../components/Listings/FeaturedEventListing";
 
-import EventListing from "../../template-parts/listings/EventListing";
+import EventListing from "../../components/Listings/EventListing";
 
 const EventCalendar: NextPage = () => {
 	return (
@@ -25,8 +24,8 @@ const EventCalendar: NextPage = () => {
 			<Navbar />
 
 			<Container.Empty>
-				<AlternateFeaturedHeader />
-				<AltFeaturedListing />
+				<FeaturedEventBanner />
+				<FeaturedEventListing />
 			</Container.Empty>
 
 			<main className="pb-4">

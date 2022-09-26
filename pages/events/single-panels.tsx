@@ -1,12 +1,12 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 
-import Footer from "../../build-files/components/Footer/FooterStandard/FooterStandard";
-import Navbar from "../../build-files/components/Navbar/EventNavbar";
-import Container from "../../build-files/layouts/Container/Container";
-import Column from "../../build-files/layouts/Columns/Columns";
-import BannerButtons from "../../build-files/components/Banner/BannerButtons/BannerButtons";
-import DashboardPanel from "../../build-files/layouts/DashboardPanel/DashboardPanel";
+import Footer from "../../_rds-final/components/Footer/FooterStandard/FooterStandard";
+import Navbar from "../../_rds-final/components/Navbar/EventNavbar";
+import Container from "../../_rds-final/layouts/Container/Container";
+import Column from "../../_rds-final/layouts/Columns/Columns";
+import BannerButtons from "../../_rds-final/components/Banner/BannerButtons/BannerButtons";
+import DashboardPanel from "../../_rds-final/layouts/DashboardPanel/DashboardPanel";
 
 import {
 	MapPinIcon,

@@ -1,13 +1,13 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 
-import Container from "../../build-files/layouts/Container/Container";
-import Column from "../../build-files/layouts/Columns/Columns";
-import DashboardPanel from "../../build-files/layouts/DashboardPanel/DashboardPanel";
-import NavBar from "../../build-files/components/Navbar/IntranetNavbar";
-import Profile from "../../build-files/components/Banner/Profile/Profile";
+import Container from "../../_rds-final/layouts/Container/Container";
+import Column from "../../_rds-final/layouts/Columns/Columns";
+import DashboardPanel from "../../_rds-final/layouts/DashboardPanel/DashboardPanel";
+import NavBar from "../../_rds-final/components/Navbar/IntranetNavbar";
+import Profile from "../../_rds-final/components/Banner/Profile/Profile";
 
-import Files from "../../template-parts/listings/FileListing";
+import Files from "../../components/Listings/FileListing";
 
 const Intranet: NextPage = () => {
 	return (

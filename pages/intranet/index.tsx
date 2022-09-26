@@ -1,18 +1,18 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import Container from "../../build-files/layouts/Container/Container";
-import Column from "../../build-files/layouts/Columns/Columns";
-import DashboardPanel from "../../build-files/layouts/DashboardPanel/DashboardPanel";
-import NavBar from "../../build-files/components/Navbar/IntranetNavbar";
-import Profile from "../../build-files/components/Banner/Profile/Profile";
+import Container from "../../_rds-final/layouts/Container/Container";
+import Column from "../../_rds-final/layouts/Columns/Columns";
+import DashboardPanel from "../../_rds-final/layouts/DashboardPanel/DashboardPanel";
+import NavBar from "../../_rds-final/components/Navbar/IntranetNavbar";
+import Profile from "../../_rds-final/components/Banner/Profile/Profile";
 
-import Top5 from "../../template-parts/listings/Top5";
-import NewsFeed from "../../template-parts/listings/NewsFeed";
-import EventListing from "../../template-parts/listings/EventListing";
-import Marketplace from "../../template-parts/listings/Marketplace";
-import Files from "../../template-parts/listings/FileListing";
-import LinksListing from "../../template-parts/listings/LinksListing";
-import JobListing from "../../template-parts/listings/JobListing";
+import Top5 from "../../components/Listings/Top5";
+import NewsFeed from "../../components/Listings/NewsFeed";
+import EventListing from "../../components/Listings/EventListing";
+import Marketplace from "../../components/Listings/Marketplace";
+import Files from "../../components/Listings/FileListing";
+import LinksListing from "../../components/Listings/LinksListing";
+import JobListing from "../../components/Listings/JobListing";
 
 const Intranet: NextPage = () => {
 	return (

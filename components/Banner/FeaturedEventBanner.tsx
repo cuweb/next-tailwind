@@ -1,4 +1,4 @@
-export default function AltFeaturedHeader({ children }: any) {
+export default function FeaturedEventBanner({ children }: any) {
 	return (
 		<header className="relative pb-32 bg-gray-800">
 			<div className="absolute inset-0">

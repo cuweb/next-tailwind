@@ -1,12 +1,12 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import NavBar from "../../build-files/components/Navbar/IntranetNavbar";
-import Footer from "../../build-files/components/Footer/FooterStandard/FooterStandard";
-import Container from "../../build-files/layouts/Container/Container";
-import Columns from "../../build-files/layouts/Columns/Columns";
-import BaseBanner from "../../build-files/components/Banner/BaseBanner/BaseBanner";
-import Panel from "../../build-files/layouts/Panel/Panel";
-import Toast from "../../build-files/components/Toasts/Toasts";
+import NavBar from "../../_rds-final/components/Navbar/IntranetNavbar";
+import Footer from "../../_rds-final/components/Footer/FooterStandard/FooterStandard";
+import Container from "../../_rds-final/layouts/Container/Container";
+import Columns from "../../_rds-final/layouts/Columns/Columns";
+import BaseBanner from "../../_rds-final/components/Banner/BaseBanner/BaseBanner";
+import Panel from "../../_rds-final/layouts/Panel/Panel";
+import Toast from "../../_rds-final/components/Toasts/Toasts";
 
 const PageLayout: NextPage = () => {
 	return (

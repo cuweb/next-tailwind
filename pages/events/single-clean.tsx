@@ -1,10 +1,10 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 
-import Footer from "../../build-files/components/Footer/FooterStandard/FooterStandard";
-import Navbar from "../../build-files/components/Navbar/EventNavbar";
-import Column from "../../build-files/layouts/Columns/Columns";
-import Button from "../../build-files/components/Button/Button";
+import Footer from "../../_rds-final/components/Footer/FooterStandard/FooterStandard";
+import Navbar from "../../_rds-final/components/Navbar/EventNavbar";
+import Column from "../../_rds-final/layouts/Columns/Columns";
+import Button from "../../_rds-final/components/Button/Button";
 
 import {
 	CalendarDaysIcon,
@@ -28,14 +28,14 @@ const EventCalendar: NextPage = () => {
 				<ul className="flex gap-16">
 					<li className="flex items-center text-xl text-cu-black-500">
 						<CalendarDaysIcon
-							className="w-8 h-8 mr-2 text-cu-red-tint-5"
+							className="w-8 h-8 mr-2 text-cu-red-300"
 							aria-hidden="true"
 						/>
 						October 7th, 2022
 					</li>
 					<li className="flex items-center text-xl text-cu-black-500">
 						<ClockIcon
-							className="w-8 h-8 mr-2 text-cu-red-tint-5"
+							className="w-8 h-8 mr-2 text-cu-red-300"
 							aria-hidden="true"
 						/>
 						<time dateTime={"10-07-2022"}>
@@ -44,7 +44,7 @@ const EventCalendar: NextPage = () => {
 					</li>
 					<li className="flex items-center text-xl text-cu-black-500">
 						<MapPinIcon
-							className="w-8 h-8 mr-2 text-cu-red-tint-5"
+							className="w-8 h-8 mr-2 text-cu-red-300"
 							aria-hidden="true"
 						/>
 						401 Robertson Hall
@@ -76,13 +76,13 @@ const EventCalendar: NextPage = () => {
 					<aside>
 						<button
 							type="button"
-							className="items-center w-full p-6 mb-4 text-lg font-medium text-white border border-transparent rounded-md shadow-sm bg-cu-red last:mb-0 hover:bg-cu-blue focus:outline-none focus:ring-2 focus:ring-cu-blue-tint-8 focus:ring-offset-2"
+							className="items-center w-full p-6 mb-4 text-lg font-medium text-white border border-transparent rounded-md shadow-sm bg-cu-red last:mb-0 hover:bg-cu-blue focus:outline-none focus:ring-2 focus:ring-cu-blue-100 focus:ring-offset-2"
 						>
 							Register Now <span aria-hidden="true"> &rarr;</span>
 						</button>
 						<button
 							type="button"
-							className="items-center w-full p-6 mb-4 text-lg font-medium border rounded-md shadow-sm border-cu-blue-tint-3 text-cu-blue last:mb-0 hover:bg-cu-blue-tint-3 hover:text-white focus:outline-none focus:ring-2 focus:ring-cu-blue-tint-8 focus:ring-offset-2"
+							className="items-center w-full p-6 mb-4 text-lg font-medium border rounded-md shadow-sm border-cu-blue-600 text-cu-blue last:mb-0 hover:bg-cu-blue-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-cu-blue-100 focus:ring-offset-2"
 						>
 							Add to My Events{" "}
 							<span aria-hidden="true"> &rarr;</span>
