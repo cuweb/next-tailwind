@@ -1,18 +1,18 @@
-import type { NextPage } from 'next';
-import Head from 'next/head';
+import type { NextPage } from "next";
+import Head from "next/head";
 
-import Footer from '../../_rds-final/components/Footer/FooterIntranet/FooterIntranet';
-import Navbar from '../../_rds-final/components/Navbar/EventNavbar';
-import Container from '../../_rds-final/layouts/Container/Container';
-import Column from '../../_rds-final/layouts/Columns/Columns';
-import Panel from '../../_rds-final/layouts/Panel/Panel';
-import EventFilter from '../../_rds-final/components/Filter/Filter';
-import SmallCalendar from '../../_rds-final/components/Calendar/SmallCalendar/SmallCalendar';
+import Footer from "../../_rds-final/components/Footer/FooterIntranet/FooterIntranet";
+import Navbar from "../../_rds-final/components/Navbar/EventNavbar";
+import Container from "../../_rds-final/layouts/Container/Container";
+import Column from "../../_rds-final/layouts/Columns/Columns";
+import Panel from "../../_rds-final/layouts/Panel/Panel";
+import EventFilterV2 from "../../_rds-final/components/Filter/Filter.Kevin";
+import SmallCalendar from "../../_rds-final/components/Calendar/SmallCalendar/SmallCalendar";
 
-import FeaturedEventBanner from '../../components/Banner/FeaturedEventBanner';
-import FeaturedEventListingImage from '../../components/Listings/FeaturedEventListingImage';
+import FeaturedEventBanner from "../../components/Banner/FeaturedEventBanner";
+import FeaturedEventListingImage from "../../components/Listings/FeaturedEventListingImage";
 
-import EventListing from '../../components/Listings/EventListing';
+import EventListing from "../../components/Listings/EventListing";
 
 const EventCalendar: NextPage = () => {
   return (
@@ -34,7 +34,7 @@ const EventCalendar: NextPage = () => {
             <h2 className="text-2xl font-semibold text-cu-black-800 md:text-4xl">
               Upcoming Events
             </h2>
-            <EventFilter />
+            <EventFilterV2 />
           </Column.One>
           <Column.TwoThird>
             <Panel>
