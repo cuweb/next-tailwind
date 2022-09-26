@@ -1,5 +1,5 @@
 import Column from "../../_rds-final/layouts/Columns/Columns";
-import AltFeaturedEventItem from "../Card/Alt_FeaturedEventItem";
+import EventCard from "../Card/EventCard";
 
 const featured = [
 	{
@@ -37,7 +37,8 @@ export default function AltFeaturedListing() {
 			<Column.Three>
 				{featured.map(
 					({ name, link, register, month, day, description }) => (
-						<AltFeaturedEventItem
+						<EventCard
+							key={name}
 							name={name}
 							link={link}
 							register={register}

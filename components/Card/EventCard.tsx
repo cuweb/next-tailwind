@@ -1,4 +1,4 @@
-export default function AltFeaturedEventItem(props: any) {
+export default function EventCard(props: any) {
 	const { name, link, register, month, day, description } = props;
 
 	return (
@@ -22,13 +22,13 @@ export default function AltFeaturedEventItem(props: any) {
 			<div className="flex">
 				<a
 					href={register}
-					className="flex-1 p-6 font-semibold rounded-bl-lg bg-cu-blue-tint-8 text-cu-blue hover:bg-cu-blue-tint-3 hover:text-white md:px-8"
+					className="flex-1 p-6 font-semibold rounded-bl-lg bg-cu-blue-50 text-cu-blue hover:bg-cu-blue-600 hover:text-white md:px-8"
 				>
 					Register Now <span aria-hidden="true"> &rarr;</span>
 				</a>
 				<a
 					href={link}
-					className="flex items-center px-6 ml-auto text-white rounded-br-lg bg-cu-blue-tint-5 hover:bg-cu-red"
+					className="flex items-center px-6 ml-auto text-white rounded-br-lg bg-cu-blue-800 hover:bg-cu-red"
 				>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
