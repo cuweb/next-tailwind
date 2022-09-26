@@ -1,8 +1,34 @@
+/*
+  This example requires Tailwind CSS v2.0+ 
+  
+  This example requires some changes to your config:
+  
+  ```
+  // tailwind.config.js
+  const colors = require('tailwindcss/colors')
+  
+  module.exports = {
+    // ...
+    theme: {
+      extend: {
+        colors: {
+          sky: colors.sky,
+          teal: colors.teal,
+        },
+      },
+    },
+    plugins: [
+      // ...
+      require('@tailwindcss/forms'),
+    ],
+  }
+  ```
+*/
 import { Fragment, useState } from "react";
-// import GradientDiv from "../Gradient/GradientDiv";
 import { Disclosure, Menu, Switch, Transition } from "@headlessui/react";
 import { MagnifyingGlassIcon } from "@heroicons/react/20/solid";
 import Form from "../../_rds-final/_misc/Form/Form";
+import GradientDiv from "../../_rds-final/_misc/Gradient/GradientDiv";
 import {
 	Bars3Icon,
 	BellIcon,
@@ -21,29 +47,43 @@ const user = {
 	imageUrl:
 		"https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=320&h=320&q=80",
 };
-
 const navigation = [
-	{
-		name: "Settings",
-		href: "/intranet/settings",
-		icon: UserCircleIcon,
-		current: true,
-	},
-	{
-		name: "Admin Settings",
-		href: "/intranet/settings/admin",
-		icon: UserCircleIcon,
-		current: false,
-	},
+	{ name: "Dashboard", href: "#", current: true },
+	{ name: "Jobs", href: "#", current: false },
+	{ name: "Applicants", href: "#", current: false },
+	{ name: "Company", href: "#", current: false },
+];
+const subNavigation = [
+	{ name: "Profile", href: "#", icon: UserCircleIcon, current: true },
+	{ name: "Account", href: "#", icon: CogIcon, current: false },
+	{ name: "Password", href: "#", icon: KeyIcon, current: false },
+	{ name: "Notifications", href: "#", icon: BellIcon, current: false },
+	{ name: "Billing", href: "#", icon: CreditCardIcon, current: false },
+	{ name: "Integrations", href: "#", icon: SquaresPlusIcon, current: false },
+];
+
+const adminNavigation = [
+	{ name: "Profile", href: "#", icon: UserCircleIcon, current: false },
+	{ name: "Account", href: "#", icon: CogIcon, current: false },
+	{ name: "Password", href: "#", icon: KeyIcon, current: false },
+	{ name: "Notifications", href: "#", icon: BellIcon, current: false },
+	{ name: "Billing", href: "#", icon: CreditCardIcon, current: false },
+	{ name: "Integrations", href: "#", icon: SquaresPlusIcon, current: false },
+];
+
+const userNavigation = [
+	{ name: "Your Profile", href: "#" },
+	{ name: "Settings", href: "#" },
+	{ name: "Sign out", href: "#" },
 ];
 
 const tabs = [
-	{ name: "Profile", href: "#", current: true },
-	{ name: "Apps", href: "#", current: false },
-	{ name: "Links", href: "#", current: false },
-	{ name: "Benefits", href: "#", current: false },
-	{ name: "Payforms", href: "#", current: false },
-	{ name: "Job Setup", href: "#", current: false },
+	{ name: "General", href: "#", current: true },
+	{ name: "Password", href: "#", current: false },
+	{ name: "Notifications", href: "#", current: false },
+	{ name: "Plan", href: "#", current: false },
+	{ name: "Billing", href: "#", current: false },
+	{ name: "Team Members", href: "#", current: false },
 ];
 
 function classNames(...classes: any) {
@@ -59,6 +99,7 @@ export default function Settings() {
 	return (
 		<>
 			<div className="relative h-60">
+				<GradientDiv />
 				<header className="relative py-10 ">
 					<div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
 						<h1 className="text-3xl font-medium tracking-tight text-cu-black:900">
@@ -73,7 +114,7 @@ export default function Settings() {
 						<div className="divide-y divide-gray-100 lg:grid lg:grid-cols-12 lg:divide-y-0 lg:divide-x">
 							<aside className="py-6 lg:col-span-3">
 								<nav className="space-y-1">
-									{navigation.map((item) => (
+									{subNavigation.map((item) => (
 										<a
 											key={item.name}
 											href={item.href}
@@ -93,6 +134,45 @@ export default function Settings() {
 												className={classNames(
 													item.current
 														? "text-gray-500 group-hover:text-gray-500"
+														: "text-gray-400 group-hover:text-gray-500",
+													"-ml-1 mr-3 h-6 w-6 flex-shrink-0"
+												)}
+												aria-hidden="true"
+											/>
+											<span className="truncate">
+												{item.name}
+											</span>
+										</a>
+									))}
+								</nav>
+
+								<div className="px-3 py-4 my-4 border-y bg-gray-50">
+									<h2 className="text-sm font-medium leading-6 text-cu-black:900">
+										Admin Options
+									</h2>
+								</div>
+
+								<nav className="space-y-1">
+									{adminNavigation.map((item) => (
+										<a
+											key={item.name}
+											href={item.href}
+											className={classNames(
+												item.current
+													? "border-teal-500 bg-teal-50 text-teal-700 hover:bg-teal-50 hover:text-teal-700"
+													: "border-transparent text-gray-500 hover:bg-gray-50 hover:text-gray-900",
+												"group flex items-center border-l-4 px-3 py-2 text-sm font-medium"
+											)}
+											aria-current={
+												item.current
+													? "page"
+													: undefined
+											}
+										>
+											<item.icon
+												className={classNames(
+													item.current
+														? "text-teal-500 group-hover:text-teal-500"
 														: "text-gray-400 group-hover:text-gray-500",
 													"-ml-1 mr-3 h-6 w-6 flex-shrink-0"
 												)}
