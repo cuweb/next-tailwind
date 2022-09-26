@@ -162,7 +162,7 @@ export default function EventFilterV2() {
       {/* Filters */}
       <section aria-labelledby="filter-heading">
         <div className="border-b border-gray-200 bg-white pb-4">
-          <div className="mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+          <div className="mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-4 lg:px-4">
             <div className="hidden sm:block">
               <div className="flow-root">
                 <Popover.Group className="-mx-4 flex items-center divide-x divide-gray-200">
