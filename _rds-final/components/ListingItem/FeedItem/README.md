@@ -5,11 +5,9 @@ This component is used to create a single news item and can also be used inside 
 ## Usage
 
 ```jsx
-import { DashboardPanel } from '{path}/layout/CleanPanel/CleanPanel';
+import { ITEM } from '{path}';
 
-<StackedLists>
-    {add content}
-</StackedLists>
+<Add>
 ```
 
 ## Options
@@ -17,9 +15,7 @@ import { DashboardPanel } from '{path}/layout/CleanPanel/CleanPanel';
 The available props can be added like the following example:
 
 ```jsx
-<StackedLists className="px-6 py-4">
-    {add content}
-</StackedLists>
+<Add>
 ```
 
--   `className` - apply any class from Tailwind to build a custom panel
+-   `prop` - add this and that to do thing for things
