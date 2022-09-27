@@ -29,43 +29,43 @@ const Home: NextPage = () => {
 			<Container.White>
 				<Column.Two>
 					<div>
-						<div className="border rounded-lg border-cu-black-200">
+						<div className="border rounded-lg border-cu-black-100">
 							<Top5 />
 						</div>
 					</div>
 
 					<div>
-						<div className="border rounded-lg border-cu-black-200">
+						<div className="border rounded-lg border-cu-black-100">
 							<NewsFeed />
 						</div>
 					</div>
 
 					<div>
-						<div className="border rounded-lg border-cu-black-200">
+						<div className="border rounded-lg border-cu-black-100">
 							<EventListing />
 						</div>
 					</div>
 
 					<div>
-						<div className="border rounded-lg border-cu-black-200">
+						<div className="border rounded-lg border-cu-black-100">
 							<Marketplace />
 						</div>
 					</div>
 
 					<div>
-						<div className="border rounded-lg border-cu-black-200">
+						<div className="border rounded-lg border-cu-black-100">
 							<JobListing />
 						</div>
 					</div>
 
 					<div>
-						<div className="border rounded-lg border-cu-black-200">
+						<div className="border rounded-lg border-cu-black-100">
 							<FileListing />
 						</div>
 					</div>
 
 					<div>
-						<div className="border rounded-lg border-cu-black-200">
+						<div className="border rounded-lg border-cu-black-100">
 							<LinksListing />
 						</div>
 					</div>
@@ -73,31 +73,31 @@ const Home: NextPage = () => {
 
 				<Column.One>
 					<div>
-						<div className="border rounded-lg border-cu-black-200">
+						<div className="border rounded-lg border-cu-black-100">
 							<Top5 />
 						</div>
 					</div>
 
 					<div>
-						<div className="border rounded-lg border-cu-black-200">
+						<div className="border rounded-lg border-cu-black-100">
 							<NewsFeed />
 						</div>
 					</div>
 
 					<div>
-						<div className="border rounded-lg border-cu-black-200">
+						<div className="border rounded-lg border-cu-black-100">
 							<EventListing />
 						</div>
 					</div>
 
 					<div>
-						<div className="border rounded-lg border-cu-black-200">
+						<div className="border rounded-lg border-cu-black-100">
 							<Marketplace />
 						</div>
 					</div>
 
 					<div>
-						<div className="border rounded-lg border-cu-black-200">
+						<div className="border rounded-lg border-cu-black-100">
 							<JobListing />
 						</div>
 					</div>
