@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import NavBar from "../../_rds-final/components/Navbar/IntranetNavbar";
-import FooterIntranet from "../../_rds-final/components/Footer/FooterIntranet/FooterIntranet";
+import FooterBasic from "../../_rds-final/components/Footer/FooterBasic/FooterBasic";
 
 import Settings from "../../components/Admin/Settings";
 
@@ -16,7 +16,7 @@ const Intranet: NextPage = () => {
 			<div className="relative bg-cu-black-50">
 				<NavBar />
 				<Settings />
-				<FooterIntranet />
+				<FooterBasic />
 			</div>
 		</>
 	);

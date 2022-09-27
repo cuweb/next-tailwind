@@ -1,6 +1,6 @@
 const FooterSwoosh = () => {
 	return (
-		<div className="grid justify-center bg-cu-waves-red bg-[length:100%] bg-bottom bg-no-repeat pb-36 lg:pt-4 lg:pb-44">
+		<div className="grid justify-center bg-cu-waves-red bg-[length:100%] bg-bottom bg-no-repeat pb-36 lg:pb-44">
 			<img
 				className="w-auto mx-auto mb-6 h-44"
 				src="/cu-logo-stacked-white-outline.svg"
