@@ -1,5 +1,4 @@
 /* This example requires Tailwind CSS v2.0+ */
-import { Fragment } from "react";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/20/solid";
 
 type dateType = {
