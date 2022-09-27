@@ -7,10 +7,7 @@ export default function FileItem(props: any) {
 	return (
 		<>
 			<li key={name}>
-				<a
-					href="#"
-					className="flex items-center px-4 py-6 hover:bg-gray-50"
-				>
+				<a href="#" className="flex items-center p-6 hover:bg-gray-50">
 					<svg
 						className="w-10 h-10"
 						viewBox="0 0 24 24"
@@ -44,7 +41,7 @@ export default function FileItem(props: any) {
 						</g>
 					</svg>
 
-					<div className="min-w-0 px-4">
+					<div className="ml-4">
 						<h3 className="mb-1 text-sm font-semibold text-cu-black-900">
 							{name}
 						</h3>

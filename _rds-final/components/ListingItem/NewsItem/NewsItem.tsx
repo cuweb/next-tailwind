@@ -5,7 +5,7 @@ export default function NewsItem(props: any) {
 	return (
 		<li key={name}>
 			<a href={href} className="block hover:bg-gray-50">
-				<div className="flex items-center px-4 py-6 sm:px-6">
+				<div className="flex items-center p-6 sm:px-6">
 					<div className="flex flex-1 min-w-0 items">
 						<img
 							className="h-20 mt-1 rounded w-30"
