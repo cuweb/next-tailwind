@@ -3,9 +3,7 @@ import Badge from "../../Badge/Badge";
 const classNameRoot = "";
 
 const List = ({ children }: any) => {
-	return (
-		<li className={`relative ${classNameRoot} px-6 py-6`}>{children}</li>
-	);
+	return <li className={`relative ${classNameRoot} p-6`}>{children}</li>;
 };
 
 const Single = ({ children }: any) => {
