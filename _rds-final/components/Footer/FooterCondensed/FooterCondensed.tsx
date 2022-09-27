@@ -1,5 +1,4 @@
-import FooterSwoosh from "../FooterSwoosh/FooterSwoosh";
-
+/* This example requires Tailwind CSS v2.0+ */
 const navigation = {
 	Admissions: [
 		{ name: "Programs", href: "#" },
@@ -10,7 +9,7 @@ const navigation = {
 		{ name: "Virtual Tours", href: "#" },
 		{ name: "Initiatives", href: "#" },
 	],
-	Academics: [
+	Students: [
 		{ name: "Support Services", href: "#" },
 		{ name: "Schedules & Dates", href: "#" },
 		{ name: "Bightspace", href: "#" },
@@ -28,7 +27,7 @@ const navigation = {
 		{ name: "Directions", href: "#" },
 		{ name: "Events", href: "#" },
 	],
-	Advancement: [
+	Raven: [
 		{ name: "Giving to Carleton", href: "#" },
 		{ name: "Athletics & Recreation", href: "#" },
 		{ name: "Go Ravens", href: "#" },
@@ -36,11 +35,6 @@ const navigation = {
 		{ name: "Giving to Carleton", href: "#" },
 		{ name: "Athletics & Recreation", href: "#" },
 		{ name: "Go Ravens", href: "#" },
-	],
-	Ravens: [
-		{ name: "Athletics & Recreation", href: "#" },
-		{ name: "GoRavens Varsity", href: "#" },
-		{ name: "Athletics & Recreation", href: "#" },
 	],
 	social: [
 		{
@@ -116,18 +110,142 @@ const navigation = {
 	],
 };
 
-const FooterIntranet = () => {
+export default function FooterCondensed() {
 	return (
 		<footer
-			className="pt-12 mt-20 bg-cu-black-900"
+			className="bg-cu-black-900 bg-[url('https://carleton.ca/assets/waves.svg')] bg-[length:100%] bg-bottom bg-no-repeat pb-44"
 			aria-labelledby="footer-heading"
 		>
 			<h2 id="footer-heading" className="sr-only">
 				Footer
 			</h2>
-			<FooterSwoosh />
+			<div className="px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:py-16 lg:px-8">
+				<div className="xl:grid xl:grid-cols-3 xl:gap-8">
+					<div className="space-y-8 xl:col-span-1">
+						<img
+							className="h-20"
+							src="/cu-logo-left-white-outline.svg"
+							alt="Carleton University"
+						/>
+						<p className="pl-[5.25rem] text-base text-gray-300">
+							1125 Colonel By Drive
+							<br />
+							Ottawa, ON, K1S 5B6, Canada
+							<br />
+							Phone: 1-613-520-2600
+						</p>
+						<div className="flex space-x-6 pl-[5.25rem]">
+							{navigation.social.map((item) => (
+								<a
+									key={item.name}
+									href={item.href}
+									className="text-gray-200 hover:text-cu-red"
+								>
+									<span className="sr-only">{item.name}</span>
+									<item.icon
+										className="w-6 h-6"
+										aria-hidden="true"
+									/>
+								</a>
+							))}
+						</div>
+					</div>
+					<div className="grid grid-cols-2 gap-8 mt-12 xl:col-span-2 xl:mt-0">
+						<div className="md:grid md:grid-cols-2 md:gap-8">
+							<div>
+								<h3 className="text-base font-medium text-white">
+									Admissions
+								</h3>
+								<ul role="list" className="mt-2 space-y-2">
+									{navigation.Admissions.map((item) => (
+										<li key={item.name}>
+											<a
+												href={item.href}
+												className="text-base text-gray-400 hover:text-white"
+											>
+												{item.name}
+											</a>
+										</li>
+									))}
+								</ul>
+							</div>
+							<div className="mt-12 md:mt-0">
+								<h3 className="text-base font-medium text-white">
+									Students
+								</h3>
+								<ul role="list" className="mt-2 space-y-2">
+									{navigation.Students.map((item) => (
+										<li key={item.name}>
+											<a
+												href={item.href}
+												className="text-base text-gray-400 hover:text-white"
+											>
+												{item.name}
+											</a>
+										</li>
+									))}
+								</ul>
+							</div>
+						</div>
+						<div className="md:grid md:grid-cols-2 md:gap-8">
+							<div>
+								<h3 className="text-base font-medium text-white">
+									Campus
+								</h3>
+								<ul role="list" className="mt-2 space-y-2">
+									{navigation.Campus.map((item) => (
+										<li key={item.name}>
+											<a
+												href={item.href}
+												className="text-base text-gray-400 hover:text-white"
+											>
+												{item.name}
+											</a>
+										</li>
+									))}
+								</ul>
+							</div>
+							<div className="mt-12 md:mt-0">
+								<h3 className="text-base font-medium text-white">
+									Raven 4 Life
+								</h3>
+								<ul role="list" className="mt-2 space-y-2">
+									{navigation.Raven.map((item) => (
+										<li key={item.name}>
+											<a
+												href={item.href}
+												className="text-base text-gray-400 hover:text-white"
+											>
+												{item.name}
+											</a>
+										</li>
+									))}
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div className="pt-8 mt-12 border-t border-gray-600">
+					<ul className="flex text-lg text-center text-gray-400 ">
+						<li className="pl-4">
+							<a href="#" className="hover:text-white">
+								Privacy Policy
+							</a>
+						</li>
+						<li className="pl-4">
+							<a href="#" className="hover:text-white">
+								Accessibility
+							</a>
+						</li>
+						<li className="pl-4">
+							<a href="#" className="hover:text-white">
+								&copy; Copyright 2022
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
 		</footer>
 	);
-};
-
-export default FooterIntranet;
+}
