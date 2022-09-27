@@ -47,7 +47,7 @@ const posts = [
 	},
 ];
 
-export default function Top5() {
+export default function NewsListing() {
 	return (
 		<>
 			<StackedList.Dividers>

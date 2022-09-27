@@ -31,7 +31,7 @@ const posts = [
 	},
 ];
 
-export default function NewsFeed() {
+export default function FeedListing() {
 	return (
 		<StackedList.Dividers>
 			{posts.map(({ id, title, link, date, excerpt, category }) => (
