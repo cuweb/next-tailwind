@@ -27,50 +27,6 @@ const Home: NextPage = () => {
 			<BaseBanner>Web Services Prototypes</BaseBanner>
 
 			<Container.White>
-				<Column.One>
-					<div>
-						<div className="border rounded-lg border-cu-black-200">
-							<Top5 />
-						</div>
-					</div>
-
-					<div>
-						<div className="border rounded-lg border-cu-black-200">
-							<NewsFeed />
-						</div>
-					</div>
-
-					<div>
-						<div className="border rounded-lg border-cu-black-200">
-							<EventListing />
-						</div>
-					</div>
-
-					<div>
-						<div className="border rounded-lg border-cu-black-200">
-							<Marketplace />
-						</div>
-					</div>
-
-					<div>
-						<div className="border rounded-lg border-cu-black-200">
-							<JobListing />
-						</div>
-					</div>
-
-					<div>
-						<div className="border rounded-lg border-cu-black-200">
-							<FileListing />
-						</div>
-					</div>
-
-					<div>
-						<div className="border rounded-lg border-cu-black-200">
-							<LinksListing />
-						</div>
-					</div>
-				</Column.One>
-
 				<Column.Two>
 					<div>
 						<div className="border rounded-lg border-cu-black-200">
@@ -114,6 +70,50 @@ const Home: NextPage = () => {
 						</div>
 					</div>
 				</Column.Two>
+
+				<Column.One>
+					<div>
+						<div className="border rounded-lg border-cu-black-200">
+							<Top5 />
+						</div>
+					</div>
+
+					<div>
+						<div className="border rounded-lg border-cu-black-200">
+							<NewsFeed />
+						</div>
+					</div>
+
+					<div>
+						<div className="border rounded-lg border-cu-black-200">
+							<EventListing />
+						</div>
+					</div>
+
+					<div>
+						<div className="border rounded-lg border-cu-black-200">
+							<Marketplace />
+						</div>
+					</div>
+
+					<div>
+						<div className="border rounded-lg border-cu-black-200">
+							<JobListing />
+						</div>
+					</div>
+
+					<div>
+						<div className="border rounded-lg border-cu-black-200">
+							<FileListing />
+						</div>
+					</div>
+
+					<div>
+						<div className="border rounded-lg border-cu-black-200">
+							<LinksListing />
+						</div>
+					</div>
+				</Column.One>
 
 				<Column.Three>
 					<div>

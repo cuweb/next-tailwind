@@ -3,6 +3,18 @@ const classNameRoot =
 
 const defaultMaxWidth = "max-w-3xl md:max-w-7xl";
 
+const ColumnRoot = ({ maxWidth, children }: any) => {
+	return (
+		<div
+			className={`${
+				maxWidth ? maxWidth : defaultMaxWidth
+			} ${classNameRoot}`}
+		>
+			{children}
+		</div>
+	);
+};
+
 const One = ({ maxWidth, children }: any) => {
 	return (
 		<div
@@ -61,13 +73,13 @@ const TwoThird = ({ children }: any) => {
 	);
 };
 
-const Column = {
+const Column = Object.assign(ColumnRoot, {
 	One,
 	Two,
 	Three,
 	Four,
 	OneThird,
 	TwoThird,
-};
+});
 
 export default Column;

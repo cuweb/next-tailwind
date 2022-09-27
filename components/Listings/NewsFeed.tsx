@@ -36,7 +36,7 @@ const posts = [
 export default function NewsFeed() {
 	return (
 		<>
-			<StackedList>
+			<StackedList.Dividers>
 				{posts.map(({ id, title, link, date, excerpt, category }) => (
 					<FeedItem.List key={id}>
 						<FeedItem.Title title={title} link={link} />
@@ -45,7 +45,7 @@ export default function NewsFeed() {
 						<FeedItem.Category category={category} />
 					</FeedItem.List>
 				))}
-			</StackedList>
+			</StackedList.Dividers>
 
 			<Container.Empty className="p-4">
 				<Button.Red text="More News" link="#" />

@@ -2,11 +2,7 @@ const classNameRoot = "";
 
 const List = ({ children }: any) => {
 	return (
-		<li
-			className={`relative ${classNameRoot} border-b border-cu-black-100 px-6 py-6 last:border-b-0`}
-		>
-			{children}
-		</li>
+		<li className={`relative ${classNameRoot} px-6 py-6`}>{children}</li>
 	);
 };
 
