@@ -1,4 +1,5 @@
 import { CalendarIcon } from "@heroicons/react/20/solid";
+import Badge from "../../Badge/Badge";
 
 export default function JobItem(props: any) {
 	const { name, title, type, closeDate, closeDateFull } = props;
@@ -12,9 +13,7 @@ export default function JobItem(props: any) {
 							{title}
 						</p>
 						<div className="flex flex-shrink-0 ml-2">
-							<p className="inline-flex px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 rounded-full">
-								{type}
-							</p>
+							<Badge.XSmall>{type}</Badge.XSmall>
 						</div>
 					</div>
 					<div className="mt-2 sm:flex sm:justify-between">

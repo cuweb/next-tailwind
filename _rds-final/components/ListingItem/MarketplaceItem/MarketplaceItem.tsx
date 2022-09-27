@@ -2,6 +2,7 @@ import {
 	CurrencyDollarIcon,
 	ChevronRightIcon,
 } from "@heroicons/react/24/outline";
+import Badge from "../../Badge/Badge";
 
 export default function MarketplaceItem(props: any) {
 	const { name, link, imageUrl, dateFull, time } = props;
@@ -30,14 +31,15 @@ export default function MarketplaceItem(props: any) {
 											aria-hidden="true"
 										/>
 
-										<time dateTime={dateFull}>{time}</time>
+										<time
+											className="mr-4"
+											dateTime={dateFull}
+										>
+											{time}
+										</time>
 
-										<span className="px-2 ml-4 text-xs font-semibold leading-5 text-white bg-blue-500 rounded-full">
-											Fair
-										</span>
-										<span className="px-2 ml-4 text-xs font-semibold leading-5 text-green-800 bg-green-100 rounded-full">
-											Availible
-										</span>
+										<Badge.XSmall>Fair</Badge.XSmall>
+										<Badge.XSmall>Available</Badge.XSmall>
 									</p>
 								</div>
 							</div>
