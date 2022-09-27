@@ -46,10 +46,6 @@ export default function NewsFeed() {
 					</FeedItem.List>
 				))}
 			</StackedList.Dividers>
-
-			<Container.Empty className="p-4">
-				<Button.Red text="More News" link="#" />
-			</Container.Empty>
 		</>
 	);
 }
