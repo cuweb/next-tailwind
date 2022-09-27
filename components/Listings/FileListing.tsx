@@ -61,7 +61,7 @@ const files = [
 
 export default function FileListing() {
 	return (
-		<StackedList>
+		<StackedList.Dividers>
 			{files.map(
 				({
 					name,
@@ -86,6 +86,6 @@ export default function FileListing() {
 					/>
 				)
 			)}
-		</StackedList>
+		</StackedList.Dividers>
 	);
 }

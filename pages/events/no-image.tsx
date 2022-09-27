@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 
-import Footer from "../../_rds-final/components/Footer/FooterIntranet/FooterIntranet";
+import FooterBasic from "../../_rds-final/components/Footer/FooterBasic/FooterBasic";
 import Navbar from "../../_rds-final/components/Navbar/EventNavbar";
 import Container from "../../_rds-final/layouts/Container/Container";
 import Column from "../../_rds-final/layouts/Columns/Columns";
@@ -45,7 +45,7 @@ const EventCalendar: NextPage = () => {
 				</Container.White>
 			</main>
 
-			<Footer />
+			<FooterBasic />
 		</>
 	);
 };

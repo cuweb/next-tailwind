@@ -56,7 +56,7 @@ const marketplace = [
 
 export default function Marketplace() {
 	return (
-		<StackedList>
+		<StackedList.Dividers>
 			{marketplace.map(
 				({
 					name,
@@ -79,6 +79,6 @@ export default function Marketplace() {
 					/>
 				)
 			)}
-		</StackedList>
+		</StackedList.Dividers>
 	);
 }

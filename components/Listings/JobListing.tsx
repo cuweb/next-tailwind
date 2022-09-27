@@ -52,7 +52,7 @@ const positions = [
 export default function JobListing() {
 	return (
 		<>
-			<StackedList>
+			<StackedList.Dividers>
 				{positions.map(
 					({
 						id,
@@ -74,7 +74,7 @@ export default function JobListing() {
 						/>
 					)
 				)}
-			</StackedList>
+			</StackedList.Dividers>
 		</>
 	);
 }
