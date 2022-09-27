@@ -72,7 +72,7 @@ const links = [
 
 export default function LinksListing() {
 	return (
-		<StackedList>
+		<StackedList.Dividers>
 			{links.map(
 				({
 					name,
@@ -97,6 +97,6 @@ export default function LinksListing() {
 					/>
 				)
 			)}
-		</StackedList>
+		</StackedList.Dividers>
 	);
 }

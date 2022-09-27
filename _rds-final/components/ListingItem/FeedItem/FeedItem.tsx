@@ -1,12 +1,10 @@
+import Badge from "../../Badge/Badge";
+
 const classNameRoot = "";
 
 const List = ({ children }: any) => {
 	return (
-		<li
-			className={`relative ${classNameRoot} border-b border-cu-black-100 px-6 py-6 last:border-b-0`}
-		>
-			{children}
-		</li>
+		<li className={`relative ${classNameRoot} px-6 py-6`}>{children}</li>
 	);
 };
 
@@ -40,9 +38,9 @@ const Excerpt = (props: any) => {
 const Category = (props: any) => {
 	const { category } = props;
 	return (
-		<p className="inline-flex px-3 py-1 mt-4 mr-2 text-xs font-semibold rounded-md bg-cu-black-50 text-cu-black-800">
-			{category}
-		</p>
+		<div className="mt-2">
+			<Badge.XSmall>{category}</Badge.XSmall>
+		</div>
 	);
 };
 

@@ -50,7 +50,7 @@ const posts = [
 export default function Top5() {
 	return (
 		<>
-			<StackedList>
+			<StackedList.Dividers>
 				{posts.map(({ name, date, excerpt, link, image }) => (
 					<NewsItem
 						key={name}
@@ -61,7 +61,7 @@ export default function Top5() {
 						image={image}
 					/>
 				))}
-			</StackedList>
+			</StackedList.Dividers>
 		</>
 	);
 }

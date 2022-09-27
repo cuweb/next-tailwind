@@ -62,7 +62,7 @@ const events = [
 export default function EventListing() {
 	return (
 		<>
-			<StackedList>
+			<StackedList.Dividers>
 				{events.map(
 					({ name, link, location, time, month, day, dateFull }) => (
 						<EventItem
@@ -77,7 +77,7 @@ export default function EventListing() {
 						/>
 					)
 				)}
-			</StackedList>
+			</StackedList.Dividers>
 		</>
 	);
 }
