@@ -1,3 +1,5 @@
+import Badge from "../../Badge/Badge";
+
 const classNameRoot = "";
 
 const List = ({ children }: any) => {
@@ -36,9 +38,9 @@ const Excerpt = (props: any) => {
 const Category = (props: any) => {
 	const { category } = props;
 	return (
-		<p className="inline-flex px-3 py-1 mt-4 mr-2 text-xs font-semibold rounded-md bg-cu-black-50 text-cu-black-800">
-			{category}
-		</p>
+		<div className="mt-2">
+			<Badge.XSmall>{category}</Badge.XSmall>
+		</div>
 	);
 };
 
