@@ -35,6 +35,12 @@ const Home: NextPage = () => {
 
 					<div>
 						<div className="border rounded-lg border-cu-black-100">
+							<Marketplace />
+						</div>
+					</div>
+
+					<div>
+						<div className="border rounded-lg border-cu-black-100">
 							<FeedListing />
 						</div>
 					</div>
@@ -42,12 +48,6 @@ const Home: NextPage = () => {
 					<div>
 						<div className="border rounded-lg border-cu-black-100">
 							<EventListing />
-						</div>
-					</div>
-
-					<div>
-						<div className="border rounded-lg border-cu-black-100">
-							<Marketplace />
 						</div>
 					</div>
 
