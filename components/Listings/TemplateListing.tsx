@@ -1,5 +1,5 @@
 import StackedList from "../../_rds-final/components/StackedList/StackedList";
-import TemplateItem from "../../_rds-final/components/ListingItem/TemplateItem/TemplateItem";
+import TemplateItem from "../../_rds-final/components/ListingItem/_TemplateItem/TemplateItem";
 
 const template = [
 	{

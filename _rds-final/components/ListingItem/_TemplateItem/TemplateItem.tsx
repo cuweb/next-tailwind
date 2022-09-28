@@ -1,16 +1,26 @@
 import { ChevronRightIcon } from "@heroicons/react/24/outline";
 
 export default function TemplateItem(props: any) {
-	const { name, date, excerpt, link, image } = props;
+	const { name } = props;
 	return (
 		<li key={name}>
 			<div className="relative flex items-center gap-2 p-6 hover:bg-gray-50">
 				<div className="flex items-start gap-3">
-					<div className="flex-none w-16 bg-blue-200 md:w-20">
-						Img/Icn
-					</div>
+					<div className="flex-none w-16 md:w-20">Img/Icn</div>
 
-					<div className="flex-auto bg-blue-500">
+					<div className="flex-auto">
+						<h3 className="text-sm font-semibold text-gray-800">
+							<a
+								href="#"
+								className="hover:text-cu-red focus:outline-none"
+							>
+								<span
+									className="absolute inset-0"
+									aria-hidden="true"
+								/>
+								{name}
+							</a>
+						</h3>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 						Duis vitae enim vitae ligula elementum pellentesque
 						vitae eget orci. Vestibulum ultricies turpis metus
@@ -18,7 +28,7 @@ export default function TemplateItem(props: any) {
 				</div>
 
 				<ChevronRightIcon
-					className="flex-none w-5 h-5 ml-auto bg-blue-200 text-cu-black-300"
+					className="flex-none w-5 h-5 ml-auto text-cu-black-300"
 					aria-hidden="true"
 				/>
 			</div>
