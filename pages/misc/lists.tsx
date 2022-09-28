@@ -70,7 +70,7 @@ const Home: NextPage = () => {
 					</div>
 				</Column.Two>
 
-				<Column.One>
+				{/* <Column.One>
 					<div>
 						<div className="border rounded-lg border-cu-black-100">
 							<NewsListing />
@@ -112,7 +112,7 @@ const Home: NextPage = () => {
 							<LinksListing />
 						</div>
 					</div>
-				</Column.One>
+				</Column.One> */}
 
 				<Column.Three>
 					<div>

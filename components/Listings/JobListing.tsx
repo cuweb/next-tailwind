@@ -5,6 +5,7 @@ const positions = [
 	{
 		id: 1,
 		title: "Back End Developer",
+		link: "#",
 		type: "Student Services",
 		location: "Remote",
 		department: "Engineering",
@@ -14,6 +15,7 @@ const positions = [
 	{
 		id: 2,
 		title: "Front End Developer",
+		link: "#",
 		type: "Student Services",
 		location: "Remote",
 		department: "Engineering",
@@ -23,6 +25,7 @@ const positions = [
 	{
 		id: 3,
 		title: "User Interface Designer",
+		link: "#",
 		type: "Student Services",
 		location: "Remote",
 		department: "Design",
@@ -32,6 +35,7 @@ const positions = [
 	{
 		id: 4,
 		title: "Back End Developer",
+		link: "#",
 		type: "Student Services",
 		location: "Remote",
 		department: "Engineering",
@@ -41,6 +45,7 @@ const positions = [
 	{
 		id: 5,
 		title: "Front End Developer",
+		link: "#",
 		type: "Student Services",
 		location: "Remote",
 		department: "Engineering",

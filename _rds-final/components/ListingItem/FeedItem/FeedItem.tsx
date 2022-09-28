@@ -4,7 +4,7 @@ export default function FileItem(props: any) {
 	const { title, link, date, excerpt, category } = props;
 
 	return (
-		<li className="relative p-6 hover:bg-gray-50">
+		<li key={title} className="relative p-6 hover:bg-gray-50">
 			<h3 className="font-semibold text-medium text-cu-blue">
 				<a href={link} className="hover:text-cu-red focus:outline-none">
 					{/* Extend touch target to entire panel */}

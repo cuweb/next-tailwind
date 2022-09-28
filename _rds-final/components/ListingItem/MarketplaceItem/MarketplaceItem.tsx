@@ -9,7 +9,7 @@ export default function MarketplaceItem(props: any) {
 			<div className="relative flex items-center p-6 hover:bg-gray-50">
 				<div className="flex items-center">
 					<img
-						className="hidden w-20 rounded h-min lg:block"
+						className="hidden w-24 rounded h-min lg:block"
 						src={image}
 						alt=""
 					/>
