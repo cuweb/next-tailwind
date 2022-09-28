@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import {
@@ -6,7 +8,7 @@ import {
 	PlusIcon,
 } from "@heroicons/react/20/solid";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import Link from "next/link";
+
 function classNames(...classes: any) {
 	return classes.filter(Boolean).join(" ");
 }
@@ -42,16 +44,10 @@ export default function Example() {
 										Featured
 									</a>
 									<a
-										href="#"
+										href="/events/weekly"
 										className="inline-flex items-center px-1 pt-1 text-sm font-medium border-b-2 border-transparent text-cu-black-800 hover:border-cu-black-100 hover:text-cu-red"
 									>
 										Weekly
-									</a>
-									<a
-										href="#"
-										className="inline-flex items-center px-1 pt-1 text-sm font-medium border-b-2 border-transparent text-cu-black-800 hover:border-cu-black-100 hover:text-cu-red"
-									>
-										Monthly
 									</a>
 									<a
 										href="/events/single"
