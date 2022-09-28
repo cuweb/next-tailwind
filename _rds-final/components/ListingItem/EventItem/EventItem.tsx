@@ -63,7 +63,7 @@ export default function EventItem(props: any) {
 				</div>
 			</div>
 			<ChevronRightIcon
-				className="w-5 h-5 ml-auto text-cu-black-300"
+				className="flex-none w-5 h-5 ml-auto text-cu-black-300"
 				aria-hidden="true"
 			/>
 		</li>

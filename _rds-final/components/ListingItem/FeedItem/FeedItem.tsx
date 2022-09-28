@@ -1,3 +1,4 @@
+import { ChevronRightIcon } from "@heroicons/react/24/outline";
 import Badge from "../../Badge/Badge";
 
 export default function FeedItem(props: any) {
