@@ -6,51 +6,41 @@ const positions = [
 		id: 1,
 		title: "Back End Developer",
 		link: "#",
-		type: "Student Services",
-		location: "Remote",
 		department: "Engineering",
-		closeDate: "2020-01-07",
-		closeDateFull: "January 7, 2020",
+		date: "January 7, 2020",
+		dateData: "2020-01-07",
 	},
 	{
 		id: 2,
 		title: "Front End Developer",
 		link: "#",
-		type: "Student Services",
-		location: "Remote",
 		department: "Engineering",
-		closeDate: "2020-01-07",
-		closeDateFull: "January 7, 2020",
+		date: "January 7, 2020",
+		dateData: "2020-01-07",
 	},
 	{
 		id: 3,
 		title: "User Interface Designer",
 		link: "#",
-		type: "Student Services",
-		location: "Remote",
 		department: "Design",
-		closeDate: "2020-01-14",
-		closeDateFull: "January 14, 2020",
+		date: "January 14, 2020",
+		dateData: "2020-01-14",
 	},
 	{
 		id: 4,
 		title: "Back End Developer",
 		link: "#",
-		type: "Student Services",
-		location: "Remote",
 		department: "Engineering",
-		closeDate: "2020-01-07",
-		closeDateFull: "January 7, 2020",
+		date: "January 7, 2020",
+		dateData: "2020-01-07",
 	},
 	{
 		id: 5,
 		title: "Front End Developer",
 		link: "#",
-		type: "Student Services",
-		location: "Remote",
 		department: "Engineering",
-		closeDate: "2020-01-07",
-		closeDateFull: "January 7, 2020",
+		date: "January 7, 2020",
+		dateData: "2020-01-07",
 	},
 ];
 
@@ -59,14 +49,14 @@ export default function JobListing() {
 		<>
 			<StackedList.Dividers>
 				{positions.map(
-					({ id, title, link, type, closeDate, closeDateFull }) => (
+					({ id, title, link, department, dateData, date }) => (
 						<JobItem
 							key={id}
 							title={title}
 							link={link}
-							type={type}
-							closeDate={closeDate}
-							closeDateFull={closeDateFull}
+							department={department}
+							dateData={dateData}
+							date={date}
 						/>
 					)
 				)}

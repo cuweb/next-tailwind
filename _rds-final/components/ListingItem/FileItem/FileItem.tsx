@@ -1,6 +1,6 @@
 import { ChevronRightIcon } from "@heroicons/react/24/outline";
 
-export default function TemplateItem(props: any) {
+export default function FileItem(props: any) {
 	const { name, filesize, link, date } = props;
 
 	return (

@@ -1,7 +1,7 @@
 import { ChevronRightIcon } from "@heroicons/react/24/outline";
 
 export default function TemplateItem(props: any) {
-	const { name } = props;
+	const { name, link } = props;
 	return (
 		<li key={name}>
 			<div className="relative flex items-center gap-2 p-6 hover:bg-gray-50">
@@ -11,7 +11,7 @@ export default function TemplateItem(props: any) {
 					<div className="flex-auto">
 						<h3 className="text-sm font-semibold text-gray-800">
 							<a
-								href="#"
+								href={link}
 								className="hover:text-cu-red focus:outline-none"
 							>
 								<span
