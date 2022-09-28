@@ -56,28 +56,16 @@ export default function Example() {
                     Monthly
                   </a>
                   <a
-                    href="/events/single-clean"
+                    href="/events/single"
                     className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-cu-black-100 hover:text-cu-red"
                   >
-                    s/Clean
+                    Single 1
                   </a>
                   <a
-                    href="/events/single-panels"
+                    href="/events/single2"
                     className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-cu-black-100 hover:text-cu-red"
                   >
-                    s/Panels
-                  </a>
-                  <a
-                    href="/events/single-throwback"
-                    className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-cu-black-100 hover:text-cu-red"
-                  >
-                    s/Throwback
-                  </a>
-                  <a
-                    href="/events/submit"
-                    className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-cu-black-100 hover:text-cu-red"
-                  >
-                    Submit Event
+                    Single 2
                   </a>
                 </div>
               </div>
