@@ -9,10 +9,8 @@ import Panel from "../../_rds-final/layouts/Panel/Panel";
 import EventFilter from "../../_rds-final/components/Filter/Filter";
 import SmallCalendar from "../../_rds-final/components/Calendar/SmallCalendar/SmallCalendar";
 
-import FeaturedEventBanner from "../../components/Banner/FeaturedEventBanner";
-import FeaturedEventListingImage from "../../components/Listings/FeaturedEventListingImage";
-
 import EventListing from "../../components/Listings/EventListing";
+import EventBanner from "../../components/Banner/EventBanner";
 
 const EventCalendar: NextPage = () => {
 	return (
@@ -24,23 +22,19 @@ const EventCalendar: NextPage = () => {
 			<Navbar />
 
 			<Container.Empty>
-				<FeaturedEventBanner />
-				<FeaturedEventListingImage />
+				<EventBanner>Upcoming Events</EventBanner>
 			</Container.Empty>
 
 			<main className="pb-4">
 				<Container.White>
 					<Column.One>
-						<h2 className="mb-3 text-2xl font-semibold text-cu-black-800 md:text-4xl">
-							Upcoming Events
-						</h2>
 						<EventFilter />
 					</Column.One>
 					<Column.TwoThird>
 						<Panel className="border rounded-lg shadow-lg border-cu-black-50">
 							<EventListing />
 						</Panel>
-						<div className="hidden md:ml-2 md:block">
+						<div className="hidden md:block">
 							<SmallCalendar />
 						</div>
 					</Column.TwoThird>
