@@ -1,10 +1,10 @@
 import { ChevronRightIcon } from "@heroicons/react/24/outline";
 
 export default function FileItem(props: any) {
-	const { name, filesize, link, date } = props;
+	const { title, filesize, link, date } = props;
 
 	return (
-		<li key={name}>
+		<li key={title}>
 			<div className="relative flex items-center gap-2 p-6 hover:bg-gray-50">
 				<div className="flex items-start gap-3">
 					<div className="flex-none w-auto">
@@ -52,7 +52,7 @@ export default function FileItem(props: any) {
 									className="absolute inset-0"
 									aria-hidden="true"
 								/>
-								{name}
+								{title}
 							</a>
 						</h3>
 						<p className="mt-1 mb-1 mr-4 text-sm italic text-cu-black-400">

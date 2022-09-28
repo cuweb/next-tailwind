@@ -19,7 +19,7 @@ export default function JobItem(props: any) {
 									aria-hidden="true"
 								/>
 								{title}
-								<span className="italic font-light">
+								<span className="italic font-light text-cu-black-400">
 									{" "}
 									with {department}
 								</span>

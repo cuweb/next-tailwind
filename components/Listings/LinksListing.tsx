@@ -3,27 +3,27 @@ import LinkItem from "../../_rds-final/components/ListingItem/LinkItem/LinkItem"
 
 const links = [
 	{
-		name: "Carleton 360",
+		title: "Carleton 360",
 		link: "#",
 	},
 	{
-		name: "Carleton Central",
+		title: "Carleton Central",
 		link: "#",
 	},
 	{
-		name: "Events Calendar and add stuff that makes it a long title",
+		title: "Events Calendar and add stuff that makes it a long title",
 		link: "#",
 	},
 	{
-		name: "Travel & Expenses",
+		title: "Travel & Expenses",
 		link: "#",
 	},
 	{
-		name: "Brightspace",
+		title: "Brightspace",
 		link: "#",
 	},
 	{
-		name: "eShop",
+		title: "eShop",
 		link: "#",
 	},
 ];
@@ -31,8 +31,8 @@ const links = [
 export default function LinksListing() {
 	return (
 		<StackedList.Dividers>
-			{links.map(({ name, link }) => (
-				<LinkItem key={name} name={name} link={link} />
+			{links.map(({ title, link }) => (
+				<LinkItem key={title} title={title} link={link} />
 			))}
 		</StackedList.Dividers>
 	);

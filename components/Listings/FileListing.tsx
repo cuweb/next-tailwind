@@ -3,31 +3,31 @@ import FileItem from "../../_rds-final/components/ListingItem/FileItem/FileItem"
 
 const files = [
 	{
-		name: "Monthly Leave Report",
+		title: "Monthly Leave Report",
 		link: "#",
 		filesize: "175KB",
 		date: "January 7, 2020",
 	},
 	{
-		name: "Dental Claim Form",
+		title: "Dental Claim Form",
 		link: "#",
 		filesize: "175KB",
 		date: "January 7, 2020",
 	},
 	{
-		name: "Healthcare Expenses Statement",
+		title: "Healthcare Expenses Statement",
 		link: "#",
 		filesize: "175KB",
 		date: "January 7, 2020",
 	},
 	{
-		name: "CUPE 3778 Collective Agreement",
+		title: "CUPE 3778 Collective Agreement",
 		link: "#",
 		filesize: "175KB",
 		date: "January 7, 2020",
 	},
 	{
-		name: "Accident Report",
+		title: "Accident Report",
 		link: "#",
 		filesize: "175KB",
 		date: "January 7, 2020",
@@ -37,10 +37,10 @@ const files = [
 export default function FileListing() {
 	return (
 		<StackedList.Dividers>
-			{files.map(({ name, filesize, link, date }) => (
+			{files.map(({ title, filesize, link, date }) => (
 				<FileItem
-					key={name}
-					name={name}
+					key={title}
+					title={title}
 					filesize={filesize}
 					link={link}
 					date={date}

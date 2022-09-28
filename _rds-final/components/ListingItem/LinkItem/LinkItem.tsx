@@ -1,9 +1,9 @@
 import { LinkIcon, ChevronRightIcon } from "@heroicons/react/20/solid";
 
 export default function TemplateItem(props: any) {
-	const { name, link } = props;
+	const { title, link } = props;
 	return (
-		<li key={name}>
+		<li key={title}>
 			<div className="relative flex items-center gap-2 p-6 hover:bg-gray-50">
 				<div className="flex items-center gap-3">
 					<div className="flex-none w-auto">
@@ -20,7 +20,7 @@ export default function TemplateItem(props: any) {
 									className="absolute inset-0"
 									aria-hidden="true"
 								/>
-								{name}
+								{title}
 							</a>
 						</h3>
 					</div>
