@@ -8,12 +8,8 @@ export default function MarketplaceItem(props: any) {
 		<li key={name}>
 			<div className="relative flex items-center p-6 hover:bg-gray-50">
 				<div className="flex items-center">
-					<img
-						className="hidden w-24 rounded h-min lg:block"
-						src={image}
-						alt=""
-					/>
-					<div className="lg:px-4">
+					<img className="w-24 rounded h-min" src={image} alt="" />
+					<div className="px-4">
 						<h3 className="mb-1 text-base font-semibold text-gray-800">
 							<a
 								href={link}
