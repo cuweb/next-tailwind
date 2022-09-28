@@ -13,6 +13,7 @@ import Marketplace from "../../../components/Listings/MarketplaceListing";
 import FileListing from "../../../components/Listings/FileListing";
 import JobListing from "../../../components/Listings/JobListing";
 import LinksListing from "../../../components/Listings/LinksListing";
+import ListSubNav from "./_ListSubnav";
 
 const Home: NextPage = () => {
 	return (
@@ -26,6 +27,9 @@ const Home: NextPage = () => {
 			<BaseBanner>Web Services Prototypes</BaseBanner>
 
 			<Container.White>
+				<Column>
+					<ListSubNav />
+				</Column>
 				<Column.Two>
 					<div>
 						<div className="border rounded-lg border-cu-black-100">
