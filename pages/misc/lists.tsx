@@ -117,12 +117,6 @@ const Home: NextPage = () => {
 				<Column.Three>
 					<div>
 						<div className="border rounded-lg border-cu-black-200">
-							<FeedListing />
-						</div>
-					</div>
-
-					<div>
-						<div className="border rounded-lg border-cu-black-200">
 							<JobListing />
 						</div>
 					</div>
@@ -136,6 +130,12 @@ const Home: NextPage = () => {
 					<div>
 						<div className="border rounded-lg border-cu-black-200">
 							<LinksListing />
+						</div>
+					</div>
+
+					<div>
+						<div className="border rounded-lg border-cu-black-200">
+							<FeedListing />
 						</div>
 					</div>
 				</Column.Three>

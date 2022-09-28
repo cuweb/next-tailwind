@@ -13,7 +13,7 @@ export default function NewsItem(props: any) {
 							alt=""
 						/>
 						<div className="lg:px-5">
-							<h3 className="mt-1 mb-1 text-lg font-semibold text-gray-800">
+							<h3 className="mb-1 text-lg font-semibold text-gray-800">
 								<a
 									href={link}
 									className="hover:text-cu-red focus:outline-none"
