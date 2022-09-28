@@ -127,6 +127,56 @@ const EventCalendar: NextPage = () => {
                   ut nisl, justo, amet, mattis. Nunc purus, diam commodo
                   tincidunt turpis. Amet, duis sed elit interdum dignissim.
                 </p>
+                <h2>Could these headings be more interesting?</h2>
+                <p>
+                  Id orci tellus laoreet id ac. Dolor, aenean leo, ac etiam
+                  consequat in. Convallis arcu ipsum urna nibh. Pharetra,
+                  euismod vitae interdum mauris enim, consequat vulputate nibh.
+                  Maecenas pellentesque id sed tellus mauris, ultrices mauris.
+                  Tincidunt enim cursus ridiculus mi. Pellentesque nam sed
+                  nullam sed diam turpis ipsum eu a sed convallis diam.
+                </p>
+                <blockquote>
+                  <p>
+                    Sagittis scelerisque nulla cursus in enim consectetur quam.
+                    Dictum urna sed consectetur neque tristique pellentesque.
+                    Blandit amet, sed aenean erat arcu morbi.
+                  </p>
+                </blockquote>
+                <p>
+                  Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget
+                  risus enim. Mattis mauris semper sed amet vitae sed turpis id.
+                  Id dolor praesent donec est. Odio penatibus risus viverra
+                  tellus varius sit neque erat velit.
+                </p>
+                <figure>
+                  <img
+                    className="w-full rounded-lg"
+                    src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=facearea&w=1310&h=873&q=80&facepad=3"
+                    alt=""
+                    width={1310}
+                    height={873}
+                  />
+                  <figcaption>
+                    Sagittis scelerisque nulla cursus in enim consectetur quam.
+                  </figcaption>
+                </figure>
+                <h2>No, they are maximum interesting</h2>
+                <p>
+                  Purus morbi dignissim senectus mattis{' '}
+                  <a href="#">adipiscing</a>. Amet, massa quam varius orci
+                  dapibus volutpat cras. In amet eu ridiculus leo sodales cursus
+                  tristique. Tincidunt sed tempus ut viverra ridiculus non
+                  molestie. Gravida quis fringilla amet eget dui tempor
+                  dignissim. Facilisis auctor venenatis varius nunc, congue erat
+                  ac. Cras fermentum convallis quam.
+                </p>
+                <p>
+                  Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget
+                  risus enim. Mattis mauris semper sed amet vitae sed turpis id.
+                  Id dolor praesent donec est. Odio penatibus risus viverra
+                  tellus varius sit neque erat velit.
+                </p>
               </div>
             </div>
           </div>
