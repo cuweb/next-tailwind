@@ -1,6 +1,6 @@
 import { LinkIcon, ChevronRightIcon } from "@heroicons/react/20/solid";
 
-export default function TemplateItem(props: any) {
+export default function LinkItem(props: any) {
 	const { title, link } = props;
 	return (
 		<li key={title}>

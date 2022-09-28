@@ -1,7 +1,7 @@
 import { ChevronRightIcon } from "@heroicons/react/24/outline";
 import Badge from "../../Badge/Badge";
 
-export default function TemplateItem(props: any) {
+export default function MarketplaceItem(props: any) {
 	const { title, link, cost, image } = props;
 
 	return (
@@ -10,7 +10,7 @@ export default function TemplateItem(props: any) {
 				<div className="flex items-start gap-3 sm:items-center">
 					<div className="flex-none w-16 md:w-20">
 						<img
-							className="w-20 h-auto rounded lg:w-24"
+							className="w-auto h-auto rounded lg:w-24"
 							src={image}
 							alt=""
 						/>

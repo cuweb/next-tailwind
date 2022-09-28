@@ -3,7 +3,7 @@ import NewsItem from "../../_rds-final/components/ListingItem/NewsItem/NewsItem"
 
 const posts = [
 	{
-		name: "Lived Experience Luncheon Series",
+		title: "Lived Experience Luncheon Series",
 		excerpt:
 			"Tenetur libero voluptatem rerum occaecati qui est molestiae exercitationem. Voluptate quisquam iure assumenda consequatur ex et recusandae.",
 		date: "January 7, 2020",
@@ -11,7 +11,7 @@ const posts = [
 		image: "https://source.unsplash.com/random/400x300",
 	},
 	{
-		name: "Science Student Alumni Mixer 2022",
+		title: "Science Student Alumni Mixer 2022",
 		excerpt:
 			"Tenetur libero voluptatem rerum occaecati qui est molestiae exercitationem. Voluptate quisquam iure assumenda consequatur ex et recusandae.",
 		date: "January 7, 2020",
@@ -19,7 +19,7 @@ const posts = [
 		image: "https://source.unsplash.com/random/400x300",
 	},
 	{
-		name: "Milestone Anniversary Celebration 2022",
+		title: "Milestone Anniversary Celebration 2022",
 		excerpt:
 			"Tenetur libero voluptatem rerum occaecati qui est molestiae exercitationem. Voluptate quisquam iure assumenda consequatur ex et recusandae.",
 		date: "January 7, 2020",
@@ -27,7 +27,7 @@ const posts = [
 		image: "https://source.unsplash.com/random/400x300",
 	},
 	{
-		name: "Virtual Career Fairs",
+		title: "Virtual Career Fairs",
 		excerpt:
 			"Tenetur libero voluptatem rerum occaecati qui est molestiae exercitationem. Voluptate quisquam iure assumenda consequatur ex et recusandae.",
 		date: "January 7, 2020",
@@ -35,7 +35,7 @@ const posts = [
 		image: "https://source.unsplash.com/random/400x300",
 	},
 	{
-		name: "80 Years of Carleton University",
+		title: "80 Years of Carleton University",
 		excerpt:
 			"Tenetur libero voluptatem rerum occaecati qui est molestiae exercitationem. Voluptate quisquam iure assumenda consequatur ex et recusandae.",
 		date: "January 7, 2020",
@@ -48,10 +48,10 @@ export default function NewsListing() {
 	return (
 		<>
 			<StackedList.Dividers>
-				{posts.map(({ name, date, excerpt, link, image }) => (
+				{posts.map(({ title, date, excerpt, link, image }) => (
 					<NewsItem
-						key={name}
-						name={name}
+						key={title}
+						title={title}
 						date={date}
 						excerpt={excerpt}
 						link={link}
