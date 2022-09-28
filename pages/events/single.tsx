@@ -16,6 +16,7 @@ import {
   ChevronDownIcon,
   DocumentDuplicateIcon,
   HeartIcon,
+  EnvelopeIcon,
   PencilSquareIcon,
   TrashIcon,
   UserPlusIcon,
@@ -42,7 +43,7 @@ const features = [
   },
   {
     name: 'Cost',
-    description: '$100,0000.99',
+    description: '$100,0000',
     icon: CurrencyDollarIcon,
   },
 ];
@@ -59,7 +60,7 @@ const EventCalendar: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
-      <div className="relative bg-gray-800 pt-24 pb-24 md:pb-28 md:pt-28">
+      <div className="relative bg-gray-800 pt-24 pb-20">
         <div className="absolute inset-0">
           <img
             className="h-full w-full object-cover"
@@ -131,11 +132,16 @@ const EventCalendar: NextPage = () => {
                                 'group flex items-center px-4 py-2 text-sm'
                               )}
                             >
-                              <PencilSquareIcon
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 512 512"
+                                fill="currentColor"
                                 className="mr-3 h-5 w-5 text-gray-400 group-hover:text-gray-500"
                                 aria-hidden="true"
-                              />
-                              Edit
+                              >
+                                <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
+                              </svg>
+                              Twitter
                             </a>
                           )}
                         </Menu.Item>
@@ -150,11 +156,59 @@ const EventCalendar: NextPage = () => {
                                 'group flex items-center px-4 py-2 text-sm'
                               )}
                             >
-                              <DocumentDuplicateIcon
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 448 512"
+                                fill="currentColor"
+                                className="mr-3 h-5 w-5 text-gray-400 group-hover:text-gray-500"
+                                aria-hidden="true"
+                              >
+                                <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
+                              </svg>
+                              LinkedIn
+                            </a>
+                          )}
+                        </Menu.Item>
+                        <Menu.Item>
+                          {({ active }) => (
+                            <a
+                              href="#"
+                              className={classNames(
+                                active
+                                  ? 'bg-gray-100 text-gray-900'
+                                  : 'text-gray-700',
+                                'group flex items-center px-4 py-2 text-sm'
+                              )}
+                            >
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 512 512"
+                                fill="currentColor"
+                                className="mr-3 h-5 w-5 text-gray-400 group-hover:text-gray-500"
+                                aria-hidden="true"
+                              >
+                                <path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z" />
+                              </svg>
+                              Facebook
+                            </a>
+                          )}
+                        </Menu.Item>
+                        <Menu.Item>
+                          {({ active }) => (
+                            <a
+                              href="#"
+                              className={classNames(
+                                active
+                                  ? 'bg-gray-100 text-gray-900'
+                                  : 'text-gray-700',
+                                'group flex items-center px-4 py-2 text-sm'
+                              )}
+                            >
+                              <EnvelopeIcon
                                 className="mr-3 h-5 w-5 text-gray-400 group-hover:text-gray-500"
                                 aria-hidden="true"
                               />
-                              Duplicate
+                              E-mail
                             </a>
                           )}
                         </Menu.Item>
@@ -179,86 +233,6 @@ const EventCalendar: NextPage = () => {
                             </a>
                           )}
                         </Menu.Item>
-                        <Menu.Item>
-                          {({ active }) => (
-                            <a
-                              href="#"
-                              className={classNames(
-                                active
-                                  ? 'bg-gray-100 text-gray-900'
-                                  : 'text-gray-700',
-                                'group flex items-center px-4 py-2 text-sm'
-                              )}
-                            >
-                              <ArrowRightCircleIcon
-                                className="mr-3 h-5 w-5 text-gray-400 group-hover:text-gray-500"
-                                aria-hidden="true"
-                              />
-                              Move
-                            </a>
-                          )}
-                        </Menu.Item>
-                      </div>
-                      <div className="py-1">
-                        <Menu.Item>
-                          {({ active }) => (
-                            <a
-                              href="#"
-                              className={classNames(
-                                active
-                                  ? 'bg-gray-100 text-gray-900'
-                                  : 'text-gray-700',
-                                'group flex items-center px-4 py-2 text-sm'
-                              )}
-                            >
-                              <UserPlusIcon
-                                className="mr-3 h-5 w-5 text-gray-400 group-hover:text-gray-500"
-                                aria-hidden="true"
-                              />
-                              Share
-                            </a>
-                          )}
-                        </Menu.Item>
-                        <Menu.Item>
-                          {({ active }) => (
-                            <a
-                              href="#"
-                              className={classNames(
-                                active
-                                  ? 'bg-gray-100 text-gray-900'
-                                  : 'text-gray-700',
-                                'group flex items-center px-4 py-2 text-sm'
-                              )}
-                            >
-                              <HeartIcon
-                                className="mr-3 h-5 w-5 text-gray-400 group-hover:text-gray-500"
-                                aria-hidden="true"
-                              />
-                              Add to favorites
-                            </a>
-                          )}
-                        </Menu.Item>
-                      </div>
-                      <div className="py-1">
-                        <Menu.Item>
-                          {({ active }) => (
-                            <a
-                              href="#"
-                              className={classNames(
-                                active
-                                  ? 'bg-gray-100 text-gray-900'
-                                  : 'text-gray-700',
-                                'group flex items-center px-4 py-2 text-sm'
-                              )}
-                            >
-                              <TrashIcon
-                                className="mr-3 h-5 w-5 text-gray-400 group-hover:text-gray-500"
-                                aria-hidden="true"
-                              />
-                              Delete
-                            </a>
-                          )}
-                        </Menu.Item>
                       </div>
                     </Menu.Items>
                   </Transition>
@@ -271,21 +245,21 @@ const EventCalendar: NextPage = () => {
 
       <main>
         <Column.One>
-          <dl className="mt-6 space-y-6 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-8 md:space-y-0">
+          <dl className="mt-8 space-y-0 md:grid md:grid-cols-2 md:gap-x-0 md:gap-y-0 md:space-y-0">
             {features.map((feature) => (
               <div
                 key={feature.name}
-                className="relative rounded-md bg-gray-100 p-4 shadow"
+                className="relative border border-cu-black-50 bg-gray-50 p-4"
               >
                 <dt>
-                  <div className="absolute top-4 -left-4 flex h-12 w-12 items-center justify-center rounded-md bg-cu-red text-white">
-                    <feature.icon className="h-6 w-6" aria-hidden="true" />
+                  <div className="absolute flex h-12 w-12 justify-center text-cu-blue-300">
+                    <feature.icon className="h-10 w-10" aria-hidden="true" />
                   </div>
-                  <p className="text-md ml-8 font-bold leading-6 text-gray-900">
+                  <p className="text-md ml-16 font-bold leading-6 text-gray-900">
                     {feature.name}
                   </p>
                 </dt>
-                <dd className="ml-8 text-base text-gray-500">
+                <dd className="ml-16 text-base text-gray-500">
                   {feature.description}
                 </dd>
               </div>
@@ -332,7 +306,7 @@ const EventCalendar: NextPage = () => {
                   ut nisl, justo, amet, mattis. Nunc purus, diam commodo
                   tincidunt turpis. Amet, duis sed elit interdum dignissim.
                 </p>
-                <h2>From beginner to expert in 30 days</h2>
+                <h2>Could these headings be more interesting?</h2>
                 <p>
                   Id orci tellus laoreet id ac. Dolor, aenean leo, ac etiam
                   consequat in. Convallis arcu ipsum urna nibh. Pharetra,
@@ -366,7 +340,7 @@ const EventCalendar: NextPage = () => {
                     Sagittis scelerisque nulla cursus in enim consectetur quam.
                   </figcaption>
                 </figure>
-                <h2>Everything you need to get up and running</h2>
+                <h2>No, they are maximum interesting</h2>
                 <p>
                   Purus morbi dignissim senectus mattis{' '}
                   <a href="#">adipiscing</a>. Amet, massa quam varius orci
@@ -399,34 +373,6 @@ const EventCalendar: NextPage = () => {
           </div>
         </Column.One>
       </main>
-
-      {/* <header className="pt-12 mx-auto max-w-7xl md:py-24">
-				<Column.TwoThird>
-					<div className="items-center max-w-3xl">
-						<h1 className="text-4xl font-semibold text-cu-black-800 md:text-5xl">
-							Milestone Anniversary Celebration 2022
-						</h1>
-						<p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
-							Anim aute id magna aliqua ad ad non deserunt sunt.
-							Qui irure qui lorem cupidatat commodo. Elit sunt
-							amet fugiat veniam occaecat fugiat aliqua ad ad non
-							deserunt sunt.
-						</p>
-					</div>
-
-					<div className="overflow-hidden rounded-lg">
-						<iframe
-							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2802.1407807835403!2d-75.69560014816834!3d45.38633087899766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce05dee0ae65eb%3A0x17feb47012b59f30!2sCarleton%20University%20Raven&#39;s%20Nest!5e0!3m2!1sen!2sca!4v1664032553405!5m2!1sen!2sca"
-							width="100%"
-							height="300"
-							style={{ border: 0 }}
-							// allowfullscreen=""
-							loading="lazy"
-							referrerPolicy="no-referrer-when-downgrade"
-						></iframe>
-					</div>
-				</Column.TwoThird>
-			</header> */}
 
       <Footer />
     </>
