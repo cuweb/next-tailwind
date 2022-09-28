@@ -1,4 +1,4 @@
-import NewsFeed from "../../../components/Listings/NewsFeed";
+import FeedListing from "../../../components/Listings/FeedListing";
 
 const classNameRoot =
 	"cu-column mx-auto mb-8 grid max-w-7xl gap-8 px-8 [&:last-child]:mb-0";
@@ -22,7 +22,7 @@ const Four = ({ unstyled, className, children }: any) => {
 const Column = Object.assign(ColumnRoot, {
 	Four,
 	Two,
-	NewsFeed,
+	FeedListing,
 });
 
 export default Column;

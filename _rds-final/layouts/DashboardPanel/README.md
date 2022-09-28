@@ -1,21 +1,21 @@
 # Component Reference
 
-This component is used to create a specifically designed dashboard panel.
+This component is used to create a single news item and can also be used inside stacked lists.
 
 ## Usage
 
 ```jsx
-import DashboardPanel from '{path}/layout/DashboardPanel/DashboardPanel';
+import { ITEM } from '{path}';
 
-<DashboardPanel>
-    {add content}
-</DashboardPanel>
+<Add>
 ```
 
 ## Options
 
-AddInfo
+The available props can be added like the following example:
 
-## Default Styles
+```jsx
+<Add>
+```
 
-AddInfo
+-   `prop` - add this and that to do thing for things

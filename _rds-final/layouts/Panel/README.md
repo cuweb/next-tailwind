@@ -1,17 +1,21 @@
 # Component Reference
 
-This component can be used to create a custom layout panel.
+This component is used to create a single news item and can also be used inside stacked lists.
 
 ## Usage
 
 ```jsx
-import Panel from '{path}/layout/Panel/Panel';
+import { ITEM } from '{path}';
 
-<Panel>
-    {add content}
-</Panel>
+<Add>
 ```
 
 ## Options
 
-AddInfo
+The available props can be added like the following example:
+
+```jsx
+<Add>
+```
+
+-   `prop` - add this and that to do thing for things

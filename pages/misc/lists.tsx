@@ -7,10 +7,9 @@ import Container from "../../_rds-final/layouts/Container/Container";
 import Column from "../../_rds-final/layouts/Columns/Columns";
 import BaseBanner from "../../_rds-final/components/Banner/BaseBanner/BaseBanner";
 import EventListing from "../../components/Listings/EventListing";
-import NewsFeed from "../../components/Listings/NewsFeed";
-import Top5 from "../../components/Listings/Top5";
-import Marketplace from "../../components/Listings/Marketplace";
-import JobItem from "../../_rds-final/components/ListingItem/JobItem/JobItem";
+import FeedListing from "../../components/Listings/FeedListing";
+import NewsListing from "../../components/Listings/NewsListing";
+import MarketplaceListing from "../../components/Listings/MarketplaceListing";
 import JobListing from "../../components/Listings/JobListing";
 import LinksListing from "../../components/Listings/LinksListing";
 import FileListing from "../../components/Listings/FileListing";
@@ -30,13 +29,7 @@ const Home: NextPage = () => {
 				<Column.Two>
 					<div>
 						<div className="border rounded-lg border-cu-black-100">
-							<Top5 />
-						</div>
-					</div>
-
-					<div>
-						<div className="border rounded-lg border-cu-black-100">
-							<NewsFeed />
+							<NewsListing />
 						</div>
 					</div>
 
@@ -48,7 +41,13 @@ const Home: NextPage = () => {
 
 					<div>
 						<div className="border rounded-lg border-cu-black-100">
-							<Marketplace />
+							<FeedListing />
+						</div>
+					</div>
+
+					<div>
+						<div className="border rounded-lg border-cu-black-100">
+							<MarketplaceListing />
 						</div>
 					</div>
 
@@ -71,77 +70,9 @@ const Home: NextPage = () => {
 					</div>
 				</Column.Two>
 
-				<Column.One>
-					<div>
-						<div className="border rounded-lg border-cu-black-100">
-							<Top5 />
-						</div>
-					</div>
-
-					<div>
-						<div className="border rounded-lg border-cu-black-100">
-							<NewsFeed />
-						</div>
-					</div>
-
-					<div>
-						<div className="border rounded-lg border-cu-black-100">
-							<EventListing />
-						</div>
-					</div>
-
-					<div>
-						<div className="border rounded-lg border-cu-black-100">
-							<Marketplace />
-						</div>
-					</div>
-
-					<div>
-						<div className="border rounded-lg border-cu-black-100">
-							<JobListing />
-						</div>
-					</div>
-
-					<div>
-						<div className="border rounded-lg border-cu-black-200">
-							<FileListing />
-						</div>
-					</div>
-
-					<div>
-						<div className="border rounded-lg border-cu-black-200">
-							<LinksListing />
-						</div>
-					</div>
-				</Column.One>
-
 				<Column.Three>
 					<div>
 						<div className="border rounded-lg border-cu-black-200">
-							<Top5 />
-						</div>
-					</div>
-
-					<div>
-						<div className="border rounded-lg border-cu-black-200">
-							<NewsFeed />
-						</div>
-					</div>
-
-					<div>
-						<div className="border rounded-lg border-cu-black-200">
-							<EventListing />
-						</div>
-					</div>
-
-					<div>
-						<div className="border rounded-lg border-cu-black-200">
-							<Marketplace />
-						</div>
-					</div>
-
-					<div>
-						<div className="border rounded-lg border-cu-black-200">
 							<JobListing />
 						</div>
 					</div>
@@ -155,6 +86,18 @@ const Home: NextPage = () => {
 					<div>
 						<div className="border rounded-lg border-cu-black-200">
 							<LinksListing />
+						</div>
+					</div>
+
+					<div>
+						<div className="border rounded-lg border-cu-black-200">
+							<FeedListing />
+						</div>
+					</div>
+
+					<div>
+						<div className="border rounded-lg border-cu-black-200">
+							<MarketplaceListing />
 						</div>
 					</div>
 				</Column.Three>

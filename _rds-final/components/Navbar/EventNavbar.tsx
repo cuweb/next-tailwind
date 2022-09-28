@@ -5,7 +5,11 @@ import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 
 function classNames(...classes: any) {
+<<<<<<< HEAD
   return classes.filter(Boolean).join(' ');
+=======
+  return classes.filter(Boolean).join(" ");
+>>>>>>> main
 }
 
 export default function Example() {
@@ -52,16 +56,28 @@ export default function Example() {
                     Monthly
                   </a>
                   <a
-                    href="/events/single"
+                    href="/events/single-clean"
                     className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-cu-black-100 hover:text-cu-red"
                   >
-                    Single 1
+                    s/Clean
                   </a>
                   <a
-                    href="/events/single2"
+                    href="/events/single-panels"
                     className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-cu-black-100 hover:text-cu-red"
                   >
-                    Single 2
+                    s/Panels
+                  </a>
+                  <a
+                    href="/events/single-throwback"
+                    className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-cu-black-100 hover:text-cu-red"
+                  >
+                    s/Throwback
+                  </a>
+                  <a
+                    href="/events/submit"
+                    className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-cu-black-100 hover:text-cu-red"
+                  >
+                    Submit Event
                   </a>
                 </div>
               </div>
@@ -134,8 +150,13 @@ export default function Example() {
                           <a
                             href="#"
                             className={classNames(
+<<<<<<< HEAD
                               active ? 'bg-gray-100' : '',
                               'block px-4 py-2 text-sm text-gray-700'
+=======
+                              active ? "bg-gray-100" : "",
+                              "block px-4 py-2 text-sm text-gray-700"
+>>>>>>> main
                             )}
                           >
                             Your Profile
@@ -147,8 +168,13 @@ export default function Example() {
                           <a
                             href="#"
                             className={classNames(
+<<<<<<< HEAD
                               active ? 'bg-gray-100' : '',
                               'block px-4 py-2 text-sm text-gray-700'
+=======
+                              active ? "bg-gray-100" : "",
+                              "block px-4 py-2 text-sm text-gray-700"
+>>>>>>> main
                             )}
                           >
                             Settings
@@ -160,8 +186,13 @@ export default function Example() {
                           <a
                             href="#"
                             className={classNames(
+<<<<<<< HEAD
                               active ? 'bg-gray-100' : '',
                               'block px-4 py-2 text-sm text-gray-700'
+=======
+                              active ? "bg-gray-100" : "",
+                              "block px-4 py-2 text-sm text-gray-700"
+>>>>>>> main
                             )}
                           >
                             Sign out
