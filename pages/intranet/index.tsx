@@ -9,7 +9,7 @@ import Profile from "../../_rds-final/components/Banner/Profile/Profile";
 import NewsListing from "../../components/Listings/NewsListing";
 import FeedListing from "../../components/Listings/FeedListing";
 import EventListing from "../../components/Listings/EventListing";
-import Marketplace from "../../components/Listings/MarketplaceListing";
+import MarketplaceListing from "../../components/Listings/MarketplaceListing";
 import Files from "../../components/Listings/FileListing";
 import LinksListing from "../../components/Listings/LinksListing";
 import JobListing from "../../components/Listings/JobListing";
@@ -63,7 +63,7 @@ const Intranet: NextPage = () => {
 							<DashboardPanel.Title>
 								Marketplace
 							</DashboardPanel.Title>
-							<Marketplace />
+							<MarketplaceListing />
 						</DashboardPanel>
 					</Column.Two>
 				</Container.Gray>
