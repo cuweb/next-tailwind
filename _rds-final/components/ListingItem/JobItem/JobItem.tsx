@@ -18,7 +18,7 @@ export default function JobItem(props: any) {
 						{/* Extend touch target to entire panel */}
 						<span className="absolute inset-0" aria-hidden="true" />
 						{title}
-						<span className="italic font-light"> at {type}</span>
+						<span className="italic font-light"> with {type}</span>
 					</a>
 				</h3>
 				<p className="flex text-xs text-gray-500">

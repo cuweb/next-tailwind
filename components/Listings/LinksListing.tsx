@@ -11,7 +11,7 @@ const links = [
 		link: "#",
 	},
 	{
-		name: "Events Calendar",
+		name: "Events Calendar and add stuff that makes it a long title",
 		link: "#",
 	},
 	{
