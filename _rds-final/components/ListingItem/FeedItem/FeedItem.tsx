@@ -1,6 +1,6 @@
 import Badge from "../../Badge/Badge";
 
-export default function FileItem(props: any) {
+export default function FeedItem(props: any) {
 	const { title, link, date, excerpt, category } = props;
 
 	return (
