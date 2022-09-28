@@ -58,7 +58,7 @@ const EventCalendar: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
-      <div className="relative bg-gray-800 pt-24 pb-20">
+      <div className="relative bg-gray-800 py-20 md:py-32">
         <div className="absolute inset-0">
           <img
             className="h-full w-full object-cover"
