@@ -5,7 +5,7 @@ export default function TemplateItem(props: any) {
 	return (
 		<li key={name}>
 			<div className="relative flex items-center gap-2 p-6 hover:bg-gray-50">
-				<div className="flex items-start gap-2">
+				<div className="flex items-start gap-3">
 					<div className="flex-none w-16 bg-blue-200 md:w-20">
 						Img/Icn
 					</div>
