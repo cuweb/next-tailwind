@@ -7,12 +7,12 @@ import Container from "../../_rds-final/layouts/Container/Container";
 import Column from "../../_rds-final/layouts/Columns/Columns";
 import BaseBanner from "../../_rds-final/components/Banner/BaseBanner/BaseBanner";
 import EventListing from "../../components/Listings/EventListing";
-import FeedListing from "../../components/Listings/FeedListing";
 import NewsListing from "../../components/Listings/NewsListing";
-import MarketplaceListing from "../../components/Listings/MarketplaceListing";
+import FeedListing from "../../components/Listings/FeedListing";
+import Marketplace from "../../components/Listings/MarketplaceListing";
+import FileListing from "../../components/Listings/FileListing";
 import JobListing from "../../components/Listings/JobListing";
 import LinksListing from "../../components/Listings/LinksListing";
-import FileListing from "../../components/Listings/FileListing";
 
 const Home: NextPage = () => {
 	return (
@@ -32,75 +32,37 @@ const Home: NextPage = () => {
 							<NewsListing />
 						</div>
 					</div>
-
 					<div>
 						<div className="border rounded-lg border-cu-black-100">
 							<EventListing />
 						</div>
 					</div>
-
 					<div>
 						<div className="border rounded-lg border-cu-black-100">
 							<FeedListing />
 						</div>
 					</div>
-
 					<div>
 						<div className="border rounded-lg border-cu-black-100">
-							<MarketplaceListing />
+							<Marketplace />
 						</div>
 					</div>
-
-					<div>
-						<div className="border rounded-lg border-cu-black-100">
-							<JobListing />
-						</div>
-					</div>
-
 					<div>
 						<div className="border rounded-lg border-cu-black-100">
 							<FileListing />
 						</div>
 					</div>
-
+					<div>
+						<div className="border rounded-lg border-cu-black-100">
+							<JobListing />
+						</div>
+					</div>
 					<div>
 						<div className="border rounded-lg border-cu-black-100">
 							<LinksListing />
 						</div>
 					</div>
 				</Column.Two>
-
-				<Column.Three>
-					<div>
-						<div className="border rounded-lg border-cu-black-200">
-							<JobListing />
-						</div>
-					</div>
-
-					<div>
-						<div className="border rounded-lg border-cu-black-200">
-							<FileListing />
-						</div>
-					</div>
-
-					<div>
-						<div className="border rounded-lg border-cu-black-200">
-							<LinksListing />
-						</div>
-					</div>
-
-					<div>
-						<div className="border rounded-lg border-cu-black-200">
-							<FeedListing />
-						</div>
-					</div>
-
-					<div>
-						<div className="border rounded-lg border-cu-black-200">
-							<MarketplaceListing />
-						</div>
-					</div>
-				</Column.Three>
 			</Container.White>
 
 			<FooterBasic />
