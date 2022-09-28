@@ -5,11 +5,7 @@ import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 
 function classNames(...classes: any) {
-<<<<<<< HEAD
   return classes.filter(Boolean).join(' ');
-=======
-  return classes.filter(Boolean).join(" ");
->>>>>>> main
 }
 
 export default function Example() {
@@ -138,13 +134,8 @@ export default function Example() {
                           <a
                             href="#"
                             className={classNames(
-<<<<<<< HEAD
                               active ? 'bg-gray-100' : '',
                               'block px-4 py-2 text-sm text-gray-700'
-=======
-                              active ? "bg-gray-100" : "",
-                              "block px-4 py-2 text-sm text-gray-700"
->>>>>>> main
                             )}
                           >
                             Your Profile
@@ -156,13 +147,8 @@ export default function Example() {
                           <a
                             href="#"
                             className={classNames(
-<<<<<<< HEAD
                               active ? 'bg-gray-100' : '',
                               'block px-4 py-2 text-sm text-gray-700'
-=======
-                              active ? "bg-gray-100" : "",
-                              "block px-4 py-2 text-sm text-gray-700"
->>>>>>> main
                             )}
                           >
                             Settings
@@ -174,13 +160,8 @@ export default function Example() {
                           <a
                             href="#"
                             className={classNames(
-<<<<<<< HEAD
                               active ? 'bg-gray-100' : '',
                               'block px-4 py-2 text-sm text-gray-700'
-=======
-                              active ? "bg-gray-100" : "",
-                              "block px-4 py-2 text-sm text-gray-700"
->>>>>>> main
                             )}
                           >
                             Sign out
