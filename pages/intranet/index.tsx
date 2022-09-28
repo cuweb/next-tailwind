@@ -6,10 +6,10 @@ import DashboardPanel from "../../_rds-final/layouts/DashboardPanel/DashboardPan
 import NavBar from "../../_rds-final/components/Navbar/IntranetNavbar";
 import Profile from "../../_rds-final/components/Banner/Profile/Profile";
 
-import Top5 from "../../components/Listings/Top5";
-import NewsFeed from "../../components/Listings/NewsFeed";
+import NewsListing from "../../components/Listings/NewsListing";
+import FeedListing from "../../components/Listings/FeedListing";
 import EventListing from "../../components/Listings/EventListing";
-import Marketplace from "../../components/Listings/Marketplace";
+import Marketplace from "../../components/Listings/MarketplaceListing";
 import Files from "../../components/Listings/FileListing";
 import LinksListing from "../../components/Listings/LinksListing";
 import JobListing from "../../components/Listings/JobListing";
@@ -30,12 +30,12 @@ const Intranet: NextPage = () => {
 					<Column.TwoThird>
 						<DashboardPanel>
 							<DashboardPanel.Title>Top 5</DashboardPanel.Title>
-							<Top5 />
+							<NewsListing />
 						</DashboardPanel>
 
 						<DashboardPanel>
 							<DashboardPanel.Title>News</DashboardPanel.Title>
-							<NewsFeed />
+							<FeedListing />
 						</DashboardPanel>
 					</Column.TwoThird>
 				</Container.White>
@@ -43,8 +43,8 @@ const Intranet: NextPage = () => {
 				{/* <Container.Gray>
 					<Column.TwoThird>
 						<Panel className="bg-white rounded-lg">
-                        <Top5 />
-                        <NewsFeed />
+                        <NewsListing />
+                        <FeedListing />
 						</Panel>
 						<Panel className="bg-white rounded-lg">
 						</Panel>

@@ -1,23 +1,21 @@
 # Component Reference
 
-This component is used to create a full width container with a white or gray background color.
+This component is used to create a single news item and can also be used inside stacked lists.
 
 ## Usage
 
 ```jsx
-import Container from '{path}/layout/Container/Container';
+import { ITEM } from '{path}';
 
-<Container>
-    {add content}
-</Container>
+<Add>
 ```
 
 ## Options
 
-AddInfo
+The available props can be added like the following example:
 
-## Default Styles
+```jsx
+<Add>
+```
 
-In addition to options that are passed the following Tailwind classes are set on the component by default:
-
--   `py-8` -- adds 2rem (32px) of padding on the Y-axis (top & bottom)
+-   `prop` - add this and that to do thing for things
