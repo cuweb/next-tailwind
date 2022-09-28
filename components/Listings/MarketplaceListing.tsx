@@ -34,7 +34,7 @@ const marketplace = [
 	},
 ];
 
-export default function Marketplace() {
+export default function MarketplaceListing() {
 	return (
 		<StackedList.Dividers>
 			{marketplace.map(({ name, link, cost, image }) => (
