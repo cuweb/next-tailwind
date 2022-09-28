@@ -13,7 +13,7 @@ export default function MarketplaceItem(props: any) {
 						alt=""
 					/>
 					<div className="px-4">
-						<h3 className="text-base font-semibold text-gray-800">
+						<h3 className="text-sm font-semibold text-gray-800">
 							<a
 								href={link}
 								className="hover:text-cu-red focus:outline-none"
