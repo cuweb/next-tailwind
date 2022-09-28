@@ -7,6 +7,7 @@ import Container from "../../../_rds-final/layouts/Container/Container";
 import Column from "../../../_rds-final/layouts/Columns/Columns";
 import BaseBanner from "../../../_rds-final/components/Banner/BaseBanner/BaseBanner";
 import FeedListing from "../../../components/Listings/FeedListing";
+import ListSubNav from "./_ListSubnav";
 
 const Home: NextPage = () => {
 	return (
@@ -20,6 +21,9 @@ const Home: NextPage = () => {
 			<BaseBanner>Web Services Prototypes</BaseBanner>
 
 			<Container.White>
+				<Column>
+					<ListSubNav />
+				</Column>
 				<Column>
 					<div className="border rounded-lg border-cu-black-100">
 						<FeedListing />
