@@ -1,36 +1,36 @@
-import { Fragment, useState } from "react";
-import { Dialog, Disclosure, Popover, Transition } from "@headlessui/react";
-import { XMarkIcon } from "@heroicons/react/24/outline";
-import { ChevronDownIcon } from "@heroicons/react/20/solid";
-import { ArrowPathIcon } from "@heroicons/react/24/solid";
+import { Fragment, useState } from 'react';
+import { Dialog, Disclosure, Popover, Transition } from '@headlessui/react';
+import { XMarkIcon } from '@heroicons/react/24/outline';
+import { ChevronDownIcon } from '@heroicons/react/20/solid';
+import { ArrowPathIcon } from '@heroicons/react/24/solid';
 
 const filters = [
   {
-    id: "category",
-    name: "Category",
+    id: 'category',
+    name: 'Category',
     options: [
-      { value: "planning", label: "Planning", checked: false },
+      { value: 'planning', label: 'Planning', checked: false },
       {
-        value: "projectmanagement",
-        label: "Project Management",
+        value: 'projectmanagement',
+        label: 'Project Management',
         checked: false,
       },
     ],
   },
   {
-    id: "tags",
-    name: "Tags",
+    id: 'tags',
+    name: 'Tags',
     options: [
-      { value: "general", label: "General", checked: false },
+      { value: 'general', label: 'General', checked: false },
       {
-        value: "online/virtual",
-        label: "Online/Virtual",
+        value: 'online/virtual',
+        label: 'Online/Virtual',
         checked: false,
       },
-      { value: "finances", label: "Finances", checked: false },
+      { value: 'finances', label: 'Finances', checked: false },
       {
-        value: "healthyworkplace",
-        label: "Healthy Workplace",
+        value: 'healthyworkplace',
+        label: 'Healthy Workplace',
         checked: false,
       },
     ],
@@ -38,7 +38,7 @@ const filters = [
 ];
 
 function classNames(...classes: string[]) {
-  return classes.filter(Boolean).join(" ");
+  return classes.filter(Boolean).join(' ');
 }
 
 export default function EventFilter() {
@@ -102,8 +102,8 @@ export default function EventFilter() {
                               <span className="ml-6 flex items-center">
                                 <ChevronDownIcon
                                   className={classNames(
-                                    open ? "-rotate-180" : "rotate-0",
-                                    "h-5 w-5 transform"
+                                    open ? '-rotate-180' : 'rotate-0',
+                                    'h-5 w-5 transform'
                                   )}
                                   aria-hidden="true"
                                 />
@@ -208,7 +208,7 @@ export default function EventFilter() {
             <div className="pl-6">
               <button
                 type="button"
-                className="inline-flex items-center text-gray-500"
+                className="inline-flex items-center text-sm font-medium text-gray-700"
               >
                 <span>Clear all</span>
                 <ArrowPathIcon className="ml-2 h-4 w-4" />
