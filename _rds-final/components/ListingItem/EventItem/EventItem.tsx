@@ -11,8 +11,17 @@ export default function EventItem(props: any) {
 	return (
 		<li key={title}>
 			<div className="relative flex items-center gap-2 p-6 hover:bg-gray-50">
-				<div className="flex flex-col items-start gap-3 sm:items-center md:flex-row">
-					<div className="flex-none w-16 md:w-20">Img/Icn</div>
+				<div className="flex flex-col items-start gap-3 md:flex-row">
+					<div className="flex-none w-16 md:w-20">
+						<div className="flex flex-col justify-center flex-none w-auto h-16 text-center shadow rounded-2xl bg-gray-50 md:h-20">
+							<p className="text-xs font-bold uppercase text-cu-red">
+								{month}
+							</p>
+							<p className="text-2xl font-bold uppercase text-cu-black-900">
+								{day}
+							</p>
+						</div>
+					</div>
 
 					<div className="flex-auto">
 						<h3 className="mb-2 text-base font-semibold text-gray-800">
