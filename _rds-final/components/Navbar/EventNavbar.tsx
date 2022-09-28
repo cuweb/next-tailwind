@@ -1,6 +1,6 @@
 import { Fragment } from 'react';
 import { Disclosure, Menu, Transition } from '@headlessui/react';
-import { MagnifyingGlassIcon, ArrowUpTrayIcon } from '@heroicons/react/20/solid';
+import { MagnifyingGlassIcon, ArrowUpTrayIcon, PlusIcon } from '@heroicons/react/20/solid';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 function classNames(...classes: any) {
@@ -105,15 +105,16 @@ export default function Example() {
               </div>
               <div className="hidden lg:ml-4 lg:flex lg:items-center">
 				<button
-			      type="button"
-			      className="border-transparent bg-cu-red font-medium text-white hover:bg-cu-blue focus:outline-none"
-		        >
-					<a 
+        		  type="button"
+        		  className="inline-flex items-center rounded-md border border-transparent bg-cu-red px-3 py-2 text-sm font-medium leading-4 text-white shadow-sm hover:bg-cu-blue focus:outline-none"
+      			>
+        		  <PlusIcon className="-ml-0.5 h-4 w-4" aria-hidden="true" />
+				  <a 
 					href="/events/submit"
-					className="px-6 py-2 text-white no-underline bg-cu-red rounded hover:bg-cu-blue hover:underline hover:text-white">
-					Submit Event
-					</a>
-		        </button>
+					className="px-1">
+					Event
+				  </a>
+      			</button>
 				
                 {/* Profile dropdown */}
                 <Menu as="div" className="relative ml-4 flex-shrink-0">
@@ -214,6 +215,13 @@ export default function Example() {
               >
                 Calendar
               </Disclosure.Button>
+			  <Disclosure.Button
+                as="a"
+                href="/events/submit"
+                className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-600 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-800"
+              >
+                Submit Event
+              </Disclosure.Button>
             </div>
             <div className="border-t border-gray-200 pt-4 pb-3">
               <div className="flex items-center px-4">
@@ -232,15 +240,6 @@ export default function Example() {
                     tom@example.com
                   </div>
                 </div>
-                <button
-                  type="button"
-                  className="ml-auto flex-shrink-0 rounded-full bg-white p-1 text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
-                >
-                  <span className="sr-only">Submit Event</span>
-                  <a href='/events/submit'>
-				  	<ArrowUpTrayIcon className="h-6 w-6" aria-hidden="true" />
-				  </a>
-                </button>
               </div>
               <div className="mt-3 space-y-1">
                 <Disclosure.Button
