@@ -11,7 +11,7 @@ export default function TemplateItem(props: any) {
 					<div className="flex-auto">
 						<h3 className="text-sm font-semibold text-cu-blue sm:text-base">
 							<a
-								href="#"
+								href={link}
 								className="hover:text-cu-red focus:outline-none"
 							>
 								<span
