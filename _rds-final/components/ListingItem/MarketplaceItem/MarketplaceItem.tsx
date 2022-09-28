@@ -5,7 +5,7 @@ export default function MarketplaceItem(props: any) {
 	const { name, link, cost, image } = props;
 	return (
 		<li key={name}>
-			<div className="relative flex items-center p-6 hover:bg-gray-50">
+			<div className="relative flex items-center p-4 hover:bg-gray-50 sm:p-6">
 				<div className="flex items-start lg:items-center">
 					<img
 						className="w-20 h-auto rounded lg:w-24"
