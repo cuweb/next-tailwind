@@ -1,9 +1,8 @@
 import { Fragment } from 'react';
 import { Disclosure, Menu, Transition } from '@headlessui/react';
-import { MagnifyingGlassIcon } from '@heroicons/react/20/solid';
-import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline';
+import { MagnifyingGlassIcon, ArrowUpTrayIcon } from '@heroicons/react/20/solid';
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
-
 function classNames(...classes: any) {
   return classes.filter(Boolean).join(' ');
 }
@@ -69,12 +68,6 @@ export default function Example() {
                   >
                     Single 3
                   </a>
-				  <a
-                    href="/events/submit"
-                    className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-cu-black-100 hover:text-cu-red"
-                  >
-                    Submit
-                  </a>
                 </div>
               </div>
               <div className="flex flex-1 items-center justify-center px-2 lg:ml-6 lg:justify-end">
@@ -111,14 +104,17 @@ export default function Example() {
                 </Disclosure.Button>
               </div>
               <div className="hidden lg:ml-4 lg:flex lg:items-center">
-                <button
-                  type="button"
-                  className="flex-shrink-0 rounded-full bg-white p-1 text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
-                >
-                  <span className="sr-only">View notifications</span>
-                  <BellIcon className="h-6 w-6" aria-hidden="true" />
-                </button>
-
+				<button
+			      type="button"
+			      className="border-transparent bg-cu-red font-medium text-white hover:bg-cu-blue focus:outline-none"
+		        >
+					<a 
+					href="/events/submit"
+					className="px-6 py-2 text-white no-underline bg-cu-red rounded hover:bg-cu-blue hover:underline hover:text-white">
+					Submit Event
+					</a>
+		        </button>
+				
                 {/* Profile dropdown */}
                 <Menu as="div" className="relative ml-4 flex-shrink-0">
                   <div>
@@ -240,8 +236,10 @@ export default function Example() {
                   type="button"
                   className="ml-auto flex-shrink-0 rounded-full bg-white p-1 text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
                 >
-                  <span className="sr-only">View notifications</span>
-                  <BellIcon className="h-6 w-6" aria-hidden="true" />
+                  <span className="sr-only">Submit Event</span>
+                  <a href='/events/submit'>
+				  	<ArrowUpTrayIcon className="h-6 w-6" aria-hidden="true" />
+				  </a>
                 </button>
               </div>
               <div className="mt-3 space-y-1">
