@@ -38,8 +38,9 @@ export default function Example() {
 								</Link>
 								<div className="hidden lg:ml-6 lg:flex lg:space-x-6">
 									<a
-										href="/events"
-										className="inline-flex items-center px-1 pt-1 text-sm font-medium border-b-2 border-cu-red text-cu-black-800"
+										href="/events/featured"
+										className="inline-flex items-center px-1 pt-1 text-sm font-medium border-b-2 border-transparent text-cu-black-800 hover:border-cu-black-100 hover:text-cu-red"
+										// className="inline-flex items-center px-1 pt-1 text-sm font-medium border-b-2 border-cu-red text-cu-black-800"
 									>
 										Featured
 									</a>
@@ -53,19 +54,7 @@ export default function Example() {
 										href="/events/single"
 										className="inline-flex items-center px-1 pt-1 text-sm font-medium border-b-2 border-transparent text-cu-black-800 hover:border-cu-black-100 hover:text-cu-red"
 									>
-										Single 1
-									</a>
-									<a
-										href="/events/single2"
-										className="inline-flex items-center px-1 pt-1 text-sm font-medium border-b-2 border-transparent text-cu-black-800 hover:border-cu-black-100 hover:text-cu-red"
-									>
-										Single 2
-									</a>
-									<a
-										href="/events/single3"
-										className="inline-flex items-center px-1 pt-1 text-sm font-medium border-b-2 border-transparent text-cu-black-800 hover:border-cu-black-100 hover:text-cu-red"
-									>
-										Single 3
+										Single
 									</a>
 								</div>
 							</div>

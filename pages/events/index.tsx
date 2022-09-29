@@ -37,7 +37,7 @@ const EventCalendar: NextPage = () => {
 						<EventFilter />
 					</Column.One>
 					<Column.TwoThird>
-						<Panel className="border rounded-lg shadow-lg border-cu-black-50">
+						<Panel className="border rounded-lg border-cu-black-100">
 							<EventListing />
 						</Panel>
 						<div className="hidden md:ml-2 md:block">
