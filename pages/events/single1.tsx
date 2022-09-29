@@ -4,20 +4,26 @@ import Head from "next/head";
 import Footer from "../../_rds-final/components/Footer/FooterStandard/FooterStandard";
 import Navbar from "../../_rds-final/components/Navbar/EventNavbar";
 import Column from "../../_rds-final/layouts/Columns/Columns";
-import { Menu, Transition } from "@headlessui/react";
+
+import { ShareIcon } from "@heroicons/react/24/outline";
+
 import { Fragment } from "react";
+import { Menu, Transition } from "@headlessui/react";
 import {
 	CalendarDaysIcon,
 	ArchiveBoxIcon,
+	ArrowRightCircleIcon,
 	ChevronDownIcon,
+	DocumentDuplicateIcon,
+	HeartIcon,
 	EnvelopeIcon,
+	PencilSquareIcon,
+	TrashIcon,
+	UserPlusIcon,
 	CurrencyDollarIcon,
 	MapPinIcon,
-	ShareIcon,
 	ChatBubbleBottomCenterTextIcon,
-	TagIcon,
 } from "@heroicons/react/20/solid";
-import Badge from "../../_rds-final/components/Badge/Badge";
 
 const features = [
 	{
@@ -26,7 +32,7 @@ const features = [
 		icon: MapPinIcon,
 	},
 	{
-		name: "October 2nd-10th, 2022",
+		name: "Wednesday, October 2nd, 2022",
 		description: "2:00PM - 10:00PM",
 		icon: CalendarDaysIcon,
 	},
@@ -243,221 +249,154 @@ const EventCalendar: NextPage = () => {
 				</main>
 			</div>
 
-			<main className="mx-auto max-w-7xl pb-14 md:pb-0">
-				<Column.TwoThird>
-					<div className="prose prose-lg text-gray-500 prose-indigo">
-						<h2>
-							<span className="block mt-2 text-3xl font-bold leading-8 tracking-tight text-gray-900 sm:text-4xl">
-								Interesting Event Heading
-							</span>
-						</h2>
-						<p className="mt-8 text-xl leading-8 text-gray-500">
-							Aliquet nec orci mattis amet quisque ullamcorper
-							neque, nibh sem. At arcu, sit dui mi, nibh dui, diam
-							eget aliquam. Quisque id at vitae feugiat egestas
-							ac. Diam nulla orci at in viverra scelerisque eget.
-							Eleifend egestas fringilla sapien.
-						</p>
-						<p>
-							Faucibus commodo massa rhoncus, volutpat.{" "}
-							<strong>Dignissim</strong> sed{" "}
-							<strong>eget risus enim</strong>. Mattis mauris
-							semper sed amet vitae sed turpis id. Id dolor
-							praesent donec est. Odio penatibus risus viverra
-							tellus varius sit neque erat velit. Faucibus commodo
-							massa rhoncus, volutpat. Dignissim sed eget risus
-							enim. <a href="#">Mattis mauris semper</a> sed amet
-							vitae sed turpis id.
-						</p>
-						<ul role="list">
-							<li>
-								Quis elit egestas venenatis mattis dignissim.
-							</li>
-							<li>
-								Cras cras lobortis vitae vivamus ultricies
-								facilisis tempus.
-							</li>
-							<li>
-								Orci in sit morbi dignissim metus diam arcu
-								pretium.
-							</li>
-						</ul>
-						<p>
-							Quis semper vulputate aliquam venenatis egestas
-							sagittis quisque orci. Donec commodo sit viverra
-							aliquam porttitor ultrices gravida eu. Tincidunt
-							leo, elementum mattis elementum ut nisl, justo,
-							amet, mattis. Nunc purus, diam commodo tincidunt
-							turpis. Amet, duis sed elit interdum dignissim.
-						</p>
-						<h2>Could these headings be more interesting?</h2>
-						<p>
-							Id orci tellus laoreet id ac. Dolor, aenean leo, ac
-							etiam consequat in. Convallis arcu ipsum urna nibh.
-							Pharetra, euismod vitae interdum mauris enim,
-							consequat vulputate nibh. Maecenas pellentesque id
-							sed tellus mauris, ultrices mauris. Tincidunt enim
-							cursus ridiculus mi. Pellentesque nam sed nullam sed
-							diam turpis ipsum eu a sed convallis diam.
-						</p>
-						<blockquote>
-							<p>
-								Sagittis scelerisque nulla cursus in enim
-								consectetur quam. Dictum urna sed consectetur
-								neque tristique pellentesque. Blandit amet, sed
-								aenean erat arcu morbi.
-							</p>
-						</blockquote>
-						<p>
-							Faucibus commodo massa rhoncus, volutpat. Dignissim
-							sed eget risus enim. Mattis mauris semper sed amet
-							vitae sed turpis id. Id dolor praesent donec est.
-							Odio penatibus risus viverra tellus varius sit neque
-							erat velit.
-						</p>
-						<figure>
-							<img
-								className="w-full rounded-lg"
-								src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=facearea&w=1310&h=873&q=80&facepad=3"
-								alt=""
-								width={1310}
-								height={873}
-							/>
-							<figcaption>
-								Sagittis scelerisque nulla cursus in enim
-								consectetur quam.
-							</figcaption>
-						</figure>
-						<h2>No, they are maximum interesting</h2>
-						<p>
-							Purus morbi dignissim senectus mattis{" "}
-							<a href="#">adipiscing</a>. Amet, massa quam varius
-							orci dapibus volutpat cras. In amet eu ridiculus leo
-							sodales cursus tristique. Tincidunt sed tempus ut
-							viverra ridiculus non molestie. Gravida quis
-							fringilla amet eget dui tempor dignissim. Facilisis
-							auctor venenatis varius nunc, congue erat ac. Cras
-							fermentum convallis quam.
-						</p>
-						<p>
-							Faucibus commodo massa rhoncus, volutpat. Dignissim
-							sed eget risus enim. Mattis mauris semper sed amet
-							vitae sed turpis id. Id dolor praesent donec est.
-							Odio penatibus risus viverra tellus varius sit neque
-							erat velit.
-						</p>
+			<main>
+				<Column.One>
+					<dl className="mt-8 space-y-0 md:grid md:grid-cols-2 md:gap-x-0 md:gap-y-0 md:space-y-0">
+						{features.map((feature) => (
+							<div
+								key={feature.name}
+								className="relative p-4 border border-cu-black-50 bg-gray-50"
+							>
+								<dt>
+									<div className="absolute flex justify-center w-12 h-12 text-cu-blue-300">
+										<feature.icon
+											className="w-10 h-10"
+											aria-hidden="true"
+										/>
+									</div>
+									<p className="ml-16 font-bold leading-6 text-gray-900 text-md">
+										{feature.name}
+									</p>
+								</dt>
+								<dd className="ml-16 text-base text-gray-500">
+									{feature.description}
+								</dd>
+							</div>
+						))}
+					</dl>
+
+					<div className="relative mt-6 overflow-hidden bg-white">
+						<div className="relative px-4 sm:px-6 lg:px-8">
+							<div className="mx-auto text-lg max-w-prose">
+								<h2>
+									<span className="block mt-2 text-3xl font-bold leading-8 tracking-tight text-gray-900 sm:text-4xl">
+										Interesting Event Heading
+									</span>
+								</h2>
+								<p className="mt-8 text-xl leading-8 text-gray-500">
+									Aliquet nec orci mattis amet quisque
+									ullamcorper neque, nibh sem. At arcu, sit
+									dui mi, nibh dui, diam eget aliquam. Quisque
+									id at vitae feugiat egestas ac. Diam nulla
+									orci at in viverra scelerisque eget.
+									Eleifend egestas fringilla sapien.
+								</p>
+							</div>
+							<div className="mx-auto mt-6 prose prose-lg text-gray-500 prose-indigo">
+								<p>
+									Faucibus commodo massa rhoncus, volutpat.{" "}
+									<strong>Dignissim</strong> sed{" "}
+									<strong>eget risus enim</strong>. Mattis
+									mauris semper sed amet vitae sed turpis id.
+									Id dolor praesent donec est. Odio penatibus
+									risus viverra tellus varius sit neque erat
+									velit. Faucibus commodo massa rhoncus,
+									volutpat. Dignissim sed eget risus enim.{" "}
+									<a href="#">Mattis mauris semper</a> sed
+									amet vitae sed turpis id.
+								</p>
+								<ul role="list">
+									<li>
+										Quis elit egestas venenatis mattis
+										dignissim.
+									</li>
+									<li>
+										Cras cras lobortis vitae vivamus
+										ultricies facilisis tempus.
+									</li>
+									<li>
+										Orci in sit morbi dignissim metus diam
+										arcu pretium.
+									</li>
+								</ul>
+								<p>
+									Quis semper vulputate aliquam venenatis
+									egestas sagittis quisque orci. Donec commodo
+									sit viverra aliquam porttitor ultrices
+									gravida eu. Tincidunt leo, elementum mattis
+									elementum ut nisl, justo, amet, mattis. Nunc
+									purus, diam commodo tincidunt turpis. Amet,
+									duis sed elit interdum dignissim.
+								</p>
+								<h2>
+									Could these headings be more interesting?
+								</h2>
+								<p>
+									Id orci tellus laoreet id ac. Dolor, aenean
+									leo, ac etiam consequat in. Convallis arcu
+									ipsum urna nibh. Pharetra, euismod vitae
+									interdum mauris enim, consequat vulputate
+									nibh. Maecenas pellentesque id sed tellus
+									mauris, ultrices mauris. Tincidunt enim
+									cursus ridiculus mi. Pellentesque nam sed
+									nullam sed diam turpis ipsum eu a sed
+									convallis diam.
+								</p>
+								<blockquote>
+									<p>
+										Sagittis scelerisque nulla cursus in
+										enim consectetur quam. Dictum urna sed
+										consectetur neque tristique
+										pellentesque. Blandit amet, sed aenean
+										erat arcu morbi.
+									</p>
+								</blockquote>
+								<p>
+									Faucibus commodo massa rhoncus, volutpat.
+									Dignissim sed eget risus enim. Mattis mauris
+									semper sed amet vitae sed turpis id. Id
+									dolor praesent donec est. Odio penatibus
+									risus viverra tellus varius sit neque erat
+									velit.
+								</p>
+								<figure>
+									<img
+										className="w-full rounded-lg"
+										src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=facearea&w=1310&h=873&q=80&facepad=3"
+										alt=""
+										width={1310}
+										height={873}
+									/>
+									<figcaption>
+										Sagittis scelerisque nulla cursus in
+										enim consectetur quam.
+									</figcaption>
+								</figure>
+								<h2>No, they are maximum interesting</h2>
+								<p>
+									Purus morbi dignissim senectus mattis{" "}
+									<a href="#">adipiscing</a>. Amet, massa quam
+									varius orci dapibus volutpat cras. In amet
+									eu ridiculus leo sodales cursus tristique.
+									Tincidunt sed tempus ut viverra ridiculus
+									non molestie. Gravida quis fringilla amet
+									eget dui tempor dignissim. Facilisis auctor
+									venenatis varius nunc, congue erat ac. Cras
+									fermentum convallis quam.
+								</p>
+								<p>
+									Faucibus commodo massa rhoncus, volutpat.
+									Dignissim sed eget risus enim. Mattis mauris
+									semper sed amet vitae sed turpis id. Id
+									dolor praesent donec est. Odio penatibus
+									risus viverra tellus varius sit neque erat
+									velit.
+								</p>
+							</div>
+						</div>
 					</div>
 
-					<aside className="relative">
-						<div className="sticky top-28">
-							<ul className="flex flex-wrap gap-2 mt-4">
-								<li className="inline-flex items-center py-2 pl-3 pr-4 text-sm font-semibold bg-white border rounded-md whitespace-nowrap border-cu-blue-700 text-cu-black-600">
-									<CalendarDaysIcon className="mr-1.5 h-4 w-4 text-cu-blue-700" />
-									Multi-Day Event
-								</li>
-							</ul>
-
-							<dl className="mt-5 space-y-0 md:grid md:grid-cols-1 md:gap-x-0 md:gap-y-4 md:space-y-0">
-								{features.map((feature) => (
-									<div
-										key={feature.name}
-										className="relative p-4 border rounded-lg border-cu-black-100 bg-gray-50"
-									>
-										<dt>
-											<div className="absolute flex justify-center w-10 h-10 top-5 text-cu-blue-700">
-												<feature.icon
-													className="w-6 h-6"
-													aria-hidden="true"
-												/>
-											</div>
-											<p className="ml-12 font-bold leading-6 text-gray-900 text-md">
-												{feature.name}
-											</p>
-										</dt>
-										<dd className="ml-12 text-sm text-gray-500">
-											{feature.description}
-										</dd>
-									</div>
-								))}
-							</dl>
-
-							<ul className="flex flex-wrap gap-2 mt-4">
-								<li className="inline-flex">
-									<a
-										href="#"
-										className="flex items-center px-2 py-1 text-xs font-semibold text-white rounded-md whitespace-nowrap bg-cu-red hover:bg-cu-blue"
-									>
-										<TagIcon className="mr-1.5 h-4 w-4 text-white" />
-										Faculty Event
-									</a>
-								</li>
-								<li className="inline-flex">
-									<a
-										href="#"
-										className="flex items-center px-2 py-1 text-xs font-semibold text-white rounded-md whitespace-nowrap bg-cu-red hover:bg-cu-blue"
-									>
-										<TagIcon className="mr-1.5 h-4 w-4 text-white" />
-										Student Event
-									</a>
-								</li>
-								<li className="inline-flex">
-									<a
-										href="#"
-										className="flex items-center px-2 py-1 text-xs font-semibold text-white rounded-md whitespace-nowrap bg-cu-red hover:bg-cu-blue"
-									>
-										<TagIcon className="mr-1.5 h-4 w-4 text-white" />
-										Luncheon
-									</a>
-								</li>
-								<li className="inline-flex">
-									<a
-										href="#"
-										className="flex items-center px-2 py-1 text-xs font-semibold text-white rounded-md whitespace-nowrap bg-cu-red hover:bg-cu-blue"
-									>
-										<TagIcon className="mr-1.5 h-4 w-4 text-white" />
-										On-Campus Event
-									</a>
-								</li>
-								<li className="inline-flex">
-									<a
-										href="#"
-										className="flex items-center px-2 py-1 text-xs font-semibold text-white rounded-md whitespace-nowrap bg-cu-red hover:bg-cu-blue"
-									>
-										<TagIcon className="mr-1.5 h-4 w-4 text-white" />
-										Online Available
-									</a>
-								</li>
-							</ul>
-
-							{/* <dl className="mt-5 space-y-0 md:grid md:grid-cols-1 md:gap-x-0 md:gap-y-4 md:space-y-0">
-								{features.map((feature) => (
-									<div
-										key={feature.name}
-										className="relative p-4 border rounded-lg border-cu-black-100 bg-gray-50"
-									>
-										<dt>
-											<div className="absolute flex justify-center w-10 h-10 top-5 text-cu-blue-700">
-												<feature.icon
-													className="w-6 h-6"
-													aria-hidden="true"
-												/>
-											</div>
-											<p className="ml-12 font-bold leading-6 text-gray-900 text-md">
-												{feature.name}
-											</p>
-										</dt>
-										<dd className="ml-12 text-sm text-gray-500">
-											{feature.description}
-										</dd>
-									</div>
-								))}
-							</dl> */}
-						</div>
-					</aside>
-				</Column.TwoThird>
-
-				<Column.One>
-					<div className="overflow-hidden rounded-lg bg-cu-black-50">
+					<div className="mt-6 overflow-hidden rounded-lg bg-cu-black-50">
 						<iframe
 							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2802.1407807835403!2d-75.69560014816834!3d45.38633087899766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce05dee0ae65eb%3A0x17feb47012b59f30!2sCarleton%20University%20Raven&#39;s%20Nest!5e0!3m2!1sen!2sca!4v1664032553405!5m2!1sen!2sca"
 							width="100%"
