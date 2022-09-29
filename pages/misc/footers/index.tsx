@@ -1,13 +1,13 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 
-import NavBar from "../../_rds-final/components/Navbar/CuTheme";
-import FooterBasic from "../../_rds-final/components/Footer/FooterBasic/FooterBasic";
-import FooterStandard from "../../_rds-final/components/Footer/FooterStandard/FooterStandard";
-import FooterCondensed from "../../_rds-final/components/Footer/FooterCondensed/FooterCondensed";
-import FooterSwoosh from "../../_rds-final/components/Footer/FooterSwoosh/FooterSwoosh";
-import Container from "../../_rds-final/layouts/Container/Container";
-import BaseBanner from "../../_rds-final/components/Banner/BaseBanner/BaseBanner";
+import NavBar from "../../../_rds-final/components/Navbar/Carleton";
+import FooterBasic from "../../../_rds-final/components/Footer/FooterBasic/FooterBasic";
+import FooterStandard from "../../../_rds-final/components/Footer/FooterStandard/FooterStandard";
+import FooterCondensed from "../../../_rds-final/components/Footer/FooterCondensed/FooterCondensed";
+import FooterSwoosh from "../../../_rds-final/components/Footer/FooterSwoosh/FooterSwoosh";
+import Container from "../../../_rds-final/layouts/Container/Container";
+import BaseBanner from "../../../_rds-final/components/Banner/BaseBanner/BaseBanner";
 
 import { ArrowDownIcon } from "@heroicons/react/24/outline";
 

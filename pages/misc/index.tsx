@@ -1,14 +1,46 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import NavBar from "../../_rds-final/components/Navbar/IntranetNavbar";
+
+import NavBar from "../../_rds-final/components/Navbar/CuTheme";
 import Footer from "../../_rds-final/components/Footer/FooterStandard/FooterStandard";
 import Container from "../../_rds-final/layouts/Container/Container";
 import Columns from "../../_rds-final/layouts/Columns/Columns";
 import BaseBanner from "../../_rds-final/components/Banner/BaseBanner/BaseBanner";
-import Panel from "../../_rds-final/layouts/Panel/Panel";
-import Toast from "../../_rds-final/components/Toasts/Toasts";
 
-const PageLayout: NextPage = () => {
+import { EllipsisVerticalIcon } from "@heroicons/react/20/solid";
+
+const projects = [
+	{
+		name: "Card Tests",
+		initials: "CT",
+		href: "/misc/cards",
+		bgColor: "bg-pink-600",
+	},
+	{
+		name: "Footer Tests",
+		initials: "FT",
+		href: "/misc/footers",
+		bgColor: "bg-purple-600",
+	},
+	{
+		name: "List Tests",
+		initials: "LT",
+		href: "/misc/lists",
+		bgColor: "bg-yellow-500",
+	},
+	{
+		name: "Toasts",
+		initials: "TS",
+		href: "/misc/toasts",
+		bgColor: "bg-green-500",
+	},
+];
+
+function classNames(...classes: any) {
+	return classes.filter(Boolean).join(" ");
+}
+
+const Home: NextPage = () => {
 	return (
 		<>
 			<Head>
@@ -17,28 +49,42 @@ const PageLayout: NextPage = () => {
 			</Head>
 			<NavBar />
 
-			<BaseBanner>Layouts, Grids &amp; Spacing</BaseBanner>
+			<BaseBanner>Odds and Ends</BaseBanner>
 
 			<main>
 				<Container.White>
-					<Columns.Two>
-						<Panel className="p-6 rounded-md bg-cu-black-50">
-							<p>
-								Lorem ipsum dolor sit amet, consectetur
-								adipiscing elit. Cras vel urna in mauris lacinia
-								convallis. Curabitur a nibh quis leo laoreet
-								porttitor.
-							</p>
-						</Panel>
-						<Panel className="p-6 rounded-md bg-cu-black-50">
-							<p>
-								Lorem ipsum dolor sit amet, consectetur
-								adipiscing elit. Cras vel urna in mauris lacinia
-								convallis. Curabitur a nibh quis leo laoreet
-								porttitor.
-							</p>
-						</Panel>
-					</Columns.Two>
+					<Columns.One>
+						<ul
+							role="list"
+							className="grid grid-cols-1 gap-5 mt-3 sm:grid-cols-2 sm:gap-6 lg:grid-cols-4"
+						>
+							{projects.map((project) => (
+								<li
+									key={project.name}
+									className="flex col-span-1 rounded-md shadow-sm"
+								>
+									<div
+										className={classNames(
+											project.bgColor,
+											"flex w-16 flex-shrink-0 items-center justify-center rounded-l-md text-sm font-medium text-white"
+										)}
+									>
+										{project.initials}
+									</div>
+									<div className="flex items-center justify-between flex-1 truncate bg-white border-t border-b border-r border-gray-200 rounded-r-md">
+										<div className="flex-1 px-4 py-4 text-sm truncate">
+											<a
+												href={project.href}
+												className="font-medium text-gray-900 hover:text-gray-600"
+											>
+												{project.name}
+											</a>
+										</div>
+									</div>
+								</li>
+							))}
+						</ul>
+					</Columns.One>
 				</Container.White>
 			</main>
 
@@ -47,4 +93,4 @@ const PageLayout: NextPage = () => {
 	);
 };
 
-export default PageLayout;
+export default Home;
