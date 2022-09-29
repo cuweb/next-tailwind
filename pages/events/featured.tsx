@@ -5,12 +5,65 @@ import Footer from "../../_rds-final/components/Footer/FooterStandard/FooterStan
 import Navbar from "../../_rds-final/components/Navbar/EventNavbar";
 import Container from "../../_rds-final/layouts/Container/Container";
 import Column from "../../_rds-final/layouts/Columns/Columns";
-import Panel from "../../_rds-final/layouts/Panel/Panel";
-import EventFilter from "../../_rds-final/components/Filter/Filter";
-import SmallCalendar from "../../_rds-final/components/Calendar/SmallCalendar/SmallCalendar";
-
-import EventListing from "../../components/Listings/EventListing";
 import EventBanner from "../../components/Banner/EventBanner";
+import EventCard from "../../components/Card/EventCardImage";
+
+const featured = [
+	{
+		name: "Lived Experience Luncheon Series with Dr. Alex Auerbach",
+		link: "#",
+		register: "#",
+		month: "Sept",
+		day: "14",
+		description:
+			"Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate id malesuada non. Cras aliquet purus dui laoreet diam sed lacus, fames.",
+	},
+	{
+		name: "Science Student Alumni Mixer 2022",
+		link: "#",
+		register: "#",
+		month: "Sept",
+		day: "19",
+		description:
+			"Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate id malesuada non. Cras aliquet purus dui laoreet diam sed lacus, fames.",
+	},
+	{
+		name: "Milestone Anniversary Celebration 2022",
+		link: "#",
+		register: "#",
+		month: "Sept",
+		day: "23",
+		description:
+			"Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate id malesuada non. Cras aliquet purus dui laoreet diam sed lacus, fames.",
+	},
+	{
+		name: "Lived Experience Luncheon Series with Dr. Alex Auerbach",
+		link: "#",
+		register: "#",
+		month: "Sept",
+		day: "14",
+		description:
+			"Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate id malesuada non. Cras aliquet purus dui laoreet diam sed lacus, fames.",
+	},
+	{
+		name: "Science Student Alumni Mixer 2022",
+		link: "#",
+		register: "#",
+		month: "Sept",
+		day: "19",
+		description:
+			"Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate id malesuada non. Cras aliquet purus dui laoreet diam sed lacus, fames.",
+	},
+	{
+		name: "Milestone Anniversary Celebration 2022",
+		link: "#",
+		register: "#",
+		month: "Sept",
+		day: "23",
+		description:
+			"Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate id malesuada non. Cras aliquet purus dui laoreet diam sed lacus, fames.",
+	},
+];
 
 const EventCalendar: NextPage = () => {
 	return (
@@ -22,22 +75,33 @@ const EventCalendar: NextPage = () => {
 			<Navbar />
 
 			<Container.Empty>
-				<EventBanner>Upcoming Events</EventBanner>
+				<EventBanner>Featured Events</EventBanner>
 			</Container.Empty>
 
 			<main className="pb-4">
 				<Container.White>
-					<Column.One>
-						<EventFilter />
-					</Column.One>
-					<Column.TwoThird>
-						<Panel className="border rounded-lg shadow-lg border-cu-black-50">
-							<EventListing />
-						</Panel>
-						<div className="hidden md:block">
-							<SmallCalendar />
-						</div>
-					</Column.TwoThird>
+					<Column.Three>
+						{featured.map(
+							({
+								name,
+								link,
+								register,
+								month,
+								day,
+								description,
+							}) => (
+								<EventCard
+									key={name}
+									name={name}
+									link={link}
+									register={register}
+									month={month}
+									day={day}
+									description={description}
+								/>
+							)
+						)}
+					</Column.Three>
 				</Container.White>
 			</main>
 
