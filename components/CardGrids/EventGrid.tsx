@@ -29,26 +29,33 @@ const featured = [
 		description:
 			"Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate id malesuada non. Cras aliquet purus dui laoreet diam sed lacus, fames.",
 	},
+	{
+		name: "Science Student Alumni Mixer 2022",
+		link: "#",
+		register: "#",
+		month: "Sept",
+		day: "19",
+		description:
+			"Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate id malesuada non. Cras aliquet purus dui laoreet diam sed lacus, fames.",
+	},
 ];
 
-export default function AltFeaturedListing() {
+export default function EventGrid() {
 	return (
-		<section className="relative z-10 mb-8 -mt-32">
-			<Column.Three>
-				{featured.map(
-					({ name, link, register, month, day, description }) => (
-						<EventCardImage
-							key={name}
-							name={name}
-							link={link}
-							register={register}
-							month={month}
-							day={day}
-							description={description}
-						/>
-					)
-				)}
-			</Column.Three>
-		</section>
+		<>
+			{featured.map(
+				({ name, link, register, month, day, description }) => (
+					<EventCardImage
+						key={name}
+						name={name}
+						link={link}
+						register={register}
+						month={month}
+						day={day}
+						description={description}
+					/>
+				)
+			)}
+		</>
 	);
 }
