@@ -208,7 +208,7 @@ export default function FooterStandard() {
 				</div>
 			</div>
 
-			<div className="flex flex-col-reverse gap-4 px-8 pt-8 mx-auto mb-4 text-lg max-w-7xl text-cu-black-300 lg:grid-cols-3 lg:flex-row lg:justify-between lg:pb-8 lg:text-left lg:text-sm">
+			<div className="flex flex-col-reverse gap-4 p-8 mx-auto text-sm max-w-7xl text-cu-black-300 sm:pb-8 sm:text-lg lg:grid-cols-3 lg:flex-row lg:justify-between lg:text-left lg:text-sm">
 				<p className="text-center">
 					Contact us by{" "}
 					<a href="#" className="text-white hover:text-cu-red">
@@ -232,7 +232,7 @@ export default function FooterStandard() {
 							>
 								<span className="sr-only">{item.name}</span>
 								<item.icon
-									className="w-10 h-10 lg:h-7 lg:w-7"
+									className="w-6 h-6"
 									aria-hidden="true"
 								/>
 							</a>
