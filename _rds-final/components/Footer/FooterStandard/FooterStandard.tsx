@@ -232,7 +232,7 @@ export default function FooterStandard() {
 							>
 								<span className="sr-only">{item.name}</span>
 								<item.icon
-									className="w-6 h-6"
+									className="w-8 h-8 sm:h-6 sm:w-6"
 									aria-hidden="true"
 								/>
 							</a>
