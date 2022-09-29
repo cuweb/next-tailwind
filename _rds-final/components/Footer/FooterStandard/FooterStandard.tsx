@@ -208,7 +208,7 @@ export default function FooterStandard() {
 				</div>
 			</div>
 
-			<div className="flex flex-col-reverse gap-4 p-8 mx-auto text-sm max-w-7xl text-cu-black-300 sm:pb-8 sm:text-lg lg:grid-cols-3 lg:flex-row lg:justify-between lg:text-left lg:text-sm">
+			<div className="flex flex-col-reverse gap-1 p-8 mx-auto text-sm max-w-7xl text-cu-black-300 sm:gap-4 sm:pb-8 sm:text-lg lg:grid-cols-3 lg:flex-row lg:justify-between lg:text-left lg:text-sm">
 				<p className="text-center">
 					Contact us by{" "}
 					<a href="#" className="text-white hover:text-cu-red">
