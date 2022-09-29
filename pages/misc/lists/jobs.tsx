@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 
-import NavBar from "../../../_rds-final/components/Navbar/CuTheme";
+import NavBar from "../../../_rds-final/components/Navbar/Carleton";
 import FooterBasic from "../../../_rds-final/components/Footer/FooterBasic/FooterBasic";
 import Container from "../../../_rds-final/layouts/Container/Container";
 import Column from "../../../_rds-final/layouts/Columns/Columns";
@@ -25,30 +25,30 @@ const Home: NextPage = () => {
 					<ListSubNav />
 				</Column>
 				<Column>
-					<div className="border rounded-lg border-cu-black-100">
+					<div className="rounded-lg border border-cu-black-100">
 						<JobListing />
 					</div>
 				</Column>
 				<Column.Two>
 					<div>
-						<div className="border rounded-lg border-cu-black-100">
+						<div className="rounded-lg border border-cu-black-100">
 							<JobListing />
 						</div>
 					</div>
 					<div>
-						<div className="border rounded-lg border-cu-black-100">
+						<div className="rounded-lg border border-cu-black-100">
 							<JobListing />
 						</div>
 					</div>
 				</Column.Two>
 				<Column.TwoThird>
 					<div>
-						<div className="border rounded-lg border-cu-black-100">
+						<div className="rounded-lg border border-cu-black-100">
 							<JobListing />
 						</div>
 					</div>
 					<div>
-						<div className="border rounded-lg border-cu-black-100">
+						<div className="rounded-lg border border-cu-black-100">
 							<JobListing />
 						</div>
 					</div>
