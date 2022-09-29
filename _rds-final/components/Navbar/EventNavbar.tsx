@@ -38,17 +38,16 @@ export default function Example() {
 								</Link>
 								<div className="hidden lg:ml-6 lg:flex lg:space-x-6">
 									<a
-										href="/events/featured"
-										className="inline-flex items-center px-1 pt-1 text-sm font-medium border-b-2 border-transparent text-cu-black-800 hover:border-cu-black-100 hover:text-cu-red"
-										// className="inline-flex items-center px-1 pt-1 text-sm font-medium border-b-2 border-cu-red text-cu-black-800"
-									>
-										Featured
-									</a>
-									<a
 										href="/events/weekly"
 										className="inline-flex items-center px-1 pt-1 text-sm font-medium border-b-2 border-transparent text-cu-black-800 hover:border-cu-black-100 hover:text-cu-red"
 									>
 										Weekly
+									</a>
+									<a
+										href="/events/monthly"
+										className="inline-flex items-center px-1 pt-1 text-sm font-medium border-b-2 border-transparent text-cu-black-800 hover:border-cu-black-100 hover:text-cu-red"
+									>
+										Monthly
 									</a>
 									<a
 										href="/events/single"
