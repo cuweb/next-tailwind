@@ -4,7 +4,7 @@ import Head from "next/head";
 import NavBar from "../../_rds-final/components/Navbar/CuTheme";
 import Footer from "../../_rds-final/components/Footer/FooterStandard/FooterStandard";
 import Container from "../../_rds-final/layouts/Container/Container";
-import Columns from "../../_rds-final/layouts/Columns/Columns";
+import Column from "../../_rds-final/layouts/Columns/Columns";
 import BaseBanner from "../../_rds-final/components/Banner/BaseBanner/BaseBanner";
 
 import { EllipsisVerticalIcon } from "@heroicons/react/20/solid";
@@ -53,7 +53,7 @@ const Home: NextPage = () => {
 
 			<main>
 				<Container>
-					<Columns.One>
+					<Column>
 						<ul
 							role="list"
 							className="mt-3 grid grid-cols-1 gap-5 sm:grid-cols-2 sm:gap-6 lg:grid-cols-4"
@@ -84,7 +84,7 @@ const Home: NextPage = () => {
 								</li>
 							))}
 						</ul>
-					</Columns.One>
+					</Column>
 				</Container>
 			</main>
 

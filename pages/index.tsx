@@ -4,7 +4,7 @@ import Head from "next/head";
 import NavBar from "../_rds-final/components/Navbar/CuTheme";
 import Footer from "../_rds-final/components/Footer/FooterStandard/FooterStandard";
 import Container from "../_rds-final/layouts/Container/Container";
-import Columns from "../_rds-final/layouts/Columns/Columns";
+import Column from "../_rds-final/layouts/Columns/Columns";
 import BaseBanner from "../_rds-final/components/Banner/BaseBanner/BaseBanner";
 
 import {
@@ -71,31 +71,31 @@ const Home: NextPage = () => {
 
 			<main>
 				<Container>
-					<Columns.One>
-						<dl className="mt-5 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+					<Column>
+						<dl className="grid grid-cols-1 gap-5 mt-5 sm:grid-cols-2 lg:grid-cols-3">
 							{projects.map((project) => (
 								<div
 									key={project.id}
-									className="relative overflow-hidden rounded-lg bg-white px-4 pt-5 pb-12 shadow sm:px-6 sm:pt-6"
+									className="relative px-4 pt-5 pb-12 overflow-hidden bg-white rounded-lg shadow sm:px-6 sm:pt-6"
 								>
 									<dt>
 										<div
 											className={`${project.color} absolute rounded-md p-3`}
 										>
 											<project.icon
-												className="h-6 w-6 text-white"
+												className="w-6 h-6 text-white"
 												aria-hidden="true"
 											/>
 										</div>
-										<p className="ml-16 truncate text-sm font-medium text-gray-500">
+										<p className="ml-16 text-sm font-medium text-gray-500 truncate">
 											{project.uni}
 										</p>
 									</dt>
-									<dd className="ml-16 flex items-baseline pb-6 sm:pb-7">
+									<dd className="flex items-baseline pb-6 ml-16 sm:pb-7">
 										<p className="text-2xl font-semibold text-gray-900">
 											{project.name}
 										</p>
-										<div className="absolute inset-x-0 bottom-0 bg-gray-50 px-4 py-4 sm:px-6">
+										<div className="absolute inset-x-0 bottom-0 px-4 py-4 bg-gray-50 sm:px-6">
 											<div className="text-sm">
 												<a
 													href={project.link}
@@ -110,7 +110,7 @@ const Home: NextPage = () => {
 								</div>
 							))}
 						</dl>
-					</Columns.One>
+					</Column>
 				</Container>
 			</main>
 

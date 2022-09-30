@@ -30,12 +30,12 @@ const EventCalendar: NextPage = () => {
 
 			<main className="pb-4">
 				<Container>
-					<Column.One>
+					<Column>
 						<h2 className="text-2xl font-semibold text-cu-black-800 md:text-4xl">
 							Upcoming Events
 						</h2>
 						<EventFilter />
-					</Column.One>
+					</Column>
 					<Column.TwoThird>
 						<Panel>
 							<EventListing />

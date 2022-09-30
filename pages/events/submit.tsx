@@ -16,12 +16,12 @@ const EventCalendar: NextPage = () => {
 			<Navbar />
 
 			<Container>
-				<Column.One>
+				<Column>
 					<h3 className="text-2xl font-semibold text-cu-black-800 md:text-4xl">
 						Event Submission
 					</h3>
 					<SubmitForm />
-				</Column.One>
+				</Column>
 			</Container>
 
 			<FooterBasic />

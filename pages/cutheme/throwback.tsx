@@ -3,7 +3,7 @@ import Head from "next/head";
 import NavBar from "../../_rds-final/components/Navbar/Carleton";
 import Footer from "../../_rds-final/components/Footer/FooterStandard/FooterStandard";
 import Container from "../../_rds-final/layouts/Container/Container";
-import Columns from "../../_rds-final/layouts/Columns/Columns";
+import Column from "../../_rds-final/layouts/Columns/Columns";
 import BaseBanner from "../../_rds-final/components/Banner/BaseBanner/BaseBanner";
 import Panel from "../../_rds-final/layouts/Panel/Panel";
 
@@ -22,8 +22,8 @@ const CuTheme: NextPage = () => {
 
 			<main>
 				<Container>
-					<Columns.OneThird>
-						<Panel className="rounded-md bg-cu-black-50 p-6">
+					<Column.OneThird>
+						<Panel className="p-6 rounded-md bg-cu-black-50">
 							<p>
 								Lorem ipsum dolor sit amet, consectetur
 								adipiscing elit. Cras vel urna in mauris lacinia
@@ -83,7 +83,7 @@ const CuTheme: NextPage = () => {
 								imperdiet.{" "}
 							</p>
 						</Panel>
-					</Columns.OneThird>
+					</Column.OneThird>
 				</Container>
 			</main>
 

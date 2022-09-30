@@ -27,9 +27,9 @@ const EventCalendar: NextPage = () => {
 
 			<main className="pb-4">
 				<Container>
-					<Column.One>
+					<Column>
 						<EventFilter />
-					</Column.One>
+					</Column>
 					<Column.TwoThird>
 						<Panel className="rounded-lg border border-cu-black-100">
 							<EventListing />
