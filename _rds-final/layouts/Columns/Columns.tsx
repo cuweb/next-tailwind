@@ -15,18 +15,6 @@ const ColumnRoot = ({ maxWidth, children }: any) => {
 	);
 };
 
-const One = ({ maxWidth, children }: any) => {
-	return (
-		<div
-			className={`${
-				maxWidth ? maxWidth : defaultMaxWidth
-			} ${classNameRoot}`}
-		>
-			{children}
-		</div>
-	);
-};
-
 const Two = ({ children }: any) => {
 	return (
 		<div className={`${classNameRoot} ${defaultMaxWidth} md:grid-cols-2`}>
@@ -74,7 +62,6 @@ const TwoThird = ({ children }: any) => {
 };
 
 const Column = Object.assign(ColumnRoot, {
-	One,
 	Two,
 	Three,
 	Four,

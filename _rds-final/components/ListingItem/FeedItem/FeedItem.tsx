@@ -26,13 +26,13 @@ export default function TemplateItem(props: any) {
 						</p>
 						<p className="mt-2 text-sm text-gray-500">{excerpt}</p>
 						<div className="mt-2">
-							<Badge.XSmall>{category}</Badge.XSmall>
+							<Badge>{category}</Badge>
 						</div>
 					</div>
 				</div>
 
 				<ChevronRightIcon
-					className="flex-none w-5 h-5 ml-auto text-cu-black-300"
+					className="ml-auto h-5 w-5 flex-none text-cu-black-300"
 					aria-hidden="true"
 				/>
 			</div>

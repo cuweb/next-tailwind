@@ -12,8 +12,8 @@ export default function EventItem(props: any) {
 		<li key={title}>
 			<div className="relative flex items-center gap-2 p-6 hover:bg-gray-50">
 				<div className="flex flex-col items-start gap-3 md:flex-row">
-					<div className="flex-none w-16 md:w-20">
-						<div className="flex flex-col justify-center flex-none w-auto h-16 text-center shadow rounded-2xl bg-gray-50 md:h-20">
+					<div className="w-16 flex-none md:w-20">
+						<div className="flex h-16 w-auto flex-none flex-col justify-center rounded-2xl bg-gray-50 text-center shadow md:h-20">
 							<p className="text-xs font-bold uppercase text-cu-red">
 								{month}
 							</p>
@@ -37,7 +37,7 @@ export default function EventItem(props: any) {
 							</a>
 						</h3>
 						<ul className="flex flex-wrap sm:gap-2">
-							<li className="flex items-center mr-2 text-sm text-gray-500">
+							<li className="mr-2 flex items-center text-sm text-gray-500">
 								<ClockIcon
 									className="mr-1.5 h-5 w-5 flex-shrink-0 text-cu-red-300"
 									aria-hidden="true"
@@ -45,7 +45,7 @@ export default function EventItem(props: any) {
 
 								<time dateTime={date}>{time}</time>
 							</li>
-							<li className="flex items-center mt-2 text-sm text-gray-500 sm:mt-0">
+							<li className="mt-2 flex items-center text-sm text-gray-500 sm:mt-0">
 								<MapPinIcon
 									className="mr-1.5 h-5 w-5 flex-shrink-0 text-cu-red-300"
 									aria-hidden="true"
@@ -55,15 +55,15 @@ export default function EventItem(props: any) {
 						</ul>
 
 						<div className="mt-2">
-							<Badge.XSmall>Multi-Day</Badge.XSmall>
-							<Badge.XSmall>Student Event</Badge.XSmall>
-							<Badge.XSmall>Faculty Luncheon</Badge.XSmall>
+							<Badge>Multi-Day</Badge>
+							<Badge>Student Event</Badge>
+							<Badge>Faculty Luncheon</Badge>
 						</div>
 					</div>
 				</div>
 
 				<ChevronRightIcon
-					className="flex-none w-5 h-5 ml-auto text-cu-black-300"
+					className="ml-auto h-5 w-5 flex-none text-cu-black-300"
 					aria-hidden="true"
 				/>
 			</div>

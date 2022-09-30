@@ -4,7 +4,7 @@ import Head from "next/head";
 import NavBar from "../_rds-final/components/Navbar/CuTheme";
 import Footer from "../_rds-final/components/Footer/FooterStandard/FooterStandard";
 import Container from "../_rds-final/layouts/Container/Container";
-import Columns from "../_rds-final/layouts/Columns/Columns";
+import Column from "../_rds-final/layouts/Columns/Columns";
 import BaseBanner from "../_rds-final/components/Banner/BaseBanner/BaseBanner";
 
 import {
@@ -70,8 +70,8 @@ const Home: NextPage = () => {
 			<BaseBanner>Web Services Prototypes</BaseBanner>
 
 			<main>
-				<Container.White>
-					<Columns.One>
+				<Container>
+					<Column>
 						<dl className="grid grid-cols-1 gap-5 mt-5 sm:grid-cols-2 lg:grid-cols-3">
 							{projects.map((project) => (
 								<div
@@ -110,8 +110,8 @@ const Home: NextPage = () => {
 								</div>
 							))}
 						</dl>
-					</Columns.One>
-				</Container.White>
+					</Column>
+				</Container>
 			</main>
 
 			<Footer />

@@ -53,10 +53,10 @@ const EventCalendar: NextPage = () => {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<Navbar />
-			<div className="relative py-20 bg-gray-800 md:py-32">
+			<div className="relative bg-gray-800 py-20 md:py-32">
 				<div className="absolute inset-0">
 					<img
-						className="object-cover w-full h-full"
+						className="h-full w-full object-cover"
 						src="https://carleton.ca/about/wp-content/uploads/about-header-1600w-3.jpg"
 						alt=""
 					/>
@@ -65,7 +65,7 @@ const EventCalendar: NextPage = () => {
 						aria-hidden="true"
 					/>
 				</div>
-				<main className="relative px-4 mx-auto max-w-7xl">
+				<main className="relative mx-auto max-w-7xl px-4">
 					<div className="text-center">
 						<h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl">
 							Lived Experience Luncheon Series with Dr. Alex
@@ -245,9 +245,9 @@ const EventCalendar: NextPage = () => {
 			<main className="mx-auto max-w-7xl pb-14 md:pb-0">
 				<Column.TwoThird>
 					<div>
-						<div className="prose prose-lg text-gray-500 prose-indigo">
+						<div className="prose prose-lg prose-indigo text-gray-500">
 							<h2>
-								<span className="block mt-2 text-3xl font-bold leading-8 tracking-tight text-gray-900 sm:text-4xl">
+								<span className="mt-2 block text-3xl font-bold leading-8 tracking-tight text-gray-900 sm:text-4xl">
 									Interesting Event Heading
 								</span>
 							</h2>
@@ -355,17 +355,17 @@ const EventCalendar: NextPage = () => {
 
 						<Menu
 							as="div"
-							className="relative inline-block mt-8 text-left"
+							className="relative mt-8 inline-block text-left"
 						>
 							<div>
-								<Menu.Button className="inline-flex justify-center w-full px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-100">
+								<Menu.Button className="inline-flex w-full justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-100">
 									<ShareIcon
-										className="w-5 h-5 mr-2"
+										className="mr-2 h-5 w-5"
 										aria-hidden="true"
 									/>
 									Share Event
 									<ChevronDownIcon
-										className="w-5 h-5 ml-2 -mr-1"
+										className="ml-2 -mr-1 h-5 w-5"
 										aria-hidden="true"
 									/>
 								</Menu.Button>
@@ -380,7 +380,7 @@ const EventCalendar: NextPage = () => {
 								leaveFrom="transform opacity-100 scale-100"
 								leaveTo="transform opacity-0 scale-95"
 							>
-								<Menu.Items className="absolute left-0 z-10 w-56 mt-2 origin-top-right bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+								<Menu.Items className="absolute left-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
 									<div className="py-1">
 										<Menu.Item>
 											{({ active }) => (
@@ -389,7 +389,7 @@ const EventCalendar: NextPage = () => {
 													className="flex items-center px-4 py-2 text-sm hover:bg-cu-black-50"
 												>
 													<svg
-														className="w-4 h-4 mr-2 fill-cu-black-400"
+														className="mr-2 h-4 w-4 fill-cu-black-400"
 														xmlns="http://www.w3.org/2000/svg"
 														viewBox="0 0 512 512"
 													>
@@ -406,7 +406,7 @@ const EventCalendar: NextPage = () => {
 													className="flex items-center px-4 py-2 text-sm hover:bg-cu-black-50"
 												>
 													<svg
-														className="w-4 h-4 mr-2 fill-cu-black-400"
+														className="mr-2 h-4 w-4 fill-cu-black-400"
 														xmlns="http://www.w3.org/2000/svg"
 														viewBox="0 0 448 512"
 													>
@@ -423,7 +423,7 @@ const EventCalendar: NextPage = () => {
 													className="flex items-center px-4 py-2 text-sm hover:bg-cu-black-50"
 												>
 													<svg
-														className="w-4 h-4 mr-2 fill-cu-black-400"
+														className="mr-2 h-4 w-4 fill-cu-black-400"
 														xmlns="http://www.w3.org/2000/svg"
 														viewBox="0 0 320 512"
 													>
@@ -440,7 +440,7 @@ const EventCalendar: NextPage = () => {
 													className="flex items-center px-4 py-2 text-sm hover:bg-cu-black-50"
 												>
 													<svg
-														className="w-4 h-4 mr-2 fill-cu-black-400"
+														className="mr-2 h-4 w-4 fill-cu-black-400"
 														xmlns="http://www.w3.org/2000/svg"
 														viewBox="0 0 512 512"
 													>
@@ -457,7 +457,7 @@ const EventCalendar: NextPage = () => {
 													className="flex items-center px-4 py-2 text-sm hover:bg-cu-black-50"
 												>
 													<svg
-														className="w-4 h-4 mr-2 fill-cu-black-400"
+														className="mr-2 h-4 w-4 fill-cu-black-400"
 														xmlns="http://www.w3.org/2000/svg"
 														viewBox="0 0 448 512"
 													>
@@ -475,11 +475,11 @@ const EventCalendar: NextPage = () => {
 
 					<aside className="relative">
 						<div className="sticky top-28">
-							<ul className="flex flex-wrap gap-2 mt-4">
+							<ul className="mt-4 flex flex-wrap gap-2">
 								<li className="inline-flex">
 									<a
 										href="#"
-										className="flex items-center px-4 py-2 text-base font-semibold text-white rounded-md whitespace-nowrap bg-cu-red hover:bg-cu-blue-700 hover:text-white"
+										className="flex items-center whitespace-nowrap rounded-md bg-cu-red px-4 py-2 text-base font-semibold text-white hover:bg-cu-blue-700 hover:text-white"
 									>
 										Register Now
 									</a>
@@ -487,27 +487,27 @@ const EventCalendar: NextPage = () => {
 								<li className="inline-flex">
 									<a
 										href="#"
-										className="flex items-center px-4 py-2 text-base font-semibold bg-white border rounded-md whitespace-nowrap border-cu-blue-700 text-cu-blue-700 hover:bg-cu-blue-700 hover:text-white"
+										className="flex items-center whitespace-nowrap rounded-md border border-cu-blue-700 bg-white px-4 py-2 text-base font-semibold text-cu-blue-700 hover:bg-cu-blue-700 hover:text-white"
 									>
 										Add to My Events
 									</a>
 								</li>
 							</ul>
 
-							<dl className="grid gap-4 mt-5">
+							<dl className="mt-5 grid gap-4">
 								{features.map((feature) => (
 									<div
 										key={feature.name}
-										className="relative p-4 border rounded-lg border-cu-black-100 bg-gray-50"
+										className="relative rounded-lg border border-cu-black-100 bg-gray-50 p-4"
 									>
 										<dt>
-											<div className="absolute flex justify-center w-10 h-10 top-5 text-cu-blue-700">
+											<div className="absolute top-5 flex h-10 w-10 justify-center text-cu-blue-700">
 												<feature.icon
-													className="w-6 h-6"
+													className="h-6 w-6"
 													aria-hidden="true"
 												/>
 											</div>
-											<p className="ml-12 font-bold leading-6 text-gray-900 text-md">
+											<p className="text-md ml-12 font-bold leading-6 text-gray-900">
 												{feature.name}
 											</p>
 										</dt>
@@ -523,11 +523,11 @@ const EventCalendar: NextPage = () => {
 								Multi-Day Event
 							</p> */}
 
-							<ul className="flex flex-wrap gap-2 mt-4">
+							<ul className="mt-4 flex flex-wrap gap-2">
 								<li className="inline-flex">
 									<a
 										href="#"
-										className="flex items-center px-2 py-1 text-xs font-semibold rounded-md whitespace-nowrap bg-cu-black-100 text-cu-black-700 hover:bg-cu-blue hover:text-white"
+										className="flex items-center whitespace-nowrap rounded-md bg-cu-black-100 px-2 py-1 text-xs font-semibold text-cu-black-700 hover:bg-cu-blue hover:text-white"
 									>
 										<TagIcon className="mr-1.5 h-4 w-4 text-cu-black-400" />
 										Faculty Event
@@ -536,7 +536,7 @@ const EventCalendar: NextPage = () => {
 								<li className="inline-flex">
 									<a
 										href="#"
-										className="flex items-center px-2 py-1 text-xs font-semibold rounded-md whitespace-nowrap bg-cu-black-100 text-cu-black-700 hover:bg-cu-blue hover:text-white"
+										className="flex items-center whitespace-nowrap rounded-md bg-cu-black-100 px-2 py-1 text-xs font-semibold text-cu-black-700 hover:bg-cu-blue hover:text-white"
 									>
 										<TagIcon className="mr-1.5 h-4 w-4 text-cu-black-400" />
 										Student Event
@@ -545,7 +545,7 @@ const EventCalendar: NextPage = () => {
 								<li className="inline-flex">
 									<a
 										href="#"
-										className="flex items-center px-2 py-1 text-xs font-semibold rounded-md whitespace-nowrap bg-cu-black-100 text-cu-black-700 hover:bg-cu-blue hover:text-white"
+										className="flex items-center whitespace-nowrap rounded-md bg-cu-black-100 px-2 py-1 text-xs font-semibold text-cu-black-700 hover:bg-cu-blue hover:text-white"
 									>
 										<TagIcon className="mr-1.5 h-4 w-4 text-cu-black-400" />
 										Luncheon
@@ -554,7 +554,7 @@ const EventCalendar: NextPage = () => {
 								<li className="inline-flex">
 									<a
 										href="#"
-										className="flex items-center px-2 py-1 text-xs font-semibold rounded-md whitespace-nowrap bg-cu-black-100 text-cu-black-700 hover:bg-cu-blue hover:text-white"
+										className="flex items-center whitespace-nowrap rounded-md bg-cu-black-100 px-2 py-1 text-xs font-semibold text-cu-black-700 hover:bg-cu-blue hover:text-white"
 									>
 										<TagIcon className="mr-1.5 h-4 w-4 text-cu-black-400" />
 										On-Campus Event
@@ -563,7 +563,7 @@ const EventCalendar: NextPage = () => {
 								<li className="inline-flex">
 									<a
 										href="#"
-										className="flex items-center px-2 py-1 text-xs font-semibold rounded-md whitespace-nowrap bg-cu-black-100 text-cu-black-700 hover:bg-cu-blue hover:text-white"
+										className="flex items-center whitespace-nowrap rounded-md bg-cu-black-100 px-2 py-1 text-xs font-semibold text-cu-black-700 hover:bg-cu-blue hover:text-white"
 									>
 										<TagIcon className="mr-1.5 h-4 w-4 text-cu-black-400" />
 										Online Available
@@ -598,7 +598,7 @@ const EventCalendar: NextPage = () => {
 					</aside>
 				</Column.TwoThird>
 
-				<Column.One>
+				<Column>
 					<div className="overflow-hidden rounded-lg bg-cu-black-50">
 						<iframe
 							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2802.1407807835403!2d-75.69560014816834!3d45.38633087899766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce05dee0ae65eb%3A0x17feb47012b59f30!2sCarleton%20University%20Raven&#39;s%20Nest!5e0!3m2!1sen!2sca!4v1664032553405!5m2!1sen!2sca"
@@ -610,7 +610,7 @@ const EventCalendar: NextPage = () => {
 							referrerPolicy="no-referrer-when-downgrade"
 						></iframe>
 					</div>
-				</Column.One>
+				</Column>
 			</main>
 
 			<Footer />

@@ -20,40 +20,40 @@ const Home: NextPage = () => {
 
 			<BaseBanner>Web Services Prototypes</BaseBanner>
 
-			<Container.White>
+			<Container>
 				<Column>
 					<ListSubNav />
 				</Column>
 				<Column>
-					<div className="border rounded-lg border-cu-black-100">
+					<div className="rounded-lg border border-cu-black-100">
 						<EventListing />
 					</div>
 				</Column>
 				<Column.Two>
 					<div>
-						<div className="border rounded-lg border-cu-black-100">
+						<div className="rounded-lg border border-cu-black-100">
 							<EventListing />
 						</div>
 					</div>
 					<div>
-						<div className="border rounded-lg border-cu-black-100">
+						<div className="rounded-lg border border-cu-black-100">
 							<EventListing />
 						</div>
 					</div>
 				</Column.Two>
 				<Column.TwoThird>
 					<div>
-						<div className="border rounded-lg border-cu-black-100">
+						<div className="rounded-lg border border-cu-black-100">
 							<EventListing />
 						</div>
 					</div>
 					<div>
-						<div className="border rounded-lg border-cu-black-100">
+						<div className="rounded-lg border border-cu-black-100">
 							<EventListing />
 						</div>
 					</div>
 				</Column.TwoThird>
-			</Container.White>
+			</Container>
 
 			<FooterBasic />
 		</>
