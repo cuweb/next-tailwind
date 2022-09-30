@@ -44,7 +44,7 @@ const Four = ({ children }: any) => {
 const OneThird = ({ children }: any) => {
 	return (
 		<div
-			className={`${classNameRoot} ${defaultMaxWidth} md:grid-cols-3 md:[&>*:last-child]:col-span-2`}
+			className={`${classNameRoot} ${defaultMaxWidth} lg:grid-cols-3 lg:[&>*:last-child]:col-span-2`}
 		>
 			{children}
 		</div>
@@ -54,7 +54,7 @@ const OneThird = ({ children }: any) => {
 const TwoThird = ({ children }: any) => {
 	return (
 		<div
-			className={`${classNameRoot} ${defaultMaxWidth} md:grid-cols-3 md:[&>*:first-child]:col-span-2`}
+			className={`${classNameRoot} ${defaultMaxWidth} lg:grid-cols-3 lg:[&>*:first-child]:col-span-2`}
 		>
 			{children}
 		</div>
