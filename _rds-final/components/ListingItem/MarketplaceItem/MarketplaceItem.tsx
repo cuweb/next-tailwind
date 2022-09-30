@@ -8,9 +8,9 @@ export default function MarketplaceItem(props: any) {
 		<li key={title}>
 			<div className="relative flex items-center gap-2 p-6 hover:bg-gray-50">
 				<div className="flex items-start gap-3 sm:items-center">
-					<div className="flex-none w-16 md:w-20">
+					<div className="w-16 flex-none md:w-20">
 						<img
-							className="w-auto h-auto rounded lg:w-24"
+							className="h-auto w-auto rounded lg:w-24"
 							src={image}
 							alt=""
 						/>
@@ -27,21 +27,21 @@ export default function MarketplaceItem(props: any) {
 									aria-hidden="true"
 								/>
 								{title}
-								<span className="italic font-light text-cu-black-400">
+								<span className="font-light italic text-cu-black-400">
 									{" "}
 									for {cost}
 								</span>
 							</a>
 						</h3>
 						<div className="mt-1">
-							<Badge.XSmall>Fair</Badge.XSmall>
-							<Badge.XSmall>Available</Badge.XSmall>
+							<Badge>Fair</Badge>
+							<Badge>Available</Badge>
 						</div>
 					</div>
 				</div>
 
 				<ChevronRightIcon
-					className="flex-none w-5 h-5 ml-auto text-cu-black-300"
+					className="ml-auto h-5 w-5 flex-none text-cu-black-300"
 					aria-hidden="true"
 				/>
 			</div>
