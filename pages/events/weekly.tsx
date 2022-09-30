@@ -26,19 +26,19 @@ const EventCalendar: NextPage = () => {
 			</Container.Empty>
 
 			<main className="pb-4">
-				<Container.White>
+				<Container>
 					<Column.One>
 						<EventFilter />
 					</Column.One>
 					<Column.TwoThird>
-						<Panel className="border rounded-lg border-cu-black-100">
+						<Panel className="rounded-lg border border-cu-black-100">
 							<EventListing />
 						</Panel>
 						<div className="hidden md:block">
 							<SmallCalendar />
 						</div>
 					</Column.TwoThird>
-				</Container.White>
+				</Container>
 			</main>
 
 			<Footer />

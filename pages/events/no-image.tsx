@@ -29,7 +29,7 @@ const EventCalendar: NextPage = () => {
 			</Container.Empty>
 
 			<main className="pb-4">
-				<Container.White>
+				<Container>
 					<Column.One>
 						<h2 className="text-2xl font-semibold text-cu-black-800 md:text-4xl">
 							Upcoming Events
@@ -42,7 +42,7 @@ const EventCalendar: NextPage = () => {
 						</Panel>
 						<SmallCalendar />
 					</Column.TwoThird>
-				</Container.White>
+				</Container>
 			</main>
 
 			<FooterBasic />

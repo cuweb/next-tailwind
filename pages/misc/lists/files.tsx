@@ -20,7 +20,7 @@ const Home: NextPage = () => {
 
 			<BaseBanner>Web Services Prototypes</BaseBanner>
 
-			<Container.White>
+			<Container>
 				<Column>
 					<ListSubNav />
 				</Column>
@@ -53,7 +53,7 @@ const Home: NextPage = () => {
 						</div>
 					</div>
 				</Column.TwoThird>
-			</Container.White>
+			</Container>
 
 			<FooterBasic />
 		</>

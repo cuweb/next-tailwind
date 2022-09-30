@@ -19,7 +19,7 @@ const Home: NextPage = () => {
 
 			<BaseBanner>Web Services Prototypes</BaseBanner>
 
-			<Container.White>
+			<Container>
 				<Column>
 					<GridSubNav />
 				</Column>
@@ -29,7 +29,7 @@ const Home: NextPage = () => {
 					<div>Card3</div>
 					<div>Card4</div>
 				</Column.Four>
-			</Container.White>
+			</Container>
 
 			<FooterBasic />
 		</>
