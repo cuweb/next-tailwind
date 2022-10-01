@@ -27,7 +27,7 @@ const Intranet: NextPage = () => {
 
 			<main>
 				<Container>
-					<Column>
+					<Column cols="2/3">
 						<DashboardPanel>
 							<DashboardPanel.Title>Top 5</DashboardPanel.Title>
 							<NewsListing />

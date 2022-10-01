@@ -41,7 +41,7 @@ const Home: NextPage = () => {
 						</div>
 					</div>
 				</Column>
-				<Column>
+				<Column cols="2/3">
 					<div>
 						<div className="border rounded-lg border-cu-black-100">
 							<TemplateListing />
