@@ -18,14 +18,6 @@ const PageLayout: NextPage = () => {
 			<BaseBanner>Layouts, Grids &amp; Spacing</BaseBanner>
 
 			<main>
-				{/* <Container> */}
-				<Column maxWidth="3xl" gridGap={8}>
-					<p className="p-6 rounded-md bg-cu-black-50">
-						Cras vel urna in mauris lacinia convallis. Curabitur a
-						nibh quis leo laoreet porttitor.
-					</p>
-				</Column>
-
 				<Column cols="2" maxWidth="7xl" gridGap={8}>
 					<p className="p-6 rounded-md bg-cu-black-50">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -37,40 +29,22 @@ const PageLayout: NextPage = () => {
 					</p>
 				</Column>
 
-				<Column cols="3" maxWidth="5xl" gridGap={8}>
-					<p className="p-6 rounded-md bg-cu-black-50">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-						Cras vel urna in mauris lacinia convallis.
-					</p>
-					<p className="p-6 rounded-md bg-cu-black-50">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-						Cras vel urna in mauris lacinia convallis.
-					</p>
-					<p className="p-6 rounded-md bg-cu-black-50">
-						Cras vel urna in mauris lacinia convallis. Curabitur a
-						nibh quis leo laoreet porttitor.
-					</p>
-				</Column>
-
-				<Column cols="4" maxWidth="7xl" gridGap={8}>
-					<p className="p-6 rounded-md bg-cu-black-50">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-						Cras vel urna in mauris lacinia convallis.
-					</p>
-					<p className="p-6 rounded-md bg-cu-black-50">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-						Cras vel urna in mauris lacinia convallis.
-					</p>
-					<p className="p-6 rounded-md bg-cu-black-50">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-						Cras vel urna in mauris lacinia convallis.
-					</p>
-					<p className="p-6 rounded-md bg-cu-black-50">
-						Cras vel urna in mauris lacinia convallis. Curabitur a
-						nibh quis leo laoreet porttitor.
-					</p>
-				</Column>
-				{/* </Container> */}
+				<Container bgColor="gray">
+					<Column cols="3" maxWidth="5xl" gridGap={8}>
+						<p className="p-6 rounded-md bg-cu-black-50">
+							Lorem ipsum dolor sit amet, consectetur adipiscing
+							elit. Cras vel urna in mauris lacinia convallis.
+						</p>
+						<p className="p-6 rounded-md bg-cu-black-50">
+							Lorem ipsum dolor sit amet, consectetur adipiscing
+							elit. Cras vel urna in mauris lacinia convallis.
+						</p>
+						<p className="p-6 rounded-md bg-cu-black-50">
+							Cras vel urna in mauris lacinia convallis. Curabitur
+							a nibh quis leo laoreet porttitor.
+						</p>
+					</Column>
+				</Container>
 			</main>
 
 			<Footer />
