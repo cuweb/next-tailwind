@@ -1,26 +1,26 @@
-const classNameRoot = "cu-container py-8";
+import React from "react";
+import { colorScheme } from "../../helpers/tailwindClasses";
 
-const ContainerRoot = ({ children }: any) => {
-	return (
-		<section className={`${classNameRoot} bg-white`}>{children}</section>
-	);
+const styles = {
+	container: `cu-container py-8`,
 };
 
-const Gray = ({ children }: any) => {
+interface ColumnProps {
+	children: React.ReactNode;
+	// maxWidth?: "none" | "full" | "3xl" | "5xl" | "7xl";
+	bgColor?: "white" | "gray";
+}
+
+const Column: React.FC<ColumnProps> = ({
+	children,
+	// maxWidth = "7xl",
+	bgColor = "white",
+}): JSX.Element => {
 	return (
-		<section className={`${classNameRoot} bg-cu-black-50`}>
+		<div className={`${styles.container} ${colorScheme[bgColor]}`}>
 			{children}
-		</section>
+		</div>
 	);
 };
 
-const Empty = ({ className, children }: any) => {
-	return <section className={`${className}`}>{children}</section>;
-};
-
-const Container = Object.assign(ContainerRoot, {
-	Gray,
-	Empty,
-});
-
-export default Container;
+export default Column;

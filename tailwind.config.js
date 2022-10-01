@@ -4,6 +4,8 @@ module.exports = {
     './_rds-final/components/**/**/*.{js,ts,jsx,tsx}',
     './_rds-final/layouts/**/*.{js,ts,jsx,tsx}',
     './_rds-final/layouts/**/**/*.{js,ts,jsx,tsx}',
+    './_rds-final/helpers/**/*.{js,ts,jsx,tsx}',
+    './_rds-final/helpers/**/**/*.{js,ts,jsx,tsx}',
     './_rds-final/_misc/**/*.{js,ts,jsx,tsx}',
     './_rds-final/_misc/**/**/*.{js,ts,jsx,tsx}',
     './pages/**/*.{js,ts,jsx,tsx}',
