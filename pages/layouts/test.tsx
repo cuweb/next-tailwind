@@ -5,6 +5,7 @@ import Footer from "../../_rds-final/components/Footer/FooterStandard/FooterStan
 import Container from "../../_rds-final/layouts/Container/Container";
 import Column from "../../_rds-final/layouts/Columns/Columns";
 import BaseBanner from "../../_rds-final/components/Banner/BaseBanner/BaseBanner";
+import Panel from "../../_rds-final/layouts/Panel/Panel";
 
 const PageLayout: NextPage = () => {
 	return (
@@ -19,14 +20,7 @@ const PageLayout: NextPage = () => {
 
 			<main>
 				<Container>
-					<Column maxWidth="3xl">
-						<p className="p-6 rounded-md bg-cu-black-50">
-							Cras vel urna in mauris lacinia convallis. Curabitur
-							a nibh quis leo laoreet porttitor.
-						</p>
-					</Column>
-
-					<Column cols="2" maxWidth="7xl">
+					<Column cols="2" maxWidth="3xl">
 						<p className="p-6 rounded-md bg-cu-black-50">
 							Lorem ipsum dolor sit amet, consectetur adipiscing
 							elit. Cras vel urna in mauris lacinia convallis.

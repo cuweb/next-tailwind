@@ -16,9 +16,9 @@
 		@apply pt-0;
 	}
 
-	.cu-column + .cu-column {
+	/* .cu-column + .cu-column {
 		@apply mt-8;
-	}
+	} */
 
 	main > .cu-column:first-child {
 		@apply pt-6 md:pt-12;
