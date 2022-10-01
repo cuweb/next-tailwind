@@ -5,6 +5,7 @@ const bgColorStyles = {
 	red: "bg-cu-red",
 	blue: "bg-cu-blue",
 };
+
 interface ButtonProps {
 	children?: React.ReactNode;
 	bgColor: "gray" | "red" | "blue";

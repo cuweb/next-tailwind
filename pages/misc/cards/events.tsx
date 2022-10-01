@@ -24,15 +24,15 @@ const Home: NextPage = () => {
 				<Column>
 					<GridSubNav />
 				</Column>
-				<Column.Four>
+				<Column cols="4">
 					<EventGrid />
-				</Column.Four>
-				<Column.Three>
+				</Column>
+				<Column cols="3">
 					<EventGrid />
-				</Column.Three>
-				<Column.Two>
+				</Column>
+				<Column cols="2">
 					<EventGrid />
-				</Column.Two>
+				</Column>
 			</Container>
 
 			<FooterBasic />

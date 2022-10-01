@@ -30,7 +30,7 @@ const Home: NextPage = () => {
 				<Column>
 					<ListSubNav />
 				</Column>
-				<Column.Two>
+				<Column cols="2">
 					<div>
 						<div className="rounded-lg border border-cu-black-100">
 							<NewsListing />
@@ -66,7 +66,7 @@ const Home: NextPage = () => {
 							<LinksListing />
 						</div>
 					</div>
-				</Column.Two>
+				</Column>
 			</Container>
 
 			<FooterBasic />

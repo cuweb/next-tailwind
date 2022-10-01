@@ -27,7 +27,7 @@ const Intranet: NextPage = () => {
 
 			<main>
 				<Container>
-					<Column.TwoThird>
+					<Column>
 						<DashboardPanel>
 							<DashboardPanel.Title>Top 5</DashboardPanel.Title>
 							<NewsListing />
@@ -37,22 +37,22 @@ const Intranet: NextPage = () => {
 							<DashboardPanel.Title>News</DashboardPanel.Title>
 							<FeedListing />
 						</DashboardPanel>
-					</Column.TwoThird>
+					</Column>
 				</Container>
 
-				{/* <Container.Gray>
-					<Column.TwoThird>
+				{/* <Container>
+					<Column cols="2"Third>
 						<Panel className="bg-white rounded-lg">
                         <NewsListing />
                         <FeedListing />
 						</Panel>
 						<Panel className="bg-white rounded-lg">
 						</Panel>
-					</Column.TwoThird>
-				</Container.Gray> */}
+					</Column>
+				</Container> */}
 
-				<Container.Gray>
-					<Column.Two>
+				<Container>
+					<Column cols="2">
 						<DashboardPanel>
 							<DashboardPanel.Title>
 								Upcoming Events
@@ -65,11 +65,11 @@ const Intranet: NextPage = () => {
 							</DashboardPanel.Title>
 							<MarketplaceListing />
 						</DashboardPanel>
-					</Column.Two>
-				</Container.Gray>
+					</Column>
+				</Container>
 
-				<Container.Gray>
-					<Column.Three>
+				<Container>
+					<Column cols="3">
 						<div>
 							<DashboardPanel>
 								<DashboardPanel.Title>
@@ -94,8 +94,8 @@ const Intranet: NextPage = () => {
 								<JobListing />
 							</DashboardPanel>
 						</div>
-					</Column.Three>
-				</Container.Gray>
+					</Column>
+				</Container>
 			</main>
 		</>
 	);

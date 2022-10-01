@@ -25,34 +25,34 @@ const Home: NextPage = () => {
 					<ListSubNav />
 				</Column>
 				<Column>
-					<div className="rounded-lg border border-cu-black-100">
+					<div className="border rounded-lg border-cu-black-100">
 						<TemplateListing />
 					</div>
 				</Column>
-				<Column.Two>
+				<Column cols="2">
 					<div>
-						<div className="rounded-lg border border-cu-black-100">
+						<div className="border rounded-lg border-cu-black-100">
 							<TemplateListing />
 						</div>
 					</div>
 					<div>
-						<div className="rounded-lg border border-cu-black-100">
+						<div className="border rounded-lg border-cu-black-100">
 							<TemplateListing />
 						</div>
 					</div>
-				</Column.Two>
-				<Column.TwoThird>
+				</Column>
+				<Column>
 					<div>
-						<div className="rounded-lg border border-cu-black-100">
+						<div className="border rounded-lg border-cu-black-100">
 							<TemplateListing />
 						</div>
 					</div>
 					<div>
-						<div className="rounded-lg border border-cu-black-100">
+						<div className="border rounded-lg border-cu-black-100">
 							<TemplateListing />
 						</div>
 					</div>
-				</Column.TwoThird>
+				</Column>
 			</Container>
 
 			<FooterBasic />

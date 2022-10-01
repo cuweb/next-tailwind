@@ -34,7 +34,7 @@ const featured = [
 export default function AltFeaturedListing() {
 	return (
 		<section className="relative z-10 mb-8 -mt-32">
-			<Column.Three>
+			<Column cols="3">
 				{featured.map(
 					({ name, link, register, month, day, description }) => (
 						<EventCardImage
@@ -48,7 +48,7 @@ export default function AltFeaturedListing() {
 						/>
 					)
 				)}
-			</Column.Three>
+			</Column>
 		</section>
 	);
 }

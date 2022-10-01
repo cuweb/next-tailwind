@@ -36,14 +36,14 @@ const EventCalendar: NextPage = () => {
 						</h2>
 						<EventFilter />
 					</Column>
-					<Column.TwoThird>
+					<Column>
 						<Panel className="border rounded-lg border-cu-black-100">
 							<EventListing />
 						</Panel>
 						<div className="hidden md:ml-2 md:block">
 							<SmallCalendar />
 						</div>
-					</Column.TwoThird>
+					</Column>
 				</Container>
 			</main>
 
