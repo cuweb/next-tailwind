@@ -29,6 +29,15 @@ const posts = [
 		excerpt:
 			"Tenetur libero voluptatem rerum occaecati qui est molestiae exercitationem. Voluptate quisquam iure assumenda consequatur ex et recusandae.",
 	},
+	{
+		id: 2,
+		title: "New password policy",
+		link: "#",
+		date: "September 9th, 2023",
+		category: "Healthy Workplace",
+		excerpt:
+			"Tenetur libero voluptatem rerum occaecati qui est molestiae exercitationem. Voluptate quisquam iure assumenda consequatur ex et recusandae.",
+	},
 ];
 
 export default function FeedListing() {

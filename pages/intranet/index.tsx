@@ -1,104 +1,82 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import NavBar from "../../_rds-final/components/Navbar/IntranetNavbar";
+import Footer from "../../_rds-final/components/Footer/FooterBasic/FooterBasic";
 import Container from "../../_rds-final/layouts/Container/Container";
 import Column from "../../_rds-final/layouts/Columns/Columns";
-import DashboardPanel from "../../_rds-final/layouts/DashboardPanel/DashboardPanel";
-import NavBar from "../../_rds-final/components/Navbar/IntranetNavbar";
+import BaseBanner from "../../_rds-final/components/Banner/BaseBanner/BaseBanner";
+import EventListing from "../../components/Listings/EventListing";
+import FeedListing from "../../components/Listings/FeedListing";
+import NewsListing from "../../components/Listings/NewsListing";
+import JobListing from "../../components/Listings/JobListing";
+import FileListing from "../../components/Listings/FileListing";
+import MarketplaceListing from "../../components/Listings/MarketplaceListing";
+import LinksListing from "../../components/Listings/LinksListing";
 import Profile from "../../_rds-final/components/Banner/Profile/Profile";
 
-import NewsListing from "../../components/Listings/NewsListing";
-import FeedListing from "../../components/Listings/FeedListing";
-import EventListing from "../../components/Listings/EventListing";
-import MarketplaceListing from "../../components/Listings/MarketplaceListing";
-import Files from "../../components/Listings/FileListing";
-import LinksListing from "../../components/Listings/LinksListing";
-import JobListing from "../../components/Listings/JobListing";
+const styles = {
+	panel: `rounded-md border border-cu-black-100 bg-white [&:last-child]:mb-0`,
+};
 
-const Intranet: NextPage = () => {
+const PageLayout: NextPage = () => {
 	return (
 		<>
 			<Head>
 				<title>Dashboard - Intranet | Carleton University </title>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-
 			<NavBar />
+
 			<Profile />
+
+			{/* <BaseBanner>Layouts, Grids &amp; Spacing</BaseBanner> */}
 
 			<main>
 				<Container>
-					<Column cols="2/3">
-						<DashboardPanel>
-							<DashboardPanel.Title>Top 5</DashboardPanel.Title>
-							<NewsListing />
-						</DashboardPanel>
+					<Column maxWidth="7xl" cols="2/3" gridGap="8">
+						<section>
+							<div className={`${styles.panel} mb-8`}>
+								<NewsListing />
+							</div>
+							<div className={`${styles.panel} mb-8`}>
+								<EventListing />
+							</div>
+						</section>
 
-						<DashboardPanel>
-							<DashboardPanel.Title>News</DashboardPanel.Title>
-							<FeedListing />
-						</DashboardPanel>
+						<section>
+							<div className={`${styles.panel} mb-8`}>
+								<FeedListing />
+							</div>
+							<div className={`${styles.panel} mb-8`}>
+								<MarketplaceListing />
+							</div>
+						</section>
 					</Column>
 				</Container>
-
-				{/* <Container>
-					<Column cols="2"Third>
-						<Panel className="bg-white rounded-lg">
-                        <NewsListing />
-                        <FeedListing />
-						</Panel>
-						<Panel className="bg-white rounded-lg">
-						</Panel>
-					</Column>
-				</Container> */}
-
-				<Container>
-					<Column cols="2">
-						<DashboardPanel>
-							<DashboardPanel.Title>
-								Upcoming Events
-							</DashboardPanel.Title>
-							<EventListing />
-						</DashboardPanel>
-						<DashboardPanel>
-							<DashboardPanel.Title>
-								Marketplace
-							</DashboardPanel.Title>
-							<MarketplaceListing />
-						</DashboardPanel>
-					</Column>
-				</Container>
-
-				<Container>
-					<Column cols="3">
-						<div>
-							<DashboardPanel>
-								<DashboardPanel.Title>
-									Files
-								</DashboardPanel.Title>
-								<Files />
-							</DashboardPanel>
-						</div>
-						<div>
-							<DashboardPanel>
-								<DashboardPanel.Title>
-									My Links
-								</DashboardPanel.Title>
-								<LinksListing />
-							</DashboardPanel>
-						</div>
-						<div>
-							<DashboardPanel>
-								<DashboardPanel.Title>
-									Job Postings
-								</DashboardPanel.Title>
+				<Container bgColor="gray">
+					<Column maxWidth="7xl" cols="3" gridGap="8">
+						<section>
+							<div className={`${styles.panel}`}>
+								<FileListing />
+							</div>
+						</section>
+						<section>
+							<div className={`${styles.panel}`}>
 								<JobListing />
-							</DashboardPanel>
-						</div>
+							</div>
+						</section>
+						<section>
+							<div className={`${styles.panel}`}>
+								<LinksListing />
+							</div>
+						</section>
 					</Column>
 				</Container>
 			</main>
+
+			<Footer />
 		</>
 	);
 };
 
-export default Intranet;
+export default PageLayout;
