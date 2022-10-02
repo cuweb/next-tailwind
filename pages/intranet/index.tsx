@@ -13,6 +13,7 @@ import FileListing from "../../components/Listings/FileListing";
 import MarketplaceListing from "../../components/Listings/MarketplaceListing";
 import LinksListing from "../../components/Listings/LinksListing";
 import Profile from "../../_rds-final/components/Banner/Profile/Profile";
+import Panel from "../../_rds-final/layouts/Panel/Panel";
 
 const styles = {
 	panel: `rounded-md border border-cu-black-100 bg-white [&:last-child]:mb-0`,
@@ -35,41 +36,41 @@ const PageLayout: NextPage = () => {
 				<Container>
 					<Column maxWidth="7xl" cols="2/3" gridGap="8">
 						<section>
-							<div className={`${styles.panel} mb-8`}>
+							<Panel hasShadow>
 								<NewsListing />
-							</div>
-							<div className={`${styles.panel} mb-8`}>
+							</Panel>
+							<Panel hasShadow>
 								<EventListing />
-							</div>
+							</Panel>
 						</section>
 
 						<section>
-							<div className={`${styles.panel} mb-8`}>
+							<Panel hasShadow>
 								<FeedListing />
-							</div>
-							<div className={`${styles.panel} mb-8`}>
+							</Panel>
+							<Panel hasShadow>
 								<MarketplaceListing />
-							</div>
+							</Panel>
 						</section>
 					</Column>
 				</Container>
 				<Container bgColor="gray">
 					<Column maxWidth="7xl" cols="3" gridGap="8">
-						<section>
-							<div className={`${styles.panel}`}>
+						<div>
+							<Panel hasBorder hasShadow>
 								<FileListing />
-							</div>
-						</section>
-						<section>
-							<div className={`${styles.panel}`}>
+							</Panel>
+						</div>
+						<div>
+							<Panel hasBorder hasShadow>
 								<JobListing />
-							</div>
-						</section>
-						<section>
-							<div className={`${styles.panel}`}>
+							</Panel>
+						</div>
+						<div>
+							<Panel hasBorder hasShadow>
 								<LinksListing />
-							</div>
-						</section>
+							</Panel>
+						</div>
 					</Column>
 				</Container>
 			</main>

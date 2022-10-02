@@ -11,8 +11,8 @@ export const gridTemplateCols = {
 	"2": "md:grid-cols-2",
 	"3": "md:grid-cols-3",
 	"4": "md:grid-cols-4",
-	"1/3": "lg:grid-cols-one3rd",
-	"2/3": "lg:grid-cols-two3rd",
+	"1/3": "lg:grid-cols-3 lg:[&>*:last-child]:col-span-2",
+	"2/3": "lg:grid-cols-3 lg:[&>*:first-child]:col-span-2",
 };
 
 export const gridSpacing = {

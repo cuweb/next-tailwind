@@ -23,10 +23,10 @@ const EventCalendar: NextPage = () => {
 			</Head>
 			<Navbar />
 
-			<Container.Empty>
+			<Container>
 				<FeaturedEventBanner />
 				<FeaturedEventListing />
-			</Container.Empty>
+			</Container>
 
 			<main className="pb-4">
 				<Container>

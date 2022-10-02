@@ -61,10 +61,6 @@ module.exports = {
             900: '#191919',
         },
       },
-      gridTemplateColumns: {
-        one3rd: '33.33333% auto',
-        two3rd: '66.66666% auto',
-      },
     },
   },
   plugins: ['@tailwindcss/forms', require('@tailwindcss/typography')],

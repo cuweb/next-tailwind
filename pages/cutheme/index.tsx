@@ -23,7 +23,7 @@ const CuTheme: NextPage = () => {
 			<main>
 				<Container>
 					<Column cols="1/3">
-						<Panel className="rounded-md bg-cu-black-50 p-6">
+						<Panel>
 							<p>
 								Lorem ipsum dolor sit amet, consectetur
 								adipiscing elit. Cras vel urna in mauris lacinia
