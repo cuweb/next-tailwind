@@ -26,6 +26,8 @@ export const gridSpacing = {
 	"6": "gap-6 [&+.cu-column]:mt-6", // 24px
 	"7": "gap-7 [&+.cu-column]:mt-7", // 28px
 	"8": "gap-8 [&+.cu-column]:mt-8", // 32px
+	"9": "gap-9 [&+.cu-column]:mt-9", // 36px
+	"10": "gap-10 [&+.cu-column]:mt-10", // 40px
 };
 
 export const colorScheme = {
