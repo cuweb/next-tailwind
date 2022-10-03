@@ -1,5 +1,4 @@
-import Column from "../../_rds-final/layouts/Columns/Columns";
-import EventCardImage from "../Card/EventCardImage";
+import EventCard from "../../_rds-final/components/Card/EventCard/EventCard";
 
 const featured = [
 	{
@@ -45,7 +44,7 @@ export default function EventGrid() {
 		<>
 			{featured.map(
 				({ name, link, register, month, day, description }) => (
-					<EventCardImage
+					<EventCard
 						key={name}
 						name={name}
 						link={link}

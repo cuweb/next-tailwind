@@ -101,7 +101,7 @@ export default function Example() {
 							<div className="hidden lg:ml-4 lg:flex lg:items-center">
 								<button
 									type="button"
-									className="inline-flex items-center px-3 py-2 text-sm font-medium leading-4 text-white border border-transparent rounded-md shadow-sm bg-cu-red hover:bg-cu-blue focus:outline-none"
+									className="inline-flex items-center px-3 py-2 text-sm font-medium leading-4 text-white border border-transparent rounded-md shadow-sm bg-cu-red hover:bg-cu-red-800 focus:outline-none"
 								>
 									<PlusIcon
 										className="-ml-0.5 h-4 w-4"

@@ -6,7 +6,7 @@ const Red = (props: any) => {
 	return (
 		<button
 			type="button"
-			className={`${classNameRoot} border-transparent bg-cu-red font-medium text-white hover:bg-cu-blue focus:outline-none`}
+			className={`${classNameRoot} border-transparent bg-cu-red font-medium text-white hover:bg-cu-red-900 focus:outline-none`}
 		>
 			{text}
 		</button>

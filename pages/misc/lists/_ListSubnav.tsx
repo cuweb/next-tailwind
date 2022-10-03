@@ -3,7 +3,7 @@ export default function ListSubNav(props: any) {
 		<ul className="flex flex-wrap gap-4">
 			<li>
 				<a
-					className="text-sm font-semibold text-cu-blue hover:text-cu-red"
+					className="text-sm font-semibold text-cu-red hover:text-cu-red-800 hover:underline"
 					href="/misc/lists/"
 				>
 					Home
@@ -11,7 +11,7 @@ export default function ListSubNav(props: any) {
 			</li>
 			<li>
 				<a
-					className="text-sm font-semibold text-cu-blue hover:text-cu-red"
+					className="text-sm font-semibold text-cu-red hover:text-cu-red-800 hover:underline"
 					href="/misc/lists/events"
 				>
 					Events
@@ -19,7 +19,7 @@ export default function ListSubNav(props: any) {
 			</li>
 			<li>
 				<a
-					className="text-sm font-semibold text-cu-blue hover:text-cu-red"
+					className="text-sm font-semibold text-cu-red hover:text-cu-red-800 hover:underline"
 					href="/misc/lists/feeds"
 				>
 					Feeds
@@ -27,7 +27,7 @@ export default function ListSubNav(props: any) {
 			</li>
 			<li>
 				<a
-					className="text-sm font-semibold text-cu-blue hover:text-cu-red"
+					className="text-sm font-semibold text-cu-red hover:text-cu-red-800 hover:underline"
 					href="/misc/lists/files"
 				>
 					Files
@@ -35,7 +35,7 @@ export default function ListSubNav(props: any) {
 			</li>
 			<li>
 				<a
-					className="text-sm font-semibold text-cu-blue hover:text-cu-red"
+					className="text-sm font-semibold text-cu-red hover:text-cu-red-800 hover:underline"
 					href="/misc/lists/jobs"
 				>
 					Jobs
@@ -43,7 +43,7 @@ export default function ListSubNav(props: any) {
 			</li>
 			<li>
 				<a
-					className="text-sm font-semibold text-cu-blue hover:text-cu-red"
+					className="text-sm font-semibold text-cu-red hover:text-cu-red-800 hover:underline"
 					href="/misc/lists/links"
 				>
 					Links
@@ -51,7 +51,7 @@ export default function ListSubNav(props: any) {
 			</li>
 			<li>
 				<a
-					className="text-sm font-semibold text-cu-blue hover:text-cu-red"
+					className="text-sm font-semibold text-cu-red hover:text-cu-red-800 hover:underline"
 					href="/misc/lists/marketplace"
 				>
 					Marketplace
@@ -59,7 +59,7 @@ export default function ListSubNav(props: any) {
 			</li>
 			<li>
 				<a
-					className="text-sm font-semibold text-cu-blue hover:text-cu-red"
+					className="text-sm font-semibold text-cu-red hover:text-cu-red-800 hover:underline"
 					href="/misc/lists/news"
 				>
 					News
@@ -67,7 +67,7 @@ export default function ListSubNav(props: any) {
 			</li>
 			<li>
 				<a
-					className="text-sm font-semibold text-cu-blue hover:text-cu-red"
+					className="text-sm font-semibold text-cu-red hover:text-cu-red-800 hover:underline"
 					href="/misc/lists/template"
 				>
 					Template
