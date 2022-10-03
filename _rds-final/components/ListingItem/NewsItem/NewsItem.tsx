@@ -16,7 +16,7 @@ export default function NewsItem(props: any) {
 					</div>
 
 					<div className="flex-auto">
-						<h3 className="text-base font-semibold text-gray-800">
+						<h3 className="text-base font-semibold text-cu-black-800">
 							<a
 								href={link}
 								className="hover:text-cu-red focus:outline-none"
@@ -31,7 +31,7 @@ export default function NewsItem(props: any) {
 						<p className="mt-1 mb-1 mr-4 text-sm italic text-cu-black-400">
 							{date}
 						</p>
-						<p className="mt-2 text-base text-gray-500">
+						<p className="mt-2 text-base text-cu-black-600">
 							{excerpt}
 						</p>
 					</div>

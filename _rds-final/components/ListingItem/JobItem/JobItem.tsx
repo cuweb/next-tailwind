@@ -9,7 +9,7 @@ export default function JobItem(props: any) {
 			<div className="relative flex items-center gap-2 p-6 hover:bg-gray-50">
 				<div className="flex items-start gap-3">
 					<div className="flex-auto">
-						<h3 className="text-sm font-semibold text-gray-800">
+						<h3 className="text-sm font-semibold text-cu-black-800">
 							<a
 								href={link}
 								className="hover:text-cu-red focus:outline-none"
@@ -25,7 +25,7 @@ export default function JobItem(props: any) {
 								</span>
 							</a>
 						</h3>
-						<p className="flex mt-2 text-xs text-gray-500">
+						<p className="flex mt-2 text-xs text-cu-black-600">
 							<CalendarIcon
 								className="w-4 h-4 mr-1 text-cu-red"
 								aria-hidden="true"

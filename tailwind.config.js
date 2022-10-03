@@ -17,8 +17,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         'cu-waves-red': "url('/cu-waves-red.svg')",
-        'cu-waves-white-30': "url('/cu-waves-white-30.svg')",
-        // 'cu-waves-white-30': "url('/cu-waves-white-30.svg')",
+        'cu-waves-white-20': "url('/cu-waves-white-20.svg')",
       },
       // https://htmlcolorcodes.com/color-picker/
       // https://www.tailwindshades.com/
@@ -36,19 +35,19 @@ module.exports = {
           800: '#880D12',
           900: '#55080B',
         },
-        'cu-blue': {
-          DEFAULT: '#126B93',
-          50: '#DCF1FB',
-          100: '#CAEAF9',
-          200: '#A6DCF4',
-          300: '#81CDF0',
-          400: '#5DBFEB',
-          500: '#39B1E7',
-          600: '#1BA0DC',
-          700: '#1685B7',
-          800: '#126B93',
-          900: '#0C4761',
-        },
+        // 'cu-blue': {
+        //   DEFAULT: '#126B93',
+        //   50: '#DCF1FB',
+        //   100: '#CAEAF9',
+        //   200: '#A6DCF4',
+        //   300: '#81CDF0',
+        //   400: '#5DBFEB',
+        //   500: '#39B1E7',
+        //   600: '#1BA0DC',
+        //   700: '#1685B7',
+        //   800: '#126B93',
+        //   900: '#0C4761',
+        // },
         'cu-black': {
             50: '#F2F2F2',
             100: '#e6e6e6',

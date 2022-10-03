@@ -12,19 +12,19 @@ export default function EventItem(props: any) {
 		<li key={title}>
 			<div className="relative flex items-center gap-2 p-6 hover:bg-gray-50">
 				<div className="flex flex-col items-start gap-3 md:flex-row">
-					<div className="w-16 flex-none md:w-20">
-						<div className="flex h-16 w-auto flex-none flex-col justify-center rounded-2xl bg-gray-50 text-center shadow md:h-20">
+					<div className="flex-none w-16 md:w-20">
+						<div className="flex flex-col justify-center flex-none w-auto h-16 text-center shadow rounded-2xl bg-gray-50 md:h-20">
 							<p className="text-xs font-bold uppercase text-cu-red">
 								{month}
 							</p>
-							<p className="text-2xl font-bold uppercase text-cu-black-900">
+							<p className="text-2xl font-bold uppercase text-cu-black-800">
 								{day}
 							</p>
 						</div>
 					</div>
 
 					<div className="flex-auto">
-						<h3 className="mb-2 text-base font-semibold text-gray-800">
+						<h3 className="mb-2 text-base font-semibold text-cu-black-800">
 							<a
 								href={link}
 								className="hover:text-cu-red focus:outline-none"
@@ -37,7 +37,7 @@ export default function EventItem(props: any) {
 							</a>
 						</h3>
 						<ul className="flex flex-wrap sm:gap-2">
-							<li className="mr-2 flex items-center text-sm text-gray-500">
+							<li className="flex items-center mr-2 text-sm text-cu-black-400">
 								<ClockIcon
 									className="mr-1.5 h-5 w-5 flex-shrink-0 text-cu-red-300"
 									aria-hidden="true"
@@ -45,7 +45,7 @@ export default function EventItem(props: any) {
 
 								<time dateTime={date}>{time}</time>
 							</li>
-							<li className="mt-2 flex items-center text-sm text-gray-500 sm:mt-0">
+							<li className="flex items-center mt-2 text-sm text-cu-black-400 sm:mt-0">
 								<MapPinIcon
 									className="mr-1.5 h-5 w-5 flex-shrink-0 text-cu-red-300"
 									aria-hidden="true"
@@ -63,7 +63,7 @@ export default function EventItem(props: any) {
 				</div>
 
 				<ChevronRightIcon
-					className="ml-auto h-5 w-5 flex-none text-cu-black-300"
+					className="flex-none w-5 h-5 ml-auto text-cu-black-300"
 					aria-hidden="true"
 				/>
 			</div>

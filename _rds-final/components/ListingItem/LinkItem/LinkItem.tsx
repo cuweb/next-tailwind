@@ -11,7 +11,7 @@ export default function LinkItem(props: any) {
 					</div>
 
 					<div className="flex-auto">
-						<h3 className="text-sm font-semibold text-gray-800">
+						<h3 className="text-sm font-semibold text-cu-black-800">
 							<a
 								href={link}
 								className="hover:text-cu-red focus:outline-none"
