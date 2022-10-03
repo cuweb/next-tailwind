@@ -1,5 +1,5 @@
 import Column from "../../_rds-final/layouts/Columns/Columns";
-import EventCard from "../Card/EventCard";
+import EventCard from "../../_rds-final/components/Card/EventCard/EventCard";
 
 const featured = [
 	{
