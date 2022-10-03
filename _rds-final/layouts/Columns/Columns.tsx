@@ -1,72 +1,38 @@
-const classNameRoot =
-	"cu-column mx-auto mb-8 grid gap-8 px-8 [&:last-child]:mb-0 grid-cols-1";
+import React from "react";
+import {
+	gridMaxWidth,
+	gridTemplateCols,
+	gridSpacing,
+} from "../../helpers/tailwindClasses";
 
-const defaultMaxWidth = "max-w-3xl md:max-w-7xl";
+const styles = {
+	column: `cu-column mx-auto grid grid-cols-1 [&:last-child]:mb-0`,
+};
 
-const ColumnRoot = ({ maxWidth, children }: any) => {
+interface ColumnProps {
+	children: React.ReactNode;
+	maxWidth?: "none" | "full" | "3xl" | "5xl" | "7xl";
+	gridGap?: "0" | "0.5" | "1" | "2" | "4" | "8" | "10";
+	cols?: "1" | "2" | "3" | "4" | "1/3" | "2/3";
+	isNested?: boolean;
+}
+
+const Column: React.FC<ColumnProps> = ({
+	children,
+	maxWidth = "7xl",
+	gridGap = "8",
+	cols = "1",
+	isNested,
+}): JSX.Element => {
 	return (
 		<div
-			className={`${
-				maxWidth ? maxWidth : defaultMaxWidth
-			} ${classNameRoot}`}
+			className={`${styles.column} ${gridMaxWidth[maxWidth]} ${
+				gridSpacing[gridGap]
+			} ${gridTemplateCols[cols]} ${isNested ? "mt-8" : "px-8"}`}
 		>
 			{children}
 		</div>
 	);
 };
-
-const Two = ({ children }: any) => {
-	return (
-		<div className={`${classNameRoot} ${defaultMaxWidth} md:grid-cols-2`}>
-			{children}
-		</div>
-	);
-};
-
-const Three = ({ children }: any) => {
-	return (
-		<div className={`${classNameRoot} ${defaultMaxWidth} lg:grid-cols-3`}>
-			{children}
-		</div>
-	);
-};
-
-const Four = ({ children }: any) => {
-	return (
-		<div
-			className={`${classNameRoot} ${defaultMaxWidth} md:grid-cols-2 lg:grid-cols-4`}
-		>
-			{children}
-		</div>
-	);
-};
-
-const OneThird = ({ children }: any) => {
-	return (
-		<div
-			className={`${classNameRoot} ${defaultMaxWidth} md:grid-cols-3 md:[&>*:last-child]:col-span-2`}
-		>
-			{children}
-		</div>
-	);
-};
-
-const TwoThird = ({ children }: any) => {
-	return (
-		<div
-			className={`${classNameRoot} ${defaultMaxWidth} md:grid-cols-3 md:[&>*:first-child]:col-span-2`}
-		>
-			{children}
-		</div>
-	);
-};
-
-const Column = Object.assign(ColumnRoot, {
-	Two,
-	Three,
-	Four,
-	OneThird,
-	TwoThird,
-});
 
 export default Column;

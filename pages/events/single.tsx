@@ -53,10 +53,11 @@ const EventCalendar: NextPage = () => {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<Navbar />
-			<div className="relative bg-gray-800 py-20 md:py-32">
+
+			<div className="relative py-20 bg-gray-800 md:py-32">
 				<div className="absolute inset-0">
 					<img
-						className="h-full w-full object-cover"
+						className="object-cover w-full h-full"
 						src="https://carleton.ca/about/wp-content/uploads/about-header-1600w-3.jpg"
 						alt=""
 					/>
@@ -65,189 +66,22 @@ const EventCalendar: NextPage = () => {
 						aria-hidden="true"
 					/>
 				</div>
-				<main className="relative mx-auto max-w-7xl px-4">
+				<main className="relative px-4 mx-auto max-w-7xl">
 					<div className="text-center">
 						<h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl">
 							Lived Experience Luncheon Series with Dr. Alex
 							Auerbach
 						</h1>
-						{/* <div className="mx-auto mt-12 sm:flex sm:justify-center">
-							<div className="rounded-md shadow">
-								<a
-									href="#"
-									className="flex items-center justify-center w-full px-6 py-4 text-lg font-medium text-white border border-transparent rounded-md shadow-sm bg-cu-red last:mb-0 hover:bg-cu-blue focus:outline-none focus:ring-2 focus:ring-cu-blue-100 focus:ring-offset-2"
-								>
-									Register
-								</a>
-							</div>
-							<div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
-								<a
-									href="#"
-									className="flex items-center justify-center w-full px-6 py-4 text-lg font-medium text-white border border-transparent rounded-md shadow-sm bg-cu-blue-600 last:mb-0 hover:bg-cu-blue hover:text-white focus:outline-none focus:ring-2 focus:ring-cu-blue-100 focus:ring-offset-2"
-								>
-									Add to My Events
-								</a>
-							</div>
-							<div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
-								<Menu
-									as="div"
-									className="relative inline-block w-full text-left"
-								>
-									<div>
-										<Menu.Button className="flex items-center justify-center w-full px-6 py-4 text-base font-medium bg-white border border-transparent rounded-md text-cu-black-700 hover:bg-gray-50 md:py-4 md:px-4 md:text-lg">
-											<ShareIcon
-												className="mr-2 h-7 w-7"
-												aria-hidden="true"
-											/>
-											<span className="sr-only">
-												Share
-											</span>
-											<ChevronDownIcon
-												className="w-5 h-5 ml-2 -mr-1"
-												aria-hidden="true"
-											/>
-										</Menu.Button>
-									</div>
-
-									<Transition
-										as={Fragment}
-										enter="transition ease-out duration-100"
-										enterFrom="transform opacity-0 scale-95"
-										enterTo="transform opacity-100 scale-100"
-										leave="transition ease-in duration-75"
-										leaveFrom="transform opacity-100 scale-100"
-										leaveTo="transform opacity-0 scale-95"
-									>
-										<Menu.Items className="absolute z-10 w-56 mt-2 origin-top-right bg-white divide-y divide-gray-100 rounded-md shadow-lg right-1/4 ring-1 ring-black ring-opacity-5 focus:outline-none sm:right-0">
-											<div className="py-1">
-												<Menu.Item>
-													{({ active }) => (
-														<a
-															href="#"
-															className={classNames(
-																active
-																	? "bg-gray-100 text-gray-900"
-																	: "text-gray-700",
-																"group flex items-center px-4 py-2 text-sm"
-															)}
-														>
-															<svg
-																xmlns="http://www.w3.org/2000/svg"
-																viewBox="0 0 512 512"
-																fill="currentColor"
-																className="w-5 h-5 mr-3 text-gray-400 group-hover:text-gray-500"
-																aria-hidden="true"
-															>
-																<path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
-															</svg>
-															Twitter
-														</a>
-													)}
-												</Menu.Item>
-												<Menu.Item>
-													{({ active }) => (
-														<a
-															href="#"
-															className={classNames(
-																active
-																	? "bg-gray-100 text-gray-900"
-																	: "text-gray-700",
-																"group flex items-center px-4 py-2 text-sm"
-															)}
-														>
-															<svg
-																xmlns="http://www.w3.org/2000/svg"
-																viewBox="0 0 448 512"
-																fill="currentColor"
-																className="w-5 h-5 mr-3 text-gray-400 group-hover:text-gray-500"
-																aria-hidden="true"
-															>
-																<path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
-															</svg>
-															LinkedIn
-														</a>
-													)}
-												</Menu.Item>
-												<Menu.Item>
-													{({ active }) => (
-														<a
-															href="#"
-															className={classNames(
-																active
-																	? "bg-gray-100 text-gray-900"
-																	: "text-gray-700",
-																"group flex items-center px-4 py-2 text-sm"
-															)}
-														>
-															<svg
-																xmlns="http://www.w3.org/2000/svg"
-																viewBox="0 0 512 512"
-																fill="currentColor"
-																className="w-5 h-5 mr-3 text-gray-400 group-hover:text-gray-500"
-																aria-hidden="true"
-															>
-																<path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z" />
-															</svg>
-															Facebook
-														</a>
-													)}
-												</Menu.Item>
-												<Menu.Item>
-													{({ active }) => (
-														<a
-															href="#"
-															className={classNames(
-																active
-																	? "bg-gray-100 text-gray-900"
-																	: "text-gray-700",
-																"group flex items-center px-4 py-2 text-sm"
-															)}
-														>
-															<EnvelopeIcon
-																className="w-5 h-5 mr-3 text-gray-400 group-hover:text-gray-500"
-																aria-hidden="true"
-															/>
-															E-mail
-														</a>
-													)}
-												</Menu.Item>
-											</div>
-											<div className="py-1">
-												<Menu.Item>
-													{({ active }) => (
-														<a
-															href="#"
-															className={classNames(
-																active
-																	? "bg-gray-100 text-gray-900"
-																	: "text-gray-700",
-																"group flex items-center px-4 py-2 text-sm"
-															)}
-														>
-															<ArchiveBoxIcon
-																className="w-5 h-5 mr-3 text-gray-400 group-hover:text-gray-500"
-																aria-hidden="true"
-															/>
-															Archive
-														</a>
-													)}
-												</Menu.Item>
-											</div>
-										</Menu.Items>
-									</Transition>
-								</Menu>
-							</div>
-						</div> */}
 					</div>
 				</main>
 			</div>
 
 			<main className="mx-auto max-w-7xl pb-14 md:pb-0">
-				<Column.TwoThird>
+				<Column cols="2/3">
 					<div>
-						<div className="prose prose-lg prose-indigo text-gray-500">
+						<div className="prose prose-lg text-gray-500 prose-indigo">
 							<h2>
-								<span className="mt-2 block text-3xl font-bold leading-8 tracking-tight text-gray-900 sm:text-4xl">
+								<span className="block mt-2 text-3xl font-bold leading-8 tracking-tight text-gray-900 sm:text-4xl">
 									Interesting Event Heading
 								</span>
 							</h2>
@@ -355,17 +189,17 @@ const EventCalendar: NextPage = () => {
 
 						<Menu
 							as="div"
-							className="relative mt-8 inline-block text-left"
+							className="relative inline-block mt-8 text-left"
 						>
 							<div>
-								<Menu.Button className="inline-flex w-full justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-100">
+								<Menu.Button className="inline-flex justify-center w-full px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-100">
 									<ShareIcon
-										className="mr-2 h-5 w-5"
+										className="w-5 h-5 mr-2"
 										aria-hidden="true"
 									/>
 									Share Event
 									<ChevronDownIcon
-										className="ml-2 -mr-1 h-5 w-5"
+										className="w-5 h-5 ml-2 -mr-1"
 										aria-hidden="true"
 									/>
 								</Menu.Button>
@@ -380,7 +214,7 @@ const EventCalendar: NextPage = () => {
 								leaveFrom="transform opacity-100 scale-100"
 								leaveTo="transform opacity-0 scale-95"
 							>
-								<Menu.Items className="absolute left-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+								<Menu.Items className="absolute left-0 z-10 w-56 mt-2 origin-top-right bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
 									<div className="py-1">
 										<Menu.Item>
 											{({ active }) => (
@@ -389,7 +223,7 @@ const EventCalendar: NextPage = () => {
 													className="flex items-center px-4 py-2 text-sm hover:bg-cu-black-50"
 												>
 													<svg
-														className="mr-2 h-4 w-4 fill-cu-black-400"
+														className="w-4 h-4 mr-2 fill-cu-black-400"
 														xmlns="http://www.w3.org/2000/svg"
 														viewBox="0 0 512 512"
 													>
@@ -406,7 +240,7 @@ const EventCalendar: NextPage = () => {
 													className="flex items-center px-4 py-2 text-sm hover:bg-cu-black-50"
 												>
 													<svg
-														className="mr-2 h-4 w-4 fill-cu-black-400"
+														className="w-4 h-4 mr-2 fill-cu-black-400"
 														xmlns="http://www.w3.org/2000/svg"
 														viewBox="0 0 448 512"
 													>
@@ -423,7 +257,7 @@ const EventCalendar: NextPage = () => {
 													className="flex items-center px-4 py-2 text-sm hover:bg-cu-black-50"
 												>
 													<svg
-														className="mr-2 h-4 w-4 fill-cu-black-400"
+														className="w-4 h-4 mr-2 fill-cu-black-400"
 														xmlns="http://www.w3.org/2000/svg"
 														viewBox="0 0 320 512"
 													>
@@ -440,7 +274,7 @@ const EventCalendar: NextPage = () => {
 													className="flex items-center px-4 py-2 text-sm hover:bg-cu-black-50"
 												>
 													<svg
-														className="mr-2 h-4 w-4 fill-cu-black-400"
+														className="w-4 h-4 mr-2 fill-cu-black-400"
 														xmlns="http://www.w3.org/2000/svg"
 														viewBox="0 0 512 512"
 													>
@@ -457,7 +291,7 @@ const EventCalendar: NextPage = () => {
 													className="flex items-center px-4 py-2 text-sm hover:bg-cu-black-50"
 												>
 													<svg
-														className="mr-2 h-4 w-4 fill-cu-black-400"
+														className="w-4 h-4 mr-2 fill-cu-black-400"
 														xmlns="http://www.w3.org/2000/svg"
 														viewBox="0 0 448 512"
 													>
@@ -475,11 +309,11 @@ const EventCalendar: NextPage = () => {
 
 					<aside className="relative">
 						<div className="sticky top-28">
-							<ul className="mt-4 flex flex-wrap gap-2">
+							<ul className="flex flex-wrap gap-2 mt-4">
 								<li className="inline-flex">
 									<a
 										href="#"
-										className="flex items-center whitespace-nowrap rounded-md bg-cu-red px-4 py-2 text-base font-semibold text-white hover:bg-cu-blue-700 hover:text-white"
+										className="flex items-center px-4 py-2 text-base font-semibold text-white rounded-md whitespace-nowrap bg-cu-red hover:bg-cu-blue-700 hover:text-white"
 									>
 										Register Now
 									</a>
@@ -487,27 +321,27 @@ const EventCalendar: NextPage = () => {
 								<li className="inline-flex">
 									<a
 										href="#"
-										className="flex items-center whitespace-nowrap rounded-md border border-cu-blue-700 bg-white px-4 py-2 text-base font-semibold text-cu-blue-700 hover:bg-cu-blue-700 hover:text-white"
+										className="flex items-center px-4 py-2 text-base font-semibold bg-white border rounded-md whitespace-nowrap border-cu-blue-700 text-cu-blue-700 hover:bg-cu-blue-700 hover:text-white"
 									>
 										Add to My Events
 									</a>
 								</li>
 							</ul>
 
-							<dl className="mt-5 grid gap-4">
+							<dl className="grid gap-4 mt-5">
 								{features.map((feature) => (
 									<div
 										key={feature.name}
-										className="relative rounded-lg border border-cu-black-100 bg-gray-50 p-4"
+										className="relative p-4 border rounded-lg border-cu-black-100 bg-gray-50"
 									>
 										<dt>
-											<div className="absolute top-5 flex h-10 w-10 justify-center text-cu-blue-700">
+											<div className="absolute flex justify-center w-10 h-10 top-5 text-cu-blue-700">
 												<feature.icon
-													className="h-6 w-6"
+													className="w-6 h-6"
 													aria-hidden="true"
 												/>
 											</div>
-											<p className="text-md ml-12 font-bold leading-6 text-gray-900">
+											<p className="ml-12 font-bold leading-6 text-gray-900 text-md">
 												{feature.name}
 											</p>
 										</dt>
@@ -523,11 +357,11 @@ const EventCalendar: NextPage = () => {
 								Multi-Day Event
 							</p> */}
 
-							<ul className="mt-4 flex flex-wrap gap-2">
+							<ul className="flex flex-wrap gap-2 mt-4">
 								<li className="inline-flex">
 									<a
 										href="#"
-										className="flex items-center whitespace-nowrap rounded-md bg-cu-black-100 px-2 py-1 text-xs font-semibold text-cu-black-700 hover:bg-cu-blue hover:text-white"
+										className="flex items-center px-2 py-1 text-xs font-semibold rounded-md whitespace-nowrap bg-cu-black-100 text-cu-black-700 hover:bg-cu-blue hover:text-white"
 									>
 										<TagIcon className="mr-1.5 h-4 w-4 text-cu-black-400" />
 										Faculty Event
@@ -536,7 +370,7 @@ const EventCalendar: NextPage = () => {
 								<li className="inline-flex">
 									<a
 										href="#"
-										className="flex items-center whitespace-nowrap rounded-md bg-cu-black-100 px-2 py-1 text-xs font-semibold text-cu-black-700 hover:bg-cu-blue hover:text-white"
+										className="flex items-center px-2 py-1 text-xs font-semibold rounded-md whitespace-nowrap bg-cu-black-100 text-cu-black-700 hover:bg-cu-blue hover:text-white"
 									>
 										<TagIcon className="mr-1.5 h-4 w-4 text-cu-black-400" />
 										Student Event
@@ -545,7 +379,7 @@ const EventCalendar: NextPage = () => {
 								<li className="inline-flex">
 									<a
 										href="#"
-										className="flex items-center whitespace-nowrap rounded-md bg-cu-black-100 px-2 py-1 text-xs font-semibold text-cu-black-700 hover:bg-cu-blue hover:text-white"
+										className="flex items-center px-2 py-1 text-xs font-semibold rounded-md whitespace-nowrap bg-cu-black-100 text-cu-black-700 hover:bg-cu-blue hover:text-white"
 									>
 										<TagIcon className="mr-1.5 h-4 w-4 text-cu-black-400" />
 										Luncheon
@@ -554,7 +388,7 @@ const EventCalendar: NextPage = () => {
 								<li className="inline-flex">
 									<a
 										href="#"
-										className="flex items-center whitespace-nowrap rounded-md bg-cu-black-100 px-2 py-1 text-xs font-semibold text-cu-black-700 hover:bg-cu-blue hover:text-white"
+										className="flex items-center px-2 py-1 text-xs font-semibold rounded-md whitespace-nowrap bg-cu-black-100 text-cu-black-700 hover:bg-cu-blue hover:text-white"
 									>
 										<TagIcon className="mr-1.5 h-4 w-4 text-cu-black-400" />
 										On-Campus Event
@@ -563,7 +397,7 @@ const EventCalendar: NextPage = () => {
 								<li className="inline-flex">
 									<a
 										href="#"
-										className="flex items-center whitespace-nowrap rounded-md bg-cu-black-100 px-2 py-1 text-xs font-semibold text-cu-black-700 hover:bg-cu-blue hover:text-white"
+										className="flex items-center px-2 py-1 text-xs font-semibold rounded-md whitespace-nowrap bg-cu-black-100 text-cu-black-700 hover:bg-cu-blue hover:text-white"
 									>
 										<TagIcon className="mr-1.5 h-4 w-4 text-cu-black-400" />
 										Online Available
@@ -596,7 +430,7 @@ const EventCalendar: NextPage = () => {
 							</dl> */}
 						</div>
 					</aside>
-				</Column.TwoThird>
+				</Column>
 
 				<Column>
 					<div className="overflow-hidden rounded-lg bg-cu-black-50">

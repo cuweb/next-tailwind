@@ -21,8 +21,8 @@ const PageLayout: NextPage = () => {
 
 			<main>
 				<Container>
-					<Column.Two>
-						<Panel className="p-6 rounded-md bg-cu-black-50">
+					<Column cols="2">
+						<Panel hasBorder>
 							<p>
 								Lorem ipsum dolor sit amet, consectetur
 								adipiscing elit. Cras vel urna in mauris lacinia
@@ -30,7 +30,7 @@ const PageLayout: NextPage = () => {
 								porttitor.
 							</p>
 						</Panel>
-						<Panel className="p-6 rounded-md bg-cu-black-50">
+						<Panel hasBorder>
 							<p>
 								Lorem ipsum dolor sit amet, consectetur
 								adipiscing elit. Cras vel urna in mauris lacinia
@@ -38,65 +38,65 @@ const PageLayout: NextPage = () => {
 								porttitor.
 							</p>
 						</Panel>
-					</Column.Two>
+					</Column>
 
-					<Column.Three>
-						<Panel className="p-6 rounded-md bg-cu-black-50">
+					<Column cols="3">
+						<Panel hasBorder>
 							<p>
 								Lorem ipsum dolor sit amet, consectetur
 								adipiscing elit. Cras vel urna in mauris lacinia
 								convallis.
 							</p>
 						</Panel>
-						<Panel className="p-6 rounded-md bg-cu-black-50">
+						<Panel hasBorder>
 							<p>
 								Lorem ipsum dolor sit amet, consectetur
 								adipiscing elit. Cras vel urna in mauris lacinia
 								convallis.
 							</p>
 						</Panel>
-						<Panel className="p-6 rounded-md bg-cu-black-50">
+						<Panel hasBorder>
 							<p>
 								Lorem ipsum dolor sit amet, consectetur
 								adipiscing elit. Cras vel urna in mauris lacinia
 								convallis.
 							</p>
 						</Panel>
-					</Column.Three>
+					</Column>
 
-					<Column.Four>
-						<Panel className="p-6 rounded-md bg-cu-black-50">
+					<Column cols="4">
+						<Panel hasBorder>
 							<p>
 								Lorem ipsum dolor sit amet, consectetur
 								adipiscing elit. Cras vel urna in mauris lacinia
 								convallis.
 							</p>
 						</Panel>
-						<Panel className="p-6 rounded-md bg-cu-black-50">
+						<Panel hasBorder>
 							<p>
 								Lorem ipsum dolor sit amet, consectetur
 								adipiscing elit. Cras vel urna in mauris lacinia
 								convallis.
 							</p>
 						</Panel>
-						<Panel className="p-6 rounded-md bg-cu-black-50">
+						<Panel hasBorder>
 							<p>
 								Lorem ipsum dolor sit amet, consectetur
 								adipiscing elit. Cras vel urna in mauris lacinia
 								convallis.
 							</p>
 						</Panel>
-						<Panel className="p-6 rounded-md bg-cu-black-50">
+						<Panel hasBorder>
 							<p>
 								Lorem ipsum dolor sit amet, consectetur
 								adipiscing elit. Cras vel urna in mauris lacinia
 								convallis.
 							</p>
 						</Panel>
-					</Column.Four>
+					</Column>
 
-					<Column.OneThird>
-						<Panel className="p-6 rounded-md bg-cu-black-50">
+					<Column cols="1/3">
+						<Panel hasBorder>
 							<p>
 								Lorem ipsum dolor sit amet, consectetur
 								adipiscing elit. Cras vel urna in mauris lacinia
@@ -104,7 +104,7 @@ const PageLayout: NextPage = () => {
 								porttitor.
 							</p>
 						</Panel>
-						<Panel className="p-6 rounded-md bg-cu-black-50">
+						<Panel hasBorder>
 							<p>
 								Lorem ipsum dolor sit amet, consectetur
 								adipiscing elit. Cras vel urna in mauris lacinia
@@ -112,10 +112,10 @@ const PageLayout: NextPage = () => {
 								porttitor.
 							</p>
 						</Panel>
-					</Column.OneThird>
+					</Column>
 
-					<Column.TwoThird>
-						<Panel className="p-6 rounded-md bg-cu-black-50">
+					<Column>
+						<Panel hasBorder>
 							<p>
 								Lorem ipsum dolor sit amet, consectetur
 								adipiscing elit. Cras vel urna in mauris lacinia
@@ -123,7 +123,7 @@ const PageLayout: NextPage = () => {
 								porttitor.
 							</p>
 						</Panel>
-						<Panel className="p-6 rounded-md bg-cu-black-50">
+						<Panel hasBorder>
 							<p>
 								Lorem ipsum dolor sit amet, consectetur
 								adipiscing elit. Cras vel urna in mauris lacinia
@@ -131,12 +131,12 @@ const PageLayout: NextPage = () => {
 								porttitor.
 							</p>
 						</Panel>
-					</Column.TwoThird>
+					</Column>
 				</Container>
 
-				<Container.Gray>
-					<Column.Two>
-						<Panel className="p-6 bg-white rounded-md">
+				<Container>
+					<Column cols="2">
+						<Panel>
 							<p>
 								Lorem ipsum dolor sit amet, consectetur
 								adipiscing elit. Cras vel urna in mauris lacinia
@@ -144,7 +144,7 @@ const PageLayout: NextPage = () => {
 								porttitor.
 							</p>
 						</Panel>
-						<Panel className="p-6 bg-white rounded-md">
+						<Panel>
 							<p>
 								Lorem ipsum dolor sit amet, consectetur
 								adipiscing elit. Cras vel urna in mauris lacinia
@@ -152,65 +152,65 @@ const PageLayout: NextPage = () => {
 								porttitor.
 							</p>
 						</Panel>
-					</Column.Two>
+					</Column>
 
-					<Column.Three>
-						<Panel className="p-6 bg-white rounded-md">
+					<Column cols="3">
+						<Panel>
 							<p>
 								Lorem ipsum dolor sit amet, consectetur
 								adipiscing elit. Cras vel urna in mauris lacinia
 								convallis.
 							</p>
 						</Panel>
-						<Panel className="p-6 bg-white rounded-md">
+						<Panel>
 							<p>
 								Lorem ipsum dolor sit amet, consectetur
 								adipiscing elit. Cras vel urna in mauris lacinia
 								convallis.
 							</p>
 						</Panel>
-						<Panel className="p-6 bg-white rounded-md">
+						<Panel>
 							<p>
 								Lorem ipsum dolor sit amet, consectetur
 								adipiscing elit. Cras vel urna in mauris lacinia
 								convallis.
 							</p>
 						</Panel>
-					</Column.Three>
+					</Column>
 
-					<Column.Four>
-						<Panel className="p-6 bg-white rounded-md">
+					<Column cols="4">
+						<Panel>
 							<p>
 								Lorem ipsum dolor sit amet, consectetur
 								adipiscing elit. Cras vel urna in mauris lacinia
 								convallis.
 							</p>
 						</Panel>
-						<Panel className="p-6 bg-white rounded-md">
+						<Panel>
 							<p>
 								Lorem ipsum dolor sit amet, consectetur
 								adipiscing elit. Cras vel urna in mauris lacinia
 								convallis.
 							</p>
 						</Panel>
-						<Panel className="p-6 bg-white rounded-md">
+						<Panel>
 							<p>
 								Lorem ipsum dolor sit amet, consectetur
 								adipiscing elit. Cras vel urna in mauris lacinia
 								convallis.
 							</p>
 						</Panel>
-						<Panel className="p-6 bg-white rounded-md">
+						<Panel>
 							<p>
 								Lorem ipsum dolor sit amet, consectetur
 								adipiscing elit. Cras vel urna in mauris lacinia
 								convallis.
 							</p>
 						</Panel>
-					</Column.Four>
+					</Column>
 
-					<Column.OneThird>
-						<Panel className="p-6 bg-white rounded-md">
+					<Column cols="1/3">
+						<Panel>
 							<p>
 								Lorem ipsum dolor sit amet, consectetur
 								adipiscing elit. Cras vel urna in mauris lacinia
@@ -218,7 +218,7 @@ const PageLayout: NextPage = () => {
 								porttitor.
 							</p>
 						</Panel>
-						<Panel className="p-6 bg-white rounded-md">
+						<Panel>
 							<p>
 								Lorem ipsum dolor sit amet, consectetur
 								adipiscing elit. Cras vel urna in mauris lacinia
@@ -226,10 +226,10 @@ const PageLayout: NextPage = () => {
 								porttitor.
 							</p>
 						</Panel>
-					</Column.OneThird>
+					</Column>
 
-					<Column.TwoThird>
-						<Panel className="p-6 bg-white rounded-md">
+					<Column>
+						<Panel>
 							<p>
 								Lorem ipsum dolor sit amet, consectetur
 								adipiscing elit. Cras vel urna in mauris lacinia
@@ -237,7 +237,7 @@ const PageLayout: NextPage = () => {
 								porttitor.
 							</p>
 						</Panel>
-						<Panel className="p-6 bg-white rounded-md">
+						<Panel>
 							<p>
 								Lorem ipsum dolor sit amet, consectetur
 								adipiscing elit. Cras vel urna in mauris lacinia
@@ -245,8 +245,8 @@ const PageLayout: NextPage = () => {
 								porttitor.
 							</p>
 						</Panel>
-					</Column.TwoThird>
-				</Container.Gray>
+					</Column>
+				</Container>
 			</main>
 
 			<Footer />

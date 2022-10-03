@@ -24,35 +24,38 @@ const Home: NextPage = () => {
 				<Column>
 					<ListSubNav />
 				</Column>
+
+				<Column cols="2">
+					<div>
+						<div className="border rounded-lg border-cu-black-100">
+							<JobListing />
+						</div>
+					</div>
+					<div>
+						<div className="border rounded-lg border-cu-black-100">
+							<JobListing />
+						</div>
+					</div>
+				</Column>
+
 				<Column>
-					<div className="rounded-lg border border-cu-black-100">
+					<div className="border rounded-lg border-cu-black-100">
 						<JobListing />
 					</div>
 				</Column>
-				<Column.Two>
+
+				<Column cols="2/3">
 					<div>
-						<div className="rounded-lg border border-cu-black-100">
+						<div className="border rounded-lg border-cu-black-100">
 							<JobListing />
 						</div>
 					</div>
 					<div>
-						<div className="rounded-lg border border-cu-black-100">
+						<div className="border rounded-lg border-cu-black-100">
 							<JobListing />
 						</div>
 					</div>
-				</Column.Two>
-				<Column.TwoThird>
-					<div>
-						<div className="rounded-lg border border-cu-black-100">
-							<JobListing />
-						</div>
-					</div>
-					<div>
-						<div className="rounded-lg border border-cu-black-100">
-							<JobListing />
-						</div>
-					</div>
-				</Column.TwoThird>
+				</Column>
 			</Container>
 
 			<FooterBasic />

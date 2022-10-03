@@ -4,6 +4,8 @@ module.exports = {
     './_rds-final/components/**/**/*.{js,ts,jsx,tsx}',
     './_rds-final/layouts/**/*.{js,ts,jsx,tsx}',
     './_rds-final/layouts/**/**/*.{js,ts,jsx,tsx}',
+    './_rds-final/helpers/**/*.{js,ts,jsx,tsx}',
+    './_rds-final/helpers/**/**/*.{js,ts,jsx,tsx}',
     './_rds-final/_misc/**/*.{js,ts,jsx,tsx}',
     './_rds-final/_misc/**/**/*.{js,ts,jsx,tsx}',
     './pages/**/*.{js,ts,jsx,tsx}',
@@ -15,7 +17,8 @@ module.exports = {
     extend: {
       backgroundImage: {
         'cu-waves-red': "url('/cu-waves-red.svg')",
-        'cu-waves-white-20': "url('/cu-waves-white-20.svg')",
+        'cu-waves-white-30': "url('/cu-waves-white-30.svg')",
+        // 'cu-waves-white-30': "url('/cu-waves-white-30.svg')",
       },
       // https://htmlcolorcodes.com/color-picker/
       // https://www.tailwindshades.com/
@@ -58,10 +61,6 @@ module.exports = {
             800: '#333333',
             900: '#191919',
         },
-      },
-      gridTemplateColumns: {
-        one3rd: '33.33333% auto',
-        two3rd: '66.66666% auto',
       },
     },
   },

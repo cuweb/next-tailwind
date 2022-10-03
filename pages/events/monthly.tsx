@@ -21,23 +21,23 @@ const EventCalendar: NextPage = () => {
 			</Head>
 			<Navbar />
 
-			<Container.Empty>
+			<header>
 				<EventBanner>Monthly Events</EventBanner>
-			</Container.Empty>
+			</header>
 
 			<main className="pb-4">
 				<Container>
 					<Column>
 						<EventFilter />
 					</Column>
-					<Column.TwoThird>
-						<Panel className="rounded-lg border border-cu-black-100">
+					<Column cols="2/3">
+						<Panel hasBorder>
 							<EventListing />
 						</Panel>
 						<div className="hidden md:block">
 							<SmallCalendar />
 						</div>
-					</Column.TwoThird>
+					</Column>
 				</Container>
 			</main>
 

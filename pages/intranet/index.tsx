@@ -1,20 +1,22 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import NavBar from "../../_rds-final/components/Navbar/IntranetNavbar";
+import Footer from "../../_rds-final/components/Footer/FooterBasic/FooterBasic";
 import Container from "../../_rds-final/layouts/Container/Container";
 import Column from "../../_rds-final/layouts/Columns/Columns";
-import DashboardPanel from "../../_rds-final/layouts/DashboardPanel/DashboardPanel";
-import NavBar from "../../_rds-final/components/Navbar/IntranetNavbar";
-import Profile from "../../_rds-final/components/Banner/Profile/Profile";
-
-import NewsListing from "../../components/Listings/NewsListing";
-import FeedListing from "../../components/Listings/FeedListing";
+import BaseBanner from "../../_rds-final/components/Banner/BaseBanner/BaseBanner";
 import EventListing from "../../components/Listings/EventListing";
-import MarketplaceListing from "../../components/Listings/MarketplaceListing";
-import Files from "../../components/Listings/FileListing";
-import LinksListing from "../../components/Listings/LinksListing";
+import FeedListing from "../../components/Listings/FeedListing";
+import NewsListing from "../../components/Listings/NewsListing";
 import JobListing from "../../components/Listings/JobListing";
+import FileListing from "../../components/Listings/FileListing";
+import MarketplaceListing from "../../components/Listings/MarketplaceListing";
+import LinksListing from "../../components/Listings/LinksListing";
+import Profile from "../../_rds-final/components/Banner/Profile/Profile";
+import Panel from "../../_rds-final/layouts/Panel/Panel";
+import IntranetBanner from "../../components/Banner/IntranetBanner";
 
-const Intranet: NextPage = () => {
+const PageLayout: NextPage = () => {
 	return (
 		<>
 			<Head>
@@ -23,82 +25,70 @@ const Intranet: NextPage = () => {
 			</Head>
 
 			<NavBar />
-			<Profile />
+			<IntranetBanner />
 
 			<main>
-				<Container>
-					<Column.TwoThird>
-						<DashboardPanel>
-							<DashboardPanel.Title>Top 5</DashboardPanel.Title>
-							<NewsListing />
-						</DashboardPanel>
+				<Container bgColor="gray">
+					<Column maxWidth="7xl" cols="2/3" gridGap="8">
+						<div className="-mt-32">
+							<Panel hasShadow>
+								<p className="h-80"></p>
+							</Panel>
+							<Panel hasShadow>
+								<Panel.Title>Your Events</Panel.Title>
+								<EventListing />
+							</Panel>
 
-						<DashboardPanel>
-							<DashboardPanel.Title>News</DashboardPanel.Title>
-							<FeedListing />
-						</DashboardPanel>
-					</Column.TwoThird>
+							<Column cols="2" isNested>
+								<div>
+									<Panel hasShadow>
+										<Panel.Title>Jobs</Panel.Title>
+										<JobListing />
+									</Panel>
+								</div>
+								<div>
+									<Panel hasShadow>
+										<Panel.Title>Your Files</Panel.Title>
+										<FileListing />
+									</Panel>
+								</div>
+							</Column>
+						</div>
+
+						<div>
+							<Panel hasShadow>
+								<Panel.Title>Your Feeds</Panel.Title>
+								<FeedListing />
+							</Panel>
+							<Panel hasShadow>
+								<Panel.Title>Your Links</Panel.Title>
+								<LinksListing />
+							</Panel>
+						</div>
+					</Column>
 				</Container>
 
-				{/* <Container.Gray>
-					<Column.TwoThird>
-						<Panel className="bg-white rounded-lg">
-                        <NewsListing />
-                        <FeedListing />
-						</Panel>
-						<Panel className="bg-white rounded-lg">
-						</Panel>
-					</Column.TwoThird>
-				</Container.Gray> */}
-
-				<Container.Gray>
-					<Column.Two>
-						<DashboardPanel>
-							<DashboardPanel.Title>
-								Upcoming Events
-							</DashboardPanel.Title>
-							<EventListing />
-						</DashboardPanel>
-						<DashboardPanel>
-							<DashboardPanel.Title>
-								Marketplace
-							</DashboardPanel.Title>
-							<MarketplaceListing />
-						</DashboardPanel>
-					</Column.Two>
-				</Container.Gray>
-
-				<Container.Gray>
-					<Column.Three>
+				<Container bgColor="gray">
+					<Column maxWidth="7xl" cols="1/3" gridGap="8">
 						<div>
-							<DashboardPanel>
-								<DashboardPanel.Title>
-									Files
-								</DashboardPanel.Title>
-								<Files />
-							</DashboardPanel>
+							<Panel hasShadow>
+								<Panel.Title>Marketplace</Panel.Title>
+								<MarketplaceListing />
+							</Panel>
 						</div>
 						<div>
-							<DashboardPanel>
-								<DashboardPanel.Title>
-									My Links
-								</DashboardPanel.Title>
-								<LinksListing />
-							</DashboardPanel>
+							<Panel hasShadow>
+								<Panel.Title>Top 5 News</Panel.Title>
+								<NewsListing />
+							</Panel>
 						</div>
-						<div>
-							<DashboardPanel>
-								<DashboardPanel.Title>
-									Job Postings
-								</DashboardPanel.Title>
-								<JobListing />
-							</DashboardPanel>
-						</div>
-					</Column.Three>
-				</Container.Gray>
+					</Column>
+				</Container>
 			</main>
+
+			<Footer />
 		</>
 	);
 };
 
-export default Intranet;
+export default PageLayout;

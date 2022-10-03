@@ -23,10 +23,10 @@ const EventCalendar: NextPage = () => {
 			</Head>
 			<Navbar />
 
-			<Container.Empty>
+			<header>
 				<FeaturedEventBanner />
 				<FeaturedEventListingImage />
-			</Container.Empty>
+			</header>
 
 			<main className="pb-4">
 				<Container>
@@ -36,14 +36,14 @@ const EventCalendar: NextPage = () => {
 						</h2>
 						<EventFilter />
 					</Column>
-					<Column.TwoThird>
-						<Panel className="border rounded-lg border-cu-black-100">
+					<Column cols="2/3">
+						<Panel hasBorder>
 							<EventListing />
 						</Panel>
 						<div className="hidden md:ml-2 md:block">
 							<SmallCalendar />
 						</div>
-					</Column.TwoThird>
+					</Column>
 				</Container>
 			</main>
 

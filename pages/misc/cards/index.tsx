@@ -23,12 +23,12 @@ const Home: NextPage = () => {
 				<Column>
 					<GridSubNav />
 				</Column>
-				<Column.Four>
+				<Column cols="4">
 					<div>Card1</div>
 					<div>Card2</div>
 					<div>Card3</div>
 					<div>Card4</div>
-				</Column.Four>
+				</Column>
 			</Container>
 
 			<FooterBasic />

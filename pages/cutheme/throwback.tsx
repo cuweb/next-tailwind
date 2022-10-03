@@ -22,8 +22,8 @@ const CuTheme: NextPage = () => {
 
 			<main>
 				<Container>
-					<Column.OneThird>
-						<Panel className="p-6 rounded-md bg-cu-black-50">
+					<Column cols="1/3">
+						<Panel>
 							<p>
 								Lorem ipsum dolor sit amet, consectetur
 								adipiscing elit. Cras vel urna in mauris lacinia
@@ -83,7 +83,7 @@ const CuTheme: NextPage = () => {
 								imperdiet.{" "}
 							</p>
 						</Panel>
-					</Column.OneThird>
+					</Column>
 				</Container>
 			</main>
 
