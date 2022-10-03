@@ -127,8 +127,8 @@ export default function FooterStandard() {
 				<div className="uppercase">
 					<h3 className="text-sm font-bold">Admissions</h3>
 					<ul>
-						{navigation.Admissions.map((item) => (
-							<li key={item.name} className="mt-3 text-xs">
+						{navigation.Admissions.map((item, index) => (
+							<li key={index} className="mt-3 text-xs">
 								<a
 									href={item.href}
 									className="text-cu-black-300 hover:text-white"
@@ -142,8 +142,8 @@ export default function FooterStandard() {
 				<div className="uppercase">
 					<h3 className="text-sm font-bold">Academics</h3>
 					<ul>
-						{navigation.Academics.map((item) => (
-							<li key={item.name} className="mt-3 text-xs">
+						{navigation.Academics.map((item, index) => (
+							<li key={index} className="mt-3 text-xs">
 								<a
 									href={item.href}
 									className="text-gray-400 hover:text-white"
@@ -157,8 +157,8 @@ export default function FooterStandard() {
 				<div className="uppercase">
 					<h3 className="text-sm font-bold">Campus</h3>
 					<ul>
-						{navigation.Campus.map((item) => (
-							<li key={item.name} className="mt-3 text-xs">
+						{navigation.Campus.map((item, index) => (
+							<li key={index} className="mt-3 text-xs">
 								<a
 									href={item.href}
 									className="text-gray-400 hover:text-white"
@@ -172,8 +172,8 @@ export default function FooterStandard() {
 				<div className="uppercase">
 					<h3 className="text-sm font-bold">Advancement</h3>
 					<ul>
-						{navigation.Advancement.map((item) => (
-							<li key={item.name} className="mt-3 text-xs">
+						{navigation.Advancement.map((item, index) => (
+							<li key={index} className="mt-3 text-xs">
 								<a
 									href={item.href}
 									className="text-gray-400 hover:text-white"
@@ -187,8 +187,8 @@ export default function FooterStandard() {
 				<div className="uppercase">
 					<h3 className="text-sm font-bold">Ravens</h3>
 					<ul>
-						{navigation.Ravens.map((item) => (
-							<li key={item.name} className="mt-3 text-xs">
+						{navigation.Ravens.map((item, index) => (
+							<li key={index} className="mt-3 text-xs">
 								<a
 									href={item.href}
 									className="text-gray-400 hover:text-white"
@@ -224,8 +224,8 @@ export default function FooterStandard() {
 					1125 Colonel By Drive, Ottawa, ON, K1S 5B6, Canada
 				</p>
 				<ul className="flex justify-center mb-4 space-x-6 lg:mb-0 lg:justify-end">
-					{navigation.social.map((item) => (
-						<li key={item.name}>
+					{navigation.social.map((item, index) => (
+						<li key={index}>
 							<a
 								href={item.href}
 								className="text-gray-200 hover:text-cu-red"

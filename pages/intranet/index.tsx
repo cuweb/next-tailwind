@@ -34,10 +34,6 @@ const PageLayout: NextPage = () => {
 							<Panel hasShadow>
 								<p className="h-80"></p>
 							</Panel>
-							{/* <Panel hasShadow>
-								<Panel.Title>Top 5 News</Panel.Title>
-								<NewsListing />
-							</Panel> */}
 							<Panel hasShadow>
 								<Panel.Title>Your Events</Panel.Title>
 								<EventListing />
