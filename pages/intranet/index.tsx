@@ -15,10 +15,6 @@ import LinksListing from "../../components/Listings/LinksListing";
 import Profile from "../../_rds-final/components/Banner/Profile/Profile";
 import Panel from "../../_rds-final/layouts/Panel/Panel";
 
-const styles = {
-	panel: `rounded-md border border-cu-black-100 bg-white [&:last-child]:mb-0`,
-};
-
 const PageLayout: NextPage = () => {
 	return (
 		<>
@@ -36,19 +32,23 @@ const PageLayout: NextPage = () => {
 				<Container>
 					<Column maxWidth="7xl" cols="2/3" gridGap="8">
 						<div>
-							<Panel hasShadow>
+							<Panel hasShadow hasBorder>
+								<Panel.Title>Top 5 News</Panel.Title>
 								<NewsListing />
 							</Panel>
-							<Panel hasShadow>
+							<Panel hasShadow hasBorder>
+								<Panel.Title>Upcoming Events</Panel.Title>
 								<EventListing />
 							</Panel>
 						</div>
 
 						<div>
 							<Panel hasShadow hasBorder>
+								<Panel.Title>Your Feeds</Panel.Title>
 								<FeedListing />
 							</Panel>
 							<Panel hasShadow hasBorder>
+								<Panel.Title>Marketplace</Panel.Title>
 								<MarketplaceListing />
 							</Panel>
 						</div>
@@ -58,17 +58,20 @@ const PageLayout: NextPage = () => {
 				<Container bgColor="gray">
 					<Column maxWidth="7xl" cols="3" gridGap="8">
 						<div>
-							<Panel hasShadow>
+							<Panel hasShadow hasBorder>
+								<Panel.Title>Files</Panel.Title>
 								<FileListing />
 							</Panel>
 						</div>
 						<div>
-							<Panel hasShadow>
+							<Panel hasShadow hasBorder>
+								<Panel.Title>Jobs</Panel.Title>
 								<JobListing />
 							</Panel>
 						</div>
 						<div>
-							<Panel hasShadow>
+							<Panel hasShadow hasBorder>
+								<Panel.Title>Links</Panel.Title>
 								<LinksListing />
 							</Panel>
 						</div>
