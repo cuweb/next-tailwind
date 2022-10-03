@@ -6,6 +6,7 @@ import Container from "../../_rds-final/layouts/Container/Container";
 import Column from "../../_rds-final/layouts/Columns/Columns";
 import BaseBanner from "../../_rds-final/components/Banner/BaseBanner/BaseBanner";
 import Panel from "../../_rds-final/layouts/Panel/Panel";
+import EventListing from "../../components/Listings/EventListing";
 
 const PageLayout: NextPage = () => {
 	return (
@@ -19,9 +20,70 @@ const PageLayout: NextPage = () => {
 			<BaseBanner>Layouts, Grids &amp; Spacing</BaseBanner>
 
 			<main>
-				<Container>
-					<Column cols="2" maxWidth="3xl">
-						<p className="p-6 rounded-md bg-cu-black-50">
+				<Container bgColor="gray">
+					<Column gridGap="8" cols="2" maxWidth="3xl">
+						<p className="p-6 bg-white rounded-md">
+							Lorem ipsum dolor sit amet, consectetur adipiscing
+							elit. Cras vel urna in mauris lacinia convallis.
+						</p>
+						<p className="p-6 bg-white rounded-md">
+							Cras vel urna in mauris lacinia convallis. Curabitur
+							a nibh quis leo laoreet porttitor.
+						</p>
+					</Column>
+
+					<Column gridGap="4" cols="3" maxWidth="5xl">
+						<p className="p-6 bg-white rounded-md">
+							Lorem ipsum dolor sit amet, consectetur adipiscing
+							elit. Cras vel urna in mauris lacinia convallis.
+						</p>
+						<p className="p-6 bg-white rounded-md">
+							Lorem ipsum dolor sit amet, consectetur adipiscing
+							elit. Cras vel urna in mauris lacinia convallis.
+						</p>
+						<p className="p-6 bg-white rounded-md">
+							Cras vel urna in mauris lacinia convallis. Curabitur
+							a nibh quis leo laoreet porttitor.
+						</p>
+					</Column>
+
+					<Column gridGap="8" cols="4" maxWidth="7xl">
+						<p className="p-6 bg-white rounded-md">
+							Lorem ipsum dolor sit amet, consectetur adipiscing
+							elit. Cras vel urna in mauris lacinia convallis.
+						</p>
+						<p className="p-6 bg-white rounded-md">
+							Lorem ipsum dolor sit amet, consectetur adipiscing
+							elit. Cras vel urna in mauris lacinia convallis.
+						</p>
+						<p className="p-6 bg-white rounded-md">
+							Lorem ipsum dolor sit amet, consectetur adipiscing
+							elit. Cras vel urna in mauris lacinia convallis.
+						</p>
+						<p className="p-6 bg-white rounded-md">
+							Cras vel urna in mauris lacinia convallis. Curabitur
+							a nibh quis leo laoreet porttitor.
+						</p>
+					</Column>
+				</Container>
+				<Container bgColor="gray">
+					<Column gridGap="8" cols="2" maxWidth="3xl">
+						<p className="p-6 bg-white rounded-md">
+							Lorem ipsum dolor sit amet, consectetur adipiscing
+							elit. Cras vel urna in mauris lacinia convallis.
+						</p>
+						<p className="p-6 bg-white rounded-md">
+							Cras vel urna in mauris lacinia convallis. Curabitur
+							a nibh quis leo laoreet porttitor.
+						</p>
+					</Column>
+
+					<Column gridGap="4" cols="3" maxWidth="5xl">
+						<p className="p-6 bg-white rounded-md">
+							Lorem ipsum dolor sit amet, consectetur adipiscing
+							elit. Cras vel urna in mauris lacinia convallis.
+						</p>
+						<p className="p-6 bg-white rounded-md">
 							Lorem ipsum dolor sit amet, consectetur adipiscing
 							elit. Cras vel urna in mauris lacinia convallis.
 						</p>
@@ -31,22 +93,7 @@ const PageLayout: NextPage = () => {
 						</p>
 					</Column>
 
-					<Column cols="3" maxWidth="5xl">
-						<p className="p-6 rounded-md bg-cu-black-50">
-							Lorem ipsum dolor sit amet, consectetur adipiscing
-							elit. Cras vel urna in mauris lacinia convallis.
-						</p>
-						<p className="p-6 rounded-md bg-cu-black-50">
-							Lorem ipsum dolor sit amet, consectetur adipiscing
-							elit. Cras vel urna in mauris lacinia convallis.
-						</p>
-						<p className="p-6 rounded-md bg-cu-black-50">
-							Cras vel urna in mauris lacinia convallis. Curabitur
-							a nibh quis leo laoreet porttitor.
-						</p>
-					</Column>
-
-					<Column cols="4" maxWidth="7xl">
+					<Column gridGap="8" cols="4" maxWidth="7xl">
 						<p className="p-6 rounded-md bg-cu-black-50">
 							Lorem ipsum dolor sit amet, consectetur adipiscing
 							elit. Cras vel urna in mauris lacinia convallis.

@@ -5,13 +5,13 @@ const styles = {
 	container: `cu-container py-8`,
 };
 
-interface ColumnProps {
+interface ContainerProps {
 	children: React.ReactNode;
 	// maxWidth?: "none" | "full" | "3xl" | "5xl" | "7xl";
 	bgColor?: "white" | "gray";
 }
 
-const Column: React.FC<ColumnProps> = ({
+const Container: React.FC<ContainerProps> = ({
 	children,
 	// maxWidth = "7xl",
 	bgColor = "white",
@@ -23,4 +23,4 @@ const Column: React.FC<ColumnProps> = ({
 	);
 };
 
-export default Column;
+export default Container;

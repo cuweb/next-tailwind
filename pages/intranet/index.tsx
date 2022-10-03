@@ -43,7 +43,7 @@ const PageLayout: NextPage = () => {
 								<EventListing />
 							</Panel>
 
-							<Column cols="2">
+							<Column cols="2" isNested>
 								<div>
 									<Panel hasShadow>
 										<Panel.Title>Jobs</Panel.Title>
