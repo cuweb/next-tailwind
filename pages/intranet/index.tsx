@@ -35,39 +35,40 @@ const PageLayout: NextPage = () => {
 			<main>
 				<Container>
 					<Column maxWidth="7xl" cols="2/3" gridGap="8">
-						<section>
+						<div>
 							<Panel hasShadow>
 								<NewsListing />
 							</Panel>
 							<Panel hasShadow>
 								<EventListing />
 							</Panel>
-						</section>
+						</div>
 
-						<section>
-							<Panel hasShadow>
+						<div>
+							<Panel hasShadow hasBorder>
 								<FeedListing />
 							</Panel>
-							<Panel hasShadow>
+							<Panel hasShadow hasBorder>
 								<MarketplaceListing />
 							</Panel>
-						</section>
+						</div>
 					</Column>
 				</Container>
+
 				<Container bgColor="gray">
 					<Column maxWidth="7xl" cols="3" gridGap="8">
 						<div>
-							<Panel hasBorder hasShadow>
+							<Panel hasShadow>
 								<FileListing />
 							</Panel>
 						</div>
 						<div>
-							<Panel hasBorder hasShadow>
+							<Panel hasShadow>
 								<JobListing />
 							</Panel>
 						</div>
 						<div>
-							<Panel hasBorder hasShadow>
+							<Panel hasShadow>
 								<LinksListing />
 							</Panel>
 						</div>
