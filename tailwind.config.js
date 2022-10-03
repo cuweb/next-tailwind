@@ -36,6 +36,7 @@ module.exports = {
           900: '#55080B',
         },
         'cu-black': {
+            DEFAULT: '#000000',
             50: '#F2F2F2',
             100: '#e6e6e6',
             200: '#cccccc',

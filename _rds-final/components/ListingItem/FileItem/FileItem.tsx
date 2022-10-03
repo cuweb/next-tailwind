@@ -43,7 +43,7 @@ export default function FileItem(props: any) {
 					</div>
 
 					<div className="flex-auto">
-						<h3 className="text-sm font-semibold text-cu-black-800">
+						<h3 className="text-sm font-semibold text-cu-black">
 							<a
 								href={link}
 								className="hover:text-cu-red focus:outline-none"
@@ -55,7 +55,7 @@ export default function FileItem(props: any) {
 								{title}
 							</a>
 						</h3>
-						<p className="mt-1 mb-1 mr-4 text-sm italic text-cu-black-400">
+						<p className="mt-1 mb-1 mr-4 text-sm italic text-cu-black-700">
 							{filesize} - {date}
 						</p>
 					</div>

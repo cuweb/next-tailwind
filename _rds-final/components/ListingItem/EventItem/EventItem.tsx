@@ -17,14 +17,14 @@ export default function EventItem(props: any) {
 							<p className="text-xs font-bold uppercase text-cu-red">
 								{month}
 							</p>
-							<p className="text-2xl font-bold uppercase text-cu-black-800">
+							<p className="text-2xl font-bold uppercase text-cu-black">
 								{day}
 							</p>
 						</div>
 					</div>
 
 					<div className="flex-auto">
-						<h3 className="mb-2 text-base font-semibold text-cu-black-800">
+						<h3 className="mb-2 text-base font-semibold text-cu-black">
 							<a
 								href={link}
 								className="hover:text-cu-red focus:outline-none"
@@ -37,7 +37,7 @@ export default function EventItem(props: any) {
 							</a>
 						</h3>
 						<ul className="flex flex-wrap sm:gap-2">
-							<li className="flex items-center mr-2 text-sm text-cu-black-400">
+							<li className="flex items-center mr-2 text-sm text-cu-black-700">
 								<ClockIcon
 									className="mr-1.5 h-5 w-5 flex-shrink-0 text-cu-red-300"
 									aria-hidden="true"
@@ -45,7 +45,7 @@ export default function EventItem(props: any) {
 
 								<time dateTime={date}>{time}</time>
 							</li>
-							<li className="flex items-center mt-2 text-sm text-cu-black-400 sm:mt-0">
+							<li className="flex items-center mt-2 text-sm text-cu-black-700 sm:mt-0">
 								<MapPinIcon
 									className="mr-1.5 h-5 w-5 flex-shrink-0 text-cu-red-300"
 									aria-hidden="true"
