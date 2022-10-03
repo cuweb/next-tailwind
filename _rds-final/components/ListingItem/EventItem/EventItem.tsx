@@ -13,7 +13,7 @@ export default function EventItem(props: any) {
 			<div className="relative flex items-center gap-2 p-6 hover:bg-gray-50">
 				<div className="flex flex-col items-start gap-3 md:flex-row">
 					<div className="flex-none w-16 md:w-20">
-						<div className="flex flex-col justify-center flex-none w-auto h-16 text-center shadow rounded-2xl bg-gray-50 md:h-20">
+						<div className="flex flex-col justify-center flex-none w-auto h-16 text-center rounded-lg shadow bg-gray-50 md:h-20">
 							<p className="text-xs font-bold uppercase text-cu-red">
 								{month}
 							</p>
