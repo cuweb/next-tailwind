@@ -21,16 +21,16 @@ const EventCalendar: NextPage = () => {
 			</Head>
 			<Navbar />
 
-			<Container>
+			<header>
 				<EventBanner>Monthly Events</EventBanner>
-			</Container>
+			</header>
 
 			<main className="pb-4">
 				<Container>
 					<Column>
 						<EventFilter />
 					</Column>
-					<Column>
+					<Column cols="2/3">
 						<Panel hasBorder>
 							<EventListing />
 						</Panel>
