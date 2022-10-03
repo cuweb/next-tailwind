@@ -30,10 +30,10 @@ export default function EventCard(props: any) {
 			</div>
 			<div className="flex flex-col justify-between flex-1 p-6 bg-white">
 				<div className="flex-1">
-					<p className="mt-10 text-xl font-semibold text-gray-900">
+					<p className="mt-10 text-xl font-semibold text-cu-black">
 						{name}
 					</p>
-					<p className="flex items-center mt-4 text-sm text-gray-500">
+					<p className="flex items-center mt-4 text-sm text-cu-black-700">
 						<ClockIcon
 							className="mr-1.5 h-5 w-5 flex-shrink-0 text-cu-red-300"
 							aria-hidden="true"
@@ -41,7 +41,7 @@ export default function EventCard(props: any) {
 
 						<time dateTime={day}>2:00pm - 5:00pm</time>
 					</p>
-					<p className="flex items-center mt-2 text-sm text-gray-500">
+					<p className="flex items-center mt-2 text-sm text-cu-black-700">
 						<MapPinIcon
 							className="mr-1.5 h-5 w-5 flex-shrink-0 text-cu-red-300"
 							aria-hidden="true"
