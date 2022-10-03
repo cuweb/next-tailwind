@@ -17,7 +17,7 @@ export default function MarketplaceItem(props: any) {
 					</div>
 
 					<div className="flex-auto">
-						<h3 className="text-sm font-semibold text-cu-black-800">
+						<h3 className="text-sm font-semibold text-cu-black">
 							<a
 								href={link}
 								className="hover:text-cu-red focus:outline-none"
@@ -27,7 +27,7 @@ export default function MarketplaceItem(props: any) {
 									aria-hidden="true"
 								/>
 								{title}
-								<span className="italic font-light text-cu-black-400">
+								<span className="italic font-light text-cu-black-700">
 									{" "}
 									for {cost}
 								</span>

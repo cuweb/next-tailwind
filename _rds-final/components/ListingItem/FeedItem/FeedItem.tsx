@@ -9,7 +9,7 @@ export default function TemplateItem(props: any) {
 			<div className="relative flex items-center gap-2 p-6 hover:bg-gray-50">
 				<div className="flex items-start gap-3">
 					<div className="flex-auto">
-						<h3 className="text-sm font-semibold text-cu-black-800 sm:text-base">
+						<h3 className="text-sm font-semibold text-cu-black sm:text-base">
 							<a
 								href={link}
 								className="hover:text-cu-red focus:outline-none"
@@ -21,10 +21,10 @@ export default function TemplateItem(props: any) {
 								{title}
 							</a>
 						</h3>
-						<p className="mt-1 mb-1 mr-4 text-sm italic text-cu-black-400">
+						<p className="mt-1 mb-1 mr-4 text-sm italic text-cu-black-700">
 							{date}
 						</p>
-						<p className="mt-2 text-sm text-cu-black-600">
+						<p className="mt-2 text-sm text-cu-black-900">
 							{excerpt}
 						</p>
 						<div className="mt-2">
