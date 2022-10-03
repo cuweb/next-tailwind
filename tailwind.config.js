@@ -22,6 +22,19 @@ module.exports = {
       // https://htmlcolorcodes.com/color-picker/
       // https://www.tailwindshades.com/
       colors: {
+        // 'cu-red': {
+        //     DEFAULT: '#AE1C24',
+        //     '50': '#F3B7BA',
+        //     '100': '#F1A5AA',
+        //     '200': '#EB8288',
+        //     '300': '#E55F66',
+        //     '400': '#E03C45',
+        //     '500': '#D1222B',
+        //     '600': '#AE1C24',
+        //     '700': '#7E141A',
+        //     '800': '#4D0C10',
+        //     '900': '#1D0506'
+        //   },
         'cu-red': {
           DEFAULT: '#E91C24',
           50: '#FDE9E9',
