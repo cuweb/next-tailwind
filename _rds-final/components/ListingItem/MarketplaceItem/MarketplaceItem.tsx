@@ -8,16 +8,16 @@ export default function MarketplaceItem(props: any) {
 		<li key={title}>
 			<div className="relative flex items-center gap-2 p-6 hover:bg-gray-50">
 				<div className="flex items-start gap-3 sm:items-center">
-					<div className="w-16 flex-none md:w-20">
+					<div className="flex-none w-16 md:w-20">
 						<img
-							className="h-auto w-auto rounded lg:w-24"
+							className="w-auto h-auto rounded lg:w-24"
 							src={image}
 							alt=""
 						/>
 					</div>
 
 					<div className="flex-auto">
-						<h3 className="text-sm font-semibold text-gray-800">
+						<h3 className="text-sm font-semibold text-cu-black-800">
 							<a
 								href={link}
 								className="hover:text-cu-red focus:outline-none"
@@ -27,7 +27,7 @@ export default function MarketplaceItem(props: any) {
 									aria-hidden="true"
 								/>
 								{title}
-								<span className="font-light italic text-cu-black-400">
+								<span className="italic font-light text-cu-black-400">
 									{" "}
 									for {cost}
 								</span>
@@ -41,7 +41,7 @@ export default function MarketplaceItem(props: any) {
 				</div>
 
 				<ChevronRightIcon
-					className="ml-auto h-5 w-5 flex-none text-cu-black-300"
+					className="flex-none w-5 h-5 ml-auto text-cu-black-300"
 					aria-hidden="true"
 				/>
 			</div>

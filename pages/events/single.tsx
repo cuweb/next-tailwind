@@ -313,7 +313,7 @@ const EventCalendar: NextPage = () => {
 								<li className="inline-flex">
 									<a
 										href="#"
-										className="flex items-center px-4 py-2 text-base font-semibold text-white rounded-md whitespace-nowrap bg-cu-red hover:bg-cu-blue-700 hover:text-white"
+										className="flex items-center px-4 py-2 text-base font-semibold text-white rounded-md whitespace-nowrap bg-cu-red hover:bg-cu-red-800 hover:text-white"
 									>
 										Register Now
 									</a>
@@ -321,7 +321,7 @@ const EventCalendar: NextPage = () => {
 								<li className="inline-flex">
 									<a
 										href="#"
-										className="flex items-center px-4 py-2 text-base font-semibold bg-white border rounded-md whitespace-nowrap border-cu-blue-700 text-cu-blue-700 hover:bg-cu-blue-700 hover:text-white"
+										className="flex items-center px-4 py-2 text-base font-semibold bg-white border rounded-md whitespace-nowrap border-cu-red text-cu-red hover:border-cu-red-800 hover:bg-cu-red-800 hover:text-white"
 									>
 										Add to My Events
 									</a>
@@ -335,7 +335,7 @@ const EventCalendar: NextPage = () => {
 										className="relative p-4 border rounded-lg border-cu-black-100 bg-gray-50"
 									>
 										<dt>
-											<div className="absolute flex justify-center w-10 h-10 top-5 text-cu-blue-700">
+											<div className="absolute flex justify-center w-10 h-10 top-5 text-cu-black-400">
 												<feature.icon
 													className="w-6 h-6"
 													aria-hidden="true"
@@ -352,16 +352,11 @@ const EventCalendar: NextPage = () => {
 								))}
 							</dl>
 
-							{/* <p className="inline-flex items-center py-2 pl-3 pr-4 mt-4 text-sm font-semibold bg-white border rounded-md whitespace-nowrap border-cu-blue-700 text-cu-black-600">
-								<CalendarDaysIcon className="mr-1.5 h-4 w-4 text-cu-blue-700" />
-								Multi-Day Event
-							</p> */}
-
 							<ul className="flex flex-wrap gap-2 mt-4">
 								<li className="inline-flex">
 									<a
 										href="#"
-										className="flex items-center px-2 py-1 text-xs font-semibold rounded-md whitespace-nowrap bg-cu-black-100 text-cu-black-700 hover:bg-cu-blue hover:text-white"
+										className="flex items-center px-2 py-1 text-xs font-semibold rounded-md whitespace-nowrap bg-cu-black-100 text-cu-black-700 hover:bg-cu-red hover:text-white"
 									>
 										<TagIcon className="mr-1.5 h-4 w-4 text-cu-black-400" />
 										Faculty Event
@@ -370,7 +365,7 @@ const EventCalendar: NextPage = () => {
 								<li className="inline-flex">
 									<a
 										href="#"
-										className="flex items-center px-2 py-1 text-xs font-semibold rounded-md whitespace-nowrap bg-cu-black-100 text-cu-black-700 hover:bg-cu-blue hover:text-white"
+										className="flex items-center px-2 py-1 text-xs font-semibold rounded-md whitespace-nowrap bg-cu-black-100 text-cu-black-700 hover:bg-cu-red hover:text-white"
 									>
 										<TagIcon className="mr-1.5 h-4 w-4 text-cu-black-400" />
 										Student Event
@@ -379,7 +374,7 @@ const EventCalendar: NextPage = () => {
 								<li className="inline-flex">
 									<a
 										href="#"
-										className="flex items-center px-2 py-1 text-xs font-semibold rounded-md whitespace-nowrap bg-cu-black-100 text-cu-black-700 hover:bg-cu-blue hover:text-white"
+										className="flex items-center px-2 py-1 text-xs font-semibold rounded-md whitespace-nowrap bg-cu-black-100 text-cu-black-700 hover:bg-cu-red hover:text-white"
 									>
 										<TagIcon className="mr-1.5 h-4 w-4 text-cu-black-400" />
 										Luncheon
@@ -388,7 +383,7 @@ const EventCalendar: NextPage = () => {
 								<li className="inline-flex">
 									<a
 										href="#"
-										className="flex items-center px-2 py-1 text-xs font-semibold rounded-md whitespace-nowrap bg-cu-black-100 text-cu-black-700 hover:bg-cu-blue hover:text-white"
+										className="flex items-center px-2 py-1 text-xs font-semibold rounded-md whitespace-nowrap bg-cu-black-100 text-cu-black-700 hover:bg-cu-red hover:text-white"
 									>
 										<TagIcon className="mr-1.5 h-4 w-4 text-cu-black-400" />
 										On-Campus Event
@@ -397,37 +392,13 @@ const EventCalendar: NextPage = () => {
 								<li className="inline-flex">
 									<a
 										href="#"
-										className="flex items-center px-2 py-1 text-xs font-semibold rounded-md whitespace-nowrap bg-cu-black-100 text-cu-black-700 hover:bg-cu-blue hover:text-white"
+										className="flex items-center px-2 py-1 text-xs font-semibold rounded-md whitespace-nowrap bg-cu-black-100 text-cu-black-700 hover:bg-cu-red hover:text-white"
 									>
 										<TagIcon className="mr-1.5 h-4 w-4 text-cu-black-400" />
 										Online Available
 									</a>
 								</li>
 							</ul>
-
-							{/* <dl className="mt-5 space-y-0 md:grid md:grid-cols-1 md:gap-x-0 md:gap-y-4 md:space-y-0">
-								{features.map((feature) => (
-									<div
-										key={feature.name}
-										className="relative p-4 border rounded-lg border-cu-black-100 bg-gray-50"
-									>
-										<dt>
-											<div className="absolute flex justify-center w-10 h-10 top-5 text-cu-blue-700">
-												<feature.icon
-													className="w-6 h-6"
-													aria-hidden="true"
-												/>
-											</div>
-											<p className="ml-12 font-bold leading-6 text-gray-900 text-md">
-												{feature.name}
-											</p>
-										</dt>
-										<dd className="ml-12 text-sm text-gray-500">
-											{feature.description}
-										</dd>
-									</div>
-								))}
-							</dl> */}
 						</div>
 					</aside>
 				</Column>

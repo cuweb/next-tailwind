@@ -9,7 +9,7 @@ export default function TemplateItem(props: any) {
 			<div className="relative flex items-center gap-2 p-6 hover:bg-gray-50">
 				<div className="flex items-start gap-3">
 					<div className="flex-auto">
-						<h3 className="text-sm font-semibold text-cu-blue sm:text-base">
+						<h3 className="text-sm font-semibold text-cu-black-800 sm:text-base">
 							<a
 								href={link}
 								className="hover:text-cu-red focus:outline-none"
@@ -24,7 +24,9 @@ export default function TemplateItem(props: any) {
 						<p className="mt-1 mb-1 mr-4 text-sm italic text-cu-black-400">
 							{date}
 						</p>
-						<p className="mt-2 text-sm text-gray-500">{excerpt}</p>
+						<p className="mt-2 text-sm text-cu-black-600">
+							{excerpt}
+						</p>
 						<div className="mt-2">
 							<Badge>{category}</Badge>
 						</div>
@@ -32,7 +34,7 @@ export default function TemplateItem(props: any) {
 				</div>
 
 				<ChevronRightIcon
-					className="ml-auto h-5 w-5 flex-none text-cu-black-300"
+					className="flex-none w-5 h-5 ml-auto text-cu-black-300"
 					aria-hidden="true"
 				/>
 			</div>

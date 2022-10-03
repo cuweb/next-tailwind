@@ -29,7 +29,7 @@ const projects = [
 		uni: "Carleton",
 		name: "Intranet",
 		link: "/intranet",
-		color: "bg-cu-blue",
+		color: "bg-blue-800",
 		icon: UsersIcon,
 	},
 	{
@@ -99,7 +99,7 @@ const Home: NextPage = () => {
 											<div className="text-sm">
 												<a
 													href={project.link}
-													className="font-medium text-cu-red hover:text-cu-blue"
+													className="font-medium text-cu-red hover:text-cu-red-800 hover:underline"
 												>
 													{" "}
 													View prototypes

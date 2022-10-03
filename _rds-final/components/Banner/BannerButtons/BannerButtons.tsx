@@ -10,13 +10,13 @@ export default function BannerWithButtons({ children }: any) {
 				<div className="flex mt-4 md:mt-0 md:ml-4">
 					<button
 						type="button"
-						className="inline-flex items-center px-4 py-2 text-sm font-medium bg-white border border-gray-300 rounded-md shadow-sm text-cu-black-800 hover:bg-cu-blue hover:text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+						className="inline-flex items-center px-4 py-2 text-sm font-medium bg-white border border-gray-300 rounded-md shadow-sm text-cu-black-800 hover:bg-cu-red-800 hover:text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
 					>
 						Add Event
 					</button>
 					<button
 						type="button"
-						className="inline-flex items-center px-4 py-2 ml-3 text-sm font-medium text-white border border-transparent rounded-md shadow-sm bg-cu-red hover:bg-cu-blue focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+						className="inline-flex items-center px-4 py-2 ml-3 text-sm font-medium text-white border border-transparent rounded-md shadow-sm bg-cu-red hover:bg-cu-red-800 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
 					>
 						Register Now
 					</button>
