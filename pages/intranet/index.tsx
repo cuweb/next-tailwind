@@ -14,6 +14,7 @@ import MarketplaceListing from "../../components/Listings/MarketplaceListing";
 import LinksListing from "../../components/Listings/LinksListing";
 import Profile from "../../_rds-final/components/Banner/Profile/Profile";
 import Panel from "../../_rds-final/layouts/Panel/Panel";
+import IntranetBanner from "../../components/Banner/IntranetBanner";
 
 const PageLayout: NextPage = () => {
 	return (
@@ -22,57 +23,67 @@ const PageLayout: NextPage = () => {
 				<title>Dashboard - Intranet | Carleton University </title>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
+
 			<NavBar />
-
-			<Profile />
-
-			{/* <BaseBanner>Layouts, Grids &amp; Spacing</BaseBanner> */}
+			<IntranetBanner />
 
 			<main>
-				<Container>
+				<Container bgColor="gray">
 					<Column maxWidth="7xl" cols="2/3" gridGap="8">
-						<div>
-							<Panel hasShadow hasBorder>
+						<div className="-mt-32">
+							<Panel hasShadow>
+								<p className="h-80"></p>
+							</Panel>
+							{/* <Panel hasShadow>
 								<Panel.Title>Top 5 News</Panel.Title>
 								<NewsListing />
-							</Panel>
-							<Panel hasShadow hasBorder>
-								<Panel.Title>Upcoming Events</Panel.Title>
+							</Panel> */}
+							<Panel hasShadow>
+								<Panel.Title>Your Events</Panel.Title>
 								<EventListing />
 							</Panel>
+
+							<Column cols="2">
+								<div>
+									<Panel hasShadow>
+										<Panel.Title>Jobs</Panel.Title>
+										<JobListing />
+									</Panel>
+								</div>
+								<div>
+									<Panel hasShadow>
+										<Panel.Title>Your Files</Panel.Title>
+										<FileListing />
+									</Panel>
+								</div>
+							</Column>
 						</div>
 
 						<div>
-							<Panel hasShadow hasBorder>
+							<Panel hasShadow>
 								<Panel.Title>Your Feeds</Panel.Title>
 								<FeedListing />
 							</Panel>
-							<Panel hasShadow hasBorder>
-								<Panel.Title>Marketplace</Panel.Title>
-								<MarketplaceListing />
+							<Panel hasShadow>
+								<Panel.Title>Your Links</Panel.Title>
+								<LinksListing />
 							</Panel>
 						</div>
 					</Column>
 				</Container>
 
 				<Container bgColor="gray">
-					<Column maxWidth="7xl" cols="3" gridGap="8">
+					<Column maxWidth="7xl" cols="1/3" gridGap="8">
 						<div>
-							<Panel hasShadow hasBorder>
-								<Panel.Title>Files</Panel.Title>
-								<FileListing />
+							<Panel hasShadow>
+								<Panel.Title>Marketplace</Panel.Title>
+								<MarketplaceListing />
 							</Panel>
 						</div>
 						<div>
-							<Panel hasShadow hasBorder>
-								<Panel.Title>Jobs</Panel.Title>
-								<JobListing />
-							</Panel>
-						</div>
-						<div>
-							<Panel hasShadow hasBorder>
-								<Panel.Title>Links</Panel.Title>
-								<LinksListing />
+							<Panel hasShadow>
+								<Panel.Title>Top 5 News</Panel.Title>
+								<NewsListing />
 							</Panel>
 						</div>
 					</Column>

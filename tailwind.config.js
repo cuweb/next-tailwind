@@ -17,7 +17,8 @@ module.exports = {
     extend: {
       backgroundImage: {
         'cu-waves-red': "url('/cu-waves-red.svg')",
-        'cu-waves-white-20': "url('/cu-waves-white-20.svg')",
+        'cu-waves-white-30': "url('/cu-waves-white-30.svg')",
+        // 'cu-waves-white-30': "url('/cu-waves-white-30.svg')",
       },
       // https://htmlcolorcodes.com/color-picker/
       // https://www.tailwindshades.com/

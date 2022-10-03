@@ -4,7 +4,7 @@ export default function Profile() {
 	return (
 		<>
 			<header className="shadow bg-gradient-to-b from-slate-100 to-slate-300">
-				<div className="bg-bottom bg-no-repeat bg-contain bg-cu-waves-white-20 md:bg-cover">
+				<div className="bg-bottom bg-no-repeat bg-contain bg-cu-waves-white-30 md:bg-cover">
 					<div className="flex items-start px-6 py-8 mx-auto max-w-7xl md:items-center md:py-12 lg:px-8">
 						<img
 							className="w-20 h-20 border-2 border-white rounded-full shadow border-spacing-4"
