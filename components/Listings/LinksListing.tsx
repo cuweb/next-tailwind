@@ -32,7 +32,9 @@ export default function LinksListing() {
 	return (
 		<StackedList.Dividers>
 			{links.map(({ title, link }) => (
-				<LinkItem key={title} title={title} link={link} />
+				<LinkItem key={title}>
+					<LinkItem.Title title={title} link={link} />
+				</LinkItem>
 			))}
 		</StackedList.Dividers>
 	);
