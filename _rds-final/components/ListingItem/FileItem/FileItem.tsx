@@ -47,7 +47,9 @@ const FileItemBase = ({ children }: any) => {
 							</g>
 						</svg>
 					</div>
-					<div className="flex-auto">{children}</div>
+					<div className="flex flex-col flex-auto gap-1">
+						{children}
+					</div>
 				</div>
 				<ChevronRightIcon
 					className="flex-none w-5 h-5 ml-auto text-cu-black-300"
@@ -76,7 +78,7 @@ const Title = ({ fontSize = "base", title, link }: FileItemProps) => {
 const Details = (props: any) => {
 	const { filesize, date } = props;
 	return (
-		<p className="mt-1 mb-1 mr-4 text-sm italic text-cu-black-700">
+		<p className="mr-4 text-sm italic text-cu-black-700">
 			{filesize} - {date}
 		</p>
 	);
