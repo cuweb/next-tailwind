@@ -65,16 +65,18 @@ export default function EventListing() {
 			<StackedList.Dividers>
 				{events.map(
 					({ title, link, location, time, month, day, date }) => (
-						<EventItem
-							key={title}
-							title={title}
-							link={link}
-							location={location}
-							time={time}
-							month={month}
-							day={day}
-							date={date}
-						/>
+						<EventItem key={title}>
+							<EventItem.DateBox month={month} day={day} />
+							<EventItem.Content>
+								<EventItem.Title title={title} link={link} />
+								<EventItem.Details
+									date={date}
+									time={time}
+									location={location}
+								/>
+								<EventItem.Category />
+							</EventItem.Content>
+						</EventItem>
 					)
 				)}
 			</StackedList.Dividers>
