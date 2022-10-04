@@ -8,30 +8,30 @@ const marketplace = [
 		cost: "$100.00",
 		image: "https://source.unsplash.com/random/400x300",
 	},
-	// {
-	// 	title: "Plastic Boxes",
-	// 	link: "#",
-	// 	cost: "$40.00",
-	// 	image: "https://source.unsplash.com/random/400x300",
-	// },
-	// {
-	// 	title: "Cambridge Audio Stereo Amplifier",
-	// 	link: "#",
-	// 	cost: "$10000.00",
-	// 	image: "https://source.unsplash.com/random/400x300",
-	// },
-	// {
-	// 	title: "IKEA Baskets",
-	// 	link: "#",
-	// 	cost: "$90.00",
-	// 	image: "https://source.unsplash.com/random/400x300",
-	// },
-	// {
-	// 	title: "Hair Collection",
-	// 	link: "#",
-	// 	cost: "$100.00",
-	// 	image: "https://source.unsplash.com/random/400x300",
-	// },
+	{
+		title: "Plastic Boxes",
+		link: "#",
+		cost: "$40.00",
+		image: "https://source.unsplash.com/random/400x300",
+	},
+	{
+		title: "Cambridge Audio Stereo Amplifier",
+		link: "#",
+		cost: "$10000.00",
+		image: "https://source.unsplash.com/random/400x300",
+	},
+	{
+		title: "IKEA Baskets",
+		link: "#",
+		cost: "$90.00",
+		image: "https://source.unsplash.com/random/400x300",
+	},
+	{
+		title: "Hair Collection",
+		link: "#",
+		cost: "$100.00",
+		image: "https://source.unsplash.com/random/400x300",
+	},
 ];
 
 export default function MarketplaceListing() {
@@ -40,13 +40,14 @@ export default function MarketplaceListing() {
 			{marketplace.map(({ title, link, cost, image }) => (
 				<MarketplaceItem key={title}>
 					<MarketplaceItem.Image image={image} />
-					<MarketplaceItem.Title
-						title={title}
-						link={link}
-						cost={cost}
-					>
+					<MarketplaceItem.Content>
+						<MarketplaceItem.Title
+							title={title}
+							link={link}
+							cost={cost}
+						/>
 						<MarketplaceItem.Category />
-					</MarketplaceItem.Title>
+					</MarketplaceItem.Content>
 				</MarketplaceItem>
 			))}
 		</StackedList.Dividers>

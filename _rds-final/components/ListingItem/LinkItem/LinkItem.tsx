@@ -6,7 +6,6 @@ interface LinkItemProps {
 	fontSize?: "base" | "lg" | "xl";
 	title?: string;
 	link?: string;
-	department?: string;
 }
 
 const LinkItemBase = ({ children }: any) => {
@@ -17,9 +16,7 @@ const LinkItemBase = ({ children }: any) => {
 					<div className="flex-none w-auto">
 						<LinkIcon className="flex-none w-4 h-4 mr-2 text-cu-red" />
 					</div>
-					<div className="flex flex-col flex-auto gap-1">
-						{children}
-					</div>
+					{children}
 				</div>
 				<ChevronRightIcon
 					className="flex-none w-5 h-5 ml-auto text-cu-black-300"
@@ -30,12 +27,11 @@ const LinkItemBase = ({ children }: any) => {
 	);
 };
 
-const Title = ({
-	fontSize = "base",
-	title,
-	link,
-	department,
-}: LinkItemProps) => {
+const Content = ({ children }: any) => {
+	return <div className="flex flex-col flex-auto gap-1">{children}</div>;
+};
+
+const Title = ({ fontSize = "base", title, link }: LinkItemProps) => {
 	return (
 		<>
 			<h3
@@ -51,6 +47,7 @@ const Title = ({
 };
 
 const LinkItem = Object.assign(LinkItemBase, {
+	Content,
 	Title,
 });
 

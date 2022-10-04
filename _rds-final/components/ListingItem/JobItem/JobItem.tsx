@@ -7,17 +7,15 @@ interface JobItemProps {
 	title?: string;
 	link?: string;
 	department?: string;
+	dateData?: string;
+	date?: string;
 }
 
 const JobItemBase = ({ children }: any) => {
 	return (
 		<li>
 			<div className="relative flex items-center gap-2 p-6 hover:bg-gray-50">
-				<div className="flex items-start gap-3">
-					<div className="flex flex-col flex-auto gap-1">
-						{children}
-					</div>
-				</div>
+				<div className="flex items-start gap-3">{children}</div>
 				<ChevronRightIcon
 					className="flex-none w-5 h-5 ml-auto text-cu-black-300"
 					aria-hidden="true"
@@ -25,6 +23,10 @@ const JobItemBase = ({ children }: any) => {
 			</div>
 		</li>
 	);
+};
+
+const Content = ({ children }: any) => {
+	return <div className="flex flex-col flex-auto gap-1">{children}</div>;
 };
 
 const Title = ({
@@ -51,8 +53,7 @@ const Title = ({
 	);
 };
 
-const Details = (props: any) => {
-	const { dateData, date } = props;
+const Details = ({ dateData, date }: JobItemProps) => {
 	return (
 		<p className="flex mt-2 text-xs text-cu-black-900">
 			<CalendarIcon
@@ -67,6 +68,7 @@ const Details = (props: any) => {
 };
 
 const JobItem = Object.assign(JobItemBase, {
+	Content,
 	Title,
 	Details,
 });

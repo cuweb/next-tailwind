@@ -41,8 +41,10 @@ export default function FileListing() {
 			{files.map(({ title, filesize, link, date }) => (
 				<>
 					<FileItem key={title}>
-						<FileItem.Title title={title} link={link} />
-						<FileItem.Details filesize={filesize} date={date} />
+						<FileItem.Content>
+							<FileItem.Title title={title} link={link} />
+							<FileItem.Details filesize={filesize} date={date} />
+						</FileItem.Content>
 					</FileItem>
 				</>
 			))}

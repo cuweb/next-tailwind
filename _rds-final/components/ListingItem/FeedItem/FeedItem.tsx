@@ -7,15 +7,16 @@ interface FeedItemProps {
 	fontSize?: "base" | "lg" | "xl";
 	title?: string;
 	link?: string;
+	date?: string;
+	excerpt?: string;
+	category?: string;
 }
 
 const FeedItemBase = ({ children }: any) => {
 	return (
 		<li>
 			<div className="relative flex items-center gap-2 p-6 hover:bg-gray-50">
-				<div className="flex items-start gap-3">
-					<div className="flex-auto">{children}</div>
-				</div>
+				<div className="flex items-start gap-3">{children}</div>
 				<ChevronRightIcon
 					className="flex-none w-5 h-5 ml-auto text-cu-black-300"
 					aria-hidden="true"
@@ -23,6 +24,10 @@ const FeedItemBase = ({ children }: any) => {
 			</div>
 		</li>
 	);
+};
+
+const Content = ({ children }: any) => {
+	return <div className="flex-auto">{children}</div>;
 };
 
 const Title = ({ fontSize = "base", title, link }: FeedItemProps) => {
@@ -40,8 +45,7 @@ const Title = ({ fontSize = "base", title, link }: FeedItemProps) => {
 	);
 };
 
-const Date = (props: any) => {
-	const { date } = props;
+const Date = ({ date }: FeedItemProps) => {
 	return (
 		<p className="mt-1 mb-1 mr-4 text-sm italic text-cu-black-700">
 			{date}
@@ -49,13 +53,11 @@ const Date = (props: any) => {
 	);
 };
 
-const Excerpt = (props: any) => {
-	const { excerpt } = props;
+const Excerpt = ({ excerpt }: FeedItemProps) => {
 	return <p className="mt-2 text-sm text-cu-black-900">{excerpt}</p>;
 };
 
-const Category = (props: any) => {
-	const { category } = props;
+const Category = ({ category }: FeedItemProps) => {
 	return (
 		<div className="mt-2">
 			<Badge>{category}</Badge>
@@ -64,6 +66,7 @@ const Category = (props: any) => {
 };
 
 const FeedItem = Object.assign(FeedItemBase, {
+	Content,
 	Title,
 	Date,
 	Excerpt,

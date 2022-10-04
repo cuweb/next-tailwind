@@ -6,6 +6,8 @@ interface FileItemProps {
 	fontSize?: "base" | "lg" | "xl";
 	title?: string;
 	link?: string;
+	filesize?: string;
+	date?: string;
 }
 
 const FileItemBase = ({ children }: any) => {
@@ -47,9 +49,7 @@ const FileItemBase = ({ children }: any) => {
 							</g>
 						</svg>
 					</div>
-					<div className="flex flex-col flex-auto gap-1">
-						{children}
-					</div>
+					{children}
 				</div>
 				<ChevronRightIcon
 					className="flex-none w-5 h-5 ml-auto text-cu-black-300"
@@ -58,6 +58,10 @@ const FileItemBase = ({ children }: any) => {
 			</div>
 		</li>
 	);
+};
+
+const Content = ({ children }: any) => {
+	return <div className="flex flex-col flex-auto gap-1">{children}</div>;
 };
 
 const Title = ({ fontSize = "base", title, link }: FileItemProps) => {
@@ -75,8 +79,7 @@ const Title = ({ fontSize = "base", title, link }: FileItemProps) => {
 	);
 };
 
-const Details = (props: any) => {
-	const { filesize, date } = props;
+const Details = ({ filesize, date }: FileItemProps) => {
 	return (
 		<p className="mr-4 text-sm italic text-cu-black-700">
 			{filesize} - {date}
@@ -85,6 +88,7 @@ const Details = (props: any) => {
 };
 
 const FileItem = Object.assign(FileItemBase, {
+	Content,
 	Title,
 	Details,
 });

@@ -51,10 +51,11 @@ export default function NewsListing() {
 				{posts.map(({ title, date, excerpt, link, image }) => (
 					<NewsItem key={title}>
 						<NewsItem.Image image={image} />
-						<NewsItem.Title title={title} link={link}>
+						<NewsItem.Content>
+							<NewsItem.Title title={title} link={link} />
 							<NewsItem.Date date={date} />
 							<NewsItem.Excerpt excerpt={excerpt} />
-						</NewsItem.Title>
+						</NewsItem.Content>
 					</NewsItem>
 				))}
 			</StackedList.Dividers>
