@@ -7,15 +7,10 @@ const styles = {
 
 interface ContainerProps {
 	children: React.ReactNode;
-	// maxWidth?: "none" | "full" | "3xl" | "5xl" | "7xl";
 	bgColor?: "white" | "gray";
 }
 
-const Container: React.FC<ContainerProps> = ({
-	children,
-	// maxWidth = "7xl",
-	bgColor = "white",
-}): JSX.Element => {
+const Container = ({ children, bgColor = "white" }: ContainerProps) => {
 	return (
 		<div className={`${styles.container} ${colorScheme[bgColor]}`}>
 			{children}

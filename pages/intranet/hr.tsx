@@ -3,7 +3,7 @@ import Head from "next/head";
 
 import Container from "../../_rds-final/layouts/Container/Container";
 import Column from "../../_rds-final/layouts/Columns/Columns";
-import DashboardPanel from "../../_rds-final/layouts/DashboardPanel/DashboardPanel";
+import Panel from "../../_rds-final/layouts/Panel/Panel";
 import NavBar from "../../_rds-final/components/Navbar/IntranetNavbar";
 import Profile from "../../_rds-final/components/Banner/Profile/Profile";
 
@@ -23,64 +23,17 @@ const Intranet: NextPage = () => {
 			<main>
 				<Container>
 					<Column cols="2">
-						<DashboardPanel>
-							<DashboardPanel.Title>Top 5</DashboardPanel.Title>
+						<Panel hasBorder>
+							<Panel.Title>Top 5</Panel.Title>
 							<Files />
-						</DashboardPanel>
-
-						<DashboardPanel>
-							<DashboardPanel.Title>News</DashboardPanel.Title>
-							<Files />
-						</DashboardPanel>
-					</Column>
-				</Container>
-
-				{/* <Container.Gray>
-					<Column cols="2"Third>
-						<Panel className="bg-white rounded-lg">
-                        <Top5 />
-                        <NewsFeed />
 						</Panel>
-						<Panel className="bg-white rounded-lg">
+
+						<Panel hasBorder>
+							<Panel.Title>News</Panel.Title>
+							<Files />
 						</Panel>
 					</Column>
-				</Container> */}
-				{/* <Container.Gray>
-					<Column cols="2">
-						<DashboardPanel>
-							<DashboardPanel.Title>
-								Upcoming Events
-							</DashboardPanel.Title>
-							<EventListing />
-						</DashboardPanel>
-						<DashboardPanel>
-							<DashboardPanel.Title>
-								Marketplace
-							</DashboardPanel.Title>
-							<Marketplace />
-						</DashboardPanel>
-					</Column>
 				</Container>
-				<Container.Gray>
-					<Column cols="3">
-						<DashboardPanel>
-							<DashboardPanel.Title>Files</DashboardPanel.Title>
-							<Files />
-						</DashboardPanel>
-						<DashboardPanel>
-							<DashboardPanel.Title>
-								Bookmarks
-							</DashboardPanel.Title>
-							<Bookmarks />
-						</DashboardPanel>
-						<DashboardPanel>
-							<DashboardPanel.Title>
-								Job Postings
-							</DashboardPanel.Title>
-							<JobListing />
-						</DashboardPanel>
-					</Column>
-				</Container> */}
 			</main>
 		</>
 	);
