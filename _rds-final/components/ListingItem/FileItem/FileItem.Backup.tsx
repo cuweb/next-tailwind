@@ -1,16 +1,10 @@
-import React from "react";
-import { rdsFontSizes } from "../../../helpers/tailwindClasses";
 import { ChevronRightIcon } from "@heroicons/react/24/outline";
 
-interface FileItemProps {
-	fontSize?: "base" | "lg" | "xl";
-	title?: string;
-	link?: string;
-}
+export default function FileItem(props: any) {
+	const { title, filesize, link, date } = props;
 
-const FileItemBase = ({ children }: any) => {
 	return (
-		<li>
+		<li key={title}>
 			<div className="relative flex items-center gap-2 p-6 hover:bg-gray-50">
 				<div className="flex items-start gap-3">
 					<div className="flex-none w-auto">
@@ -47,8 +41,26 @@ const FileItemBase = ({ children }: any) => {
 							</g>
 						</svg>
 					</div>
-					<div className="flex-auto">{children}</div>
+
+					<div className="flex-auto">
+						<h3 className="text-sm font-semibold text-cu-black">
+							<a
+								href={link}
+								className="hover:text-cu-red focus:outline-none"
+							>
+								<span
+									className="absolute inset-0"
+									aria-hidden="true"
+								/>
+								{title}
+							</a>
+						</h3>
+						<p className="mt-1 mb-1 mr-4 text-sm italic text-cu-black-700">
+							{filesize} - {date}
+						</p>
+					</div>
 				</div>
+
 				<ChevronRightIcon
 					className="flex-none w-5 h-5 ml-auto text-cu-black-300"
 					aria-hidden="true"
@@ -56,35 +68,4 @@ const FileItemBase = ({ children }: any) => {
 			</div>
 		</li>
 	);
-};
-
-const Title = ({ fontSize = "base", title, link }: FileItemProps) => {
-	return (
-		<>
-			<h3
-				className={`text-sm font-semibold text-cu-black ${rdsFontSizes[fontSize]}`}
-			>
-				<a href={link} className="hover:text-cu-red focus:outline-none">
-					<span className="absolute inset-0" aria-hidden="true" />
-					{title}
-				</a>
-			</h3>
-		</>
-	);
-};
-
-const Details = (props: any) => {
-	const { filesize, date } = props;
-	return (
-		<p className="mt-1 mb-1 mr-4 text-sm italic text-cu-black-700">
-			{filesize} - {date}
-		</p>
-	);
-};
-
-const FileItem = Object.assign(FileItemBase, {
-	Title,
-	Details,
-});
-
-export default FileItem;
+}
