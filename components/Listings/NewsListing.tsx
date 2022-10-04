@@ -1,4 +1,4 @@
-import StackedList from "../../_rds-final/components/StackedList/StackedList";
+import StackedList from "../../_rds-final/layouts/StackedList/StackedList";
 import NewsItem from "../../_rds-final/components/ListingItem/NewsItem/NewsItem";
 
 const posts = [
@@ -46,19 +46,17 @@ const posts = [
 
 export default function NewsListing() {
 	return (
-		<>
-			<StackedList.Dividers>
-				{posts.map(({ title, date, excerpt, link, image }) => (
-					<NewsItem key={title}>
-						<NewsItem.Image image={image} />
-						<NewsItem.Content>
-							<NewsItem.Title title={title} link={link} />
-							<NewsItem.Date date={date} />
-							<NewsItem.Excerpt excerpt={excerpt} />
-						</NewsItem.Content>
-					</NewsItem>
-				))}
-			</StackedList.Dividers>
-		</>
+		<StackedList dividers>
+			{posts.map(({ title, date, excerpt, link, image }) => (
+				<NewsItem key={title}>
+					<NewsItem.Image image={image} />
+					<NewsItem.Content>
+						<NewsItem.Title title={title} link={link} />
+						<NewsItem.Date date={date} />
+						<NewsItem.Excerpt excerpt={excerpt} />
+					</NewsItem.Content>
+				</NewsItem>
+			))}
+		</StackedList>
 	);
 }

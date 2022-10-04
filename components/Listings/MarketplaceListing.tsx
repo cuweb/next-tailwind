@@ -1,4 +1,4 @@
-import StackedList from "../../_rds-final/components/StackedList/StackedList";
+import StackedList from "../../_rds-final/layouts/StackedList/StackedList";
 import MarketplaceItem from "../../_rds-final/components/ListingItem/MarketplaceItem/MarketplaceItem";
 
 const marketplace = [
@@ -36,7 +36,7 @@ const marketplace = [
 
 export default function MarketplaceListing() {
 	return (
-		<StackedList.Dividers>
+		<StackedList dividers>
 			{marketplace.map(({ title, link, cost, image }) => (
 				<MarketplaceItem key={title}>
 					<MarketplaceItem.Image image={image} />
@@ -50,6 +50,6 @@ export default function MarketplaceListing() {
 					</MarketplaceItem.Content>
 				</MarketplaceItem>
 			))}
-		</StackedList.Dividers>
+		</StackedList>
 	);
 }

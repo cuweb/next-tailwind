@@ -1,4 +1,4 @@
-import StackedList from "../../_rds-final/components/StackedList/StackedList";
+import StackedList from "../../_rds-final/layouts/StackedList/StackedList";
 import FileItem from "../../_rds-final/components/ListingItem/FileItem/FileItem";
 import FeedItem from "../../_rds-final/components/ListingItem/FeedItem/FeedItem";
 
@@ -37,7 +37,7 @@ const files = [
 
 export default function FileListing() {
 	return (
-		<StackedList.Dividers>
+		<StackedList dividers>
 			{files.map(({ title, filesize, link, date }) => (
 				<>
 					<FileItem key={title}>
@@ -48,6 +48,6 @@ export default function FileListing() {
 					</FileItem>
 				</>
 			))}
-		</StackedList.Dividers>
+		</StackedList>
 	);
 }
