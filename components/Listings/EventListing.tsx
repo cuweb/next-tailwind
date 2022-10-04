@@ -1,4 +1,4 @@
-import StackedList from "../../_rds-final/components/StackedList/StackedList";
+import StackedList from "../../_rds-final/layouts/StackedList/StackedList";
 import EventItem from "../../_rds-final/components/ListingItem/EventItem/EventItem";
 
 const events = [
@@ -61,25 +61,21 @@ const events = [
 
 export default function EventListing() {
 	return (
-		<>
-			<StackedList.Dividers>
-				{events.map(
-					({ title, link, location, time, month, day, date }) => (
-						<EventItem key={title}>
-							<EventItem.DateBox month={month} day={day} />
-							<EventItem.Content>
-								<EventItem.Title title={title} link={link} />
-								<EventItem.Details
-									date={date}
-									time={time}
-									location={location}
-								/>
-								<EventItem.Category />
-							</EventItem.Content>
-						</EventItem>
-					)
-				)}
-			</StackedList.Dividers>
-		</>
+		<StackedList dividers>
+			{events.map(({ title, link, location, time, month, day, date }) => (
+				<EventItem key={title}>
+					<EventItem.DateBox month={month} day={day} />
+					<EventItem.Content>
+						<EventItem.Title title={title} link={link} />
+						<EventItem.Details
+							date={date}
+							time={time}
+							location={location}
+						/>
+						<EventItem.Category />
+					</EventItem.Content>
+				</EventItem>
+			))}
+		</StackedList>
 	);
 }

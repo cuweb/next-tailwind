@@ -1,4 +1,4 @@
-import StackedList from "../../_rds-final/components/StackedList/StackedList";
+import StackedList from "../../_rds-final/layouts/StackedList/StackedList";
 import JobItem from "../../_rds-final/components/ListingItem/JobItem/JobItem";
 
 const positions = [
@@ -46,26 +46,21 @@ const positions = [
 
 export default function JobListing() {
 	return (
-		<>
-			<StackedList.Dividers>
-				{positions.map(
-					({ id, title, link, department, dateData, date }) => (
-						<JobItem key={id}>
-							<JobItem.Content>
-								<JobItem.Title
-									title={title}
-									link={link}
-									department={department}
-								/>
-								<JobItem.Details
-									dateData={dateData}
-									date={date}
-								/>
-							</JobItem.Content>
-						</JobItem>
-					)
-				)}
-			</StackedList.Dividers>
-		</>
+		<StackedList dividers>
+			{positions.map(
+				({ id, title, link, department, dateData, date }) => (
+					<JobItem key={id}>
+						<JobItem.Content>
+							<JobItem.Title
+								title={title}
+								link={link}
+								department={department}
+							/>
+							<JobItem.Details dateData={dateData} date={date} />
+						</JobItem.Content>
+					</JobItem>
+				)
+			)}
+		</StackedList>
 	);
 }

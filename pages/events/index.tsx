@@ -10,7 +10,7 @@ import EventFilter from "../../_rds-final/components/Filter/Filter";
 import SmallCalendar from "../../_rds-final/components/Calendar/SmallCalendar/SmallCalendar";
 
 import FeaturedEventBanner from "../../components/Banner/FeaturedEventBanner";
-import FeaturedEventListingImage from "../../components/Listings/FeaturedEventListingImage";
+import FeaturedEventListingImage from "../../components/CardGrids/FeaturedEventCards";
 
 import EventListing from "../../components/Listings/EventListing";
 

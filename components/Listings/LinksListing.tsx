@@ -1,4 +1,4 @@
-import StackedList from "../../_rds-final/components/StackedList/StackedList";
+import StackedList from "../../_rds-final/layouts/StackedList/StackedList";
 import LinkItem from "../../_rds-final/components/ListingItem/LinkItem/LinkItem";
 import Link from "next/link";
 
@@ -31,7 +31,7 @@ const links = [
 
 export default function LinksListing() {
 	return (
-		<StackedList.Dividers>
+		<StackedList dividers>
 			{links.map(({ title, link }) => (
 				<LinkItem key={title}>
 					<LinkItem.Content>
@@ -39,6 +39,6 @@ export default function LinksListing() {
 					</LinkItem.Content>
 				</LinkItem>
 			))}
-		</StackedList.Dividers>
+		</StackedList>
 	);
 }

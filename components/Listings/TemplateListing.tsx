@@ -1,4 +1,4 @@
-import StackedList from "../../_rds-final/components/StackedList/StackedList";
+import StackedList from "../../_rds-final/layouts/StackedList/StackedList";
 import TemplateItem from "../../_rds-final/components/ListingItem/_TemplateItem/TemplateItem";
 
 const template = [
@@ -30,19 +30,17 @@ const template = [
 
 export default function NewsListing() {
 	return (
-		<>
-			<StackedList.Dividers>
-				{template.map(({ name, date, excerpt, link, image }) => (
-					<TemplateItem
-						key={name}
-						name={name}
-						date={date}
-						excerpt={excerpt}
-						link={link}
-						image={image}
-					/>
-				))}
-			</StackedList.Dividers>
-		</>
+		<StackedList dividers>
+			{template.map(({ name, date, excerpt, link, image }) => (
+				<TemplateItem
+					key={name}
+					name={name}
+					date={date}
+					excerpt={excerpt}
+					link={link}
+					image={image}
+				/>
+			))}
+		</StackedList>
 	);
 }

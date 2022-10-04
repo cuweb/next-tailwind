@@ -1,4 +1,4 @@
-import StackedList from "../../_rds-final/components/StackedList/StackedList";
+import StackedList from "../../_rds-final/layouts/StackedList/StackedList";
 import FeedItem from "../../_rds-final/components/ListingItem/FeedItem/FeedItem";
 
 const posts = [
@@ -42,7 +42,7 @@ const posts = [
 
 export default function FeedListing() {
 	return (
-		<StackedList.Dividers>
+		<StackedList dividers>
 			{posts.map(({ id, title, link, date, excerpt, category }) => (
 				<FeedItem key={id}>
 					<FeedItem.Content>
@@ -53,6 +53,6 @@ export default function FeedListing() {
 					</FeedItem.Content>
 				</FeedItem>
 			))}
-		</StackedList.Dividers>
+		</StackedList>
 	);
 }
