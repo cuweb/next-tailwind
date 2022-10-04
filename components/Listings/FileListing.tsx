@@ -9,30 +9,30 @@ const files = [
 		filesize: "175KB",
 		date: "January 7, 2020",
 	},
-	// {
-	// 	title: "Dental Claim Form",
-	// 	link: "#",
-	// 	filesize: "175KB",
-	// 	date: "January 7, 2020",
-	// },
-	// {
-	// 	title: "Healthcare Expenses Statement",
-	// 	link: "#",
-	// 	filesize: "175KB",
-	// 	date: "January 7, 2020",
-	// },
-	// {
-	// 	title: "CUPE 3778 Collective Agreement",
-	// 	link: "#",
-	// 	filesize: "175KB",
-	// 	date: "January 7, 2020",
-	// },
-	// {
-	// 	title: "Accident Report",
-	// 	link: "#",
-	// 	filesize: "175KB",
-	// 	date: "January 7, 2020",
-	// },
+	{
+		title: "Dental Claim Form",
+		link: "#",
+		filesize: "175KB",
+		date: "January 7, 2020",
+	},
+	{
+		title: "Healthcare Expenses Statement",
+		link: "#",
+		filesize: "175KB",
+		date: "January 7, 2020",
+	},
+	{
+		title: "CUPE 3778 Collective Agreement",
+		link: "#",
+		filesize: "175KB",
+		date: "January 7, 2020",
+	},
+	{
+		title: "Accident Report",
+		link: "#",
+		filesize: "175KB",
+		date: "January 7, 2020",
+	},
 ];
 
 export default function FileListing() {
@@ -43,10 +43,6 @@ export default function FileListing() {
 					<FileItem key={title}>
 						<FileItem.Title title={title} link={link} />
 						<FileItem.Details filesize={filesize} date={date} />
-					</FileItem>
-					<FileItem key={title}>
-						<FileItem.Details filesize={filesize} date={date} />
-						<FileItem.Title title={title} link={link} />
 					</FileItem>
 				</>
 			))}
