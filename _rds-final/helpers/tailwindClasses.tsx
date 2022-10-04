@@ -1,4 +1,4 @@
-export const gridMaxWidth = {
+export const rdsMaxWidth = {
 	none: "max-w-none",
 	full: "max-w-full",
 	"3xl": "max-w-3xl",
@@ -6,7 +6,7 @@ export const gridMaxWidth = {
 	"7xl": "max-w-7xl",
 };
 
-export const gridTemplateCols = {
+export const rdsGridColumns = {
 	"1": "",
 	"2": "md:grid-cols-2",
 	"3": "md:grid-cols-3",
@@ -15,7 +15,7 @@ export const gridTemplateCols = {
 	"2/3": "lg:grid-cols-3 lg:[&>*:first-child]:col-span-2",
 };
 
-export const gridSpacing = {
+export const rdsGridSpacing = {
 	"0": "gap-0 [&+.cu-column]:mt-0", // none
 	"0.5": "gap-0.5 [&+.cu-column]:mt-0.5", // 2px
 	"1": "gap-1 [&+.cu-column]:mt-1", // 4px
@@ -25,7 +25,13 @@ export const gridSpacing = {
 	"10": "gap-10 [&+.cu-column]:mt-10", // 40px
 };
 
-export const colorScheme = {
+export const rdsColorScheme = {
 	white: "bg-white",
 	gray: "bg-cu-black-50",
+};
+
+export const rdsFontSizes = {
+	base: "text-base",
+	lg: "text-lg",
+	xl: "text-xl",
 };

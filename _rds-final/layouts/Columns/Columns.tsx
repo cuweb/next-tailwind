@@ -1,8 +1,8 @@
 import React from "react";
 import {
-	gridMaxWidth,
-	gridTemplateCols,
-	gridSpacing,
+	rdsMaxWidth,
+	rdsGridColumns,
+	rdsGridSpacing,
 } from "../../helpers/tailwindClasses";
 
 const styles = {
@@ -26,9 +26,9 @@ const Column = ({
 }: ColumnProps) => {
 	return (
 		<div
-			className={`${styles.column} ${gridMaxWidth[maxWidth]} ${
-				gridSpacing[gridGap]
-			} ${gridTemplateCols[cols]} ${isNested ? "mt-8" : "px-8"}`}
+			className={`${styles.column} ${rdsMaxWidth[maxWidth]} ${
+				rdsGridSpacing[gridGap]
+			} ${rdsGridColumns[cols]} ${isNested ? "mt-8" : "px-8"}`}
 		>
 			{children}
 		</div>

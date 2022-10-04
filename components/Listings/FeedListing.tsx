@@ -44,32 +44,12 @@ export default function FeedListing() {
 	return (
 		<StackedList.Dividers>
 			{posts.map(({ id, title, link, date, excerpt, category }) => (
-				<>
-					<FeedItem key={id}>
-						<FeedItem.Title title={title} link={link} fontLarge />
-						<FeedItem.Date date={date} />
-						<FeedItem.Excerpt excerpt={excerpt} />
-						<FeedItem.Category category={category} />
-					</FeedItem>
-
-					<FeedItem key={id}>
-						<FeedItem.Date date={date} />
-						<FeedItem.Title title={title} link={link} />
-						<FeedItem.Excerpt excerpt={excerpt} />
-						<FeedItem.Category category={category} />
-					</FeedItem>
-
-					{/* <FeedItem key={id}>
-						<FeedItem.Date date={date} />
-						<FeedItem.Title title={title} link={link} />
-						<FeedItem.Category category={category} />
-					</FeedItem>
-
-					<FeedItem key={id}>
-						<FeedItem.Title title={title} link={link} />
-						<FeedItem.Excerpt excerpt={excerpt} />
-					</FeedItem> */}
-				</>
+				<FeedItem key={id}>
+					<FeedItem.Title title={title} link={link} />
+					<FeedItem.Date date={date} />
+					<FeedItem.Excerpt excerpt={excerpt} />
+					<FeedItem.Category category={category} />
+				</FeedItem>
 			))}
 		</StackedList.Dividers>
 	);

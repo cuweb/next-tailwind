@@ -1,9 +1,12 @@
 import React from "react";
+import { rdsFontSizes } from "../../../helpers/tailwindClasses";
 import { ChevronRightIcon } from "@heroicons/react/24/outline";
 import Badge from "../../Badge/Badge";
 
 interface FeedItemProps {
-	fontLarge?: boolean;
+	fontSize?: "base" | "lg" | "xl";
+	title?: string;
+	link?: string;
 }
 
 const FeedItemBase = ({ children }: any) => {
@@ -22,15 +25,11 @@ const FeedItemBase = ({ children }: any) => {
 	);
 };
 
-const Title = (props: any, { fontLarge }: FeedItemProps) => {
-	const { title, link } = props;
-
+const Title = ({ fontSize = "base", title, link }: FeedItemProps) => {
 	return (
 		<>
 			<h3
-				className={`text-sm font-semibold text-cu-black ${
-					fontLarge ? "sm:text-3xl" : "sm:text-base"
-				}`}
+				className={`text-sm font-semibold text-cu-black ${rdsFontSizes[fontSize]}`}
 			>
 				<a href={link} className="hover:text-cu-red focus:outline-none">
 					<span className="absolute inset-0" aria-hidden="true" />
