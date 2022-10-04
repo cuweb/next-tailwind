@@ -5,7 +5,7 @@ const posts = [
 	{
 		id: 1,
 		title: "Office closed on July 2nd",
-		link: "#",
+		link: "https://carleton.ca",
 		date: "September 3rd, 2023",
 		category: "Human Resources",
 		excerpt:
@@ -14,7 +14,7 @@ const posts = [
 	{
 		id: 2,
 		title: "New password policy",
-		link: "#",
+		link: "https://carleton.ca",
 		date: "September 9th, 2023",
 		category: "Healthy Workplace",
 		excerpt:
@@ -23,7 +23,7 @@ const posts = [
 	{
 		id: 3,
 		title: "Office closed on July 2nd",
-		link: "#",
+		link: "https://carleton.ca",
 		date: "September 15th, 2023",
 		category: "Potato",
 		excerpt:
@@ -32,7 +32,7 @@ const posts = [
 	{
 		id: 2,
 		title: "New password policy",
-		link: "#",
+		link: "https://carleton.ca",
 		date: "September 9th, 2023",
 		category: "Healthy Workplace",
 		excerpt:
@@ -44,14 +44,14 @@ export default function FeedListing() {
 	return (
 		<StackedList.Dividers>
 			{posts.map(({ id, title, link, date, excerpt, category }) => (
-				<FeedItem
-					key={id}
-					title={title}
-					link={link}
-					date={date}
-					excerpt={excerpt}
-					category={category}
-				/>
+				<FeedItem key={id}>
+					<FeedItem.Content>
+						<FeedItem.Title title={title} link={link} />
+						<FeedItem.Date date={date} />
+						<FeedItem.Excerpt excerpt={excerpt} />
+						<FeedItem.Category category={category} />
+					</FeedItem.Content>
+				</FeedItem>
 			))}
 		</StackedList.Dividers>
 	);

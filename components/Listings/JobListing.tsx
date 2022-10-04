@@ -50,14 +50,19 @@ export default function JobListing() {
 			<StackedList.Dividers>
 				{positions.map(
 					({ id, title, link, department, dateData, date }) => (
-						<JobItem
-							key={id}
-							title={title}
-							link={link}
-							department={department}
-							dateData={dateData}
-							date={date}
-						/>
+						<JobItem key={id}>
+							<JobItem.Content>
+								<JobItem.Title
+									title={title}
+									link={link}
+									department={department}
+								/>
+								<JobItem.Details
+									dateData={dateData}
+									date={date}
+								/>
+							</JobItem.Content>
+						</JobItem>
 					)
 				)}
 			</StackedList.Dividers>

@@ -38,13 +38,17 @@ export default function MarketplaceListing() {
 	return (
 		<StackedList.Dividers>
 			{marketplace.map(({ title, link, cost, image }) => (
-				<MarketplaceItem
-					key={title}
-					title={title}
-					link={link}
-					cost={cost}
-					image={image}
-				/>
+				<MarketplaceItem key={title}>
+					<MarketplaceItem.Image image={image} />
+					<MarketplaceItem.Content>
+						<MarketplaceItem.Title
+							title={title}
+							link={link}
+							cost={cost}
+						/>
+						<MarketplaceItem.Category />
+					</MarketplaceItem.Content>
+				</MarketplaceItem>
 			))}
 		</StackedList.Dividers>
 	);

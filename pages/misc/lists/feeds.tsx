@@ -38,12 +38,6 @@ const Home: NextPage = () => {
 					</div>
 				</Column>
 
-				<Column>
-					<div className="border rounded-lg border-cu-black-100">
-						<FeedListing />
-					</div>
-				</Column>
-
 				<Column cols="2/3">
 					<div>
 						<div className="border rounded-lg border-cu-black-100">
@@ -54,6 +48,12 @@ const Home: NextPage = () => {
 						<div className="border rounded-lg border-cu-black-100">
 							<FeedListing />
 						</div>
+					</div>
+				</Column>
+
+				<Column>
+					<div className="border rounded-lg border-cu-black-100">
+						<FeedListing />
 					</div>
 				</Column>
 			</Container>
