@@ -33,6 +33,8 @@ import {
   ChevronRightIcon,
   UsersIcon,
   LinkIcon,
+  PhoneIcon,
+  PaperAirplaneIcon,
   UserCircleIcon,
   XMarkIcon,
 } from '@heroicons/react/24/outline';
