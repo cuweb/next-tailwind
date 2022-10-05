@@ -36,6 +36,7 @@ import {
   PhoneIcon,
   PaperAirplaneIcon,
   PaintBrushIcon,
+  AcademicCapIcon,
   UserCircleIcon,
   XMarkIcon,
 } from '@heroicons/react/24/outline';
