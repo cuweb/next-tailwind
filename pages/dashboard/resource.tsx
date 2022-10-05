@@ -37,6 +37,7 @@ import {
   PaperAirplaneIcon,
   PaintBrushIcon,
   UserCircleIcon,
+  AdjustmentsHorizontalIcon,
   XMarkIcon,
 } from '@heroicons/react/24/outline';
 import { MagnifyingGlassIcon } from '@heroicons/react/20/solid';
