@@ -16,11 +16,9 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
+          'cu-waves-white-20': "url('/cu-waves-white-20.svg')",
         'cu-waves-red': "url('/cu-waves-red.svg')",
-        'cu-waves-white-20': "url('/cu-waves-white-20.svg')",
       },
-      // https://htmlcolorcodes.com/color-picker/
-      // https://www.tailwindshades.com/
       colors: {
         // 'cu-red': {
         //     DEFAULT: '#AE1C24',
