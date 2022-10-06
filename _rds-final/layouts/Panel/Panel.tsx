@@ -12,11 +12,7 @@ interface PanelProps {
 	hasShadow?: boolean;
 }
 
-const PanelBase: React.FC<PanelProps> = ({
-	children,
-	hasBorder,
-	hasShadow,
-}): JSX.Element => {
+const PanelBase = ({ children, hasBorder, hasShadow }: PanelProps) => {
 	return (
 		<div
 			className={`${styles.panel} ${hasBorder ? styles.border : ""} ${
