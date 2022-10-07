@@ -1,5 +1,4 @@
 import React from "react";
-import { rdsColorScheme } from "../../helpers/tailwindClasses";
 
 const styles = {
 	stackedlist: `overflow-hidden`,
