@@ -12,38 +12,34 @@ interface MarketplaceItemProps {
 	category?: string;
 }
 
-const MarketplaceItemBase = ({ children }: any) => {
+const MarketplaceItemBase = ({ children, link }: any) => {
 	return (
 		<li>
-			<div className="relative flex items-center gap-2 p-6 hover:bg-gray-50">
+			<a
+				href={link}
+				className="relative flex items-center gap-2 p-6 cursor-pointer group hover:bg-gray-50 focus:outline-none"
+			>
 				<div className="flex items-start gap-3">{children}</div>
 				<ChevronRightIcon
 					className="flex-none w-5 h-5 ml-auto text-cu-black-300"
 					aria-hidden="true"
 				/>
-			</div>
+			</a>
 		</li>
 	);
 };
 
-const Title = ({
-	fontSize = "base",
-	title,
-	link,
-	cost,
-}: MarketplaceItemProps) => {
+const Title = ({ fontSize = "base", title, cost }: MarketplaceItemProps) => {
 	return (
 		<h3
-			className={`text-sm font-semibold text-cu-black ${rdsFontSizes[fontSize]}`}
+			className={`text-sm font-semibold text-cu-black group-hover:text-cu-red ${rdsFontSizes[fontSize]}`}
 		>
-			<a href={link} className="hover:text-cu-red focus:outline-none">
-				<span className="absolute inset-0" aria-hidden="true" />
-				{title}
-				<span className="italic font-light text-cu-black-700">
-					{" "}
-					for {cost}
-				</span>
-			</a>
+			<span className="absolute inset-0" aria-hidden="true" />
+			{title}
+			<span className="italic font-light text-cu-black-700">
+				{" "}
+				for {cost}
+			</span>
 		</h3>
 	);
 };
