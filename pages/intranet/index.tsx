@@ -15,6 +15,7 @@ import LinksListing from "../../components/Listings/LinksListing";
 import Profile from "../../_rds-final/components/Banner/Profile/Profile";
 import Panel from "../../_rds-final/layouts/Panel/Panel";
 import IntranetBanner from "../../components/Banner/IntranetBanner";
+import QuickLinks from "../../components/QuickLinks/QuickLinks.Tw";
 
 const PageLayout: NextPage = () => {
 	return (
@@ -30,56 +31,35 @@ const PageLayout: NextPage = () => {
 			<main>
 				<Container bgColor="gray">
 					<Column maxWidth="7xl" cols="2/3" gridGap="8">
-						<div className="-mt-32">
+						<div className="-mt-44">
 							<Panel hasShadow>
 								<p className="h-80"></p>
 							</Panel>
+
+							<QuickLinks />
+
 							<Panel hasShadow>
 								<Panel.Title>Your Events</Panel.Title>
 								<EventListing />
 							</Panel>
-
-							<Column cols="2" isNested>
-								<div>
-									<Panel hasShadow>
-										<Panel.Title>Jobs</Panel.Title>
-										<JobListing />
-									</Panel>
-								</div>
-								<div>
-									<Panel hasShadow>
-										<Panel.Title>Your Files</Panel.Title>
-										<FileListing />
-									</Panel>
-								</div>
-							</Column>
+							<Panel hasBorder>
+								<Panel.Title>Top 5 News</Panel.Title>
+								<NewsListing />
+							</Panel>
 						</div>
 
 						<div>
 							<Panel hasShadow>
-								<Panel.Title>Your Feeds</Panel.Title>
+								<Panel.Title>Announcements</Panel.Title>
 								<FeedListing />
 							</Panel>
 							<Panel hasShadow>
-								<Panel.Title>Your Links</Panel.Title>
-								<LinksListing />
+								<Panel.Title>Your Files</Panel.Title>
+								<FileListing />
 							</Panel>
-						</div>
-					</Column>
-				</Container>
-
-				<Container bgColor="gray">
-					<Column maxWidth="7xl" cols="1/3" gridGap="8">
-						<div>
-							<Panel hasShadow>
+							<Panel hasBorder>
 								<Panel.Title>Marketplace</Panel.Title>
 								<MarketplaceListing />
-							</Panel>
-						</div>
-						<div>
-							<Panel hasShadow>
-								<Panel.Title>Top 5 News</Panel.Title>
-								<NewsListing />
 							</Panel>
 						</div>
 					</Column>

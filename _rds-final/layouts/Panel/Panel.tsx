@@ -3,7 +3,7 @@ import React from "react";
 const styles = {
 	panel: `cu-panel rounded-lg bg-white [&+.cu-panel]:mt-8`,
 	border: `border border-cu-black-100`,
-	shadow: `shadow-lg`,
+	shadow: `shadow`,
 };
 
 interface PanelProps {
