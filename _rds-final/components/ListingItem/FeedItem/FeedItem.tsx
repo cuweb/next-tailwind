@@ -1,5 +1,5 @@
 import React from "react";
-import { rdsFontSizes } from "../../../helpers/tailwindClasses";
+import { rdsFontSizes } from "../../../utils/tailwindClasses";
 import { ChevronRightIcon } from "@heroicons/react/24/outline";
 import Badge from "../../Badge/Badge";
 

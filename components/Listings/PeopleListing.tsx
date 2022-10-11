@@ -3,6 +3,7 @@ import PeopleItem from "../../_rds-final/components/ListingItem/PeopleItem/Peopl
 
 const people = [
 	{
+		id: 1,
 		name: "Carlton Banks",
 		link: "https://carleton.ca",
 		email: "carlton.banks@freshprince.com",
@@ -10,6 +11,7 @@ const people = [
 		image: "/photos/carlton-banks-square.jpg",
 	},
 	{
+		id: 2,
 		name: "William Smith",
 		link: "https://carleton.ca",
 		email: "william.smith@freshprince.com",
@@ -17,6 +19,7 @@ const people = [
 		image: "/photos/will-smith-square.jpg",
 	},
 	{
+		id: 3,
 		name: "Philip Banks",
 		link: "https://carleton.ca",
 		email: "philip.banks@freshprince.com",
@@ -24,6 +27,7 @@ const people = [
 		image: "/photos/philip-banks-square.jpg",
 	},
 	{
+		id: 4,
 		name: "Vivian Banks",
 		link: "https://carleton.ca",
 		email: "vivian.banks@freshprince.com",
@@ -31,6 +35,7 @@ const people = [
 		image: "/photos/vivian-banks-square.jpg",
 	},
 	{
+		id: 5,
 		name: "Hillary Banks",
 		link: "https://carleton.ca",
 		email: "hillary.banks@freshprince.com",
@@ -38,6 +43,7 @@ const people = [
 		image: "/photos/hillary-banks-square.jpg",
 	},
 	{
+		id: 6,
 		name: "Geoffrey Butler",
 		link: "https://carleton.ca",
 		email: "geoffrey.butler@freshprince.com",
@@ -51,17 +57,15 @@ export default function PeopleListing() {
 
 	return (
 		<StackedList dividers>
-			{people.map(({ name, link, email, jobTitle, image }, index) => (
-				<>
-					<PeopleItem key={index}>
-						<PeopleItem.Image image={image} />
-						<PeopleItem.Content>
-							<PeopleItem.Title name={name} link={link} />
-							<PeopleItem.JobTitle jobTitle={jobTitle} />
-							{/* <PeopleItem.Details email={email} /> */}
-						</PeopleItem.Content>
-					</PeopleItem>
-				</>
+			{people.map(({ id, name, link, email, jobTitle, image }) => (
+				<PeopleItem key={id}>
+					<PeopleItem.Image image={image} />
+					<PeopleItem.Content>
+						<PeopleItem.Title name={name} link={link} />
+						<PeopleItem.JobTitle jobTitle={jobTitle} />
+						{/* <PeopleItem.Details email={email} /> */}
+					</PeopleItem.Content>
+				</PeopleItem>
 			))}
 		</StackedList>
 	);

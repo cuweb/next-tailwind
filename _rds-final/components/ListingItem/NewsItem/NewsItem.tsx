@@ -1,5 +1,5 @@
 import React from "react";
-import { rdsFontSizes } from "../../../helpers/tailwindClasses";
+import { rdsFontSizes } from "../../../utils/tailwindClasses";
 import { ChevronRightIcon } from "@heroicons/react/24/outline";
 
 interface NewsItemProps {
@@ -17,11 +17,11 @@ const NewsItemBase = ({ children, link }: any) => {
 		<li>
 			<a
 				href={link}
-				className="relative flex items-center gap-2 p-6 cursor-pointer group hover:bg-gray-50 focus:outline-none"
+				className="group relative flex cursor-pointer items-center gap-2 p-6 hover:bg-gray-50 focus:outline-none"
 			>
 				<div className="flex items-start gap-5">{children}</div>
 				<ChevronRightIcon
-					className="flex-none w-5 h-5 ml-auto text-cu-black-300"
+					className="ml-auto h-5 w-5 flex-none text-cu-black-300"
 					aria-hidden="true"
 				/>
 			</a>
@@ -46,8 +46,8 @@ const Content = ({ children }: any) => {
 
 const Image = ({ image }: NewsItemProps) => {
 	return (
-		<div className="flex-none hidden w-20 md:w-32 lg:block">
-			<img className="w-auto h-auto rounded" src={image} alt="" />
+		<div className="hidden w-20 flex-none md:w-32 lg:block">
+			<img className="h-auto w-auto rounded" src={image} alt="" />
 		</div>
 	);
 };

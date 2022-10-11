@@ -1,5 +1,5 @@
 import React from "react";
-import { rdsFontSizes } from "../../../helpers/tailwindClasses";
+import { rdsFontSizes } from "../../../utils/tailwindClasses";
 import { ChevronRightIcon } from "@heroicons/react/24/outline";
 import Badge from "../../Badge/Badge";
 
@@ -17,11 +17,11 @@ const MarketplaceItemBase = ({ children, link }: any) => {
 		<li>
 			<a
 				href={link}
-				className="relative flex items-center gap-2 p-6 cursor-pointer group hover:bg-gray-50 focus:outline-none"
+				className="group relative flex cursor-pointer items-center gap-2 p-6 hover:bg-gray-50 focus:outline-none"
 			>
 				<div className="flex items-start gap-3">{children}</div>
 				<ChevronRightIcon
-					className="flex-none w-5 h-5 ml-auto text-cu-black-300"
+					className="ml-auto h-5 w-5 flex-none text-cu-black-300"
 					aria-hidden="true"
 				/>
 			</a>
@@ -36,7 +36,7 @@ const Title = ({ fontSize = "base", title, cost }: MarketplaceItemProps) => {
 		>
 			<span className="absolute inset-0" aria-hidden="true" />
 			{title}
-			<span className="italic font-light text-cu-black-700">
+			<span className="font-light italic text-cu-black-700">
 				{" "}
 				for {cost}
 			</span>
@@ -50,8 +50,8 @@ const Content = ({ children }: any) => {
 
 const Image = ({ image }: MarketplaceItemProps) => {
 	return (
-		<div className="flex-none w-16 md:w-20">
-			<img className="w-auto h-auto rounded lg:w-24" src={image} alt="" />
+		<div className="w-16 flex-none md:w-20">
+			<img className="h-auto w-auto rounded lg:w-24" src={image} alt="" />
 		</div>
 	);
 };

@@ -1,5 +1,5 @@
 import React from "react";
-import { rdsFontSizes } from "../../../helpers/tailwindClasses";
+import { rdsFontSizes } from "../../../utils/tailwindClasses";
 import { CalendarIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
 
 interface JobItemProps {
@@ -16,11 +16,11 @@ const JobItemBase = ({ children, link }: any) => {
 		<li>
 			<a
 				href={link}
-				className="relative flex items-center gap-2 p-6 cursor-pointer group hover:bg-gray-50 focus:outline-none"
+				className="group relative flex cursor-pointer items-center gap-2 p-6 hover:bg-gray-50 focus:outline-none"
 			>
 				<div className="flex items-start gap-3">{children}</div>
 				<ChevronRightIcon
-					className="flex-none w-5 h-5 ml-auto text-cu-black-300"
+					className="ml-auto h-5 w-5 flex-none text-cu-black-300"
 					aria-hidden="true"
 				/>
 			</a>
@@ -29,7 +29,7 @@ const JobItemBase = ({ children, link }: any) => {
 };
 
 const Content = ({ children }: any) => {
-	return <div className="flex flex-col flex-auto gap-1">{children}</div>;
+	return <div className="flex flex-auto flex-col gap-1">{children}</div>;
 };
 
 const Title = ({ fontSize = "base", title, department }: JobItemProps) => {
@@ -39,7 +39,7 @@ const Title = ({ fontSize = "base", title, department }: JobItemProps) => {
 		>
 			<span className="absolute inset-0" aria-hidden="true" />
 			{title}
-			<span className="italic font-light text-cu-black-700">
+			<span className="font-light italic text-cu-black-700">
 				{" "}
 				with {department}
 			</span>
@@ -49,9 +49,9 @@ const Title = ({ fontSize = "base", title, department }: JobItemProps) => {
 
 const Details = ({ dateData, date }: JobItemProps) => {
 	return (
-		<p className="flex mt-2 text-xs text-cu-black-900">
+		<p className="mt-2 flex text-xs text-cu-black-900">
 			<CalendarIcon
-				className="w-4 h-4 mr-1 text-cu-red"
+				className="mr-1 h-4 w-4 text-cu-red"
 				aria-hidden="true"
 			/>
 			<time className="mr-4" dateTime={dateData}>

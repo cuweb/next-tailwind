@@ -1,5 +1,5 @@
 import React from "react";
-import { rdsFontSizes } from "../../../helpers/tailwindClasses";
+import { rdsFontSizes } from "../../../utils/tailwindClasses";
 import { ChevronRightIcon, EnvelopeIcon } from "@heroicons/react/24/outline";
 
 interface PeopleItemProps {
@@ -17,11 +17,11 @@ const PeopleItemBase = ({ children, link }: any) => {
 		<li>
 			<a
 				href={link}
-				className="relative flex items-center gap-2 p-6 cursor-pointer group hover:bg-gray-50 focus:outline-none"
+				className="group relative flex cursor-pointer items-center gap-2 p-6 hover:bg-gray-50 focus:outline-none"
 			>
 				<div className="flex items-center gap-5">{children}</div>
 				<ChevronRightIcon
-					className="flex-none w-5 h-5 ml-auto text-cu-black-300"
+					className="ml-auto h-5 w-5 flex-none text-cu-black-300"
 					aria-hidden="true"
 				/>
 			</a>
@@ -46,8 +46,8 @@ const Content = ({ children }: any) => {
 
 const Image = ({ image }: PeopleItemProps) => {
 	return (
-		<div className="flex-none w-16 md:w-20">
-			<img className="w-auto h-auto rounded" src={image} alt="" />
+		<div className="w-16 flex-none md:w-20">
+			<img className="h-auto w-auto rounded" src={image} alt="" />
 		</div>
 	);
 };
@@ -62,8 +62,8 @@ const JobTitle = ({ jobTitle }: PeopleItemProps) => {
 
 const Details = ({ email }: PeopleItemProps) => {
 	return (
-		<ul className="flex flex-wrap mt-1 sm:gap-2">
-			<li className="flex items-center mt-2 text-sm text-cu-black-700 sm:mt-0">
+		<ul className="mt-1 flex flex-wrap sm:gap-2">
+			<li className="mt-2 flex items-center text-sm text-cu-black-700 sm:mt-0">
 				<EnvelopeIcon
 					className="mr-1.5 h-5 w-5 flex-shrink-0 text-cu-red-300"
 					aria-hidden="true"
