@@ -3,7 +3,7 @@ import PeopleItem from "../../_rds-final/components/ListingItem/PeopleItem/Peopl
 
 const people = [
 	{
-		name: "Carleton Banks",
+		name: "Carlton Banks",
 		link: "https://carleton.ca",
 		email: "carlton.banks@freshprince.com",
 		jobTitle: "Manager at Peacock Stop",
@@ -15,6 +15,34 @@ const people = [
 		email: "william.smith@freshprince.com",
 		jobTitle: "Waiter, Pirate-themed restaurant",
 		image: "/photos/will-smith-square.jpg",
+	},
+	{
+		name: "Philip Banks",
+		link: "https://carleton.ca",
+		email: "philip.banks@freshprince.com",
+		jobTitle: "Judge, Lawyer and Activist",
+		image: "/photos/philip-banks-square.jpg",
+	},
+	{
+		name: "Vivian Banks",
+		link: "https://carleton.ca",
+		email: "vivian.banks@freshprince.com",
+		jobTitle: "University Professor",
+		image: "/photos/vivian-banks-square.jpg",
+	},
+	{
+		name: "Hillary Banks",
+		link: "https://carleton.ca",
+		email: "hillary.banks@freshprince.com",
+		jobTitle: "Talk Show Host",
+		image: "/photos/hillary-banks-square.jpg",
+	},
+	{
+		name: "Geoffrey Butler",
+		link: "https://carleton.ca",
+		email: "geoffrey.butler@freshprince.com",
+		jobTitle: "Butler (and former Olympic Runner)",
+		image: "/photos/geoffrey-butler-square.jpg",
 	},
 ];
 

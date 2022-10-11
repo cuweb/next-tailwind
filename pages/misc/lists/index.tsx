@@ -47,6 +47,10 @@ const Home: NextPage = () => {
 							<Panel.Title>Job Opportunities</Panel.Title>
 							<JobListing />
 						</Panel>
+						<Panel hasBorder>
+							<Panel.Title>Bookmarks</Panel.Title>
+							<LinksListing />
+						</Panel>
 					</div>
 					<div>
 						<Panel hasBorder>
@@ -54,7 +58,7 @@ const Home: NextPage = () => {
 							<FeedListing />
 						</Panel>
 						<Panel hasBorder>
-							<Panel.Title>Web Services Team</Panel.Title>
+							<Panel.Title>The Bel Air Bunch</Panel.Title>
 							<PeopleListing />
 						</Panel>
 						<Panel hasBorder>
@@ -64,10 +68,6 @@ const Home: NextPage = () => {
 						<Panel hasBorder>
 							<Panel.Title>Key Resources</Panel.Title>
 							<FileListing />
-						</Panel>
-						<Panel hasBorder>
-							<Panel.Title>Bookmarks</Panel.Title>
-							<LinksListing />
 						</Panel>
 					</div>
 				</Column>
