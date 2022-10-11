@@ -68,6 +68,14 @@ export default function ListSubNav(props: any) {
 			<li>
 				<a
 					className="text-sm font-semibold text-cu-red hover:text-cu-red-800 hover:underline"
+					href="/misc/lists/people"
+				>
+					People
+				</a>
+			</li>
+			<li>
+				<a
+					className="text-sm font-semibold text-cu-red hover:text-cu-red-800 hover:underline"
 					href="/misc/lists/template"
 				>
 					Template

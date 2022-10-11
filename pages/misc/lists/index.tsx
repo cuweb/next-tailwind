@@ -6,6 +6,8 @@ import FooterBasic from "../../../_rds-final/components/Footer/FooterBasic/Foote
 import Container from "../../../_rds-final/layouts/Container/Container";
 import Column from "../../../_rds-final/layouts/Columns/Columns";
 import BaseBanner from "../../../_rds-final/components/Banner/BaseBanner/BaseBanner";
+import Panel from "../../../_rds-final/layouts/Panel/Panel";
+import ListSubNav from "./_ListSubnav";
 import EventListing from "../../../components/Listings/EventListing";
 import NewsListing from "../../../components/Listings/NewsListing";
 import FeedListing from "../../../components/Listings/FeedListing";
@@ -13,7 +15,7 @@ import Marketplace from "../../../components/Listings/MarketplaceListing";
 import FileListing from "../../../components/Listings/FileListing";
 import JobListing from "../../../components/Listings/JobListing";
 import LinksListing from "../../../components/Listings/LinksListing";
-import ListSubNav from "./_ListSubnav";
+import PeopleListing from "../../../components/Listings/PeopleListing";
 
 const Home: NextPage = () => {
 	return (
@@ -30,41 +32,43 @@ const Home: NextPage = () => {
 				<Column>
 					<ListSubNav />
 				</Column>
+
 				<Column cols="2">
 					<div>
-						<div className="rounded-lg border border-cu-black-100">
+						<Panel hasBorder>
+							<Panel.Title>Recent News</Panel.Title>
 							<NewsListing />
-						</div>
-					</div>
-					<div>
-						<div className="rounded-lg border border-cu-black-100">
+						</Panel>
+						<Panel hasBorder>
+							<Panel.Title>Upcoming Events</Panel.Title>
 							<EventListing />
-						</div>
-					</div>
-					<div>
-						<div className="rounded-lg border border-cu-black-100">
-							<FeedListing />
-						</div>
-					</div>
-					<div>
-						<div className="rounded-lg border border-cu-black-100">
-							<Marketplace />
-						</div>
-					</div>
-					<div>
-						<div className="rounded-lg border border-cu-black-100">
-							<FileListing />
-						</div>
-					</div>
-					<div>
-						<div className="rounded-lg border border-cu-black-100">
+						</Panel>
+						<Panel hasBorder>
+							<Panel.Title>Job Opportunities</Panel.Title>
 							<JobListing />
-						</div>
+						</Panel>
+						<Panel hasBorder>
+							<Panel.Title>Bookmarks</Panel.Title>
+							<LinksListing />
+						</Panel>
 					</div>
 					<div>
-						<div className="rounded-lg border border-cu-black-100">
-							<LinksListing />
-						</div>
+						<Panel hasBorder>
+							<Panel.Title>Your News Feed</Panel.Title>
+							<FeedListing />
+						</Panel>
+						<Panel hasBorder>
+							<Panel.Title>The Bel Air Bunch</Panel.Title>
+							<PeopleListing />
+						</Panel>
+						<Panel hasBorder>
+							<Panel.Title>New Marketplace Items</Panel.Title>
+							<Marketplace />
+						</Panel>
+						<Panel hasBorder>
+							<Panel.Title>Key Resources</Panel.Title>
+							<FileListing />
+						</Panel>
 					</div>
 				</Column>
 			</Container>

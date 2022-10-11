@@ -1,5 +1,5 @@
 import React from "react";
-import { rdsFontSizes } from "../../../helpers/tailwindClasses";
+import { rdsFontSizes } from "../../../utils/tailwindClasses";
 import { ChevronRightIcon } from "@heroicons/react/24/outline";
 
 interface FileItemProps {
@@ -15,12 +15,12 @@ const FileItemBase = ({ children, link }: any) => {
 		<li>
 			<a
 				href={link}
-				className="relative flex items-center gap-2 p-6 cursor-pointer group hover:bg-gray-50 focus:outline-none"
+				className="group relative flex cursor-pointer items-center gap-2 p-6 hover:bg-gray-50 focus:outline-none"
 			>
 				<div className="flex items-start gap-3">
-					<div className="flex-none w-auto">
+					<div className="w-auto flex-none">
 						<svg
-							className="flex items-start flex-none w-10 h-10"
+							className="flex h-10 w-10 flex-none items-start"
 							viewBox="0 0 24 24"
 							xmlns="http://www.w3.org/2000/svg"
 							aria-hidden="true"
@@ -55,7 +55,7 @@ const FileItemBase = ({ children, link }: any) => {
 					{children}
 				</div>
 				<ChevronRightIcon
-					className="flex-none w-5 h-5 ml-auto text-cu-black-300"
+					className="ml-auto h-5 w-5 flex-none text-cu-black-300"
 					aria-hidden="true"
 				/>
 			</a>
@@ -64,7 +64,7 @@ const FileItemBase = ({ children, link }: any) => {
 };
 
 const Content = ({ children }: any) => {
-	return <div className="flex flex-col flex-auto gap-1">{children}</div>;
+	return <div className="flex flex-auto flex-col gap-1">{children}</div>;
 };
 
 const Title = ({ fontSize = "base", title }: FileItemProps) => {
