@@ -124,7 +124,7 @@ export default function Example() {
 											</span>
 											<img
 												className="w-8 h-8 rounded-full"
-												src="/carlton-banks/profile-square.jpg"
+												src="/photos/carlton-banks-square.jpg"
 												alt=""
 											/>
 										</Menu.Button>
