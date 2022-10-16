@@ -6,11 +6,10 @@ import Navbar from "../../_rds-final/components/Navbar/EventNavbar";
 import Container from "../../_rds-final/layouts/Container/Container";
 import Column from "../../_rds-final/layouts/Columns/Columns";
 import Panel from "../../_rds-final/layouts/Panel/Panel";
+import Banner from "../../_rds-final/components/Banner/Banner/Banner";
 import EventFilter from "../../_rds-final/components/Filter/Filter";
 import SmallCalendar from "../../_rds-final/components/Calendar/SmallCalendar/SmallCalendar";
-
 import EventListing from "../../components/Listings/EventListing";
-import EventBanner from "../../components/Banner/EventBanner";
 
 const EventCalendar: NextPage = () => {
 	return (
@@ -21,9 +20,9 @@ const EventCalendar: NextPage = () => {
 			</Head>
 			<Navbar />
 
-			<header>
-				<EventBanner>Monthly Events</EventBanner>
-			</header>
+			<Banner hasGradient>
+				<Banner.Title title="Monthly Events" />
+			</Banner>
 
 			<main className="pb-4">
 				<Container>

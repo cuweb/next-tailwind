@@ -4,7 +4,7 @@ import Head from "next/head";
 import NavBar from "../../../_rds-final/components/Navbar/Carleton";
 import FooterBasic from "../../../_rds-final/components/Footer/FooterBasic/FooterBasic";
 import Container from "../../../_rds-final/layouts/Container/Container";
-import BaseBanner from "../../../_rds-final/components/Banner/BaseBanner/BaseBanner";
+import BaseBanner from "../../../_rds-final/components/Banner/Banner/Banner";
 import Column from "../../../_rds-final/layouts/Columns/Columns";
 import GridSubNav from "./_GridSubnav";
 import EventGrid from "../../../components/CardGrids/EventGrid";

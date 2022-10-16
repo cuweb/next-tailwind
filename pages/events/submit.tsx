@@ -4,8 +4,10 @@ import Head from "next/head";
 import FooterBasic from "../../_rds-final/components/Footer/FooterBasic/FooterBasic";
 import Navbar from "../../_rds-final/components/Navbar/EventNavbar";
 import Container from "../../_rds-final/layouts/Container/Container";
+import Banner from "../../_rds-final/components/Banner/Banner/Banner";
 import SubmitForm from "../../_rds-final/components/SubmitForm/SubmitForm";
 import Column from "../../_rds-final/layouts/Columns/Columns";
+
 const EventCalendar: NextPage = () => {
 	return (
 		<>
@@ -15,11 +17,12 @@ const EventCalendar: NextPage = () => {
 			</Head>
 			<Navbar />
 
+			<Banner hasGradient>
+				<Banner.Title title="Submit Event" />
+			</Banner>
+
 			<Container>
 				<Column>
-					<h3 className="text-2xl font-semibold text-cu-black-800 md:text-4xl">
-						Event Submission
-					</h3>
 					<SubmitForm />
 				</Column>
 			</Container>

@@ -5,7 +5,7 @@ import NavBar from "../../../_rds-final/components/Navbar/Carleton";
 import FooterBasic from "../../../_rds-final/components/Footer/FooterBasic/FooterBasic";
 import Container from "../../../_rds-final/layouts/Container/Container";
 import Column from "../../../_rds-final/layouts/Columns/Columns";
-import BaseBanner from "../../../_rds-final/components/Banner/BaseBanner/BaseBanner";
+import Banner from "../../../_rds-final/components/Banner/Banner/Banner";
 import Panel from "../../../_rds-final/layouts/Panel/Panel";
 import ListSubNav from "./_ListSubnav";
 import EventListing from "../../../components/Listings/EventListing";
@@ -26,7 +26,9 @@ const Home: NextPage = () => {
 			</Head>
 			<NavBar />
 
-			<BaseBanner>Web Services Prototypes</BaseBanner>
+			<Banner>
+				<Banner.Title title="Listings" />
+			</Banner>
 
 			<Container>
 				<Column>

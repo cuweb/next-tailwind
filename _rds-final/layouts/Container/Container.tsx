@@ -2,7 +2,7 @@ import React from "react";
 import { rdsColorScheme } from "../../utils/tailwindClasses";
 
 const styles = {
-	container: `cu-container py-8`,
+	container: `cu-container py-16`,
 };
 
 interface ContainerProps {

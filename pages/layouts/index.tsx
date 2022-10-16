@@ -4,11 +4,10 @@ import NavBar from "../../_rds-final/components/Navbar/IntranetNavbar";
 import Footer from "../../_rds-final/components/Footer/FooterBasic/FooterBasic";
 import Container from "../../_rds-final/layouts/Container/Container";
 import Column from "../../_rds-final/layouts/Columns/Columns";
-import BaseBanner from "../../_rds-final/components/Banner/BaseBanner/BaseBanner";
+import Banner from "../../_rds-final/components/Banner/Banner/Banner";
 import EventListing from "../../components/Listings/EventListing";
 import FeedListing from "../../components/Listings/FeedListing";
 import NewsListing from "../../components/Listings/NewsListing";
-import JobListing from "../../components/Listings/JobListing";
 import FileListing from "../../components/Listings/FileListing";
 import MarketplaceListing from "../../components/Listings/MarketplaceListing";
 
@@ -25,7 +24,9 @@ const PageLayout: NextPage = () => {
 			</Head>
 			<NavBar />
 
-			<BaseBanner>Layouts, Grids &amp; Spacing</BaseBanner>
+			<Banner hasGradient>
+				<Banner.Title title="Monthly Events" />
+			</Banner>
 
 			<main>
 				<Container>
