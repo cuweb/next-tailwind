@@ -5,7 +5,7 @@ import NavBar from "../../_rds-final/components/Navbar/CuTheme";
 import Footer from "../../_rds-final/components/Footer/FooterStandard/FooterStandard";
 import Container from "../../_rds-final/layouts/Container/Container";
 import Column from "../../_rds-final/layouts/Columns/Columns";
-import BaseBanner from "../../_rds-final/components/Banner/BaseBanner/BaseBanner";
+import Banner from "../../_rds-final/components/Banner/Banner/Banner";
 
 import { EllipsisVerticalIcon } from "@heroicons/react/20/solid";
 
@@ -49,19 +49,21 @@ const Home: NextPage = () => {
 			</Head>
 			<NavBar />
 
-			<BaseBanner>Odds and Ends</BaseBanner>
+			<Banner>
+				<Banner.Title title="Odds and Ends" />
+			</Banner>
 
 			<main>
 				<Container>
 					<Column>
 						<ul
 							role="list"
-							className="mt-3 grid grid-cols-1 gap-5 sm:grid-cols-2 sm:gap-6 lg:grid-cols-4"
+							className="grid grid-cols-1 gap-5 mt-3 sm:grid-cols-2 sm:gap-6 lg:grid-cols-4"
 						>
 							{projects.map((project) => (
 								<li
 									key={project.name}
-									className="col-span-1 flex rounded-md shadow-sm"
+									className="flex col-span-1 rounded-md shadow-sm"
 								>
 									<div
 										className={classNames(
@@ -71,8 +73,8 @@ const Home: NextPage = () => {
 									>
 										{project.initials}
 									</div>
-									<div className="flex flex-1 items-center justify-between truncate rounded-r-md border-t border-b border-r border-gray-200 bg-white">
-										<div className="flex-1 truncate px-4 py-4 text-sm">
+									<div className="flex items-center justify-between flex-1 truncate bg-white border-t border-b border-r border-gray-200 rounded-r-md">
+										<div className="flex-1 px-4 py-4 text-sm truncate">
 											<a
 												href={project.href}
 												className="font-medium text-gray-900 hover:text-gray-600"

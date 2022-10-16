@@ -4,7 +4,7 @@ import Head from "next/head";
 import NavBar from "../../../_rds-final/components/Navbar/Carleton";
 import FooterBasic from "../../../_rds-final/components/Footer/FooterBasic/FooterBasic";
 import Container from "../../../_rds-final/layouts/Container/Container";
-import BaseBanner from "../../../_rds-final/components/Banner/BaseBanner/BaseBanner";
+import Banner from "../../../_rds-final/components/Banner/Banner/Banner";
 import Column from "../../../_rds-final/layouts/Columns/Columns";
 import GridSubNav from "./_GridSubnav";
 
@@ -17,7 +17,9 @@ const Home: NextPage = () => {
 			</Head>
 			<NavBar />
 
-			<BaseBanner>Web Services Prototypes</BaseBanner>
+			<Banner>
+				<Banner.Title title="Event Grid" />
+			</Banner>
 
 			<Container>
 				<Column>

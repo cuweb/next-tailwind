@@ -3,16 +3,15 @@ import Head from "next/head";
 
 import Footer from "../../_rds-final/components/Footer/FooterStandard/FooterStandard";
 import Navbar from "../../_rds-final/components/Navbar/EventNavbar";
-import Container from "../../_rds-final/layouts/Container/Container";
 import Column from "../../_rds-final/layouts/Columns/Columns";
 import Panel from "../../_rds-final/layouts/Panel/Panel";
 import EventFilter from "../../_rds-final/components/Filter/Filter";
 import SmallCalendar from "../../_rds-final/components/Calendar/SmallCalendar/SmallCalendar";
 
-import FeaturedEventBanner from "../../components/Banner/FeaturedEventBanner";
-import FeaturedEventListingImage from "../../components/CardGrids/FeaturedEventCards";
-
+import Banner from "../../_rds-final/components/Banner/Banner/Banner";
+import EventGrid from "../../components/CardGrids/EventGrid";
 import EventListing from "../../components/Listings/EventListing";
+import Container from "../../_rds-final/layouts/Container/Container";
 
 const EventCalendar: NextPage = () => {
 	return (
@@ -21,14 +20,20 @@ const EventCalendar: NextPage = () => {
 				<title>Event Calendar | Carleton University</title>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
+
 			<Navbar />
 
-			<header>
-				<FeaturedEventBanner />
-				<FeaturedEventListingImage />
-			</header>
+			<Banner hasGradient hasSpacing="base">
+				<Banner.Title title="Featured Events" />
+			</Banner>
 
-			<main className="pb-4">
+			<main className="pb-4 -mt-40 lg:-mt-44">
+				<Container>
+					<Column cols="3">
+						<EventGrid />
+					</Column>
+				</Container>
+
 				<Container>
 					<Column>
 						<h2 className="mb-3 text-3xl font-medium text-cu-black-800 lg:text-4xl">
