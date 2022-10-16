@@ -2,11 +2,28 @@ import {
 	ClockIcon,
 	MapPinIcon,
 	CalendarDaysIcon,
-	InformationCircleIcon,
 } from "@heroicons/react/24/outline";
 
 export default function EventCard(props: any) {
-	const { name, link, month, day } = props;
+	const { name, link, month, day, multi, time, location } = props;
+
+	const multiDayDisplay = () => {
+		if (multi) {
+			return (
+				<CalendarDaysIcon
+					className="flex-shrink-0 w-5 h-5 mr-2 text-cu-red-300"
+					aria-hidden="true"
+				/>
+			);
+		} else {
+			return (
+				<ClockIcon
+					className="flex-shrink-0 w-5 h-5 mr-2 text-cu-red-300"
+					aria-hidden="true"
+				/>
+			);
+		}
+	};
 
 	return (
 		<div className="relative flex flex-col overflow-hidden rounded-lg shadow-lg">
@@ -39,25 +56,16 @@ export default function EventCard(props: any) {
 						</h3>
 						<ul className="flex flex-col gap-3 mt-4">
 							<li className="flex items-center text-sm text-cu-black-600">
-								<CalendarDaysIcon
-									className="flex-shrink-0 w-5 h-5 mr-2 text-cu-red-300"
-									aria-hidden="true"
-								/>
-								October 14 — 18, 2022
+								{multiDayDisplay()}
+								{multi ? multi : time}
 							</li>
-							<li className="flex items-center text-sm text-cu-black-600">
-								<ClockIcon
-									className="flex-shrink-0 w-5 h-5 mr-2 text-cu-red-300"
-									aria-hidden="true"
-								/>
-								<time dateTime={day}>2:00pm - 5:00pm</time>
-							</li>
+
 							<li className="flex items-center text-sm text-cu-black-600">
 								<MapPinIcon
 									className="flex-shrink-0 w-5 h-5 mr-2 text-cu-red-300"
 									aria-hidden="true"
 								/>
-								405 Robertson
+								{location}
 							</li>
 						</ul>
 					</div>
