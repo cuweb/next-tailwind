@@ -111,7 +111,7 @@ export default function Filter() {
                 </div>
 
                 {/* Filters */}
-                <form className="mt-4">
+                <form>
                   {filters.map((section) => (
                     <Disclosure
                       as="div"
