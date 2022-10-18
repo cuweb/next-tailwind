@@ -26,7 +26,7 @@ export default function EventCard(props: any) {
   };
 
   return (
-    <div className="group relative  flex flex-col overflow-hidden rounded-lg shadow-lg duration-300 ease-in hover:scale-105">
+    <div className="group relative flex flex-col overflow-hidden rounded-lg shadow-lg duration-300 ease-in hover:scale-105">
       <a href={link} className=" cursor-pointer ">
         <div className="absolute top-48 px-6">
           <div className="w-16 flex-none md:w-20">
