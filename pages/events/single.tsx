@@ -285,9 +285,17 @@ const EventCalendar: NextPage = () => {
                 <li className="inline-flex">
                   <a
                     href="#"
-                    className="flex items-center whitespace-nowrap rounded-md border border-cu-red bg-white px-4 py-2 text-base font-semibold text-cu-red hover:border-cu-red-800 hover:bg-cu-red-800 hover:text-white"
+                    className="flex items-center whitespace-nowrap rounded-md bg-cu-red px-4 py-2 text-base font-semibold text-white hover:bg-cu-red-800 hover:text-white"
                   >
                     Add to My Events
+                  </a>
+                </li>
+                <li className="inline-flex">
+                  <a
+                    href="#"
+                    className="flex items-center whitespace-nowrap rounded-md border border-cu-red bg-white px-4 py-2 text-base font-semibold text-cu-red hover:border-cu-red-800 hover:bg-cu-red-800 hover:text-white"
+                  >
+                    Register Now
                   </a>
                 </li>
               </ul>

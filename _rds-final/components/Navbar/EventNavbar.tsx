@@ -90,7 +90,7 @@ export default function Example() {
                   className="inline-flex items-center rounded-md border border-transparent bg-cu-red px-3 py-2 text-sm font-medium leading-4 text-white shadow-sm hover:bg-cu-red-800 focus:outline-none"
                 >
                   <PlusIcon className="-ml-0.5 h-4 w-4" aria-hidden="true" />
-                  <a href="/events/submit" className="px-1">
+                  <a href="/dashboard/new-edit" className="px-1">
                     Event
                   </a>
                 </button>
@@ -120,7 +120,7 @@ export default function Example() {
                       <Menu.Item>
                         {({ active }) => (
                           <a
-                            href="#"
+                            href="/dashboard"
                             className={classNames(
                               active ? 'bg-gray-100' : '',
                               'block px-4 py-2 text-sm text-gray-700'
@@ -133,13 +133,13 @@ export default function Example() {
                       <Menu.Item>
                         {({ active }) => (
                           <a
-                            href="#"
+                            href="/dashboard/list"
                             className={classNames(
                               active ? 'bg-gray-100' : '',
                               'block px-4 py-2 text-sm text-gray-700'
                             )}
                           >
-                            Settings
+                            Manage Events
                           </a>
                         )}
                       </Menu.Item>
@@ -167,36 +167,29 @@ export default function Example() {
             <div className="space-y-1 pt-2 pb-3">
               <Disclosure.Button
                 as="a"
-                href="#"
-                className="block border-l-4 border-cu-black-200 bg-gradient-to-r from-gray-50 to-white py-2 pl-3 pr-4 text-base font-medium text-cu-black-800"
-              >
-                Dashboard
-              </Disclosure.Button>
-              <Disclosure.Button
-                as="a"
-                href="#"
-                className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-cu-black-800 hover:border-cu-black-200 hover:bg-gray-50 hover:text-cu-red"
-              >
-                Team
-              </Disclosure.Button>
-              <Disclosure.Button
-                as="a"
-                href="#"
-                className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-cu-black-800 hover:border-cu-black-200 hover:bg-gray-50 hover:text-cu-red"
-              >
-                Projects
-              </Disclosure.Button>
-              <Disclosure.Button
-                as="a"
-                href="#"
-                className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-cu-black-800 hover:border-cu-black-200 hover:bg-gray-50 hover:text-cu-red"
-              >
-                Calendar
-              </Disclosure.Button>
-              <Disclosure.Button
-                as="a"
-                href="/events/submit"
+                href="/dashboard/new-edit"
                 className="block border-l-4 border-cu-red bg-gradient-to-r from-cu-red-50 to-white py-2 pl-3 pr-4 text-base font-medium text-cu-black-800 hover:bg-cu-red hover:text-cu-red"
+              >
+                Home
+              </Disclosure.Button>
+              <Disclosure.Button
+                as="a"
+                href="/events/my-events"
+                className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-cu-black-800 hover:border-cu-black-200 hover:bg-gray-50 hover:text-cu-red"
+              >
+                My Events
+              </Disclosure.Button>
+              <Disclosure.Button
+                as="a"
+                href="/events/single"
+                className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-cu-black-800 hover:border-cu-black-200 hover:bg-gray-50 hover:text-cu-red"
+              >
+                Single
+              </Disclosure.Button>
+              <Disclosure.Button
+                as="a"
+                href="/dashboard/new-edit"
+                className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-cu-black-800 hover:border-cu-black-200 hover:bg-gray-50 hover:text-cu-red"
               >
                 Submit Event
               </Disclosure.Button>
@@ -206,7 +199,7 @@ export default function Example() {
                 <div className="flex-shrink-0">
                   <img
                     className="h-10 w-10 rounded-full"
-                    src="/carlton-banks/profile-square.jpg"
+                    src="/photos/carlton-banks-square.jpg"
                     alt=""
                   />
                 </div>
@@ -222,17 +215,17 @@ export default function Example() {
               <div className="mt-3 space-y-1">
                 <Disclosure.Button
                   as="a"
-                  href="#"
+                  href="/dashboard"
                   className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-cu-black-800 hover:border-cu-black-200 hover:bg-gray-50 hover:text-cu-red"
                 >
                   Your Profile
                 </Disclosure.Button>
                 <Disclosure.Button
                   as="a"
-                  href="#"
+                  href="/dashboard/list"
                   className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-cu-black-800 hover:border-cu-black-200 hover:bg-gray-50 hover:text-cu-red"
                 >
-                  Settings
+                  Manage Events
                 </Disclosure.Button>
                 <Disclosure.Button
                   as="a"
