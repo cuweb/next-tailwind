@@ -28,7 +28,7 @@ const EventCalendar: NextPage = () => {
 				<Banner.Title title="Featured Events" />
 			</Banner>
 
-			<main className="pb-4 -mt-40 lg:-mt-44">
+			<main className="pb-4 lg:-mt-3362 -mt-36">
 				<Container>
 					<Column cols="3">
 						<EventGrid />
