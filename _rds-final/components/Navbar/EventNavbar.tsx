@@ -36,20 +36,6 @@ export default function Example() {
                     </h1>
                   </a>
                 </Link>
-                <div className="hidden lg:ml-6 lg:flex lg:space-x-6">
-                  <a
-                    href="/events/my-events"
-                    className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-cu-black-800 hover:border-cu-black-100 hover:text-cu-red"
-                  >
-                    My Events
-                  </a>
-                  <a
-                    href="/events/single"
-                    className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-cu-black-800 hover:border-cu-black-100 hover:text-cu-red"
-                  >
-                    Single
-                  </a>
-                </div>
               </div>
               <div className="flex flex-1 items-center justify-center px-2 lg:ml-6 lg:justify-end">
                 <div className="w-full max-w-lg lg:max-w-xs">
@@ -126,7 +112,20 @@ export default function Example() {
                               'block px-4 py-2 text-sm text-gray-700'
                             )}
                           >
-                            Your Profile
+                            Profile
+                          </a>
+                        )}
+                      </Menu.Item>
+                      <Menu.Item>
+                        {({ active }) => (
+                          <a
+                            href="/events/my-events"
+                            className={classNames(
+                              active ? 'bg-gray-100' : '',
+                              'block px-4 py-2 text-sm text-gray-700'
+                            )}
+                          >
+                            My Events
                           </a>
                         )}
                       </Menu.Item>
@@ -174,20 +173,6 @@ export default function Example() {
               </Disclosure.Button>
               <Disclosure.Button
                 as="a"
-                href="/events/my-events"
-                className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-cu-black-800 hover:border-cu-black-200 hover:bg-gray-50 hover:text-cu-red"
-              >
-                My Events
-              </Disclosure.Button>
-              <Disclosure.Button
-                as="a"
-                href="/events/single"
-                className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-cu-black-800 hover:border-cu-black-200 hover:bg-gray-50 hover:text-cu-red"
-              >
-                Single
-              </Disclosure.Button>
-              <Disclosure.Button
-                as="a"
                 href="/dashboard/new-edit"
                 className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-cu-black-800 hover:border-cu-black-200 hover:bg-gray-50 hover:text-cu-red"
               >
@@ -218,7 +203,14 @@ export default function Example() {
                   href="/dashboard"
                   className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-cu-black-800 hover:border-cu-black-200 hover:bg-gray-50 hover:text-cu-red"
                 >
-                  Your Profile
+                  Profile
+                </Disclosure.Button>
+                <Disclosure.Button
+                  as="a"
+                  href="/events/my-events"
+                  className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-cu-black-800 hover:border-cu-black-200 hover:bg-gray-50 hover:text-cu-red"
+                >
+                  My Events
                 </Disclosure.Button>
                 <Disclosure.Button
                   as="a"
