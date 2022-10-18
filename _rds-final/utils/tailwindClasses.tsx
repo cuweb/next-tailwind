@@ -37,7 +37,6 @@ export const rdsFontSizes = {
 };
 
 export const rdsBannerSpacing = {
-	none: null,
 	base: "pb-24",
 	lg: "pb-32",
 	xl: "pb-48",

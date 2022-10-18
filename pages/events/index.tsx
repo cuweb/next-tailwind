@@ -23,7 +23,7 @@ const EventCalendar: NextPage = () => {
 
 			<Navbar />
 
-			<Banner hasGradient hasSpacing="base">
+			<Banner bgType="gradient" hasSpacing="base">
 				<Banner.Title title="Featured Events" />
 			</Banner>
 
