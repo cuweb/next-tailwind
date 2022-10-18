@@ -4,7 +4,7 @@ const featured = [
 	{
 		id: 1,
 		name: "Lived Experience Luncheon Series with Dr. Alex Auerbach",
-		link: "#",
+		link: "/events/single",
 		month: "Sept",
 		day: "12",
 		multi: "",
@@ -14,7 +14,7 @@ const featured = [
 	{
 		id: 2,
 		name: "Science Student Alumni Mixer 2022",
-		link: "#",
+		link: "/events/single",
 		month: "Sept",
 		day: "19",
 		multi: "September 19 — 23",
@@ -24,7 +24,7 @@ const featured = [
 	{
 		id: 3,
 		name: "Milestone Anniversary Celebration 2022",
-		link: "#",
+		link: "/events/single",
 		month: "Sept",
 		day: "23",
 		multi: "",
