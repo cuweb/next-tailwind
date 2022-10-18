@@ -13,7 +13,7 @@ const featured = [
 	},
 	{
 		id: 2,
-		name: "Science Student Alumni Mixer 2022",
+		name: "Science Student &amp; Alumni Mixer 2022",
 		link: "/events/single",
 		month: "Sept",
 		day: "19",
