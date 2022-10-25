@@ -7,9 +7,13 @@ import Container from "../../_rds-final/layouts/Container/Container";
 import Column from "../../_rds-final/layouts/Columns/Columns";
 import Banner from "../../_rds-final/components/Banner/Banner/Banner";
 
-import { EllipsisVerticalIcon } from "@heroicons/react/20/solid";
-
 const projects = [
+	{
+		name: "Banner Tests",
+		initials: "BN",
+		href: "/misc/banners",
+		bgColor: "bg-slate-600",
+	},
 	{
 		name: "Card Tests",
 		initials: "CT",
@@ -50,7 +54,7 @@ const Home: NextPage = () => {
 			<NavBar />
 
 			<Banner>
-				<Banner.Title title="Odds and Ends" />
+				<Banner.Title title="Misc Tests" />
 			</Banner>
 
 			<main>
