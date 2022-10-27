@@ -15,3 +15,26 @@ export const NavLinks = [
 		link: "#",
 	},
 ];
+
+export const DropIns = [
+	{
+		id: 1,
+		title: "Search",
+		link: "#",
+	},
+	{
+		id: 1,
+		title: "JumpTo",
+		link: "#",
+	},
+	{
+		id: 1,
+		title: "Button",
+		link: "#",
+	},
+	{
+		id: 1,
+		title: "Profile",
+		link: "#",
+	},
+];

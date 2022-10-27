@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { NavLinks as data } from "./dataNavItems";
+import { NavLinks } from "./dataNavItems";
+import { DropIns } from "./dataNavItems";
 
 import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
@@ -38,7 +39,7 @@ export default function TopNav1() {
 
 					{/* Navigation specific to TopNav, will be a optional subComponent */}
 					<ul className="hidden bg-cu-black-50 lg:flex lg:flex-1 lg:gap-6">
-						{data.map(({ id, title, link }) => (
+						{NavLinks.map(({ id, title, link }) => (
 							<li
 								key={id}
 								className="inline-flex items-center px-1 pt-1 text-sm font-medium border-b-2 border-transparent text-cu-black-800 hover:border-cu-black-100 hover:text-cu-red"
@@ -50,12 +51,12 @@ export default function TopNav1() {
 
 					{/* Drop-in area, components should be able to drop into this area */}
 					<div className="hidden bg-sky-400 lg:flex lg:gap-6">
-						{data.map(({ id }) => (
+						{DropIns.map(({ id, title }) => (
 							<p
 								key={id}
 								className="inline-flex items-center text-sm"
 							>
-								DropIn
+								{title}
 							</p>
 						))}
 					</div>
