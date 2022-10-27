@@ -48,14 +48,14 @@ export default function TopNav1() {
 						))}
 					</ul>
 
-					{/* Add-on area, components should be able to drop into this area */}
+					{/* Drop-in area, components should be able to drop into this area */}
 					<div className="hidden bg-sky-400 lg:flex lg:gap-6">
 						{data.map(({ id }) => (
 							<p
 								key={id}
 								className="inline-flex items-center text-sm"
 							>
-								Add-On
+								DropIn
 							</p>
 						))}
 					</div>
