@@ -36,6 +36,12 @@ const projects = [
 		name: "Toasts",
 		initials: "TS",
 		href: "/misc/toasts",
+		bgColor: "bg-orange-500",
+	},
+	{
+		name: "Top Nav",
+		initials: "TN",
+		href: "/misc/topnav",
 		bgColor: "bg-green-500",
 	},
 ];
