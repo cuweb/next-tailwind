@@ -36,6 +36,7 @@ export default function TopNavTw() {
 										</h1>
 									</a>
 								</Link>
+
 								<div className="hidden lg:ml-6 lg:flex lg:space-x-6">
 									<a
 										href="/events/weekly"

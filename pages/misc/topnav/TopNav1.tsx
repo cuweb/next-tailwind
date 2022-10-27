@@ -22,6 +22,7 @@ export default function TopNav1() {
 		>
 			{({ open }) => (
 				<div className="flex h-20 gap-6 px-2 mx-auto max-w-7xl sm:px-4 lg:px-8">
+					{/* Required site title, will have options tbd */}
 					<Link href="#">
 						<a className="flex items-center flex-shrink-0 hover:text-cu-red">
 							<img
@@ -35,6 +36,7 @@ export default function TopNav1() {
 						</a>
 					</Link>
 
+					{/* Navigation specific to TopNav, will be a optional subComponent */}
 					<ul className="hidden bg-cu-black-50 lg:flex lg:flex-1 lg:gap-6">
 						{data.map(({ id, title, link }) => (
 							<li
@@ -46,6 +48,7 @@ export default function TopNav1() {
 						))}
 					</ul>
 
+					{/* Add-on area, components should be able to drop into this area */}
 					<div className="hidden bg-sky-400 lg:flex lg:gap-6">
 						{data.map(({ id }) => (
 							<p
