@@ -1,6 +1,9 @@
 import Link from "next/link";
 import { NavLinks } from "./dataNavItems";
 import { DropIns } from "./dataNavItems";
+import DropDownIcon from "./_dropDownIcon";
+import DropDownText from "./_dropDownText";
+import DropDownAvatar from "./_dropDownAvatar";
 
 import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
@@ -50,7 +53,7 @@ export default function TopNav1() {
 					</ul>
 
 					{/* Drop-in area, components should be able to drop into this area */}
-					<div className="hidden bg-sky-400 lg:flex lg:gap-6">
+					<div className="hidden bg-sky-100 lg:flex lg:items-center lg:gap-6">
 						{DropIns.map(({ id, title }) => (
 							<p
 								key={id}
@@ -59,6 +62,9 @@ export default function TopNav1() {
 								{title}
 							</p>
 						))}
+						<DropDownIcon />
+						<DropDownText />
+						<DropDownAvatar />
 					</div>
 				</div>
 			)}

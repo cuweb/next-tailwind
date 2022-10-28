@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Navbar from "../../../_rds-final/components/Navbar/EventNavbar";
-import TopNavTw from "./TopNavTW";
+import TopNavTw from "./TopNavTw";
 import TopNav1 from "./TopNav1";
 
 const Home: NextPage = () => {
