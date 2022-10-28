@@ -12,20 +12,14 @@ export interface DropDownProps {
 	isType?: "button" | "icon" | "avatar";
 }
 
-const styles = {
-	// core: `flex text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2`,
-	button: `inline-flex gap-1 items-center justify-center font-medium rounded-md focus:outline-none bg-cu-red text-white hover:bg-cu-black-600 px-3 py-2 text-sm`,
-	icon: `inline-flex gap-1 items-center justify-center font-medium rounded-md focus:outline-none bg-cu-red text-white hover:bg-cu-black-600 px-3 py-2 text-sm`,
-	avatar: ``,
-};
-
 export default function DropDown({ isType = "button" }: DropDownProps) {
 	console.log(isType);
 	return (
 		<Menu as="div" className="relative flex-shrink-0">
 			<div>
 				{/* As prop will get passed into the component so we can specify div or button based on what we use as a child */}
-				<Menu.Button as="div">
+				{/* <Menu.Button as="div"> */}
+				<Menu.Button as={isType === "button" ? "button" : "div"}>
 					<span className="sr-only">Open menu</span>
 					{isType === "button" ? <DropDownButton /> : ""}
 					{isType === "icon" ? <DropDownIcon /> : ""}
