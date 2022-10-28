@@ -1,9 +1,7 @@
 import Link from "next/link";
 import { NavLinks } from "./dataNavItems";
 import { DropIns } from "./dataNavItems";
-import DropDownIcon from "./_dropDownIcon";
-import DropDownText from "./_dropDownText";
-import DropDownAvatar from "./_dropDownAvatar";
+import DropDown from "./DropDown";
 
 import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
@@ -41,7 +39,7 @@ export default function TopNav1() {
 					</Link>
 
 					{/* Navigation specific to TopNav, will be a optional subComponent */}
-					<ul className="hidden bg-cu-black-50 lg:flex lg:flex-1 lg:gap-6">
+					<ul className="hidden lg:flex lg:flex-1 lg:gap-6">
 						{NavLinks.map(({ id, title, link }) => (
 							<li
 								key={id}
@@ -53,18 +51,10 @@ export default function TopNav1() {
 					</ul>
 
 					{/* Drop-in area, components should be able to drop into this area */}
-					<div className="hidden bg-sky-100 lg:flex lg:items-center lg:gap-6">
-						{DropIns.map(({ id, title }) => (
-							<p
-								key={id}
-								className="inline-flex items-center text-sm"
-							>
-								{title}
-							</p>
-						))}
-						<DropDownIcon />
-						<DropDownText />
-						<DropDownAvatar />
+					<div className="hidden lg:flex lg:items-center lg:gap-6">
+						<DropDown isType="icon" />
+						<DropDown isType="button" />
+						<DropDown isType="avatar" />
 					</div>
 				</div>
 			)}

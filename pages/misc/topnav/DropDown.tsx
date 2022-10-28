@@ -1,24 +1,34 @@
 import { Menu, Transition } from "@headlessui/react";
-import ChevronDownIcon from "@heroicons/react/20/solid/ChevronDownIcon";
 import React, { Fragment } from "react";
-// import { HeroIcon, IconName } from "../HeroIcon";
+import DropDownButton from "./_dropDown_Button";
+import DropDownIcon from "./_dropDown_Icon";
+import DropDownAvatar from "./_dropDown_Avatar";
 
 function classNames(...classes: any) {
 	return classes.filter(Boolean).join(" ");
 }
 
-export default function DropDownText() {
+export interface DropDownProps {
+	isType?: "button" | "icon" | "avatar";
+}
+
+const styles = {
+	// core: `flex text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2`,
+	button: `inline-flex gap-1 items-center justify-center font-medium rounded-md focus:outline-none bg-cu-red text-white hover:bg-cu-black-600 px-3 py-2 text-sm`,
+	icon: `inline-flex gap-1 items-center justify-center font-medium rounded-md focus:outline-none bg-cu-red text-white hover:bg-cu-black-600 px-3 py-2 text-sm`,
+	avatar: ``,
+};
+
+export default function DropDown({ isType = "button" }: DropDownProps) {
+	console.log(isType);
 	return (
 		<Menu as="div" className="relative flex-shrink-0">
 			<div>
-				<Menu.Button className="inline-flex items-center justify-center gap-1 px-3 py-2 text-sm font-medium text-white rounded-md bg-cu-red hover:bg-cu-black-600 focus:outline-none">
-					{/* A component could be used here */}
+				<Menu.Button className={`${styles[isType]}`}>
 					<span className="sr-only">Open menu</span>
-					Button
-					<ChevronDownIcon
-						className="w-5 h-5 -mr-2"
-						aria-hidden="true"
-					/>
+					{isType === "button" ? <DropDownButton /> : ""}
+					{isType === "icon" ? <DropDownIcon /> : ""}
+					{isType === "avatar" ? <DropDownAvatar /> : ""}
 				</Menu.Button>
 			</div>
 
