@@ -18,7 +18,7 @@ const CuTheme: NextPage = () => {
 			</Head>
 			<NavBar />
 
-			<Banner hasGradient>
+			<Banner>
 				<Banner.Title title="cuTheme" />
 			</Banner>
 

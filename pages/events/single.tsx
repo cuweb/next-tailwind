@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import DropDown from "../misc/topnav/DropDown";
 
 import { Menu, Transition } from "@headlessui/react";
 import { Fragment } from "react";
@@ -185,6 +186,11 @@ const EventCalendar: NextPage = () => {
 								praesent donec est. Odio penatibus risus viverra
 								tellus varius sit neque erat velit.
 							</p>
+						</div>
+
+						<div className="flex gap-4 mt-8">
+							<DropDown isType="button" />
+							<DropDown isType="button" />
 						</div>
 
 						<Menu

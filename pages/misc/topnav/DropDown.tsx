@@ -13,13 +13,12 @@ export interface DropDownProps {
 }
 
 export default function DropDown({ isType = "button" }: DropDownProps) {
-	console.log(isType);
 	return (
-		<Menu as="div" className="relative flex-shrink-0">
+		<Menu as="div" className="relative flex-shrink-0 inline-block">
 			<div>
 				{/* As prop will get passed into the component so we can specify div or button based on what we use as a child */}
 				{/* <Menu.Button as="div"> */}
-				<Menu.Button as={isType === "button" ? "button" : "div"}>
+				<Menu.Button as={isType === "button" ? "div" : "button"}>
 					<span className="sr-only">Open menu</span>
 					{isType === "button" ? <DropDownButton /> : ""}
 					{isType === "icon" ? <DropDownIcon /> : ""}
@@ -37,45 +36,16 @@ export default function DropDown({ isType = "button" }: DropDownProps) {
 				leaveFrom="transform opacity-100 scale-100"
 				leaveTo="transform opacity-0 scale-95"
 			>
-				<Menu.Items className="absolute right-0 z-10 w-48 py-1 mt-2 origin-top-right bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+				{/* Add option for right-0 or left-0 */}
+				<Menu.Items className="absolute left-0 z-10 w-48 py-1 mt-2 origin-top-left bg-white border rounded-md shadow-lg border-cu-black-100 focus:outline-none">
+					{/* Map through items from incoming data */}
 					<Menu.Item>
-						{({ active }) => (
-							<a
-								href="#"
-								className={classNames(
-									active ? "bg-gray-100" : "",
-									"block px-4 py-2 text-sm text-gray-700"
-								)}
-							>
-								Your Profile
-							</a>
-						)}
-					</Menu.Item>
-					<Menu.Item>
-						{({ active }) => (
-							<a
-								href="#"
-								className={classNames(
-									active ? "bg-gray-100" : "",
-									"block px-4 py-2 text-sm text-gray-700"
-								)}
-							>
-								Settings
-							</a>
-						)}
-					</Menu.Item>
-					<Menu.Item>
-						{({ active }) => (
-							<a
-								href="#"
-								className={classNames(
-									active ? "bg-gray-100" : "",
-									"block px-4 py-2 text-sm text-gray-700"
-								)}
-							>
-								Sign out
-							</a>
-						)}
+						<a
+							href="#"
+							className="block px-4 py-2 text-sm text-cu-black-800 hover:bg-cu-black-50"
+						>
+							LinkText
+						</a>
 					</Menu.Item>
 				</Menu.Items>
 			</Transition>

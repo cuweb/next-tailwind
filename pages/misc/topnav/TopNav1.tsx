@@ -1,6 +1,4 @@
 import Link from "next/link";
-import { NavLinks } from "./dataNavItems";
-import { DropIns } from "./dataNavItems";
 import DropDown from "./DropDown";
 
 import { Fragment } from "react";
@@ -11,6 +9,24 @@ import {
 	PlusIcon,
 } from "@heroicons/react/20/solid";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+
+const NavLinks = [
+	{
+		id: 1,
+		title: "Weekly",
+		link: "#",
+	},
+	{
+		id: 2,
+		title: "Monthly",
+		link: "#",
+	},
+	{
+		id: 3,
+		title: "Single",
+		link: "#",
+	},
+];
 
 function classNames(...classes: any) {
 	return classes.filter(Boolean).join(" ");

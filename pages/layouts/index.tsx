@@ -24,7 +24,7 @@ const PageLayout: NextPage = () => {
 			</Head>
 			<NavBar />
 
-			<Banner hasGradient>
+			<Banner bgType="gradient" hasSpacing="base">
 				<Banner.Title title="Monthly Events" />
 			</Banner>
 

@@ -17,7 +17,7 @@ const EventCalendar: NextPage = () => {
 			</Head>
 			<Navbar />
 
-			<Banner hasGradient>
+			<Banner bgType="gradient" hasSpacing="base">
 				<Banner.Title title="Submit Event" />
 			</Banner>
 
