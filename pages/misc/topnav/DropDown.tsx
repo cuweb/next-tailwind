@@ -24,7 +24,8 @@ export default function DropDown({ isType = "button" }: DropDownProps) {
 	return (
 		<Menu as="div" className="relative flex-shrink-0">
 			<div>
-				<Menu.Button className={`${styles[isType]}`}>
+				{/* As prop will get passed into the component so we can specify div or button based on what we use as a child */}
+				<Menu.Button as="div">
 					<span className="sr-only">Open menu</span>
 					{isType === "button" ? <DropDownButton /> : ""}
 					{isType === "icon" ? <DropDownIcon /> : ""}
