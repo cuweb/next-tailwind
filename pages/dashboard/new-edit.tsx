@@ -396,7 +396,7 @@ export default function Example() {
             </div>
 
             <main className="flex-1">
-              <div className="relative mx-auto max-w-4xl md:px-0">
+              <div className="relative mx-auto max-w-4xl px-4">
                 <div>
                   <form action="#" method="POST">
                     <div className="sm:overflow-hidden ">
@@ -490,7 +490,7 @@ export default function Example() {
                               >
                                 Categories
                               </div>
-                              <div className="mt-4 space-y-4">
+                              <div className="mt-4 space-y-4 px-1">
                                 <div className="relative flex items-start">
                                   <div className="flex h-5 items-center">
                                     <input
@@ -548,10 +548,38 @@ export default function Example() {
                               </div>
                             </fieldset>
                           </div>
+
+                          <div className="mt-6">
+                            <fieldset className="mt-6">
+                              <legend className="sr-only">By Email</legend>
+                              <div
+                                className="mb-4 mt-4 border-b pb-4 text-lg font-bold  text-gray-900"
+                                aria-hidden="true"
+                              >
+                                Admin Options
+                              </div>
+                              <div className="mt-4 space-y-4 px-1">
+                                <div className="flex items-center">
+                                  <input
+                                    id="push-everything"
+                                    name="push-notifications"
+                                    type="radio"
+                                    className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                                  />
+                                  <label
+                                    htmlFor="push-everything"
+                                    className="ml-3 block text-sm font-medium text-gray-700"
+                                  >
+                                    Set as featured
+                                  </label>
+                                </div>
+                              </div>
+                            </fieldset>
+                          </div>
                         </div>
                       </div>
 
-                      <div className=" px-4 py-3 text-right sm:px-6">
+                      <div className="py-3 text-right">
                         <button
                           type="submit"
                           className="inline-flex justify-center rounded-md border border-transparent bg-cu-red py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
