@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import NavBar from "../../../_rds-final/components/Navbar/Carleton";
-import GradentDiv from "./_pieces/GradientDiv";
+import GradientDiv from "../../../_rds-final/_misc/Gradient/GradientDiv";
 import ImageDiv from "./_pieces/ImageDiv";
 
 const Home: NextPage = () => {
@@ -72,7 +72,7 @@ const Home: NextPage = () => {
 			<br />
 
 			<header className="relative bg-cu-black-50">
-				<GradentDiv />
+				<GradientDiv />
 				<div className="relative flex flex-row items-center justify-between gap-8 px-8 py-8 mx-auto max-w-7xl lg:py-16 lg:px-8">
 					<h1 className="text-3xl font-medium text-cu-black-800 lg:text-4xl">
 						Default Banner
@@ -102,7 +102,7 @@ const Home: NextPage = () => {
 			<br />
 
 			<header className="relative bg-cu-black-50">
-				<GradentDiv />
+				<GradientDiv />
 				<div className="relative flex flex-col items-center justify-between gap-8 px-8 py-8 mx-auto max-w-7xl lg:py-16 lg:px-8">
 					<h1 className="text-3xl font-medium text-cu-black-800 lg:text-4xl">
 						Default Banner
