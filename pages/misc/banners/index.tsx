@@ -14,7 +14,7 @@ const Home: NextPage = () => {
 			<NavBar />
 
 			<header className="relative bg-cu-black-50">
-				<div className="relative flex flex-row items-center justify-between px-8 py-8 mx-auto max-w-7xl lg:py-16 lg:px-8">
+				<div className="relative flex flex-col items-center justify-between gap-8 px-8 py-8 mx-auto max-w-7xl sm:flex-row lg:py-16 lg:px-8">
 					<h1 className="text-3xl font-medium text-cu-black-800 lg:text-4xl">
 						Default Banner
 					</h1>
@@ -73,7 +73,7 @@ const Home: NextPage = () => {
 
 			<header className="relative bg-cu-black-50">
 				<GradientDiv />
-				<div className="relative flex flex-row items-center justify-between gap-8 px-8 py-8 mx-auto max-w-7xl lg:py-16 lg:px-8">
+				<div className="relative flex flex-col items-center justify-between gap-8 px-8 py-8 mx-auto max-w-7xl sm:flex-row lg:py-16 lg:px-8">
 					<h1 className="text-3xl font-medium text-cu-black-800 lg:text-4xl">
 						Default Banner
 					</h1>
@@ -133,7 +133,7 @@ const Home: NextPage = () => {
 
 			<header className="relative bg-cu-black-50">
 				<ImageDiv />
-				<div className="relative flex flex-row items-center justify-between gap-8 px-8 py-8 mx-auto max-w-7xl lg:py-16 lg:px-8">
+				<div className="relative flex flex-col items-center justify-between gap-8 px-8 py-8 mx-auto max-w-7xl sm:flex-row lg:py-16 lg:px-8">
 					<h1 className="text-3xl font-medium text-white lg:text-4xl">
 						Default Banner
 					</h1>
