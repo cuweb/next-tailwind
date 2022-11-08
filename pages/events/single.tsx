@@ -18,6 +18,7 @@ import {
 	ChatBubbleBottomCenterTextIcon,
 	TagIcon,
 } from "@heroicons/react/20/solid";
+import DetailsListing from "../../components/Listings/DetailsListing";
 
 const features = [
 	{
@@ -42,9 +43,9 @@ const features = [
 	},
 ];
 
-function classNames(...classes: any) {
-	return classes.filter(Boolean).join(" ");
-}
+// function classNames(...classes: any) {
+// 	return classes.filter(Boolean).join(" ");
+// }
 
 const EventCalendar: NextPage = () => {
 	return (
@@ -315,96 +316,75 @@ const EventCalendar: NextPage = () => {
 
 					<aside className="relative">
 						<div className="sticky top-28">
-							<ul className="flex flex-wrap gap-2 mt-4">
-								<li className="inline-flex">
-									<a
-										href="#"
-										className="flex items-center px-4 py-2 text-base font-semibold text-white rounded-md whitespace-nowrap bg-cu-red hover:bg-cu-red-800 hover:text-white"
-									>
-										Register Now
-									</a>
-								</li>
-								<li className="inline-flex">
-									<a
-										href="#"
-										className="flex items-center px-4 py-2 text-base font-semibold bg-white border rounded-md whitespace-nowrap border-cu-red text-cu-red hover:border-cu-red-800 hover:bg-cu-red-800 hover:text-white"
-									>
-										Add to My Events
-									</a>
-								</li>
-							</ul>
+							<div className="flex gap-6 mb-6">
+								<button
+									type="button"
+									aria-label="Add to My Events"
+									className="inline-flex items-center justify-center px-4 py-3 font-medium text-white rounded-md bg-cu-red hover:bg-cu-black-600 focus:outline-none"
+								>
+									<span className="mr-2"></span>
+									Add to My Events
+								</button>
 
-							<dl className="grid gap-4 mt-5">
-								{features.map((feature) => (
-									<div
-										key={feature.name}
-										className="relative p-4 border rounded-lg border-cu-black-100 bg-gray-50"
-									>
-										<dt>
-											<div className="absolute flex justify-center w-10 h-10 top-5 text-cu-black-400">
-												<feature.icon
-													className="w-6 h-6"
-													aria-hidden="true"
-												/>
-											</div>
-											<p className="ml-12 font-bold leading-6 text-gray-900 text-md">
-												{feature.name}
-											</p>
-										</dt>
-										<dd className="ml-12 text-sm text-gray-500">
-											{feature.description}
-										</dd>
-									</div>
-								))}
-							</dl>
+								<button
+									type="button"
+									aria-label="Register Now"
+									className="inline-flex items-center justify-center px-4 py-3 font-medium text-white bg-white border rounded-md false border-1 border-cu-red text-cu-red hover:bg-cu-red hover:text-white focus:outline-none"
+								>
+									<span className="mr-2"></span>
+									Register Now
+								</button>
+							</div>
 
-							<ul className="flex flex-wrap gap-2 mt-4">
-								<li className="inline-flex">
-									<a
-										href="#"
-										className="flex items-center px-2 py-1 text-xs font-semibold rounded-md whitespace-nowrap bg-cu-black-100 text-cu-black-700 hover:bg-cu-red hover:text-white"
-									>
-										<TagIcon className="mr-1.5 h-4 w-4 text-cu-black-400" />
-										Faculty Event
-									</a>
-								</li>
-								<li className="inline-flex">
-									<a
-										href="#"
-										className="flex items-center px-2 py-1 text-xs font-semibold rounded-md whitespace-nowrap bg-cu-black-100 text-cu-black-700 hover:bg-cu-red hover:text-white"
-									>
-										<TagIcon className="mr-1.5 h-4 w-4 text-cu-black-400" />
-										Student Event
-									</a>
-								</li>
-								<li className="inline-flex">
-									<a
-										href="#"
-										className="flex items-center px-2 py-1 text-xs font-semibold rounded-md whitespace-nowrap bg-cu-black-100 text-cu-black-700 hover:bg-cu-red hover:text-white"
-									>
-										<TagIcon className="mr-1.5 h-4 w-4 text-cu-black-400" />
-										Luncheon
-									</a>
-								</li>
-								<li className="inline-flex">
-									<a
-										href="#"
-										className="flex items-center px-2 py-1 text-xs font-semibold rounded-md whitespace-nowrap bg-cu-black-100 text-cu-black-700 hover:bg-cu-red hover:text-white"
-									>
-										<TagIcon className="mr-1.5 h-4 w-4 text-cu-black-400" />
-										On-Campus Event
-									</a>
-								</li>
-								<li className="inline-flex">
-									<a
-										href="#"
-										className="flex items-center px-2 py-1 text-xs font-semibold rounded-md whitespace-nowrap bg-cu-black-100 text-cu-black-700 hover:bg-cu-red hover:text-white"
-									>
-										<TagIcon className="mr-1.5 h-4 w-4 text-cu-black-400" />
-										Online Available
-									</a>
-								</li>
-							</ul>
+							<DetailsListing />
+
+							{/* <ul className="flex flex-wrap gap-2 mt-4">
+                <li className="inline-flex">
+                  <a
+                    href="#"
+                    className="flex items-center px-2 py-1 text-xs font-semibold rounded-md whitespace-nowrap bg-cu-black-100 text-cu-black-700 hover:bg-cu-red hover:text-white"
+                  >
+                    <TagIcon className="mr-1.5 h-4 w-4 text-cu-black-400" />
+                    Faculty Event
+                  </a>
+                </li>
+                <li className="inline-flex">
+                  <a
+                    href="#"
+                    className="flex items-center px-2 py-1 text-xs font-semibold rounded-md whitespace-nowrap bg-cu-black-100 text-cu-black-700 hover:bg-cu-red hover:text-white"
+                  >
+                    <TagIcon className="mr-1.5 h-4 w-4 text-cu-black-400" />
+                    Student Event
+                  </a>
+                </li>
+                <li className="inline-flex">
+                  <a
+                    href="#"
+                    className="flex items-center px-2 py-1 text-xs font-semibold rounded-md whitespace-nowrap bg-cu-black-100 text-cu-black-700 hover:bg-cu-red hover:text-white"
+                  >
+                    <TagIcon className="mr-1.5 h-4 w-4 text-cu-black-400" />
+                    Luncheon
+                  </a>
+                </li>
+                <li className="inline-flex">
+                  <a
+                    href="#"
+                    className="flex items-center px-2 py-1 text-xs font-semibold rounded-md whitespace-nowrap bg-cu-black-100 text-cu-black-700 hover:bg-cu-red hover:text-white"
+                  >
+                    <TagIcon className="mr-1.5 h-4 w-4 text-cu-black-400" />
+                    On-Campus Event
+                  </a>
+                </li>
+                <li className="inline-flex">
+                  <a
+                    href="#"
+                    className="flex items-center px-2 py-1 text-xs font-semibold rounded-md whitespace-nowrap bg-cu-black-100 text-cu-black-700 hover:bg-cu-red hover:text-white"
+                  >
+                    <TagIcon className="mr-1.5 h-4 w-4 text-cu-black-400" />
+                    Online Available
+                  </a>
+                </li>
+                            </ul> */}
 						</div>
 					</aside>
 				</Column>

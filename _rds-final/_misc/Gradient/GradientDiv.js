@@ -17,7 +17,7 @@ const GradientDiv = () => {
     left: '0',
     bottom: '0',
     overflow: 'hidden',
-    opacity: 0.3,
+    opacity: 0.5,
   };
 
   useEffect(() => {

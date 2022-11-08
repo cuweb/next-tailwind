@@ -12,6 +12,7 @@ import Banner from "../../_rds-final/components/Banner/Banner/Banner";
 import EventGrid from "../../components/CardGrids/EventGrid";
 import EventListing from "../../components/Listings/EventListing";
 import Container from "../../_rds-final/layouts/Container/Container";
+import Pagination from "../../components/Pagination/Pagination";
 
 const EventCalendar: NextPage = () => {
 	return (
@@ -27,7 +28,7 @@ const EventCalendar: NextPage = () => {
 				<Banner.Title title="Featured Events" />
 			</Banner>
 
-			<main className="pb-4 -mt-40 lg:-mt-44">
+			<main className="pb-4 lg:-mt-3362 -mt-36">
 				<Container>
 					<Column cols="3">
 						<EventGrid />
@@ -36,7 +37,7 @@ const EventCalendar: NextPage = () => {
 
 				<Container>
 					<Column>
-						<h2 className="mb-3 text-3xl font-medium text-cu-black-800 lg:text-4xl">
+						<h2 className="mt-8 mb-3 text-3xl font-medium text-cu-black-800 lg:text-4xl">
 							Upcoming Events
 						</h2>
 						<EventFilter />
@@ -44,6 +45,7 @@ const EventCalendar: NextPage = () => {
 					<Column cols="2/3">
 						<Panel hasBorder>
 							<EventListing />
+							<Pagination />
 						</Panel>
 						<div className="hidden md:ml-2 md:block">
 							<SmallCalendar />

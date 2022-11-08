@@ -1,3 +1,5 @@
+import Badge from "../../Badge/Badge";
+
 import {
 	ClockIcon,
 	MapPinIcon,
@@ -26,15 +28,15 @@ export default function EventCard(props: any) {
 	};
 
 	return (
-		<div className="relative flex flex-col overflow-hidden rounded-lg shadow-lg">
-			<a href={link} className="cursor-pointer group">
+		<div className="relative flex flex-col overflow-hidden duration-300 ease-in rounded-lg shadow-lg group hover:scale-105">
+			<a href={link} className="cursor-pointer ">
 				<div className="absolute px-6 top-48">
 					<div className="flex-none w-16 md:w-20">
-						<div className="flex flex-col justify-center flex-none w-auto h-16 text-center transform -translate-y-1/2 rounded-lg shadow bg-gray-50 group-hover:bg-cu-red md:h-20">
-							<p className="text-xs font-bold uppercase text-cu-red group-hover:text-white">
+						<div className="flex flex-col justify-center flex-none w-auto h-16 text-center duration-300 ease-in transform -translate-y-1/2 rounded-lg shadow bg-gray-50 group-hover:bg-cu-red md:h-20">
+							<p className="text-xs font-bold uppercase duration-300 ease-in text-cu-red group-hover:text-white">
 								{month}
 							</p>
-							<p className="text-2xl font-bold uppercase text-cu-black-800 group-hover:text-white">
+							<p className="text-2xl font-bold uppercase duration-300 ease-in text-cu-black-800 group-hover:text-white">
 								{day}
 							</p>
 						</div>
@@ -51,7 +53,7 @@ export default function EventCard(props: any) {
 
 				<div className="bg-white p-7">
 					<div className="mt-8">
-						<h3 className="text-xl font-semibold text-cu-black">
+						<h3 className="text-xl font-semibold duration-300 ease-in text-cu-black group-hover:text-cu-red">
 							{name}
 						</h3>
 						<ul className="flex flex-col gap-3 mt-4">
@@ -68,6 +70,10 @@ export default function EventCard(props: any) {
 								{location}
 							</li>
 						</ul>
+						<div className="mt-4">
+							<Badge>Student Event</Badge>
+							<Badge>Faculty Luncheon</Badge>
+						</div>
 					</div>
 				</div>
 			</a>
