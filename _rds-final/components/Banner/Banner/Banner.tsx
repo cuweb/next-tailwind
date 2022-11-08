@@ -5,24 +5,43 @@ import { rdsBannerSpacing } from "../../../utils/tailwindClasses";
 interface BannerProps {
 	children?: React.ReactNode;
 	title?: string;
-	hasGradient?: boolean;
-	hasSpacing?: "none" | "base" | "lg" | "xl";
+	bgType?: "image" | "gradient";
+	// hasGradient?: boolean;
+	hasSpacing?: "base" | "lg" | "xl";
 }
 
-const BannerBase = ({
-	children,
-	hasGradient,
-	hasSpacing = "none",
-}: BannerProps) => {
+// const BannerBase = ({ children, hasGradient, hasSpacing }: BannerProps) => {
+const BannerBase = ({ children, bgType, hasSpacing }: BannerProps) => {
 	return (
 		<header
-			className={`relative ${rdsBannerSpacing[hasSpacing]} bg-cu-black-50`}
+			className={`relative bg-cu-black-50 ${
+				hasSpacing ? rdsBannerSpacing[hasSpacing] : ""
+			}`}
 		>
-			{hasGradient ? <GradientDiv /> : ""}
-			<div className="relative flex items-start px-8 py-8 mx-auto max-w-7xl lg:py-16 lg:px-8">
+			{bgType === "image" ? <Image /> : ""}
+			{bgType === "gradient" ? <GradientDiv /> : ""}
+
+			{/* {hasGradient ? <GradientDiv /> : ""} */}
+			<div className="relative px-8 py-8 mx-auto max-w-7xl lg:py-16 lg:px-8">
 				{children}
 			</div>
 		</header>
+	);
+};
+
+const Image = () => {
+	return (
+		<div className="absolute inset-0">
+			<img
+				className="object-cover w-full h-full"
+				src="https://carleton.ca/about/wp-content/uploads/about-header-1600w-3.jpg"
+				alt=""
+			/>
+			<div
+				className="absolute inset-0 bg-cu-black-800 mix-blend-multiply"
+				aria-hidden="true"
+			/>
+		</div>
 	);
 };
 
