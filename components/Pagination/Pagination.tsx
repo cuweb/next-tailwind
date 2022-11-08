@@ -1,93 +1,86 @@
-import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/20/solid';
+import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/20/solid";
 
 export default function Pagination() {
-  return (
-    <div className="flex items-center justify-between border-t border-gray-200 bg-white px-4 py-6 sm:px-6">
-      <div className="flex flex-1 justify-between sm:hidden">
-        <a
-          href="#"
-          className="relative inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50"
-        >
-          Previous
-        </a>
-        <a
-          href="#"
-          className="relative ml-3 inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50"
-        >
-          Next
-        </a>
-      </div>
-      <div className="hidden sm:flex sm:flex-1 sm:items-center sm:justify-between">
-        <div>
-          <p className="text-sm text-gray-700">
-            Showing <span className="font-medium">1</span> to{' '}
-            <span className="font-medium">10</span> of{' '}
-            <span className="font-medium">97</span> results
-          </p>
-        </div>
-        <div>
-          <nav
-            className="isolate inline-flex -space-x-px rounded-md shadow-sm"
-            aria-label="Pagination"
-          >
-            <a
-              href="#"
-              className="relative inline-flex items-center rounded-l-md border border-gray-300 bg-white px-2 py-2 text-sm font-medium text-gray-500 hover:bg-gray-50 focus:z-20"
-            >
-              <span className="sr-only">Previous</span>
-              <ChevronLeftIcon className="h-5 w-5" aria-hidden="true" />
-            </a>
-            {/* Current: "z-10 bg-cu-red-50 border-cu-red-500 text-cu-red-600", Default: "bg-white border-gray-300 text-gray-500 hover:bg-gray-50" */}
-            <a
-              href="#"
-              aria-current="page"
-              className="relative z-10 inline-flex items-center border border-cu-red-500 bg-cu-red-50 px-4 py-2 text-sm font-medium text-cu-red-600 focus:z-20"
-            >
-              1
-            </a>
-            <a
-              href="#"
-              className="relative inline-flex items-center border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-50 focus:z-20"
-            >
-              2
-            </a>
-            <a
-              href="#"
-              className="relative hidden items-center border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-50 focus:z-20 md:inline-flex"
-            >
-              3
-            </a>
-            <span className="relative inline-flex items-center border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700">
-              ...
-            </span>
-            <a
-              href="#"
-              className="relative hidden items-center border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-50 focus:z-20 md:inline-flex"
-            >
-              8
-            </a>
-            <a
-              href="#"
-              className="relative inline-flex items-center border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-50 focus:z-20"
-            >
-              9
-            </a>
-            <a
-              href="#"
-              className="relative inline-flex items-center border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-50 focus:z-20"
-            >
-              10
-            </a>
-            <a
-              href="#"
-              className="relative inline-flex items-center rounded-r-md border border-gray-300 bg-white px-2 py-2 text-sm font-medium text-gray-500 hover:bg-gray-50 focus:z-20"
-            >
-              <span className="sr-only">Next</span>
-              <ChevronRightIcon className="h-5 w-5" aria-hidden="true" />
-            </a>
-          </nav>
-        </div>
-      </div>
-    </div>
-  );
+	return (
+		<div className="flex items-center justify-between py-5 border-t border-cu-black-100">
+			<div className="flex justify-between flex-1 sm:hidden">
+				<a className="relative inline-flex items-center px-4 py-2 text-sm font-medium bg-white border rounded-md border-cu-black-200 text-cu-black-600 hover:bg-cu-black-50">
+					Previous
+				</a>
+				<a className="relative inline-flex items-center px-4 py-2 text-sm font-medium bg-white border rounded-md border-cu-black-200 text-cu-black-600 hover:bg-cu-black-50">
+					Next
+				</a>
+			</div>
+			<div className="hidden sm:flex sm:flex-1 sm:items-center sm:justify-between">
+				<p className="text-sm text-cu-black-800">
+					Showing
+					<span className="font-semibold">1</span>
+					to
+					<span className="font-semibold">5</span>
+					of
+					<span className="font-semibold">48</span>
+					results
+				</p>
+				<nav aria-label="Pagination">
+					<ul className="inline-flex overflow-hidden border rounded-md border-cu-black-100">
+						<li className="flex cursor-pointer items-center border-r border-cu-black-100 bg-white py-2 px-4 px-2.5 text-cu-black-600 text-cu-black-400 last:border-0 hover:bg-cu-black-50">
+							<a className="">
+								<span className="sr-only">Previous</span>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 20 20"
+									fill="currentColor"
+									aria-hidden="true"
+									className="w-5 h-5"
+								>
+									<path
+										fill-rule="evenodd"
+										d="M12.79 5.23a.75.75 0 01-.02 1.06L8.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.5-4.25a.75.75 0 010-1.08l4.5-4.25a.75.75 0 011.06.02z"
+										clip-rule="evenodd"
+									></path>
+								</svg>
+							</a>
+						</li>
+						<li className="flex items-center px-4 py-2 font-semibold bg-white border-r cursor-pointer border-cu-black-100 bg-cu-black-50 text-cu-black-600 last:border-0 hover:bg-cu-black-50">
+							1
+						</li>
+						<li className="flex items-center px-4 py-2 bg-white border-r cursor-pointer border-cu-black-100 text-cu-black-600 last:border-0 hover:bg-cu-black-50">
+							2
+						</li>
+						<li className="flex items-center px-4 py-2 bg-white border-r cursor-pointer border-cu-black-100 text-cu-black-600 last:border-0 hover:bg-cu-black-50">
+							3
+						</li>
+						<li className="flex items-center px-4 py-2 bg-white border-r cursor-pointer border-cu-black-100 text-cu-black-600 last:border-0 hover:bg-cu-black-50">
+							4
+						</li>
+						<li className="flex items-center px-4 py-2 bg-white border-r cursor-pointer border-cu-black-100 text-cu-black-600 last:border-0 hover:bg-cu-black-50">
+							5
+						</li>
+						<li className="flex items-center px-4 py-2 bg-white border-r cursor-pointer border-cu-black-100 text-cu-black-600 last:border-0 hover:bg-cu-black-50">
+							…
+						</li>
+						<li className="flex items-center px-4 py-2 bg-white border-r cursor-pointer border-cu-black-100 text-cu-black-600 last:border-0 hover:bg-cu-black-50">
+							10
+						</li>
+						<li className="flex cursor-pointer items-center border-r border-cu-black-100 bg-white py-2 px-4 px-2.5 text-cu-black-600 text-cu-black-400 last:border-0 hover:bg-cu-black-50">
+							<span className="sr-only">Next</span>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 20 20"
+								fill="currentColor"
+								aria-hidden="true"
+								className="w-5 h-5"
+							>
+								<path
+									fill-rule="evenodd"
+									d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
+									clip-rule="evenodd"
+								></path>
+							</svg>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	);
 }
