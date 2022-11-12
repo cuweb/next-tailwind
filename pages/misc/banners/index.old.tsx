@@ -1,24 +1,9 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-
 import NavBar from "../../../_rds-final/components/Navbar/Carleton";
-import AnimatedBg from "../../../assets/AnimatedBg";
-
-const bgImage =
-	"https://carleton.ca/about/wp-content/uploads/about-header-1600w-3.jpg";
-
-const styles = {
-	header: `relative`,
-	headerGrey: `bg-gradient-to-b from-white to-cu-black-100 text-cu-black-800`,
-	headerRed: `bg-gradient-to-b from-cu-red to-cu-red-900 text-white`,
-	headerBlack: `bg-cu-black-800 text-white`,
-	headerAnimated: `bg-cu-black-800 text-white`,
-	contentWrap: `mx-auto flex max-w-7xl flex-col gap-4 md:gap-8 justify-between [&>*]:z-10 [&>*:last-child]:z-0 px-6 md:px-8 py-12 md:py-20`,
-	buttonWrap: `flex gap-6`,
-	title: `text-3xl font-medium lg:text-4xl`,
-	alignVertical: `md:flex-col items-center`,
-	alignHorizontal: `md:flex-row`,
-};
+import GradientDiv from "../../../_rds-final/_misc/Gradient/GradientDiv";
+import ImageDiv from "./_pieces/ImageDiv";
+import RedWave from "./_pieces/RedWave";
 
 const Home: NextPage = () => {
 	return (
@@ -29,13 +14,47 @@ const Home: NextPage = () => {
 			</Head>
 			<NavBar />
 
-			<header className={`${styles.header} ${styles.headerGrey}`}>
-				<div
-					className={`${styles.contentWrap} ${styles.alignVertical}`}
-				>
-					<h1 className={styles.title}>Default Banner</h1>
+			<header className="relative bg-gradient-to-b from-white to-cu-black-100">
+				<div className="relative flex flex-col items-center justify-between gap-8 px-8 py-8 mx-auto max-w-7xl lg:py-16 lg:px-8">
+					<h1 className="text-3xl font-medium text-cu-black-800 lg:text-4xl">
+						Default Banner
+					</h1>
+					{/* <div className="flex flex-col gap-6 md:flex-row"> */}
+					<div className="flex flex-wrap justify-center gap-6">
+						<button
+							type="button"
+							aria-label="Button One"
+							className="inline-flex items-center justify-center gap-1 px-4 py-3 text-base font-medium text-white rounded-md shadow-md bg-cu-red hover:bg-cu-black-600 focus:outline-none"
+						>
+							Button One
+						</button>
+						<button
+							type="button"
+							aria-label="Button Two"
+							className="inline-flex items-center justify-center gap-1 px-4 py-3 text-base font-medium bg-white rounded-md shadow-md text-cu-black-800 hover:bg-cu-red hover:text-white focus:outline-none"
+						>
+							Button Two
+						</button>
+						<button
+							type="button"
+							aria-label="Button Three"
+							className="inline-flex items-center justify-center gap-1 px-4 py-3 text-base font-medium text-white rounded-md shadow-md bg-cu-black-600 hover:bg-cu-red hover:text-white focus:outline-none"
+						>
+							Button Three
+						</button>
+					</div>
+				</div>
+			</header>
 
-					<div className={styles.buttonWrap}>
+			<br />
+			<br />
+
+			<header className="relative bg-gradient-to-b from-white to-cu-black-100">
+				<div className="relative flex flex-col items-center justify-between gap-8 px-8 py-8 mx-auto max-w-7xl sm:flex-row lg:py-16 lg:px-8">
+					<h1 className="text-3xl font-medium text-cu-black-800 lg:text-4xl">
+						Default Banner
+					</h1>
+					<div className="flex gap-6">
 						<button
 							type="button"
 							aria-label="Button One"
@@ -57,13 +76,69 @@ const Home: NextPage = () => {
 			<br />
 			<br />
 
-			<header className={`${styles.header} ${styles.headerGrey}`}>
-				<div
-					className={`${styles.contentWrap} ${styles.alignHorizontal}`}
-				>
-					<h1 className={styles.title}>Default Banner</h1>
+			<header className="relative bg-cu-black-50">
+				<div className="flex flex-col items-center justify-between gap-8 px-8 py-8 mx-auto max-w-7xl lg:py-16 lg:px-8">
+					<h1 className="relative z-50 text-3xl font-medium text-white lg:text-4xl">
+						Image Banner
+					</h1>
+					<div className="relative z-50 flex gap-6">
+						<button
+							type="button"
+							aria-label="Button One"
+							className="inline-flex items-center justify-center gap-1 px-4 py-3 text-base font-medium text-white rounded-md shadow-md bg-cu-red hover:bg-cu-black-600 focus:outline-none"
+						>
+							Button One
+						</button>
+						<button
+							type="button"
+							aria-label="Button One"
+							className="inline-flex items-center justify-center gap-1 px-4 py-3 text-base font-medium bg-white rounded-md shadow-md text-cu-black-800 hover:bg-cu-red hover:text-white focus:outline-none"
+						>
+							Button Two
+						</button>
+					</div>
+					<ImageDiv />
+				</div>
+			</header>
 
-					<div className={styles.buttonWrap}>
+			<br />
+			<br />
+
+			<header className="relative bg-cu-black-50">
+				<div className="flex flex-col items-center justify-between gap-8 px-8 py-8 mx-auto max-w-7xl sm:flex-row lg:py-16 lg:px-8">
+					<h1 className="relative z-50 text-3xl font-medium text-white lg:text-4xl">
+						Image Banner
+					</h1>
+					<div className="relative z-50 flex gap-6">
+						<button
+							type="button"
+							aria-label="Button One"
+							className="inline-flex items-center justify-center gap-1 px-4 py-3 text-base font-medium text-white rounded-md shadow-md bg-cu-red hover:bg-cu-black-600 focus:outline-none"
+						>
+							Button One
+						</button>
+						<button
+							type="button"
+							aria-label="Button One"
+							className="inline-flex items-center justify-center gap-1 px-4 py-3 text-base font-medium bg-white rounded-md shadow-md text-cu-black-800 hover:bg-cu-red hover:text-white focus:outline-none"
+						>
+							Button Two
+						</button>
+					</div>
+					<ImageDiv />
+				</div>
+			</header>
+
+			<br />
+			<br />
+
+			<header className="relative bg-gradient-to-b from-cu-red to-cu-red-900">
+				<RedWave />
+				<div className="relative flex flex-col items-center justify-between gap-8 px-8 py-8 mx-auto max-w-7xl sm:flex-col lg:py-16 lg:px-8">
+					<h1 className="text-3xl font-medium text-white lg:text-4xl">
+						Red Waves Banner
+					</h1>
+					<div className="flex gap-6">
 						<button
 							type="button"
 							aria-label="Button One"
@@ -85,13 +160,13 @@ const Home: NextPage = () => {
 			<br />
 			<br />
 
-			<header className={`${styles.header} ${styles.headerRed}`}>
-				<div
-					className={`${styles.contentWrap} ${styles.alignVertical}`}
-				>
-					<h1 className={styles.title}>Red Wave Banner</h1>
-
-					<div className={styles.buttonWrap}>
+			<header className="relative bg-gradient-to-b from-cu-red to-cu-red-900">
+				<RedWave />
+				<div className="relative flex flex-col items-center justify-between gap-8 px-8 py-8 mx-auto max-w-7xl sm:flex-row lg:py-16 lg:px-8">
+					<h1 className="text-3xl font-medium text-white lg:text-4xl">
+						Red Waves Banner
+					</h1>
+					<div className="flex gap-6">
 						<button
 							type="button"
 							aria-label="Button One"
@@ -106,150 +181,6 @@ const Home: NextPage = () => {
 						>
 							Button Two
 						</button>
-					</div>
-
-					<div
-						id="wave"
-						className="absolute inset-0 bg-bottom bg-no-repeat bg-contain bg-cu-waves-white-20 md:bg-cover"
-					></div>
-				</div>
-			</header>
-
-			<br />
-			<br />
-
-			<header className={`${styles.header} ${styles.headerRed}`}>
-				<div
-					className={`${styles.contentWrap} ${styles.alignHorizontal}`}
-				>
-					<h1 className={styles.title}>Red Wave Banner</h1>
-
-					<div className={styles.buttonWrap}>
-						<button
-							type="button"
-							aria-label="Button One"
-							className="inline-flex items-center justify-center gap-1 px-4 py-3 text-base font-medium text-white rounded-md shadow-md bg-cu-red hover:bg-cu-black-600 focus:outline-none"
-						>
-							Button One
-						</button>
-						<button
-							type="button"
-							aria-label="Button One"
-							className="inline-flex items-center justify-center gap-1 px-4 py-3 text-base font-medium bg-white rounded-md shadow-md text-cu-black-800 hover:bg-cu-red hover:text-white focus:outline-none"
-						>
-							Button Two
-						</button>
-					</div>
-
-					<div
-						id="wave"
-						className="absolute inset-0 bg-bottom bg-no-repeat bg-contain bg-cu-waves-white-20 md:bg-cover"
-					></div>
-				</div>
-			</header>
-
-			<br />
-			<br />
-
-			<header className={`${styles.header} ${styles.headerBlack}`}>
-				<div
-					className={`${styles.contentWrap} ${styles.alignVertical}`}
-				>
-					<h1 className={styles.title}>Black Wave Banner</h1>
-
-					<div className={styles.buttonWrap}>
-						<button
-							type="button"
-							aria-label="Button One"
-							className="inline-flex items-center justify-center gap-1 px-4 py-3 text-base font-medium text-white rounded-md shadow-md bg-cu-red hover:bg-cu-black-600 focus:outline-none"
-						>
-							Button One
-						</button>
-						<button
-							type="button"
-							aria-label="Button One"
-							className="inline-flex items-center justify-center gap-1 px-4 py-3 text-base font-medium bg-white rounded-md shadow-md text-cu-black-800 hover:bg-cu-red hover:text-white focus:outline-none"
-						>
-							Button Two
-						</button>
-					</div>
-
-					<div
-						id="wave"
-						className="absolute inset-0 bg-bottom bg-no-repeat bg-contain bg-cu-waves-white-20 md:bg-cover"
-					></div>
-				</div>
-			</header>
-
-			<br />
-			<br />
-
-			<header className={`${styles.header} ${styles.headerBlack}`}>
-				<div
-					className={`${styles.contentWrap} ${styles.alignHorizontal}`}
-				>
-					<h1 className={styles.title}>Black Wave Banner</h1>
-
-					<div className={styles.buttonWrap}>
-						<button
-							type="button"
-							aria-label="Button One"
-							className="inline-flex items-center justify-center gap-1 px-4 py-3 text-base font-medium text-white rounded-md shadow-md bg-cu-red hover:bg-cu-black-600 focus:outline-none"
-						>
-							Button One
-						</button>
-						<button
-							type="button"
-							aria-label="Button One"
-							className="inline-flex items-center justify-center gap-1 px-4 py-3 text-base font-medium bg-white rounded-md shadow-md text-cu-black-800 hover:bg-cu-red hover:text-white focus:outline-none"
-						>
-							Button Two
-						</button>
-					</div>
-
-					<div
-						id="wave"
-						className="absolute inset-0 bg-bottom bg-no-repeat bg-contain bg-cu-waves-white-20 md:bg-cover"
-					></div>
-				</div>
-			</header>
-
-			<br />
-			<br />
-
-			<header className={`${styles.header} ${styles.headerRed}`}>
-				<div
-					className={`${styles.contentWrap} ${styles.alignVertical}`}
-				>
-					<h1 className={styles.title}>Image Banner</h1>
-
-					<div className={styles.buttonWrap}>
-						<button
-							type="button"
-							aria-label="Button One"
-							className="inline-flex items-center justify-center gap-1 px-4 py-3 text-base font-medium text-white rounded-md shadow-md bg-cu-red hover:bg-cu-black-600 focus:outline-none"
-						>
-							Button One
-						</button>
-						<button
-							type="button"
-							aria-label="Button One"
-							className="inline-flex items-center justify-center gap-1 px-4 py-3 text-base font-medium bg-white rounded-md shadow-md text-cu-black-800 hover:bg-cu-red hover:text-white focus:outline-none"
-						>
-							Button Two
-						</button>
-					</div>
-
-					<div className="absolute inset-0">
-						<img
-							className="object-cover w-full h-full"
-							src={bgImage}
-							alt=""
-						/>
-						<div
-							className="absolute inset-0 bg-cu-black-800 mix-blend-multiply"
-							aria-hidden="true"
-						/>
 					</div>
 				</div>
 			</header>
@@ -257,13 +188,13 @@ const Home: NextPage = () => {
 			<br />
 			<br />
 
-			<header className={`${styles.header} ${styles.headerRed}`}>
-				<div
-					className={`${styles.contentWrap} ${styles.alignHorizontal}`}
-				>
-					<h1 className={styles.title}>Image Banner</h1>
-
-					<div className={styles.buttonWrap}>
+			<header className="relative bg-cu-black-50">
+				<GradientDiv />
+				<div className="relative flex flex-col items-center justify-between gap-8 px-8 py-8 mx-auto max-w-7xl lg:py-16 lg:px-8">
+					<h1 className="text-3xl font-medium text-cu-black-800 lg:text-4xl">
+						Gradient Banner
+					</h1>
+					<div className="flex gap-6">
 						<button
 							type="button"
 							aria-label="Button One"
@@ -278,18 +209,6 @@ const Home: NextPage = () => {
 						>
 							Button Two
 						</button>
-					</div>
-
-					<div className="absolute inset-0">
-						<img
-							className="object-cover w-full h-full"
-							src={bgImage}
-							alt=""
-						/>
-						<div
-							className="absolute inset-0 bg-cu-black-800 mix-blend-multiply"
-							aria-hidden="true"
-						/>
 					</div>
 				</div>
 			</header>
@@ -297,13 +216,13 @@ const Home: NextPage = () => {
 			<br />
 			<br />
 
-			<header className={`${styles.header} ${styles.headerGrey}`}>
-				<div
-					className={`${styles.contentWrap} ${styles.alignVertical}`}
-				>
-					<h1 className={styles.title}>Animated Banner</h1>
-
-					<div className={styles.buttonWrap}>
+			<header className="relative bg-cu-black-50">
+				<GradientDiv />
+				<div className="relative flex flex-col items-center justify-between gap-8 px-8 py-8 mx-auto max-w-7xl sm:flex-row lg:py-16 lg:px-8">
+					<h1 className="text-3xl font-medium text-cu-black-800 lg:text-4xl">
+						Gradient Banner
+					</h1>
+					<div className="flex gap-6">
 						<button
 							type="button"
 							aria-label="Button One"
@@ -319,38 +238,6 @@ const Home: NextPage = () => {
 							Button Two
 						</button>
 					</div>
-
-					<AnimatedBg />
-				</div>
-			</header>
-
-			<br />
-			<br />
-
-			<header className={`${styles.header} ${styles.headerGrey}`}>
-				<div
-					className={`${styles.contentWrap} ${styles.alignHorizontal}`}
-				>
-					<h1 className={styles.title}>Animated Banner</h1>
-
-					<div className={styles.buttonWrap}>
-						<button
-							type="button"
-							aria-label="Button One"
-							className="inline-flex items-center justify-center gap-1 px-4 py-3 text-base font-medium text-white rounded-md shadow-md bg-cu-red hover:bg-cu-black-600 focus:outline-none"
-						>
-							Button One
-						</button>
-						<button
-							type="button"
-							aria-label="Button One"
-							className="inline-flex items-center justify-center gap-1 px-4 py-3 text-base font-medium bg-white rounded-md shadow-md text-cu-black-800 hover:bg-cu-red hover:text-white focus:outline-none"
-						>
-							Button Two
-						</button>
-					</div>
-
-					<AnimatedBg />
 				</div>
 			</header>
 		</>
