@@ -2,7 +2,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 
 import NavBar from "../../../_rds-final/components/Navbar/Carleton";
-import AnimatedBg from "./AnimatedBg";
+import AnimatedBg from "../../../assets/AnimatedBg";
 
 const bgImage =
 	"https://carleton.ca/about/wp-content/uploads/about-header-1600w-3.jpg";

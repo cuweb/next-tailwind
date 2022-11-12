@@ -19,7 +19,7 @@
 		"next-env.d.ts",
 		"**/*.ts",
 		"**/*.tsx",
-		"pages/misc/banners/AnimatedBg.js"
+		"pages/misc/banners/_pieces/AnimatedBg.js"
 	],
 	"exclude": ["node_modules"]
 }
