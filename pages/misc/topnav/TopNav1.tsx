@@ -41,8 +41,7 @@ export default function TopNav1() {
 			{({ open }) => (
 				<div className="flex h-20 gap-6 px-2 mx-auto max-w-7xl sm:px-4 lg:px-8">
 					{/* Required site title, will have options tbd */}
-					<Link href="#">
-						<a className="flex items-center flex-shrink-0 hover:text-cu-red">
+					<Link href="#" className="flex items-center flex-shrink-0 hover:text-cu-red">
 							<img
 								className="w-auto h-10"
 								src="/cu-shield.svg"
@@ -51,7 +50,6 @@ export default function TopNav1() {
 							<h1 className="items-center pl-3 pr-2 text-2xl font-semibold">
 								Events
 							</h1>
-						</a>
 					</Link>
 
 					{/* Navigation specific to TopNav, will be a optional subComponent */}

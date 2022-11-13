@@ -24,8 +24,7 @@ export default function Example() {
           <div className="mx-auto max-w-7xl px-2 sm:px-4 lg:px-8">
             <div className="flex h-20 justify-between">
               <div className="flex px-2 lg:px-0">
-                <Link href="/events">
-                  <a className="flex flex-shrink-0 items-center hover:text-cu-red">
+                <Link href="/events" className="flex flex-shrink-0 items-center hover:text-cu-red">
                     <img
                       className="h-10 w-auto"
                       src="/cu-shield.svg"
@@ -34,7 +33,6 @@ export default function Example() {
                     <h1 className="items-center pl-3 pr-2 text-2xl font-semibold">
                       Events
                     </h1>
-                  </a>
                 </Link>
               </div>
               <div className="flex flex-1 items-center justify-center px-2 lg:ml-6 lg:justify-end">

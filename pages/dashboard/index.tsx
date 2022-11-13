@@ -179,8 +179,7 @@ export default function Example() {
                   </Transition.Child>
                   <div className="flex flex-shrink-0 items-center">
                     <div className="flex">
-                      <Link href="/dashboard">
-                        <a className="flex flex-shrink-0 items-center px-4">
+                      <Link href="/dashboard" className="flex flex-shrink-0 items-center px-4">
                           <img
                             className="h-10 w-auto"
                             src="/cu-shield.svg"
@@ -189,7 +188,6 @@ export default function Example() {
                           <h1 className="items-center pl-3 pr-2 text-xl font-semibold ">
                             Dashboard
                           </h1>
-                        </a>
                       </Link>
                     </div>
                   </div>
@@ -253,8 +251,7 @@ export default function Example() {
           {/* Sidebar component, swap this element with another sidebar if you like */}
           <nav className="flex flex-grow flex-col overflow-y-auto border-r border-gray-200 bg-gray-50 pt-5 pb-4">
             <div className="flex">
-              <Link href="/dashboard">
-                <a className="flex flex-shrink-0 items-center px-4">
+              <Link href="/dashboard" className="flex flex-shrink-0 items-center px-4">
                   <img
                     className="h-10 w-auto"
                     src="/cu-shield.svg"
@@ -263,7 +260,6 @@ export default function Example() {
                   <h1 className="items-center pl-3 pr-2 text-xl font-semibold ">
                     Dashboard
                   </h1>
-                </a>
               </Link>
             </div>
 

@@ -26,8 +26,7 @@ export default function NavBar() {
 					<div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
 						<div className="flex justify-between h-20">
 							<div className="flex">
-								<Link href="/events">
-									<a className="flex items-center flex-shrink-0">
+								<Link href="/events" className="flex items-center flex-shrink-0">
 										<img
 											className="w-auto h-10"
 											src="/cu-shield.svg"
@@ -36,7 +35,6 @@ export default function NavBar() {
 										<h1 className="items-center pl-3 pr-2 text-2xl font-semibold tracking-tight">
 											Carleton
 										</h1>
-									</a>
 								</Link>
 								{/* <div className="hidden lg:ml-6 lg:flex lg:space-x-6">
 									<a
