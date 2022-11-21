@@ -52,16 +52,15 @@ export default function EventCard(props: any) {
 				</div>
 
 				<div className="bg-white p-7">
-					<div className="mt-8">
+					<div className="flex flex-col gap-4 mt-8">
 						<h3 className="text-xl font-semibold duration-300 ease-in text-cu-black group-hover:text-cu-red">
 							{name}
 						</h3>
-						<ul className="flex flex-col gap-3 mt-4">
+						<ul className="flex flex-col gap-3">
 							<li className="flex items-center text-sm text-cu-black-600">
 								{multiDayDisplay()}
 								{multi ? multi : time}
 							</li>
-
 							<li className="flex items-center text-sm text-cu-black-600">
 								<MapPinIcon
 									className="flex-shrink-0 w-5 h-5 mr-2 text-cu-red-300"
@@ -70,7 +69,7 @@ export default function EventCard(props: any) {
 								{location}
 							</li>
 						</ul>
-						<div className="mt-4">
+						<div>
 							<Badge>Student Event</Badge>
 							<Badge>Faculty Luncheon</Badge>
 						</div>
