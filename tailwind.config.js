@@ -15,9 +15,30 @@ module.exports = {
   ],
   theme: {
     extend: {
+      typography: ({ theme }) => ({
+        DEFAULT: {
+          css: {
+            a: {
+              'font-weight': 'semibold',
+              'text-decoration': 'none',
+              '&:hover': {
+                'text-decoration': 'underline',
+              },
+            },
+          },
+        },
+        article: {
+          css: {
+            '--tw-prose-body': theme('colors.cu-black[700]'),
+            '--tw-prose-headings': theme('colors.cu-black[800]'),
+            '--tw-prose-links': theme('colors.cu-red[DEFAULT]'),
+            '--tw-prose-quote-borders': theme('colors.cu-red[DEFAULT]'),
+          },
+        },
+      }),
       backgroundImage: {
-          'cu-waves-red': "url('/cu-waves-red.svg')",
-          'cu-waves-white-20': "url('/cu-waves-white-20.svg')",
+        'cu-waves-red': "url('/cu-waves-red.svg')",
+        'cu-waves-white-20': "url('/cu-waves-white-20.svg')",
       },
       colors: {
         'cu-red': {
