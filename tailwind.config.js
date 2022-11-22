@@ -15,9 +15,38 @@ module.exports = {
   ],
   theme: {
     extend: {
+      typography: ({ theme }) => ({
+        DEFAULT: {
+          css: {
+            a: {
+              'font-weight': 'semibold',
+              'text-decoration': 'none',
+              '&:hover': {
+                'text-decoration': 'underline',
+              },
+            },
+          },
+        },
+        article: {
+          css: {
+            '--tw-prose-body': theme('colors.cu-black[800]'),
+            '--tw-prose-headings': theme('colors.cu-black[800]'),
+            '--tw-prose-links': theme('colors.cu-red[DEFAULT]'),
+            '--tw-prose-counters': theme('colors.pink[600]'),
+            '--tw-prose-quotes': theme('colors.cu-black[700]'),
+            '--tw-prose-quote-borders': theme('colors.cu-red[DEFAULT]'),
+            '--tw-prose-captions': theme('colors.pink[700]'),
+            '--tw-prose-code': theme('colors.pink[900]'),
+            '--tw-prose-pre-code': theme('colors.pink[100]'),
+            '--tw-prose-pre-bg': theme('colors.pink[900]'),
+            '--tw-prose-th-borders': theme('colors.pink[300]'),
+            '--tw-prose-td-borders': theme('colors.pink[200]'),
+          },
+        },
+      }),
       backgroundImage: {
-          'cu-waves-red': "url('/cu-waves-red.svg')",
-          'cu-waves-white-20': "url('/cu-waves-white-20.svg')",
+        'cu-waves-red': "url('/cu-waves-red.svg')",
+        'cu-waves-white-20': "url('/cu-waves-white-20.svg')",
       },
       colors: {
         'cu-red': {
