@@ -80,7 +80,7 @@ const EventCalendar: NextPage = () => {
       <main className="mx-auto max-w-7xl pb-14 md:pb-0">
         <Column cols="2/3">
           <div>
-            <div className="prose prose-lg prose-article text-gray-500 prose-headings:leading-8 prose-headings:tracking-tight prose-img:w-full prose-img:rounded-xl lg:prose-xl">
+            <div className="prose prose-lg prose-article prose-img:w-full prose-img:rounded-xl lg:prose-xl">
               <h2>H2 Heading</h2>
 
               <p>
