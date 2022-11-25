@@ -101,6 +101,12 @@ const adminNavigation = [
     icon: LinkIcon,
     current: false,
   },
+  {
+    name: 'Manage Events',
+    href: '/dashboard/events',
+    icon: LinkIcon,
+    current: false,
+  },
 ];
 
 const secondaryNavigation = [
