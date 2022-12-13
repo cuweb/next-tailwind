@@ -4,7 +4,7 @@ import NavBar from "../../_rds-final/components/Navbar/CuTheme";
 import Footer from "../../_rds-final/components/Footer/FooterStandard/FooterStandard";
 import Container from "../../_rds-final/layouts/Container/Container";
 import Column from "../../_rds-final/layouts/Columns/Columns";
-import BaseBanner from "../../_rds-final/components/Banner/BaseBanner/BaseBanner";
+import Banner from "../../_rds-final/components/Banner/Banner/Banner";
 import Panel from "../../_rds-final/layouts/Panel/Panel";
 
 const paragraph = "mb-5";
@@ -18,7 +18,7 @@ const CuTheme: NextPage = () => {
 			</Head>
 			<NavBar />
 
-			<BaseBanner>cuTheme</BaseBanner>
+			<Banner>cuTheme</Banner>
 
 			<main>
 				<Container>
