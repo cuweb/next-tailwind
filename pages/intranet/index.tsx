@@ -15,7 +15,8 @@ import LinksListing from "../../components/Listings/LinksListing";
 import Profile from "../../_rds-final/components/Banner/Profile/Profile";
 import Panel from "../../_rds-final/layouts/Panel/Panel";
 import IntranetBanner from "../../components/Banner/IntranetBanner";
-import QuickLinks from "../../components/QuickLinks/QuickLinks.Tw";
+import QuickLinks from "../../components/QuickLinks/QuickLinks";
+import UserDetails from "../../components/UserDetails/UserDetails";
 
 const PageLayout: NextPage = () => {
 	return (
@@ -29,20 +30,17 @@ const PageLayout: NextPage = () => {
 			<IntranetBanner />
 
 			<main>
-				<Container bgColor="gray">
+				<Container bgColor="white">
 					<Column maxWidth="7xl" cols="2/3" gridGap="8">
 						<div className="-mt-44">
-							<Panel hasShadow>
-								<p className="h-80"></p>
-							</Panel>
-
+							<UserDetails />
 							<QuickLinks />
 
 							<Panel hasShadow>
 								<Panel.Title>Your Events</Panel.Title>
 								<EventListing />
 							</Panel>
-							<Panel hasBorder>
+							<Panel hasShadow>
 								<Panel.Title>Top 5 News</Panel.Title>
 								<NewsListing />
 							</Panel>
@@ -57,7 +55,7 @@ const PageLayout: NextPage = () => {
 								<Panel.Title>Your Files</Panel.Title>
 								<FileListing />
 							</Panel>
-							<Panel hasBorder>
+							<Panel hasShadow>
 								<Panel.Title>Marketplace</Panel.Title>
 								<MarketplaceListing />
 							</Panel>

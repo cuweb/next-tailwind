@@ -42,9 +42,9 @@ function classNames(...classes: any) {
 	return classes.filter(Boolean).join(" ");
 }
 
-export default function Example() {
+export default function Quicklinks() {
 	return (
-		<div className="my-8 overflow-hidden bg-gray-200 divide-y divide-gray-200 rounded-lg shadow sm:grid sm:grid-cols-2 sm:gap-px sm:divide-y-0">
+		<div className="my-8 overflow-hidden bg-gray-200 divide-y divide-gray-200 rounded-lg shadow-lg sm:grid sm:grid-cols-2 sm:gap-px sm:divide-y-0">
 			{actions.map((action, actionIdx) => (
 				<div
 					key={action.title}
