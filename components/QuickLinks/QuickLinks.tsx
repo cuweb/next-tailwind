@@ -12,28 +12,28 @@ const actions = [
 		title: "Benefits",
 		href: "#",
 		icon: CheckBadgeIcon,
-		iconForeground: "text-purple-700",
-		iconBackground: "bg-purple-50",
+		iconForeground: "text-purple-800",
+		iconBackground: "bg-purple-100",
 	},
 	{
 		title: "Payroll",
 		href: "#",
 		icon: BanknotesIcon,
-		iconForeground: "text-yellow-700",
-		iconBackground: "bg-yellow-50",
+		iconForeground: "text-sky-800",
+		iconBackground: "bg-sky-50",
 	},
 	{
 		title: "Submit an expense",
 		href: "#",
 		icon: ReceiptRefundIcon,
-		iconForeground: "text-rose-700",
+		iconForeground: "text-rose-800",
 		iconBackground: "bg-rose-50",
 	},
 	{
 		title: "Training",
 		href: "#",
 		icon: AcademicCapIcon,
-		iconForeground: "text-indigo-700",
+		iconForeground: "text-indigo-800",
 		iconBackground: "bg-indigo-50",
 	},
 ];
@@ -44,7 +44,7 @@ function classNames(...classes: any) {
 
 export default function Quicklinks() {
 	return (
-		<div className="my-8 overflow-hidden bg-gray-200 divide-y divide-gray-200 rounded-lg shadow-lg sm:grid sm:grid-cols-2 sm:gap-px sm:divide-y-0">
+		<div className="my-8 overflow-hidden divide-y divide-gray-200 rounded-lg shadow-lg bg-cu-black-100 sm:grid sm:grid-cols-2 sm:gap-px sm:divide-y-0">
 			{actions.map((action, actionIdx) => (
 				<div
 					key={action.title}
@@ -59,7 +59,7 @@ export default function Quicklinks() {
 						actionIdx === actions.length - 1
 							? "rounded-bl-lg rounded-br-lg sm:rounded-bl-none"
 							: "",
-						"group relative bg-white p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-500"
+						"group relative bg-white p-6 hover:bg-gradient-to-t hover:from-gray-50 hover:to-white"
 					)}
 				>
 					<div>
@@ -76,7 +76,7 @@ export default function Quicklinks() {
 							/>
 						</span>
 					</div>
-					<div className="mt-8">
+					<div className="mt-4">
 						<h3 className="text-lg font-medium">
 							<a
 								href={action.href}
@@ -97,7 +97,7 @@ export default function Quicklinks() {
 						</p>
 					</div>
 					<span
-						className="absolute text-gray-300 pointer-events-none top-6 right-6 group-hover:text-gray-400"
+						className="absolute text-gray-300 pointer-events-none top-6 right-6 group-hover:text-cu-red"
 						aria-hidden="true"
 					>
 						<svg
