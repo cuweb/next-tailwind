@@ -18,7 +18,7 @@ export default function UserDetails() {
 						Carlton Banks
 					</h2>
 					<p className="text-sm text-cu-black-600 md:text-base">
-						Manager at Peacock Stop
+						Manager at Peacock Stop, UCLA Campus
 					</p>
 				</div>
 			</div>
