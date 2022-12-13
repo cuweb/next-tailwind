@@ -23,14 +23,14 @@ export default function UserDetails() {
 				</div>
 			</div>
 
-			<div className="flex gap-2 bg-cu-black-50">
-				<p className="flex-1 p-5 text-sm text-center border-r border-cu-black-200 text-cu-black-800 last:border-0 md:text-base">
+			<div className="flex gap-2 border-t rounded-bl-lg rounded-br-lg border-cu-black-100 bg-gradient-to-b from-gray-50 to-white">
+				<p className="flex-1 p-5 text-sm text-center border-r border-cu-black-100 text-cu-black-800 last:border-0 md:text-base">
 					<span className="font-bold">12</span> vacation days left
 				</p>
-				<p className="flex-1 p-5 text-sm text-center border-r border-cu-black-200 text-cu-black-600 last:border-0 md:text-base">
+				<p className="flex-1 p-5 text-sm text-center border-r border-cu-black-100 text-cu-black-600 last:border-0 md:text-base">
 					<span className="font-bold">3</span> sick days left
 				</p>
-				<p className="flex-1 hidden p-5 text-sm text-center border-r border-cu-black-200 text-cu-black-800 last:border-0 md:block md:text-base">
+				<p className="flex-1 hidden p-5 text-sm text-center border-r border-cu-black-100 text-cu-black-800 last:border-0 md:block md:text-base">
 					<span className="font-bold">2</span> special leave left
 				</p>
 			</div>

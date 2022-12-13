@@ -30,7 +30,7 @@ const PageLayout: NextPage = () => {
 			<IntranetBanner />
 
 			<main>
-				<Container bgColor="white">
+				<Container bgColor="gray">
 					<Column maxWidth="7xl" cols="2/3" gridGap="8">
 						<div className="-mt-44">
 							<UserDetails />
