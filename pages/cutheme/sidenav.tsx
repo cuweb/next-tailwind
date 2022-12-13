@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import NavBar from "../../_rds-final/components/Navbar/Carleton";
+import NavBar from "../../_rds-final/components/Navbar/CuTheme";
 import Footer from "../../_rds-final/components/Footer/FooterStandard/FooterStandard";
 import Container from "../../_rds-final/layouts/Container/Container";
 import Column from "../../_rds-final/layouts/Columns/Columns";
