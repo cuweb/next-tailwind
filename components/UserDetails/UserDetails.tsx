@@ -26,7 +26,7 @@ export default function UserDetails() {
 			<div className="flex gap-2 border-t rounded-bl-lg rounded-br-lg border-cu-black-100 bg-gradient-to-b from-gray-50 to-white">
 				<p className="flex-1 p-5 text-sm font-light text-center border-r border-cu-black-100 text-cu-black-600 last:border-0 md:text-base">
 					<span className="font-semibold text-cu-black-800">12</span>{" "}
-					vacation days left
+					vacay days left
 				</p>
 				<p className="flex-1 p-5 text-sm font-light text-center border-r border-cu-black-100 text-cu-black-600 last:border-0 md:text-base">
 					<span className="font-semibold text-cu-black-800">3</span>{" "}
@@ -34,7 +34,7 @@ export default function UserDetails() {
 				</p>
 				<p className="flex-1 hidden p-5 text-sm font-light text-center border-r border-cu-black-100 text-cu-black-600 last:border-0 md:block md:text-base">
 					<span className="font-semibold text-cu-black-800">2</span>{" "}
-					special leave left
+					special days left
 				</p>
 			</div>
 		</Panel>

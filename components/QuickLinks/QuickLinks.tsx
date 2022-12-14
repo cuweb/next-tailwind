@@ -12,29 +12,37 @@ const actions = [
 		title: "Benefits",
 		href: "#",
 		icon: CheckBadgeIcon,
-		iconForeground: "text-purple-800",
-		iconBackground: "bg-purple-100",
+		arrowColor: "text-purple-100 group-hover:text-purple-500",
+		iconForeground: "text-purple-900",
+		iconBackground:
+			"bg-purple-50 group-hover:bg-purple-100 border border-purple-200 group-hover:border-purple-100",
 	},
 	{
-		title: "Payroll",
+		title: "Pay Days",
 		href: "#",
 		icon: BanknotesIcon,
-		iconForeground: "text-sky-800",
-		iconBackground: "bg-sky-50",
+		arrowColor: "text-yellow-100 group-hover:text-yellow-500",
+		iconForeground: "text-yellow-900",
+		iconBackground:
+			"bg-yellow-50 group-hover:bg-yellow-100 border border-yellow-200 group-hover:border-yellow-100",
 	},
 	{
-		title: "Submit an expense",
+		title: "Expense Report",
 		href: "#",
 		icon: ReceiptRefundIcon,
-		iconForeground: "text-rose-800",
-		iconBackground: "bg-rose-50",
+		arrowColor: "text-rose-100 group-hover:text-rose-500",
+		iconForeground: "text-rose-900",
+		iconBackground:
+			"bg-rose-50 group-hover:bg-rose-100 border border-rose-200 group-hover:border-rose-100",
 	},
 	{
 		title: "Training",
 		href: "#",
 		icon: AcademicCapIcon,
-		iconForeground: "text-indigo-800",
-		iconBackground: "bg-indigo-50",
+		arrowColor: "text-indigo-100 group-hover:text-indigo-500",
+		iconForeground: "text-indigo-900",
+		iconBackground:
+			"bg-indigo-50 group-hover:bg-indigo-100 border border-indigo-200 group-hover:border-indigo-100",
 	},
 ];
 
@@ -59,7 +67,7 @@ export default function Quicklinks() {
 						actionIdx === actions.length - 1
 							? "rounded-bl-lg rounded-br-lg sm:rounded-bl-none"
 							: "",
-						"group relative bg-white p-6 hover:bg-gradient-to-t hover:from-gray-50 hover:to-white"
+						"group relative bg-white p-6 hover:bg-gray-50"
 					)}
 				>
 					<div>
@@ -97,7 +105,12 @@ export default function Quicklinks() {
 						</p>
 					</div>
 					<span
-						className="absolute text-gray-300 pointer-events-none top-6 right-6 group-hover:text-cu-red"
+						// className="absolute text-gray-200 pointer-events-none top-6 right-6 group-hover:text-cu-red"
+						// className="absolute text-gray-200 pointer-events-none cu-quicklink-arrow top-6 right-6"
+						className={classNames(
+							action.arrowColor,
+							"cu-quicklink-arrow pointer-events-none absolute top-6 right-6"
+						)}
 						aria-hidden="true"
 					>
 						<svg
