@@ -1,6 +1,10 @@
 module.exports = {
     theme: {
         extend: {
+            backgroundImage: {
+                'cu-waves-red': "url('../assets/cu-waves-red.svg')",
+                'cu-waves-white-20': "url('../assets/cu-waves-white-20.svg')",
+            },
             typography: ({ theme }) => ({
                 DEFAULT: {
                 css: {
