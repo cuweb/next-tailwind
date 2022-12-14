@@ -12,6 +12,7 @@ const actions = [
 		title: "Benefits",
 		href: "#",
 		icon: CheckBadgeIcon,
+		arrowColor: "text-purple-100 group-hover:text-purple-500",
 		iconForeground: "text-purple-900",
 		iconBackground:
 			"bg-purple-50 group-hover:bg-purple-100 border border-purple-200 group-hover:border-purple-100",
@@ -20,14 +21,16 @@ const actions = [
 		title: "Pay Days",
 		href: "#",
 		icon: BanknotesIcon,
-		iconForeground: "text-amber-900",
+		arrowColor: "text-yellow-100 group-hover:text-yellow-500",
+		iconForeground: "text-yellow-900",
 		iconBackground:
-			"bg-amber-50 group-hover:bg-amber-100 border border-amber-200 group-hover:border-amber-100",
+			"bg-yellow-50 group-hover:bg-yellow-100 border border-yellow-200 group-hover:border-yellow-100",
 	},
 	{
 		title: "Expense Report",
 		href: "#",
 		icon: ReceiptRefundIcon,
+		arrowColor: "text-rose-100 group-hover:text-rose-500",
 		iconForeground: "text-rose-900",
 		iconBackground:
 			"bg-rose-50 group-hover:bg-rose-100 border border-rose-200 group-hover:border-rose-100",
@@ -36,6 +39,7 @@ const actions = [
 		title: "Training",
 		href: "#",
 		icon: AcademicCapIcon,
+		arrowColor: "text-indigo-100 group-hover:text-indigo-500",
 		iconForeground: "text-indigo-900",
 		iconBackground:
 			"bg-indigo-50 group-hover:bg-indigo-100 border border-indigo-200 group-hover:border-indigo-100",
@@ -64,7 +68,6 @@ export default function Quicklinks() {
 							? "rounded-bl-lg rounded-br-lg sm:rounded-bl-none"
 							: "",
 						"group relative bg-white p-6 hover:bg-gray-50"
-						// "group relative bg-white p-6 hover:bg-gradient-to-t hover:from-gray-50 hover:to-white" // --> with bg gradient hover effect
 					)}
 				>
 					<div>
@@ -102,7 +105,12 @@ export default function Quicklinks() {
 						</p>
 					</div>
 					<span
-						className="absolute text-gray-300 pointer-events-none top-6 right-6 group-hover:text-cu-red"
+						// className="absolute text-gray-200 pointer-events-none top-6 right-6 group-hover:text-cu-red"
+						// className="absolute text-gray-200 pointer-events-none cu-quicklink-arrow top-6 right-6"
+						className={classNames(
+							action.arrowColor,
+							"cu-quicklink-arrow pointer-events-none absolute top-6 right-6"
+						)}
 						aria-hidden="true"
 					>
 						<svg
