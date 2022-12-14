@@ -1,18 +1,22 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-
 import NavBar from "../../_rds-final/components/Navbar/IntranetNavbar";
+import Footer from "../../_rds-final/components/Footer/FooterBasic/FooterBasic";
+import Container from "../../_rds-final/layouts/Container/Container";
+import Column from "../../_rds-final/layouts/Columns/Columns";
+import BaseBanner from "../../_rds-final/components/Banner/Banner/Banner";
 import EventListing from "../../components/Listings/EventListing";
 import FeedListing from "../../components/Listings/FeedListing";
 import NewsListing from "../../components/Listings/NewsListing";
+import JobListing from "../../components/Listings/JobListing";
 import FileListing from "../../components/Listings/FileListing";
 import MarketplaceListing from "../../components/Listings/MarketplaceListing";
-
+import LinksListing from "../../components/Listings/LinksListing";
+import Profile from "../../_rds-final/components/Banner/Profile/Profile";
+import Panel from "../../_rds-final/layouts/Panel/Panel";
 import IntranetBanner from "../../components/Banner/IntranetBanner";
 import QuickLinks from "../../components/QuickLinks/QuickLinks";
 import UserDetails from "../../components/UserDetails/UserDetails";
-
-import { Container, Column, Panel, Banner, FooterBasic } from "rds-tailwind";
 
 const PageLayout: NextPage = () => {
 	return (
@@ -23,13 +27,12 @@ const PageLayout: NextPage = () => {
 			</Head>
 
 			<NavBar />
-			<Banner isType="red-wave" />
-			{/* <IntranetBanner /> */}
+			<IntranetBanner />
 
 			<main>
-				<Container bgColor="grey">
+				<Container bgColor="gray">
 					<Column maxWidth="7xl" cols="2/3" gridGap="8">
-						<div className="z-20 -mt-44">
+						<div className="-mt-44">
 							<UserDetails />
 							<QuickLinks />
 
@@ -61,7 +64,7 @@ const PageLayout: NextPage = () => {
 				</Container>
 			</main>
 
-			<FooterBasic />
+			<Footer />
 		</>
 	);
 };
