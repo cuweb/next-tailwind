@@ -12,29 +12,33 @@ const actions = [
 		title: "Benefits",
 		href: "#",
 		icon: CheckBadgeIcon,
-		iconForeground: "text-purple-800",
-		iconBackground: "bg-purple-100",
+		iconForeground: "text-purple-900",
+		iconBackground:
+			"bg-purple-50 group-hover:bg-purple-100 border border-purple-200 group-hover:border-purple-100",
 	},
 	{
-		title: "Payroll",
+		title: "Pay Days",
 		href: "#",
 		icon: BanknotesIcon,
-		iconForeground: "text-sky-800",
-		iconBackground: "bg-sky-50",
+		iconForeground: "text-amber-900",
+		iconBackground:
+			"bg-amber-50 group-hover:bg-amber-100 border border-amber-200 group-hover:border-amber-100",
 	},
 	{
-		title: "Submit an expense",
+		title: "Expense Report",
 		href: "#",
 		icon: ReceiptRefundIcon,
-		iconForeground: "text-rose-800",
-		iconBackground: "bg-rose-50",
+		iconForeground: "text-rose-900",
+		iconBackground:
+			"bg-rose-50 group-hover:bg-rose-100 border border-rose-200 group-hover:border-rose-100",
 	},
 	{
 		title: "Training",
 		href: "#",
 		icon: AcademicCapIcon,
-		iconForeground: "text-indigo-800",
-		iconBackground: "bg-indigo-50",
+		iconForeground: "text-indigo-900",
+		iconBackground:
+			"bg-indigo-50 group-hover:bg-indigo-100 border border-indigo-200 group-hover:border-indigo-100",
 	},
 ];
 
@@ -59,7 +63,8 @@ export default function Quicklinks() {
 						actionIdx === actions.length - 1
 							? "rounded-bl-lg rounded-br-lg sm:rounded-bl-none"
 							: "",
-						"group relative bg-white p-6 hover:bg-gradient-to-t hover:from-gray-50 hover:to-white"
+						"group relative bg-white p-6 hover:bg-gray-50"
+						// "group relative bg-white p-6 hover:bg-gradient-to-t hover:from-gray-50 hover:to-white" // --> with bg gradient hover effect
 					)}
 				>
 					<div>
