@@ -11,6 +11,8 @@ module.exports = {
         // './_rds-final/utils/**/**/*.{js,ts,jsx,tsx}',
         // './_rds-final/_misc/**/*.{js,ts,jsx,tsx}',
         // './_rds-final/_misc/**/**/*.{js,ts,jsx,tsx}',
+        './_rds-final/components/Toasts/*.{js,ts,jsx,tsx}',
+        './_rds-final/components/Footer/FooterCondensed/*.{js,ts,jsx,tsx}',
         './_rds-final/components/SubmitForm/*.{js,ts,jsx,tsx}',
         './pages/**/*.{js,ts,jsx,tsx}',
         './pages/**/**/*.{js,ts,jsx,tsx}',
