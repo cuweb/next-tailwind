@@ -1,15 +1,16 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-
-import NavBar from "../../../_rds-final/components/Navbar/Carleton";
-import FooterBasic from "../../../_rds-final/components/Footer/FooterBasic/FooterBasic";
-import FooterStandard from "../../../_rds-final/components/Footer/FooterStandard/FooterStandard";
-import FooterCondensed from "../../../_rds-final/components/Footer/FooterCondensed/FooterCondensed";
-import FooterSwoosh from "../../../_rds-final/components/Footer/FooterSwoosh/FooterSwoosh";
-import Container from "../../../_rds-final/layouts/Container/Container";
-import Banner from "../../../_rds-final/components/Banner/Banner/Banner";
-
+import {
+	Container,
+	TopNav,
+	Banner,
+	FooterBasic,
+	FooterStandard,
+} from "rds-tailwind";
 import { ArrowDownIcon } from "@heroicons/react/24/outline";
+
+// OLD SCHOOL RDS
+import FooterCondensed from "../../../_rds-final/components/Footer/FooterCondensed/FooterCondensed";
 
 const Home: NextPage = () => {
 	return (
@@ -18,11 +19,14 @@ const Home: NextPage = () => {
 				<title>Carleton University | Home</title>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-			<NavBar />
 
-			<Banner>
-				<Banner.Title title="Carleton Footers" />
-			</Banner>
+			<TopNav logoUrl="https://carleton.ca/" title="CU Prototypes" />
+
+			<Banner
+				align="horizontal"
+				isType="dark-wave"
+				title="Footer Examples"
+			/>
 
 			<Container>
 				<h2 className="flex items-center gap-2 px-12 text-lg max-w-7xl">
@@ -51,7 +55,6 @@ const Home: NextPage = () => {
 				</h2>
 				<p className="px-12 max-w-7xl">Not intended to be used alone</p>
 			</Container>
-			<FooterSwoosh />
 		</>
 	);
 };

@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
+/* @layer base {
 	html,
 	body,
 	#__next {
@@ -23,4 +23,9 @@
 	main > .cu-column:last-child {
 		@apply pb-8 md:pb-10;
 	}
-}
+} */
+
+/* Move to RDS */
+/* .cu-panel + .cu-panel {
+	@apply mt-8;
+} */

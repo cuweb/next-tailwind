@@ -1,11 +1,15 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import NavBar from "../../../_rds-final/components/Navbar/Carleton";
-import Footer from "../../../_rds-final/components/Footer/FooterStandard/FooterStandard";
-import Container from "../../../_rds-final/layouts/Container/Container";
-import Column from "../../../_rds-final/layouts/Columns/Columns";
-import Banner from "../../../_rds-final/components/Banner/Banner/Banner";
-import Panel from "../../../_rds-final/layouts/Panel/Panel";
+import {
+	Container,
+	Column,
+	Panel,
+	TopNav,
+	Banner,
+	FooterBasic,
+} from "rds-tailwind";
+
+// OLD SCHOOL RDS
 import Toast from "../../../_rds-final/components/Toasts/Toasts";
 
 const PageLayout: NextPage = () => {
@@ -15,11 +19,14 @@ const PageLayout: NextPage = () => {
 				<title>Carleton University | Home</title>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-			<NavBar />
 
-			<Banner>
-				<Banner.Title title="Toast Examples" />
-			</Banner>
+			<TopNav logoUrl="https://carleton.ca/" title="CU Prototypes" />
+
+			<Banner
+				align="horizontal"
+				isType="dark-wave"
+				title="Toast Examples"
+			/>
 
 			<main>
 				<Container>
@@ -251,7 +258,7 @@ const PageLayout: NextPage = () => {
 				</Container>
 			</main>
 
-			<Footer />
+			<FooterBasic />
 			<Toast />
 		</>
 	);
