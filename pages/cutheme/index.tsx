@@ -25,7 +25,7 @@ const CuTheme: NextPage = () => {
 
 			<main className="">
 				<div className="mx-auto grid max-w-7xl grid-cols-1 gap-16 px-8 lg:grid-cols-sidenav [&:last-child]:mb-0">
-					<nav className="pt-12 bg-gradient-to-l from-cu-black-50 to-white">
+					<nav className="relative pt-12 bg-gradient-to-l from-cu-black-50 to-white">
 						<SideNavSyntax />
 						{/* <br />
 						<SideNavCu /> */}

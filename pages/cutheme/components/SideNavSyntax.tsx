@@ -1,251 +1,108 @@
 const styles = {
-	parentHref: `font-semibold text-black font-display hover:text-cu-red`,
-	childUl: `mt-2 space-y-2 border-l-2 border-slate-100 dark:border-slate-800 lg:mt-4 lg:space-y-4 lg:border-slate-200`,
-	childHref: `block w-full pl-3.5`,
-	childHrefBefore: `before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full`,
+	parentHref: `font-semibold text-cu-black-700 hover:text-cu-red`,
+	childUl: `mt-4 ml-1 border-l-2 border-cu-black-50 lg:space-y-4`,
+	childHref: `block w-full pl-4`,
+	childHrefActive: `font-semibold text-cu-red before:bg-cu-red`,
+	childHrefNotActive: `text-cu-black-600 before:hidden before:bg-cu-black-200 hover:text-cu-red hover:before:block`,
+	childHrefBefore: `before:absolute before:-left-1 before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full`,
 };
 
 export default function SideNavSyntax(props: any) {
 	return (
-		<ul role="list" className="space-y-9">
+		<ul role="list" className="sticky top-8 space-y-9">
 			<li>
 				<a className={styles.parentHref} href="#">
-					Introduction
+					About Us
 				</a>
 				<ul role="list" className={styles.childUl}>
 					<li className="relative">
 						<a
-							className={`${styles.childHref} font-semibold text-sky-500 before:bg-sky-500 ${styles.childHrefBefore}`}
+							className={`${styles.childHref} ${styles.childHrefNotActive} ${styles.childHrefBefore}`}
 							href="/"
 						>
-							Getting started
+							Roadmap for 2022/23
 						</a>
 					</li>
 					<li className="relative">
 						<a
-							className={`${styles.childHref} text-slate-500 before:hidden before:bg-slate-300 hover:text-slate-600 hover:before:block ${styles.childHrefBefore}`}
-							href="/docs/installation"
+							className={`${styles.childHref} ${styles.childHrefNotActive} ${styles.childHrefBefore}`}
+							href="/"
 						>
-							Installation
+							Testimonials
 						</a>
 					</li>
 				</ul>
 			</li>
 
 			<li>
-				<h2 className="font-medium font-display text-slate-900 dark:text-white">
-					Introduction
-				</h2>
-				<ul
-					role="list"
-					className="mt-2 space-y-2 border-l-2 border-slate-100 dark:border-slate-800 lg:mt-4 lg:space-y-4 lg:border-slate-200"
-				>
+				<a className={styles.parentHref} href="#">
+					News
+				</a>
+			</li>
+
+			<li>
+				<a className={styles.parentHref} href="#">
+					Talks and Workshops
+				</a>
+				<ul role="list" className={styles.childUl}>
 					<li className="relative">
 						<a
-							className="block w-full pl-3.5 font-semibold text-sky-500 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full before:bg-sky-500"
+							className={`${styles.childHref} ${styles.childHrefNotActive} ${styles.childHrefBefore}`}
 							href="/"
 						>
-							Getting started
-						</a>
-					</li>
-					<li className="relative">
-						<a
-							className="block w-full pl-3.5 text-slate-500 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:hidden before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full before:bg-slate-300 hover:text-slate-600 hover:before:block dark:text-slate-400 dark:before:bg-slate-700 dark:hover:text-slate-300"
-							href="/docs/installation"
-						>
-							Installation
+							Coffee Break Events
 						</a>
 					</li>
 				</ul>
 			</li>
 
-			{/* <li>
-				<h2 className="font-medium font-display text-slate-900 dark:text-white">
-					Core concepts
-				</h2>
-				<ul
-					role="list"
-					className="mt-2 space-y-2 border-l-2 border-slate-100 dark:border-slate-800 lg:mt-4 lg:space-y-4 lg:border-slate-200"
-				>
+			<li>
+				<a className={styles.parentHref} href="#">
+					Our Services
+				</a>
+				<ul role="list" className={styles.childUl}>
 					<li className="relative">
 						<a
-							className="block w-full pl-3.5 text-slate-500 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:hidden before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full before:bg-slate-300 hover:text-slate-600 hover:before:block dark:text-slate-400 dark:before:bg-slate-700 dark:hover:text-slate-300"
-							href="/docs/understanding-caching"
+							className={`${styles.childHref} ${styles.childHrefActive} ${styles.childHrefBefore}`}
+							href="/"
 						>
-							Understanding caching
+							cutheme
 						</a>
 					</li>
 					<li className="relative">
 						<a
-							className="block w-full pl-3.5 text-slate-500 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:hidden before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full before:bg-slate-300 hover:text-slate-600 hover:before:block dark:text-slate-400 dark:before:bg-slate-700 dark:hover:text-slate-300"
-							href="/docs/predicting-user-behavior"
+							className={`${styles.childHref} ${styles.childHrefNotActive} ${styles.childHrefBefore}`}
+							href="/"
 						>
-							Predicting user behavior
+							Carleton CMS
 						</a>
 					</li>
 					<li className="relative">
 						<a
-							className="block w-full pl-3.5 text-slate-500 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:hidden before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full before:bg-slate-300 hover:text-slate-600 hover:before:block dark:text-slate-400 dark:before:bg-slate-700 dark:hover:text-slate-300"
-							href="/docs/basics-of-time-travel"
+							className={`${styles.childHref} ${styles.childHrefNotActive} ${styles.childHrefBefore}`}
+							href="/"
 						>
-							Basics of time-travel
+							CU Framework
 						</a>
 					</li>
 					<li className="relative">
 						<a
-							className="block w-full pl-3.5 text-slate-500 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:hidden before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full before:bg-slate-300 hover:text-slate-600 hover:before:block dark:text-slate-400 dark:before:bg-slate-700 dark:hover:text-slate-300"
-							href="/docs/introduction-to-string-theory"
+							className={`${styles.childHref} ${styles.childHrefNotActive} ${styles.childHrefBefore}`}
+							href="/"
 						>
-							Introduction to string theory
+							CU Ecommerce
 						</a>
 					</li>
 					<li className="relative">
 						<a
-							className="block w-full pl-3.5 text-slate-500 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:hidden before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full before:bg-slate-300 hover:text-slate-600 hover:before:block dark:text-slate-400 dark:before:bg-slate-700 dark:hover:text-slate-300"
-							href="/docs/the-butterfly-effect"
+							className={`${styles.childHref} ${styles.childHrefNotActive} ${styles.childHrefBefore}`}
+							href="/"
 						>
-							The butterfly effect
+							Other Services
 						</a>
 					</li>
 				</ul>
-			</li> */}
-
-			{/* <li>
-				<h2 className="font-medium font-display text-slate-900 dark:text-white">
-					Advanced guides
-				</h2>
-				<ul
-					role="list"
-					className="mt-2 space-y-2 border-l-2 border-slate-100 dark:border-slate-800 lg:mt-4 lg:space-y-4 lg:border-slate-200"
-				>
-					<li className="relative">
-						<a
-							className="block w-full pl-3.5 text-slate-500 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:hidden before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full before:bg-slate-300 hover:text-slate-600 hover:before:block dark:text-slate-400 dark:before:bg-slate-700 dark:hover:text-slate-300"
-							href="/docs/writing-plugins"
-						>
-							Writing plugins
-						</a>
-					</li>
-					<li className="relative">
-						<a
-							className="block w-full pl-3.5 text-slate-500 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:hidden before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full before:bg-slate-300 hover:text-slate-600 hover:before:block dark:text-slate-400 dark:before:bg-slate-700 dark:hover:text-slate-300"
-							href="/docs/neuralink-integration"
-						>
-							Neuralink integration
-						</a>
-					</li>
-					<li className="relative">
-						<a
-							className="block w-full pl-3.5 text-slate-500 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:hidden before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full before:bg-slate-300 hover:text-slate-600 hover:before:block dark:text-slate-400 dark:before:bg-slate-700 dark:hover:text-slate-300"
-							href="/docs/temporal-paradoxes"
-						>
-							Temporal paradoxes
-						</a>
-					</li>
-					<li className="relative">
-						<a
-							className="block w-full pl-3.5 text-slate-500 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:hidden before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full before:bg-slate-300 hover:text-slate-600 hover:before:block dark:text-slate-400 dark:before:bg-slate-700 dark:hover:text-slate-300"
-							href="/docs/testing"
-						>
-							Testing
-						</a>
-					</li>
-					<li className="relative">
-						<a
-							className="block w-full pl-3.5 text-slate-500 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:hidden before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full before:bg-slate-300 hover:text-slate-600 hover:before:block dark:text-slate-400 dark:before:bg-slate-700 dark:hover:text-slate-300"
-							href="/docs/compile-time-caching"
-						>
-							Compile-time caching
-						</a>
-					</li>
-					<li className="relative">
-						<a
-							className="block w-full pl-3.5 text-slate-500 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:hidden before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full before:bg-slate-300 hover:text-slate-600 hover:before:block dark:text-slate-400 dark:before:bg-slate-700 dark:hover:text-slate-300"
-							href="/docs/predictive-data-generation"
-						>
-							Predictive data generation
-						</a>
-					</li>
-				</ul>
-			</li> */}
-
-			{/* <li>
-				<h2 className="font-medium font-display text-slate-900 dark:text-white">
-					API reference
-				</h2>
-				<ul
-					role="list"
-					className="mt-2 space-y-2 border-l-2 border-slate-100 dark:border-slate-800 lg:mt-4 lg:space-y-4 lg:border-slate-200"
-				>
-					<li className="relative">
-						<a
-							className="block w-full pl-3.5 text-slate-500 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:hidden before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full before:bg-slate-300 hover:text-slate-600 hover:before:block dark:text-slate-400 dark:before:bg-slate-700 dark:hover:text-slate-300"
-							href="/docs/cacheadvance-predict"
-						>
-							CacheAdvance.predict()
-						</a>
-					</li>
-					<li className="relative">
-						<a
-							className="block w-full pl-3.5 text-slate-500 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:hidden before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full before:bg-slate-300 hover:text-slate-600 hover:before:block dark:text-slate-400 dark:before:bg-slate-700 dark:hover:text-slate-300"
-							href="/docs/cacheadvance-flush"
-						>
-							CacheAdvance.flush()
-						</a>
-					</li>
-					<li className="relative">
-						<a
-							className="block w-full pl-3.5 text-slate-500 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:hidden before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full before:bg-slate-300 hover:text-slate-600 hover:before:block dark:text-slate-400 dark:before:bg-slate-700 dark:hover:text-slate-300"
-							href="/docs/cacheadvance-revert"
-						>
-							CacheAdvance.revert()
-						</a>
-					</li>
-					<li className="relative">
-						<a
-							className="block w-full pl-3.5 text-slate-500 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:hidden before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full before:bg-slate-300 hover:text-slate-600 hover:before:block dark:text-slate-400 dark:before:bg-slate-700 dark:hover:text-slate-300"
-							href="/docs/cacheadvance-regret"
-						>
-							CacheAdvance.regret()
-						</a>
-					</li>
-				</ul>
-			</li> */}
-
-			{/* <li>
-				<h2 className="font-medium font-display text-slate-900 dark:text-white">
-					Contributing
-				</h2>
-				<ul
-					role="list"
-					className="mt-2 space-y-2 border-l-2 border-slate-100 dark:border-slate-800 lg:mt-4 lg:space-y-4 lg:border-slate-200"
-				>
-					<li className="relative">
-						<a
-							className="block w-full pl-3.5 text-slate-500 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:hidden before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full before:bg-slate-300 hover:text-slate-600 hover:before:block dark:text-slate-400 dark:before:bg-slate-700 dark:hover:text-slate-300"
-							href="/docs/how-to-contribute"
-						>
-							How to contribute
-						</a>
-					</li>
-					<li className="relative">
-						<a
-							className="block w-full pl-3.5 text-slate-500 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:hidden before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full before:bg-slate-300 hover:text-slate-600 hover:before:block dark:text-slate-400 dark:before:bg-slate-700 dark:hover:text-slate-300"
-							href="/docs/architecture-guide"
-						>
-							Architecture guide
-						</a>
-					</li>
-					<li className="relative">
-						<a
-							className="block w-full pl-3.5 text-slate-500 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:hidden before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full before:bg-slate-300 hover:text-slate-600 hover:before:block dark:text-slate-400 dark:before:bg-slate-700 dark:hover:text-slate-300"
-							href="/docs/design-principles"
-						>
-							Design principles
-						</a>
-					</li>
-				</ul>
-			</li> */}
+			</li>
 		</ul>
 	);
 }
