@@ -29,7 +29,7 @@ module.exports = {
                 'cu-waves-white-20': "url('../assets/cu-waves-white-20.svg')",
             },
             gridTemplateColumns: {
-                'sidenav': '240px auto',
+                'sidenav': '260px auto',
             },
         },
     },
