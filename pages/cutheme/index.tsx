@@ -22,15 +22,17 @@ const CuTheme: NextPage = () => {
 			/>
 
 			<main className="">
-				<div className="mx-auto grid max-w-7xl grid-cols-1 gap-16 px-8 lg:grid-cols-cutheme [&:last-child]:mb-0">
+				<div className="mx-auto grid max-w-7xl grid-cols-1 gap-16 px-8 lg:grid-cols-sidenav [&:last-child]:mb-0">
 					<nav className="bg-gradient-to-l from-cu-black-50 to-white">
 						<p className="py-2 pr-2 mt-10 hover:bg-white">
 							SideNav
 						</p>
 					</nav>
 
-					<section className="mt-10 bg-slate-50">
-						<article className="prose prose-article max-w-prose prose-img:w-full lg:prose-lg">
+					<section className="mt-10">
+						{/* <section className="mt-10 bg-slate-50"> */}
+						{/* <article className="prose prose-article max-w-prose prose-img:w-full lg:prose-lg"> */}
+						<article className="prose prose-cutheme max-w-none lg:prose-lg">
 							<h2>Prose in cutheme</h2>
 							<p>
 								Aliquet nec orci mattis amet quisque ullamcorper
@@ -41,17 +43,53 @@ const CuTheme: NextPage = () => {
 								sapien.
 							</p>
 
+							<div className="flex gap-8 not-prose">
+								<p className="flex-1">
+									Quisque id at vitae feugiat egestas ac. Diam
+									nulla <a href="#">orci at in viverra</a>{" "}
+									scelerisque eget.
+								</p>
+								<p className="flex-1">
+									Id dolor praesent donec est. Odio penatibus
+									risus viverra tellus varius sit neque.
+								</p>
+							</div>
+
 							<p>
-								Faucibus commodo massa rhoncus, volutpat.
+								Faucibus commodo massa rhoncus, volutpat.{" "}
 								<strong>Dignissim</strong> sed{" "}
 								<strong>eget risus enim</strong>. Mattis mauris
 								semper sed amet vitae sed turpis id. Id dolor
 								praesent donec est. Odio penatibus risus viverra
 								tellus varius sit neque erat velit. Faucibus
 								commodo massa rhoncus, volutpat. Dignissim sed
-								eget risus enim.
+								eget risus enim.{" "}
 								<a href="#">Mattis mauris semper</a> sed amet
 								vitae sed turpis id.
+							</p>
+
+							<div className="flex gap-8 not-prose">
+								<p className="flex-1">
+									Quisque id at vitae feugiat egestas ac. Diam
+									nulla orci at in viverra scelerisque eget.
+								</p>
+								<p className="flex-1">
+									Id dolor praesent donec est. Odio penatibus
+									risus viverra tellus varius sit neque.
+								</p>
+								<p className="flex-1">
+									Quisque id at vitae feugiat egestas ac. Diam
+									nulla orci at in viverra scelerisque eget.
+								</p>
+							</div>
+
+							<p>
+								Quis semper vulputate aliquam venenatis egestas
+								sagittis quisque orci. Donec commodo sit viverra
+								aliquam porttitor ultrices gravida eu. Tincidunt
+								leo, elementum mattis elementum ut nisl, justo,
+								amet, mattis. Nunc purus, diam commodo tincidunt
+								turpis. Amet, duis sed elit interdum dignissim.
 							</p>
 
 							<ul>
@@ -68,15 +106,6 @@ const CuTheme: NextPage = () => {
 									pretium.
 								</li>
 							</ul>
-
-							<p>
-								Quis semper vulputate aliquam venenatis egestas
-								sagittis quisque orci. Donec commodo sit viverra
-								aliquam porttitor ultrices gravida eu. Tincidunt
-								leo, elementum mattis elementum ut nisl, justo,
-								amet, mattis. Nunc purus, diam commodo tincidunt
-								turpis. Amet, duis sed elit interdum dignissim.
-							</p>
 
 							<h3>H3 Heading</h3>
 
