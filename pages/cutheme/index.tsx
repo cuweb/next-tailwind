@@ -23,15 +23,11 @@ const CuTheme: NextPage = () => {
 
 			<main className="">
 				<div className="mx-auto grid max-w-7xl grid-cols-1 gap-16 px-8 lg:grid-cols-sidenav [&:last-child]:mb-0">
-					<nav className="bg-gradient-to-l from-cu-black-50 to-white">
-						<p className="py-2 pr-2 mt-10 hover:bg-white">
-							SideNav
-						</p>
+					<nav className="pt-12 bg-gradient-to-l from-cu-black-50 to-white">
+						<p className="py-2 pr-2 hover:bg-white">SideNav</p>
 					</nav>
 
-					<section className="mt-10">
-						{/* <section className="mt-10 bg-slate-50"> */}
-						{/* <article className="prose prose-article max-w-prose prose-img:w-full lg:prose-lg"> */}
+					<section className="mt-12">
 						<article className="prose prose-cutheme max-w-none lg:prose-lg">
 							<h2>Prose in cutheme</h2>
 							<p>
