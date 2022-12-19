@@ -39,6 +39,27 @@ const secondaryNavigation = [
 	},
 ];
 
+const adminNavigation = [
+	{
+		name: "Manage Resource 1",
+		href: "/dashboard/list",
+		icon: BriefcaseIcon,
+		current: false,
+	},
+	{
+		name: "Manage Resource 2",
+		href: "/dashboard/list",
+		icon: LinkIcon,
+		current: false,
+	},
+	{
+		name: "Manage Events",
+		href: "/dashboard/events",
+		icon: LinkIcon,
+		current: false,
+	},
+];
+
 function classNames(...classes: any) {
 	return classes.filter(Boolean).join(" ");
 }
@@ -76,7 +97,7 @@ export default function Example() {
 							leaveFrom="translate-x-0"
 							leaveTo="-translate-x-full"
 						>
-							<Dialog.Panel className="relative flex flex-col flex-1 w-full max-w-sm py-5 bg-white">
+							<Dialog.Panel className="relative flex flex-col flex-1 w-full max-w-sm bg-gradient-to-l from-cu-black-50 to-white">
 								<Transition.Child
 									as={Fragment}
 									enter="ease-in-out duration-300"
@@ -104,83 +125,85 @@ export default function Example() {
 										</button>
 									</div>
 								</Transition.Child>
-								<div className="flex items-center flex-shrink-0">
-									<div className="flex">
-										<Link
-											href="/dashboard"
-											className="flex items-center flex-shrink-0 px-4"
-										>
-											<img
-												className="w-auto h-10"
-												src="/cu-shield.svg"
-												alt="Carleton"
-											/>
-											<h1 className="pl-3 pr-2 text-xl font-semibold ">
-												Events Dashboard
-											</h1>
-										</Link>
-									</div>
+								<div>
+									<Link
+										href="/dashboard"
+										className="flex items-center p-4"
+									>
+										<img
+											className="w-auto h-10"
+											src="/cu-shield.svg"
+											alt="Carleton"
+										/>
+										<h1 className="items-center pl-3 pr-2 text-xl font-semibold ">
+											Dashboard
+										</h1>
+									</Link>
 								</div>
-								<div className="flex-1 h-0 mt-5 overflow-y-auto">
-									<nav className="flex flex-col h-full">
-										<div className="space-y-1">
-											{navigation.map((item) => (
+								<ul>
+									{navigation.map((item) => (
+										<li>
+											<a
+												key={item.name}
+												href={item.href}
+												className={classNames(
+													item.current
+														? "border-cu-red bg-cu-red-50 text-cu-red"
+														: "border-transparent text-cu-black-600 hover:bg-white hover:text-cu-red",
+													"group flex items-center border-l-4 p-3 text-base font-medium"
+												)}
+											>
+												<item.icon
+													className={classNames(
+														item.current
+															? "text-cu-red"
+															: "text-cu-black-400 group-hover:text-cu-black-800",
+														"mr-3 h-6 w-6 flex-shrink-0"
+													)}
+													aria-hidden="true"
+												/>
+												{item.name}
+											</a>
+										</li>
+									))}
+								</ul>
+								<div>
+									<h2 className="p-4 mt-8 mb-2 text-sm font-medium bg-white text-cu-bl10ck:900 border-cu-grey-200 border-y">
+										Admin Options
+									</h2>
+									<ul>
+										{adminNavigation.map((item) => (
+											<li>
 												<a
 													key={item.name}
 													href={item.href}
 													className={classNames(
 														item.current
 															? "border-cu-red bg-cu-red-50 text-cu-red"
-															: "border-transparent text-cu-black-600 hover:bg-gray-50 hover:text-cu-red",
-														"group flex items-center border-l-4 p-3 text-base font-medium"
+															: "border-transparent text-cu-black-600 hover:bg-white hover:text-cu-red",
+														"group flex items-center border-l-4 p-3 text-sm font-medium"
 													)}
-													aria-current={
-														item.current
-															? "page"
-															: undefined
-													}
 												>
 													<item.icon
 														className={classNames(
 															item.current
 																? "text-cu-red"
 																: "text-cu-black-400 group-hover:text-cu-black-800",
-															"mr-4 h-6 w-6 flex-shrink-0"
+															"mr-3 h-5 w-5 flex-shrink-0"
 														)}
 														aria-hidden="true"
 													/>
 													{item.name}
 												</a>
-											))}
-										</div>
-
-										<div className="pt-10 mt-auto space-y-1">
-											{secondaryNavigation.map((item) => (
-												<a
-													key={item.name}
-													href={item.href}
-													className="flex items-center p-3 text-base font-medium border-l-4 border-transparent group text-cu-black-600 hover:text-cu-red"
-												>
-													<item.icon
-														className="w-6 h-6 mr-4 text-cu-black-400 group-hover:text-cu-black-800"
-														aria-hidden="true"
-													/>
-													{item.name}
-												</a>
-											))}
-										</div>
-									</nav>
+											</li>
+										))}
+									</ul>
 								</div>
 							</Dialog.Panel>
 						</Transition.Child>
 					</div>
 				</Dialog>
 			</Transition.Root>
-
-			{/* Desktop Nav */}
-			<aside className="relative hidden border-r border-cu-black-200 bg-gradient-to-l from-cu-black-50 to-white md:block">
-				<nav className="sticky top-10">SidebarNav</nav>
-			</aside>
 
 			{/* Mobile Nav */}
 			<div className="sticky top-0 z-20 flex items-center gap-4 border-b border-cu-black-100 md:hidden">
@@ -204,9 +227,91 @@ export default function Example() {
 				</div>
 			</div>
 
+			{/* Desktop Nav */}
+			<aside className="relative hidden border-r border-cu-grey-200 bg-gradient-to-l from-cu-black-50 to-white md:block">
+				<nav className="sticky top-0">
+					<div>
+						<Link
+							href="/dashboard"
+							className="flex items-center p-4"
+						>
+							<img
+								className="w-auto h-10"
+								src="/cu-shield.svg"
+								alt="Carleton"
+							/>
+							<h1 className="items-center pl-3 pr-2 text-xl font-semibold ">
+								Dashboard
+							</h1>
+						</Link>
+					</div>
+					<ul>
+						{navigation.map((item) => (
+							<li>
+								<a
+									key={item.name}
+									href={item.href}
+									className={classNames(
+										item.current
+											? "border-cu-red bg-cu-red-50 text-cu-red"
+											: "border-transparent text-cu-black-600 hover:bg-white hover:text-cu-red",
+										"group flex items-center border-l-4 p-3 text-base font-medium"
+									)}
+								>
+									<item.icon
+										className={classNames(
+											item.current
+												? "text-cu-red"
+												: "text-cu-black-400 group-hover:text-cu-black-800",
+											"mr-3 h-6 w-6 flex-shrink-0"
+										)}
+										aria-hidden="true"
+									/>
+									{item.name}
+								</a>
+							</li>
+						))}
+					</ul>
+					<div>
+						<h2 className="p-4 mt-8 mb-2 text-sm font-medium bg-white text-cu-bl10ck:900 border-cu-grey-200 border-y">
+							Admin Options
+						</h2>
+						<ul>
+							{adminNavigation.map((item) => (
+								<li>
+									<a
+										key={item.name}
+										href={item.href}
+										className={classNames(
+											item.current
+												? "border-cu-red bg-cu-red-50 text-cu-red"
+												: "border-transparent text-cu-black-600 hover:bg-white hover:text-cu-red",
+											"group flex items-center border-l-4 p-3 text-sm font-medium"
+										)}
+									>
+										<item.icon
+											className={classNames(
+												item.current
+													? "text-cu-red"
+													: "text-cu-black-400 group-hover:text-cu-black-800",
+												"mr-3 h-5 w-5 flex-shrink-0"
+											)}
+											aria-hidden="true"
+										/>
+										{item.name}
+									</a>
+								</li>
+							))}
+						</ul>
+					</div>
+				</nav>
+			</aside>
+
 			{/* Content Area */}
 			<main className="max-w-5xl px-6 py-8 md:mx-auto md:w-full md:py-10 md:px-14">
-				<p className="bg-slate-300 ">This is the content area</p>
+				<p className="h-[2400px] bg-slate-300">
+					This is the content area
+				</p>
 				{/* <form action="#" method="POST">
 					<div className="sm:overflow-hidden ">
 						<div className="px-4 py-8 space-y-6 bg-white md:px-0">
