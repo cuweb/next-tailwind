@@ -202,7 +202,6 @@ export default function Example() {
 						Events Dashboard
 					</h1>
 				</div>
-				{/* <h2 className="font-semibold">Events Calendar Dashboard</h2> */}
 			</div>
 
 			{/* Content Area */}
