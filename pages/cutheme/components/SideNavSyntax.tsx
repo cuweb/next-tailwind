@@ -68,6 +68,18 @@ export default function SideNavSyntax(props: any) {
 						>
 							cutheme
 						</a>
+						<ul role="list" className="">
+							<li className="relative">
+								<a className={`${styles.childHref}`} href="/">
+									Third Level Test
+								</a>
+							</li>
+							<li className="relative">
+								<a className={`${styles.childHref}`} href="/">
+									Third Level Test
+								</a>
+							</li>
+						</ul>
 					</li>
 					<li className="relative">
 						<a

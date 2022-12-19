@@ -2,6 +2,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import { TopNav, FooterBasic, Banner } from "rds-tailwind";
 import SideNavCu from "./components/SideNavCu";
+import SideNavProtocol from "./components/SideNavProtocol";
 import SideNavSyntax from "./components/SideNavSyntax";
 
 const CuTheme: NextPage = () => {
@@ -18,17 +19,19 @@ const CuTheme: NextPage = () => {
 			/>
 
 			<Banner
-				align="horizontal"
+				// align="horizontal"
 				isType="dark-wave"
 				title="Welcome to cutheme 2.0"
 			/>
 
 			<main className="">
 				<div className="mx-auto grid max-w-7xl grid-cols-1 gap-16 px-8 lg:grid-cols-sidenav [&:last-child]:mb-0">
-					<nav className="relative pt-12 bg-gradient-to-l from-cu-black-50 to-white">
-						<SideNavSyntax />
+					<nav className="relative hidden pt-12 bg-gradient-to-l from-cu-black-50 to-white lg:block">
+						<SideNavCu />
 						{/* <br />
-						<SideNavCu /> */}
+						<SideNavSyntax /> */}
+						{/* <br />
+						<SideNavProtocol/> */}
 					</nav>
 
 					<section className="mt-12">
