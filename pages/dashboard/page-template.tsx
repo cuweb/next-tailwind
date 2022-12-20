@@ -199,21 +199,6 @@ export default function Example() {
 										))}
 									</ul>
 								</div>
-								<div className="mt-auto mb-2">
-									{secondaryNavigation.map((item) => (
-										<a
-											key={item.name}
-											href={item.href}
-											className="flex items-center p-2 text-sm font-medium border-l-4 border-transparent group text-cu-black-600 hover:bg-white hover:text-cu-red"
-										>
-											<item.icon
-												className="w-5 h-5 mr-3 text-cu-black-400 group-hover:text-cu-black-800"
-												aria-hidden="true"
-											/>
-											{item.name}
-										</a>
-									))}
-								</div>
 							</Dialog.Panel>
 						</Transition.Child>
 					</div>
@@ -244,7 +229,7 @@ export default function Example() {
 
 			{/* Desktop Nav */}
 			<aside className="relative hidden border-r border-cu-grey-200 bg-gradient-to-l from-cu-black-50 to-white md:block">
-				<nav className="sticky top-0 flex flex-col h-full">
+				<nav className="sticky top-0">
 					<div>
 						<Link
 							href="/dashboard"
@@ -318,21 +303,6 @@ export default function Example() {
 								</li>
 							))}
 						</ul>
-					</div>
-					<div className="mt-auto mb-2">
-						{secondaryNavigation.map((item) => (
-							<a
-								key={item.name}
-								href={item.href}
-								className="flex items-center p-2 text-sm font-medium border-l-4 border-transparent group text-cu-black-600 hover:bg-white hover:text-cu-red"
-							>
-								<item.icon
-									className="w-5 h-5 mr-3 text-cu-black-400 group-hover:text-cu-black-800"
-									aria-hidden="true"
-								/>
-								{item.name}
-							</a>
-						))}
 					</div>
 				</nav>
 			</aside>
