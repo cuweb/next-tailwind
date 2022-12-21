@@ -1,6 +1,8 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import { TopNav, FooterBasic, Banner } from "rds-tailwind";
+import CardGridEvents from "./components/CardGridEvents";
+import ListItemsNews from "./components/ListItemsNews";
 import SideNavFade from "./components/SideNavFade";
 
 const CuTheme: NextPage = () => {
