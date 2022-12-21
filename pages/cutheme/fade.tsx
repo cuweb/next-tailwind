@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import { TopNav, FooterBasic, Banner } from "rds-tailwind";
-import SideNavLight from "./components/SideNavLight";
+import SideNavFade from "./components/SideNavFade";
 
 const CuTheme: NextPage = () => {
 	return (
@@ -24,8 +24,8 @@ const CuTheme: NextPage = () => {
 
 			<main className="px-8">
 				<div className="mx-auto grid max-w-7xl grid-cols-1 gap-16 lg:grid-cols-sidenav [&:last-child]:mb-0">
-					<nav className="relative hidden py-14 shadow-sidenav lg:block">
-						<SideNavLight />
+					<nav className="relative hidden bg-gradient-to-l from-cu-black-50 to-white py-14 lg:block">
+						<SideNavFade />
 					</nav>
 
 					<section className="py-14">
