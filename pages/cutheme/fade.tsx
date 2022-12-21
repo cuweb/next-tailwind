@@ -65,20 +65,46 @@ const CuTheme: NextPage = () => {
 								vitae sed turpis id.
 							</p>
 
-							<div className="flex gap-8 not-prose">
-								<p className="flex-1">
-									Quisque id at vitae feugiat egestas ac. Diam
-									nulla orci at in viverra scelerisque eget.
-								</p>
-								<p className="flex-1">
-									Id dolor praesent donec est. Odio penatibus
-									risus viverra tellus varius sit neque.
-								</p>
-								<p className="flex-1">
-									Quisque id at vitae feugiat egestas ac. Diam
-									nulla orci at in viverra scelerisque eget.
-								</p>
-							</div>
+							<ListItemsNews />
+
+							<p>
+								Faucibus commodo massa rhoncus, volutpat.{" "}
+								<strong>Dignissim</strong> sed{" "}
+								<strong>eget risus enim</strong>. Mattis mauris
+								semper sed amet vitae sed turpis id. Id dolor
+								praesent donec est. Odio penatibus risus viverra
+								tellus varius sit neque erat velit. Faucibus
+								commodo massa rhoncus, volutpat. Dignissim sed
+								eget risus enim.{" "}
+								<a href="#">Mattis mauris semper</a> sed amet
+								vitae sed turpis id.
+							</p>
+
+							<p>
+								Id orci tellus laoreet id ac. Dolor, aenean leo,
+								ac etiam consequat in. Convallis arcu ipsum urna
+								nibh. Pharetra, euismod vitae interdum mauris
+								enim, consequat vulputate nibh. Maecenas
+								pellentesque id sed tellus mauris, ultrices
+								mauris. Tincidunt enim cursus ridiculus mi.
+								Pellentesque nam sed nullam sed diam turpis
+								ipsum eu a sed convallis diam.
+							</p>
+
+							<CardGridEvents />
+
+							<p>
+								Faucibus commodo massa rhoncus, volutpat.{" "}
+								<strong>Dignissim</strong> sed{" "}
+								<strong>eget risus enim</strong>. Mattis mauris
+								semper sed amet vitae sed turpis id. Id dolor
+								praesent donec est. Odio penatibus risus viverra
+								tellus varius sit neque erat velit. Faucibus
+								commodo massa rhoncus, volutpat. Dignissim sed
+								eget risus enim.{" "}
+								<a href="#">Mattis mauris semper</a> sed amet
+								vitae sed turpis id.
+							</p>
 
 							<p>
 								Quis semper vulputate aliquam venenatis egestas
