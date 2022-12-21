@@ -25,12 +25,15 @@ module.exports = {
     theme: {
         extend: {
             backgroundImage: {
-                'cu-waves-red': "url('../assets/cu-waves-red.svg')",
-                'cu-waves-white-20': "url('../assets/cu-waves-white-20.svg')",
+                'cu-waves-red': "url('https://rds-tailwind.s3.amazonaws.com/assets/cu-waves-red.svg')",
+                'cu-waves-white-10': "url('https://rds-tailwind.s3.amazonaws.com/assets/cu-waves-white-10.svg')",
             },
             gridTemplateColumns: {
-                'sidenav': '260px auto',
+                'sidenav': '280px auto',
             },
+            boxShadow: {
+                'sidenav': '-10px -1px 10px -10px rgba(0,0,0,0.15) inset',
+            }
         },
     },
 };
