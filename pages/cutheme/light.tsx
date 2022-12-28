@@ -20,7 +20,7 @@ const CuTheme: NextPage = () => {
 			<Banner
 				//   align="horizontal"
 				isType="dark-wave"
-				title="Prototypes with Custom Gutenberg Blocks"
+				title="Prototypes with RDS Blocks"
 			/>
 
 			<main className="px-8">

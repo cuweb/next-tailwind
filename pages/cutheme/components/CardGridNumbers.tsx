@@ -6,7 +6,7 @@ const styles = {
 export default function CardGridNumber() {
 	return (
 		<>
-			<div className="cu-column not-prose mx-auto grid max-w-7xl grid-cols-1 gap-8 md:grid-cols-2 [&:last-child]:mb-0 [&+.cu-column]:mt-8">
+			<div className="cu-column not-prose mx-auto grid max-w-7xl grid-cols-1 gap-8 md:grid-cols-3 [&:last-child]:mb-0 [&+.cu-column]:mt-8">
 				<div className="relative flex flex-col gap-2 px-6 py-5 border rounded-lg shadow-lg border-cu-black-100">
 					<dt className={styles.dt}>Carleton Alumni</dt>
 					<dd className={styles.dd}>177,000+</dd>

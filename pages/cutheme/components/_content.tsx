@@ -15,15 +15,6 @@ export default function CuThemeContent() {
 				Amet, duis sed elit interdum dignissim.
 			</p>
 
-			<CardGridNumber />
-			<p>
-				Quis semper vulputate aliquam venenatis egestas sagittis quisque
-				orci. Donec commodo sit viverra aliquam porttitor ultrices
-				gravida eu. Tincidunt leo, elementum mattis elementum ut nisl,
-				justo, amet, mattis. Nunc purus, diam commodo tincidunt turpis.
-				Amet, duis sed elit interdum dignissim.
-			</p>
-
 			<ul>
 				<li>Quis elit egestas venenatis mattis dignissim.</li>
 				<li>
@@ -98,6 +89,16 @@ export default function CuThemeContent() {
 				sem. At arcu, sit dui mi, nibh dui, diam eget aliquam. Quisque
 				id at vitae feugiat egestas ac. Diam nulla orci at in viverra
 				scelerisque eget. Eleifend egestas fringilla sapien.
+			</p>
+
+			<CardGridNumber />
+
+			<p>
+				Quis semper vulputate aliquam venenatis egestas sagittis quisque
+				orci. Donec commodo sit viverra aliquam porttitor ultrices
+				gravida eu. Tincidunt leo, elementum mattis elementum ut nisl,
+				justo, amet, mattis. Nunc purus, diam commodo tincidunt turpis.
+				Amet, duis sed elit interdum dignissim.
 			</p>
 
 			<ListItemsNews />
