@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import { TopNav, FooterStandard, Banner } from "rds-tailwind";
+import FocusNav from "./components/FocusNav";
 import SideNavLight from "./components/SideNavLight";
 import CuThemeContent from "./components/_content";
 
@@ -11,6 +12,8 @@ const CuTheme: NextPage = () => {
 				<title>Carleton University | Home</title>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
+
+			<FocusNav />
 
 			<TopNav
 				logoUrl="https://carleton.ca/"
