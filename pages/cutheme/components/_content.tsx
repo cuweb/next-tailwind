@@ -1,4 +1,5 @@
 import CardGridEvents from "./CardGridEvents";
+import CardGridNews from "./CardGridNews";
 import CardGridNumber from "./CardGridNumbers";
 import ListItemsNews from "./ListItemsNews";
 
@@ -13,6 +14,15 @@ export default function CuThemeContent() {
 				gravida eu. Tincidunt leo, elementum mattis elementum ut nisl,
 				justo, amet, mattis. Nunc purus, diam commodo tincidunt turpis.
 				Amet, duis sed elit interdum dignissim.
+			</p>
+
+			<CardGridNews />
+
+			<p>
+				Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget
+				risus enim. Mattis mauris semper sed amet vitae sed turpis id.
+				Id dolor praesent donec est. Odio penatibus risus viverra tellus
+				varius sit neque erat velit.
 			</p>
 
 			<ul>
