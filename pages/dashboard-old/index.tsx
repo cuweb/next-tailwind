@@ -1,18 +1,5 @@
-/*
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-    ],
-  }
-  ```
-*/
 import { Fragment, useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { Dialog, Switch, Transition } from "@headlessui/react";
 import {
@@ -202,7 +189,7 @@ export default function Example() {
 												href="/dashboard"
 												className="flex items-center flex-shrink-0 px-4"
 											>
-												<img
+												<Image
 													className="w-auto h-10"
 													src="/cu-shield.svg"
 													alt="Carleton"
@@ -286,7 +273,7 @@ export default function Example() {
 								href="/dashboard"
 								className="flex items-center flex-shrink-0 px-4"
 							>
-								<img
+								<Image
 									className="w-auto h-10"
 									src="/cu-shield.svg"
 									alt="Carleton"
@@ -796,8 +783,8 @@ export default function Example() {
 														Notifications
 													</h3>
 													<p className="mt-1 text-sm text-gray-500">
-														We'll always let you
-														know about important
+														We&apos;ll always let
+														you know about important
 														changes, but you pick
 														what else you want to
 														hear about.
@@ -960,7 +947,7 @@ export default function Example() {
 												</div>
 											</div>
 
-											<div className="px-4 py-3 text-right  sm:px-6">
+											<div className="px-4 py-3 text-right sm:px-6">
 												<button
 													type="submit"
 													className="inline-flex justify-center px-4 py-2 text-sm font-medium text-white border border-transparent rounded-md shadow-sm bg-cu-red hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"

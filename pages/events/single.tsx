@@ -1,4 +1,5 @@
 import type { NextPage } from "next";
+import Image from "next/image";
 import Head from "next/head";
 
 import { Menu, Transition } from "@headlessui/react";
@@ -57,7 +58,7 @@ const EventCalendar: NextPage = () => {
 
 			<div className="relative py-20 bg-gray-800 md:py-32">
 				<div className="absolute inset-0">
-					<img
+					<Image
 						className="object-cover w-full h-full"
 						src="https://carleton.ca/about/wp-content/uploads/about-header-1600w-3.jpg"
 						alt=""
@@ -105,7 +106,7 @@ const EventCalendar: NextPage = () => {
 								vitae sed turpis id.
 							</p>
 
-							<img
+							<Image
 								src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&amp;auto=format&amp;fit=facearea&amp;w=1310&amp;h=873&amp;q=80&amp;facepad=3"
 								alt=""
 								width="1310"

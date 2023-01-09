@@ -32,7 +32,7 @@ module.exports = {
                 'sidenav': '280px auto',
             },
             boxShadow: {
-                'sidenav': '-10px -1px 10px -10px rgba(0,0,0,0.15) inset',
+                'sidenav': '-10px -1px 10px -5px rgba(128,128,128,0.1) inset',
             }
         },
     },

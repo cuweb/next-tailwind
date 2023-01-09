@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Fragment, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import { XMarkIcon, Bars3Icon } from "@heroicons/react/24/outline";
@@ -86,7 +87,7 @@ export default function Example() {
 					<Bars3Icon className="w-6 h-6" aria-hidden="true" />
 				</button>
 				<div className="flex items-center">
-					<img
+					<Image
 						className="w-auto h-10"
 						src="/cu-shield.svg"
 						alt="Carleton"

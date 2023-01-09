@@ -1,4 +1,5 @@
 import { Fragment, useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { Dialog, Transition } from "@headlessui/react";
 import {
@@ -130,7 +131,7 @@ export default function Example() {
 										href="/dashboard"
 										className="flex items-center p-4"
 									>
-										<img
+										<Image
 											className="w-auto h-10"
 											src="/cu-shield.svg"
 											alt="Carleton"
@@ -142,9 +143,8 @@ export default function Example() {
 								</div>
 								<ul>
 									{navigation.map((item) => (
-										<li>
+										<li key={item.name}>
 											<a
-												key={item.name}
 												href={item.href}
 												className={classNames(
 													item.current
@@ -173,9 +173,8 @@ export default function Example() {
 									</h2>
 									<ul>
 										{adminNavigation.map((item) => (
-											<li>
+											<li key={item.name}>
 												<a
-													key={item.name}
 													href={item.href}
 													className={classNames(
 														item.current
@@ -216,7 +215,7 @@ export default function Example() {
 					<Bars3Icon className="w-6 h-6" aria-hidden="true" />
 				</button>
 				<div className="flex items-center">
-					<img
+					<Image
 						className="w-auto h-10"
 						src="/cu-shield.svg"
 						alt="Carleton"
@@ -235,7 +234,7 @@ export default function Example() {
 							href="/dashboard"
 							className="flex items-center p-4"
 						>
-							<img
+							<Image
 								className="w-auto h-10"
 								src="/cu-shield.svg"
 								alt="Carleton"
@@ -247,9 +246,8 @@ export default function Example() {
 					</div>
 					<ul>
 						{navigation.map((item) => (
-							<li>
+							<li key={item.name}>
 								<a
-									key={item.name}
 									href={item.href}
 									className={classNames(
 										item.current
@@ -278,9 +276,8 @@ export default function Example() {
 						</h2>
 						<ul>
 							{adminNavigation.map((item) => (
-								<li>
+								<li key={item.name}>
 									<a
-										key={item.name}
 										href={item.href}
 										className={classNames(
 											item.current
