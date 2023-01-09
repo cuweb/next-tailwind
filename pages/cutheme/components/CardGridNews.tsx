@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Column } from "rds-tailwind";
 
 const styles = {
@@ -11,7 +12,7 @@ export default function CardGridNews() {
 		<Column cols="2">
 			<div className="relative flex flex-col overflow-hidden duration-300 ease-in bg-white rounded-lg shadow-lg group hover:scale-105">
 				<a href="https://carleton.ca" className="cursor-pointer">
-					<img
+					<Image
 						className="object-cover w-full h-48"
 						src="https://images.unsplash.com/photo-1664618221700-c741183ff4aa?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1074&amp;q=80"
 						alt=""

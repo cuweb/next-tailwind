@@ -1,77 +1,78 @@
+import Link from "next/link";
 export default function GridSubNav(props: any) {
 	return (
 		<ul className="flex flex-wrap gap-4">
 			<li>
-				<a
+				<Link
 					className="text-sm font-semibold text-cu-red hover:text-cu-red-800 hover:underline"
 					href="/misc/cards/"
 				>
 					Home
-				</a>
+				</Link>
 			</li>
 			<li>
-				<a
+				<Link
 					className="text-sm font-semibold text-cu-red hover:text-cu-red-800 hover:underline"
 					href="/misc/cards/events"
 				>
 					Events
-				</a>
+				</Link>
 			</li>
 			<li>
-				<a
+				<Link
 					className="text-sm font-semibold text-cu-red hover:text-cu-red-800 hover:underline"
 					href="/misc/cards/feeds"
 				>
 					Feeds
-				</a>
+				</Link>
 			</li>
 			<li>
-				<a
+				<Link
 					className="text-sm font-semibold text-cu-red hover:text-cu-red-800 hover:underline"
 					href="/misc/cards/files"
 				>
 					Files
-				</a>
+				</Link>
 			</li>
 			<li>
-				<a
+				<Link
 					className="text-sm font-semibold text-cu-red hover:text-cu-red-800 hover:underline"
 					href="/misc/cards/jobs"
 				>
 					Jobs
-				</a>
+				</Link>
 			</li>
 			<li>
-				<a
+				<Link
 					className="text-sm font-semibold text-cu-red hover:text-cu-red-800 hover:underline"
 					href="/misc/cards/links"
 				>
 					Links
-				</a>
+				</Link>
 			</li>
 			<li>
-				<a
+				<Link
 					className="text-sm font-semibold text-cu-red hover:text-cu-red-800 hover:underline"
 					href="/misc/cards/marketplace"
 				>
 					Marketplace
-				</a>
+				</Link>
 			</li>
 			<li>
-				<a
+				<Link
 					className="text-sm font-semibold text-cu-red hover:text-cu-red-800 hover:underline"
 					href="/misc/cards/news"
 				>
 					News
-				</a>
+				</Link>
 			</li>
 			<li>
-				<a
+				<Link
 					className="text-sm font-semibold text-cu-red hover:text-cu-red-800 hover:underline"
 					href="/misc/cards/template"
 				>
 					Template
-				</a>
+				</Link>
 			</li>
 		</ul>
 	);

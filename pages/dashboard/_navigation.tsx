@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import {
 	ArrowLeftOnRectangleIcon,
@@ -65,7 +66,7 @@ export default function DashboardNav() {
 		<>
 			<div>
 				<Link href="/dashboard" className="flex items-center p-4">
-					<img
+					<Image
 						className="w-auto h-10"
 						src="/cu-shield.svg"
 						alt="Carleton"
@@ -77,9 +78,8 @@ export default function DashboardNav() {
 			</div>
 			<ul>
 				{navigation.map((item) => (
-					<li>
+					<li key={item.name}>
 						<a
-							key={item.name}
 							href={item.href}
 							className={classNames(
 								item.current
@@ -108,9 +108,8 @@ export default function DashboardNav() {
 				</h2>
 				<ul>
 					{adminNavigation.map((item) => (
-						<li>
+						<li key={item.name}>
 							<a
-								key={item.name}
 								href={item.href}
 								className={classNames(
 									item.current

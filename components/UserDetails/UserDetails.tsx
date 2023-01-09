@@ -1,16 +1,17 @@
+import Image from "next/image";
 import Panel from "../../_rds-final/layouts/Panel/Panel";
 
 export default function UserDetails() {
 	return (
 		<Panel hasShadow>
 			<div className="flex items-center gap-5 p-5 md:gap-8 md:p-8">
-				{/* <img
+				{/* <Image
 					className="inline-block w-16 h-16 overflow-hidden text-2xl bg-white border-2 rounded-full cursor-pointer border-cu-black-50 text-cu-black-800 focus:ring-2 focus:ring-cu-black-100 focus:ring-offset-2 md:h-32 md:w-32 md:border-4"
 					src="https://static.wikia.nocookie.net/freshprince/images/a/ac/1carlton.jpg"
 					alt="Avatar of current user"
 					aria-hidden="true"
 				/> */}
-				<img
+				<Image
 					className="inline-block w-32 h-32 overflow-hidden text-4xl bg-white rounded-lg cursor-pointer text-cu-black-800 focus:ring-2 focus:ring-cu-black-100 focus:ring-offset-2"
 					src="https://static.wikia.nocookie.net/freshprince/images/a/ac/1carlton.jpg"
 					alt="Avatar of current user"
