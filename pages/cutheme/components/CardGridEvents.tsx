@@ -22,6 +22,8 @@ export default function CardGridEvents() {
 							className="object-cover w-full h-48"
 							src="https://images.unsplash.com/photo-1664618221700-c741183ff4aa?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1074&amp;q=80"
 							alt=""
+							width="400"
+							height="300"
 						/>
 					</div>
 					<div className="bg-white p-7">
@@ -104,6 +106,8 @@ export default function CardGridEvents() {
 							className="object-cover w-full h-48"
 							src="https://images.unsplash.com/photo-1654161974932-e26cd97402a1?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=688&amp;q=80"
 							alt=""
+							width="400"
+							height="300"
 						/>
 					</div>
 					<div className="bg-white p-7">
