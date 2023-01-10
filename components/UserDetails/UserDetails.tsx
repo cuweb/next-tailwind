@@ -11,11 +11,13 @@ export default function UserDetails() {
 					alt="Avatar of current user"
 					aria-hidden="true"
 				/> */}
-				<Image
+				<img
 					className="inline-block w-32 h-32 overflow-hidden text-4xl bg-white rounded-lg cursor-pointer text-cu-black-800 focus:ring-2 focus:ring-cu-black-100 focus:ring-offset-2"
 					src="https://static.wikia.nocookie.net/freshprince/images/a/ac/1carlton.jpg"
 					alt="Avatar of current user"
 					aria-hidden="true"
+					width="40"
+					height="40"
 				/>
 				<div className="flex flex-col md:gap-1">
 					<p className="hidden text-sm font-light text-cu-black-600 md:block">
