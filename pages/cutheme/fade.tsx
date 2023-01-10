@@ -20,7 +20,7 @@ const CuTheme: NextPage = () => {
 			<Banner
 				// align="horizontal"
 				isType="dark-wave"
-				title="Prototypes with RDS Blocks"
+				title="Darth Fader"
 			/>
 
 			<main className="px-8">
