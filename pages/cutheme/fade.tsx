@@ -2,7 +2,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import { TopNav, FooterStandard, Banner } from "rds-tailwind";
 import CuThemeContent from "./components/_content";
-import SideNavFade from "./components/SideNavFade";
+import SideNavFade from "./components/SideNav/SideNavFade";
 
 const CuTheme: NextPage = () => {
 	return (
