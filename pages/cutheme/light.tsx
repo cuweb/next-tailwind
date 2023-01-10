@@ -23,7 +23,7 @@ const CuTheme: NextPage = () => {
 			<Banner
 				//   align="horizontal"
 				isType="dark-wave"
-				title="Prototypes with RDS Blocks"
+				title="Obi-Wan Cleanobi"
 			/>
 
 			<main className="px-8">

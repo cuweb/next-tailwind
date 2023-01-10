@@ -1,5 +1,5 @@
 const styles = {
-	topParentUl: `sticky top-8 space-y-4`,
+	topParentUl: `sticky top-8 space-y-4 pr-4`,
 	topParentLink: `font-semibold hover:text-cu-red pr-4`,
 	listItemLink: `text-sm block py-2.5 pl-4 pr-4 hover:text-cu-red hover:bg-gradient-to-r hover:from-cu-black-50/70 hover:to-transparent hover:border-l hover:border-cu-red hover:-ml-px`,
 	childUl: `border-l border-cu-black-100 mt-2`,

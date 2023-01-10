@@ -12,7 +12,7 @@ const CuTheme: NextPage = () => {
 					className="font-semibold text-cu-red"
 					href="/cutheme/light"
 				>
-					View cutheme with light nav
+					Obi-Wan Cleanobi (the light side nav)
 				</Link>
 			</p>
 			<p>
@@ -20,7 +20,7 @@ const CuTheme: NextPage = () => {
 					className="font-semibold text-cu-red"
 					href="/cutheme/fade"
 				>
-					View cutheme with gradient nav
+					Darth Fader (the faded side nav)
 				</Link>
 			</p>
 		</div>
