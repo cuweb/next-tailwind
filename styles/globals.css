@@ -2,30 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-/* @layer base {
-	html,
-	body,
-	#__next {
-		@apply flex-col h-screen;
-	}
-}
+/* Things to add to RDS */
 
-@layer components {
-	.cu-container.bg-white + .cu-container.bg-white,
-	.cu-container.bg-cu-black-50 + .cu-container.bg-cu-black-50 {
-		@apply pt-0;
-	}
-
-	main > .cu-column:first-child {
-		@apply pt-8 md:pt-10;
-	}
-
-	main > .cu-column:last-child {
-		@apply pb-8 md:pb-10;
-	}
-} */
-
-/* Move to RDS */
-/* .cu-panel + .cu-panel {
+.cu-column + .cu-panel,
+.cu-panel + .cu-column {
 	@apply mt-8;
-} */
+}

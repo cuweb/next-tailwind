@@ -1,7 +1,8 @@
-import CardGridEvents from "./CardGridEvents";
-import CardGridNews from "./CardGridNews";
-import CardGridNumber from "./CardGridNumbers";
-import ListItemsNews from "./ListItemsNews";
+import CardGridEvents from "./Events/Grid";
+import CardGridNews from "./News/Grid";
+import CardGridNumber from "./Numbers/CardGridNumbers";
+import ListItemsNews from "./News/Listing";
+import ListItemsEvents from "./Events/Listing";
 
 export default function CuThemeContent() {
 	return (
@@ -15,8 +16,6 @@ export default function CuThemeContent() {
 				justo, amet, mattis. Nunc purus, diam commodo tincidunt turpis.
 				Amet, duis sed elit interdum dignissim.
 			</p>
-
-			<CardGridNews />
 
 			<p>
 				Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget
@@ -111,6 +110,11 @@ export default function CuThemeContent() {
 				Amet, duis sed elit interdum dignissim.
 			</p>
 
+			<h2>Card Components</h2>
+
+			<h3>News Card Grid</h3>
+
+			<CardGridNews />
 			<ListItemsNews />
 
 			<p>
@@ -127,6 +131,7 @@ export default function CuThemeContent() {
 			</p>
 
 			<CardGridEvents />
+			<ListItemsEvents />
 
 			<p>
 				Purus morbi dignissim senectus mattis <a href="#">adipiscing</a>

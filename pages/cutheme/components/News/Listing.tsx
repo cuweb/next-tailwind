@@ -15,6 +15,8 @@ export default function ListItemsNews() {
 									className="w-auto h-auto rounded"
 									src="https://source.unsplash.com/random/400x300"
 									alt=""
+									width="400"
+									height="300"
 								/>
 							</div>
 							<div className="flex flex-col flex-auto gap-2">
@@ -57,6 +59,8 @@ export default function ListItemsNews() {
 									className="w-auto h-auto rounded"
 									src="https://source.unsplash.com/random/400x300"
 									alt=""
+									width="400"
+									height="300"
 								/>
 							</div>
 							<div className="flex flex-col flex-auto gap-2">
@@ -99,6 +103,8 @@ export default function ListItemsNews() {
 									className="w-auto h-auto rounded"
 									src="https://source.unsplash.com/random/400x300"
 									alt=""
+									width="400"
+									height="300"
 								/>
 							</div>
 							<div className="flex flex-col flex-auto gap-2">

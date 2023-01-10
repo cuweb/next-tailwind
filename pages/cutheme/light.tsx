@@ -1,8 +1,8 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import { TopNav, FooterStandard, Banner } from "rds-tailwind";
-import FocusNav from "./components/FocusNav";
-import SideNavLight from "./components/SideNavLight";
+import FocusNav from "./components/FocusNav/FocusNav";
+import SideNavLight from "./components/SideNav/SideNavLight";
 import CuThemeContent from "./components/_content";
 
 const CuTheme: NextPage = () => {
