@@ -1,15 +1,16 @@
 import { Column } from "rds-tailwind";
-import NewsCard from "./NewsCard";
-import NewsCardDateAfter from "./NewsCardDateAfter";
+import NumberCard from "./NumberCard";
+import NumberCardCenter from "./NumberCardCenter";
 
-export default function CardGridNews() {
+export default function CardGridNumber() {
 	return (
 		<>
-			<h2>Date on top, 2 column</h2>
+			<h2>Left aligned, 2 column</h2>
 
 			<Column cols="2">
-				<NewsCard />
-				<NewsCard />
+				<NumberCard />
+				<NumberCard />
+				<NumberCard />
 			</Column>
 
 			<p>
@@ -21,12 +22,14 @@ export default function CardGridNews() {
 				erat ac. Cras fermentum convallis quam.
 			</p>
 
-			<h2>Date on top, 3 column</h2>
+			<h2>Left aligned, 3 column</h2>
 
 			<Column cols="3">
-				<NewsCard />
-				<NewsCard />
-				<NewsCard />
+				<NumberCard />
+				<NumberCard />
+				<NumberCard />
+				<NumberCard />
+				<NumberCard />
 			</Column>
 
 			<p>
@@ -38,11 +41,12 @@ export default function CardGridNews() {
 				erat ac. Cras fermentum convallis quam.
 			</p>
 
-			<h2>Date on bottom, 2 column</h2>
+			<h2>Centre aligned, 2 column</h2>
 
 			<Column cols="2">
-				<NewsCardDateAfter />
-				<NewsCardDateAfter />
+				<NumberCardCenter />
+				<NumberCardCenter />
+				<NumberCardCenter />
 			</Column>
 
 			<p>
@@ -54,12 +58,14 @@ export default function CardGridNews() {
 				erat ac. Cras fermentum convallis quam.
 			</p>
 
-			<h2>Date on bottom, 3 column</h2>
+			<h2>Centre aligned, 3 column</h2>
 
 			<Column cols="3">
-				<NewsCardDateAfter />
-				<NewsCardDateAfter />
-				<NewsCardDateAfter />
+				<NumberCardCenter />
+				<NumberCardCenter />
+				<NumberCardCenter />
+				<NumberCardCenter />
+				<NumberCardCenter />
 			</Column>
 
 			<p>

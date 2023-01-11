@@ -1,9 +1,8 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import { TopNav, FooterStandard, Banner } from "rds-tailwind";
-import FocusNav from "./components/FocusNav/FocusNav";
-import SideNavLight from "./components/SideNav/SideNavLight";
-import CuThemeContent from "./components/_content";
+import CuThemeContent from "./components/Content/Content";
+import SideNavFade from "./components/SideNav/SideNavFade";
 
 const CuTheme: NextPage = () => {
 	return (
@@ -13,24 +12,20 @@ const CuTheme: NextPage = () => {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
-			<FocusNav />
-
 			<TopNav
 				logoUrl="https://carleton.ca/"
 				title="WordPress ¯\_(ツ)_/¯"
 			/>
 
 			<Banner
-				//   align="horizontal"
+				// align="horizontal"
 				isType="dark-wave"
-				title="Obi-Wan Cleanobi"
+				title="Darth Fader"
 			/>
 
 			<main className="px-8">
 				<div className="mx-auto grid max-w-7xl grid-cols-1 gap-16 lg:grid-cols-sidenav [&:last-child]:mb-0">
-					<nav className="relative hidden py-14 shadow-sidenav lg:block">
-						<SideNavLight />
-					</nav>
+					<SideNavFade />
 
 					<section className="py-14">
 						<article className="prose prose-cutheme max-w-none lg:prose-lg">

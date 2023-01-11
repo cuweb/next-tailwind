@@ -29,7 +29,7 @@ module.exports = {
                 'cu-waves-white-10': "url('https://rds-tailwind.s3.amazonaws.com/assets/cu-waves-white-10.svg')",
             },
             gridTemplateColumns: {
-                'sidenav': '280px auto',
+                'sidenav': '300px auto',
             },
             boxShadow: {
                 'sidenav': '-10px -1px 10px -5px rgba(128,128,128,0.1) inset',
