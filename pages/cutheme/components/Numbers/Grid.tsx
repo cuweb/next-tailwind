@@ -5,7 +5,7 @@ import NumberCardCenter from "./NumberCardCenter";
 export default function CardGridNumber() {
 	return (
 		<>
-			<h3>Left aligned, 2 column</h3>
+			<h2>Left aligned, 2 column</h2>
 
 			<Column cols="2">
 				<NumberCard />
@@ -13,7 +13,16 @@ export default function CardGridNumber() {
 				<NumberCard />
 			</Column>
 
-			<h3>Left aligned, 3 column</h3>
+			<p>
+				Purus morbi dignissim senectus mattis adipiscing. Amet, massa
+				quam varius orci dapibus volutpat cras. In amet eu ridiculus leo
+				sodales cursus tristique. Tincidunt sed tempus ut viverra
+				ridiculus non molestie. Gravida quis fringilla amet eget dui
+				tempor dignissim. Facilisis auctor venenatis varius nunc, congue
+				erat ac. Cras fermentum convallis quam.
+			</p>
+
+			<h2>Left aligned, 3 column</h2>
 
 			<Column cols="3">
 				<NumberCard />
@@ -23,7 +32,16 @@ export default function CardGridNumber() {
 				<NumberCard />
 			</Column>
 
-			<h3>Centre aligned, 2 column</h3>
+			<p>
+				Purus morbi dignissim senectus mattis adipiscing. Amet, massa
+				quam varius orci dapibus volutpat cras. In amet eu ridiculus leo
+				sodales cursus tristique. Tincidunt sed tempus ut viverra
+				ridiculus non molestie. Gravida quis fringilla amet eget dui
+				tempor dignissim. Facilisis auctor venenatis varius nunc, congue
+				erat ac. Cras fermentum convallis quam.
+			</p>
+
+			<h2>Centre aligned, 2 column</h2>
 
 			<Column cols="2">
 				<NumberCardCenter />
@@ -31,7 +49,16 @@ export default function CardGridNumber() {
 				<NumberCardCenter />
 			</Column>
 
-			<h3>Centre aligned, 3 column</h3>
+			<p>
+				Purus morbi dignissim senectus mattis adipiscing. Amet, massa
+				quam varius orci dapibus volutpat cras. In amet eu ridiculus leo
+				sodales cursus tristique. Tincidunt sed tempus ut viverra
+				ridiculus non molestie. Gravida quis fringilla amet eget dui
+				tempor dignissim. Facilisis auctor venenatis varius nunc, congue
+				erat ac. Cras fermentum convallis quam.
+			</p>
+
+			<h2>Centre aligned, 3 column</h2>
 
 			<Column cols="3">
 				<NumberCardCenter />
@@ -40,6 +67,15 @@ export default function CardGridNumber() {
 				<NumberCardCenter />
 				<NumberCardCenter />
 			</Column>
+
+			<p>
+				Purus morbi dignissim senectus mattis adipiscing. Amet, massa
+				quam varius orci dapibus volutpat cras. In amet eu ridiculus leo
+				sodales cursus tristique. Tincidunt sed tempus ut viverra
+				ridiculus non molestie. Gravida quis fringilla amet eget dui
+				tempor dignissim. Facilisis auctor venenatis varius nunc, congue
+				erat ac. Cras fermentum convallis quam.
+			</p>
 		</>
 	);
 }

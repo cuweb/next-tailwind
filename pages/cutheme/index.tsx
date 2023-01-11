@@ -1,29 +1,45 @@
-import Link from "next/link";
 import type { NextPage } from "next";
-// import Head from "next/head";
-// import { TopNav, FooterBasic, Banner } from "rds-tailwind";
-// import SideNavLight from "./components/SideNavLight";
+import Head from "next/head";
+import { TopNav, FooterStandard, Banner } from "rds-tailwind";
+import FocusNav from "./components/FocusNav/FocusNav";
+import SideNavLight from "./components/SideNav/SideNavLight";
+import CuThemeContent from "./components/Content/Content";
 
 const CuTheme: NextPage = () => {
 	return (
-		<div className="m-20 space-y-6">
-			<p>
-				<Link
-					className="font-semibold text-cu-red"
-					href="/cutheme/light"
-				>
-					Obi-Wan Cleanobi (the light side nav)
-				</Link>
-			</p>
-			<p>
-				<Link
-					className="font-semibold text-cu-red"
-					href="/cutheme/fade"
-				>
-					Darth Fader (the faded side nav)
-				</Link>
-			</p>
-		</div>
+		<>
+			<Head>
+				<title>Carleton University | Home</title>
+				<link rel="icon" href="/favicon.ico" />
+			</Head>
+
+			<FocusNav />
+
+			<TopNav
+				logoUrl="https://carleton.ca/"
+				title="WordPress ¯\_(ツ)_/¯"
+			/>
+
+			<Banner
+				//   align="horizontal"
+				isType="dark-wave"
+				title="cutheme prototypes"
+			/>
+
+			<main className="px-8">
+				<div className="mx-auto grid max-w-7xl grid-cols-1 gap-16 lg:grid-cols-sidenav [&:last-child]:mb-0">
+					<SideNavLight />
+
+					<section className="py-14">
+						<article className="prose prose-cutheme max-w-none lg:prose-lg">
+							<CuThemeContent />
+						</article>
+					</section>
+				</div>
+			</main>
+
+			<FooterStandard />
+		</>
 	);
 };
 
