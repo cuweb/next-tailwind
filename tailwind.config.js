@@ -1,6 +1,6 @@
 module.exports = {
     presets: [
-        require('./tailwind.theme.js'),
+        require('rds-tailwind-theme'),
     ],
     content: [
         // './_rds-final/components/**/*.{js,ts,jsx,tsx}',
@@ -22,18 +22,4 @@ module.exports = {
         './node_modules/rds-tailwind/src/**/**/**/*.{js,ts,jsx,tsx}',
         './node_modules/rds-tailwind/src/layouts/Panel/*.{js,ts,jsx,tsx}',
     ],
-    theme: {
-        extend: {
-            backgroundImage: {
-                'cu-waves-red': "url('https://rds-tailwind.s3.amazonaws.com/assets/cu-waves-red.svg')",
-                'cu-waves-white-10': "url('https://rds-tailwind.s3.amazonaws.com/assets/cu-waves-white-10.svg')",
-            },
-            gridTemplateColumns: {
-                'sidenav': '300px auto',
-            },
-            boxShadow: {
-                'sidenav': '-10px -1px 10px -5px rgba(128,128,128,0.1) inset',
-            }
-        },
-    },
 };
