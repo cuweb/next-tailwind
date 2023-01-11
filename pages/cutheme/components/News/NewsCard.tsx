@@ -10,12 +10,10 @@ export default function NewsCard() {
 	return (
 		<div className="relative flex flex-col overflow-hidden duration-300 ease-in bg-white rounded-lg shadow-lg group hover:scale-105">
 			<a href="https://carleton.ca" className="cursor-pointer">
-				<Image
-					className="object-cover w-full h-48"
-					src="https://source.unsplash.com/random/400x300"
+				<img
+					className="object-cover w-full"
+					src="https://source.unsplash.com/random/400x266"
 					alt=""
-					width="400"
-					height="300"
 				/>
 
 				<div className="flex flex-col py-6 space-y-2 px-7">

@@ -4,6 +4,7 @@ import { TopNav, FooterStandard, Banner } from "rds-tailwind";
 import SideNavLight from "../components/SideNav/SideNavLight";
 import CardGridNews from "../components/News/Grid";
 import ListItemsNews from "../components/News/Listing";
+import FocusNav from "../components/FocusNav/FocusNav";
 
 const CuTheme: NextPage = () => {
 	return (
@@ -12,6 +13,8 @@ const CuTheme: NextPage = () => {
 				<title>Carleton University | Home</title>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
+
+			<FocusNav />
 
 			<TopNav
 				logoUrl="https://carleton.ca/"

@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export default function ListItemsNews() {
 	return (
 		<div className="bg-white border rounded-lg shadow-lg cu-panel not-prose border-cu-black-100">
@@ -11,12 +9,10 @@ export default function ListItemsNews() {
 					<a className="relative flex items-center gap-2 p-6 cursor-pointer group hover:bg-gray-50 focus:outline-none">
 						<div className="flex items-start gap-4">
 							<div className="flex-none hidden w-20 md:w-32 lg:block">
-								<Image
+								<img
 									className="w-auto h-auto rounded"
-									src="https://source.unsplash.com/random/400x300"
+									src="https://source.unsplash.com/random/400x266"
 									alt=""
-									width="400"
-									height="300"
 								/>
 							</div>
 							<div className="flex flex-col flex-auto gap-2">
@@ -55,12 +51,10 @@ export default function ListItemsNews() {
 					<a className="relative flex items-center gap-2 p-6 cursor-pointer group hover:bg-gray-50 focus:outline-none">
 						<div className="flex items-start gap-4">
 							<div className="flex-none hidden w-20 md:w-32 lg:block">
-								<Image
+								<img
 									className="w-auto h-auto rounded"
-									src="https://source.unsplash.com/random/400x300"
+									src="https://source.unsplash.com/random/400x266"
 									alt=""
-									width="400"
-									height="300"
 								/>
 							</div>
 							<div className="flex flex-col flex-auto gap-2">
@@ -99,12 +93,10 @@ export default function ListItemsNews() {
 					<a className="relative flex items-center gap-2 p-6 cursor-pointer group hover:bg-gray-50 focus:outline-none">
 						<div className="flex items-start gap-4">
 							<div className="flex-none hidden w-20 md:w-32 lg:block">
-								<Image
+								<img
 									className="w-auto h-auto rounded"
-									src="https://source.unsplash.com/random/400x300"
+									src="https://source.unsplash.com/random/400x266"
 									alt=""
-									width="400"
-									height="300"
 								/>
 							</div>
 							<div className="flex flex-col flex-auto gap-2">
