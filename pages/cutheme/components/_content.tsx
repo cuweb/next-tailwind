@@ -1,6 +1,6 @@
 import CardGridEvents from "./Events/Grid";
 import CardGridNews from "./News/Grid";
-import CardGridNumber from "./Numbers/CardGridNumbers";
+import CardGridNumber from "./Numbers/Grid";
 import ListItemsNews from "./News/Listing";
 import ListItemsEvents from "./Events/Listing";
 
@@ -100,6 +100,8 @@ export default function CuThemeContent() {
 				scelerisque eget. Eleifend egestas fringilla sapien.
 			</p>
 
+			<h2>Numbers Card &amp; Listing Components</h2>
+
 			<CardGridNumber />
 
 			<p>
@@ -110,11 +112,12 @@ export default function CuThemeContent() {
 				Amet, duis sed elit interdum dignissim.
 			</p>
 
-			<h2>Card Components</h2>
-
-			<h3>News Card Grid</h3>
+			<h2>News Card &amp; Listing Components</h2>
 
 			<CardGridNews />
+
+			<h3>News Listing</h3>
+
 			<ListItemsNews />
 
 			<p>
@@ -130,7 +133,12 @@ export default function CuThemeContent() {
 				scelerisque eget. Eleifend egestas fringilla sapien.
 			</p>
 
+			<h2>Event Card &amp; Listing Components</h2>
+
 			<CardGridEvents />
+
+			<h3>Events Listing</h3>
+
 			<ListItemsEvents />
 
 			<p>
