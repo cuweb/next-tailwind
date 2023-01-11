@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { SideNavData as data } from "./SideNavData";
+import data from "./SideNavData.json";
 
 const styles = {
 	topParentUl: `sticky top-8 space-y-4`,
@@ -44,7 +44,7 @@ export default function SideNavFade() {
 								Module 2: Custom Gutenberg Blocks
 							</a>
 							<ul role="list">
-								{data.map(({ id, title, link }) => (
+								{data.links.map(({ id, title, link }) => (
 									<li key={id}>
 										<a
 											className={`${styles.listItemLink} pl-8`}
