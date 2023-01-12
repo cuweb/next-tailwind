@@ -1,6 +1,6 @@
 export default function PeopleCardContained() {
 	return (
-		<div className="relative flex flex-col overflow-hidden duration-300 ease-in rounded-lg shadow-lg group bg-slate-200 hover:scale-105">
+		<div className="relative flex flex-col overflow-hidden duration-300 ease-in bg-white rounded-lg shadow-lg group hover:scale-105">
 			<a
 				href="https://carleton.ca"
 				className="p-6 space-y-5 cursor-pointer"
