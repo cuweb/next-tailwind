@@ -12,6 +12,11 @@
 		},
 		{
 			"id": 3,
+			"title": "People Blocks",
+			"link": "/cutheme/blocks/people"
+		},
+		{
+			"id": 3,
 			"title": "Number Blocks",
 			"link": "/cutheme/blocks/numbers"
 		}

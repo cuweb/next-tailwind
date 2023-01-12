@@ -44,8 +44,6 @@ const CuTheme: NextPage = () => {
 
 							<CardGridPeople />
 
-							<h2>People Listing</h2>
-
 							<ListItemsPeople />
 
 							<p>

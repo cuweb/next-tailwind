@@ -1,17 +1,17 @@
-export default function PeopleCardContained() {
+export default function PeopleListItemContained() {
 	return (
-		<div className="relative flex flex-col overflow-hidden duration-300 ease-in rounded-lg shadow-lg group bg-slate-200 hover:scale-105">
+		<div className="relative overflow-hidden duration-300 ease-in rounded-lg shadow-lg group hover:scale-105">
 			<a
 				href="https://carleton.ca"
-				className="p-6 space-y-5 cursor-pointer"
+				className="flex gap-5 p-5 space-y-5 cursor-pointer"
 			>
 				<img
-					className="object-cover w-48 h-48 mx-auto border-4 border-white rounded-full shadow-lg xl:h-48 xl:w-48"
+					className="flex-none object-cover w-24 h-24 mx-auto border-4 border-white rounded-full shadow-lg"
 					src="https://static.wikia.nocookie.net/freshprince/images/a/ac/1carlton.jpg"
 					alt=""
 				/>
 
-				<div className="flex flex-col space-y-1 text-center">
+				<div className="flex-1 space-y-1">
 					<h3 className="text-xl font-semibold duration-300 ease-in text-cu-black group-hover:text-cu-red">
 						Carlton Banks
 					</h3>
