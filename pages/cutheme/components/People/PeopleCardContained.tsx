@@ -1,15 +1,10 @@
-import Image from "next/image";
-
-const styles = {
-	listGroup: ``,
-	listItem: `flex text-white`,
-	itemLink: `text-xs text-cu-black-300 hover:text-white`,
-};
-
-export default function PeopleCard() {
+export default function PeopleCardContained() {
 	return (
-		<div className="relative flex flex-col overflow-hidden duration-300 ease-in bg-white group hover:scale-105">
-			<a href="https://carleton.ca" className="space-y-5 cursor-pointer">
+		<div className="relative flex flex-col overflow-hidden duration-300 ease-in bg-white rounded-lg shadow-lg group hover:scale-105">
+			<a
+				href="https://carleton.ca"
+				className="py-6 space-y-5 cursor-pointer"
+			>
 				<img
 					className="object-cover w-48 h-48 mx-auto border-4 border-white rounded-full shadow-lg xl:h-48 xl:w-48"
 					src="https://source.unsplash.com/random/300x300"
