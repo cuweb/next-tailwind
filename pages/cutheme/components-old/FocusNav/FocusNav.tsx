@@ -6,8 +6,8 @@ const styles = {
 
 export default function FocusNav() {
 	return (
-		<div className="px-6 py-2 bg-cu-black-900">
-			<div className="flex justify-between">
+		<div className="py-2 bg-cu-black-900">
+			<div className="flex justify-between m-auto max-w-7xl">
 				<ul>
 					<li className="flex text-white">
 						<a

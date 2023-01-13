@@ -1,8 +1,8 @@
-import CardGridEvents from "../components/Events/Grid";
-import CardGridNews from "../components/News/Grid";
-import CardGridNumber from "../components/Numbers/Grid";
-import ListItemsNews from "../components/News/Listing";
-import ListItemsEvents from "../components/Events/Listing";
+import CardGridEvents from "../components-old/Events/Grid";
+import CardGridNews from "../components-old/News/Grid";
+import CardGridNumber from "../components-old/Numbers/Grid";
+import ListItemsNews from "../components-old/News/Listing";
+import ListItemsEvents from "../components-old/Events/Listing";
 
 export default function CuThemeContent() {
 	return (

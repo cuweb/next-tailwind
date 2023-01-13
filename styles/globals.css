@@ -1,6 +1,4 @@
 @tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 /* Things to add to RDS */
 
@@ -8,3 +6,12 @@
 .cu-panel + .cu-column {
 	@apply mt-8;
 }
+
+/* Things to add to cutheme */
+
+#__next {
+	@apply relative;
+}
+
+@tailwind components;
+@tailwind utilities;

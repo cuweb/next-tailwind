@@ -1,10 +1,10 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import { TopNav, FooterStandard, Banner } from "rds-tailwind";
-import SideNavLight from "../components/SideNav/SideNavLight";
-import CardGridNews from "../components/News/Grid";
-import ListItemsNews from "../components/News/Listing";
-import FocusNav from "../components/FocusNav/FocusNav";
+import SideNavLight from "../components-old/SideNav/SideNavLight";
+import CardGridNews from "../components-old/News/Grid";
+import ListItemsNews from "../components-old/News/Listing";
+import FocusNav from "../components-old/FocusNav/FocusNav";
 
 const CuTheme: NextPage = () => {
 	return (
@@ -32,7 +32,7 @@ const CuTheme: NextPage = () => {
 					<SideNavLight />
 
 					<section className="py-14">
-						<article className="prose prose-cutheme max-w-none lg:prose-lg">
+						<article className="prose-cutheme prose max-w-none lg:prose-lg">
 							<p>
 								Quis semper vulputate aliquam venenatis egestas
 								sagittis quisque orci. Donec commodo sit viverra
