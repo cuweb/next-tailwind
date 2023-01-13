@@ -1,9 +1,9 @@
 import { Column, Container } from "rds-tailwind";
 
-export default function CuThemeContent() {
+export default function CuThemeContentTesting() {
 	return (
 		<>
-			<h2>H2 Heading</h2>
+			<h2>Testing mix of gutenblocks + cublocks</h2>
 
 			<p>
 				Quis semper vulputate aliquam venenatis egestas sagittis quisque
@@ -20,32 +20,15 @@ export default function CuThemeContent() {
 				varius sit neque erat velit.
 			</p>
 
-			<ul>
-				<li>Quis elit egestas venenatis mattis dignissim.</li>
-				<li>
-					Cras cras lobortis vitae vivamus ultricies facilisis tempus.
-				</li>
-				<li>Orci in sit morbi dignissim metus diam arcu pretium.</li>
-			</ul>
-
-			<h3>H3 Heading</h3>
-
-			<p>
-				Id orci tellus laoreet id ac. Dolor, aenean leo, ac etiam
-				consequat in. Convallis arcu ipsum urna nibh. Pharetra, euismod
-				vitae interdum mauris enim, consequat vulputate nibh. Maecenas
-				pellentesque id sed tellus mauris, ultrices mauris. Tincidunt
-				enim cursus ridiculus mi. Pellentesque nam sed nullam sed diam
-				turpis ipsum eu a sed convallis diam.
-			</p>
-
-			<blockquote>
+			<Container bgColor="grey">
+				<p>This is inside a container layout component</p>
 				<p>
-					Sagittis scelerisque nulla cursus in enim consectetur quam.
-					Dictum urna sed consectetur neque tristique pellentesque.
-					Blandit amet, sed aenean erat arcu morbi.
+					Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget
+					risus enim. Mattis mauris semper sed amet vitae sed turpis
+					id. Id dolor praesent donec est. Odio penatibus risus
+					viverra tellus varius sit neque erat velit.
 				</p>
-			</blockquote>
+			</Container>
 
 			<p>
 				Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget
@@ -54,31 +37,22 @@ export default function CuThemeContent() {
 				varius sit neque erat velit.
 			</p>
 
-			<h4>H4 Heading</h4>
-
-			<p>
-				Purus morbi dignissim senectus mattis <a href="#">adipiscing</a>
-				. Amet, massa quam varius orci dapibus volutpat cras. In amet eu
-				ridiculus leo sodales cursus tristique. Tincidunt sed tempus ut
-				viverra ridiculus non molestie. Gravida quis fringilla amet eget
-				dui tempor dignissim. Facilisis auctor venenatis varius nunc,
-				congue erat ac. Cras fermentum convallis quam.
-			</p>
-
-			<p>
-				Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget
-				risus enim. Mattis mauris semper sed amet vitae sed turpis id.
-				Id dolor praesent donec est. Odio penatibus risus viverra tellus
-				varius sit neque erat velit.
-			</p>
-
-			<ol>
-				<li>Quis elit egestas venenatis mattis dignissim.</li>
-				<li>
-					Cras cras lobortis vitae vivamus ultricies facilisis tempus.
-				</li>
-				<li>Orci in sit morbi dignissim metus diam arcu pretium.</li>
-			</ol>
+			<Column cols="2">
+				<p>
+					This is the RDS column layout component with default
+					settings. Faucibus commodo massa rhoncus, volutpat.
+					Dignissim sed eget risus enim. Mattis mauris semper sed amet
+					vitae sed turpis id. Id dolor praesent donec est. Odio
+					penatibus risus viverra tellus varius sit neque erat velit.
+				</p>
+				<p>
+					This is the RDS column layout component with default
+					settings. Faucibus commodo massa rhoncus, volutpat.
+					Dignissim sed eget risus enim. Mattis mauris semper sed amet
+					vitae sed turpis id. Id dolor praesent donec est. Odio
+					penatibus risus viverra tellus varius sit neque erat velit.
+				</p>
+			</Column>
 
 			<p>
 				Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget
@@ -87,11 +61,167 @@ export default function CuThemeContent() {
 				varius sit neque erat velit.
 			</p>
 
+			<Column cols="2" maxWidth="3xl">
+				<p>
+					This is the RDS column layout component with default
+					settings. Faucibus commodo massa rhoncus, volutpat.
+					Dignissim sed eget risus enim. Mattis mauris semper sed amet
+					vitae sed turpis id. Id dolor praesent donec est. Odio
+					penatibus risus viverra tellus varius sit neque erat velit.
+				</p>
+				<p>
+					This is the RDS column layout component with default
+					settings. Faucibus commodo massa rhoncus, volutpat.
+					Dignissim sed eget risus enim. Mattis mauris semper sed amet
+					vitae sed turpis id. Id dolor praesent donec est. Odio
+					penatibus risus viverra tellus varius sit neque erat velit.
+				</p>
+			</Column>
+
 			<p>
-				Aliquet nec orci mattis amet quisque ullamcorper neque, nibh
-				sem. At arcu, sit dui mi, nibh dui, diam eget aliquam. Quisque
-				id at vitae feugiat egestas ac. Diam nulla orci at in viverra
-				scelerisque eget. Eleifend egestas fringilla sapien.
+				Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget
+				risus enim. Mattis mauris semper sed amet vitae sed turpis id.
+				Id dolor praesent donec est. Odio penatibus risus viverra tellus
+				varius sit neque erat velit.
+			</p>
+
+			<Column cols="2" maxWidth="full">
+				<p>
+					This is the RDS column layout component with default
+					settings. Faucibus commodo massa rhoncus, volutpat.
+					Dignissim sed eget risus enim. Mattis mauris semper sed amet
+					vitae sed turpis id. Id dolor praesent donec est. Odio
+					penatibus risus viverra tellus varius sit neque erat velit.
+				</p>
+				<p>
+					This is the RDS column layout component with default
+					settings. Faucibus commodo massa rhoncus, volutpat.
+					Dignissim sed eget risus enim. Mattis mauris semper sed amet
+					vitae sed turpis id. Id dolor praesent donec est. Odio
+					penatibus risus viverra tellus varius sit neque erat velit.
+				</p>
+			</Column>
+
+			<p>
+				Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget
+				risus enim. Mattis mauris semper sed amet vitae sed turpis id.
+				Id dolor praesent donec est. Odio penatibus risus viverra tellus
+				varius sit neque erat velit.
+			</p>
+
+			<p>
+				Purus morbi dignissim senectus mattis adipiscing. Amet, massa
+				quam varius orci dapibus volutpat cras. In amet eu ridiculus leo
+				sodales cursus tristique. Tincidunt sed tempus ut viverra
+				ridiculus non molestie. Gravida quis fringilla amet eget dui
+				tempor dignissim. Facilisis auctor venenatis varius nunc, congue
+				erat ac. Cras fermentum convallis quam.
+			</p>
+
+			<Column cols="2">
+				<p>
+					Purus morbi dignissim senectus mattis adipiscing. Amet,
+					massa quam varius orci dapibus volutpat cras. In amet eu
+					ridiculus leo sodales cursus tristique. Tincidunt sed tempus
+					ut viverra ridiculus non molestie. Gravida quis fringilla
+					amet eget dui tempor dignissim. Facilisis auctor venenatis
+					varius nunc, congue erat ac. Cras fermentum convallis quam.
+				</p>
+				<p>
+					Purus morbi dignissim senectus mattis adipiscing. Amet,
+					massa quam varius orci dapibus volutpat cras. In amet eu
+					ridiculus leo sodales cursus tristique. Tincidunt sed tempus
+					ut viverra ridiculus non molestie. Gravida quis fringilla
+					amet eget dui tempor dignissim. Facilisis auctor venenatis
+					varius nunc, congue erat ac. Cras fermentum convallis quam.
+				</p>
+			</Column>
+
+			<div className="cu-container">
+				<p>
+					Purus morbi dignissim senectus mattis adipiscing. Amet,
+					massa quam varius orci dapibus volutpat cras. In amet eu
+					ridiculus leo sodales cursus tristique. Tincidunt sed tempus
+					ut viverra ridiculus non molestie. Gravida quis fringilla
+					amet eget dui tempor dignissim. Facilisis auctor venenatis
+					varius nunc, congue erat ac. Cras fermentum convallis quam.
+				</p>
+			</div>
+
+			<p>
+				Purus morbi dignissim senectus mattis adipiscing. Amet, massa
+				quam varius orci dapibus volutpat cras. In amet eu ridiculus leo
+				sodales cursus tristique. Tincidunt sed tempus ut viverra
+				ridiculus non molestie. Gravida quis fringilla amet eget dui
+				tempor dignissim. Facilisis auctor venenatis varius nunc, congue
+				erat ac. Cras fermentum convallis quam.
+			</p>
+
+			<div>
+				<p>
+					Purus morbi dignissim senectus mattis adipiscing. Amet,
+					massa quam varius orci dapibus volutpat cras. In amet eu
+					ridiculus leo sodales cursus tristique. Tincidunt sed tempus
+					ut viverra ridiculus non molestie. Gravida quis fringilla
+					amet eget dui tempor dignissim. Facilisis auctor venenatis
+					varius nunc, congue erat ac. Cras fermentum convallis quam.
+				</p>
+			</div>
+
+			<p>
+				Purus morbi dignissim senectus mattis adipiscing. Amet, massa
+				quam varius orci dapibus volutpat cras. In amet eu ridiculus leo
+				sodales cursus tristique. Tincidunt sed tempus ut viverra
+				ridiculus non molestie. Gravida quis fringilla amet eget dui
+				tempor dignissim. Facilisis auctor venenatis varius nunc, congue
+				erat ac. Cras fermentum convallis quam.
+			</p>
+
+			<Container bgColor="grey">
+				<p>
+					Purus morbi dignissim senectus mattis adipiscing. Amet,
+					massa quam varius orci dapibus volutpat cras. In amet eu
+					ridiculus leo sodales cursus tristique. Tincidunt sed tempus
+					ut viverra ridiculus non molestie. Gravida quis fringilla
+					amet eget dui tempor dignissim. Facilisis auctor venenatis
+					varius nunc, congue erat ac. Cras fermentum convallis quam.
+				</p>
+			</Container>
+
+			<Column cols="3">
+				<p>
+					Purus morbi dignissim senectus mattis adipiscing. Amet,
+					massa quam varius orci dapibus volutpat cras. In amet eu
+					ridiculus leo sodales cursus tristique. Tincidunt sed tempus
+					ut viverra ridiculus non molestie. Gravida quis fringilla
+					amet eget dui tempor dignissim. Facilisis auctor venenatis
+					varius nunc, congue erat ac. Cras fermentum convallis quam.
+				</p>
+				<p>
+					Purus morbi dignissim senectus mattis adipiscing. Amet,
+					massa quam varius orci dapibus volutpat cras. In amet eu
+					ridiculus leo sodales cursus tristique. Tincidunt sed tempus
+					ut viverra ridiculus non molestie. Gravida quis fringilla
+					amet eget dui tempor dignissim. Facilisis auctor venenatis
+					varius nunc, congue erat ac. Cras fermentum convallis quam.
+				</p>
+				<p>
+					Purus morbi dignissim senectus mattis adipiscing. Amet,
+					massa quam varius orci dapibus volutpat cras. In amet eu
+					ridiculus leo sodales cursus tristique. Tincidunt sed tempus
+					ut viverra ridiculus non molestie. Gravida quis fringilla
+					amet eget dui tempor dignissim. Facilisis auctor venenatis
+					varius nunc, congue erat ac. Cras fermentum convallis quam.
+				</p>
+			</Column>
+
+			<p>
+				Purus morbi dignissim senectus mattis adipiscing. Amet, massa
+				quam varius orci dapibus volutpat cras. In amet eu ridiculus leo
+				sodales cursus tristique. Tincidunt sed tempus ut viverra
+				ridiculus non molestie. Gravida quis fringilla amet eget dui
+				tempor dignissim. Facilisis auctor venenatis varius nunc, congue
+				erat ac. Cras fermentum convallis quam.
 			</p>
 
 			{/* <p>

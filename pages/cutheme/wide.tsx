@@ -29,7 +29,7 @@ const CuTheme: NextPage = () => {
 				>
 					<h2 className="">H2 Heading</h2>
 
-					<p className="bg-slate-200">
+					<p>
 						Purus morbi dignissim senectus mattis adipiscing. Amet,
 						massa quam varius orci dapibus volutpat cras. In amet eu
 						ridiculus leo sodales cursus tristique. Tincidunt sed
@@ -40,7 +40,7 @@ const CuTheme: NextPage = () => {
 					</p>
 
 					<Column cols="2">
-						<p className="bg-slate-200">
+						<p>
 							Purus morbi dignissim senectus mattis adipiscing.
 							Amet, massa quam varius orci dapibus volutpat cras.
 							In amet eu ridiculus leo sodales cursus tristique.
@@ -49,7 +49,7 @@ const CuTheme: NextPage = () => {
 							tempor dignissim. Facilisis auctor venenatis varius
 							nunc, congue erat ac. Cras fermentum convallis quam.
 						</p>
-						<p className="bg-slate-200">
+						<p>
 							Purus morbi dignissim senectus mattis adipiscing.
 							Amet, massa quam varius orci dapibus volutpat cras.
 							In amet eu ridiculus leo sodales cursus tristique.
@@ -82,7 +82,7 @@ const CuTheme: NextPage = () => {
 						fermentum convallis quam.
 					</p>
 
-					<div className="bg-green-700 test">
+					<div>
 						<p>
 							Purus morbi dignissim senectus mattis adipiscing.
 							Amet, massa quam varius orci dapibus volutpat cras.
@@ -116,42 +116,37 @@ const CuTheme: NextPage = () => {
 						</p>
 					</Container>
 
-					<div className="cu-container">
-						<Column cols="3">
-							<p className="bg-slate-200">
-								Purus morbi dignissim senectus mattis
-								adipiscing. Amet, massa quam varius orci dapibus
-								volutpat cras. In amet eu ridiculus leo sodales
-								cursus tristique. Tincidunt sed tempus ut
-								viverra ridiculus non molestie. Gravida quis
-								fringilla amet eget dui tempor dignissim.
-								Facilisis auctor venenatis varius nunc, congue
-								erat ac. Cras fermentum convallis quam.
-							</p>
-							<p className="bg-slate-200">
-								Purus morbi dignissim senectus mattis
-								adipiscing. Amet, massa quam varius orci dapibus
-								volutpat cras. In amet eu ridiculus leo sodales
-								cursus tristique. Tincidunt sed tempus ut
-								viverra ridiculus non molestie. Gravida quis
-								fringilla amet eget dui tempor dignissim.
-								Facilisis auctor venenatis varius nunc, congue
-								erat ac. Cras fermentum convallis quam.
-							</p>
-							<p className="bg-slate-200">
-								Purus morbi dignissim senectus mattis
-								adipiscing. Amet, massa quam varius orci dapibus
-								volutpat cras. In amet eu ridiculus leo sodales
-								cursus tristique. Tincidunt sed tempus ut
-								viverra ridiculus non molestie. Gravida quis
-								fringilla amet eget dui tempor dignissim.
-								Facilisis auctor venenatis varius nunc, congue
-								erat ac. Cras fermentum convallis quam.
-							</p>
-						</Column>
-					</div>
+					<Column cols="3">
+						<p>
+							Purus morbi dignissim senectus mattis adipiscing.
+							Amet, massa quam varius orci dapibus volutpat cras.
+							In amet eu ridiculus leo sodales cursus tristique.
+							Tincidunt sed tempus ut viverra ridiculus non
+							molestie. Gravida quis fringilla amet eget dui
+							tempor dignissim. Facilisis auctor venenatis varius
+							nunc, congue erat ac. Cras fermentum convallis quam.
+						</p>
+						<p>
+							Purus morbi dignissim senectus mattis adipiscing.
+							Amet, massa quam varius orci dapibus volutpat cras.
+							In amet eu ridiculus leo sodales cursus tristique.
+							Tincidunt sed tempus ut viverra ridiculus non
+							molestie. Gravida quis fringilla amet eget dui
+							tempor dignissim. Facilisis auctor venenatis varius
+							nunc, congue erat ac. Cras fermentum convallis quam.
+						</p>
+						<p>
+							Purus morbi dignissim senectus mattis adipiscing.
+							Amet, massa quam varius orci dapibus volutpat cras.
+							In amet eu ridiculus leo sodales cursus tristique.
+							Tincidunt sed tempus ut viverra ridiculus non
+							molestie. Gravida quis fringilla amet eget dui
+							tempor dignissim. Facilisis auctor venenatis varius
+							nunc, congue erat ac. Cras fermentum convallis quam.
+						</p>
+					</Column>
 
-					<p className="bg-slate-200">
+					<p>
 						Purus morbi dignissim senectus mattis adipiscing. Amet,
 						massa quam varius orci dapibus volutpat cras. In amet eu
 						ridiculus leo sodales cursus tristique. Tincidunt sed

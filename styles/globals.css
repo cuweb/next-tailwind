@@ -7,21 +7,25 @@
 	@apply mt-8;
 } */
 
+.cu-container + :not(.cu-container) {
+	@apply mt-6;
+}
+
 /* Things to add to cutheme */
 
-.gutenberg-mods > .cu-container {
+.cutheme-spacing > .cu-container {
 	@apply -mx-10;
 }
 
-.gutenberg-mods > :not(.cu-container):not(.cu-column) {
+.cutheme-spacing > :not(.cu-container):not(.cu-column) {
 	@apply max-w-5xl mx-auto;
 }
 
-.gutenberg-mods > :not(.cu-container):not(.cu-column):first-child {
+.cutheme-spacing > :not(.cu-container):not(.cu-column):first-child {
 	@apply mt-12;
 }
 
-.gutenberg-mods > :not(.cu-container):not(.cu-column):last-child {
+.cutheme-spacing > :not(.cu-container):not(.cu-column):last-child {
 	@apply mb-16;
 }
 
