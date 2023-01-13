@@ -21,8 +21,7 @@ const CuTheme: NextPage = () => {
 
 			<FocusNav />
 			<CuThemeNav />
-			<Banner title="Basic Banner" />
-			{/* <Banner isType="dark-wave" title="cutheme prototypes" /> */}
+			<Banner title="cutheme prototypes" />
 
 			<main>
 				<section
