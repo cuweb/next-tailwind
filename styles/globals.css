@@ -1,10 +1,39 @@
 @tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 /* Things to add to RDS */
 
-.cu-column + .cu-panel,
+/* .cu-column + .cu-panel,
 .cu-panel + .cu-column {
 	@apply mt-8;
+} */
+
+/* Things to add to cutheme */
+
+.gutenberg-mods > .cu-container {
+	@apply -mx-10;
 }
+
+.gutenberg-mods > :not(.cu-container):not(.cu-column) {
+	@apply max-w-5xl mx-auto;
+}
+
+.gutenberg-mods > :not(.cu-container):not(.cu-column):first-child {
+	@apply mt-12;
+}
+
+.gutenberg-mods > :not(.cu-container):not(.cu-column):last-child {
+	@apply mb-16;
+}
+
+/* const gutenStyleGroups = {
+	// gutenbergSpacing: `[&>:not(.cu-container):not(.cu-column)]:px-12`,
+	gutenbergSpacing: ``,
+	gutenbergWidth: `[&>:not(.cu-container):not(.cu-column)]:max-w-5xl [&>:not(.cu-container):not(.cu-column)]:mx-auto`,
+	gutenbergFirst: `first:[&>:not(.cu-container):not(.cu-column)]:mt-12`,
+	gutenbergLast: `last:[&>:not(.cu-container):not(.cu-column)]:mb-16`,
+};
+
+export const gutenStyles = `${gutenStyleGroups.gutenbergSpacing} ${gutenStyleGroups.gutenbergWidth} ${gutenStyleGroups.gutenbergFirst} ${gutenStyleGroups.gutenbergLast}`; */
+
+@tailwind components;
+@tailwind utilities;

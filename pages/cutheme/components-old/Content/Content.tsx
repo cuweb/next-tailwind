@@ -1,106 +1,15 @@
-import { Column, Container } from "rds-tailwind";
-
 export default function CuThemeContent() {
 	return (
 		<>
 			<h2>H2 Heading</h2>
 
-			<p className="bg-slate-300">
+			<p>
 				Quis semper vulputate aliquam venenatis egestas sagittis quisque
 				orci. Donec commodo sit viverra aliquam porttitor ultrices
 				gravida eu. Tincidunt leo, elementum mattis elementum ut nisl,
 				justo, amet, mattis. Nunc purus, diam commodo tincidunt turpis.
 				Amet, duis sed elit interdum dignissim.
 			</p>
-
-			<p>
-				Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget
-				risus enim. Mattis mauris semper sed amet vitae sed turpis id.
-				Id dolor praesent donec est. Odio penatibus risus viverra tellus
-				varius sit neque erat velit.
-			</p>
-
-			<Container bgColor="grey">
-				<p>This is inside a container layout component</p>
-				<p>
-					Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget
-					risus enim. Mattis mauris semper sed amet vitae sed turpis
-					id. Id dolor praesent donec est. Odio penatibus risus
-					viverra tellus varius sit neque erat velit.
-				</p>
-			</Container>
-
-			<p>
-				Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget
-				risus enim. Mattis mauris semper sed amet vitae sed turpis id.
-				Id dolor praesent donec est. Odio penatibus risus viverra tellus
-				varius sit neque erat velit.
-			</p>
-
-			<Column cols="2">
-				<p>
-					This is the RDS column layout component with default
-					settings. Faucibus commodo massa rhoncus, volutpat.
-					Dignissim sed eget risus enim. Mattis mauris semper sed amet
-					vitae sed turpis id. Id dolor praesent donec est. Odio
-					penatibus risus viverra tellus varius sit neque erat velit.
-				</p>
-				<p>
-					This is the RDS column layout component with default
-					settings. Faucibus commodo massa rhoncus, volutpat.
-					Dignissim sed eget risus enim. Mattis mauris semper sed amet
-					vitae sed turpis id. Id dolor praesent donec est. Odio
-					penatibus risus viverra tellus varius sit neque erat velit.
-				</p>
-			</Column>
-
-			<p>
-				Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget
-				risus enim. Mattis mauris semper sed amet vitae sed turpis id.
-				Id dolor praesent donec est. Odio penatibus risus viverra tellus
-				varius sit neque erat velit.
-			</p>
-
-			<Column cols="2" maxWidth="3xl">
-				<p>
-					This is the RDS column layout component with default
-					settings. Faucibus commodo massa rhoncus, volutpat.
-					Dignissim sed eget risus enim. Mattis mauris semper sed amet
-					vitae sed turpis id. Id dolor praesent donec est. Odio
-					penatibus risus viverra tellus varius sit neque erat velit.
-				</p>
-				<p>
-					This is the RDS column layout component with default
-					settings. Faucibus commodo massa rhoncus, volutpat.
-					Dignissim sed eget risus enim. Mattis mauris semper sed amet
-					vitae sed turpis id. Id dolor praesent donec est. Odio
-					penatibus risus viverra tellus varius sit neque erat velit.
-				</p>
-			</Column>
-
-			<p>
-				Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget
-				risus enim. Mattis mauris semper sed amet vitae sed turpis id.
-				Id dolor praesent donec est. Odio penatibus risus viverra tellus
-				varius sit neque erat velit.
-			</p>
-
-			<Column cols="2" maxWidth="full">
-				<p>
-					This is the RDS column layout component with default
-					settings. Faucibus commodo massa rhoncus, volutpat.
-					Dignissim sed eget risus enim. Mattis mauris semper sed amet
-					vitae sed turpis id. Id dolor praesent donec est. Odio
-					penatibus risus viverra tellus varius sit neque erat velit.
-				</p>
-				<p>
-					This is the RDS column layout component with default
-					settings. Faucibus commodo massa rhoncus, volutpat.
-					Dignissim sed eget risus enim. Mattis mauris semper sed amet
-					vitae sed turpis id. Id dolor praesent donec est. Odio
-					penatibus risus viverra tellus varius sit neque erat velit.
-				</p>
-			</Column>
 
 			<p>
 				Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget
