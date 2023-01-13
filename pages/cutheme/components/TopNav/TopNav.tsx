@@ -33,7 +33,10 @@ export default function CuThemeNav() {
 						</Link>
 					</li>
 					<li className="inline-flex">
-						<Link href="#" className={styles.navHover}>
+						<Link
+							href="/cutheme/examples/news"
+							className={styles.navHover}
+						>
 							News
 						</Link>
 					</li>
