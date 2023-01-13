@@ -2852,10 +2852,10 @@ rds-tailwind-theme@^0.2.2:
     "@tailwindcss/typography" "^0.5.9"
     tailwindcss "^3.2.4"
 
-rds-tailwind@^0.3.0:
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/rds-tailwind/-/rds-tailwind-0.3.0.tgz#fbebaf704b550177d8ee6aa5c5c82aa929afdaa0"
-  integrity sha512-lVqdRKwhxYqfCK6LPsIhloRsdbkywEIhLcVG7V1suMVyxcK2y/LuROznFKhMLYcd0n6GbuKm5uMpeObeVQr0iw==
+rds-tailwind@^0.3.2:
+  version "0.3.3"
+  resolved "https://registry.yarnpkg.com/rds-tailwind/-/rds-tailwind-0.3.3.tgz#b32a5c1ba9d206f4552e4ca4977efc9d4140c19e"
+  integrity sha512-SFccGLt+AhLSmd318kLOW8ZjecrHVGDG4GxwxKdDDTNsBl1LhGO86+g+ZcYHAlhsIkk5W4nHp/vF+7L3rYXztA==
   dependencies:
     "@react-google-maps/api" "^2.17.1"
     "@types/react-places-autocomplete" "^7.2.9"
