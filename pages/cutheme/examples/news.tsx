@@ -1,9 +1,10 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import { FooterStandard, Banner, Column } from "rds-tailwind";
+import { FooterStandard, Banner, Column, Container } from "rds-tailwind";
 import CuThemeNav from "../components/TopNav/TopNav";
 import FocusNav from "../components/FocusNav/FocusNav";
 import NewsCard from "../components/News/NewsCard";
+import NewsListItem from "../components/News/NewsListItem";
 
 const CuTheme: NextPage = () => {
 	return (
@@ -15,7 +16,7 @@ const CuTheme: NextPage = () => {
 
 			<FocusNav />
 			<CuThemeNav />
-			<Banner title="cutheme news blocks" />
+			<Banner title="cutheme news blocks" isType="dark-wave" />
 
 			<main className="mx-10">
 				<section className="prose prose-cutheme cutheme-spacing max-w-none lg:prose-lg">
@@ -28,7 +29,12 @@ const CuTheme: NextPage = () => {
 						elit interdum dignissim.
 					</p>
 
-					<Column cols="2" maxWidth="3xl">
+					<h2>Grid Card Layouts</h2>
+
+					<h3>Three Columns with Max Width of 5xl</h3>
+
+					<Column cols="3" maxWidth="5xl">
+						<NewsCard />
 						<NewsCard />
 						<NewsCard />
 					</Column>
@@ -46,7 +52,17 @@ const CuTheme: NextPage = () => {
 						elit interdum dignissim.
 					</p>
 
-					<Column cols="3" maxWidth="5xl">
+					<p>
+						Faucibus commodo massa rhoncus, volutpat. Dignissim sed
+						eget risus enim. Mattis mauris semper sed amet vitae sed
+						turpis id. Id dolor praesent donec est. Odio penatibus
+						risus viverra tellus varius sit neque erat velit.
+					</p>
+
+					<h3>Four Columns with Default Max Width of 7xl</h3>
+
+					<Column cols="4">
+						<NewsCard />
 						<NewsCard />
 						<NewsCard />
 						<NewsCard />
@@ -59,6 +75,34 @@ const CuTheme: NextPage = () => {
 						risus viverra tellus varius sit neque erat velit.
 					</p>
 
+					<ul>
+						<li>Quis elit egestas venenatis mattis dignissim.</li>
+						<li>
+							Cras cras lobortis vitae vivamus ultricies facilisis
+							tempus.
+						</li>
+						<li>
+							Orci in sit morbi dignissim metus diam arcu pretium.
+						</li>
+					</ul>
+
+					<h3>Two Columns with Max Width of 3xl</h3>
+
+					<p>
+						Id orci tellus laoreet id ac. Dolor, aenean leo, ac
+						etiam consequat in. Convallis arcu ipsum urna nibh.
+						Pharetra, euismod vitae interdum mauris enim, consequat
+						vulputate nibh. Maecenas pellentesque id sed tellus
+						mauris, ultrices mauris. Tincidunt enim cursus ridiculus
+						mi. Pellentesque nam sed nullam sed diam turpis ipsum eu
+						a sed convallis diam.
+					</p>
+
+					<Column cols="2" maxWidth="3xl">
+						<NewsCard />
+						<NewsCard />
+					</Column>
+
 					<p>
 						Faucibus commodo massa rhoncus, volutpat. Dignissim sed
 						eget risus enim. Mattis mauris semper sed amet vitae sed
@@ -66,11 +110,23 @@ const CuTheme: NextPage = () => {
 						risus viverra tellus varius sit neque erat velit.
 					</p>
 
-					<Column cols="4">
-						<NewsCard />
-						<NewsCard />
-						<NewsCard />
-						<NewsCard />
+					<h2>Listing Card Layouts</h2>
+
+					<h3>Two Columns with Max Width of 5xl</h3>
+
+					<p>
+						Id orci tellus laoreet id ac. Dolor, aenean leo, ac
+						etiam consequat in. Convallis arcu ipsum urna nibh.
+						Pharetra, euismod vitae interdum mauris enim, consequat
+						vulputate nibh. Maecenas pellentesque id sed tellus
+						mauris, ultrices mauris. Tincidunt enim cursus ridiculus
+						mi. Pellentesque nam sed nullam sed diam turpis ipsum eu
+						a sed convallis diam.
+					</p>
+
+					<Column cols="2" maxWidth="3xl">
+						<NewsListItem />
+						<NewsListItem />
 					</Column>
 
 					<p>
