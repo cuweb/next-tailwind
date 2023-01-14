@@ -18,7 +18,7 @@
 }
 
 .cutheme-spacing > :not(.cu-container):not(.cu-column) {
-	@apply max-w-5xl mx-auto;
+	@apply max-w-3xl mx-auto;
 }
 
 .cutheme-spacing > :not(.cu-container):not(.cu-column):first-child {

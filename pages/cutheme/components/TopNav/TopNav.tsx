@@ -6,8 +6,8 @@ const styles = {
 
 export default function CuThemeNav() {
 	return (
-		<div className="relative z-50 px-4 space-y-3 overflow-hidden bg-white border-t-4 divide-y shadow-lg divide-cu-black-100 border-cu-red">
-			<div className="px-2 pt-3">
+		<div className="relative z-50 space-y-3 overflow-hidden bg-white border-t-4 divide-y shadow-lg divide-cu-black-100 border-cu-red">
+			<div className="px-6 pt-3">
 				<Link
 					href="/cutheme/"
 					className="flex items-center flex-shrink-0 group"
@@ -22,7 +22,7 @@ export default function CuThemeNav() {
 					</h1>
 				</Link>
 			</div>
-			<nav className="px-2 pt-3">
+			<nav className="px-6 pt-3">
 				<ul className="flex gap-5">
 					<li className="inline-flex">
 						<Link
