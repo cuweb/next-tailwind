@@ -21,7 +21,6 @@ const CuTheme: NextPage = () => {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
-			<FocusNav />
 			<CuThemeNav />
 			<Banner title="cutheme events blocks" isType="animated" />
 
