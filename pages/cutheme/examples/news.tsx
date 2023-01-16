@@ -155,7 +155,43 @@ const CuTheme: NextPage = () => {
 						a sed convallis diam.
 					</p>
 
+					<h3>Panel with shadow</h3>
+
+					<p>
+						Faucibus commodo massa rhoncus, volutpat. Dignissim sed
+						eget risus enim. Mattis mauris semper sed amet vitae sed
+						turpis id. Id dolor praesent donec est. Odio penatibus
+						risus viverra tellus varius sit neque erat velit.
+					</p>
+
 					<Panel hasShadow>
+						<StackedList hasDividers>
+							<NewsListItem />
+							<NewsListItem />
+							<NewsListItem />
+						</StackedList>
+					</Panel>
+
+					<p>
+						Id orci tellus laoreet id ac. Dolor, aenean leo, ac
+						etiam consequat in. Convallis arcu ipsum urna nibh.
+						Pharetra, euismod vitae interdum mauris enim, consequat
+						vulputate nibh. Maecenas pellentesque id sed tellus
+						mauris, ultrices mauris. Tincidunt enim cursus ridiculus
+						mi. Pellentesque nam sed nullam sed diam turpis ipsum eu
+						a sed convallis diam.
+					</p>
+
+					<h3>Panel with border</h3>
+
+					<p>
+						Faucibus commodo massa rhoncus, volutpat. Dignissim sed
+						eget risus enim. Mattis mauris semper sed amet vitae sed
+						turpis id. Id dolor praesent donec est. Odio penatibus
+						risus viverra tellus varius sit neque erat velit.
+					</p>
+
+					<Panel hasBorder>
 						<StackedList hasDividers>
 							<NewsListItem />
 							<NewsListItem />
