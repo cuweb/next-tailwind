@@ -1,6 +1,6 @@
 export default function NewsListItem() {
 	return (
-		<div>
+		<li>
 			<a
 				href="https://carleton.ca"
 				className="relative flex items-center gap-2 p-6 cursor-pointer group hover:bg-gray-50 focus:outline-none"
@@ -43,6 +43,6 @@ export default function NewsListItem() {
 					></path>
 				</svg>
 			</a>
-		</div>
+		</li>
 	);
 }
