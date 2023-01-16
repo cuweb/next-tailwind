@@ -1,6 +1,13 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import { FooterStandard, Banner, Column, Container, Panel } from "rds-tailwind";
+import {
+	FooterStandard,
+	Banner,
+	Column,
+	Container,
+	Panel,
+	StackedList,
+} from "rds-tailwind";
 import CuThemeNav from "../components/TopNav/TopNav";
 import FocusNav from "../components/FocusNav/FocusNav";
 import NewsCard from "../components/News/NewsCard";
@@ -149,9 +156,11 @@ const CuTheme: NextPage = () => {
 					</p>
 
 					<Panel hasShadow>
-						<NewsListItem />
-						<NewsListItem />
-						<NewsListItem />
+						<StackedList hasDividers>
+							<NewsListItem />
+							<NewsListItem />
+							<NewsListItem />
+						</StackedList>
 					</Panel>
 
 					<p>

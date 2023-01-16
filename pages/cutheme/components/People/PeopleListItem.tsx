@@ -1,6 +1,6 @@
 export default function PeopleListItem() {
 	return (
-		<div className="relative overflow-hidden duration-300 ease-in not-prose group hover:scale-105">
+		<li className="relative overflow-hidden duration-300 ease-in not-prose group hover:scale-105">
 			<a
 				href="https://carleton.ca"
 				className="flex gap-5 space-y-5 cursor-pointer"
@@ -20,6 +20,6 @@ export default function PeopleListItem() {
 					</p>
 				</div>
 			</a>
-		</div>
+		</li>
 	);
 }
