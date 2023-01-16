@@ -16,10 +16,6 @@ function openMenu() {
 }
 
 export default function CuThemeNav() {
-	const styles = {
-		navBar: `sticky top-0 z-50 w-full ease-in duration-500`,
-	};
-
 	const [show, setShow] = useState(true);
 	const controlNavbar = () => {
 		if (window.scrollY > 300) {
@@ -27,6 +23,10 @@ export default function CuThemeNav() {
 		} else {
 			setShow(true);
 		}
+	};
+
+	const styles = {
+		navBar: `sticky top-0 z-50 w-full ease-in duration-500`,
 	};
 
 	useEffect(() => {
