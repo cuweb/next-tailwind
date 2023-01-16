@@ -1,7 +1,7 @@
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { Button } from "rds-tailwind";
 import FocusNav from "../FocusNav/FocusNav";
-import FullScreenNav from "./FullScreenNav";
 import SlideDownNav from "./SlideDownNav";
 
 const styles = {
@@ -16,9 +16,29 @@ function openMenu() {
 }
 
 export default function CuThemeNav() {
+	const styles = {
+		navBar: `sticky top-0 z-50 w-full ease-in duration-500`,
+	};
+
+	const [show, setShow] = useState(true);
+	const controlNavbar = () => {
+		if (window.scrollY > 300) {
+			setShow(false);
+		} else {
+			setShow(true);
+		}
+	};
+
+	useEffect(() => {
+		window.addEventListener("scroll", controlNavbar);
+		return () => {
+			window.removeEventListener("scroll", controlNavbar);
+		};
+	}, []);
+
 	return (
 		<>
-			<div className="sticky top-0 z-50 w-full">
+			<div className={`${styles.navBar} ${!show && "-top-48"}`}>
 				<FocusNav />
 				<div className="space-y-3 overflow-hidden bg-white border-t-4 divide-y shadow-lg divide-cu-black-100 border-cu-red">
 					<div className="px-6 pt-3">
