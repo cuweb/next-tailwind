@@ -17,7 +17,7 @@ function openMenu() {
 
 export default function CuThemeNav() {
 	const [show, setShow] = useState(true);
-	const controlNavbar = () => {
+	const navbarScroll = () => {
 		if (window.scrollY > 300) {
 			setShow(false);
 		} else {
@@ -30,9 +30,9 @@ export default function CuThemeNav() {
 	};
 
 	useEffect(() => {
-		window.addEventListener("scroll", controlNavbar);
+		window.addEventListener("scroll", navbarScroll);
 		return () => {
-			window.removeEventListener("scroll", controlNavbar);
+			window.removeEventListener("scroll", navbarScroll);
 		};
 	}, []);
 
