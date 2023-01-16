@@ -3,8 +3,8 @@ import Head from "next/head";
 import { FooterStandard, Banner, Column, Container, Panel } from "rds-tailwind";
 import CuThemeNav from "../components/TopNav/TopNav";
 import FocusNav from "../components/FocusNav/FocusNav";
-import NewsCard from "../components/News/NewsCard";
-import NewsListItem from "../components/News/NewsListItem";
+import PeopleCard from "../components/People/PeopleCard";
+import PeopleListItem from "../components/People/PeopleListItem";
 
 const CuTheme: NextPage = () => {
 	return (
@@ -16,7 +16,7 @@ const CuTheme: NextPage = () => {
 
 			<FocusNav />
 			<CuThemeNav />
-			<Banner title="cutheme news blocks" isType="dark-wave" />
+			<Banner title="cutheme people blocks" isType="red-wave" />
 
 			<main className="mx-10">
 				<section className="prose prose-cutheme cutheme-spacing max-w-none lg:prose-lg">
@@ -44,8 +44,8 @@ const CuTheme: NextPage = () => {
 					</p>
 
 					<Column cols="2" maxWidth="3xl">
-						<NewsCard />
-						<NewsCard />
+						<PeopleCard />
+						<PeopleCard />
 					</Column>
 
 					<p>
@@ -68,9 +68,9 @@ const CuTheme: NextPage = () => {
 					</p>
 
 					<Column cols="3" maxWidth="5xl">
-						<NewsCard />
-						<NewsCard />
-						<NewsCard />
+						<PeopleCard />
+						<PeopleCard />
+						<PeopleCard />
 					</Column>
 
 					<p>
@@ -103,10 +103,10 @@ const CuTheme: NextPage = () => {
 					</p>
 
 					<Column cols="4">
-						<NewsCard />
-						<NewsCard />
-						<NewsCard />
-						<NewsCard />
+						<PeopleCard />
+						<PeopleCard />
+						<PeopleCard />
+						<PeopleCard />
 					</Column>
 
 					<p>
@@ -149,9 +149,9 @@ const CuTheme: NextPage = () => {
 					</p>
 
 					<Panel hasShadow>
-						<NewsListItem />
-						<NewsListItem />
-						<NewsListItem />
+						<PeopleListItem />
+						<PeopleListItem />
+						<PeopleListItem />
 					</Panel>
 
 					<p>

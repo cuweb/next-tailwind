@@ -41,28 +41,19 @@ export default function CuThemeNav() {
 						</Link>
 					</li>
 					<li className="inline-flex">
-						<Link href="#" className={styles.navHover}>
+						<Link
+							href="/cutheme/examples/events"
+							className={styles.navHover}
+						>
 							Events
 						</Link>
 					</li>
 					<li className="inline-flex">
-						<Link href="#" className={styles.navHover}>
+						<Link
+							href="/cutheme/examples/people"
+							className={styles.navHover}
+						>
 							People
-						</Link>
-					</li>
-					<li className="inline-flex">
-						<Link href="#" className={styles.navHover}>
-							Stories
-						</Link>
-					</li>
-					<li className="inline-flex">
-						<Link href="#" className={styles.navHover}>
-							Videos
-						</Link>
-					</li>
-					<li className="inline-flex">
-						<Link href="#" className={styles.navHover}>
-							Facilities
 						</Link>
 					</li>
 				</ul>

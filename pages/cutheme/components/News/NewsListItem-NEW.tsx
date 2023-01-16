@@ -1,18 +1,24 @@
-export default function NewsListItem() {
+const styles = {
+	listGroup: ``,
+	listItem: `flex text-white`,
+	itemLink: `text-xs text-cu-black-300 hover:text-white`,
+};
+
+export default function NewsListItemNew() {
 	return (
-		<div>
+		<div className="relative flex flex-col overflow-hidden duration-300 ease-in bg-white rounded-md shadow-md not-prose group">
 			<a
 				href="https://carleton.ca"
 				className="relative flex items-center gap-2 p-6 cursor-pointer group hover:bg-gray-50 focus:outline-none"
 			>
 				<div className="flex items-start gap-4">
-					<div className="flex-none hidden w-20 md:w-32 lg:block">
-						<img
-							className="w-auto h-auto rounded"
-							src="https://source.unsplash.com/random/400x300"
-							alt=""
-						/>
-					</div>
+					{/* <div className="flex-none hidden w-20 md:w-32 lg:block">
+							<img
+								className="w-auto h-auto rounded"
+								src="https://source.unsplash.com/random/400x300"
+								alt=""
+							/>
+						</div> */}
 					<div className="flex flex-col flex-auto gap-2">
 						<h3 className="text-base font-semibold text-cu-black group-hover:text-cu-red md:text-base">
 							News item title
