@@ -6,7 +6,7 @@ const styles = {
 
 export default function FocusNav() {
 	return (
-		<div className="px-6 py-2 bg-cu-black-900">
+		<div className="relative z-50 px-6 py-2 bg-cu-black-900">
 			<div className="flex justify-between">
 				<ul>
 					<li className="flex text-white">
@@ -46,32 +46,6 @@ export default function FocusNav() {
 					</li>
 				</ul>
 			</div>
-
-			{/* <ul className="flex justify-end gap-5 py-2 m-auto max-w-7xl">
-				<li className="flex">
-					<a
-						href="#"
-						className="text-xs text-cu-black-300 hover:text-white"
-					>
-						Carleton.ca
-					</a>
-				</li>
-			</ul>
-			<ul className="flex justify-end gap-5 py-2 m-auto max-w-7xl">
-				<li className="flex">
-					<a
-						href="#"
-						className="text-xs text-cu-black-300 hover:text-white"
-					>
-						Carleton.ca
-					</a>
-				</li>
-				<li className="flex">
-					<a href="#" className={styles.itemLink}>
-						Carleton.ca
-					</a>
-				</li>
-			</ul> */}
 		</div>
 	);
 }
