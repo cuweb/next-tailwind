@@ -29,25 +29,36 @@ export default function SlideDownNav() {
 			<nav className="m-12 overflow-y-scroll text-cu-black-800">
 				<ul className="flex flex-col gap-4">
 					<li>
-						<Link href="/cutheme/examples/">Content Examples</Link>
+						<Link
+							href="/cutheme/examples/"
+							onClick={() => closeMenu()}
+						>
+							Content Examples
+						</Link>
 					</li>
 					<li>
-						<Link href="/cutheme/examples/news">
+						<Link
+							href="/cutheme/examples/news"
+							onClick={() => closeMenu()}
+						>
 							News Cards and Listings
 						</Link>
 					</li>
 					<li>
-						<Link href="/cutheme/examples/events">
+						<Link
+							href="/cutheme/examples/events"
+							onClick={() => closeMenu()}
+						>
 							Event Cards and Listings
 						</Link>
 					</li>
 					<li>
-						<Link href="/cutheme/examples/people">
+						<Link
+							href="/cutheme/examples/people"
+							onClick={() => closeMenu()}
+						>
 							People Cards and Listings
 						</Link>
-					</li>
-					<li>
-						<Link href="/cutheme/examples/">Contact</Link>
 					</li>
 				</ul>
 			</nav>
