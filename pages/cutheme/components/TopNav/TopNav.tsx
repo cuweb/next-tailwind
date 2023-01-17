@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import { Button } from "rds-tailwind";
+import { Button, Avatar } from "rds-tailwind";
 import FocusNav from "../FocusNav/FocusNav";
 import SlideDownNav from "./SlideDownNav";
 import { openMenu } from "./SlideDownNav";
+import { MagnifyingGlassIcon } from "@heroicons/react/24/solid";
 
 export default function CuThemeNav() {
 	const [position, setPosition] = useState(0);
@@ -31,7 +32,7 @@ export default function CuThemeNav() {
 			<div className={`cu-topnav sticky z-50 ${cls}`}>
 				<FocusNav />
 
-				<div className="flex items-center justify-between h-20 px-6 bg-white border-t-2 shadow-lg border-cu-red">
+				<div className="flex items-center justify-between h-20 gap-4 px-6 bg-white border-t-2 shadow-lg border-cu-red">
 					<div>
 						<Link
 							href="/cutheme/"
@@ -42,18 +43,39 @@ export default function CuThemeNav() {
 								src="/cu-shield.svg"
 								alt="Carleton Shield"
 							/>
-							<h1 className="flex items-center flex-shrink-0 pl-3 pr-2 text-2xl font-semibold group-hover:text-cu-red">
+							<h1 className="flex items-center flex-1 flex-shrink-0 pl-3 pr-2 text-base font-semibold group-hover:text-cu-red sm:text-lg md:text-xl lg:text-2xl">
+								{/* Max and Tessie Zelikovitz Centre for Jewish
+								Studies */}
 								Web Services
 							</h1>
 						</Link>
 					</div>
-					<div>
+
+					<div className="flex items-center gap-4">
+						<MagnifyingGlassIcon
+							className="w-5 h-5 text-gray-400"
+							aria-hidden="true"
+						/>
 						<Button
 							icon="Bars3Icon"
 							size="sm"
 							title="Browse"
 							onClick={() => openMenu()}
 						/>
+						<div className="hidden sm:block">
+							<Avatar
+								rounded="full"
+								size="xs"
+								user={{
+									firstName: "Carlton",
+									lastName: "Banks",
+									image: {
+										alt: "",
+										src: "https://static.wikia.nocookie.net/freshprince/images/a/ac/1carlton.jpg",
+									},
+								}}
+							/>
+						</div>
 					</div>
 				</div>
 
