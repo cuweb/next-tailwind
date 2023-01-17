@@ -1,10 +1,10 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import { FooterStandard, Banner } from "rds-tailwind";
-import CuThemeNav from "./components/TopNav/TopNav";
-import FocusNav from "./components/FocusNav/FocusNav";
-import CuThemeContent from "./components/Content/Content";
-import CuThemeContentTesting from "./components/Content/Testing";
+import CuThemeNav from "../components/TopNav/TopNav";
+import FocusNav from "../components/FocusNav/FocusNav";
+import CuThemeContent from "../components/Content/Content";
+import CuThemeContentTesting from "../components/Content/Testing";
 
 const CuTheme: NextPage = () => {
 	return (
@@ -14,7 +14,6 @@ const CuTheme: NextPage = () => {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
-			<FocusNav />
 			<CuThemeNav />
 			<Banner title="cutheme prototypes" />
 
