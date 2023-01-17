@@ -30,34 +30,7 @@ export default function CuThemeNav() {
 		<>
 			<div className={`cu-topnav sticky z-50 ${cls}`}>
 				<FocusNav />
-
-				<div className="flex items-center justify-between h-20 px-6 bg-white border-t-2 shadow-lg border-cu-red">
-					<div>
-						<Link
-							href="/cutheme/"
-							className="flex items-center flex-shrink-0 group"
-						>
-							<img
-								className="w-auto h-10"
-								src="/cu-shield.svg"
-								alt="Carleton Shield"
-							/>
-							<h1 className="flex items-center flex-shrink-0 pl-3 pr-2 text-2xl font-semibold group-hover:text-cu-red">
-								Web Services
-							</h1>
-						</Link>
-					</div>
-					<div>
-						<Button
-							icon="Bars3Icon"
-							size="sm"
-							title="Browse"
-							onClick={() => openMenu()}
-						/>
-					</div>
-				</div>
-
-				{/* <div className="space-y-3 overflow-hidden bg-white border-t-4 divide-y shadow-lg divide-cu-black-100 border-cu-red">
+				<div className="space-y-3 overflow-hidden bg-white border-t-4 divide-y shadow-lg divide-cu-black-100 border-cu-red">
 					<div className="px-6 pt-3">
 						<Link
 							href="/cutheme/"
@@ -82,7 +55,7 @@ export default function CuThemeNav() {
 							onClick={() => openMenu()}
 						/>
 					</nav>
-				</div> */}
+				</div>
 			</div>
 			<SlideDownNav />
 		</>
