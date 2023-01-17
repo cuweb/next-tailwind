@@ -3,18 +3,26 @@ import { HeroIcon } from "rds-tailwind";
 export function closeMenu() {
 	const bodyAddScroll = document.querySelector("body");
 	const navClose = document.querySelector(".cu-slidenav");
-	bodyAddScroll.classList.remove("open");
-	navClose.classList.remove("open");
+	{
+		bodyAddScroll && bodyAddScroll.classList.remove("open");
+	}
+	{
+		navClose && navClose.classList.remove("open");
+	}
 }
 
 export function openMenu() {
 	const bodyRemoveScroll = document.querySelector("body");
 	const navOpen = document.querySelector(".cu-slidenav");
-	bodyRemoveScroll.classList.add("open");
-	navOpen.classList.add("open");
+	{
+		bodyRemoveScroll && bodyRemoveScroll.classList.add("open");
+	}
+	{
+		navOpen && navOpen.classList.add("open");
+	}
 }
 
-export function SlideDownNav() {
+export default function SlideDownNav() {
 	return (
 		<div className="fixed top-0 left-0 z-30 invisible w-full h-full -translate-y-full cu-slidenav bg-cu-black-900">
 			<nav className="m-12 overflow-y-scroll text-white">

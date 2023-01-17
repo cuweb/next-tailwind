@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { Button } from "rds-tailwind";
 import FocusNav from "../FocusNav/FocusNav";
-import { openMenu, SlideDownNav } from "./SlideDownNav";
+import SlideDownNav from "./SlideDownNav";
+import { openMenu } from "./SlideDownNav";
 
 export default function CuThemeNav() {
 	const [position, setPosition] = useState(0);
