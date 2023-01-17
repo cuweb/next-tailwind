@@ -1,16 +1,5 @@
 import { HeroIcon } from "rds-tailwind";
 
-export function closeMenu() {
-	const bodyAddScroll = document.querySelector("body");
-	const navClose = document.querySelector(".cu-slidenav");
-	{
-		bodyAddScroll && bodyAddScroll.classList.remove("open");
-	}
-	{
-		navClose && navClose.classList.remove("open");
-	}
-}
-
 export function openMenu() {
 	const bodyRemoveScroll = document.querySelector("body");
 	const navOpen = document.querySelector(".cu-slidenav");
@@ -22,9 +11,20 @@ export function openMenu() {
 	}
 }
 
+export function closeMenu() {
+	const bodyAddScroll = document.querySelector("body");
+	const navClose = document.querySelector(".cu-slidenav");
+	{
+		bodyAddScroll && bodyAddScroll.classList.remove("open");
+	}
+	{
+		navClose && navClose.classList.remove("open");
+	}
+}
+
 export default function SlideDownNav() {
 	return (
-		<div className="fixed top-0 left-0 z-30 invisible w-full h-full -translate-y-full cu-slidenav bg-cu-black-50">
+		<div className="fixed top-0 left-0 z-30 invisible w-full h-full overflow-hidden -translate-y-full cu-slidenav bg-cu-black-50">
 			<nav className="m-12 overflow-y-scroll text-cu-black-800">
 				<ul className="flex flex-col gap-4">
 					<li>
