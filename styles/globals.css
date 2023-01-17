@@ -55,7 +55,7 @@ body.open {
 }
 
 .cu-slidenav.open {
-	@apply visible translate-y-0 top-28;
+	@apply visible translate-y-0 top-20 lg:top-28;
 	transition: transform 0.4s ease-in-out;
 }
 
