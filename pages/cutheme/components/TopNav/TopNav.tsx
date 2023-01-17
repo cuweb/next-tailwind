@@ -62,18 +62,20 @@ export default function CuThemeNav() {
 							title="Browse"
 							onClick={() => openMenu()}
 						/>
-						<Avatar
-							rounded="full"
-							size="xs"
-							user={{
-								firstName: "Carlton",
-								lastName: "Banks",
-								image: {
-									alt: "",
-									src: "https://static.wikia.nocookie.net/freshprince/images/a/ac/1carlton.jpg",
-								},
-							}}
-						/>
+						<div className="hidden sm:block">
+							<Avatar
+								rounded="full"
+								size="xs"
+								user={{
+									firstName: "Carlton",
+									lastName: "Banks",
+									image: {
+										alt: "",
+										src: "https://static.wikia.nocookie.net/freshprince/images/a/ac/1carlton.jpg",
+									},
+								}}
+							/>
+						</div>
 					</div>
 				</div>
 
