@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { HeroIcon } from "rds-tailwind";
 
 export function openMenu() {
@@ -24,23 +25,40 @@ export function closeMenu() {
 
 export default function SlideDownNav() {
 	return (
-		<div className="fixed top-0 left-0 z-30 invisible w-full h-full overflow-hidden -translate-y-full cu-slidenav bg-cu-black-50">
+		<div className="fixed top-0 left-0 z-30 invisible w-full h-full overflow-hidden -translate-y-full cu-slidenav bg-cu-black-50 md:h-auto">
 			<nav className="m-12 overflow-y-scroll text-cu-black-800">
 				<ul className="flex flex-col gap-4">
 					<li>
-						<a href="#">Home</a>
+						<Link
+							href="/cutheme/examples/"
+							onClick={() => closeMenu()}
+						>
+							Content Examples
+						</Link>
 					</li>
 					<li>
-						<a href="#">About</a>
+						<Link
+							href="/cutheme/examples/news"
+							onClick={() => closeMenu()}
+						>
+							News Cards and Listings
+						</Link>
 					</li>
 					<li>
-						<a href="#">Work</a>
+						<Link
+							href="/cutheme/examples/events"
+							onClick={() => closeMenu()}
+						>
+							Event Cards and Listings
+						</Link>
 					</li>
 					<li>
-						<a href="#">Clients</a>
-					</li>
-					<li>
-						<a href="#">Contact</a>
+						<Link
+							href="/cutheme/examples/people"
+							onClick={() => closeMenu()}
+						>
+							People Cards and Listings
+						</Link>
 					</li>
 				</ul>
 			</nav>
