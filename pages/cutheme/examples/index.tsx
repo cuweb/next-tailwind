@@ -3,7 +3,6 @@ import Head from "next/head";
 import { Banner } from "rds-tailwind";
 import CuThemeNav from "../components/TopNav/TopNav";
 import CuThemeContent from "../components/Content/Content";
-import CuThemeContentTesting from "../components/Content/Testing";
 import FooterSimple from "../components/FooterSimple/FooterSimple";
 
 const CuTheme: NextPage = () => {
@@ -20,7 +19,6 @@ const CuTheme: NextPage = () => {
 			<main className="mx-10">
 				<section className="prose prose-cutheme cutheme-spacing max-w-none lg:prose-lg">
 					<CuThemeContent />
-					<CuThemeContentTesting />
 				</section>
 			</main>
 

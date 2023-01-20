@@ -126,17 +126,17 @@ export default function FooterSimple() {
 						<div className="space-y-8 xl:col-span-1">
 							<img
 								className="h-20"
-								src="/cu-logo-left-white-outline.svg"
+								src="/cu-shield-right-white-text.svg"
 								alt="Carleton University"
 							/>
-							<p className="pl-[5.25rem] text-base text-gray-300">
+							<p className="pl-16 text-base text-gray-300">
 								1125 Colonel By Drive
 								<br />
 								Ottawa, ON, K1S 5B6, Canada
 								<br />
 								Phone: 1-613-520-2600
 							</p>
-							<div className="flex space-x-6 pl-[5.25rem]">
+							<div className="flex pl-16 space-x-6">
 								{navigation.social.map((item) => (
 									<a
 										key={item.name}
