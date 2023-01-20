@@ -1,13 +1,9 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import { TopNav, FooterStandard, Banner } from "rds-tailwind";
-import FocusNav from "./components-old/FocusNav/FocusNav";
-import SideNavLight from "./components-old/SideNav/SideNavLight";
-import CuThemeContent from "./components-old/Content/Content";
-
-const styles = {
-	gutenbergWidth: `[&>:not(cu-container)]:max-w-5xl [&>:not(cu-container)]:mx-auto`,
-};
+import { Banner } from "rds-tailwind";
+import CuThemeNav from "./components/TopNav/TopNav";
+import CuThemeContent from "./components/Content/Content";
+import FooterSimple from "./components/FooterSimple/FooterSimple";
 
 const CuTheme: NextPage = () => {
 	return (
@@ -17,28 +13,16 @@ const CuTheme: NextPage = () => {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
-			<FocusNav />
+			<CuThemeNav />
+			<Banner title="cutheme prototypes" />
 
-			<TopNav
-				logoUrl="https://carleton.ca/"
-				title="WordPress ¯\_(ツ)_/¯"
-			/>
-
-			<Banner isType="dark-wave" title="cutheme prototypes" />
-
-			<main>
-				<div className="mx-auto grid max-w-7xl grid-cols-1 gap-16 lg:grid-cols-sidenav [&:last-child]:mb-0">
-					<SideNavLight />
-
-					<section className="py-14">
-						<article className="prose prose-cutheme max-w-none lg:prose-lg">
-							<CuThemeContent />
-						</article>
-					</section>
-				</div>
+			<main className="mx-10">
+				<section className="prose prose-cutheme cutheme-spacing max-w-none lg:prose-lg">
+					<CuThemeContent />
+				</section>
 			</main>
 
-			<FooterStandard />
+			<FooterSimple />
 		</>
 	);
 };

@@ -1,17 +1,10 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import {
-	FooterStandard,
-	Banner,
-	Column,
-	Container,
-	Panel,
-	StackedList,
-} from "rds-tailwind";
+import { Banner, Column, Panel, StackedList } from "rds-tailwind";
 import CuThemeNav from "../components/TopNav/TopNav";
-import FocusNav from "../components/FocusNav/FocusNav";
 import EventCard from "../components/Events/EventCard";
 import EventListItem from "../components/Events/EventListItem";
+import FooterSimple from "../components/FooterSimple/FooterSimple";
 
 const CuTheme: NextPage = () => {
 	return (
@@ -227,7 +220,7 @@ const CuTheme: NextPage = () => {
 				</section>
 			</main>
 
-			<FooterStandard />
+			<FooterSimple />
 		</>
 	);
 };

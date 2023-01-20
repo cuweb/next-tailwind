@@ -2,13 +2,14 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { Button, Avatar } from "rds-tailwind";
 import FocusNav from "../FocusNav/FocusNav";
-import SlideDownNav from "./SlideDownNav";
-import { openMenu } from "./SlideDownNav";
+import SlideNav from "../SlideNav/SlideNav";
+import { openMenu } from "../SlideNav/SlideNav";
 import { MagnifyingGlassIcon } from "@heroicons/react/24/solid";
 
 export default function CuThemeNav() {
 	const [position, setPosition] = useState(0);
-	const [visible, setVisible] = useState(true);
+	const [visible, setVisible] = useState(false);
+	const [isActive, setActive] = useState(false);
 
 	useEffect(() => {
 		const handleScroll = () => {
@@ -58,11 +59,30 @@ export default function CuThemeNav() {
 						/>
 						<Button
 							icon="Bars3Icon"
+							isType="grey"
+							onClick={() => openMenu()}
 							size="sm"
 							title="Browse"
-							onClick={() => openMenu()}
 						/>
-						<div className="hidden sm:block">
+						{/* <button
+							type="button"
+							aria-label="Small Button"
+							className="inline-flex items-center justify-center gap-1 px-3 py-2 text-sm font-medium rounded-md bg-cu-black-50 text-cu-black-800 hover:bg-cu-black-600 hover:text-white focus:outline-none "
+						>
+							Small Button
+						</button>
+						<button
+							onClick={() => {
+								setActive(!isActive);
+								openMenu();
+							}}
+							className={`${isActive ? "animated" : ""}`}
+						>
+							<span className="icon-bar top"></span>
+							<span className="icon-bar middle"></span>
+							<span className="icon-bar bottom"></span>
+						</button> */}
+						{/* <div className="hidden sm:block">
 							<Avatar
 								rounded="full"
 								size="xs"
@@ -75,7 +95,7 @@ export default function CuThemeNav() {
 									},
 								}}
 							/>
-						</div>
+						</div> */}
 					</div>
 				</div>
 
@@ -106,7 +126,7 @@ export default function CuThemeNav() {
 					</nav>
 				</div> */}
 			</div>
-			<SlideDownNav />
+			<SlideNav />
 		</>
 	);
 }

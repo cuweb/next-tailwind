@@ -1,10 +1,9 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import { FooterStandard, Banner } from "rds-tailwind";
+import { Banner } from "rds-tailwind";
 import CuThemeNav from "../components/TopNav/TopNav";
-import FocusNav from "../components/FocusNav/FocusNav";
 import CuThemeContent from "../components/Content/Content";
-import CuThemeContentTesting from "../components/Content/Testing";
+import FooterSimple from "../components/FooterSimple/FooterSimple";
 
 const CuTheme: NextPage = () => {
 	return (
@@ -20,11 +19,10 @@ const CuTheme: NextPage = () => {
 			<main className="mx-10">
 				<section className="prose prose-cutheme cutheme-spacing max-w-none lg:prose-lg">
 					<CuThemeContent />
-					<CuThemeContentTesting />
 				</section>
 			</main>
 
-			<FooterStandard />
+			<FooterSimple />
 		</>
 	);
 };

@@ -30,7 +30,7 @@ export default function PeopleListItem() {
 										size="4"
 										isOutline
 									/>
-									carleton.banks@freshprince.belair
+									carleton.banks@carlton.ca
 								</a>
 							</li>
 							<li className="flex-none last:pl-8">
