@@ -14,7 +14,7 @@ export default function NewsCard() {
 					alt=""
 				/>
 
-				<div className="flex flex-col py-6 space-y-2 px-7">
+				<div className="flex flex-col py-6 space-y-3 px-7">
 					<p className="flex items-start text-sm italic text-cu-black-600">
 						November 3 - 7
 					</p>

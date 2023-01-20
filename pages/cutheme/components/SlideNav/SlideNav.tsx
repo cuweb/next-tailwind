@@ -62,6 +62,10 @@ export default function SlideNav() {
 									People cards and listings
 								</Link>
 							</li>
+						</ul>
+					</div>
+					<div className="bg-cu-black-100">
+						<ul className="flex flex-col gap-4">
 							<li>
 								<Link
 									href="/cutheme/examples/numbers"
@@ -70,9 +74,16 @@ export default function SlideNav() {
 									Numbers cards
 								</Link>
 							</li>
+							<li>
+								<Link
+									href="/cutheme/examples/videos"
+									onClick={() => closeMenu()}
+								>
+									Video cards
+								</Link>
+							</li>
 						</ul>
 					</div>
-					<div className="bg-cu-black-100">More nav items</div>
 					<div className="bg-white">More nav items</div>
 				</div>
 				<div className="bg-white">Extra Content</div>
