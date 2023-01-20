@@ -66,3 +66,85 @@ body.open {
 .cu-topnav-hidden {
 	transition: top 0.6s ease-out;
 }
+
+/* Top Nav Button Animation */
+
+.btn-nav {
+	position: fixed;
+	top: 30px;
+	left: 30px;
+	background: transparent;
+	border: none;
+	padding: 10px;
+	cursor: pointer;
+	z-index: 99999;
+}
+
+.btn-nav:focus {
+	outline: 0;
+}
+
+.icon-bar {
+	display: block;
+	margin: 6px 0;
+	width: 35px;
+	height: 5px;
+	background-color: #f9b339;
+}
+
+.btn-nav:hover .icon-bar {
+	background-color: #f9b339;
+}
+
+.animated {
+	display: block;
+	margin: 0 auto;
+}
+
+.animated:hover .icon-bar,
+.animated:focus .icon-bar {
+	background-color: #fca311;
+}
+
+.animated:focus {
+	cursor: pointer;
+	z-index: 9999;
+}
+
+.middle {
+	margin: 0 auto;
+}
+
+.icon-bar {
+	-webkit-transition: all 0.7s ease;
+	-moz-transition: all 0.7s ease;
+	-ms-transition: all 0.7s ease;
+	-o-transition: all 0.7s ease;
+	transition: all 0.7s ease;
+	z-index: 999999;
+}
+
+.animated .icon-bar {
+	z-index: 999999;
+	background-color: #fca311;
+}
+
+.animated .top {
+	-webkit-transform: translateY(10px) rotateZ(45deg);
+	-moz-transform: translateY(10px) rotateZ(45deg);
+	-ms-transform: translateY(10px) rotateZ(45deg);
+	-o-transform: translateY(10px) rotateZ(45deg);
+	transform: translateY(10px) rotateZ(45deg);
+}
+
+.animated .bottom {
+	-webkit-transform: translateY(-11px) rotateZ(-45deg);
+	-moz-transform: translateY(-11px) rotateZ(-45deg);
+	-ms-transform: translateY(-11px) rotateZ(-45deg);
+	-o-transform: translateY(-11px) rotateZ(-45deg);
+	transform: translateY(-11px) rotateZ(-45deg);
+}
+
+.animated .middle {
+	width: 0;
+}

@@ -22,4 +22,11 @@ module.exports = {
         './node_modules/rds-tailwind/src/**/**/**/*.{js,ts,jsx,tsx}',
         './node_modules/rds-tailwind/src/layouts/Panel/*.{js,ts,jsx,tsx}',
     ],
+    theme: {
+        extend: {   
+            gridTemplateColumns: {
+                slidenav: 'auto 300px',
+            },
+        }
+      }
 };
