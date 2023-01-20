@@ -62,6 +62,14 @@ export default function SlideNav() {
 									People cards and listings
 								</Link>
 							</li>
+							<li>
+								<Link
+									href="/cutheme/examples/numbers"
+									onClick={() => closeMenu()}
+								>
+									Numbers cards
+								</Link>
+							</li>
 						</ul>
 					</div>
 					<div className="bg-cu-black-100">More nav items</div>
