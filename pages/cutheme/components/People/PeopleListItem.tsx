@@ -4,9 +4,9 @@ export default function PeopleListItem() {
 	return (
 		<li className="relative overflow-hidden duration-300 ease-in not-prose group">
 			<a href="https://carleton.ca" className="cursor-pointer">
-				<div className="flex items-center gap-4 px-6 py-5">
+				<div className="flex gap-4 px-6 py-5 sm:items-center">
 					<img
-						className="flex-none object-cover w-24 h-24 mx-auto border-4 border-white rounded-full shadow-lg"
+						className="flex-none object-cover w-16 h-16 mx-auto border-2 border-white rounded-full shadow-lg sm:h-24 sm:w-24 sm:border-4"
 						src="https://static.wikia.nocookie.net/freshprince/images/a/ac/1carlton.jpg"
 						alt=""
 					/>
@@ -18,11 +18,11 @@ export default function PeopleListItem() {
 						<p className="text-base text-cu-black-600">
 							Manager, Peacock Stop
 						</p>
-						<ul className="flex flex-wrap justify-start gap-2 pt-3 text-base">
-							<li className="flex-none last:pl-8">
+						<ul className="flex flex-wrap justify-start gap-12 pt-3 text-base sm:gap-2">
+							<li className="last:pl-8 sm:flex-auto">
 								<a
 									href="mailto:webdevs@carleton.ca"
-									className="flex items-center gap-2 font-medium text-cyan-700 hover:text-cu-red"
+									className="flex items-center gap-1.5 font-medium text-cyan-700 hover:text-cu-red sm:gap-2"
 								>
 									<HeroIcon
 										aria-hidden
@@ -30,13 +30,18 @@ export default function PeopleListItem() {
 										size="4"
 										isOutline
 									/>
-									carleton.banks@carlton.ca
+									<span className="sm:hidden">Email</span>
+									<span className="hidden sm:block">
+										carleton.banks@carlton.ca
+										carleton.banks@carlton.ca
+										carleton.banks@carlton.ca
+									</span>
 								</a>
 							</li>
-							<li className="flex-none last:pl-8">
+							<li className="sm:flex-auto">
 								<a
 									href="tel:6135202600"
-									className="flex items-center gap-2 font-medium text-cyan-700 hover:text-cu-red"
+									className="flex items-center gap-1 font-medium text-cyan-700 hover:text-cu-red"
 								>
 									<HeroIcon
 										aria-hidden
@@ -44,7 +49,10 @@ export default function PeopleListItem() {
 										size="4"
 										isOutline
 									/>
-									613-520-2600 x1234
+									<span className="sm:hidden">Call</span>
+									<span className="hidden sm:block">
+										613-520-2600 x1234
+									</span>
 								</a>
 							</li>
 						</ul>
