@@ -26,7 +26,7 @@ export default function PeopleCard() {
 							<HeroIcon
 								aria-hidden
 								icon="InboxArrowDownIcon"
-								size="4"
+								size="5"
 								isOutline
 							/>
 							Email
@@ -40,7 +40,7 @@ export default function PeopleCard() {
 							<HeroIcon
 								aria-hidden
 								icon="DevicePhoneMobileIcon"
-								size="4"
+								size="5"
 								isOutline
 							/>
 							Call

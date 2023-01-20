@@ -27,7 +27,7 @@ export default function PeopleListItem() {
 									<HeroIcon
 										aria-hidden
 										icon="InboxArrowDownIcon"
-										size="4"
+										size="5"
 										isOutline
 									/>
 									<span className="sm:hidden">Email</span>
@@ -46,7 +46,7 @@ export default function PeopleListItem() {
 									<HeroIcon
 										aria-hidden
 										icon="DevicePhoneMobileIcon"
-										size="4"
+										size="5"
 										isOutline
 									/>
 									<span className="sm:hidden">Call</span>
