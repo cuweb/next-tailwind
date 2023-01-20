@@ -32,9 +32,7 @@ export default function PeopleListItem() {
 									/>
 									<span className="sm:hidden">Email</span>
 									<span className="hidden sm:block">
-										carleton.banks@carlton.ca
-										carleton.banks@carlton.ca
-										carleton.banks@carlton.ca
+										carleton.banksasfasfasfasasfsafsafasffasfas@carlton.ca
 									</span>
 								</a>
 							</li>
