@@ -6,7 +6,6 @@ const navigation = {
 		{ name: "International", href: "#" },
 		{ name: "Financial Aid", href: "#" },
 		{ name: "Virtual Tours", href: "#" },
-		{ name: "Initiatives", href: "#" },
 	],
 	Students: [
 		{ name: "Support Services", href: "#" },
@@ -15,7 +14,6 @@ const navigation = {
 		{ name: "Library", href: "#" },
 		{ name: "Support Services", href: "#" },
 		{ name: "Schedules & Dates", href: "#" },
-		{ name: "Bightspace", href: "#" },
 	],
 	Campus: [
 		{ name: "Campus Map", href: "#" },
@@ -24,7 +22,6 @@ const navigation = {
 		{ name: "Parking", href: "#" },
 		{ name: "Campus Map", href: "#" },
 		{ name: "Directions", href: "#" },
-		{ name: "Events", href: "#" },
 	],
 	Raven: [
 		{ name: "Giving to Carleton", href: "#" },
@@ -33,8 +30,10 @@ const navigation = {
 		{ name: "Career Assistance", href: "#" },
 		{ name: "Giving to Carleton", href: "#" },
 		{ name: "Athletics & Recreation", href: "#" },
-		{ name: "Go Ravens", href: "#" },
 	],
+};
+
+const social = {
 	social: [
 		{
 			name: "Facebook",
@@ -111,146 +110,126 @@ const navigation = {
 
 export default function FooterSimple() {
 	return (
-		<>
-			{/* <footer className="h-48 bg-cu-black-900">New</footer>
-			<br /> */}
-			<footer
-				className="bg-cu-black-900 bg-[url('https://carleton.ca/assets/waves.svg')] bg-[length:100%] bg-bottom bg-no-repeat pb-44"
-				aria-labelledby="footer-heading"
-			>
-				<h2 id="footer-heading" className="sr-only">
-					Footer
-				</h2>
-				<div className="px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:py-16 lg:px-8">
-					<div className="xl:grid xl:grid-cols-3 xl:gap-8">
-						<div className="space-y-8 xl:col-span-1">
-							<img
-								className="h-20"
-								src="/cu-shield-right-white-text.svg"
-								alt="Carleton University"
-							/>
-							<p className="pl-16 text-base text-gray-300">
-								1125 Colonel By Drive
-								<br />
-								Ottawa, ON, K1S 5B6, Canada
-								<br />
-								Phone: 1-613-520-2600
-							</p>
-							<div className="flex pl-16 space-x-6">
-								{navigation.social.map((item) => (
-									<a
-										key={item.name}
-										href={item.href}
-										className="text-gray-200 hover:text-cu-red"
-									>
-										<span className="sr-only">
-											{item.name}
-										</span>
-										<item.icon
-											className="w-6 h-6"
-											aria-hidden="true"
-										/>
-									</a>
-								))}
-							</div>
-						</div>
-						<div className="grid grid-cols-2 gap-8 mt-12 xl:col-span-2 xl:mt-0">
-							<div className="md:grid md:grid-cols-2 md:gap-8">
-								<div>
-									<h3 className="text-base font-medium text-white">
-										Admissions
-									</h3>
-									<ul role="list" className="mt-2 space-y-2">
-										{navigation.Admissions.map((item) => (
-											<li key={item.name}>
-												<a
-													href={item.href}
-													className="text-base text-gray-400 hover:text-white"
-												>
-													{item.name}
-												</a>
-											</li>
-										))}
-									</ul>
-								</div>
-								<div className="mt-12 md:mt-0">
-									<h3 className="text-base font-medium text-white">
-										Students
-									</h3>
-									<ul role="list" className="mt-2 space-y-2">
-										{navigation.Students.map((item) => (
-											<li key={item.name}>
-												<a
-													href={item.href}
-													className="text-base text-gray-400 hover:text-white"
-												>
-													{item.name}
-												</a>
-											</li>
-										))}
-									</ul>
-								</div>
-							</div>
-							<div className="md:grid md:grid-cols-2 md:gap-8">
-								<div>
-									<h3 className="text-base font-medium text-white">
-										Campus
-									</h3>
-									<ul role="list" className="mt-2 space-y-2">
-										{navigation.Campus.map((item) => (
-											<li key={item.name}>
-												<a
-													href={item.href}
-													className="text-base text-gray-400 hover:text-white"
-												>
-													{item.name}
-												</a>
-											</li>
-										))}
-									</ul>
-								</div>
-								<div className="mt-12 md:mt-0">
-									<h3 className="text-base font-medium text-white">
-										Raven 4 Life
-									</h3>
-									<ul role="list" className="mt-2 space-y-2">
-										{navigation.Raven.map((item) => (
-											<li key={item.name}>
-												<a
-													href={item.href}
-													className="text-base text-gray-400 hover:text-white"
-												>
-													{item.name}
-												</a>
-											</li>
-										))}
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
+		<footer className="bg-cu-black-900 bg-[url('https://carleton.ca/assets/waves.svg')] bg-[length:100%] bg-bottom bg-no-repeat px-10 pb-80">
+			<div className="flex gap-20 px-2 pt-16 pb-8 mx-auto text-white border-b max-w-7xl border-cu-black-800">
+				<div className="flex-none">
+					<h3 className="text-base font-medium text-white">
+						Admissions
+					</h3>
+					<ul role="list" className="mt-2 space-y-2">
+						{navigation.Admissions.map((item) => (
+							<li key={item.name}>
+								<a
+									href={item.href}
+									className="text-base text-gray-400 hover:text-white"
+								>
+									{item.name}
+								</a>
+							</li>
+						))}
+					</ul>
+				</div>
 
-					<div className="pt-8 mt-12 border-t border-gray-600">
-						<ul className="flex text-lg text-center text-gray-400 ">
-							<li className="pl-4">
-								<a href="#" className="hover:text-white">
-									Privacy Policy
+				<div className="flex-none">
+					<h3 className="text-base font-medium text-white">
+						Students
+					</h3>
+					<ul role="list" className="mt-2 space-y-2">
+						{navigation.Students.map((item) => (
+							<li key={item.name}>
+								<a
+									href={item.href}
+									className="text-base text-gray-400 hover:text-white"
+								>
+									{item.name}
 								</a>
 							</li>
-							<li className="pl-4">
-								<a href="#" className="hover:text-white">
-									Accessibility
+						))}
+					</ul>
+				</div>
+
+				<div className="flex-none">
+					<h3 className="text-base font-medium text-white">Campus</h3>
+					<ul role="list" className="mt-2 space-y-2">
+						{navigation.Campus.map((item) => (
+							<li key={item.name}>
+								<a
+									href={item.href}
+									className="text-base text-gray-400 hover:text-white"
+								>
+									{item.name}
 								</a>
 							</li>
-							<li className="pl-4">
-								<a href="#" className="hover:text-white">
-									&copy; Copyright 2022
+						))}
+					</ul>
+				</div>
+
+				<div className="flex-none">
+					<h3 className="text-base font-medium text-white">Ravens</h3>
+					<ul role="list" className="mt-2 space-y-2">
+						{navigation.Raven.map((item) => (
+							<li key={item.name}>
+								<a
+									href={item.href}
+									className="text-base text-gray-400 hover:text-white"
+								>
+									{item.name}
 								</a>
 							</li>
-						</ul>
+						))}
+					</ul>
+				</div>
+
+				<div className="flex-none ml-auto space-y-6">
+					<img
+						className="h-20"
+						src="/cu-shield-right-white-text.svg"
+						alt="Carleton University"
+					/>
+					<p className="pl-16 text-base text-gray-300">
+						1125 Colonel By Drive
+						<br />
+						Ottawa, ON, K1S 5B6, Canada
+						<br />
+						Phone: 1-613-520-2600
+					</p>
+					<div className="flex pl-16 space-x-6">
+						{social.social.map((item) => (
+							<a
+								key={item.name}
+								href={item.href}
+								className="text-gray-200 hover:text-cu-red"
+							>
+								<span className="sr-only">{item.name}</span>
+								<item.icon
+									className="w-6 h-6"
+									aria-hidden="true"
+								/>
+							</a>
+						))}
 					</div>
 				</div>
-			</footer>
-		</>
+			</div>
+
+			<div className="mx-auto max-w-7xl">
+				<ul className="flex justify-start gap-8 px-2 mt-4 text-sm text-center text-gray-400">
+					<li>
+						<a href="#" className="hover:text-white">
+							Privacy Policy
+						</a>
+					</li>
+					<li>
+						<a href="#" className="hover:text-white">
+							Accessibility
+						</a>
+					</li>
+					<li>
+						<a href="#" className="hover:text-white">
+							&copy; Copyright 2022
+						</a>
+					</li>
+				</ul>
+			</div>
+		</footer>
 	);
 }

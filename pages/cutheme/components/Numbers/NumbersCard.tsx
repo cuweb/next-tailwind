@@ -5,9 +5,9 @@ const styles = {
 
 export default function NumberCard() {
 	return (
-		<div className="relative flex flex-col gap-2 px-6 py-5 border rounded-lg shadow-lg border-cu-black-100">
+		<dl className="relative flex flex-col gap-2 px-6 py-5 border rounded-lg shadow-lg border-cu-black-100">
 			<dt className={styles.dt}>Carleton Alumni</dt>
 			<dd className={styles.dd}>177,000+</dd>
-		</div>
+		</dl>
 	);
 }
