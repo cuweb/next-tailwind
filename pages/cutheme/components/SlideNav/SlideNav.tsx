@@ -32,6 +32,35 @@ export default function SlideNav() {
 						<ul className="flex flex-col gap-4">
 							<li>
 								<Link
+									href="/cutheme/content/content-3xl"
+									onClick={() => closeMenu()}
+								>
+									Content @ 768px
+								</Link>
+							</li>
+							<li>
+								<Link
+									href="/cutheme/content/content-4xl"
+									onClick={() => closeMenu()}
+								>
+									Content @ 896px
+								</Link>
+							</li>
+							<li>
+								<Link
+									href="/cutheme/content/content-5xl"
+									onClick={() => closeMenu()}
+								>
+									Content @ 1024px
+								</Link>
+							</li>
+						</ul>
+					</div>
+
+					<div className="bg-white">
+						<ul className="flex flex-col gap-4">
+							<li>
+								<Link
 									href="/cutheme/examples/"
 									onClick={() => closeMenu()}
 								>
@@ -64,6 +93,7 @@ export default function SlideNav() {
 							</li>
 						</ul>
 					</div>
+
 					<div className="bg-cu-black-100">
 						<ul className="flex flex-col gap-4">
 							<li>
@@ -84,7 +114,6 @@ export default function SlideNav() {
 							</li>
 						</ul>
 					</div>
-					<div className="bg-white">More nav items</div>
 				</div>
 				<div className="bg-white">Extra Content</div>
 			</div>
@@ -102,42 +131,6 @@ export default function SlideNav() {
 					/>
 				</div>
 			</button>
-			{/* <nav className="m-12 overflow-y-scroll text-cu-black-800">
-				<ul className="flex flex-col gap-4">
-					<li>
-						<Link
-							href="/cutheme/examples/"
-							onClick={() => closeMenu()}
-						>
-							Content Examples
-						</Link>
-					</li>
-					<li>
-						<Link
-							href="/cutheme/examples/news"
-							onClick={() => closeMenu()}
-						>
-							News cards and listings
-						</Link>
-					</li>
-					<li>
-						<Link
-							href="/cutheme/examples/events"
-							onClick={() => closeMenu()}
-						>
-							Event cards and listings
-						</Link>
-					</li>
-					<li>
-						<Link
-							href="/cutheme/examples/people"
-							onClick={() => closeMenu()}
-						>
-							People cards and listings
-						</Link>
-					</li>
-				</ul>
-			</nav> */}
 		</div>
 	);
 }

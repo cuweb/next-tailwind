@@ -1,4 +1,5 @@
-import { Column, Container } from "rds-tailwind";
+import { Column } from "rds-tailwind";
+import NewsCard from "../News/NewsCard";
 
 export default function CuThemeContent() {
 	return (
@@ -64,6 +65,38 @@ export default function CuThemeContent() {
 				dui tempor dignissim. Facilisis auctor venenatis varius nunc,
 				congue erat ac. Cras fermentum convallis quam.
 			</p>
+
+			<Column cols="2" maxWidth="3xl">
+				<NewsCard />
+				<NewsCard />
+			</Column>
+
+			<p>
+				Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget
+				risus enim. Mattis mauris semper sed amet vitae sed turpis id.
+				Id dolor praesent donec est. Odio penatibus risus viverra tellus
+				varius sit neque erat velit.
+			</p>
+
+			<Column cols="3" maxWidth="5xl">
+				<NewsCard />
+				<NewsCard />
+				<NewsCard />
+			</Column>
+
+			<p>
+				Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget
+				risus enim. Mattis mauris semper sed amet vitae sed turpis id.
+				Id dolor praesent donec est. Odio penatibus risus viverra tellus
+				varius sit neque erat velit.
+			</p>
+
+			<Column cols="4" maxWidth="7xl">
+				<NewsCard />
+				<NewsCard />
+				<NewsCard />
+				<NewsCard />
+			</Column>
 
 			<p>
 				Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget
