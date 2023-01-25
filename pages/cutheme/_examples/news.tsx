@@ -3,7 +3,7 @@ import Head from "next/head";
 import { Banner, Column, Panel, StackedList } from "rds-tailwind";
 import FooterSimple from "../_components/FooterSimple/FooterSimple";
 import NewsCard from "../_components/News/NewsCard";
-import NewsListItem from "../_components/News/NewsListItem";
+import NewsListItemOld from "../_components/News/NewsListItem.Old";
 import CuThemeNav from "../_components/TopNav/TopNav";
 
 const CuTheme: NextPage = () => {
@@ -18,7 +18,7 @@ const CuTheme: NextPage = () => {
 			<Banner title="cutheme news blocks" isType="dark-wave" />
 
 			<main className="mx-10">
-				<section className="prose-cutheme cutheme-spacing prose max-w-none lg:prose-lg">
+				<section className="prose prose-cutheme cutheme-spacing max-w-none lg:prose-lg">
 					<p>
 						Quis semper vulputate aliquam venenatis egestas sagittis
 						quisque orci. Donec commodo sit viverra aliquam
@@ -158,9 +158,9 @@ const CuTheme: NextPage = () => {
 
 					<Panel hasShadow>
 						<StackedList hasDividers>
-							<NewsListItem />
-							<NewsListItem />
-							<NewsListItem />
+							<NewsListItemOld />
+							<NewsListItemOld />
+							<NewsListItemOld />
 						</StackedList>
 					</Panel>
 
@@ -185,9 +185,9 @@ const CuTheme: NextPage = () => {
 
 					<Panel hasBorder>
 						<StackedList hasDividers>
-							<NewsListItem />
-							<NewsListItem />
-							<NewsListItem />
+							<NewsListItemOld />
+							<NewsListItemOld />
+							<NewsListItemOld />
 						</StackedList>
 					</Panel>
 
