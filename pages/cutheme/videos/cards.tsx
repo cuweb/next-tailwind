@@ -14,7 +14,7 @@ const CuTheme: NextPage = () => {
 			</Head>
 
 			<CuThemeNav />
-			<Banner title="videos @ 5xl (1024px)" />
+			<Banner title="Video Card Grid Layouts" />
 
 			<main className="mx-10">
 				<section className="prose prose-lg prose-cutheme cu-temp-5xl cutheme-spacing cutheme-spacing--5xl max-w-none md:prose-xl">

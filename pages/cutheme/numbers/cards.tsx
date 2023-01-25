@@ -14,7 +14,7 @@ const CuTheme: NextPage = () => {
 			</Head>
 
 			<CuThemeNav />
-			<Banner title="numbers @ 5xl (1024px)" />
+			<Banner title="Number Card Grid Layouts" />
 
 			<main className="mx-10">
 				<section className="prose prose-lg cu-temp-5xl prose-cutheme cutheme-spacing cutheme-spacing--5xl max-w-none md:prose-xl">
