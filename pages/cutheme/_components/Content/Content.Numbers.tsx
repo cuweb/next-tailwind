@@ -1,3 +1,4 @@
+import NumberCardCenter from "../Numbers/NumberCardCenter";
 import NumberCard from "../Numbers/NumbersCard";
 
 export default function ContentEvents() {
@@ -71,6 +72,24 @@ export default function ContentEvents() {
 			</div>
 
 			<p>
+				Purus morbi dignissim senectus mattis <a href="#">adipiscing</a>
+				. Amet, massa quam varius orci dapibus volutpat cras. In amet eu
+				ridiculus leo sodales cursus tristique. Tincidunt sed tempus ut
+				viverra ridiculus non molestie. Gravida quis fringilla amet eget
+				dui tempor dignissim. Facilisis auctor venenatis varius nunc,
+				congue erat ac. Cras fermentum convallis quam. Faucibus commodo
+				massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis
+				mauris semper sed amet vitae sed turpis id. Id dolor praesent
+				donec est. Odio penatibus risus viverra tellus varius sit neque
+				erat velit.
+			</p>
+
+			<div className="mx-auto grid grid-cols-1 gap-8 md:grid-cols-2 [&:last-child]:mb-0 [&+.cu-column]:mt-8 ">
+				<NumberCardCenter />
+				<NumberCardCenter />
+			</div>
+
+			<p>
 				Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget
 				risus enim. Mattis mauris semper sed amet vitae sed turpis id.
 				Id dolor praesent donec est. Odio penatibus risus viverra tellus
@@ -98,6 +117,25 @@ export default function ContentEvents() {
 			</div>
 
 			<p>
+				Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget
+				risus enim. Mattis mauris semper sed amet vitae sed turpis id.
+				Id dolor praesent donec est. Odio penatibus risus viverra tellus
+				varius sit neque erat velit. Phasellus et lectus elementum,
+				dictum odio quis, euismod augue. Nulla ultricies orci eu
+				volutpat mollis. Aenean mauris leo, congue id laoreet vitae,
+				bibendum at dui. Proin ac aliquet enim, a ullamcorper tortor. Ut
+				mattis, ante id porttitor elementum, lorem mauris rutrum enim,
+				ut tristique est est at turpis. Nam hendrerit luctus ex, ac
+				rhoncus mauris pretium varius.
+			</p>
+
+			<div className="mx-auto grid grid-cols-1 gap-8 md:grid-cols-3 [&:last-child]:mb-0 [&+.cu-column]:mt-8 ">
+				<NumberCardCenter />
+				<NumberCardCenter />
+				<NumberCardCenter />
+			</div>
+
+			<p>
 				Phasellus et lectus elementum, dictum odio quis, euismod augue.
 				Nulla ultricies orci eu volutpat mollis. Aenean mauris leo,
 				congue id laoreet vitae, bibendum at dui. Proin ac aliquet enim,
@@ -122,6 +160,34 @@ export default function ContentEvents() {
 				<NumberCard />
 				<NumberCard />
 				<NumberCard />
+			</div>
+
+			<p>
+				Phasellus et lectus elementum, dictum odio quis, euismod augue.
+				Nulla ultricies orci eu volutpat mollis. Aenean mauris leo,
+				congue id laoreet vitae, bibendum at dui. Proin ac aliquet enim,
+				a ullamcorper tortor. Ut mattis, ante id porttitor elementum,
+				lorem mauris rutrum enim, ut tristique est est at turpis. Nam
+				hendrerit luctus ex, ac rhoncus mauris pretium varius. Phasellus
+				dignissim sodales feugiat. Curabitur quam leo, aliquet nec risus
+				quis, porta vestibulum erat.
+			</p>
+
+			<p>
+				Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget
+				risus enim. Mattis mauris semper sed amet vitae sed turpis id.
+				Id dolor praesent donec est. Odio penatibus risus viverra tellus
+				varius sit neque erat velit. Faucibus commodo massa rhoncus,
+				volutpat. Dignissim sed eget risus enim. Mattis mauris semper
+				sed amet vitae sed turpis id. Id dolor praesent donec est. Odio
+				penatibus risus viverra tellus varius sit neque erat velit.
+			</p>
+
+			<div className="cu-column mx-auto grid max-w-7xl grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4 [&:last-child]:mb-0 [&+.cu-column]:mt-8 ">
+				<NumberCardCenter />
+				<NumberCardCenter />
+				<NumberCardCenter />
+				<NumberCardCenter />
 			</div>
 
 			<p>
