@@ -11,12 +11,19 @@
 	@apply mt-6;
 }
 
+/*  */
+/*  */
 /* Things to add to cutheme */
+
+:not(.cu-column) + .cu-column {
+	@apply my-10;
+}
 
 .cutheme-spacing > .cu-container {
 	@apply -mx-10;
 }
 
+/* .cutheme-spacing--3xl > :not(.cu-container):not(.cu-column) { */
 .cutheme-spacing--3xl > :not(.cu-container):not(.cu-column) {
 	@apply max-w-3xl mx-auto;
 }
@@ -44,7 +51,6 @@
 	gutenbergFirst: `first:[&>:not(.cu-container):not(.cu-column)]:mt-12`,
 	gutenbergLast: `last:[&>:not(.cu-container):not(.cu-column)]:mb-16`,
 };
-
 export const gutenStyles = `${gutenStyleGroups.gutenbergSpacing} ${gutenStyleGroups.gutenbergWidth} ${gutenStyleGroups.gutenbergFirst} ${gutenStyleGroups.gutenbergLast}`; */
 
 @tailwind components;
