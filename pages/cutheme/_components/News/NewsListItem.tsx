@@ -30,7 +30,8 @@ export default function NewsListItem() {
 					<p className="@lg:md:text-lg text-sm text-cu-black-900 md:text-base">
 						Tenetur libero voluptatem rerum occaecati qui est
 						molestiae exercitationem. Voluptate quisquam iure
-						assumenda consequatur ex et recusandae...{" "}
+						assumenda consequatur ex et recusandae dignissim sodales
+						feugiat...{" "}
 						<span className="font-semibold text-cu-red group-hover:text-cyan-700">
 							Read more
 						</span>
