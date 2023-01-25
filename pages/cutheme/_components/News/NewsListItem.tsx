@@ -12,7 +12,7 @@ export default function NewsListItem() {
 				href="https://carleton.ca"
 				className="@container group relative flex cursor-pointer gap-4 p-6 hover:bg-cu-black-50 focus:outline-none md:gap-8"
 			>
-				<div className="@lg:block hidden max-w-[30%] flex-none">
+				<div className="@lg:md:block hidden max-w-[30%] flex-none">
 					<img
 						className="object-cover w-full rounded-md"
 						src="https://source.unsplash.com/random/400x300"
