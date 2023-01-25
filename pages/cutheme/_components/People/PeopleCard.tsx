@@ -2,7 +2,7 @@ import { HeroIcon } from "rds-tailwind";
 
 export default function PeopleCard() {
 	return (
-		<div className="relative overflow-hidden duration-300 ease-in bg-white rounded-lg shadow-lg not-prose group hover:scale-105">
+		<div className="relative overflow-hidden duration-300 ease-in bg-white rounded-lg shadow-lg not-prose group hover:scale-105 md:max-w-lg">
 			<a href="https://carleton.ca" className="cursor-pointer">
 				<img
 					className="object-cover w-40 h-40 mx-auto my-8 border-4 border-white rounded-full shadow-lg"

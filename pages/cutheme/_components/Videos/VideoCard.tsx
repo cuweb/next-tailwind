@@ -2,7 +2,7 @@ import { HeroIcon } from "rds-tailwind";
 
 export default function VideoCard() {
 	return (
-		<div className="relative flex flex-col overflow-hidden duration-300 ease-in bg-white rounded-lg shadow-lg not-prose group hover:scale-105">
+		<div className="relative flex flex-col overflow-hidden duration-300 ease-in bg-white rounded-lg shadow-lg not-prose group hover:scale-105 md:max-w-lg">
 			<a href="https://carleton.ca" className="cursor-pointer">
 				<div className="relative">
 					<img
