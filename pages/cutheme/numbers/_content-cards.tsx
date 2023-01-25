@@ -1,8 +1,8 @@
 import { Column, Container } from "rds-tailwind";
-import NumberCardCenter from "../Numbers/NumberCardCenter";
-import NumberCard from "../Numbers/NumbersCard";
+import NumberCardCenter from "../_components/Numbers/NumberCardCenter";
+import NumberCard from "../_components/Numbers/NumbersCard";
 
-export default function ContentNumbers() {
+export default function NumbersCardContent() {
 	return (
 		<>
 			<h2>H2 Heading</h2>
@@ -28,7 +28,7 @@ export default function ContentNumbers() {
 				dui tempor dignissim. Facilisis auctor venenatis varius nunc,
 				congue erat ac. Cras fermentum convallis quam.
 			</p>
-			<Column cols="2" maxWidth="4xl">
+			<Column cols="2">
 				<NumberCard />
 				<NumberCard />
 				<NumberCard />
@@ -55,7 +55,7 @@ export default function ContentNumbers() {
 				dui tempor dignissim. Facilisis auctor venenatis varius nunc,
 				congue erat ac. Cras fermentum convallis quam.
 			</p>
-			<Column cols="2" maxWidth="4xl">
+			<Column cols="2">
 				<NumberCardCenter />
 				<NumberCardCenter />
 				<NumberCardCenter />
@@ -90,7 +90,7 @@ export default function ContentNumbers() {
 				dui tempor dignissim. Facilisis auctor venenatis varius nunc,
 				congue erat ac. Cras fermentum convallis quam.
 			</p>
-			<Column cols="3" maxWidth="5xl">
+			<Column cols="3">
 				<NumberCard />
 				<NumberCard />
 				<NumberCard />
@@ -109,23 +109,6 @@ export default function ContentNumbers() {
 				mattis, ante id porttitor elementum, lorem mauris rutrum enim,
 				ut tristique est est at turpis.
 			</p>
-			<h3>3 col left breaking outside a max width below 1024</h3>
-			<p>
-				Purus morbi dignissim senectus mattis <a href="#">adipiscing</a>
-				. Amet, massa quam varius orci dapibus volutpat cras. In amet eu
-				ridiculus leo sodales cursus tristique. Tincidunt sed tempus ut
-				viverra ridiculus non molestie. Gravida quis fringilla amet eget
-				dui tempor dignissim. Facilisis auctor venenatis varius nunc,
-				congue erat ac. Cras fermentum convallis quam.
-			</p>
-			<Column cols="3" maxWidth="5xl">
-				<NumberCard />
-				<NumberCard />
-				<NumberCard />
-				<NumberCard />
-				<NumberCard />
-				<NumberCard />
-			</Column>
 			<p>
 				Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget
 				risus enim. Mattis mauris semper sed amet vitae sed turpis id.
@@ -147,7 +130,7 @@ export default function ContentNumbers() {
 				dui tempor dignissim. Facilisis auctor venenatis varius nunc,
 				congue erat ac. Cras fermentum convallis quam.
 			</p>
-			<Column cols="3" maxWidth="5xl">
+			<Column cols="3">
 				<NumberCardCenter />
 				<NumberCardCenter />
 				<NumberCardCenter />
@@ -166,23 +149,6 @@ export default function ContentNumbers() {
 				mattis, ante id porttitor elementum, lorem mauris rutrum enim,
 				ut tristique est est at turpis.
 			</p>
-			<h3>3 col center breaking outside a max width below 1024</h3>
-			<p>
-				Purus morbi dignissim senectus mattis <a href="#">adipiscing</a>
-				. Amet, massa quam varius orci dapibus volutpat cras. In amet eu
-				ridiculus leo sodales cursus tristique. Tincidunt sed tempus ut
-				viverra ridiculus non molestie. Gravida quis fringilla amet eget
-				dui tempor dignissim. Facilisis auctor venenatis varius nunc,
-				congue erat ac. Cras fermentum convallis quam.
-			</p>
-			<Column cols="3" maxWidth="5xl">
-				<NumberCardCenter />
-				<NumberCardCenter />
-				<NumberCardCenter />
-				<NumberCardCenter />
-				<NumberCardCenter />
-				<NumberCardCenter />
-			</Column>
 			<p>
 				Phasellus et lectus elementum, dictum odio quis, euismod augue.
 				Nulla ultricies orci eu volutpat mollis. Aenean mauris leo,
@@ -316,7 +282,6 @@ export default function ContentNumbers() {
 				Id dolor praesent donec est. Odio penatibus risus viverra tellus
 				varius sit neque erat velit.
 			</p>
-			--
 			<h3>2 col left aligned</h3>
 			<p>
 				Purus morbi dignissim senectus mattis <a href="#">adipiscing</a>
@@ -327,7 +292,7 @@ export default function ContentNumbers() {
 				congue erat ac. Cras fermentum convallis quam.
 			</p>
 			<Container bgColor="grey">
-				<Column cols="2" maxWidth="4xl">
+				<Column cols="2">
 					<NumberCard />
 					<NumberCard />
 					<NumberCard />
@@ -356,7 +321,7 @@ export default function ContentNumbers() {
 				congue erat ac. Cras fermentum convallis quam.
 			</p>
 			<Container bgColor="grey">
-				<Column cols="2" maxWidth="4xl">
+				<Column cols="2">
 					<NumberCardCenter />
 					<NumberCardCenter />
 					<NumberCardCenter />
@@ -393,7 +358,7 @@ export default function ContentNumbers() {
 				congue erat ac. Cras fermentum convallis quam.
 			</p>
 			<Container bgColor="grey">
-				<Column cols="3" maxWidth="5xl">
+				<Column cols="3">
 					<NumberCard />
 					<NumberCard />
 					<NumberCard />
@@ -413,25 +378,6 @@ export default function ContentNumbers() {
 				mattis, ante id porttitor elementum, lorem mauris rutrum enim,
 				ut tristique est est at turpis.
 			</p>
-			<h3>3 col left breaking outside a max width below 1024</h3>
-			<p>
-				Purus morbi dignissim senectus mattis <a href="#">adipiscing</a>
-				. Amet, massa quam varius orci dapibus volutpat cras. In amet eu
-				ridiculus leo sodales cursus tristique. Tincidunt sed tempus ut
-				viverra ridiculus non molestie. Gravida quis fringilla amet eget
-				dui tempor dignissim. Facilisis auctor venenatis varius nunc,
-				congue erat ac. Cras fermentum convallis quam.
-			</p>
-			<Container bgColor="grey">
-				<Column cols="3" maxWidth="5xl">
-					<NumberCard />
-					<NumberCard />
-					<NumberCard />
-					<NumberCard />
-					<NumberCard />
-					<NumberCard />
-				</Column>
-			</Container>
 			<p>
 				Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget
 				risus enim. Mattis mauris semper sed amet vitae sed turpis id.
@@ -454,7 +400,7 @@ export default function ContentNumbers() {
 				congue erat ac. Cras fermentum convallis quam.
 			</p>
 			<Container bgColor="grey">
-				<Column cols="3" maxWidth="5xl">
+				<Column cols="3">
 					<NumberCardCenter />
 					<NumberCardCenter />
 					<NumberCardCenter />
@@ -474,25 +420,6 @@ export default function ContentNumbers() {
 				mattis, ante id porttitor elementum, lorem mauris rutrum enim,
 				ut tristique est est at turpis.
 			</p>
-			<h3>3 col center breaking outside a max width below 1024</h3>
-			<p>
-				Purus morbi dignissim senectus mattis <a href="#">adipiscing</a>
-				. Amet, massa quam varius orci dapibus volutpat cras. In amet eu
-				ridiculus leo sodales cursus tristique. Tincidunt sed tempus ut
-				viverra ridiculus non molestie. Gravida quis fringilla amet eget
-				dui tempor dignissim. Facilisis auctor venenatis varius nunc,
-				congue erat ac. Cras fermentum convallis quam.
-			</p>
-			<Container bgColor="grey">
-				<Column cols="3" maxWidth="5xl">
-					<NumberCardCenter />
-					<NumberCardCenter />
-					<NumberCardCenter />
-					<NumberCardCenter />
-					<NumberCardCenter />
-					<NumberCardCenter />
-				</Column>
-			</Container>
 			<p>
 				Phasellus et lectus elementum, dictum odio quis, euismod augue.
 				Nulla ultricies orci eu volutpat mollis. Aenean mauris leo,
