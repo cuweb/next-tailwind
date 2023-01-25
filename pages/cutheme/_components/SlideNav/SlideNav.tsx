@@ -26,185 +26,131 @@ export function closeMenu() {
 export default function SlideNav() {
 	return (
 		<div className="fixed top-0 left-0 z-30 invisible w-full h-full overflow-hidden -translate-y-full cu-slidenav bg-cu-black-50 md:h-auto">
-			<div className="grid gap-16 px-4 m-12 mx-auto overflow-scroll-y max-w-7xl md:grid-cols-slidenav">
-				<div className="grid grid-flow-row grid-cols-2 gap-4 md:grid-cols-3">
-					<div className="px-5 py-4 bg-white rounded-md">
-						<ul className="flex flex-col gap-4">
-							<li>
-								<Link
-									href="/cutheme/content/content-3xl"
-									onClick={() => closeMenu()}
-								>
-									Content @ 768px
-								</Link>
-							</li>
-							<li>
-								<Link
-									href="/cutheme/content/content-4xl"
-									onClick={() => closeMenu()}
-								>
-									Content @ 896px
-								</Link>
-							</li>
-							<li>
-								<Link
-									href="/cutheme/content/content-5xl"
-									onClick={() => closeMenu()}
-								>
-									Content @ 1024px
-								</Link>
-							</li>
-						</ul>
-					</div>
-
-					<div className="px-5 py-4 bg-white rounded-md">
-						<ul className="flex flex-col gap-4">
-							<li>
-								<Link
-									href="/cutheme/news/content-3xl"
-									onClick={() => closeMenu()}
-								>
-									News @ 768px
-								</Link>
-							</li>
-							<li>
-								<Link
-									href="/cutheme/news/content-4xl"
-									onClick={() => closeMenu()}
-								>
-									News @ 896px
-								</Link>
-							</li>
-							<li>
-								<Link
-									href="/cutheme/news/content-5xl"
-									onClick={() => closeMenu()}
-								>
-									News @ 1024px
-								</Link>
-							</li>
-						</ul>
-					</div>
-
-					<div className="px-5 py-4 bg-white rounded-md">
-						<ul className="flex flex-col gap-4">
-							<li>
-								<Link
-									href="/cutheme/events/content-3xl"
-									onClick={() => closeMenu()}
-								>
-									Events @ 768px
-								</Link>
-							</li>
-							<li>
-								<Link
-									href="/cutheme/events/content-4xl"
-									onClick={() => closeMenu()}
-								>
-									Events @ 896px
-								</Link>
-							</li>
-							<li>
-								<Link
-									href="/cutheme/events/content-5xl"
-									onClick={() => closeMenu()}
-								>
-									Events @ 1024px
-								</Link>
-							</li>
-						</ul>
-					</div>
-
-					<div className="px-5 py-4 bg-white rounded-md">
-						<ul className="flex flex-col gap-4">
-							<li>
-								<Link
-									href="/cutheme/people/content-3xl"
-									onClick={() => closeMenu()}
-								>
-									People @ 768px
-								</Link>
-							</li>
-							<li>
-								<Link
-									href="/cutheme/people/content-4xl"
-									onClick={() => closeMenu()}
-								>
-									People @ 896px
-								</Link>
-							</li>
-							<li>
-								<Link
-									href="/cutheme/people/content-5xl"
-									onClick={() => closeMenu()}
-								>
-									People @ 1024px
-								</Link>
-							</li>
-						</ul>
-					</div>
-
-					<div className="px-5 py-4 bg-white rounded-md">
-						<ul className="flex flex-col gap-4">
-							<li>
-								<Link
-									href="/cutheme/videos/content-3xl"
-									onClick={() => closeMenu()}
-								>
-									Videos @ 768px
-								</Link>
-							</li>
-							<li>
-								<Link
-									href="/cutheme/videos/content-4xl"
-									onClick={() => closeMenu()}
-								>
-									Videos @ 896px
-								</Link>
-							</li>
-							<li>
-								<Link
-									href="/cutheme/videos/content-5xl"
-									onClick={() => closeMenu()}
-								>
-									Videos @ 1024px
-								</Link>
-							</li>
-						</ul>
-					</div>
-
-					<div className="px-5 py-4 bg-white rounded-md">
-						<ul className="flex flex-col gap-4">
-							<li>
-								<Link
-									href="/cutheme/numbers/content-3xl"
-									onClick={() => closeMenu()}
-								>
-									Numbers @ 768px
-								</Link>
-							</li>
-							<li>
-								<Link
-									href="/cutheme/numbers/content-4xl"
-									onClick={() => closeMenu()}
-								>
-									Numbers @ 896px
-								</Link>
-							</li>
-							<li>
-								<Link
-									href="/cutheme/numbers/content-5xl"
-									onClick={() => closeMenu()}
-								>
-									Numbers @ 1024px
-								</Link>
-							</li>
-						</ul>
-					</div>
+			<div className="grid max-w-5xl grid-flow-row grid-cols-2 gap-8 py-12 mx-auto md:grid-cols-3">
+				<div className="px-5 py-4 bg-white rounded-md">
+					<h3 className="pb-2 mb-3 text-lg font-semibold border-b border-cu-black-200">
+						News Blocks
+					</h3>
+					<ul className="flex flex-col gap-2">
+						<li>
+							<Link
+								className="text-cu-black-600 hover:text-cu-red"
+								href="/cutheme/news/cards"
+								onClick={() => closeMenu()}
+							>
+								News Cards
+							</Link>
+						</li>
+						<li>
+							<Link
+								className="text-cu-black-600 hover:text-cu-red"
+								href="/cutheme/news/#"
+								onClick={() => closeMenu()}
+							>
+								News Listings (coming soon)
+							</Link>
+						</li>
+					</ul>
 				</div>
-
-				<div className="hidden px-5 py-4 bg-white rounded-md md:block">
-					Extra Content
+				<div className="px-5 py-4 bg-white rounded-md">
+					<h3 className="pb-2 mb-3 text-lg font-semibold border-b border-cu-black-200">
+						Event Blocks
+					</h3>
+					<ul className="flex flex-col gap-2">
+						<li>
+							<Link
+								className="text-cu-black-600 hover:text-cu-red"
+								href="/cutheme/events/cards"
+								onClick={() => closeMenu()}
+							>
+								Event Cards
+							</Link>
+						</li>
+						<li>
+							<Link
+								className="text-cu-black-600 hover:text-cu-red"
+								href="/cutheme/events/#"
+								onClick={() => closeMenu()}
+							>
+								Event Listings (coming soon)
+							</Link>
+						</li>
+					</ul>
+				</div>
+				<div className="px-5 py-4 bg-white rounded-md">
+					<h3 className="pb-2 mb-3 text-lg font-semibold border-b border-cu-black-200">
+						People Blocks
+					</h3>
+					<ul className="flex flex-col gap-2">
+						<li>
+							<Link
+								className="text-cu-black-600 hover:text-cu-red"
+								href="/cutheme/people/cards"
+								onClick={() => closeMenu()}
+							>
+								People Cards
+							</Link>
+						</li>
+						<li>
+							<Link
+								className="text-cu-black-600 hover:text-cu-red"
+								href="/cutheme/people/#"
+								onClick={() => closeMenu()}
+							>
+								People Listings (coming soon)
+							</Link>
+						</li>
+					</ul>
+				</div>
+				<div className="px-5 py-4 bg-white rounded-md">
+					<h3 className="pb-2 mb-3 text-lg font-semibold border-b border-cu-black-200">
+						Video Blocks
+					</h3>
+					<ul className="flex flex-col gap-2">
+						<li>
+							<Link
+								className="text-cu-black-600 hover:text-cu-red"
+								href="/cutheme/videos/cards"
+								onClick={() => closeMenu()}
+							>
+								Video Cards
+							</Link>
+						</li>
+						<li>
+							<Link
+								className="text-cu-black-600 hover:text-cu-red"
+								href="/cutheme/videos/#"
+								onClick={() => closeMenu()}
+							>
+								Video Listings (coming soon)
+							</Link>
+						</li>
+					</ul>
+				</div>
+				<div className="px-5 py-4 bg-white rounded-md">
+					<h3 className="pb-2 mb-3 text-lg font-semibold border-b border-cu-black-200">
+						Number Blocks
+					</h3>
+					<ul className="flex flex-col gap-2">
+						<li>
+							<Link
+								className="text-cu-black-600 hover:text-cu-red"
+								href="/cutheme/numbers/cards"
+								onClick={() => closeMenu()}
+							>
+								Number Cards
+							</Link>
+						</li>
+						<li>
+							<Link
+								className="text-cu-black-600 hover:text-cu-red"
+								href="/cutheme/numbers/#"
+								onClick={() => closeMenu()}
+							>
+								Number Listings (coming soon)
+							</Link>
+						</li>
+					</ul>
 				</div>
 			</div>
 			<button

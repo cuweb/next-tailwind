@@ -1,7 +1,7 @@
 import { Column, Container } from "rds-tailwind";
-import NewsCard from "../News/NewsCard";
+import NewsCard from "../_components/News/NewsCard";
 
-export default function ContentNews() {
+export default function NewsCardContent() {
 	return (
 		<>
 			<h2>H2 Heading</h2>
@@ -27,7 +27,7 @@ export default function ContentNews() {
 				dui tempor dignissim. Facilisis auctor venenatis varius nunc,
 				congue erat ac. Cras fermentum convallis quam.
 			</p>
-			<Column cols="2" maxWidth="4xl">
+			<Column cols="2">
 				<NewsCard />
 				<NewsCard />
 				<NewsCard />
@@ -67,7 +67,7 @@ export default function ContentNews() {
 				dui tempor dignissim. Facilisis auctor venenatis varius nunc,
 				congue erat ac. Cras fermentum convallis quam.
 			</p>
-			<Column cols="3" maxWidth="4xl">
+			<Column cols="3">
 				<NewsCard />
 				<NewsCard />
 				<NewsCard />
@@ -86,23 +86,6 @@ export default function ContentNews() {
 				mattis, ante id porttitor elementum, lorem mauris rutrum enim,
 				ut tristique est est at turpis.
 			</p>
-			<h3>3 col breaking outside a max width below 1024</h3>
-			<p>
-				Purus morbi dignissim senectus mattis <a href="#">adipiscing</a>
-				. Amet, massa quam varius orci dapibus volutpat cras. In amet eu
-				ridiculus leo sodales cursus tristique. Tincidunt sed tempus ut
-				viverra ridiculus non molestie. Gravida quis fringilla amet eget
-				dui tempor dignissim. Facilisis auctor venenatis varius nunc,
-				congue erat ac. Cras fermentum convallis quam.
-			</p>
-			<Column cols="3" maxWidth="5xl">
-				<NewsCard />
-				<NewsCard />
-				<NewsCard />
-				<NewsCard />
-				<NewsCard />
-				<NewsCard />
-			</Column>
 			<p>
 				Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget
 				risus enim. Mattis mauris semper sed amet vitae sed turpis id.
@@ -187,7 +170,7 @@ export default function ContentNews() {
 				congue erat ac. Cras fermentum convallis quam.
 			</p>
 			<Container bgColor="grey">
-				<Column cols="2" maxWidth="4xl">
+				<Column cols="2">
 					<NewsCard />
 					<NewsCard />
 					<NewsCard />
@@ -229,7 +212,7 @@ export default function ContentNews() {
 				congue erat ac. Cras fermentum convallis quam.
 			</p>
 			<Container bgColor="grey">
-				<Column cols="3" maxWidth="4xl">
+				<Column cols="3">
 					<NewsCard />
 					<NewsCard />
 					<NewsCard />
@@ -249,25 +232,6 @@ export default function ContentNews() {
 				mattis, ante id porttitor elementum, lorem mauris rutrum enim,
 				ut tristique est est at turpis.
 			</p>
-			<h3>3 col breaking outside a max width below 1024</h3>
-			<p>
-				Purus morbi dignissim senectus mattis <a href="#">adipiscing</a>
-				. Amet, massa quam varius orci dapibus volutpat cras. In amet eu
-				ridiculus leo sodales cursus tristique. Tincidunt sed tempus ut
-				viverra ridiculus non molestie. Gravida quis fringilla amet eget
-				dui tempor dignissim. Facilisis auctor venenatis varius nunc,
-				congue erat ac. Cras fermentum convallis quam.
-			</p>
-			<Container bgColor="grey">
-				<Column cols="3" maxWidth="5xl">
-					<NewsCard />
-					<NewsCard />
-					<NewsCard />
-					<NewsCard />
-					<NewsCard />
-					<NewsCard />
-				</Column>
-			</Container>
 			<p>
 				Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget
 				risus enim. Mattis mauris semper sed amet vitae sed turpis id.
