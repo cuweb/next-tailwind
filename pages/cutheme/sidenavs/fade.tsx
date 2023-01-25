@@ -1,9 +1,9 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import { TopNav, FooterStandard, Banner } from "rds-tailwind";
-import CuThemeContent from "../components-old/Content/Content";
-import FocusNav from "../components-old/FocusNav/FocusNav";
-import SideNavFade from "../components-old/SideNav/SideNavFade";
+import { Banner, FooterStandard, TopNav } from "rds-tailwind";
+import CuThemeContent from "../_components.old/Content/Content";
+import FocusNav from "../_components.old/FocusNav/FocusNav";
+import SideNavFade from "../_components.old/SideNav/SideNavFade";
 
 const CuTheme: NextPage = () => {
 	return (
@@ -31,7 +31,7 @@ const CuTheme: NextPage = () => {
 					<SideNavFade />
 
 					<section className="py-14">
-						<article className="prose prose-cutheme max-w-none lg:prose-lg">
+						<article className="prose-cutheme prose max-w-none lg:prose-lg">
 							<CuThemeContent />
 						</article>
 					</section>

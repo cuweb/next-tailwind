@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import { Banner } from "rds-tailwind";
-import Content from "../_components/Content/Content";
+import CuThemeContent from "../_components/Content/Content";
 import FooterSimple from "../_components/FooterSimple/FooterSimple";
 import CuThemeNav from "../_components/TopNav/TopNav";
 
@@ -14,11 +14,11 @@ const CuTheme: NextPage = () => {
 			</Head>
 
 			<CuThemeNav />
-			<Banner title="content @ 5xl (1024px)" />
+			<Banner title="cutheme prototypes" />
 
 			<main className="mx-10">
-				<section className="prose-cutheme cutheme-spacing cutheme-spacing--5xl prose prose-lg max-w-none md:prose-xl">
-					<Content />
+				<section className="prose-cutheme cutheme-spacing prose max-w-none lg:prose-lg">
+					<CuThemeContent />
 				</section>
 			</main>
 

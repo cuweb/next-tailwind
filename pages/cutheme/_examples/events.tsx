@@ -1,10 +1,10 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import { Banner, Column, Panel, StackedList } from "rds-tailwind";
-import CuThemeNav from "../components/TopNav/TopNav";
-import EventCard from "../components/Events/EventCard";
-import EventListItem from "../components/Events/EventListItem";
-import FooterSimple from "../components/FooterSimple/FooterSimple";
+import EventCard from "../_components/Events/EventCard";
+import EventListItem from "../_components/Events/EventListItem";
+import FooterSimple from "../_components/FooterSimple/FooterSimple";
+import CuThemeNav from "../_components/TopNav/TopNav";
 
 const CuTheme: NextPage = () => {
 	return (
@@ -18,7 +18,7 @@ const CuTheme: NextPage = () => {
 			<Banner title="cutheme events blocks" isType="animated" />
 
 			<main className="mx-10">
-				<section className="prose prose-cutheme cutheme-spacing max-w-none lg:prose-lg">
+				<section className="prose-cutheme cutheme-spacing prose max-w-none lg:prose-lg">
 					<p>
 						Quis semper vulputate aliquam venenatis egestas sagittis
 						quisque orci. Donec commodo sit viverra aliquam
