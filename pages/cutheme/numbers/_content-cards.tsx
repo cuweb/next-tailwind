@@ -13,6 +13,24 @@ export default function NumbersCardContent() {
 				justo, amet, mattis. Nunc purus, diam commodo tincidunt turpis.
 				Amet, duis sed elit interdum dignissim.
 			</p>
+			<h3>Decisions to be considered/made for Gutenberg options</h3>
+			<ul>
+				<li>
+					Are we including options to use 2, 3 and 4 columns? If not,
+					which of the three options do we feel is suitable for this
+					block?
+				</li>
+				<li>
+					If we are using the 4 column option are we using a max width
+					of 6xl or 7xl?
+				</li>
+				<li>What colour options to we want to make available?</li>
+				<li>
+					Are we going to provide a border colour options that is
+					applied consistently to all cards withing a grid layout, or
+					allow for changing colour on a card by card basis?
+				</li>
+			</ul>
 			<p>
 				Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget
 				risus enim. Mattis mauris semper sed amet vitae sed turpis id.

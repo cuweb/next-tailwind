@@ -12,6 +12,18 @@ export default function EventCardContent() {
 				justo, amet, mattis. Nunc purus, diam commodo tincidunt turpis.
 				Amet, duis sed elit interdum dignissim.
 			</p>
+			<h3>Decisions to be considered/made for Gutenberg options</h3>
+			<ul>
+				<li>
+					Are we including options to use 2, 3 and 4 columns? If not,
+					which of the three options do we feel is suitable for this
+					block?
+				</li>
+				<li>
+					If we are using the 4 column option are we using a max width
+					of 6xl or 7xl?
+				</li>
+			</ul>
 			<p>
 				Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget
 				risus enim. Mattis mauris semper sed amet vitae sed turpis id.

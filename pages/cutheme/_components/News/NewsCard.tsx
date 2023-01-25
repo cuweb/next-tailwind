@@ -16,14 +16,16 @@ export default function NewsCard() {
 
 				<div className="flex flex-col py-6 space-y-3 px-7">
 					<p className="flex items-start text-sm italic text-cu-black-600">
-						November 3 - 7
+						November 3, 2022
 					</p>
 					<h3 className="text-xl font-semibold duration-300 ease-in text-cu-black group-hover:text-cu-red">
-						Et ut deserunt ipsum minus.
+						End-of-Year Reflections and Resolutions for Our Web
+						Services Team
 					</h3>
 					<p className="flex items-start text-base text-cu-black-600">
-						Faucibus commodo massa rhoncus, volutpat. Dignissim sed
-						eget risus enim. Mattis mauris semper sed amet vitae...
+						Quis semper vulputate aliquam venenatis egestas sagittis
+						quisque orci. Donec commodo sit viverra aliquam
+						porttitor ultrices gravida...
 					</p>
 					<div className="mt-4">
 						<p className="inline-flex px-2 mr-2 text-xs font-semibold rounded-xl bg-cu-black-50 text-cu-black-900 last:mr-0">
