@@ -1,10 +1,9 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import { TopNav, FooterStandard, Banner } from "rds-tailwind";
-import SideNavLight from "../components-old/SideNav/SideNavLight";
-import CardGridEvents from "../components-old/Events/Grid";
-import ListItemsEvents from "../components-old/Events/Listing";
-import FocusNav from "../components-old/FocusNav/FocusNav";
+import { Banner, FooterStandard, TopNav } from "rds-tailwind";
+import FocusNav from "../_components.old/FocusNav/FocusNav";
+import CardGridNumber from "../_components.old/Numbers/Grid";
+import SideNavLight from "../_components.old/SideNav/SideNavLight";
 
 const CuTheme: NextPage = () => {
 	return (
@@ -22,9 +21,9 @@ const CuTheme: NextPage = () => {
 			/>
 
 			<Banner
-				align="horizontal"
-				isType="animated"
-				title="Event Card Grid and Listing Blocks"
+				// align="horizontal"
+				isType="red-wave"
+				title="Number Card Grid Blocks"
 			/>
 
 			<main className="px-8">
@@ -42,11 +41,7 @@ const CuTheme: NextPage = () => {
 								turpis. Amet, duis sed elit interdum dignissim.
 							</p>
 
-							<CardGridEvents />
-
-							<h2>Event Listing</h2>
-
-							<ListItemsEvents />
+							<CardGridNumber />
 
 							<p>
 								Maecenas pellentesque id sed tellus mauris,

@@ -1,10 +1,10 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import { Banner, Column, Panel, StackedList } from "rds-tailwind";
-import CuThemeNav from "../components/TopNav/TopNav";
-import NewsCard from "../components/News/NewsCard";
-import NewsListItem from "../components/News/NewsListItem";
-import FooterSimple from "../components/FooterSimple/FooterSimple";
+import FooterSimple from "../_components/FooterSimple/FooterSimple";
+import PeopleCard from "../_components/People/PeopleCard";
+import PeopleListItem from "../_components/People/PeopleListItem";
+import CuThemeNav from "../_components/TopNav/TopNav";
 
 const CuTheme: NextPage = () => {
 	return (
@@ -15,10 +15,10 @@ const CuTheme: NextPage = () => {
 			</Head>
 
 			<CuThemeNav />
-			<Banner title="cutheme news blocks" isType="dark-wave" />
+			<Banner title="cutheme people blocks" isType="red-wave" />
 
 			<main className="mx-10">
-				<section className="prose prose-cutheme cutheme-spacing max-w-none lg:prose-lg">
+				<section className="prose-cutheme cutheme-spacing prose max-w-none lg:prose-lg">
 					<p>
 						Quis semper vulputate aliquam venenatis egestas sagittis
 						quisque orci. Donec commodo sit viverra aliquam
@@ -43,8 +43,8 @@ const CuTheme: NextPage = () => {
 					</p>
 
 					<Column cols="2" maxWidth="3xl">
-						<NewsCard />
-						<NewsCard />
+						<PeopleCard />
+						<PeopleCard />
 					</Column>
 
 					<p>
@@ -67,9 +67,9 @@ const CuTheme: NextPage = () => {
 					</p>
 
 					<Column cols="3" maxWidth="5xl">
-						<NewsCard />
-						<NewsCard />
-						<NewsCard />
+						<PeopleCard />
+						<PeopleCard />
+						<PeopleCard />
 					</Column>
 
 					<p>
@@ -102,10 +102,10 @@ const CuTheme: NextPage = () => {
 					</p>
 
 					<Column cols="4">
-						<NewsCard />
-						<NewsCard />
-						<NewsCard />
-						<NewsCard />
+						<PeopleCard />
+						<PeopleCard />
+						<PeopleCard />
+						<PeopleCard />
 					</Column>
 
 					<p>
@@ -158,9 +158,9 @@ const CuTheme: NextPage = () => {
 
 					<Panel hasShadow>
 						<StackedList hasDividers>
-							<NewsListItem />
-							<NewsListItem />
-							<NewsListItem />
+							<PeopleListItem />
+							<PeopleListItem />
+							<PeopleListItem />
 						</StackedList>
 					</Panel>
 
@@ -185,9 +185,9 @@ const CuTheme: NextPage = () => {
 
 					<Panel hasBorder>
 						<StackedList hasDividers>
-							<NewsListItem />
-							<NewsListItem />
-							<NewsListItem />
+							<PeopleListItem />
+							<PeopleListItem />
+							<PeopleListItem />
 						</StackedList>
 					</Panel>
 

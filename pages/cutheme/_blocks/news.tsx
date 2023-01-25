@@ -1,10 +1,10 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import { TopNav, FooterStandard, Banner } from "rds-tailwind";
-import SideNavLight from "../components-old/SideNav/SideNavLight";
-import CardGridNews from "../components-old/News/Grid";
-import ListItemsNews from "../components-old/News/Listing";
-import FocusNav from "../components-old/FocusNav/FocusNav";
+import { Banner, FooterStandard, TopNav } from "rds-tailwind";
+import FocusNav from "../_components.old/FocusNav/FocusNav";
+import CardGridNews from "../_components.old/News/Grid";
+import ListItemsNews from "../_components.old/News/Listing";
+import SideNavLight from "../_components.old/SideNav/SideNavLight";
 
 const CuTheme: NextPage = () => {
 	return (
