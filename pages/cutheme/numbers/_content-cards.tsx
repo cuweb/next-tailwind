@@ -37,6 +37,37 @@ export default function NumbersCardContent() {
 				Id dolor praesent donec est. Odio penatibus risus viverra tellus
 				varius sit neque erat velit.
 			</p>
+			<h3>Single card</h3>
+			<p>
+				Purus morbi dignissim senectus mattis <a href="#">adipiscing</a>
+				. Amet, massa quam varius orci dapibus volutpat cras. In amet eu
+				ridiculus leo sodales cursus tristique. Tincidunt sed tempus ut
+				viverra ridiculus non molestie. Gravida quis fringilla amet eget
+				dui tempor dignissim. Facilisis auctor venenatis varius nunc,
+				congue erat ac. Cras fermentum convallis quam.
+			</p>
+			<Column>
+				<NumberCard />
+			</Column>
+			<p>
+				Purus morbi dignissim senectus mattis <a href="#">adipiscing</a>
+				. Amet, massa quam varius orci dapibus volutpat cras. In amet eu
+				ridiculus leo sodales cursus tristique. Tincidunt sed tempus ut
+				viverra ridiculus non molestie. Gravida quis fringilla amet eget
+				dui tempor dignissim. Facilisis auctor venenatis varius nunc,
+				congue erat ac. Cras fermentum convallis quam.
+			</p>
+			<Column>
+				<NumberCardCenter />
+			</Column>
+			<p>
+				Purus morbi dignissim senectus mattis <a href="#">adipiscing</a>
+				. Amet, massa quam varius orci dapibus volutpat cras. In amet eu
+				ridiculus leo sodales cursus tristique. Tincidunt sed tempus ut
+				viverra ridiculus non molestie. Gravida quis fringilla amet eget
+				dui tempor dignissim. Facilisis auctor venenatis varius nunc,
+				congue erat ac. Cras fermentum convallis quam.
+			</p>
 			<h3>2 col left aligned</h3>
 			<p>
 				Purus morbi dignissim senectus mattis <a href="#">adipiscing</a>
@@ -299,6 +330,41 @@ export default function NumbersCardContent() {
 				risus enim. Mattis mauris semper sed amet vitae sed turpis id.
 				Id dolor praesent donec est. Odio penatibus risus viverra tellus
 				varius sit neque erat velit.
+			</p>
+			<h3>Single card</h3>
+			<p>
+				Purus morbi dignissim senectus mattis <a href="#">adipiscing</a>
+				. Amet, massa quam varius orci dapibus volutpat cras. In amet eu
+				ridiculus leo sodales cursus tristique. Tincidunt sed tempus ut
+				viverra ridiculus non molestie. Gravida quis fringilla amet eget
+				dui tempor dignissim. Facilisis auctor venenatis varius nunc,
+				congue erat ac. Cras fermentum convallis quam.
+			</p>
+			<Container bgColor="grey">
+				<Column>
+					<NumberCard />
+				</Column>
+			</Container>
+			<p>
+				Purus morbi dignissim senectus mattis <a href="#">adipiscing</a>
+				. Amet, massa quam varius orci dapibus volutpat cras. In amet eu
+				ridiculus leo sodales cursus tristique. Tincidunt sed tempus ut
+				viverra ridiculus non molestie. Gravida quis fringilla amet eget
+				dui tempor dignissim. Facilisis auctor venenatis varius nunc,
+				congue erat ac. Cras fermentum convallis quam.
+			</p>
+			<Container bgColor="grey">
+				<Column>
+					<NumberCardCenter />
+				</Column>
+			</Container>
+			<p>
+				Purus morbi dignissim senectus mattis <a href="#">adipiscing</a>
+				. Amet, massa quam varius orci dapibus volutpat cras. In amet eu
+				ridiculus leo sodales cursus tristique. Tincidunt sed tempus ut
+				viverra ridiculus non molestie. Gravida quis fringilla amet eget
+				dui tempor dignissim. Facilisis auctor venenatis varius nunc,
+				congue erat ac. Cras fermentum convallis quam.
 			</p>
 			<h3>2 col left aligned</h3>
 			<p>

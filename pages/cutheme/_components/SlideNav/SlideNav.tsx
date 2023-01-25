@@ -44,10 +44,10 @@ export default function SlideNav() {
 						<li>
 							<Link
 								className="text-cu-black-600 hover:text-cu-red"
-								href="/cutheme/news/#"
+								href="/cutheme/news/listings"
 								onClick={() => closeMenu()}
 							>
-								News Listings (coming soon)
+								News Listings
 							</Link>
 						</li>
 					</ul>

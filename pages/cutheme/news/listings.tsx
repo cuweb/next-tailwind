@@ -1,9 +1,9 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import { Banner } from "rds-tailwind";
-import CuThemeContent from "../_components/Content/Content";
 import FooterSimple from "../_components/FooterSimple/FooterSimple";
 import CuThemeNav from "../_components/TopNav/TopNav";
+import NewsListingContent from "./_content-listings";
 
 const CuTheme: NextPage = () => {
 	return (
@@ -14,11 +14,11 @@ const CuTheme: NextPage = () => {
 			</Head>
 
 			<CuThemeNav />
-			<Banner title="cutheme prototypes" />
+			<Banner title="News Listing Layouts" />
 
 			<main className="mx-10">
-				<section className="prose-cutheme cutheme-spacing prose max-w-none lg:prose-lg">
-					<CuThemeContent />
+				<section className="prose prose-lg prose-cutheme cutheme-spacing max-w-none md:prose-xl">
+					<NewsListingContent />
 				</section>
 			</main>
 
