@@ -13,7 +13,7 @@ export default function NumberCard() {
 
 	return (
 		<div
-			className={`not-prose relative flex flex-col gap-2 rounded-lg border border-l-8 border-cu-black-100 px-6 py-5 shadow-lg md:max-w-lg ${color}`}
+			className={`not-prose relative flex flex-col gap-2 rounded-lg border border-l-8 border-cu-black-100 bg-white px-6 py-5 shadow-lg md:max-w-lg ${color}`}
 		>
 			<h3 className="text-sm font-light text-cu-black-600 md:text-base">
 				Carleton Alumni

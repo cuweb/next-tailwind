@@ -44,6 +44,11 @@
 	@apply mb-16;
 }
 
+/* ONLY FOR CONTENT WIDTH DECISION MAKING, KILL THIS LATER */
+.cu-temp-5xl > .max-w-4xl {
+	@apply max-w-5xl;
+}
+
 /* const gutenStyleGroups = {
 	// gutenbergSpacing: `[&>:not(.cu-container):not(.cu-column)]:px-12`,
 	gutenbergSpacing: ``,
