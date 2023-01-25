@@ -1,4 +1,3 @@
-import { Panel } from "rds-tailwind";
 import NewsListItem from "../_components/News/NewsListItem";
 
 export default function NewsListingContent() {
@@ -13,13 +12,13 @@ export default function NewsListingContent() {
 				Amet, duis sed elit interdum dignissim.
 			</p>
 
-			<Panel hasShadow>
-				<div className="[&>*]:border-cu-cu-black-100 grid md:grid-cols-1 [&>*]:border-b last:[&>*]:border-b-0">
+			<div className="cu-panel not-prose overflow-hidden rounded-lg border border-cu-black-100 bg-white shadow-lg [&+.cu-panel]:mt-8">
+				<div className="[&>*]:border-cu-cu-black-100 grid overflow-hidden md:grid-cols-1 [&>*]:border-b last:[&>*]:border-b-0">
 					<NewsListItem />
 					<NewsListItem />
 					<NewsListItem />
 				</div>
-			</Panel>
+			</div>
 
 			<p>
 				Quis semper vulputate aliquam venenatis egestas sagittis quisque
@@ -42,14 +41,14 @@ export default function NewsListingContent() {
 				feugiat.
 			</p>
 
-			<Panel hasShadow>
-				<div className="grid md:grid-cols-2 [&>*]:border-t [&>*]:border-cu-black-100 first:[&>*]:border-t-0 odd:[&>*]:border-r [&>*:nth-child(2)]:border-t-0">
+			<div className="cu-panel not-prose overflow-hidden rounded-lg border border-cu-black-100  bg-white shadow-lg [&+.cu-panel]:mt-8">
+				<div className="grid overflow-hidden md:grid-cols-2 [&>*]:border-t [&>*]:border-cu-black-100 first:[&>*]:border-t-0 odd:[&>*]:border-r [&>*:nth-child(2)]:border-t-0">
 					<NewsListItem />
 					<NewsListItem />
 					<NewsListItem />
 					<NewsListItem />
 				</div>
-			</Panel>
+			</div>
 
 			<p>
 				Quis semper vulputate aliquam venenatis egestas sagittis quisque
