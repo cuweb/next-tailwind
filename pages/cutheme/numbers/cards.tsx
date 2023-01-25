@@ -17,7 +17,7 @@ const CuTheme: NextPage = () => {
 			<Banner title="Number Card Grid Layouts" />
 
 			<main className="mx-10">
-				<section className="prose prose-lg cu-temp-5xl prose-cutheme cutheme-spacing cutheme-spacing--5xl max-w-none md:prose-xl">
+				<section className="prose prose-lg prose-cutheme cutheme-spacing max-w-none md:prose-xl">
 					<NumbersCardContent />
 				</section>
 			</main>

@@ -7,8 +7,13 @@
 	@apply mt-8;
 } */
 
+/* NOT SURE IF THE BELOW ITEM IS NEEDED, PROSE MIGHT BE HANDLING THIS FOR CUTHEME */
 .cu-container + :not(.cu-container) {
-	@apply mt-6;
+	@apply mt-10;
+}
+
+:not(.cu-container) + .cu-container {
+	@apply mt-10;
 }
 
 /*  */
@@ -23,16 +28,7 @@
 	@apply -mx-10;
 }
 
-/* .cutheme-spacing--3xl > :not(.cu-container):not(.cu-column) { */
-.cutheme-spacing--3xl > :not(.cu-container):not(.cu-column) {
-	@apply max-w-3xl mx-auto;
-}
-
-.cutheme-spacing--4xl > :not(.cu-container):not(.cu-column) {
-	@apply max-w-4xl mx-auto;
-}
-
-.cutheme-spacing--5xl > :not(.cu-container):not(.cu-column) {
+.cutheme-spacing > :not(.cu-container):not(.cu-column) {
 	@apply max-w-5xl mx-auto;
 }
 
@@ -42,11 +38,6 @@
 
 .cutheme-spacing > :not(.cu-container):not(.cu-column):last-child {
 	@apply mb-16;
-}
-
-/* ONLY FOR CONTENT WIDTH DECISION MAKING, KILL THIS LATER */
-.cu-temp-5xl > .max-w-4xl {
-	@apply max-w-5xl;
 }
 
 /* const gutenStyleGroups = {
