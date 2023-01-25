@@ -10,7 +10,7 @@ export default function NewsListItem() {
 		<div className="relative overflow-hidden not-prose group">
 			<a
 				href="https://carleton.ca"
-				className="@container group relative flex cursor-pointer gap-4 p-6 hover:bg-cu-black-50 focus:outline-none md:gap-8"
+				className="@container group relative flex cursor-pointer gap-4 p-6 hover:bg-slate-50 focus:outline-none md:gap-8"
 			>
 				<div className="@lg:md:block hidden max-w-[30%] flex-none">
 					<img
@@ -30,7 +30,10 @@ export default function NewsListItem() {
 					<p className="@lg:md:text-lg text-sm text-cu-black-900 md:text-base">
 						Tenetur libero voluptatem rerum occaecati qui est
 						molestiae exercitationem. Voluptate quisquam iure
-						assumenda consequatur ex et recusandae.
+						assumenda consequatur ex et recusandae...{" "}
+						<span className="font-semibold text-cu-red group-hover:text-cyan-700">
+							Read more
+						</span>
 					</p>
 					<div className="mt-auto">
 						<p className="inline-flex px-2 mr-2 text-xs font-semibold rounded-xl bg-cu-black-50 text-cu-black-900 last:mr-0">
