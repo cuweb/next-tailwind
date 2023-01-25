@@ -2,7 +2,7 @@ import { HeroIcon } from "rds-tailwind";
 
 export default function VideoCard() {
 	return (
-		<div className="relative flex flex-col overflow-hidden duration-300 ease-in bg-white rounded-lg shadow-lg not-prose group hover:scale-105">
+		<div className="relative flex flex-col overflow-hidden duration-300 ease-in bg-white rounded-lg shadow-lg not-prose group hover:scale-105 md:max-w-lg">
 			<a href="https://carleton.ca" className="cursor-pointer">
 				<div className="relative">
 					<img
@@ -10,7 +10,7 @@ export default function VideoCard() {
 						src="https://source.unsplash.com/random/640x360"
 						alt=""
 					/>
-					<div className="absolute top-0 left-0 flex items-center justify-center w-full h-full duration-300 ease-in bg-cu-black-800 bg-opacity-30 group-hover:bg-opacity-80">
+					<div className="absolute top-0 left-0 flex items-center justify-center w-full h-full duration-300 ease-in group-hover:bg-cu-black-900 group-hover:bg-opacity-60">
 						<HeroIcon
 							aria-hidden
 							color="white"

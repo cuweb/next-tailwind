@@ -6,7 +6,7 @@ const styles = {
 
 export default function NewsCard() {
 	return (
-		<div className="relative flex flex-col overflow-hidden duration-300 ease-in bg-white rounded-lg shadow-lg not-prose group hover:scale-105 md:max-w-md">
+		<div className="relative flex flex-col overflow-hidden duration-300 ease-in bg-white rounded-lg shadow-lg not-prose group hover:scale-105 md:max-w-lg">
 			<a href="https://carleton.ca" className="cursor-pointer">
 				<img
 					className="object-cover w-full"

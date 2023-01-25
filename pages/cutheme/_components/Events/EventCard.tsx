@@ -1,6 +1,6 @@
 export default function EventCard() {
 	return (
-		<div className="relative flex flex-col overflow-hidden duration-300 ease-in rounded-lg shadow-lg not-prose group hover:scale-105">
+		<div className="relative flex flex-col overflow-hidden duration-300 ease-in rounded-lg shadow-lg not-prose group hover:scale-105 md:max-w-lg">
 			<a href="https://carleton.ca" className="cursor-pointer ">
 				<div className="absolute px-6 top-48">
 					<div className="flex-none w-16 md:w-20">

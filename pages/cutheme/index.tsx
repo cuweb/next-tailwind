@@ -17,7 +17,7 @@ const CuTheme: NextPage = () => {
 			<Banner title="cutheme prototypes" />
 
 			<main className="mx-10">
-				<section className="prose-cutheme cutheme-spacing cutheme-spacing--3xl prose max-w-none lg:prose-lg">
+				<section className="prose prose-cutheme cutheme-spacing cutheme-spacing--3xl max-w-none lg:prose-lg">
 					<CuThemeContent />
 				</section>
 			</main>
