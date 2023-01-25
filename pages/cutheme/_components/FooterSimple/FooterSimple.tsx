@@ -110,7 +110,7 @@ const social = {
 
 export default function FooterSimple() {
 	return (
-		<footer className="bg-cu-black-900 bg-[url('https://carleton.ca/assets/waves.svg')] bg-[length:100%] bg-bottom bg-no-repeat px-10 pb-80">
+		<footer className="hidden bg-cu-black-900 bg-[url('https://carleton.ca/assets/waves.svg')] bg-[length:100%] bg-bottom bg-no-repeat px-10 pb-80">
 			<div className="flex gap-20 px-2 pt-16 pb-8 mx-auto text-white border-b max-w-7xl border-cu-black-800">
 				<div className="flex-none">
 					<h3 className="text-base font-medium text-white">
