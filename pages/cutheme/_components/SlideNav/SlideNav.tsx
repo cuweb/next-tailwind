@@ -26,8 +26,8 @@ export function closeMenu() {
 export default function SlideNav() {
 	return (
 		<div className="fixed top-0 left-0 z-30 invisible w-full h-full overflow-hidden -translate-y-full cu-slidenav bg-cu-black-50 md:h-auto">
-			<div className="grid gap-16 m-12 mx-auto max-w-7xl grid-cols-slidenav">
-				<div className="grid grid-cols-3 gap-4">
+			<div className="grid gap-16 px-4 m-12 mx-auto overflow-scroll-y max-w-7xl md:grid-cols-slidenav">
+				<div className="grid grid-flow-row grid-cols-2 gap-4 md:grid-cols-3">
 					<div className="px-5 py-4 bg-white rounded-md">
 						<ul className="flex flex-col gap-4">
 							<li>
@@ -203,7 +203,7 @@ export default function SlideNav() {
 					</div>
 				</div>
 
-				<div className="px-5 py-4 bg-white rounded-md">
+				<div className="hidden px-5 py-4 bg-white rounded-md md:block">
 					Extra Content
 				</div>
 			</div>
