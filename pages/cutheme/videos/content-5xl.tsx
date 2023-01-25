@@ -14,10 +14,10 @@ const CuTheme: NextPage = () => {
 			</Head>
 
 			<CuThemeNav />
-			<Banner title="events @ 5xl (1024px)" />
+			<Banner title="videos @ 5xl (1024px)" />
 
 			<main className="mx-10">
-				<section className="prose-cutheme cutheme-spacing cutheme-spacing--5xl prose prose-lg max-w-none md:prose-xl">
+				<section className="prose prose-lg prose-cutheme cutheme-spacing cutheme-spacing--5xl max-w-none md:prose-xl">
 					<ContentVideos />
 				</section>
 			</main>
