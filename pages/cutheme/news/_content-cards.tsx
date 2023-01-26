@@ -4,15 +4,12 @@ import NewsCard from "../_components/News/NewsCard";
 export default function NewsCardContent() {
 	return (
 		<>
-			<h2>H2 Heading</h2>
+			<h2>Decisions and Considerations</h2>
 			<p>
-				Quis semper vulputate aliquam venenatis egestas sagittis quisque
-				orci. Donec commodo sit viverra aliquam porttitor ultrices
-				gravida eu. Tincidunt leo, elementum mattis elementum ut nisl,
-				justo, amet, mattis. Nunc purus, diam commodo tincidunt turpis.
-				Amet, duis sed elit interdum dignissim.
+				For consistency purpose, any of the following decision made for
+				RDS and/or Gutenberg options that apply to the listing view will
+				be implemented.
 			</p>
-			<h3>Decisions to be considered/made for Gutenberg options</h3>
 			<ul>
 				<li>
 					Are we including options to use 2, 3 and 4 columns? If not,
@@ -23,23 +20,20 @@ export default function NewsCardContent() {
 					If we are using the 4 column option are we using a max width
 					of 6xl or 7xl?
 				</li>
-				<li>
-					In what order should the content by as a default (eg: date,
-					title, excerpt OR title, date, excerpt)
-				</li>
+				<li>Should our default order be date above or below title?</li>
 				<li>
 					Are we going to offer content reordering for this block?
-					Note: not sure if/how we would do that in a user friendly
-					way in the editor. Requires additional research and testing
-					before confirming inclusion.
+					<ul>
+						<li>
+							<strong>Note:</strong> not sure if/how we would do
+							that in a user friendly way in the editor. Requires
+							additional research and testing before confirming
+							inclusion.
+						</li>
+					</ul>
 				</li>
 			</ul>
-			<p>
-				Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget
-				risus enim. Mattis mauris semper sed amet vitae sed turpis id.
-				Id dolor praesent donec est. Odio penatibus risus viverra tellus
-				varius sit neque erat velit.
-			</p>
+
 			<h3>Single card</h3>
 			<p>
 				Purus morbi dignissim senectus mattis <a href="#">adipiscing</a>
@@ -156,6 +150,8 @@ export default function NewsCardContent() {
 				<NewsCard />
 				<NewsCard />
 				<NewsCard />
+				<NewsCard />
+				<NewsCard />
 			</Column>
 			<p>
 				Phasellus et lectus elementum, dictum odio quis, euismod augue.
@@ -179,6 +175,8 @@ export default function NewsCardContent() {
 				quis, porta vestibulum erat.
 			</p>
 			<Column cols="4" maxWidth="7xl">
+				<NewsCard />
+				<NewsCard />
 				<NewsCard />
 				<NewsCard />
 				<NewsCard />
@@ -325,6 +323,8 @@ export default function NewsCardContent() {
 					<NewsCard />
 					<NewsCard />
 					<NewsCard />
+					<NewsCard />
+					<NewsCard />
 				</Column>
 			</Container>
 			<p>
@@ -350,6 +350,8 @@ export default function NewsCardContent() {
 			</p>
 			<Container bgColor="grey">
 				<Column cols="4" maxWidth="7xl">
+					<NewsCard />
+					<NewsCard />
 					<NewsCard />
 					<NewsCard />
 					<NewsCard />

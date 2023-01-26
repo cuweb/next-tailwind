@@ -1,28 +1,23 @@
 @tailwind base;
 
-/* Things to add to RDS */
+/*  */
+/*  */
+/* Things to add to RDS or cutheme? TBD */
 
-/* .cu-column + .cu-panel,
-.cu-panel + .cu-column {
-	@apply mt-8;
-} */
-
-/* NOT SURE IF THE BELOW ITEM IS NEEDED, PROSE MIGHT BE HANDLING THIS FOR CUTHEME */
-.cu-container + :not(.cu-container) {
-	@apply mt-10;
+.cu-container + :not(.cu-container),
+:not(.cu-container) + .cu-container,
+.cu-panel + :not(.cu-panel),
+:not(.cu-panel) + .cu-panel {
+	@apply mt-6 md:mt-10;
 }
 
-:not(.cu-container) + .cu-container {
-	@apply mt-10;
+:not(.cu-column) + .cu-column {
+	@apply my-10;
 }
 
 /*  */
 /*  */
 /* Things to add to cutheme */
-
-:not(.cu-column) + .cu-column {
-	@apply my-10;
-}
 
 .cutheme-spacing > .cu-container {
 	@apply -mx-10;
