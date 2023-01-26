@@ -18,7 +18,7 @@ export default function EventListItem() {
 						January 7, 2020
 					</p>
 					<h3 className="@lg:md:text-2xl text-lg font-semibold text-cu-black group-hover:text-cu-red md:text-xl">
-						News item title
+						Event title
 					</h3>
 					<p className="@lg:md:text-lg text-sm text-cu-black-900 md:text-base">
 						Tenetur libero voluptatem rerum occaecati qui est

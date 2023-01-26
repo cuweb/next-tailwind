@@ -362,6 +362,52 @@ export default function EventCardContent() {
 				dignissim sodales feugiat. Curabitur quam leo, aliquet nec risus
 				quis, porta vestibulum erat.
 			</p>
+
+			<Column cols="2">
+				<EventCard />
+				<EventCard />
+			</Column>
+
+			<Column cols="3">
+				<EventCard />
+				<EventCard />
+				<EventCard />
+			</Column>
+
+			<Column cols="4" maxWidth="6xl">
+				<EventCard />
+				<EventCard />
+				<EventCard />
+				<EventCard />
+			</Column>
+
+			<Column cols="4" maxWidth="7xl">
+				<EventCard />
+				<EventCard />
+				<EventCard />
+				<EventCard />
+			</Column>
+
+			<p>
+				Phasellus et lectus elementum, dictum odio quis, euismod augue.
+				Nulla ultricies orci eu volutpat mollis. Aenean mauris leo,
+				congue id laoreet vitae, bibendum at dui. Proin ac aliquet enim,
+				a ullamcorper tortor. Ut mattis, ante id porttitor elementum,
+				lorem mauris rutrum enim, ut tristique est est at turpis. Nam
+				hendrerit luctus ex, ac rhoncus mauris pretium varius. Phasellus
+				dignissim sodales feugiat. Curabitur quam leo, aliquet nec risus
+				quis, porta vestibulum erat.
+			</p>
+			<p>
+				Phasellus et lectus elementum, dictum odio quis, euismod augue.
+				Nulla ultricies orci eu volutpat mollis. Aenean mauris leo,
+				congue id laoreet vitae, bibendum at dui. Proin ac aliquet enim,
+				a ullamcorper tortor. Ut mattis, ante id porttitor elementum,
+				lorem mauris rutrum enim, ut tristique est est at turpis. Nam
+				hendrerit luctus ex, ac rhoncus mauris pretium varius. Phasellus
+				dignissim sodales feugiat. Curabitur quam leo, aliquet nec risus
+				quis, porta vestibulum erat.
+			</p>
 		</>
 	);
 }
