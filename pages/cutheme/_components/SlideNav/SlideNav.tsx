@@ -69,7 +69,7 @@ export default function SlideNav() {
 						<li>
 							<Link
 								className="text-cu-black-600 hover:text-cu-red"
-								href="/cutheme/events/#"
+								href="/cutheme/events/listings"
 								onClick={() => closeMenu()}
 							>
 								Event Listings (coming soon)
