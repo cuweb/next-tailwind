@@ -1,5 +1,6 @@
 import { Container } from "rds-tailwind";
 import EventListItem from "../_components/Events/EventListItem";
+import EventListItemBackup from "../_components/Events/EventListItem.Backup";
 
 const styles = {
 	oneColBorder: `[&>*]:border-cu-cu-black-100 [&>*]:border-b last:[&>*]:border-b-0`,
@@ -22,6 +23,13 @@ export default function EventListingContent() {
 					className={`grid overflow-hidden md:grid-cols-1 ${styles.oneColBorder}`}
 				>
 					<EventListItem />
+				</div>
+			</div>
+			<div className="cu-panel not-prose overflow-hidden rounded-lg border border-cu-black-100 bg-white shadow-lg [&+.cu-panel]:mt-8">
+				<div
+					className={`grid overflow-hidden md:grid-cols-1 ${styles.oneColBorder}`}
+				>
+					<EventListItemBackup />
 				</div>
 			</div>
 			<p>
@@ -51,6 +59,15 @@ export default function EventListingContent() {
 					<EventListItem />
 					<EventListItem />
 					<EventListItem />
+				</div>
+			</div>
+			<div className="cu-panel not-prose overflow-hidden rounded-lg border border-cu-black-100 bg-white shadow-lg [&+.cu-panel]:mt-8">
+				<div
+					className={`grid overflow-hidden md:grid-cols-1 ${styles.oneColBorder}`}
+				>
+					<EventListItemBackup />
+					<EventListItemBackup />
+					<EventListItemBackup />
 				</div>
 			</div>
 			<p>
@@ -82,6 +99,16 @@ export default function EventListingContent() {
 					<EventListItem />
 					<EventListItem />
 					<EventListItem />
+				</div>
+			</div>
+			<div className="cu-panel not-prose overflow-hidden rounded-lg border border-cu-black-100  bg-white shadow-lg [&+.cu-panel]:mt-8">
+				<div
+					className={`grid overflow-hidden md:grid-cols-2 ${styles.twoColBorder}`}
+				>
+					<EventListItemBackup />
+					<EventListItemBackup />
+					<EventListItemBackup />
+					<EventListItemBackup />
 				</div>
 			</div>
 			<p>

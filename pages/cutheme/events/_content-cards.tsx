@@ -1,5 +1,6 @@
 import { Column, Container } from "rds-tailwind";
 import EventCard from "../_components/Events/EventCard";
+import EventCardBackup from "../_components/Events/EventCard.Backup";
 
 export default function EventCardContent() {
 	return (
@@ -31,8 +32,9 @@ export default function EventCardContent() {
 				dui tempor dignissim. Facilisis auctor venenatis varius nunc,
 				congue erat ac. Cras fermentum convallis quam.
 			</p>
-			<Column>
+			<Column cols="2">
 				<EventCard />
+				<EventCardBackup />
 			</Column>
 			<p>
 				Purus morbi dignissim senectus mattis <a href="#">adipiscing</a>
