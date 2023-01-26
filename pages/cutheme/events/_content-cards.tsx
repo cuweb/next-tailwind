@@ -1,18 +1,16 @@
 import { Column, Container } from "rds-tailwind";
 import EventCard from "../_components/Events/EventCard";
+import EventCardBackup from "../_components/Events/EventCard.Backup";
 
 export default function EventCardContent() {
 	return (
 		<>
-			<h2>H2 Heading</h2>
+			<h2>Decisions and Considerations</h2>
 			<p>
-				Quis semper vulputate aliquam venenatis egestas sagittis quisque
-				orci. Donec commodo sit viverra aliquam porttitor ultrices
-				gravida eu. Tincidunt leo, elementum mattis elementum ut nisl,
-				justo, amet, mattis. Nunc purus, diam commodo tincidunt turpis.
-				Amet, duis sed elit interdum dignissim.
+				For consistency purpose, any of the following decision made for
+				RDS and/or Gutenberg options that apply to the listing view will
+				be implemented.
 			</p>
-			<h3>Decisions to be considered/made for Gutenberg options</h3>
 			<ul>
 				<li>
 					Are we including options to use 2, 3 and 4 columns? If not,
@@ -24,12 +22,7 @@ export default function EventCardContent() {
 					of 6xl or 7xl?
 				</li>
 			</ul>
-			<p>
-				Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget
-				risus enim. Mattis mauris semper sed amet vitae sed turpis id.
-				Id dolor praesent donec est. Odio penatibus risus viverra tellus
-				varius sit neque erat velit.
-			</p>
+
 			<h3>Single card</h3>
 			<p>
 				Purus morbi dignissim senectus mattis <a href="#">adipiscing</a>
@@ -39,8 +32,9 @@ export default function EventCardContent() {
 				dui tempor dignissim. Facilisis auctor venenatis varius nunc,
 				congue erat ac. Cras fermentum convallis quam.
 			</p>
-			<Column>
+			<Column cols="2">
 				<EventCard />
+				<EventCardBackup />
 			</Column>
 			<p>
 				Purus morbi dignissim senectus mattis <a href="#">adipiscing</a>

@@ -3,7 +3,7 @@ import Head from "next/head";
 import { Banner } from "rds-tailwind";
 import FooterSimple from "../_components/FooterSimple/FooterSimple";
 import CuThemeNav from "../_components/TopNav/TopNav";
-import EventCardContent from "./_content-cards";
+import EventListingContent from "./_content-listings";
 
 const CuTheme: NextPage = () => {
 	return (
@@ -14,11 +14,11 @@ const CuTheme: NextPage = () => {
 			</Head>
 
 			<CuThemeNav />
-			<Banner title="Event Card Grid Layouts" isType="animated" />
+			<Banner title="Event Listing Layouts" isType="animated" />
 
 			<main className="mx-10">
 				<section className="prose prose-lg prose-cutheme cutheme-spacing max-w-none md:prose-xl">
-					<EventCardContent />
+					<EventListingContent />
 				</section>
 			</main>
 
