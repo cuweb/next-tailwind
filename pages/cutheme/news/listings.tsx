@@ -14,7 +14,7 @@ const CuTheme: NextPage = () => {
 			</Head>
 
 			<CuThemeNav />
-			<Banner title="News Listing Layouts" />
+			<Banner title="News Listing Layouts" isType="dark-wave" />
 
 			<main className="mx-10">
 				<section className="prose prose-lg prose-cutheme cutheme-spacing max-w-none md:prose-xl">
