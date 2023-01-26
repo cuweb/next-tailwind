@@ -4,9 +4,9 @@ const styles = {
 	itemLink: `text-xs text-cu-black-300 hover:text-white`,
 };
 
-export default function PeopleCard() {
+export default function PeopleCardShadow() {
 	return (
-		<div className="not-prose group relative flex flex-col overflow-hidden duration-300 ease-in @container hover:scale-105 md:max-w-lg">
+		<div className="not-prose group relative flex flex-col overflow-hidden rounded-lg bg-white py-8 px-7 shadow-lg duration-300 ease-in @container hover:scale-105 md:max-w-lg">
 			<a
 				href="https://carleton.ca"
 				className="relative flex flex-col h-full cursor-pointer"
@@ -17,7 +17,7 @@ export default function PeopleCard() {
 					alt=""
 				/>
 
-				<div className="flex flex-col items-center space-y-0.5 py-4 px-7">
+				<div className="flex flex-col items-center space-y-0.5 py-6 px-7">
 					<h3 className="text-lg font-semibold text-cu-black duration-300 ease-in group-hover:text-cu-red @xs:md:text-2xl">
 						Carlton Banks
 					</h3>
@@ -41,7 +41,7 @@ export default function PeopleCard() {
 					</ul>
 				</div>
 
-				<div className="pb-5 mx-auto mt-auto px-7">
+				<div className="mx-auto mt-auto">
 					<p className="inline-flex px-2 mr-2 text-xs font-semibold rounded-xl bg-cu-black-50 text-cu-black-900 last:mr-0">
 						Tom Jones Love
 					</p>
