@@ -1,6 +1,7 @@
 import { Column, Container } from "rds-tailwind";
 import PeopleCard from "../_components/People/PeopleCard";
 import PeopleCardShadow from "../_components/People/PeopleCard.Shadow";
+import PeopleCardSquare from "../_components/People/PeopleCard.Square";
 
 export default function PeopleCardContent() {
 	return (
@@ -38,6 +39,9 @@ export default function PeopleCardContent() {
 			<Column cols="2">
 				<PeopleCardShadow />
 			</Column>
+			<Column cols="2">
+				<PeopleCardSquare />
+			</Column>
 			<p>
 				Purus morbi dignissim senectus mattis <a href="#">adipiscing</a>
 				. Amet, massa quam varius orci dapibus volutpat cras. In amet eu
@@ -66,6 +70,12 @@ export default function PeopleCardContent() {
 				<PeopleCardShadow />
 				<PeopleCardShadow />
 				<PeopleCardShadow />
+			</Column>
+			<Column cols="2">
+				<PeopleCardSquare />
+				<PeopleCardSquare />
+				<PeopleCardSquare />
+				<PeopleCardSquare />
 			</Column>
 			<p>
 				Purus morbi dignissim senectus mattis <a href="#">adipiscing</a>
@@ -117,6 +127,14 @@ export default function PeopleCardContent() {
 				<PeopleCardShadow />
 				<PeopleCardShadow />
 			</Column>
+			<Column cols="3">
+				<PeopleCardSquare />
+				<PeopleCardSquare />
+				<PeopleCardSquare />
+				<PeopleCardSquare />
+				<PeopleCardSquare />
+				<PeopleCardSquare />
+			</Column>
 			<p>
 				Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget
 				risus enim. Mattis mauris semper sed amet vitae sed turpis id.
@@ -165,6 +183,14 @@ export default function PeopleCardContent() {
 				<PeopleCardShadow />
 				<PeopleCardShadow />
 			</Column>
+			<Column cols="4" maxWidth="6xl">
+				<PeopleCardSquare />
+				<PeopleCardSquare />
+				<PeopleCardSquare />
+				<PeopleCardSquare />
+				<PeopleCardSquare />
+				<PeopleCardSquare />
+			</Column>
 			<p>
 				Phasellus et lectus elementum, dictum odio quis, euismod augue.
 				Nulla ultricies orci eu volutpat mollis. Aenean mauris leo,
@@ -201,6 +227,14 @@ export default function PeopleCardContent() {
 				<PeopleCardShadow />
 				<PeopleCardShadow />
 				<PeopleCardShadow />
+			</Column>
+			<Column cols="4" maxWidth="7xl">
+				<PeopleCardSquare />
+				<PeopleCardSquare />
+				<PeopleCardSquare />
+				<PeopleCardSquare />
+				<PeopleCardSquare />
+				<PeopleCardSquare />
 			</Column>
 			<p>
 				Phasellus et lectus elementum, dictum odio quis, euismod augue.
@@ -234,6 +268,9 @@ export default function PeopleCardContent() {
 				<Column>
 					<PeopleCardShadow />
 				</Column>
+				<Column>
+					<PeopleCardSquare />
+				</Column>
 			</Container>
 			<p>
 				Purus morbi dignissim senectus mattis <a href="#">adipiscing</a>
@@ -264,6 +301,12 @@ export default function PeopleCardContent() {
 					<PeopleCardShadow />
 					<PeopleCardShadow />
 					<PeopleCardShadow />
+				</Column>
+				<Column cols="2">
+					<PeopleCardSquare />
+					<PeopleCardSquare />
+					<PeopleCardSquare />
+					<PeopleCardSquare />
 				</Column>
 			</Container>
 			<p>
@@ -317,6 +360,14 @@ export default function PeopleCardContent() {
 					<PeopleCardShadow />
 					<PeopleCardShadow />
 				</Column>
+				<Column cols="3">
+					<PeopleCardSquare />
+					<PeopleCardSquare />
+					<PeopleCardSquare />
+					<PeopleCardSquare />
+					<PeopleCardSquare />
+					<PeopleCardSquare />
+				</Column>
 			</Container>
 			<p>
 				Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget
@@ -367,6 +418,14 @@ export default function PeopleCardContent() {
 					<PeopleCardShadow />
 					<PeopleCardShadow />
 				</Column>
+				<Column cols="4" maxWidth="6xl">
+					<PeopleCardSquare />
+					<PeopleCardSquare />
+					<PeopleCardSquare />
+					<PeopleCardSquare />
+					<PeopleCardSquare />
+					<PeopleCardSquare />
+				</Column>
 			</Container>
 			<p>
 				Phasellus et lectus elementum, dictum odio quis, euismod augue.
@@ -406,6 +465,14 @@ export default function PeopleCardContent() {
 					<PeopleCardShadow />
 					<PeopleCardShadow />
 				</Column>
+				<Column cols="4" maxWidth="7xl">
+					<PeopleCardSquare />
+					<PeopleCardSquare />
+					<PeopleCardSquare />
+					<PeopleCardSquare />
+					<PeopleCardSquare />
+					<PeopleCardSquare />
+				</Column>
 			</Container>
 			<p>
 				Phasellus et lectus elementum, dictum odio quis, euismod augue.
@@ -476,6 +543,31 @@ export default function PeopleCardContent() {
 				<PeopleCardShadow />
 				<PeopleCardShadow />
 				<PeopleCardShadow />
+			</Column>
+
+			<Column cols="2">
+				<PeopleCardSquare />
+				<PeopleCardSquare />
+			</Column>
+
+			<Column cols="3">
+				<PeopleCardSquare />
+				<PeopleCardSquare />
+				<PeopleCardSquare />
+			</Column>
+
+			<Column cols="4" maxWidth="6xl">
+				<PeopleCardSquare />
+				<PeopleCardSquare />
+				<PeopleCardSquare />
+				<PeopleCardSquare />
+			</Column>
+
+			<Column cols="4" maxWidth="7xl">
+				<PeopleCardSquare />
+				<PeopleCardSquare />
+				<PeopleCardSquare />
+				<PeopleCardSquare />
 			</Column>
 
 			<p>
