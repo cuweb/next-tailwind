@@ -94,10 +94,10 @@ export default function SlideNav() {
 						<li>
 							<Link
 								className="text-cu-black-600 hover:text-cu-red"
-								href="/cutheme/people/#"
+								href="/cutheme/people/listings"
 								onClick={() => closeMenu()}
 							>
-								People Listings (coming soon)
+								People Listings
 							</Link>
 						</li>
 					</ul>
@@ -139,15 +139,6 @@ export default function SlideNav() {
 								onClick={() => closeMenu()}
 							>
 								Number Cards
-							</Link>
-						</li>
-						<li>
-							<Link
-								className="text-cu-black-600 hover:text-cu-red"
-								href="/cutheme/numbers/#"
-								onClick={() => closeMenu()}
-							>
-								Number Listings (coming soon)
 							</Link>
 						</li>
 					</ul>
