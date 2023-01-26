@@ -12,13 +12,13 @@ export default function PeopleCard() {
 				className="relative flex flex-col h-full cursor-pointer"
 			>
 				<img
-					className="object-cover mx-auto border-4 border-white rounded-full h-60 w-60 group-hover:shadow-md group-hover:duration-300 group-hover:ease-in"
+					className="mx-auto h-48 w-48 rounded-full border-4 border-white object-cover group-hover:shadow-md group-hover:duration-300 group-hover:ease-in @sm:md:h-60 @sm:md:w-60"
 					src="https://static.wikia.nocookie.net/freshprince/images/a/ac/1carlton.jpg"
 					alt=""
 				/>
 
 				<div className="flex flex-col items-center py-6 space-y-2 px-7">
-					<h3 className="text-lg font-semibold text-cu-black duration-300 ease-in group-hover:text-cu-red @sm:md:text-2xl">
+					<h3 className="text-lg font-semibold text-cu-black duration-300 ease-in group-hover:text-cu-red @xs:md:text-2xl">
 						Carlton Banks
 					</h3>
 					<p className="flex text-base text-cu-black-600 @sm:md:text-lg">

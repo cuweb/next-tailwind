@@ -1,62 +1,68 @@
-import { HeroIcon } from "rds-tailwind";
-
 export default function PeopleListItem() {
 	return (
-		<li className="relative overflow-hidden duration-300 ease-in not-prose group">
-			<a href="https://carleton.ca" className="cursor-pointer">
-				<div className="flex gap-4 px-6 py-5 sm:items-center">
+		<div className="not-prose group relative overflow-hidden @container">
+			<a
+				href="https://carleton.ca"
+				className="group cursor-pointer flex-col  bg-white p-6 hover:bg-slate-50 focus:outline-none md:gap-8 @md:md:flex @lg:md:flex-row"
+			>
+				<div className="h-32 w-32 @lg:md:h-60 @lg:md:w-60">
 					<img
-						className="flex-none object-cover w-16 h-16 mx-auto border-2 border-white rounded-full shadow-lg sm:h-24 sm:w-24 sm:border-4"
+						className="object-cover w-full overflow-hidden border-4 border-white rounded-lg shadow-md"
 						src="https://static.wikia.nocookie.net/freshprince/images/a/ac/1carlton.jpg"
 						alt=""
 					/>
+				</div>
 
-					<div className="flex-1">
-						<h3 className="text-lg font-semibold duration-300 ease-in text-cu-black group-hover:text-cu-red">
-							Carlton Banks
-						</h3>
-						<p className="text-base text-cu-black-600">
-							Manager, Peacock Stop
+				<div className="flex flex-1 flex-col gap-1.5 pr-6 md:gap-2.5 @lg:md:pt-1.5">
+					<h3 className="text-lg font-semibold text-cu-black group-hover:text-cu-red md:text-xl @lg:md:text-2xl">
+						Carlton Banks (Alfonso Ribeiro)
+					</h3>
+					<p className="text-base text-cu-black-600 @lg:md:text-lg">
+						Manager, Peacock Stop
+					</p>
+					<ul className="pt-2 space-y-2">
+						<li className="text-sm  @sm:md:text-base">
+							<a
+								href="mailto:webdevs@carleton.ca"
+								className="font-semibold text-cyan-700 hover:text-cu-red"
+							>
+								george.hadjisophocleous@carleton.ca
+							</a>
+						</li>
+						<li className="items-center text-sm text-cu-black-600 hover:text-cu-red @sm:md:text-base">
+							<a href="#" className="">
+								613-520-2600 x1234
+							</a>
+						</li>
+					</ul>
+					<div className="mt-auto">
+						<p className="inline-flex px-2 mr-2 text-xs font-semibold rounded-xl bg-cu-black-50 text-cu-black-900 last:mr-0">
+							Category One
 						</p>
-						<ul className="flex flex-wrap justify-start gap-12 pt-3 text-base sm:gap-2">
-							<li className="last:pl-8 sm:flex-auto">
-								<a
-									href="mailto:webdevs@carleton.ca"
-									className="flex items-center gap-1.5 font-medium text-cyan-700 hover:text-cu-red sm:gap-2"
-								>
-									<HeroIcon
-										aria-hidden
-										icon="InboxArrowDownIcon"
-										size="5"
-										isOutline
-									/>
-									<span className="sm:hidden">Email</span>
-									<span className="hidden sm:block">
-										carleton.banksasfasfasfasasfsafsafasffasfas@carlton.ca
-									</span>
-								</a>
-							</li>
-							<li className="sm:flex-auto">
-								<a
-									href="tel:6135202600"
-									className="flex items-center gap-1 font-medium text-cyan-700 hover:text-cu-red"
-								>
-									<HeroIcon
-										aria-hidden
-										icon="DevicePhoneMobileIcon"
-										size="5"
-										isOutline
-									/>
-									<span className="sm:hidden">Call</span>
-									<span className="hidden sm:block">
-										613-520-2600 x1234
-									</span>
-								</a>
-							</li>
-						</ul>
+						<p className="inline-flex px-2 mr-2 text-xs font-semibold rounded-xl bg-cu-black-50 text-cu-black-900 last:mr-0">
+							Category Two
+						</p>
 					</div>
 				</div>
+
+				<div className="absolute -mt-3 top-1/2 right-4">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="currentColor"
+						aria-hidden="true"
+						className="flex-none w-6 h-6 ml-auto text-cu-black-300 group-hover:text-cu-red"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M8.25 4.5l7.5 7.5-7.5 7.5"
+						></path>
+					</svg>
+				</div>
 			</a>
-		</li>
+		</div>
 	);
 }
