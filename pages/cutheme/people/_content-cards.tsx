@@ -1,5 +1,6 @@
 import { Column, Container } from "rds-tailwind";
 import PeopleCard from "../_components/People/PeopleCard";
+import PeopleCardBackup from "../_components/People/PeopleCard.Backup";
 
 export default function PeopleCardContent() {
 	return (
@@ -31,8 +32,9 @@ export default function PeopleCardContent() {
 				dui tempor dignissim. Facilisis auctor venenatis varius nunc,
 				congue erat ac. Cras fermentum convallis quam.
 			</p>
-			<Column>
+			<Column cols="2">
 				<PeopleCard />
+				<PeopleCardBackup />
 			</Column>
 			<p>
 				Purus morbi dignissim senectus mattis <a href="#">adipiscing</a>
@@ -340,6 +342,52 @@ export default function PeopleCardContent() {
 					<PeopleCard />
 				</Column>
 			</Container>
+			<p>
+				Phasellus et lectus elementum, dictum odio quis, euismod augue.
+				Nulla ultricies orci eu volutpat mollis. Aenean mauris leo,
+				congue id laoreet vitae, bibendum at dui. Proin ac aliquet enim,
+				a ullamcorper tortor. Ut mattis, ante id porttitor elementum,
+				lorem mauris rutrum enim, ut tristique est est at turpis. Nam
+				hendrerit luctus ex, ac rhoncus mauris pretium varius. Phasellus
+				dignissim sodales feugiat. Curabitur quam leo, aliquet nec risus
+				quis, porta vestibulum erat.
+			</p>
+			<p>
+				Phasellus et lectus elementum, dictum odio quis, euismod augue.
+				Nulla ultricies orci eu volutpat mollis. Aenean mauris leo,
+				congue id laoreet vitae, bibendum at dui. Proin ac aliquet enim,
+				a ullamcorper tortor. Ut mattis, ante id porttitor elementum,
+				lorem mauris rutrum enim, ut tristique est est at turpis. Nam
+				hendrerit luctus ex, ac rhoncus mauris pretium varius. Phasellus
+				dignissim sodales feugiat. Curabitur quam leo, aliquet nec risus
+				quis, porta vestibulum erat.
+			</p>
+
+			<Column cols="2">
+				<PeopleCard />
+				<PeopleCard />
+			</Column>
+
+			<Column cols="3">
+				<PeopleCard />
+				<PeopleCard />
+				<PeopleCard />
+			</Column>
+
+			<Column cols="4" maxWidth="6xl">
+				<PeopleCard />
+				<PeopleCard />
+				<PeopleCard />
+				<PeopleCard />
+			</Column>
+
+			<Column cols="4" maxWidth="7xl">
+				<PeopleCard />
+				<PeopleCard />
+				<PeopleCard />
+				<PeopleCard />
+			</Column>
+
 			<p>
 				Phasellus et lectus elementum, dictum odio quis, euismod augue.
 				Nulla ultricies orci eu volutpat mollis. Aenean mauris leo,
