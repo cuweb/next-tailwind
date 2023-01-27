@@ -6,24 +6,14 @@ import PeopleCardSquare from "../_components/People/PeopleCard.Square";
 export default function PeopleCardContent() {
 	return (
 		<>
-			<h2>Decisions and Considerations</h2>
 			<p>
-				For consistency purpose, any of the following decision made for
-				RDS and/or Gutenberg options that apply to the listing view will
-				be implemented.
+				Purus morbi dignissim senectus mattis <a href="#">adipiscing</a>
+				. Amet, massa quam varius orci dapibus volutpat cras. In amet eu
+				ridiculus leo sodales cursus tristique. Tincidunt sed tempus ut
+				viverra ridiculus non molestie. Gravida quis fringilla amet eget
+				dui tempor dignissim. Facilisis auctor venenatis varius nunc,
+				congue erat ac. Cras fermentum convallis quam.
 			</p>
-			<ul>
-				<li>
-					Are we including options to use 2, 3 and 4 columns? If not,
-					which of the three options do we feel is suitable for this
-					block?
-				</li>
-				<li>
-					If we are using the 4 column option are we using a max width
-					of 6xl or 7xl?
-				</li>
-			</ul>
-
 			<h3>Single card</h3>
 			<p>
 				Purus morbi dignissim senectus mattis <a href="#">adipiscing</a>
