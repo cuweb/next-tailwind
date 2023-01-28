@@ -3,9 +3,9 @@ export default function PeopleListItem() {
 		<div className="not-prose group relative overflow-hidden @container">
 			<a
 				href="https://carleton.ca"
-				className="group cursor-pointer flex-col  bg-white p-6 hover:bg-slate-50 focus:outline-none md:gap-8 @md:md:flex @lg:md:flex-row"
+				className="group relative flex cursor-pointer flex-row gap-4 bg-white p-6 hover:bg-slate-50 focus:outline-none md:gap-5 @sm:md:flex-col @lg:md:flex-row @lg:lg:gap-8"
 			>
-				<div className="h-32 w-32 @lg:md:h-60 @lg:md:w-60">
+				<div className="h-28 w-28 @sm:md:h-36 @sm:md:w-36 @lg:md:h-60 @lg:md:w-60">
 					<img
 						className="object-cover w-full overflow-hidden border-4 border-white rounded-lg shadow-md"
 						src="https://static.wikia.nocookie.net/freshprince/images/a/ac/1carlton.jpg"
@@ -13,14 +13,14 @@ export default function PeopleListItem() {
 					/>
 				</div>
 
-				<div className="flex flex-1 flex-col gap-1.5 pr-6 md:gap-2.5 @lg:md:pt-1.5">
+				<div className="flex flex-1 flex-col gap-1.5 pr-6 pt-1 md:gap-px @sm:md:pt-0 @lg:md:pt-2">
 					<h3 className="text-lg font-semibold text-cu-black group-hover:text-cu-red md:text-xl @lg:md:text-2xl">
 						Carlton Banks (Alfonso Ribeiro)
 					</h3>
 					<p className="text-base text-cu-black-600 @lg:md:text-lg">
 						Manager, Peacock Stop
 					</p>
-					<ul className="pt-2 space-y-2">
+					<ul className="pt-4 space-y-2">
 						<li className="text-sm  @sm:md:text-base">
 							<a
 								href="mailto:webdevs@carleton.ca"
@@ -35,7 +35,7 @@ export default function PeopleListItem() {
 							</a>
 						</li>
 					</ul>
-					<div className="mt-auto">
+					<div className="mt-4 @lg:md:mt-auto">
 						<p className="inline-flex px-2 mr-2 text-xs font-semibold rounded-xl bg-cu-black-50 text-cu-black-900 last:mr-0">
 							Category One
 						</p>

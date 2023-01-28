@@ -100,6 +100,15 @@ export default function SlideNav() {
 								People Listings
 							</Link>
 						</li>
+						<li>
+							<Link
+								className="text-cu-black-600 hover:text-cu-red"
+								href="/cutheme/people/example"
+								onClick={() => closeMenu()}
+							>
+								Example
+							</Link>
+						</li>
 					</ul>
 				</div>
 				<div className="px-5 py-4 bg-white rounded-md">
