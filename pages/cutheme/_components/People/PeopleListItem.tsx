@@ -3,9 +3,9 @@ export default function PeopleListItem() {
 		<div className="not-prose group relative overflow-hidden @container">
 			<a
 				href="https://carleton.ca"
-				className="group relative flex cursor-pointer flex-col gap-4 bg-white p-6 hover:bg-slate-50 focus:outline-none md:gap-5 @lg:md:flex-row @lg:lg:gap-8"
+				className="group relative flex cursor-pointer flex-row gap-4 bg-white p-6 hover:bg-slate-50 focus:outline-none md:gap-5 @sm:md:flex-col @lg:md:flex-row @lg:lg:gap-8"
 			>
-				<div className="h-32 w-32 @lg:md:h-60 @lg:md:w-60">
+				<div className="h-28 w-28 @sm:md:h-36 @sm:md:w-36 @lg:md:h-60 @lg:md:w-60">
 					<img
 						className="object-cover w-full overflow-hidden border-4 border-white rounded-lg shadow-md"
 						src="https://static.wikia.nocookie.net/freshprince/images/a/ac/1carlton.jpg"
@@ -13,7 +13,7 @@ export default function PeopleListItem() {
 					/>
 				</div>
 
-				<div className="flex flex-1 flex-col gap-1.5 pr-6 md:gap-px @lg:md:pt-2">
+				<div className="flex flex-1 flex-col gap-1.5 pr-6 pt-1 md:gap-px @sm:md:pt-0 @lg:md:pt-2">
 					<h3 className="text-lg font-semibold text-cu-black group-hover:text-cu-red md:text-xl @lg:md:text-2xl">
 						Carlton Banks (Alfonso Ribeiro)
 					</h3>
