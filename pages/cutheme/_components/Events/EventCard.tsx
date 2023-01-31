@@ -6,20 +6,20 @@ const styles = {
 
 export default function EventCard() {
 	return (
-		<div className="@container not-prose group relative overflow-hidden rounded-lg bg-white shadow-lg duration-300 ease-in hover:scale-105 md:max-w-lg">
+		<div className="not-prose group relative overflow-hidden rounded-lg bg-white shadow-lg duration-300 ease-in @container hover:scale-105 md:max-w-lg">
 			<a
 				href="https://carleton.ca"
 				className="relative flex flex-col h-full cursor-pointer"
 			>
 				<div className="relative">
-					<div className="@sm:md:aspect-h-6 aspect-w-16 aspect-h-9">
+					<div className="aspect-w-16 aspect-h-9 @sm:md:aspect-h-6">
 						<img
 							className="object-cover w-full"
 							src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1200&amp;q=80"
 							alt=""
 						/>
 					</div>
-					<div className="absolute z-10 flex flex-col items-center justify-center w-20 h-20 duration-300 ease-in bg-white rounded-md shadow-md left-6 -bottom-10 group-hover:bg-cu-red">
+					<div className="absolute z-10 flex flex-col items-center justify-center w-20 h-20 bg-white rounded-md shadow-md left-6 -bottom-10 group-hover:bg-cu-red">
 						<p className="text-xs font-bold uppercase text-cu-red group-hover:text-white">
 							Sept
 						</p>
@@ -30,12 +30,12 @@ export default function EventCard() {
 				</div>
 
 				<div className="flex flex-col gap-px pt-16 pb-8 px-7">
-					<h3 className="@sm:md:text-xl text-lg font-semibold text-cu-black duration-300 ease-in group-hover:text-cu-red">
+					<h3 className="text-lg font-semibold text-cu-black group-hover:text-cu-red @sm:md:text-xl">
 						End-of-Year Reflections and Resolutions for Our Web
 						Services Team
 					</h3>
 					<ul className="flex flex-col gap-2 mt-4">
-						<li className="@sm:md:text-base flex items-center text-sm text-cu-black-600">
+						<li className="flex items-center text-sm text-cu-black-600 @sm:md:text-base">
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
 								fill="none"
@@ -53,7 +53,7 @@ export default function EventCard() {
 							</svg>
 							1:48 am-2:45 am
 						</li>
-						<li className="@sm:md:text-base flex items-center text-sm text-cu-black-600">
+						<li className="flex items-center text-sm text-cu-black-600 @sm:md:text-base">
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
 								fill="none"
