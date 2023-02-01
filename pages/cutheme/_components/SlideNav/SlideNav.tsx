@@ -152,6 +152,22 @@ export default function SlideNav() {
 						</li>
 					</ul>
 				</div>
+				<div className="px-5 py-4 bg-white rounded-md">
+					<h3 className="pb-2 mb-3 text-lg font-semibold border-b border-cu-black-200">
+						Demo Pages
+					</h3>
+					<ul className="flex flex-col gap-2">
+						<li>
+							<Link
+								className="text-cu-black-600 hover:text-cu-red"
+								href="/cutheme/demo/sprint"
+								onClick={() => closeMenu()}
+							>
+								Sprint Demo
+							</Link>
+						</li>
+					</ul>
+				</div>
 			</div>
 			<button
 				type="button"
