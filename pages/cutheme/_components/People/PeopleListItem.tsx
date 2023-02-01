@@ -15,7 +15,7 @@ export default function PeopleListItem() {
 
 				<div className="flex flex-1 flex-col gap-1.5 pr-6 pt-1 md:gap-px @sm:md:pt-0 @lg:md:pt-2">
 					<h3 className="text-lg font-semibold text-cu-black group-hover:text-cu-red md:text-xl @lg:md:text-2xl">
-						Carlton Banks (Alfonso Ribeiro)
+						Carlton Banks
 					</h3>
 					<p className="text-base text-cu-black-600 @lg:md:text-lg">
 						Manager, Peacock Stop

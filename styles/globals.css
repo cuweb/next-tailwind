@@ -4,15 +4,25 @@
 /*  */
 /* Things to add to RDS or cutheme? TBD */
 
-.cu-container + :not(.cu-container),
-:not(.cu-container) + .cu-container,
 .cu-panel + :not(.cu-panel),
 :not(.cu-panel) + .cu-panel {
-	@apply mt-6 md:mt-10;
+	@apply mt-6 md:mt-12;
+}
+
+.cu-container + :not(.cu-container) {
+	@apply mt-5;
+}
+
+:not(.cu-container) + .cu-container {
+	@apply mt-8;
 }
 
 :not(.cu-column) + .cu-column {
 	@apply my-10;
+}
+
+.cu-container {
+	@apply py-0 lg:py-0;
 }
 
 /*  */
