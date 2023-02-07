@@ -20,10 +20,10 @@ export default function NewsListItem() {
 				</div>
 
 				<div className="flex flex-1 flex-col gap-1.5 pr-6 md:gap-2.5 @lg:md:pt-1.5">
-					<p className="text-sm italic text-cu-black-600">
+					<p className="text-sm italic text-cu-black-600 @2xl:md:text-base">
 						January 7, 2020
 					</p>
-					<h3 className="text-lg font-semibold text-cu-black group-hover:text-cu-red md:text-xl @lg:md:text-2xl">
+					<h3 className="text-lg font-semibold text-cu-black group-hover:text-cu-red @lg:md:text-xl @2xl:lg:text-2xl">
 						News item title
 					</h3>
 					<p className="text-sm text-cu-black-900 md:text-base @lg:md:text-lg">

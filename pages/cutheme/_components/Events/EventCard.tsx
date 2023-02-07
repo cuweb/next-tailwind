@@ -1,9 +1,3 @@
-const styles = {
-	listGroup: ``,
-	listItem: `flex text-white`,
-	itemLink: `text-xs text-cu-black-300 hover:text-white`,
-};
-
 export default function EventCard() {
 	return (
 		<div className="not-prose group relative overflow-hidden rounded-lg bg-white shadow-lg duration-300 ease-in @container hover:scale-105 md:max-w-lg">

@@ -12,7 +12,7 @@ export default function NewsCard() {
 				/>
 
 				<div className="flex flex-col space-y-2 py-6 px-7 @sm:md:space-y-3">
-					<p className="flex items-start text-sm italic text-cu-black-600 @sm:md:text-base">
+					<p className="text-sm italic text-cu-black-600 @sm:md:text-base">
 						November 3, 2022
 					</p>
 					<h3 className="text-lg font-semibold text-cu-black group-hover:text-cu-red @sm:md:text-xl">

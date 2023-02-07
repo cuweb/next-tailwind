@@ -1,9 +1,3 @@
-const styles = {
-	listGroup: ``,
-	listItem: `flex text-white`,
-	itemLink: `text-xs text-cu-black-300 hover:text-white`,
-};
-
 export default function PeopleCard() {
 	return (
 		<div className="not-prose group relative flex flex-col overflow-hidden rounded-lg bg-white py-8 px-7 shadow-lg duration-300 ease-in @container hover:scale-105 md:max-w-lg">
@@ -21,7 +15,7 @@ export default function PeopleCard() {
 					<h3 className="text-lg font-semibold text-cu-black  group-hover:text-cu-red @xs:md:text-2xl">
 						Carlton Banks
 					</h3>
-					<p className="flex items-start text-sm italic text-cu-black-600 @sm:md:text-lg">
+					<p className="text-sm italic text-cu-black-600 @sm:md:text-lg">
 						Manager, Peacock Stop
 					</p>
 					<ul className="pt-3 space-y-1 text-center">
