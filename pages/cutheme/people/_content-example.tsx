@@ -1,5 +1,5 @@
 import { Column, Container } from "rds-tailwind";
-import PeopleCardShadow from "../_components/People/PeopleCard.Shadow";
+import PeopleCard from "../_components/People/PeopleCard";
 import PeopleListItem from "../_components/People/PeopleListItem";
 const styles = {
 	oneColBorder: `[&>*]:border-cu-cu-black-100 [&>*]:border-b last:[&>*]:border-b-0`,
@@ -24,7 +24,7 @@ export default function PeopleExample() {
 					President and CEO
 				</h2>
 				<Column cols="1">
-					<PeopleCardShadow />
+					<PeopleCard />
 				</Column>
 			</Container>
 
@@ -33,9 +33,9 @@ export default function PeopleExample() {
 					Divisional Directors
 				</h3>
 				<Column cols="3">
-					<PeopleCardShadow />
-					<PeopleCardShadow />
-					<PeopleCardShadow />
+					<PeopleCard />
+					<PeopleCard />
+					<PeopleCard />
 				</Column>
 			</Container>
 

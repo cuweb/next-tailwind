@@ -1,7 +1,5 @@
-import { Container, Column } from "rds-tailwind";
-
+import { Column, Container } from "rds-tailwind";
 import EventListItem from "../_components/Events/EventListItem";
-import EventListItemBackup from "../_components/Events/EventListItem.Backup";
 
 const styles = {
 	oneColBorder: `[&>*]:border-cu-cu-black-100 [&>*]:border-b last:[&>*]:border-b-0`,
