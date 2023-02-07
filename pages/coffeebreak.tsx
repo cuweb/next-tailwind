@@ -9,6 +9,8 @@ import PeopleCard from "./cutheme/_components/People/PeopleCard";
 import PeopleListItem from "./cutheme/_components/People/PeopleListItem";
 import VideoCard from "./cutheme/_components/Videos/VideoCard";
 import CuThemeNav from "./cutheme/_components/TopNav/TopNav";
+import EventListItemAlt from "./cutheme/_components/Events/EventListItemAlt";
+import PeopleListItemAlt from "./cutheme/_components/People/PeopleListItemAlt";
 
 const styles = {
 	oneColBorder: `[&>*]:border-cu-cu-black-100 [&>*]:border-b last:[&>*]:border-b-0`,
@@ -315,6 +317,44 @@ const CuTheme: NextPage = () => {
 							</div>
 						</Column>
 					</Container>
+					<Container>
+						<Column cols="1">
+							<div className="cu-panel not-prose overflow-hidden rounded-lg border border-cu-black-100 bg-white shadow-lg [&+.cu-panel]:mt-8">
+								<div
+									className={`grid overflow-hidden md:grid-cols-1 ${styles.oneColBorder}`}
+								>
+									<EventListItemAlt />
+									<EventListItemAlt />
+									<EventListItemAlt />
+								</div>
+							</div>
+						</Column>
+					</Container>
+
+					<Container bgColor="grey">
+						<Column cols="1">
+							<div className="cu-panel not-prose overflow-hidden rounded-lg border border-cu-black-100 bg-white shadow-lg [&+.cu-panel]:mt-8">
+								<div
+									className={`grid overflow-hidden md:grid-cols-1 ${styles.oneColBorder}`}
+								>
+									<EventListItem />
+								</div>
+							</div>
+						</Column>
+					</Container>
+					<Container bgColor="grey">
+						<Column cols="1">
+							<div className="cu-panel not-prose overflow-hidden rounded-lg border border-cu-black-100 bg-white shadow-lg [&+.cu-panel]:mt-8">
+								<div
+									className={`grid overflow-hidden md:grid-cols-1 ${styles.oneColBorder}`}
+								>
+									<EventListItem />
+									<EventListItem />
+									<EventListItem />
+								</div>
+							</div>
+						</Column>
+					</Container>
 					<Container bgColor="grey">
 						<Column cols="1">
 							<div className="cu-panel not-prose overflow-hidden rounded-lg border border-cu-black-100  bg-white shadow-lg [&+.cu-panel]:mt-8">
@@ -325,6 +365,20 @@ const CuTheme: NextPage = () => {
 									<EventListItem />
 									<EventListItem />
 									<EventListItem />
+								</div>
+							</div>
+						</Column>
+					</Container>
+					<Container bgColor="grey">
+						<Column cols="1">
+							<div className="cu-panel not-prose overflow-hidden rounded-lg border border-cu-black-100  bg-white shadow-lg [&+.cu-panel]:mt-8">
+								<div
+									className={`grid overflow-hidden md:grid-cols-2 ${styles.twoColBorder}`}
+								>
+									<EventListItemAlt />
+									<EventListItemAlt />
+									<EventListItemAlt />
+									<EventListItemAlt />
 								</div>
 							</div>
 						</Column>
@@ -436,6 +490,20 @@ const CuTheme: NextPage = () => {
 							</div>
 						</Column>
 					</Container>
+					<Container>
+						<Column cols="1">
+							<div className="cu-panel not-prose overflow-hidden rounded-lg border border-cu-black-100  bg-white shadow-lg [&+.cu-panel]:mt-8">
+								<div
+									className={`grid overflow-hidden md:grid-cols-2 ${styles.twoColBorder}`}
+								>
+									<PeopleListItemAlt />
+									<PeopleListItemAlt />
+									<PeopleListItemAlt />
+									<PeopleListItemAlt />
+								</div>
+							</div>
+						</Column>
+					</Container>
 
 					<Container bgColor="grey">
 						<Column cols="1">
@@ -471,6 +539,20 @@ const CuTheme: NextPage = () => {
 									<PeopleListItem />
 									<PeopleListItem />
 									<PeopleListItem />
+								</div>
+							</div>
+						</Column>
+					</Container>
+					<Container bgColor="grey">
+						<Column cols="1">
+							<div className="cu-panel not-prose overflow-hidden rounded-lg border border-cu-black-100  bg-white shadow-lg [&+.cu-panel]:mt-8">
+								<div
+									className={`grid overflow-hidden md:grid-cols-2 ${styles.twoColBorder}`}
+								>
+									<PeopleListItemAlt />
+									<PeopleListItemAlt />
+									<PeopleListItemAlt />
+									<PeopleListItemAlt />
 								</div>
 							</div>
 						</Column>
