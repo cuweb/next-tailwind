@@ -14,7 +14,8 @@
 }
 
 :not(.cu-container) + .cu-container {
-	@apply mt-8;
+	/* @apply mt-8; */
+	@apply -mt-6;
 }
 
 :not(.cu-column) + .cu-column {
