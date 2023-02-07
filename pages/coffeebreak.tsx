@@ -292,37 +292,13 @@ const CuTheme: NextPage = () => {
 							</div>
 						</Column>
 					</Container>
-
-					<Container bgColor="grey">
-						<Column cols="1">
-							<div className="cu-panel not-prose overflow-hidden rounded-lg border border-cu-black-100 bg-white shadow-lg [&+.cu-panel]:mt-8">
-								<div
-									className={`grid overflow-hidden md:grid-cols-1 ${styles.oneColBorder}`}
-								>
-									<EventListItem />
-								</div>
-							</div>
-						</Column>
-					</Container>
-					<Container bgColor="grey">
-						<Column cols="1">
-							<div className="cu-panel not-prose overflow-hidden rounded-lg border border-cu-black-100 bg-white shadow-lg [&+.cu-panel]:mt-8">
-								<div
-									className={`grid overflow-hidden md:grid-cols-1 ${styles.oneColBorder}`}
-								>
-									<EventListItem />
-									<EventListItem />
-									<EventListItem />
-								</div>
-							</div>
-						</Column>
-					</Container>
 					<Container>
 						<Column cols="1">
-							<div className="cu-panel not-prose overflow-hidden rounded-lg border border-cu-black-100 bg-white shadow-lg [&+.cu-panel]:mt-8">
+							<div className="cu-panel not-prose overflow-hidden rounded-lg border border-cu-black-100  bg-white shadow-lg [&+.cu-panel]:mt-8">
 								<div
-									className={`grid overflow-hidden md:grid-cols-1 ${styles.oneColBorder}`}
+									className={`grid overflow-hidden md:grid-cols-2 ${styles.twoColBorder}`}
 								>
+									<EventListItemAlt />
 									<EventListItemAlt />
 									<EventListItemAlt />
 									<EventListItemAlt />
