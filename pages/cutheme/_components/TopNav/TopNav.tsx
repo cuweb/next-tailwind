@@ -57,13 +57,14 @@ export default function CuThemeNav() {
 							className="w-5 h-5 text-gray-400"
 							aria-hidden="true"
 						/>
-						<Button
+						{/* <Button
 							icon="Bars3Icon"
 							isType="grey"
 							onClick={() => openMenu()}
 							size="sm"
 							title="Browse"
-						/>
+						/> */}
+
 						{/* <button
 							type="button"
 							aria-label="Small Button"
