@@ -25,10 +25,10 @@ export function closeMenu() {
 
 export default function SlideNav() {
 	return (
-		<div className="fixed top-0 left-0 z-30 invisible w-full h-full overflow-hidden -translate-y-full cu-slidenav bg-cu-black-50 md:h-auto">
-			<div className="grid max-w-5xl grid-flow-row grid-cols-2 gap-8 py-12 mx-auto md:grid-cols-3">
-				<div className="px-5 py-4 bg-white rounded-md">
-					<h3 className="pb-2 mb-3 text-lg font-semibold border-b border-cu-black-200">
+		<div className="cu-slidenav invisible fixed top-0 left-0 z-30 h-full w-full -translate-y-full overflow-hidden bg-cu-black-50 md:h-auto">
+			<div className="mx-auto grid max-w-5xl grid-flow-row grid-cols-2 gap-8 py-12 md:grid-cols-3">
+				<div className="rounded-md bg-white px-5 py-4">
+					<h3 className="mb-3 border-b border-cu-black-200 pb-2 text-lg font-semibold">
 						News Blocks
 					</h3>
 					<ul className="flex flex-col gap-2">
@@ -52,8 +52,8 @@ export default function SlideNav() {
 						</li>
 					</ul>
 				</div>
-				<div className="px-5 py-4 bg-white rounded-md">
-					<h3 className="pb-2 mb-3 text-lg font-semibold border-b border-cu-black-200">
+				<div className="rounded-md bg-white px-5 py-4">
+					<h3 className="mb-3 border-b border-cu-black-200 pb-2 text-lg font-semibold">
 						Event Blocks
 					</h3>
 					<ul className="flex flex-col gap-2">
@@ -72,13 +72,13 @@ export default function SlideNav() {
 								href="/cutheme/events/listings"
 								onClick={() => closeMenu()}
 							>
-								Event Listings (coming soon)
+								Event Listings
 							</Link>
 						</li>
 					</ul>
 				</div>
-				<div className="px-5 py-4 bg-white rounded-md">
-					<h3 className="pb-2 mb-3 text-lg font-semibold border-b border-cu-black-200">
+				<div className="rounded-md bg-white px-5 py-4">
+					<h3 className="mb-3 border-b border-cu-black-200 pb-2 text-lg font-semibold">
 						People Blocks
 					</h3>
 					<ul className="flex flex-col gap-2">
@@ -111,8 +111,8 @@ export default function SlideNav() {
 						</li>
 					</ul>
 				</div>
-				<div className="px-5 py-4 bg-white rounded-md">
-					<h3 className="pb-2 mb-3 text-lg font-semibold border-b border-cu-black-200">
+				<div className="rounded-md bg-white px-5 py-4">
+					<h3 className="mb-3 border-b border-cu-black-200 pb-2 text-lg font-semibold">
 						Video Blocks
 					</h3>
 					<ul className="flex flex-col gap-2">
@@ -136,8 +136,8 @@ export default function SlideNav() {
 						</li>
 					</ul>
 				</div>
-				<div className="px-5 py-4 bg-white rounded-md">
-					<h3 className="pb-2 mb-3 text-lg font-semibold border-b border-cu-black-200">
+				<div className="rounded-md bg-white px-5 py-4">
+					<h3 className="mb-3 border-b border-cu-black-200 pb-2 text-lg font-semibold">
 						Number Blocks
 					</h3>
 					<ul className="flex flex-col gap-2">
@@ -152,8 +152,8 @@ export default function SlideNav() {
 						</li>
 					</ul>
 				</div>
-				<div className="px-5 py-4 bg-white rounded-md">
-					<h3 className="pb-2 mb-3 text-lg font-semibold border-b border-cu-black-200">
+				<div className="rounded-md bg-white px-5 py-4">
+					<h3 className="mb-3 border-b border-cu-black-200 pb-2 text-lg font-semibold">
 						Demo Pages
 					</h3>
 					<ul className="flex flex-col gap-2">
@@ -171,7 +171,7 @@ export default function SlideNav() {
 			</div>
 			<button
 				type="button"
-				className="fixed overlay-close top-4 right-4"
+				className="overlay-close fixed top-4 right-4"
 				onClick={() => closeMenu()}
 			>
 				<div className="">
