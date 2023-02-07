@@ -26,9 +26,9 @@ export default function PeopleExample() {
 				<Column cols="1">
 					<PeopleCardShadow />
 				</Column>
+			</Container>
 
-				<br />
-
+			<Container>
 				<h3 className="max-w-5xl mx-auto text-4xl font-semibold">
 					Divisional Directors
 				</h3>
@@ -38,6 +38,7 @@ export default function PeopleExample() {
 					<PeopleCardShadow />
 				</Column>
 			</Container>
+
 			<Container bgColor="grey">
 				<h3 className="max-w-5xl mx-auto text-4xl font-semibold">
 					Team Manager
@@ -51,9 +52,9 @@ export default function PeopleExample() {
 						</div>
 					</div>
 				</Column>
+			</Container>
 
-				<br />
-
+			<Container bgColor="grey">
 				<h3 className="max-w-5xl mx-auto text-4xl font-semibold">
 					Team Members
 				</h3>

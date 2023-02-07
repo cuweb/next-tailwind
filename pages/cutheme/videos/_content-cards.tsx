@@ -9,11 +9,15 @@ export default function VideoCardContent() {
 					<VideoCard />
 					<VideoCard />
 				</Column>
+			</Container>
+			<Container>
 				<Column cols="3">
 					<VideoCard />
 					<VideoCard />
 					<VideoCard />
 				</Column>
+			</Container>
+			<Container>
 				<Column cols="4" maxWidth="7xl">
 					<VideoCard />
 					<VideoCard />
@@ -27,11 +31,15 @@ export default function VideoCardContent() {
 					<VideoCard />
 					<VideoCard />
 				</Column>
+			</Container>
+			<Container bgColor="grey">
 				<Column cols="3">
 					<VideoCard />
 					<VideoCard />
 					<VideoCard />
 				</Column>
+			</Container>
+			<Container bgColor="grey">
 				<Column cols="4" maxWidth="7xl">
 					<VideoCard />
 					<VideoCard />

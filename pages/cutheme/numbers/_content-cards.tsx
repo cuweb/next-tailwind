@@ -10,26 +10,36 @@ export default function NumbersCardContent() {
 					<NumberCard />
 					<NumberCard />
 				</Column>
+			</Container>
+			<Container>
 				<Column cols="2">
 					<NumberCardCenter />
 					<NumberCardCenter />
 				</Column>
+			</Container>
+			<Container>
 				<Column cols="3">
 					<NumberCard />
 					<NumberCard />
 					<NumberCard />
 				</Column>
+			</Container>
+			<Container>
 				<Column cols="3">
 					<NumberCardCenter />
 					<NumberCardCenter />
 					<NumberCardCenter />
 				</Column>
+			</Container>
+			<Container>
 				<Column cols="4" maxWidth="7xl">
 					<NumberCard />
 					<NumberCard />
 					<NumberCard />
 					<NumberCard />
 				</Column>
+			</Container>
+			<Container>
 				<Column cols="4" maxWidth="7xl">
 					<NumberCardCenter />
 					<NumberCardCenter />
@@ -43,26 +53,36 @@ export default function NumbersCardContent() {
 					<NumberCard />
 					<NumberCard />
 				</Column>
+			</Container>
+			<Container bgColor="grey">
 				<Column cols="2">
 					<NumberCardCenter />
 					<NumberCardCenter />
 				</Column>
+			</Container>
+			<Container bgColor="grey">
 				<Column cols="3">
 					<NumberCard />
 					<NumberCard />
 					<NumberCard />
 				</Column>
+			</Container>
+			<Container bgColor="grey">
 				<Column cols="3">
 					<NumberCardCenter />
 					<NumberCardCenter />
 					<NumberCardCenter />
 				</Column>
+			</Container>
+			<Container bgColor="grey">
 				<Column cols="4" maxWidth="7xl">
 					<NumberCard />
 					<NumberCard />
 					<NumberCard />
 					<NumberCard />
 				</Column>
+			</Container>
+			<Container bgColor="grey">
 				<Column cols="4" maxWidth="7xl">
 					<NumberCardCenter />
 					<NumberCardCenter />

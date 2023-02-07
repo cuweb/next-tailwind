@@ -9,13 +9,15 @@ export default function NewsCardContent() {
 					<NewsCard />
 					<NewsCard />
 				</Column>
-
+			</Container>
+			<Container>
 				<Column cols="3">
 					<NewsCard />
 					<NewsCard />
 					<NewsCard />
 				</Column>
-
+			</Container>
+			<Container>
 				<Column cols="4" maxWidth="7xl">
 					<NewsCard />
 					<NewsCard />
@@ -29,13 +31,15 @@ export default function NewsCardContent() {
 					<NewsCard />
 					<NewsCard />
 				</Column>
-
+			</Container>
+			<Container bgColor="grey">
 				<Column cols="3">
 					<NewsCard />
 					<NewsCard />
 					<NewsCard />
 				</Column>
-
+			</Container>
+			<Container bgColor="grey">
 				<Column cols="4" maxWidth="7xl">
 					<NewsCard />
 					<NewsCard />

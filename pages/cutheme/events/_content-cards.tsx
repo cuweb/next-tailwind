@@ -9,13 +9,15 @@ export default function EventCardContent() {
 					<EventCard />
 					<EventCard />
 				</Column>
-
+			</Container>
+			<Container>
 				<Column cols="3">
 					<EventCard />
 					<EventCard />
 					<EventCard />
 				</Column>
-
+			</Container>
+			<Container>
 				<Column cols="4" maxWidth="7xl">
 					<EventCard />
 					<EventCard />
@@ -29,11 +31,15 @@ export default function EventCardContent() {
 					<EventCard />
 					<EventCard />
 				</Column>
+			</Container>
+			<Container bgColor="grey">
 				<Column cols="3">
 					<EventCard />
 					<EventCard />
 					<EventCard />
 				</Column>
+			</Container>
+			<Container bgColor="grey">
 				<Column cols="4" maxWidth="7xl">
 					<EventCard />
 					<EventCard />

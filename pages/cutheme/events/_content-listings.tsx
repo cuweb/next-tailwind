@@ -20,7 +20,10 @@ export default function EventListingContent() {
 							<EventListItem />
 						</div>
 					</div>
-
+				</Column>
+			</Container>
+			<Container>
+				<Column cols="1">
 					<div className="cu-panel not-prose overflow-hidden rounded-lg border border-cu-black-100 bg-white shadow-lg [&+.cu-panel]:mt-4">
 						<div
 							className={`grid overflow-hidden md:grid-cols-1 ${styles.oneColBorder}`}
@@ -30,7 +33,10 @@ export default function EventListingContent() {
 							<EventListItem />
 						</div>
 					</div>
-
+				</Column>
+			</Container>
+			<Container>
+				<Column cols="1">
 					<div className="cu-panel not-prose overflow-hidden rounded-lg border border-cu-black-100  bg-white shadow-lg [&+.cu-panel]:mt-4">
 						<div
 							className={`grid overflow-hidden md:grid-cols-2 ${styles.twoColBorder}`}
@@ -43,7 +49,6 @@ export default function EventListingContent() {
 					</div>
 				</Column>
 			</Container>
-
 			<Container>
 				<Column cols="2/3">
 					<div className="cu-panel not-prose overflow-hidden rounded-lg border border-cu-black-100 bg-white shadow-lg [&+.cu-panel]:mt-4">
@@ -67,7 +72,10 @@ export default function EventListingContent() {
 							<EventListItem />
 						</div>
 					</div>
-
+				</Column>
+			</Container>
+			<Container bgColor="grey">
+				<Column cols="1">
 					<div className="cu-panel not-prose overflow-hidden rounded-lg border border-cu-black-100 bg-white shadow-lg [&+.cu-panel]:mt-4">
 						<div
 							className={`grid overflow-hidden md:grid-cols-1 ${styles.oneColBorder}`}
@@ -77,7 +85,10 @@ export default function EventListingContent() {
 							<EventListItem />
 						</div>
 					</div>
-
+				</Column>
+			</Container>
+			<Container bgColor="grey">
+				<Column cols="1">
 					<div className="cu-panel not-prose overflow-hidden rounded-lg border border-cu-black-100  bg-white shadow-lg [&+.cu-panel]:mt-4">
 						<div
 							className={`grid overflow-hidden md:grid-cols-2 ${styles.twoColBorder}`}
@@ -90,7 +101,6 @@ export default function EventListingContent() {
 					</div>
 				</Column>
 			</Container>
-
 			<Container bgColor="grey">
 				<Column cols="2/3">
 					<div className="cu-panel not-prose overflow-hidden rounded-lg border border-cu-black-100 bg-white shadow-lg [&+.cu-panel]:mt-4">
