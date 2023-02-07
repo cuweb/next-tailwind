@@ -9,17 +9,17 @@ export default function EventCard() {
 		<div className="not-prose group relative overflow-hidden rounded-lg bg-white shadow-lg duration-300 ease-in @container hover:scale-105 md:max-w-lg">
 			<a
 				href="https://carleton.ca"
-				className="relative flex h-full cursor-pointer flex-col"
+				className="relative flex flex-col h-full cursor-pointer"
 			>
 				<div className="relative">
 					<div className="aspect-w-16 aspect-h-9 @sm:md:aspect-h-6">
 						<img
-							className="w-full object-cover"
+							className="object-cover w-full"
 							src="https://source.unsplash.com/random/496x279"
 							alt=""
 						/>
 					</div>
-					<div className="absolute left-6 -bottom-10 z-10 flex h-20 w-20 flex-col items-center justify-center rounded-md bg-white shadow-md group-hover:bg-cu-red">
+					<div className="absolute z-10 flex flex-col items-center justify-center w-20 h-20 bg-white rounded-md shadow-md left-6 -bottom-10 group-hover:bg-cu-red">
 						<p className="text-xs font-bold uppercase text-cu-red group-hover:text-white">
 							Sept
 						</p>
@@ -29,13 +29,13 @@ export default function EventCard() {
 					</div>
 				</div>
 
-				<div className="flex flex-col gap-px px-7 pt-16 pb-8">
+				<div className="flex flex-col gap-px pt-16 pb-8 px-7">
 					<h3 className="text-lg font-semibold text-cu-black group-hover:text-cu-red @sm:md:text-xl">
 						End-of-Year Reflections and Resolutions for Our Web
 						Services Team
 					</h3>
-					<ul className="mt-4 flex flex-col gap-2">
-						<li className="flex items-center text-sm text-cu-black-600 @sm:md:text-base">
+					<ul className="flex flex-col gap-2 mt-4">
+						<li className="flex items-center text-sm text-cu-black-600 @lg:md:text-base">
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
 								fill="none"
@@ -43,7 +43,7 @@ export default function EventCard() {
 								stroke-width="1.5"
 								stroke="currentColor"
 								aria-hidden="true"
-								className="mr-2 h-6 w-6 flex-shrink-0 text-cu-red-300"
+								className="flex-shrink-0 w-6 h-6 mr-2 text-cu-red-300"
 							>
 								<path
 									stroke-linecap="round"
@@ -53,7 +53,7 @@ export default function EventCard() {
 							</svg>
 							1:48 am-2:45 am
 						</li>
-						<li className="flex items-center text-sm text-cu-black-600 @sm:md:text-base">
+						<li className="flex items-center text-sm text-cu-black-600 @lg:md:text-base">
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
 								fill="none"
@@ -61,7 +61,7 @@ export default function EventCard() {
 								stroke-width="1.5"
 								stroke="currentColor"
 								aria-hidden="true"
-								className="mr-2 h-6 w-6 flex-shrink-0 text-cu-red-300"
+								className="flex-shrink-0 w-6 h-6 mr-2 text-cu-red-300"
 							>
 								<path
 									stroke-linecap="round"
@@ -79,11 +79,11 @@ export default function EventCard() {
 					</ul>
 				</div>
 
-				<div className="mt-auto px-7 pb-5">
-					<p className="mr-2 inline-flex rounded-xl bg-cu-black-50 px-2 text-xs font-semibold text-cu-black-900 last:mr-0">
+				<div className="pb-5 mt-auto px-7">
+					<p className="inline-flex px-2 mr-2 text-xs font-semibold rounded-xl bg-cu-black-50 text-cu-black-900 last:mr-0">
 						Category One
 					</p>
-					<p className="mr-2 inline-flex rounded-xl bg-cu-black-50 px-2 text-xs font-semibold text-cu-black-900 last:mr-0">
+					<p className="inline-flex px-2 mr-2 text-xs font-semibold rounded-xl bg-cu-black-50 text-cu-black-900 last:mr-0">
 						Category Two
 					</p>
 				</div>

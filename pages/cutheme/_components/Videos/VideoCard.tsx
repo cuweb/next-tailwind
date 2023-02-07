@@ -24,10 +24,10 @@ export default function VideoCard() {
 				</div>
 
 				<div className="flex flex-col space-y-2 py-6 px-7 @sm:md:space-y-3">
-					<p className="flex items-start text-sm italic text-cu-black-600">
+					<p className="flex items-start text-sm italic text-cu-black-600 @sm:md:text-base">
 						Duration: 5m 43s
 					</p>
-					<h3 className="text-xl font-semibold duration-300 ease-in text-cu-black group-hover:text-cu-red">
+					<h3 className="text-lg font-semibold text-cu-black group-hover:text-cu-red @sm:md:text-xl">
 						Donec commodo sit viverra aliquam porttitor ultrices
 						gravida
 					</h3>
