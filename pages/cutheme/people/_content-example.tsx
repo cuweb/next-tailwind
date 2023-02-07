@@ -1,5 +1,5 @@
 import { Column, Container } from "rds-tailwind";
-import PeopleCardShadow from "../_components/People/PeopleCard.Shadow";
+import PeopleCard from "../_components/People/PeopleCard";
 import PeopleListItem from "../_components/People/PeopleListItem";
 const styles = {
 	oneColBorder: `[&>*]:border-cu-cu-black-100 [&>*]:border-b last:[&>*]:border-b-0`,
@@ -24,20 +24,21 @@ export default function PeopleExample() {
 					President and CEO
 				</h2>
 				<Column cols="1">
-					<PeopleCardShadow />
+					<PeopleCard />
 				</Column>
+			</Container>
 
-				<br />
-
+			<Container>
 				<h3 className="max-w-5xl mx-auto text-4xl font-semibold">
 					Divisional Directors
 				</h3>
 				<Column cols="3">
-					<PeopleCardShadow />
-					<PeopleCardShadow />
-					<PeopleCardShadow />
+					<PeopleCard />
+					<PeopleCard />
+					<PeopleCard />
 				</Column>
 			</Container>
+
 			<Container bgColor="grey">
 				<h3 className="max-w-5xl mx-auto text-4xl font-semibold">
 					Team Manager
@@ -51,9 +52,9 @@ export default function PeopleExample() {
 						</div>
 					</div>
 				</Column>
+			</Container>
 
-				<br />
-
+			<Container bgColor="grey">
 				<h3 className="max-w-5xl mx-auto text-4xl font-semibold">
 					Team Members
 				</h3>

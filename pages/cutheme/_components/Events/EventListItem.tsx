@@ -35,7 +35,7 @@ export default function EventListItem() {
 								stroke-width="1.5"
 								stroke="currentColor"
 								aria-hidden="true"
-								className="mr-2 h-6 w-6 flex-shrink-0 text-cu-red-300"
+								className="flex-shrink-0 w-6 h-6 mr-2 text-cu-red-300"
 							>
 								<path
 									stroke-linecap="round"
@@ -53,7 +53,7 @@ export default function EventListItem() {
 								stroke-width="1.5"
 								stroke="currentColor"
 								aria-hidden="true"
-								className="mr-2 h-6 w-6 flex-shrink-0 text-cu-red-300"
+								className="flex-shrink-0 w-6 h-6 mr-2 text-cu-red-300"
 							>
 								<path
 									stroke-linecap="round"
@@ -79,16 +79,16 @@ export default function EventListItem() {
 						</span>
 					</p> */}
 					<div className="mt-auto">
-						<p className="mr-2 inline-flex rounded-xl bg-cu-black-50 px-2 text-xs font-semibold text-cu-black-900 last:mr-0">
+						<p className="inline-flex px-2 mr-2 text-xs font-semibold rounded-xl bg-cu-black-50 text-cu-black-900 last:mr-0">
 							Category One
 						</p>
-						<p className="mr-2 inline-flex rounded-xl bg-cu-black-50 px-2 text-xs font-semibold text-cu-black-900 last:mr-0">
+						<p className="inline-flex px-2 mr-2 text-xs font-semibold rounded-xl bg-cu-black-50 text-cu-black-900 last:mr-0">
 							Category Two
 						</p>
 					</div>
 				</div>
 
-				<div className="absolute top-1/2 right-4 -mt-3">
+				<div className="absolute -mt-3 top-1/2 right-4">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						fill="none"
@@ -96,7 +96,7 @@ export default function EventListItem() {
 						stroke-width="1.5"
 						stroke="currentColor"
 						aria-hidden="true"
-						className="ml-auto h-6 w-6 flex-none text-cu-black-300 group-hover:text-cu-red"
+						className="flex-none w-6 h-6 ml-auto text-cu-black-300 group-hover:text-cu-red"
 					>
 						<path
 							stroke-linecap="round"

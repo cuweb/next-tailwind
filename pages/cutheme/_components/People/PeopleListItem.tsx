@@ -17,11 +17,11 @@ export default function PeopleListItem() {
 					<h3 className="text-lg font-semibold text-cu-black group-hover:text-cu-red md:text-xl @lg:md:text-2xl">
 						Carlton Banks
 					</h3>
-					<p className="text-base text-cu-black-600 @lg:md:text-lg">
+					<p className="text-sm italic text-cu-black-600 @md:md:text-base @2xl:md:text-lg">
 						Manager, Peacock Stop
 					</p>
-					<ul className="pt-4 space-y-2">
-						<li className="text-sm  @sm:md:text-base">
+					<ul className="space-y-1.5 pt-4">
+						<li className="text-sm text-cu-black-700 @2xl:lg:text-base">
 							<a
 								href="mailto:webdevs@carleton.ca"
 								className="font-semibold text-cyan-700 hover:text-cu-red"
@@ -29,7 +29,7 @@ export default function PeopleListItem() {
 								george.hadjisophocleous@carleton.ca
 							</a>
 						</li>
-						<li className="items-center text-sm text-cu-black-600 hover:text-cu-red @sm:md:text-base">
+						<li className="text-sm text-cu-black-700 hover:text-cu-red @2xl:lg:text-base">
 							<a href="#" className="">
 								613-520-2600 x1234
 							</a>

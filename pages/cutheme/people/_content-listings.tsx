@@ -18,7 +18,10 @@ export default function PeopleListingContent() {
 							<PeopleListItem />
 						</div>
 					</div>
-
+				</Column>
+			</Container>
+			<Container>
+				<Column cols="1">
 					<div className="cu-panel not-prose overflow-hidden rounded-lg border border-cu-black-100 bg-white shadow-lg [&+.cu-panel]:mt-8">
 						<div
 							className={`grid overflow-hidden md:grid-cols-1 ${styles.oneColBorder}`}
@@ -28,7 +31,10 @@ export default function PeopleListingContent() {
 							<PeopleListItem />
 						</div>
 					</div>
-
+				</Column>
+			</Container>
+			<Container>
+				<Column cols="1">
 					<div className="cu-panel not-prose overflow-hidden rounded-lg border border-cu-black-100  bg-white shadow-lg [&+.cu-panel]:mt-8">
 						<div
 							className={`grid overflow-hidden md:grid-cols-2 ${styles.twoColBorder}`}
@@ -51,7 +57,10 @@ export default function PeopleListingContent() {
 							<PeopleListItem />
 						</div>
 					</div>
-
+				</Column>
+			</Container>
+			<Container bgColor="grey">
+				<Column cols="1">
 					<div className="cu-panel not-prose overflow-hidden rounded-lg border border-cu-black-100 bg-white shadow-lg [&+.cu-panel]:mt-8">
 						<div
 							className={`grid overflow-hidden md:grid-cols-1 ${styles.oneColBorder}`}
@@ -61,7 +70,10 @@ export default function PeopleListingContent() {
 							<PeopleListItem />
 						</div>
 					</div>
-
+				</Column>
+			</Container>
+			<Container bgColor="grey">
+				<Column cols="1">
 					<div className="cu-panel not-prose overflow-hidden rounded-lg border border-cu-black-100  bg-white shadow-lg [&+.cu-panel]:mt-8">
 						<div
 							className={`grid overflow-hidden md:grid-cols-2 ${styles.twoColBorder}`}
