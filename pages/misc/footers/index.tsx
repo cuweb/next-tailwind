@@ -22,38 +22,34 @@ const Home: NextPage = () => {
 
 			<TopNav logoUrl="https://carleton.ca/" title="CU Prototypes" />
 
-			<Banner
-				align="horizontal"
-				isType="dark-wave"
-				title="Footer Examples"
-			/>
+			<Banner align="left" isType="dark-wave" title="Footer Examples" />
 
 			<Container>
-				<h2 className="flex items-center gap-2 px-12 text-lg max-w-7xl">
-					FooterBasic <ArrowDownIcon className="w-4 h-4" />
+				<h2 className="flex max-w-7xl items-center gap-2 px-12 text-lg">
+					FooterBasic <ArrowDownIcon className="h-4 w-4" />
 				</h2>
 			</Container>
 			<FooterBasic />
 
 			<Container>
-				<h2 className="flex items-center gap-2 px-12 text-lg max-w-7xl">
-					FooterStandard <ArrowDownIcon className="w-4 h-4" />
+				<h2 className="flex max-w-7xl items-center gap-2 px-12 text-lg">
+					FooterStandard <ArrowDownIcon className="h-4 w-4" />
 				</h2>
 			</Container>
 			<FooterStandard />
 
 			<Container>
-				<h2 className="flex items-center gap-2 px-12 text-lg max-w-7xl">
-					FooterCondensed <ArrowDownIcon className="w-4 h-4" />
+				<h2 className="flex max-w-7xl items-center gap-2 px-12 text-lg">
+					FooterCondensed <ArrowDownIcon className="h-4 w-4" />
 				</h2>
 			</Container>
 			<FooterCondensed />
 
 			<Container>
-				<h2 className="flex items-center gap-2 px-12 text-lg max-w-7xl">
-					FooterSwoosh <ArrowDownIcon className="w-4 h-4" />
+				<h2 className="flex max-w-7xl items-center gap-2 px-12 text-lg">
+					FooterSwoosh <ArrowDownIcon className="h-4 w-4" />
 				</h2>
-				<p className="px-12 max-w-7xl">Not intended to be used alone</p>
+				<p className="max-w-7xl px-12">Not intended to be used alone</p>
 			</Container>
 		</>
 	);

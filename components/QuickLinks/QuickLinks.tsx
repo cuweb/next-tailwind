@@ -52,7 +52,7 @@ function classNames(...classes: any) {
 
 export default function Quicklinks() {
 	return (
-		<div className="my-8 overflow-hidden divide-y divide-gray-200 rounded-lg shadow-lg bg-cu-black-100 sm:grid sm:grid-cols-2 sm:gap-px sm:divide-y-0">
+		<div className="not-prose my-8 divide-y divide-gray-200 overflow-hidden rounded-lg bg-cu-black-100 shadow-lg sm:grid sm:grid-cols-2 sm:gap-px sm:divide-y-0">
 			{actions.map((action, actionIdx) => (
 				<div
 					key={action.title}
@@ -79,7 +79,7 @@ export default function Quicklinks() {
 							)}
 						>
 							<action.icon
-								className="w-6 h-6"
+								className="h-6 w-6"
 								aria-hidden="true"
 							/>
 						</span>
@@ -114,7 +114,7 @@ export default function Quicklinks() {
 						aria-hidden="true"
 					>
 						<svg
-							className="w-6 h-6"
+							className="h-6 w-6"
 							xmlns="http://www.w3.org/2000/svg"
 							fill="currentColor"
 							viewBox="0 0 24 24"

@@ -21,7 +21,7 @@ const CuTheme: NextPage = () => {
 			/>
 
 			<Banner
-				// align="horizontal"
+				// align="left"
 				isType="red-wave"
 				title="Number Card Grid Blocks"
 			/>

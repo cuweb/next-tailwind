@@ -13,11 +13,7 @@ const Home: NextPage = () => {
 
 			<TopNav logoUrl="https://carleton.ca/" title="CU Prototypes" />
 
-			<Banner
-				align="horizontal"
-				isType="dark-wave"
-				title="Card Examples"
-			/>
+			<Banner align="left" isType="dark-wave" title="Card Examples" />
 
 			<Container>
 				<Column>

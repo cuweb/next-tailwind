@@ -22,11 +22,7 @@ const PageLayout: NextPage = () => {
 
 			<TopNav logoUrl="https://carleton.ca/" title="CU Prototypes" />
 
-			<Banner
-				align="horizontal"
-				isType="dark-wave"
-				title="Toast Examples"
-			/>
+			<Banner align="left" isType="dark-wave" title="Toast Examples" />
 
 			<main>
 				<Container>
