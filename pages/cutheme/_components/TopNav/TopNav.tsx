@@ -33,18 +33,18 @@ export default function CuThemeNav() {
 			<div className={`cu-topnav sticky z-50 ${cls}`}>
 				<FocusNav />
 
-				<div className="flex items-center justify-between h-20 gap-4 px-6 bg-white border-t-2 shadow-lg border-cu-red">
+				<div className="flex h-20 items-center justify-between gap-4 border-t-2 border-cu-red bg-white px-6 shadow-lg">
 					<div>
 						<Link
 							href="/cutheme/"
-							className="flex items-center flex-shrink-0 group"
+							className="group flex flex-shrink-0 items-center"
 						>
 							<img
-								className="w-auto h-10"
+								className="h-10 w-auto"
 								src="/cu-shield.svg"
 								alt="Carleton Shield"
 							/>
-							<h1 className="flex items-center flex-1 flex-shrink-0 pl-3 pr-2 text-base font-semibold group-hover:text-cu-red sm:text-lg md:text-xl lg:text-2xl">
+							<h1 className="flex flex-1 flex-shrink-0 items-center pl-3 pr-2 text-base font-semibold group-hover:text-cu-red sm:text-lg md:text-xl lg:text-2xl">
 								{/* Max and Tessie Zelikovitz Centre for Jewish
 								Studies */}
 								Web Services
@@ -54,25 +54,27 @@ export default function CuThemeNav() {
 
 					<div className="flex items-center gap-4">
 						<MagnifyingGlassIcon
-							className="w-5 h-5 text-gray-400"
+							className="h-5 w-5 text-gray-400"
 							aria-hidden="true"
 						/>
-						{/* <Button
+
+						<button
+							type="button"
+							aria-label="Small Button"
+							className="inline-flex items-center justify-center gap-1 rounded-md bg-cu-black-50 px-3 py-2 text-sm font-medium text-cu-black-800 hover:bg-cu-black-600 hover:text-white focus:outline-none "
+						>
+							Small Button
+						</button>
+
+						<Button
 							icon="Bars3Icon"
 							isType="grey"
 							onClick={() => openMenu()}
 							size="sm"
 							title="Browse"
-						/> */}
+						/>
 
 						{/* <button
-							type="button"
-							aria-label="Small Button"
-							className="inline-flex items-center justify-center gap-1 px-3 py-2 text-sm font-medium rounded-md bg-cu-black-50 text-cu-black-800 hover:bg-cu-black-600 hover:text-white focus:outline-none "
-						>
-							Small Button
-						</button>
-						<button
 							onClick={() => {
 								setActive(!isActive);
 								openMenu();
@@ -83,6 +85,7 @@ export default function CuThemeNav() {
 							<span className="icon-bar middle"></span>
 							<span className="icon-bar bottom"></span>
 						</button> */}
+
 						{/* <div className="hidden sm:block">
 							<Avatar
 								rounded="full"

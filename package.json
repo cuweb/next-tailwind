@@ -7,7 +7,8 @@
 		"rds-sync": "npm-run-all --sequential rds-repo-upgrade rds-copy-assets dev",
 		"rds-repo-upgrade": "yarn upgrade rds-tailwind",
 		"rds-copy-assets": "cp -a ./node_modules/rds-tailwind/src/assets ./assets",
-		"lint": "next lint"
+		"lint": "next lint",
+        "clean": "rm -rf node_modules ; rm yarn.lock ; yarn install"
 	},
 	"devDependencies": {
 		"@fortawesome/fontawesome-svg-core": "^6.2.1",

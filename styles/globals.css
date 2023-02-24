@@ -35,7 +35,7 @@
 }
 
 .cutheme-spacing > :not(.cu-container):not(.cu-column) {
-	@apply max-w-5xl mx-auto;
+	@apply mx-auto max-w-5xl;
 }
 
 .cutheme-spacing > :not(.cu-container):not(.cu-column):first-child {
@@ -71,7 +71,7 @@ body.open {
 }
 
 .cu-slidenav.open {
-	@apply visible translate-y-0 top-20 lg:top-28;
+	@apply visible top-20 translate-y-0 lg:top-28;
 	transition: transform 0.4s ease-in-out;
 }
 
@@ -102,19 +102,19 @@ body.open {
 
 .icon-bar {
 	display: block;
-	margin: 6px 0;
-	width: 35px;
-	height: 5px;
-	background-color: #f9b339;
+	margin: 4px 0;
+	width: 24px;
+	height: 3px;
+	background-color: #808080;
 }
 
 .btn-nav:hover .icon-bar {
-	background-color: #f9b339;
+	background-color: #808080;
 }
 
 .animated {
 	display: block;
-	margin: 0 auto;
+	margin: 8px auto 0;
 }
 
 .animated:hover .icon-bar,
@@ -146,11 +146,11 @@ body.open {
 }
 
 .animated .top {
-	-webkit-transform: translateY(10px) rotateZ(45deg);
-	-moz-transform: translateY(10px) rotateZ(45deg);
-	-ms-transform: translateY(10px) rotateZ(45deg);
-	-o-transform: translateY(10px) rotateZ(45deg);
-	transform: translateY(10px) rotateZ(45deg);
+	-webkit-transform: translateY(3px) rotateZ(45deg);
+	-moz-transform: translateY(3px) rotateZ(45deg);
+	-ms-transform: translateY(3px) rotateZ(45deg);
+	-o-transform: translateY(3px) rotateZ(45deg);
+	transform: translateY(3px) rotateZ(45deg);
 }
 
 .animated .bottom {
