@@ -23,41 +23,37 @@ const PageLayout: NextPage = () => {
 
 			<TopNav logoUrl="https://carleton.ca/" title="Layouts" />
 
-			<Banner
-				align="horizontal"
-				isType="dark-wave"
-				title="Layout Examples"
-			/>
+			<Banner align="left" isType="dark-wave" title="Layout Examples" />
 
 			<main>
 				<Container>
-					<Column maxWidth="5xl" cols="3" gridGap="8">
-						<p className="p-6 bg-white border rounded-md border-cu-black-100">
+					<Column maxWidth="5xl" cols="3" gridGap="10">
+						<p className="rounded-md border border-cu-black-100 bg-white p-6">
 							Lorem ipsum dolor sit amet, consectetur adipiscing
 							elit. Cras vel urna in mauris lacinia convallis.
 						</p>
-						<p className="p-6 bg-white border rounded-md border-cu-black-100">
+						<p className="rounded-md border border-cu-black-100 bg-white p-6">
 							Lorem ipsum dolor sit amet, consectetur adipiscing
 							elit. Cras vel urna in mauris lacinia convallis.
 						</p>
-						<p className="p-6 bg-white border rounded-md border-cu-black-100">
-							Lorem ipsum dolor sit amet, consectetur adipiscing
-							elit. Cras vel urna in mauris lacinia convallis.
-						</p>
-					</Column>
-
-					<Column maxWidth="3xl" cols="2" gridGap="8">
-						<p className="p-6 bg-white border rounded-md border-cu-black-100">
-							Lorem ipsum dolor sit amet, consectetur adipiscing
-							elit. Cras vel urna in mauris lacinia convallis.
-						</p>
-						<p className="p-6 bg-white border rounded-md border-cu-black-100">
+						<p className="rounded-md border border-cu-black-100 bg-white p-6">
 							Lorem ipsum dolor sit amet, consectetur adipiscing
 							elit. Cras vel urna in mauris lacinia convallis.
 						</p>
 					</Column>
 
-					<Column maxWidth="7xl" cols="2/3" gridGap="8">
+					<Column maxWidth="5xl" cols="2" gridGap="10">
+						<p className="rounded-md border border-cu-black-100 bg-white p-6">
+							Lorem ipsum dolor sit amet, consectetur adipiscing
+							elit. Cras vel urna in mauris lacinia convallis.
+						</p>
+						<p className="rounded-md border border-cu-black-100 bg-white p-6">
+							Lorem ipsum dolor sit amet, consectetur adipiscing
+							elit. Cras vel urna in mauris lacinia convallis.
+						</p>
+					</Column>
+
+					<Column maxWidth="7xl" cols="2/3" gridGap="10">
 						<section>
 							<div className={styles.panel}>
 								<NewsListing />
@@ -83,44 +79,44 @@ const PageLayout: NextPage = () => {
 			</main>
 
 			<Container>
-				<Column cols="2" maxWidth="3xl" gridGap="4">
-					<p className="p-6 bg-white border rounded-md border-cu-black-200">
+				<Column cols="2" maxWidth="5xl" gridGap="5">
+					<p className="rounded-md border border-cu-black-200 bg-white p-6">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 						Cras vel urna in mauris lacinia convallis.
 					</p>
-					<p className="p-6 bg-white border rounded-md border-cu-black-200">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-						Cras vel urna in mauris lacinia convallis.
-					</p>
-				</Column>
-				<Column cols="3" maxWidth="5xl" gridGap="4">
-					<p className="p-6 bg-white border rounded-md border-cu-black-200">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-						Cras vel urna in mauris lacinia convallis.
-					</p>
-					<p className="p-6 bg-white border rounded-md border-cu-black-200">
-						Cras vel urna in mauris lacinia convallis. Curabitur a
-						nibh quis leo laoreet porttitor.
-					</p>
-					<p className="p-6 bg-white border rounded-md border-cu-black-200">
+					<p className="rounded-md border border-cu-black-200 bg-white p-6">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 						Cras vel urna in mauris lacinia convallis.
 					</p>
 				</Column>
-				<Column cols="4" maxWidth="7xl" gridGap="4">
-					<p className="p-6 bg-white border rounded-md border-cu-black-200">
+				<Column cols="3" maxWidth="5xl" gridGap="5">
+					<p className="rounded-md border border-cu-black-200 bg-white p-6">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 						Cras vel urna in mauris lacinia convallis.
 					</p>
-					<p className="p-6 bg-white border rounded-md border-cu-black-200">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-						Cras vel urna in mauris lacinia convallis.
-					</p>
-					<p className="p-6 bg-white border rounded-md border-cu-black-200">
+					<p className="rounded-md border border-cu-black-200 bg-white p-6">
 						Cras vel urna in mauris lacinia convallis. Curabitur a
 						nibh quis leo laoreet porttitor.
 					</p>
-					<p className="p-6 bg-white border rounded-md border-cu-black-200">
+					<p className="rounded-md border border-cu-black-200 bg-white p-6">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+						Cras vel urna in mauris lacinia convallis.
+					</p>
+				</Column>
+				<Column cols="4" maxWidth="7xl" gridGap="5">
+					<p className="rounded-md border border-cu-black-200 bg-white p-6">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+						Cras vel urna in mauris lacinia convallis.
+					</p>
+					<p className="rounded-md border border-cu-black-200 bg-white p-6">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+						Cras vel urna in mauris lacinia convallis.
+					</p>
+					<p className="rounded-md border border-cu-black-200 bg-white p-6">
+						Cras vel urna in mauris lacinia convallis. Curabitur a
+						nibh quis leo laoreet porttitor.
+					</p>
+					<p className="rounded-md border border-cu-black-200 bg-white p-6">
 						Cras vel urna in mauris lacinia convallis. Curabitur a
 						nibh quis leo laoreet porttitor.
 					</p>
@@ -128,44 +124,44 @@ const PageLayout: NextPage = () => {
 			</Container>
 
 			<Container bgColor="grey">
-				<Column cols="2" maxWidth="3xl" gridGap="4">
-					<p className="p-6 bg-white border rounded-md border-cu-black-200">
+				<Column cols="2" maxWidth="5xl" gridGap="5">
+					<p className="rounded-md border border-cu-black-200 bg-white p-6">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 						Cras vel urna in mauris lacinia convallis.
 					</p>
-					<p className="p-6 bg-white border rounded-md border-cu-black-200">
+					<p className="rounded-md border border-cu-black-200 bg-white p-6">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 						Cras vel urna in mauris lacinia convallis.
 					</p>
 				</Column>
-				<Column cols="3" maxWidth="5xl" gridGap="4">
-					<p className="p-6 bg-white border rounded-md border-cu-black-200">
+				<Column cols="3" maxWidth="5xl" gridGap="5">
+					<p className="rounded-md border border-cu-black-200 bg-white p-6">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 						Cras vel urna in mauris lacinia convallis.
 					</p>
-					<p className="p-6 bg-white border rounded-md border-cu-black-200">
+					<p className="rounded-md border border-cu-black-200 bg-white p-6">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 						Cras vel urna in mauris lacinia convallis.
 					</p>
-					<p className="p-6 bg-white border rounded-md border-cu-black-200">
+					<p className="rounded-md border border-cu-black-200 bg-white p-6">
 						Cras vel urna in mauris lacinia convallis. Curabitur a
 						nibh quis leo laoreet porttitor.
 					</p>
 				</Column>
-				<Column cols="4" maxWidth="7xl" gridGap="4">
-					<p className="p-6 bg-white border rounded-md border-cu-black-200">
+				<Column cols="4" maxWidth="7xl" gridGap="5">
+					<p className="rounded-md border border-cu-black-200 bg-white p-6">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 						Cras vel urna in mauris lacinia convallis.
 					</p>
-					<p className="p-6 bg-white border rounded-md border-cu-black-200">
+					<p className="rounded-md border border-cu-black-200 bg-white p-6">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 						Cras vel urna in mauris lacinia convallis.
 					</p>
-					<p className="p-6 bg-white border rounded-md border-cu-black-200">
+					<p className="rounded-md border border-cu-black-200 bg-white p-6">
 						Cras vel urna in mauris lacinia convallis. Curabitur a
 						nibh quis leo laoreet porttitor.
 					</p>
-					<p className="p-6 bg-white border rounded-md border-cu-black-200">
+					<p className="rounded-md border border-cu-black-200 bg-white p-6">
 						Cras vel urna in mauris lacinia convallis. Curabitur a
 						nibh quis leo laoreet porttitor.
 					</p>

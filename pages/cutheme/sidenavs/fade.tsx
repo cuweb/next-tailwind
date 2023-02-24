@@ -21,7 +21,7 @@ const CuTheme: NextPage = () => {
 			/>
 
 			<Banner
-				// align="horizontal"
+				// align="left"
 				isType="dark-wave"
 				title="Darth Fader"
 			/>

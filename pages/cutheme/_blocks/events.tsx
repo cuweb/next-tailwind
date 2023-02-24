@@ -22,7 +22,7 @@ const CuTheme: NextPage = () => {
 			/>
 
 			<Banner
-				align="horizontal"
+				align="left"
 				isType="animated"
 				title="Event Card Grid and Listing Blocks"
 			/>

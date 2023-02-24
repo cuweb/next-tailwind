@@ -37,23 +37,19 @@ const Home: NextPage = () => {
 
 			<TopNav logoUrl="https://carleton.ca/" title="CU Prototypes" />
 
-			<Banner
-				align="horizontal"
-				isType="dark-wave"
-				title="Misc Examples"
-			/>
+			<Banner align="left" isType="dark-wave" title="Misc Examples" />
 
 			<main>
 				<Container>
 					<Column>
 						<ul
 							role="list"
-							className="grid grid-cols-1 gap-5 mt-3 sm:grid-cols-2 sm:gap-6 lg:grid-cols-4"
+							className="mt-3 grid grid-cols-1 gap-5 sm:grid-cols-2 sm:gap-6 lg:grid-cols-4"
 						>
 							{projects.map((project) => (
 								<li
 									key={project.name}
-									className="flex col-span-1 rounded-md shadow-sm"
+									className="col-span-1 flex rounded-md shadow-sm"
 								>
 									<div
 										className={classNames(
@@ -63,8 +59,8 @@ const Home: NextPage = () => {
 									>
 										{project.initials}
 									</div>
-									<div className="flex items-center justify-between flex-1 truncate bg-white border-t border-b border-r border-gray-200 rounded-r-md">
-										<div className="flex-1 px-4 py-4 text-sm truncate">
+									<div className="flex flex-1 items-center justify-between truncate rounded-r-md border-t border-b border-r border-gray-200 bg-white">
+										<div className="flex-1 truncate px-4 py-4 text-sm">
 											<a
 												href={project.href}
 												className="font-medium text-gray-900 hover:text-gray-600"

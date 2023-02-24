@@ -4,7 +4,7 @@
 /*  */
 /* Things to add to RDS or cutheme? TBD */
 
-.cu-panel + :not(.cu-panel),
+/* .cu-panel + :not(.cu-panel),
 :not(.cu-panel) + .cu-panel {
 	@apply mt-6 md:mt-12;
 }
@@ -14,7 +14,6 @@
 }
 
 :not(.cu-container) + .cu-container {
-	/* @apply mt-8; */
 	@apply -mt-6;
 }
 
@@ -24,18 +23,18 @@
 
 .cu-container {
 	@apply py-0 lg:py-0;
-}
+} */
 
 /*  */
 /*  */
 /* Things to add to cutheme */
 
-.cutheme-spacing > .cu-container {
+/* .cutheme-spacing > .cu-container {
 	@apply -mx-10;
 }
 
 .cutheme-spacing > :not(.cu-container):not(.cu-column) {
-	@apply mx-auto max-w-5xl;
+	@apply max-w-5xl mx-auto;
 }
 
 .cutheme-spacing > :not(.cu-container):not(.cu-column):first-child {
@@ -44,7 +43,7 @@
 
 .cutheme-spacing > :not(.cu-container):not(.cu-column):last-child {
 	@apply mb-16;
-}
+} */
 
 /* const gutenStyleGroups = {
 	// gutenbergSpacing: `[&>:not(.cu-container):not(.cu-column)]:px-12`,
@@ -163,4 +162,59 @@ body.open {
 
 .animated .middle {
 	width: 0;
+}
+
+/*  */
+/*  */
+/*  */
+
+/* Remove spacing if container is first item inside prose container */
+.prose > .cu-container {
+	@apply first:-mt-14;
+}
+
+/* Remove top and bottom space added by prose when columns are used inside prose container */
+.prose > .cu-column > *,
+.prose > .cu-column > * > * {
+	@apply first:mt-0 last:mb-0;
+}
+
+/* Remove top and bottom space added by prose inside container */
+.prose > .cu-container > *,
+.prose > .cu-container > * > * {
+	@apply first:mt-0 last:mb-0;
+}
+
+/* Add spacing when columns and panels are used in some consecutive order */
+.cu-container + .cu-column,
+.cu-column + .cu-container,
+.cu-column + .cu-column,
+.cu-panel + .cu-panel,
+.cu-column + .cu-panel,
+.cu-panel + .cu-column {
+	@apply mt-10;
+}
+
+.cu-column + .cu-container-white {
+	@apply pt-0;
+}
+
+/* Add spacing when white container follows non-layout components */
+:not(.cu-container):not(.cu-column) + .cu-container-white {
+	@apply pt-8;
+}
+
+/* Add spacing when grey container follows non-layout components */
+:not(.cu-container):not(.cu-column) + .cu-container-grey {
+	@apply mt-14;
+}
+
+/* Remove spacing on non-layout components that follow container or column */
+.cu-container-white + :not(.cu-container):not(.cu-column) {
+	@apply mt-0;
+}
+
+/* Remove spacing if nested container is last item inside another container */
+.cu-container > .cu-container {
+	@apply last:-mb-14;
 }

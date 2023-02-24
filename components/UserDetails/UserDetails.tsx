@@ -3,45 +3,39 @@ import Panel from "../../_rds-final/layouts/Panel/Panel";
 
 export default function UserDetails() {
 	return (
-		<Panel hasShadow>
-			<div className="flex items-center gap-5 p-5 md:gap-8 md:p-8">
-				{/* <Image
-					className="inline-block w-16 h-16 overflow-hidden text-2xl bg-white border-2 rounded-full cursor-pointer border-cu-black-50 text-cu-black-800 focus:ring-2 focus:ring-cu-black-100 focus:ring-offset-2 md:h-32 md:w-32 md:border-4"
-					src="https://static.wikia.nocookie.net/freshprince/images/a/ac/1carlton.jpg"
-					alt="Avatar of current user"
-					aria-hidden="true"
-				/> */}
+		<Panel hasBorder hasShadow>
+			<div className="not-prose flex items-center gap-5 p-5 md:gap-8 md:p-8">
 				<img
-					className="inline-block w-32 h-32 overflow-hidden text-4xl bg-white rounded-lg cursor-pointer text-cu-black-800 focus:ring-2 focus:ring-cu-black-100 focus:ring-offset-2"
+					className="inline-block h-32 w-32 cursor-pointer overflow-hidden rounded-lg bg-white text-4xl text-cu-black-800 focus:ring-2 focus:ring-cu-black-100 focus:ring-offset-2"
 					src="https://static.wikia.nocookie.net/freshprince/images/a/ac/1carlton.jpg"
 					alt="Avatar of current user"
 					aria-hidden="true"
 					width="40"
 					height="40"
 				/>
-				<div className="flex flex-col md:gap-1">
-					<p className="hidden text-sm font-light text-cu-black-600 md:block">
+				<div className="flex flex-col md:gap-2">
+					<p className="hidden text-sm font-light text-cu-black-600 md:block md:text-base">
 						Good to see you again
 					</p>
 					<h2 className="text-xl font-semibold text-cu-black-800 md:text-4xl">
 						Carlton Banks
 					</h2>
-					<p className="text-sm text-cu-black-600 md:text-base">
+					<p className="text-base text-cu-black-600 md:text-lg">
 						Manager at Peacock Stop, UCLA Campus
 					</p>
 				</div>
 			</div>
 
-			<div className="flex gap-2 border-t rounded-bl-lg rounded-br-lg border-cu-black-100 bg-gradient-to-b from-gray-50 to-white">
-				<p className="flex-1 p-5 text-sm font-light text-center border-r border-cu-black-100 text-cu-black-600 last:border-0 md:text-base">
+			<div className="not-prose flex gap-2 rounded-bl-lg rounded-br-lg border-t border-cu-black-100 bg-gradient-to-b from-gray-50 to-white">
+				<p className="flex-1 border-r border-cu-black-100 p-5 text-center text-sm font-light text-cu-black-600 last:border-0 md:text-base">
 					<span className="font-semibold text-cu-black-800">12</span>{" "}
 					vacay days left
 				</p>
-				<p className="flex-1 p-5 text-sm font-light text-center border-r border-cu-black-100 text-cu-black-600 last:border-0 md:text-base">
+				<p className="flex-1 border-r border-cu-black-100 p-5 text-center text-sm font-light text-cu-black-600 last:border-0 md:text-base">
 					<span className="font-semibold text-cu-black-800">3</span>{" "}
 					sick days left
 				</p>
-				<p className="flex-1 hidden p-5 text-sm font-light text-center border-r border-cu-black-100 text-cu-black-600 last:border-0 md:block md:text-base">
+				<p className="hidden flex-1 border-r border-cu-black-100 p-5 text-center text-sm font-light text-cu-black-600 last:border-0 md:block md:text-base">
 					<span className="font-semibold text-cu-black-800">2</span>{" "}
 					special days left
 				</p>
